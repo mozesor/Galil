@@ -233,9 +233,21 @@ def extract_score(game: dict) -> tuple[int | None, int | None]:
                 if res:
                     return res
         elif isinstance(obj, str):
-            # Avoid treating dates/times as scores (e.g. "2026-01-21" or "18:50").
-            # Volleyball match result is typically 3:x or x:3 where x is 0-2.
-            mm = re.search(r'\b([0-3])\s*[:\-]\s*([0-3])\b', obj)
+            s = obj.strip()
+
+            # Try to detect a football-style score (e.g. "3:1", "12-0", "50-18").
+            # Avoid treating times like "18:50" as a score.
+            # Common separators: colon, hyphen, en-dash, em-dash, non-breaking hyphen
+            mm = re.match(r'^(\d{1,2})\s*[:\-–—‑]\s*(\d{1,2})$', s)
+            if mm:
+                a = int(mm.group(1))
+                b = int(mm.group(2))
+                if ':' in s and 0 <= a <= 23 and 0 <= b <= 59 and len(mm.group(2)) == 2:
+                    return None  # looks like HH:MM
+                return (a, b)
+
+            # Fallback: volleyball match result is typically 3:x or x:3 where x is 0-2.
+            mm = re.search(r'\b([0-3])\s*[:\-]\s*([0-3])\b', s)
             if mm:
                 a = int(mm.group(1))
                 b = int(mm.group(2))
@@ -266,6 +278,50 @@ def fetch_round_json(sess: requests.Session, league_id: int, round_no: int) -> d
     except Exception as e:
         _debug(f"JSON parse failed {url}: {e}")
         return None
+
+
+def detect_round_param_offset(payload: dict | None) -> int:
+    """Detect whether the API `round` parameter is 0-indexed or 1-indexed.
+
+    In some VOLE leagues the API expects `round=0` to return "מחזור 1".
+    When that happens, calling with `round=1` typically returns "מחזור 2".
+
+    Returns:
+        0  -> assume 1-indexed (round=1 => מחזור 1)
+       -1 -> assume 0-indexed (round=0 => מחזור 1)
+    """
+    if not payload:
+        return 0
+    games = payload.get("games")
+    if not isinstance(games, list) or not games:
+        return 0
+
+    g0 = games[0] if isinstance(games[0], dict) else {}
+    rnd = (g0.get("round") or {}) if isinstance(g0.get("round"), dict) else {}
+
+    # Prefer numeric round if present
+    num = rnd.get("number")
+    if isinstance(num, int):
+        if num == 1:
+            return 0
+        if num == 2:
+            return -1
+
+    # Fallback to parsing from the round name like "מחזור 2"
+    name = rnd.get("name")
+    if isinstance(name, str):
+        m = re.search(r"(\d+)", name)
+        if m:
+            try:
+                n = int(m.group(1))
+                if n == 1:
+                    return 0
+                if n == 2:
+                    return -1
+            except Exception:
+                pass
+
+    return 0
 
 
 def parse_games(payload: dict, tz: ZoneInfo) -> list[Match]:
@@ -631,8 +687,18 @@ def main() -> int:
     consecutive_empty = 0
     seen_any = False
 
+    # Detect whether `round` parameter is 0- or 1-indexed for this league.
+    # If the API is 0-indexed, `round=1` returns "מחזור 2" and we must query
+    # `round=0` to get "מחזור 1".
+    first_payload = fetch_round_json(sess, league_id, 1)
+    round_offset = detect_round_param_offset(first_payload)
+
     for rnd in range(1, max_rounds + 1):
-        payload = fetch_round_json(sess, league_id, rnd)
+        api_round = rnd + round_offset
+        if api_round < 0:
+            continue
+
+        payload = fetch_round_json(sess, league_id, api_round)
         if not payload:
             consecutive_empty += 1
             if seen_any and consecutive_empty >= 6:
@@ -640,14 +706,6 @@ def main() -> int:
             continue
 
         matches = parse_games(payload, tz)
-        # Some VOLE deployments appear to be 0-indexed for the first round.
-        # If round=1 returns nothing, try round=0 once.
-        if rnd == 1 and not matches:
-            payload0 = fetch_round_json(sess, league_id, 0)
-            if payload0:
-                matches0 = parse_games(payload0, tz)
-                if matches0:
-                    matches = matches0
 
         if not matches:
             consecutive_empty += 1
