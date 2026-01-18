@@ -118,7 +118,6 @@ def clean_team_name(name: str) -> str:
     # Strip common club prefixes that may or may not appear across endpoints
     # Examples: "הפ׳ גליל עליון" / "הפ גליל עליון" / "ה.מטה אשר" / "מטה אשר"
     s = s.strip()
-    s = re.sub(r"^(הפועל|הפ|ה\.|ה|מכבי|מ\.|מ\.ס\.|מ\.כ\.|מ\s)\s*", "", s)
 
     # Remove invisible / directional marks
     s = re.sub(r"[​-‍﻿⁠‎‏‪-‮]", "", s)
@@ -268,6 +267,16 @@ def fetch_round_json(sess: requests.Session, league_id: int, round_no: int) -> d
         return None
 
 
+def team_key(name: str) -> str:
+    s = clean_team_name(name)
+    # normalize punctuation
+    s = s.replace('"', '').replace("'", '').replace('׳', '').replace('״', '')
+    # strip common prefixes for matching (keep display names intact)
+    s = __import__('re').sub(r"^(הפועל|הפ\.?\s*\S*|הפ|מ\.[^\s]+\.|כ\.|ס\.|מ\.[^\s]+\.)\s*", "", s)
+    s = ' '.join(s.split())
+    return s
+
+
 def parse_games(payload: dict, tz: ZoneInfo) -> list[Match]:
     games = payload.get("games")
     if not isinstance(games, list):
@@ -406,7 +415,7 @@ def merge_matches(existing: list[dict], incoming: list[Match]) -> list[dict]:
     def _norm_team(s: str) -> str:
         # Normalize aggressively for matching: remove punctuation and ALL whitespace
         # so variants like 'מ.ס. קרית' vs 'מ.ס.קרית' collapse.
-        s = clean_team_name(s)
+        s = team_key(s)
         s = s.replace('.', '')
         s = s.replace("'", '').replace('\u05f3', '').replace('\u05f4', '').replace('\"', '')
         s = re.sub(r'[\u05be\u2013\u2014-]+', '', s)
