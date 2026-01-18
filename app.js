@@ -1,6 +1,6 @@
 let LEAGUE_DATA = null;
 
-const APP_VERSION = '5.8';
+const APP_VERSION = '5.13';
 
 const $ = (q, el=document) => el.querySelector(q);
 const $$ = (q, el=document) => Array.from(el.querySelectorAll(q));
@@ -504,7 +504,23 @@ function dedupeMatches(list){
 
 function applyScores(){
   // Read-only: scores come only from data.json
-  const merged = (LEAGUE_DATA.matches || []).map(m => ({...m}));
+  const merged = (LEAGUE_DATA.matches || []).map(m => {
+    const c = {...m};
+
+    // IMPORTANT: In some sources scores arrive as strings (e.g. "3").
+    // If we keep them as strings, standings sums will CONCATENATE
+    // (0 + "3" => "03"), creating huge fake totals.
+    if (c.hs !== null && c.hs !== undefined) {
+      const n = Number(c.hs);
+      c.hs = Number.isFinite(n) ? n : null;
+    }
+    if (c.as !== null && c.as !== undefined) {
+      const n = Number(c.as);
+      c.as = Number.isFinite(n) ? n : null;
+    }
+
+    return c;
+  });
 
   // Guard against duplicates (usually happens when the source changes IDs)
   const deduped = dedupeMatches(merged);
