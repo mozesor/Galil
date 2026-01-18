@@ -99,8 +99,8 @@ def clean_team_name(name: str) -> str:
     # Common whitespace variants
     s = s.replace(" ", " ")
 
-    # Dash variants
-    s = s.replace("–", "-").replace("—", "-")
+    # Dash variants (include non‑breaking hyphen too)
+    s = s.replace("–", "-").replace("—", "-").replace("‑", "-")
 
     # Remove common quote/apostrophe variants
     s = (
@@ -111,6 +111,14 @@ def clean_team_name(name: str) -> str:
          .replace("`", "")
          .replace("’", "")
     )
+
+    # Normalize dot spacing ("ה. מטה" vs "ה.מטה")
+    s = re.sub(r"\s*\.\s*", ".", s)
+
+    # Strip common club prefixes that may or may not appear across endpoints
+    # Examples: "הפ׳ גליל עליון" / "הפ גליל עליון" / "ה.מטה אשר" / "מטה אשר"
+    s = s.strip()
+    s = re.sub(r"^(הפועל|הפ|ה\.|ה|מכבי|מ\.|מ\.ס\.|מ\.כ\.|מ\s)\s*", "", s)
 
     # Remove invisible / directional marks
     s = re.sub(r"[​-‍﻿⁠‎‏‪-‮]", "", s)
@@ -192,7 +200,8 @@ def extract_score(game: dict) -> tuple[int | None, int | None]:
     for key in ('result', 'score', 'final_score', 'game_result', 'display_result', 'displayScore', 'display_score'):
         v = game.get(key)
         if isinstance(v, str):
-            mm = re.search(r'(\d+)\s*[:\-]\s*(\d+)', v)
+            # Accept various dash glyphs in score strings
+            mm = re.search(r'(\d+)\s*[:\-–—‑]\s*(\d+)', v)
             if mm:
                 return int(mm.group(1)), int(mm.group(2))
 
