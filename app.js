@@ -1,6 +1,6 @@
 let LEAGUE_DATA = null;
 
-const APP_VERSION = '5.13';
+const APP_VERSION = '5.14';
 
 const $ = (q, el=document) => el.querySelector(q);
 const $$ = (q, el=document) => Array.from(el.querySelectorAll(q));

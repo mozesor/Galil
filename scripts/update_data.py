@@ -233,10 +233,15 @@ def extract_score(game: dict) -> tuple[int | None, int | None]:
                 if res:
                     return res
         elif isinstance(obj, str):
-            mm = re.search(r'(\d+)\s*[:\-]\s*(\d+)', obj)
+            # Avoid treating dates/times as scores (e.g. "2026-01-21" or "18:50").
+            # Volleyball match result is typically 3:x or x:3 where x is 0-2.
+            mm = re.search(r'\b([0-3])\s*[:\-]\s*([0-3])\b', obj)
             if mm:
-                return (int(mm.group(1)), int(mm.group(2)))
-        return None
+                a = int(mm.group(1))
+                b = int(mm.group(2))
+                if a == 3 or b == 3:
+                    return (a, b)
+            return None
 
     res = walk(game)
     if res:
