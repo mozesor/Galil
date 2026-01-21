@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>גליל – לוח משחקים</title>
+  <style>
+    :root{--bg:#ffffff;--card:#f7f7f7;--border:#e6e6e6;--text:#111;--muted:#666;}
+    body{font-family:Arial,system-ui; margin:0; background:var(--bg); color:var(--text);}
+    .wrap{max-width:1200px; margin:0 auto; padding:16px;}
+    h1{margin:0; font-size:22px;}
+    .sub{color:var(--muted); margin-top:6px; font-size:13px;}
+    .topbar{display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;}
+    .pill{background:#eef; padding:6px 10px; border-radius:999px; font-size:13px;}
+    .row{display:flex; gap:10px; align-items:center; flex-wrap:wrap;}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:12px;}
+    input,select,button{border:1px solid #ccc; border-radius:12px; padding:10px 12px; font-size:14px;}
+    button{cursor:pointer;}
+    .grid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:12px;}
+    @media (min-width: 960px){ .grid{grid-template-columns: 1.2fr 1fr;} }
+    .scroll{overflow:auto; max-height:70vh;}
+    table{width:100%; border-collapse:collapse;}
+    th,td{padding:8px; border-bottom:1px solid var(--border); text-align:right; white-space:nowrap;}
+    th{position:sticky; top:0; background:#fafafa; z-index:1;}
+    .hl{background:#fff7d6;}
+    .hl2{background:#dff7ff;}
+    .err{background:#ffe3e3; border:1px solid #ffb4b4; padding:10px; border-radius:12px; margin-top:10px;}
+    a{color:#0b57d0; text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .tiny{font-size:12px; color:var(--muted);}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <h1>גליל – לוח משחקים</h1>
+        <div class="sub">
+          הנתונים נטענים מקובץ <code>data.json</code> (מתעדכן ע"י GitHub Actions).
+          בדיקה מקומית: חובה לפתוח דרך שרת (לא file://).
+        </div>
+      </div>
+      <div class="row">
+        <span class="pill">GitHub Pages</span>
+        <button id="reload">רענן</button>
+        <a class="pill" id="dbgLink" href="./debug_endpoints.json" target="_blank">debug_endpoints.json</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <div class="row">
+        <label>בחר מחזור:
+          <select id="roundSelect"></select>
+        </label>
+
+        <label>הדגש קבוצה:
+          <input id="teamFilter" placeholder="לדוגמה: גליל עליון" value="גליל" />
+        </label>
+
+        <label class="tiny">
+          <input type="checkbox" id="onlyTeam" />
+          רק משחקים של הקבוצה
+        </label>
+
+        <span class="pill" id="meta">טוען…</span>
+      </div>
+
+      <div id="errorBox" class="err" style="display:none;"></div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin:0 0 10px 0;">משחקים</h3>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>תאריך</th>
+                <th>בית</th>
+                <th>תוצאה</th>
+                <th>חוץ</th>
+                <th>מיקום</th>
+              </tr>
+            </thead>
+            <tbody id="gamesBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin:0 0 10px 0;">טבלה</h3>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>קבוצה</th>
+                <th>נק׳</th>
+                <th>מש</th>
+                <th>+</th>
+                <th>-</th>
+                <th>הפרש</th>
+              </tr>
+            </thead>
+            <tbody id="standBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  let DATA = null;
+
+  function fmtDate(s){
+    if(!s) return "";
+    try{
+      const d = new Date(s);
+      return d.toLocaleString("he-IL", { weekday:"short", year:"2-digit", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit" });
+    }catch{ return s; }
+  }
+
+  function includesTeam(game, q){
+    if(!q) return false;
+    const t = q.toLowerCase();
+    const h = (game.home?.name || "").toLowerCase();
+    const a = (game.away?.name || "").toLowerCase();
+    return h.includes(t) || a.includes(t);
+  }
+
+  function showError(msg){
+    const box = document.getElementById("errorBox");
+    box.style.display = "block";
+    box.innerHTML = msg;
+  }
+  function hideError(){
+    const box = document.getElementById("errorBox");
+    box.style.display = "none";
+    box.innerHTML = "";
+  }
+
+  async function load(){
+    hideError();
+    try{
+      const r = await fetch("./data.json?ts=" + Date.now());
+      if(!r.ok){
+        const t = await r.text();
+        throw new Error("HTTP " + r.status + " " + r.statusText + "<br><pre style='white-space:pre-wrap'>" + (t.slice(0,400)) + "</pre>");
+      }
+      DATA = await r.json();
+
+      const leagueName = DATA?.league?.name || "ליגה";
+      const fetchedAt = DATA?.fetchedAt || "";
+      const roundsCount = DATA?.rounds?.length || 0;
+      const gamesCount = DATA?.gamesCount || 0;
+      const shift = DATA?.api?.roundNumberShiftApplied ?? DATA?.api?.roundNumberFixApplied ?? 0;
+
+      document.getElementById("meta").textContent =
+        `${leagueName} • מחזורים: ${roundsCount} • משחקים: ${gamesCount} • עודכן: ${fmtDate(fetchedAt)} ${shift ? "• תיקון מחזורים +1" : ""}`;
+
+      const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
+      const sel = document.getElementById("roundSelect");
+      sel.innerHTML = "";
+      for(const rr of rs){
+        const opt = document.createElement("option");
+        opt.value = rr.number;
+        opt.textContent = `מחזור ${rr.number} (${rr.gamesCount || 0})`;
+        sel.appendChild(opt);
+      }
+
+      const cur = DATA?.league?.currentRoundNumber;
+      if(cur) sel.value = String(cur);
+      if(!sel.value && rs.length) sel.value = String(rs[0].number);
+
+      render();
+    }catch(e){
+      showError(
+        `<b>לא הצלחתי לטעון נתונים.</b><br>
+         אם פתחת את הקובץ דרך <code>file://</code> זה לא יעבוד – פתח דרך שרת (GitHub Pages / Live Server).<br><br>
+         שגיאה: <code>${String(e).replaceAll("<","&lt;").replaceAll(">","&gt;")}</code>`
+      );
+      document.getElementById("meta").textContent = "אין נתונים";
+      DATA = null;
+      document.getElementById("roundSelect").innerHTML = "";
+      document.getElementById("gamesBody").innerHTML = "";
+      document.getElementById("standBody").innerHTML = "";
+    }
+  }
+
+  function render(){
+    if(!DATA) return;
+
+    const roundNo = Number(document.getElementById("roundSelect").value);
+    const teamQ = document.getElementById("teamFilter").value.trim();
+    const onlyTeam = document.getElementById("onlyTeam").checked;
+
+    let games = (DATA.games || []).filter(g => (g.round?.number ?? null) === roundNo);
+    games.sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+
+    if(onlyTeam && teamQ) games = games.filter(g => includesTeam(g, teamQ));
+    if(teamQ){
+      games.sort((a,b)=>(includesTeam(b,teamQ)-includesTeam(a,teamQ)) || (a.date||"").localeCompare(b.date||""));
+    }
+
+    const body = document.getElementById("gamesBody");
+    body.innerHTML = "";
+    for(const g of games){
+      const tr = document.createElement("tr");
+      const isTeam = includesTeam(g, teamQ);
+      const score = (g.home?.goals ?? "") + (g.is_finished ? " - " : " vs ") + (g.away?.goals ?? "");
+      tr.innerHTML = `
+        <td>${fmtDate(g.date)}</td>
+        <td>${g.home?.name || ""}</td>
+        <td><b>${score}</b></td>
+        <td>${g.away?.name || ""}</td>
+        <td class="tiny">${g.venue || ""}</td>
+      `;
+      if(isTeam) tr.className = "hl";
+      body.appendChild(tr);
+    }
+
+    const sb = document.getElementById("standBody");
+    sb.innerHTML = "";
+    for(const t of (DATA.standings || [])){
+      const tr = document.createElement("tr");
+      const isTeam = teamQ && (t.name || "").toLowerCase().includes(teamQ.toLowerCase());
+      tr.innerHTML = `
+        <td>${t.rank ?? ""}</td>
+        <td>${t.name ?? ""}</td>
+        <td><b>${t.points ?? ""}</b></td>
+        <td>${t.games ?? ""}</td>
+        <td>${t.gf ?? ""}</td>
+        <td>${t.ga ?? ""}</td>
+        <td>${t.gd ?? ""}</td>
+      `;
+      if(isTeam) tr.className = "hl2";
+      sb.appendChild(tr);
+    }
+  }
+
+  document.getElementById("reload").onclick = load;
+  document.getElementById("roundSelect").onchange = render;
+  document.getElementById("teamFilter").oninput = render;
+  document.getElementById("onlyTeam").onchange = render;
+
+  load();
+</script>
+</body>
+</html>

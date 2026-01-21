@@ -1,0 +1,15 @@
+{
+  "league": {
+    "id": null,
+    "name": "טוען...",
+    "league_id_param": 1276
+  },
+  "fetchedAt": null,
+  "rounds": [],
+  "gamesCount": 0,
+  "games": [],
+  "standings": [],
+  "api": {
+    "roundNumberShiftApplied": 0
+  }
+}
