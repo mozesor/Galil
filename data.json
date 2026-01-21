@@ -7,7 +7,7 @@
     "currentRoundNumber": 12,
     "currentRoundName": "מחזור 11"
   },
-  "fetchedAt": "2026-01-21T19:47:57.607Z",
+  "fetchedAt": "2026-01-21T20:22:13.947Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -214,16 +214,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       },
@@ -383,16 +383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 1
       }
@@ -614,14 +614,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -814,14 +814,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -983,14 +983,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -1164,14 +1164,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -1264,16 +1264,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 1
       },
@@ -1733,16 +1733,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       }
@@ -1764,16 +1764,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       },
@@ -1883,14 +1883,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -2114,16 +2114,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -2164,14 +2164,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -2383,16 +2383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       }
@@ -2433,14 +2433,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -2514,16 +2514,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -2733,14 +2733,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -2933,16 +2933,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 12
       }
@@ -2964,14 +2964,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -3314,16 +3314,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       },
@@ -3614,16 +3614,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 2
       },
@@ -3783,14 +3783,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -3864,18 +3864,18 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adeed7",
@@ -3883,18 +3883,18 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -3964,14 +3964,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -4083,16 +4083,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -4433,16 +4433,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -4514,14 +4514,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -4683,14 +4683,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -4864,16 +4864,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -5033,16 +5033,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -5283,14 +5283,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -5314,14 +5314,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -5633,16 +5633,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -5714,16 +5714,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -6033,14 +6033,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -6114,14 +6114,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -6383,16 +6383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -6464,16 +6464,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -6683,14 +6683,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -6864,14 +6864,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -7033,16 +7033,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -7214,16 +7214,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -7333,14 +7333,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -7633,14 +7633,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -7683,16 +7683,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -7964,16 +7964,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -7983,14 +7983,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -8333,16 +8333,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -8364,14 +8364,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -8633,14 +8633,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -8714,16 +8714,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -8864,6 +8864,19 @@
     },
     {
       "rank": 2,
+      "provider_id": 2679,
+      "name": "הפ' גליל עליון",
+      "games": 12,
+      "wins": 8,
+      "draws": 2,
+      "losses": 2,
+      "gf": 41,
+      "ga": 18,
+      "gd": 23,
+      "points": 26
+    },
+    {
+      "rank": 3,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
       "games": 11,
@@ -8876,7 +8889,7 @@
       "points": 23
     },
     {
-      "rank": 3,
+      "rank": 4,
       "provider_id": 3675,
       "name": "מ.כ. גליל גולן דרום",
       "games": 11,
@@ -8886,19 +8899,6 @@
       "gf": 43,
       "ga": 18,
       "gd": 25,
-      "points": 23
-    },
-    {
-      "rank": 4,
-      "provider_id": 2679,
-      "name": "הפ' גליל עליון",
-      "games": 11,
-      "wins": 7,
-      "draws": 2,
-      "losses": 2,
-      "gf": 40,
-      "ga": 18,
-      "gd": 22,
       "points": 23
     },
     {
@@ -8918,13 +8918,13 @@
       "rank": 6,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
-      "games": 9,
+      "games": 10,
       "wins": 4,
       "draws": 2,
-      "losses": 3,
+      "losses": 4,
       "gf": 48,
-      "ga": 20,
-      "gd": 28,
+      "ga": 21,
+      "gd": 27,
       "points": 14
     },
     {
