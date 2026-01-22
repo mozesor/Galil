@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>גליל – לוח משחקים</title>
+  <title>לוח משחקים • גליל עליון</title>
   <style>
 :root{
   --bg: #0b1020;
@@ -439,20 +439,56 @@ a:hover{text-decoration:underline;}
 .badge.draw{ border-color: rgba(245,158,11,0.35); }
 .sectionTitle{ margin: 14px 0 8px; font-size: 14px; font-weight: 800; }
 .smallTable td, .smallTable th{ white-space: normal; }
+
+/* Professional round bar */
+.controls{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.roundPicker{
+  font-weight:800;
+  color: var(--muted);
+}
+.roundNav{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background: rgba(255,255,255,0.06);
+  border:1px solid var(--border);
+  border-radius: 16px;
+  padding: 10px 12px;
+}
+#roundSelect{
+  min-width: 180px;
+  font-weight:800;
+}
+.iconBtn{
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-weight:900;
+}
+@media (max-width: 720px){
+  .roundNav{ width:100%; justify-content:space-between; }
+  #roundSelect{ flex:1; min-width:0; }
+}
+
 </style>
 </head>
 <body>
   <div class="wrap">
     <div class="topbar"><div class="topbarInner">
       <div>
-        <h1>גליל – לוח משחקים</h1>
-        <div class="sub">לוח משחקים ותוצאות מעודכנים.</div>
+        <h1>לוח משחקים • גליל עליון</h1>
+        <div class="sub">לוח משחקים ותוצאות מעודכנים בליגה — תצוגה מותאמת למובייל.</div>
       </div>
 </div></div>
 
     <div class="card" style="margin-top:12px;">
       <div class="controls">
-        <label class="roundPicker">מחזור:
+        <label class="roundPicker">בחירת מחזור:
   <div class="roundNav">
     <button type="button" id="roundPrev" class="iconBtn" aria-label="מחזור קודם">‹</button>
     <select id="roundSelect"></select>
@@ -464,6 +500,8 @@ a:hover{text-decoration:underline;}
         <input type="checkbox" id="onlyTeam" checked style="display:none" />
 <button id="reload" class="iconBtn" type="button" aria-label="רענון">↻</button>
       </div>
+      <div class="sub" style="margin-top:6px; color:var(--muted); font-size:13px;">מציג את כל משחקי המחזור. משחקי גליל מסומנים להבלטה ובלחיצה על קבוצה תקבל/י היסטוריה מולה מול גליל.</div>
+
 
       <div id="errorBox" class="err" style="display:none;"></div>
     </div>
@@ -603,23 +641,25 @@ a:hover{text-decoration:underline;}
   }
   function escapeAttr(s){ return esc(s).replaceAll("`","&#96;"); }
 
-  function buildOpponentLocation(g, teamQ){
-    const venue = g?.venue || "";
-    const q = (teamQ || "").trim().toLowerCase();
-    if(!q) return venue;
+  function buildOpponentLocation(g, focusTeamQ){
+    // עמודת "אצל מי" — ברירת מחדל: הקבוצה המארחת (בית)
     const h = (g.home?.name || "");
     const a = (g.away?.name || "");
-    const hl = h.toLowerCase();
-    const al = a.toLowerCase();
+    const q = (focusTeamQ || "").trim();
+    if(!q) return h || (g?.venue || "");
 
-    if(hl.includes(q) && a){
+    // אם המשחק כולל את גליל — נציג את היריבה בצורה ידידותית
+    if(matchTeamName(h, q) && a){
       return `בית מול ${a}`;
     }
-    if(al.includes(q) && h){
+    if(matchTeamName(a, q) && h){
       return `חוץ אצל ${h}`;
     }
-    return venue;
+
+    // משחקים אחרים בליגה: "אצל מי" = הקבוצה בבית
+    return h || (g?.venue || "");
   }
+
 
   function teamOutcomeFor(g, teamQ){
     const q = (teamQ || "").trim().toLowerCase();
@@ -813,15 +853,8 @@ DATA = null;
 
     const roundNo = Number(document.getElementById("roundSelect").value);
     const teamQ = document.getElementById("teamFilter").value.trim();
-    const onlyTeam = document.getElementById("onlyTeam").checked;
-
-    let games = (DATA.games || []).filter(g => (g.round?.number ?? null) === roundNo);
+        let games = (DATA.games || []).filter(g => (g.round?.number ?? null) === roundNo);
     games.sort((a,b)=>(a.date||"").localeCompare(b.date||""));
-
-    if(onlyTeam && teamQ) games = games.filter(g => includesTeam(g, teamQ));
-    if(teamQ){
-      games.sort((a,b)=>(includesTeam(b,teamQ)-includesTeam(a,teamQ)) || (a.date||"").localeCompare(b.date||""));
-    }
 
     const body = document.getElementById("gamesBody");
     body.innerHTML = "";
