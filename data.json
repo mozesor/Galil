@@ -7,140 +7,346 @@
     "currentRoundNumber": 11,
     "currentRoundName": "מחזור 11"
   },
-  "fetchedAt": "2026-01-21T13:17:42.298Z",
+  "fetchedAt": "2026-01-22T16:49:32.613Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
-    "roundParamDetected": "round"
+    "roundParamDetected": "round",
+    "roundNumberFixApplied": 1
   },
   "rounds": [
     {
       "number": 1,
-      "name": "מחזור 2",
+      "name": "מחזור 1",
       "gamesCount": 7
     },
     {
       "number": 2,
-      "name": "מחזור 3",
+      "name": "מחזור 2",
       "gamesCount": 7
     },
     {
       "number": 3,
-      "name": "מחזור 4",
+      "name": "מחזור 3",
       "gamesCount": 7
     },
     {
       "number": 4,
-      "name": "מחזור 5",
+      "name": "מחזור 4",
       "gamesCount": 7
     },
     {
       "number": 5,
-      "name": "מחזור 6",
+      "name": "מחזור 5",
       "gamesCount": 7
     },
     {
       "number": 6,
+      "name": "מחזור 6",
+      "gamesCount": 7
+    },
+    {
+      "number": 7,
       "name": "מחזור 7",
       "gamesCount": 5
     },
     {
-      "number": 7,
+      "number": 8,
       "name": "מחזור 8",
       "gamesCount": 7
     },
     {
-      "number": 8,
+      "number": 9,
       "name": "מחזור 9",
       "gamesCount": 5
     },
     {
-      "number": 9,
+      "number": 10,
       "name": "מחזור 10",
       "gamesCount": 6
     },
     {
-      "number": 10,
+      "number": 11,
       "name": "מחזור 11",
       "gamesCount": 4
     },
     {
-      "number": 11,
+      "number": 12,
       "name": "מחזור 12",
       "gamesCount": 7
     },
     {
-      "number": 12,
+      "number": 13,
       "name": "מחזור 13",
       "gamesCount": 7
     },
     {
-      "number": 13,
+      "number": 14,
       "name": "מחזור 14",
       "gamesCount": 7
     },
     {
-      "number": 14,
+      "number": 15,
       "name": "מחזור 15",
       "gamesCount": 7
     },
     {
-      "number": 15,
+      "number": 16,
       "name": "מחזור 16",
       "gamesCount": 7
     },
     {
-      "number": 16,
+      "number": 17,
       "name": "מחזור 17",
       "gamesCount": 7
     },
     {
-      "number": 17,
+      "number": 18,
       "name": "מחזור 18",
       "gamesCount": 7
     },
     {
-      "number": 18,
+      "number": 19,
       "name": "מחזור 19",
       "gamesCount": 7
     },
     {
-      "number": 19,
+      "number": 20,
       "name": "מחזור 20",
       "gamesCount": 7
     },
     {
-      "number": 20,
+      "number": 21,
       "name": "מחזור 21",
       "gamesCount": 7
     },
     {
-      "number": 21,
+      "number": 22,
       "name": "מחזור 22",
       "gamesCount": 7
     },
     {
-      "number": 22,
+      "number": 23,
       "name": "מחזור 23",
       "gamesCount": 7
     },
     {
-      "number": 23,
+      "number": 24,
       "name": "מחזור 24",
       "gamesCount": 7
     },
     {
-      "number": 24,
+      "number": 25,
       "name": "מחזור 25",
       "gamesCount": 7
     },
     {
-      "number": 25,
+      "number": 26,
       "name": "מחזור 26",
       "gamesCount": 7
     }
   ],
-  "gamesCount": 167,
+  "gamesCount": 174,
   "games": [
+    {
+      "id": "68e09eac1b7b720e58c00ffc",
+      "provider_id": 1098549,
+      "date": "2025-10-08T10:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 4,
+          "draws": 2,
+          "losses": 6,
+          "goals": {
+            "for": 30,
+            "against": 25,
+            "difference": 5
+          },
+          "points": 14
+        },
+        "goals": 1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeebc",
+        "provider_id": 6897,
+        "name": "מ.ס. חיפה רובי שפירא",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 9,
+          "draws": 2,
+          "losses": 1,
+          "goals": {
+            "for": 50,
+            "against": 18,
+            "difference": 32
+          },
+          "points": 29
+        },
+        "goals": 3
+      }
+    },
+    {
+      "id": "68e09eac1b7b720e58c01001",
+      "provider_id": 1098551,
+      "date": "2025-10-08T10:50:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 8,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 41,
+            "against": 18,
+            "difference": 23
+          },
+          "points": 26
+        },
+        "goals": 3
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 9,
+          "wins": 5,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 36,
+            "against": 22,
+            "difference": 14
+          },
+          "points": 17
+        },
+        "goals": 3
+      }
+    },
+    {
+      "id": "68e09eac1b7b720e58c01006",
+      "provider_id": 1098555,
+      "date": "2025-10-08T11:30:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 0,
+          "draws": 0,
+          "losses": 11,
+          "goals": {
+            "for": 5,
+            "against": 137,
+            "difference": -132
+          },
+          "points": 0
+        },
+        "goals": 0
+      },
+      "away": {
+        "id": "68d612211b7b720e58adefaf",
+        "provider_id": 8303,
+        "name": "מ.ע.קרית אתא 3",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 4,
+          "draws": 1,
+          "losses": 6,
+          "goals": {
+            "for": 33,
+            "against": 41,
+            "difference": -8
+          },
+          "points": 13
+        },
+        "goals": 10
+      }
+    },
+    {
+      "id": "68e09eac1b7b720e58c01003",
+      "provider_id": 1098553,
+      "date": "2025-10-08T16:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeec5",
+        "provider_id": 2157,
+        "name": "הפועל חיפה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 3,
+          "draws": 1,
+          "losses": 6,
+          "goals": {
+            "for": 24,
+            "against": 38,
+            "difference": -14
+          },
+          "points": 10
+        },
+        "goals": 6
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 4,
+          "draws": 1,
+          "losses": 5,
+          "goals": {
+            "for": 27,
+            "against": 24,
+            "difference": 3
+          },
+          "points": 13
+        },
+        "goals": 2
+      }
+    },
     {
       "id": "68e09eac1b7b720e58c0100e",
       "provider_id": 1098561,
@@ -148,7 +354,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 2",
-        "number": 1,
+        "number": 2,
         "type": "regular"
       },
       "venue": null,
@@ -177,16 +383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 1
       }
@@ -198,7 +404,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 2",
-        "number": 1,
+        "number": 2,
         "type": "regular"
       },
       "venue": null,
@@ -248,7 +454,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 2",
-        "number": 1,
+        "number": 2,
         "type": "regular"
       },
       "venue": null,
@@ -298,7 +504,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 2",
-        "number": 1,
+        "number": 2,
         "type": "regular"
       },
       "venue": null,
@@ -342,13 +548,63 @@
       }
     },
     {
+      "id": "68e09eac1b7b720e58c00ffe",
+      "provider_id": 1098550,
+      "date": "2025-10-12T07:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef64",
+        "provider_id": 2411,
+        "name": "מרכז קהילתי גולן קצרין",
+        "has_logo": true,
+        "stats": {
+          "games": 9,
+          "wins": 3,
+          "draws": 1,
+          "losses": 5,
+          "goals": {
+            "for": 39,
+            "against": 42,
+            "difference": -3
+          },
+          "points": 10
+        },
+        "goals": 5
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef2e",
+        "provider_id": 3675,
+        "name": "מ.כ. גליל גולן דרום",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 7,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 43,
+            "against": 18,
+            "difference": 25
+          },
+          "points": 23
+        },
+        "goals": 8
+      }
+    },
+    {
       "id": "68e09eac1b7b720e58c01008",
       "provider_id": 1098557,
       "date": "2025-10-12T15:45:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 2",
-        "number": 1,
+        "number": 2,
         "type": "regular"
       },
       "venue": null,
@@ -358,14 +614,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -398,7 +654,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 2",
-        "number": 1,
+        "number": 2,
         "type": "regular"
       },
       "venue": null,
@@ -448,7 +704,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 2",
-        "number": 1,
+        "number": 2,
         "type": "regular"
       },
       "venue": null,
@@ -498,7 +754,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 3",
-        "number": 2,
+        "number": 3,
         "type": "regular"
       },
       "venue": null,
@@ -548,7 +804,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 3",
-        "number": 2,
+        "number": 3,
         "type": "regular"
       },
       "venue": null,
@@ -558,14 +814,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -598,7 +854,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 3",
-        "number": 2,
+        "number": 3,
         "type": "regular"
       },
       "venue": null,
@@ -648,7 +904,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 3",
-        "number": 2,
+        "number": 3,
         "type": "regular"
       },
       "venue": null,
@@ -692,13 +948,63 @@
       }
     },
     {
+      "id": "68e09eac1b7b720e58c01004",
+      "provider_id": 1098554,
+      "date": "2025-10-22T14:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 2,
+          "draws": 1,
+          "losses": 7,
+          "goals": {
+            "for": 14,
+            "against": 29,
+            "difference": -15
+          },
+          "points": 7
+        },
+        "goals": 0
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 4,
+          "draws": 2,
+          "losses": 4,
+          "goals": {
+            "for": 48,
+            "against": 21,
+            "difference": 27
+          },
+          "points": 14
+        },
+        "goals": 6
+      }
+    },
+    {
       "id": "68e09eac1b7b720e58c01019",
       "provider_id": 1098568,
       "date": "2025-10-24T09:00:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 3",
-        "number": 2,
+        "number": 3,
         "type": "regular"
       },
       "venue": null,
@@ -748,7 +1054,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 3",
-        "number": 2,
+        "number": 3,
         "type": "regular"
       },
       "venue": null,
@@ -792,13 +1098,63 @@
       }
     },
     {
+      "id": "68e09eac1b7b720e58c01002",
+      "provider_id": 1098552,
+      "date": "2025-10-27T14:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 7,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 61,
+            "against": 29,
+            "difference": 32
+          },
+          "points": 23
+        },
+        "goals": 4
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 3,
+          "draws": 3,
+          "losses": 4,
+          "goals": {
+            "for": 32,
+            "against": 21,
+            "difference": 11
+          },
+          "points": 12
+        },
+        "goals": 0
+      }
+    },
+    {
       "id": "68e09eac1b7b720e58c0102e",
       "provider_id": 1098583,
       "date": "2025-10-28T16:15:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 5",
-        "number": 4,
+        "number": 5,
         "type": "regular"
       },
       "venue": null,
@@ -808,14 +1164,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -848,7 +1204,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 4",
-        "number": 3,
+        "number": 4,
         "type": "regular"
       },
       "venue": null,
@@ -898,7 +1254,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 4",
-        "number": 3,
+        "number": 4,
         "type": "regular"
       },
       "venue": null,
@@ -908,16 +1264,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 1
       },
@@ -948,7 +1304,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 4",
-        "number": 3,
+        "number": 4,
         "type": "regular"
       },
       "venue": null,
@@ -998,7 +1354,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 4",
-        "number": 3,
+        "number": 4,
         "type": "regular"
       },
       "venue": null,
@@ -1048,7 +1404,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 4",
-        "number": 3,
+        "number": 4,
         "type": "regular"
       },
       "venue": null,
@@ -1098,7 +1454,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 4",
-        "number": 3,
+        "number": 4,
         "type": "regular"
       },
       "venue": null,
@@ -1148,7 +1504,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 5",
-        "number": 4,
+        "number": 5,
         "type": "regular"
       },
       "venue": null,
@@ -1198,7 +1554,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 5",
-        "number": 4,
+        "number": 5,
         "type": "regular"
       },
       "venue": null,
@@ -1248,7 +1604,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 5",
-        "number": 4,
+        "number": 5,
         "type": "regular"
       },
       "venue": null,
@@ -1298,7 +1654,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 5",
-        "number": 4,
+        "number": 5,
         "type": "regular"
       },
       "venue": null,
@@ -1348,7 +1704,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 5",
-        "number": 4,
+        "number": 5,
         "type": "regular"
       },
       "venue": null,
@@ -1377,16 +1733,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       }
@@ -1398,7 +1754,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 3",
-        "number": 2,
+        "number": 3,
         "type": "regular"
       },
       "venue": null,
@@ -1408,16 +1764,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       },
@@ -1448,7 +1804,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 5",
-        "number": 4,
+        "number": 5,
         "type": "regular"
       },
       "venue": null,
@@ -1498,7 +1854,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 4",
-        "number": 3,
+        "number": 4,
         "type": "regular"
       },
       "venue": null,
@@ -1527,14 +1883,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -1548,7 +1904,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 6",
-        "number": 5,
+        "number": 6,
         "type": "regular"
       },
       "venue": null,
@@ -1598,7 +1954,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 6",
-        "number": 5,
+        "number": 6,
         "type": "regular"
       },
       "venue": null,
@@ -1648,7 +2004,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 6",
-        "number": 5,
+        "number": 6,
         "type": "regular"
       },
       "venue": null,
@@ -1698,7 +2054,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 6",
-        "number": 5,
+        "number": 6,
         "type": "regular"
       },
       "venue": null,
@@ -1748,7 +2104,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 6",
-        "number": 5,
+        "number": 6,
         "type": "regular"
       },
       "venue": null,
@@ -1758,16 +2114,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -1798,7 +2154,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 7",
-        "number": 6,
+        "number": 7,
         "type": "regular"
       },
       "venue": null,
@@ -1808,14 +2164,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -1848,7 +2204,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 7",
-        "number": 6,
+        "number": 7,
         "type": "regular"
       },
       "venue": null,
@@ -1898,7 +2254,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 7",
-        "number": 6,
+        "number": 7,
         "type": "regular"
       },
       "venue": null,
@@ -1948,7 +2304,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 7",
-        "number": 6,
+        "number": 7,
         "type": "regular"
       },
       "venue": null,
@@ -1998,7 +2354,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 7",
-        "number": 6,
+        "number": 7,
         "type": "regular"
       },
       "venue": null,
@@ -2027,16 +2383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       }
@@ -2048,7 +2404,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 6",
-        "number": 5,
+        "number": 6,
         "type": "regular"
       },
       "venue": null,
@@ -2077,14 +2433,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -2098,7 +2454,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 8",
-        "number": 7,
+        "number": 8,
         "type": "regular"
       },
       "venue": null,
@@ -2148,7 +2504,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 8",
-        "number": 7,
+        "number": 8,
         "type": "regular"
       },
       "venue": null,
@@ -2158,16 +2514,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -2198,7 +2554,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 8",
-        "number": 7,
+        "number": 8,
         "type": "regular"
       },
       "venue": null,
@@ -2248,7 +2604,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 8",
-        "number": 7,
+        "number": 8,
         "type": "regular"
       },
       "venue": null,
@@ -2298,7 +2654,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 8",
-        "number": 7,
+        "number": 8,
         "type": "regular"
       },
       "venue": null,
@@ -2348,7 +2704,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 8",
-        "number": 7,
+        "number": 8,
         "type": "regular"
       },
       "venue": null,
@@ -2377,14 +2733,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -2398,7 +2754,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 9",
-        "number": 8,
+        "number": 9,
         "type": "regular"
       },
       "venue": null,
@@ -2448,7 +2804,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 6",
-        "number": 5,
+        "number": 6,
         "type": "regular"
       },
       "venue": null,
@@ -2498,7 +2854,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 8",
-        "number": 7,
+        "number": 8,
         "type": "regular"
       },
       "venue": null,
@@ -2548,7 +2904,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 9",
-        "number": 8,
+        "number": 9,
         "type": "regular"
       },
       "venue": null,
@@ -2577,16 +2933,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 12
       }
@@ -2598,7 +2954,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 9",
-        "number": 8,
+        "number": 9,
         "type": "regular"
       },
       "venue": null,
@@ -2608,14 +2964,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -2648,7 +3004,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 9",
-        "number": 8,
+        "number": 9,
         "type": "regular"
       },
       "venue": null,
@@ -2698,7 +3054,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 9",
-        "number": 8,
+        "number": 9,
         "type": "regular"
       },
       "venue": null,
@@ -2748,7 +3104,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 10",
-        "number": 9,
+        "number": 10,
         "type": "regular"
       },
       "venue": null,
@@ -2798,7 +3154,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 10",
-        "number": 9,
+        "number": 10,
         "type": "regular"
       },
       "venue": null,
@@ -2848,7 +3204,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 10",
-        "number": 9,
+        "number": 10,
         "type": "regular"
       },
       "venue": null,
@@ -2898,7 +3254,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 10",
-        "number": 9,
+        "number": 10,
         "type": "regular"
       },
       "venue": null,
@@ -2948,7 +3304,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 10",
-        "number": 9,
+        "number": 10,
         "type": "regular"
       },
       "venue": null,
@@ -2958,16 +3314,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       },
@@ -2998,7 +3354,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 10",
-        "number": 9,
+        "number": 10,
         "type": "regular"
       },
       "venue": null,
@@ -3048,7 +3404,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 11",
-        "number": 10,
+        "number": 11,
         "type": "regular"
       },
       "venue": null,
@@ -3098,7 +3454,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 11",
-        "number": 10,
+        "number": 11,
         "type": "regular"
       },
       "venue": null,
@@ -3148,7 +3504,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 11",
-        "number": 10,
+        "number": 11,
         "type": "regular"
       },
       "venue": null,
@@ -3198,7 +3554,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 12",
-        "number": 11,
+        "number": 12,
         "type": "regular"
       },
       "venue": null,
@@ -3248,7 +3604,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 12",
-        "number": 11,
+        "number": 12,
         "type": "regular"
       },
       "venue": null,
@@ -3258,16 +3614,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": 2
       },
@@ -3298,7 +3654,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 12",
-        "number": 11,
+        "number": 12,
         "type": "regular"
       },
       "venue": null,
@@ -3348,7 +3704,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 12",
-        "number": 11,
+        "number": 12,
         "type": "regular"
       },
       "venue": null,
@@ -3398,7 +3754,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 12",
-        "number": 11,
+        "number": 12,
         "type": "regular"
       },
       "venue": null,
@@ -3427,14 +3783,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -3448,7 +3804,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 12",
-        "number": 11,
+        "number": 12,
         "type": "regular"
       },
       "venue": null,
@@ -3493,12 +3849,12 @@
     },
     {
       "id": "68e09eac1b7b720e58c01065",
-      "provider_id": -1,
+      "provider_id": 1098622,
       "date": "2026-01-21T16:45:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 11",
-        "number": 10,
+        "number": 11,
         "type": "regular"
       },
       "venue": null,
@@ -3508,18 +3864,18 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adeed7",
@@ -3527,18 +3883,18 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -3548,7 +3904,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 13",
-        "number": 12,
+        "number": 13,
         "type": "regular"
       },
       "venue": null,
@@ -3598,7 +3954,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 13",
-        "number": 12,
+        "number": 13,
         "type": "regular"
       },
       "venue": null,
@@ -3608,14 +3964,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -3642,163 +3998,13 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c01076",
-      "provider_id": -1,
-      "date": "2026-01-23T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 13",
-        "number": 12,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adefaf",
-        "provider_id": 8303,
-        "name": "מ.ע.קרית אתא 3",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 4,
-          "draws": 1,
-          "losses": 6,
-          "goals": {
-            "for": 33,
-            "against": 41,
-            "difference": -8
-          },
-          "points": 13
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef9d",
-        "provider_id": 6331,
-        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 10,
-          "wins": 2,
-          "draws": 1,
-          "losses": 7,
-          "goals": {
-            "for": 14,
-            "against": 29,
-            "difference": -15
-          },
-          "points": 7
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c0107a",
-      "provider_id": -1,
-      "date": "2026-01-23T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 13",
-        "number": 12,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee74",
-        "provider_id": 7471,
-        "name": "מכבי צור שלום ק. ביאליק 2",
-        "has_logo": true,
-        "stats": {
-          "games": 10,
-          "wins": 3,
-          "draws": 3,
-          "losses": 4,
-          "goals": {
-            "for": 32,
-            "against": 21,
-            "difference": 11
-          },
-          "points": 12
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeed7",
-        "provider_id": 2679,
-        "name": "הפ' גליל עליון",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 7,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 40,
-            "against": 18,
-            "difference": 22
-          },
-          "points": 23
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c0107e",
-      "provider_id": -1,
-      "date": "2026-01-25T15:15:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 13",
-        "number": 12,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef2e",
-        "provider_id": 3675,
-        "name": "מ.כ. גליל גולן דרום",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 7,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
-          },
-          "points": 23
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeebc",
-        "provider_id": 6897,
-        "name": "מ.ס. חיפה רובי שפירא",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 9,
-          "draws": 2,
-          "losses": 1,
-          "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
-          },
-          "points": 29
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c01086",
       "provider_id": -1,
       "date": "2026-01-26T16:45:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 14",
-        "number": 13,
+        "number": 14,
         "type": "regular"
       },
       "venue": null,
@@ -3842,13 +4048,63 @@
       }
     },
     {
+      "id": "68e09ead1b7b720e58c0107a",
+      "provider_id": -1,
+      "date": "2026-01-27T17:30:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 3,
+          "draws": 3,
+          "losses": 4,
+          "goals": {
+            "for": 32,
+            "against": 21,
+            "difference": 11
+          },
+          "points": 12
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 8,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 41,
+            "against": 18,
+            "difference": 23
+          },
+          "points": 26
+        },
+        "goals": -1
+      }
+    },
+    {
       "id": "68e09eac1b7b720e58c01073",
       "provider_id": -1,
       "date": "2026-01-28T13:00:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 12",
-        "number": 11,
+        "number": 12,
         "type": "regular"
       },
       "venue": null,
@@ -3898,7 +4154,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 13",
-        "number": 12,
+        "number": 13,
         "type": "regular"
       },
       "venue": null,
@@ -3948,7 +4204,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 14",
-        "number": 13,
+        "number": 14,
         "type": "regular"
       },
       "venue": null,
@@ -3998,7 +4254,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 14",
-        "number": 13,
+        "number": 14,
         "type": "regular"
       },
       "venue": null,
@@ -4048,7 +4304,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 14",
-        "number": 13,
+        "number": 14,
         "type": "regular"
       },
       "venue": null,
@@ -4077,16 +4333,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -4098,7 +4354,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 14",
-        "number": 13,
+        "number": 14,
         "type": "regular"
       },
       "venue": null,
@@ -4148,7 +4404,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 14",
-        "number": 13,
+        "number": 14,
         "type": "regular"
       },
       "venue": null,
@@ -4158,14 +4414,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -4198,7 +4454,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 14",
-        "number": 13,
+        "number": 14,
         "type": "regular"
       },
       "venue": null,
@@ -4242,13 +4498,63 @@
       }
     },
     {
+      "id": "68e09ead1b7b720e58c0107e",
+      "provider_id": -1,
+      "date": "2026-02-04T15:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef2e",
+        "provider_id": 3675,
+        "name": "מ.כ. גליל גולן דרום",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 7,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 43,
+            "against": 18,
+            "difference": 25
+          },
+          "points": 23
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeebc",
+        "provider_id": 6897,
+        "name": "מ.ס. חיפה רובי שפירא",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 9,
+          "draws": 2,
+          "losses": 1,
+          "goals": {
+            "for": 50,
+            "against": 18,
+            "difference": 32
+          },
+          "points": 29
+        },
+        "goals": -1
+      }
+    },
+    {
       "id": "68e09ead1b7b720e58c01089",
       "provider_id": -1,
       "date": "2026-02-06T22:00:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 15",
-        "number": 14,
+        "number": 15,
         "type": "regular"
       },
       "venue": null,
@@ -4298,7 +4604,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 15",
-        "number": 14,
+        "number": 15,
         "type": "regular"
       },
       "venue": null,
@@ -4327,14 +4633,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -4348,7 +4654,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 15",
-        "number": 14,
+        "number": 15,
         "type": "regular"
       },
       "venue": null,
@@ -4398,7 +4704,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 15",
-        "number": 14,
+        "number": 15,
         "type": "regular"
       },
       "venue": null,
@@ -4448,7 +4754,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 15",
-        "number": 14,
+        "number": 15,
         "type": "regular"
       },
       "venue": null,
@@ -4498,7 +4804,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 15",
-        "number": 14,
+        "number": 15,
         "type": "regular"
       },
       "venue": null,
@@ -4508,16 +4814,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -4548,7 +4854,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 15",
-        "number": 14,
+        "number": 15,
         "type": "regular"
       },
       "venue": null,
@@ -4598,7 +4904,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 16",
-        "number": 15,
+        "number": 16,
         "type": "regular"
       },
       "venue": null,
@@ -4648,7 +4954,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 16",
-        "number": 15,
+        "number": 16,
         "type": "regular"
       },
       "venue": null,
@@ -4677,16 +4983,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -4698,7 +5004,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 16",
-        "number": 15,
+        "number": 16,
         "type": "regular"
       },
       "venue": null,
@@ -4748,7 +5054,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 16",
-        "number": 15,
+        "number": 16,
         "type": "regular"
       },
       "venue": null,
@@ -4798,7 +5104,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 16",
-        "number": 15,
+        "number": 16,
         "type": "regular"
       },
       "venue": null,
@@ -4848,7 +5154,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 16",
-        "number": 15,
+        "number": 16,
         "type": "regular"
       },
       "venue": null,
@@ -4898,7 +5204,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 16",
-        "number": 15,
+        "number": 16,
         "type": "regular"
       },
       "venue": null,
@@ -4927,14 +5233,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -4948,7 +5254,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 17",
-        "number": 16,
+        "number": 17,
         "type": "regular"
       },
       "venue": null,
@@ -4958,14 +5264,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -4998,7 +5304,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 17",
-        "number": 16,
+        "number": 17,
         "type": "regular"
       },
       "venue": null,
@@ -5048,7 +5354,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 17",
-        "number": 16,
+        "number": 17,
         "type": "regular"
       },
       "venue": null,
@@ -5098,7 +5404,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 17",
-        "number": 16,
+        "number": 17,
         "type": "regular"
       },
       "venue": null,
@@ -5148,7 +5454,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 17",
-        "number": 16,
+        "number": 17,
         "type": "regular"
       },
       "venue": null,
@@ -5198,7 +5504,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 17",
-        "number": 16,
+        "number": 17,
         "type": "regular"
       },
       "venue": null,
@@ -5248,7 +5554,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 17",
-        "number": 16,
+        "number": 17,
         "type": "regular"
       },
       "venue": null,
@@ -5277,16 +5583,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -5298,7 +5604,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 13",
-        "number": 12,
+        "number": 13,
         "type": "regular"
       },
       "venue": null,
@@ -5348,7 +5654,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 18",
-        "number": 17,
+        "number": 18,
         "type": "regular"
       },
       "venue": null,
@@ -5358,16 +5664,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -5398,7 +5704,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 18",
-        "number": 17,
+        "number": 18,
         "type": "regular"
       },
       "venue": null,
@@ -5448,7 +5754,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 18",
-        "number": 17,
+        "number": 18,
         "type": "regular"
       },
       "venue": null,
@@ -5498,7 +5804,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 18",
-        "number": 17,
+        "number": 18,
         "type": "regular"
       },
       "venue": null,
@@ -5548,7 +5854,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 18",
-        "number": 17,
+        "number": 18,
         "type": "regular"
       },
       "venue": null,
@@ -5598,7 +5904,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 18",
-        "number": 17,
+        "number": 18,
         "type": "regular"
       },
       "venue": null,
@@ -5648,7 +5954,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 18",
-        "number": 17,
+        "number": 18,
         "type": "regular"
       },
       "venue": null,
@@ -5677,16 +5983,66 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c01076",
+      "provider_id": -1,
+      "date": "2026-03-06T12:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adefaf",
+        "provider_id": 8303,
+        "name": "מ.ע.קרית אתא 3",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 4,
+          "draws": 1,
+          "losses": 6,
+          "goals": {
+            "for": 33,
+            "against": 41,
+            "difference": -8
+          },
+          "points": 13
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 2,
+          "draws": 1,
+          "losses": 7,
+          "goals": {
+            "for": 14,
+            "against": 29,
+            "difference": -15
+          },
+          "points": 7
         },
         "goals": -1
       }
@@ -5698,7 +6054,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 19",
-        "number": 18,
+        "number": 19,
         "type": "regular"
       },
       "venue": null,
@@ -5748,7 +6104,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 19",
-        "number": 18,
+        "number": 19,
         "type": "regular"
       },
       "venue": null,
@@ -5758,14 +6114,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -5798,7 +6154,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 19",
-        "number": 18,
+        "number": 19,
         "type": "regular"
       },
       "venue": null,
@@ -5848,7 +6204,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 19",
-        "number": 18,
+        "number": 19,
         "type": "regular"
       },
       "venue": null,
@@ -5898,7 +6254,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 19",
-        "number": 18,
+        "number": 19,
         "type": "regular"
       },
       "venue": null,
@@ -5948,7 +6304,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 19",
-        "number": 18,
+        "number": 19,
         "type": "regular"
       },
       "venue": null,
@@ -5998,7 +6354,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 19",
-        "number": 18,
+        "number": 19,
         "type": "regular"
       },
       "venue": null,
@@ -6027,16 +6383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -6048,7 +6404,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 20",
-        "number": 19,
+        "number": 20,
         "type": "regular"
       },
       "venue": null,
@@ -6098,7 +6454,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 20",
-        "number": 19,
+        "number": 20,
         "type": "regular"
       },
       "venue": null,
@@ -6108,16 +6464,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -6148,7 +6504,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 20",
-        "number": 19,
+        "number": 20,
         "type": "regular"
       },
       "venue": null,
@@ -6198,7 +6554,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 20",
-        "number": 19,
+        "number": 20,
         "type": "regular"
       },
       "venue": null,
@@ -6248,7 +6604,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 20",
-        "number": 19,
+        "number": 20,
         "type": "regular"
       },
       "venue": null,
@@ -6298,7 +6654,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 20",
-        "number": 19,
+        "number": 20,
         "type": "regular"
       },
       "venue": null,
@@ -6327,14 +6683,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -6348,7 +6704,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 20",
-        "number": 19,
+        "number": 20,
         "type": "regular"
       },
       "venue": null,
@@ -6398,7 +6754,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 21",
-        "number": 20,
+        "number": 21,
         "type": "regular"
       },
       "venue": null,
@@ -6448,7 +6804,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 21",
-        "number": 20,
+        "number": 21,
         "type": "regular"
       },
       "venue": null,
@@ -6498,7 +6854,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 21",
-        "number": 20,
+        "number": 21,
         "type": "regular"
       },
       "venue": null,
@@ -6508,14 +6864,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -6548,7 +6904,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 21",
-        "number": 20,
+        "number": 21,
         "type": "regular"
       },
       "venue": null,
@@ -6598,7 +6954,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 21",
-        "number": 20,
+        "number": 21,
         "type": "regular"
       },
       "venue": null,
@@ -6648,7 +7004,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 21",
-        "number": 20,
+        "number": 21,
         "type": "regular"
       },
       "venue": null,
@@ -6677,16 +7033,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -6698,7 +7054,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 21",
-        "number": 20,
+        "number": 21,
         "type": "regular"
       },
       "venue": null,
@@ -6748,7 +7104,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 22",
-        "number": 21,
+        "number": 22,
         "type": "regular"
       },
       "venue": null,
@@ -6798,7 +7154,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 22",
-        "number": 21,
+        "number": 22,
         "type": "regular"
       },
       "venue": null,
@@ -6848,7 +7204,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 22",
-        "number": 21,
+        "number": 22,
         "type": "regular"
       },
       "venue": null,
@@ -6858,16 +7214,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -6898,7 +7254,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 22",
-        "number": 21,
+        "number": 22,
         "type": "regular"
       },
       "venue": null,
@@ -6948,7 +7304,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 22",
-        "number": 21,
+        "number": 22,
         "type": "regular"
       },
       "venue": null,
@@ -6977,14 +7333,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -6998,7 +7354,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 22",
-        "number": 21,
+        "number": 22,
         "type": "regular"
       },
       "venue": null,
@@ -7048,7 +7404,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 22",
-        "number": 21,
+        "number": 22,
         "type": "regular"
       },
       "venue": null,
@@ -7098,7 +7454,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 23",
-        "number": 22,
+        "number": 23,
         "type": "regular"
       },
       "venue": null,
@@ -7148,7 +7504,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 23",
-        "number": 22,
+        "number": 23,
         "type": "regular"
       },
       "venue": null,
@@ -7198,7 +7554,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 23",
-        "number": 22,
+        "number": 23,
         "type": "regular"
       },
       "venue": null,
@@ -7248,7 +7604,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 23",
-        "number": 22,
+        "number": 23,
         "type": "regular"
       },
       "venue": null,
@@ -7277,14 +7633,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -7298,7 +7654,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 23",
-        "number": 22,
+        "number": 23,
         "type": "regular"
       },
       "venue": null,
@@ -7327,16 +7683,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -7348,7 +7704,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 23",
-        "number": 22,
+        "number": 23,
         "type": "regular"
       },
       "venue": null,
@@ -7398,7 +7754,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 23",
-        "number": 22,
+        "number": 23,
         "type": "regular"
       },
       "venue": null,
@@ -7448,7 +7804,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 24",
-        "number": 23,
+        "number": 24,
         "type": "regular"
       },
       "venue": null,
@@ -7498,7 +7854,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 24",
-        "number": 23,
+        "number": 24,
         "type": "regular"
       },
       "venue": null,
@@ -7548,7 +7904,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 24",
-        "number": 23,
+        "number": 24,
         "type": "regular"
       },
       "venue": null,
@@ -7598,7 +7954,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 24",
-        "number": 23,
+        "number": 24,
         "type": "regular"
       },
       "venue": null,
@@ -7608,16 +7964,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -7627,14 +7983,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -7648,7 +8004,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 24",
-        "number": 23,
+        "number": 24,
         "type": "regular"
       },
       "venue": null,
@@ -7698,7 +8054,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 24",
-        "number": 23,
+        "number": 24,
         "type": "regular"
       },
       "venue": null,
@@ -7748,7 +8104,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 24",
-        "number": 23,
+        "number": 24,
         "type": "regular"
       },
       "venue": null,
@@ -7798,7 +8154,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 25",
-        "number": 24,
+        "number": 25,
         "type": "regular"
       },
       "venue": null,
@@ -7848,7 +8204,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 25",
-        "number": 24,
+        "number": 25,
         "type": "regular"
       },
       "venue": null,
@@ -7898,7 +8254,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 25",
-        "number": 24,
+        "number": 25,
         "type": "regular"
       },
       "venue": null,
@@ -7948,7 +8304,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 25",
-        "number": 24,
+        "number": 25,
         "type": "regular"
       },
       "venue": null,
@@ -7977,16 +8333,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -7998,7 +8354,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 25",
-        "number": 24,
+        "number": 25,
         "type": "regular"
       },
       "venue": null,
@@ -8008,14 +8364,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -8048,7 +8404,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 25",
-        "number": 24,
+        "number": 25,
         "type": "regular"
       },
       "venue": null,
@@ -8098,7 +8454,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 25",
-        "number": 24,
+        "number": 25,
         "type": "regular"
       },
       "venue": null,
@@ -8148,7 +8504,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 26",
-        "number": 25,
+        "number": 26,
         "type": "regular"
       },
       "venue": null,
@@ -8198,7 +8554,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 26",
-        "number": 25,
+        "number": 26,
         "type": "regular"
       },
       "venue": null,
@@ -8248,7 +8604,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 26",
-        "number": 25,
+        "number": 26,
         "type": "regular"
       },
       "venue": null,
@@ -8277,14 +8633,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 48,
-            "against": 20,
-            "difference": 28
+            "against": 21,
+            "difference": 27
           },
           "points": 14
         },
@@ -8298,7 +8654,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 26",
-        "number": 25,
+        "number": 26,
         "type": "regular"
       },
       "venue": null,
@@ -8348,7 +8704,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 26",
-        "number": 25,
+        "number": 26,
         "type": "regular"
       },
       "venue": null,
@@ -8358,16 +8714,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 40,
+            "for": 41,
             "against": 18,
-            "difference": 22
+            "difference": 23
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -8398,7 +8754,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 26",
-        "number": 25,
+        "number": 26,
         "type": "regular"
       },
       "venue": null,
@@ -8448,7 +8804,7 @@
       "is_finished": false,
       "round": {
         "name": "מחזור 26",
-        "number": 25,
+        "number": 26,
         "type": "regular"
       },
       "venue": null,
@@ -8508,6 +8864,19 @@
     },
     {
       "rank": 2,
+      "provider_id": 2679,
+      "name": "הפ' גליל עליון",
+      "games": 12,
+      "wins": 8,
+      "draws": 2,
+      "losses": 2,
+      "gf": 41,
+      "ga": 18,
+      "gd": 23,
+      "points": 26
+    },
+    {
+      "rank": 3,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
       "games": 11,
@@ -8520,7 +8889,7 @@
       "points": 23
     },
     {
-      "rank": 3,
+      "rank": 4,
       "provider_id": 3675,
       "name": "מ.כ. גליל גולן דרום",
       "games": 11,
@@ -8530,19 +8899,6 @@
       "gf": 43,
       "ga": 18,
       "gd": 25,
-      "points": 23
-    },
-    {
-      "rank": 4,
-      "provider_id": 2679,
-      "name": "הפ' גליל עליון",
-      "games": 11,
-      "wins": 7,
-      "draws": 2,
-      "losses": 2,
-      "gf": 40,
-      "ga": 18,
-      "gd": 22,
       "points": 23
     },
     {
@@ -8562,13 +8918,13 @@
       "rank": 6,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
-      "games": 9,
+      "games": 10,
       "wins": 4,
       "draws": 2,
-      "losses": 3,
+      "losses": 4,
       "gf": 48,
-      "ga": 20,
-      "gd": 28,
+      "ga": 21,
+      "gd": 27,
       "points": 14
     },
     {
