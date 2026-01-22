@@ -3,103 +3,294 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>גליל – לוח יריבות (מפה)</title>
+  <title>גליל – מפת יריבות + טבלה מלאה</title>
   <style>
-    :root {
-      --bg0:#040812; --bg1:#071427;
+    :root{
+      --bg0:#040812;
+      --bg1:#071427;
       --glass: rgba(18, 30, 48, .55);
+      --glass2: rgba(18, 30, 48, .38);
       --stroke: rgba(255,255,255,.10);
       --stroke2: rgba(58,167,255,.22);
       --text: rgba(255,255,255,.92);
       --muted: rgba(255,255,255,.70);
       --muted2: rgba(255,255,255,.55);
-      --accent: #3aa7ff; --accent2:#79d2ff;
+      --accent:#3aa7ff;
+      --accent2:#79d2ff;
+      --good:#4ade80;
       --warn:#fbbf24;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
+    *{box-sizing:border-box;}
+    html,body{height:100%;}
     body{
-      margin:0;color:var(--text);
-      font-family:system-ui,-apple-system,"Segoe UI",Arial,"Noto Sans Hebrew",sans-serif;
+      margin:0;
+      color:var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, "Noto Sans Hebrew", sans-serif;
       background:
         radial-gradient(1200px 600px at 70% 20%, rgba(58,167,255,.16), transparent 55%),
         radial-gradient(900px 500px at 20% 15%, rgba(121,210,255,.10), transparent 50%),
-        linear-gradient(180deg,var(--bg1),var(--bg0));
+        linear-gradient(180deg, var(--bg1), var(--bg0));
       overflow-x:hidden;
     }
-    .bg{position:fixed;inset:0;pointer-events:none;background:url("assets/bg-tree.svg") center/cover no-repeat;opacity:.30}
-    .bg::after{content:"";position:absolute;inset:0;background:radial-gradient(900px 600px at 50% 40%, rgba(0,0,0,.10), rgba(0,0,0,.65))}
-    .wrap{position:relative;min-height:100%}
-    header{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:linear-gradient(90deg, rgba(10,18,32,.55), rgba(10,18,32,.35));border-bottom:1px solid var(--stroke)}
-    .bar{max-width:1320px;margin:0 auto;padding:14px 18px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-    .title{display:flex;flex-direction:column;gap:4px;min-width:260px}
-    .title h1{margin:0;font-size:22px}
-    .title .sub{color:var(--muted);font-size:13px}
-    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--stroke);background:rgba(255,255,255,.03);border-radius:999px;color:var(--muted);font-size:12px;white-space:nowrap}
-    .pill a{color:var(--accent2);text-decoration:none}
-    .pill a:hover{text-decoration:underline}
+    .bg{
+      position:fixed; inset:0;
+      pointer-events:none;
+      background:url("assets/bg-tree.svg") center/cover no-repeat;
+      opacity:.30;
+    }
+    .bg::after{
+      content:"";
+      position:absolute; inset:0;
+      background: radial-gradient(900px 600px at 50% 40%, rgba(0,0,0,.10), rgba(0,0,0,.70));
+    }
 
-    main{max-width:1320px;margin:16px auto 26px;padding:0 14px;display:grid;grid-template-columns:420px 1fr;gap:16px}
-    .card{border:1px solid var(--stroke);background:linear-gradient(180deg, var(--glass), rgba(7,15,26,.35));border-radius:18px;box-shadow:0 20px 70px rgba(0,0,0,.35);overflow:hidden}
-    .cardHeader{padding:14px 14px 10px;border-bottom:1px solid var(--stroke);display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .cardHeader h2{margin:0;font-size:16px}
-    .cardHeader small{color:var(--muted2);font-size:12px}
-    .cardBody{padding:12px 14px 14px}
-    label{font-size:13px;color:var(--muted)}
-    input[type="text"],select{width:100%;margin-top:6px;padding:10px 10px;border-radius:12px;border:1px solid var(--stroke);background:rgba(255,255,255,.03);color:var(--text);outline:none}
-    input::placeholder{color:rgba(255,255,255,.45)}
-    .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
-    .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:10px}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .chip{cursor:pointer;user-select:none;padding:8px 10px;border-radius:999px;border:1px solid var(--stroke);background:rgba(255,255,255,.03);color:var(--muted);font-size:12px;transition:.15s}
-    .chip:hover{border-color:var(--stroke2);color:var(--text)}
-    .chip.active{border-color:rgba(58,167,255,.55);background:rgba(58,167,255,.12);color:var(--text);box-shadow:0 0 0 3px rgba(58,167,255,.10) inset}
-    .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    button{cursor:pointer;border:1px solid var(--stroke);background:rgba(255,255,255,.04);color:var(--text);padding:10px 12px;border-radius:14px;font-weight:600;transition:.15s}
-    button:hover{border-color:var(--stroke2);background:rgba(58,167,255,.10)}
-    button.primary{border-color:rgba(58,167,255,.55);background:rgba(58,167,255,.12)}
-    button:disabled{opacity:.45;cursor:not-allowed}
-    .stats{margin-top:12px;padding:10px 12px;border-radius:14px;border:1px dashed rgba(255,255,255,.14);background:rgba(0,0,0,.15);color:var(--muted);font-size:12px;line-height:1.6}
-    .err{margin-top:10px;padding:10px 12px;border:1px solid rgba(251,191,36,.35);border-radius:14px;background:rgba(251,191,36,.08);color:rgba(255,255,255,.90);font-size:12px;line-height:1.5}
-    .diag{margin-top:10px;padding:10px 12px;border-radius:14px;border:1px solid rgba(58,167,255,.20);background:rgba(58,167,255,.06);color:rgba(210,240,255,.92);font-size:12px;line-height:1.5;display:none}
-    .diag code{color:#a7e3ff}
+    .wrap{position:relative; min-height:100%;}
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(90deg, rgba(10,18,32,.55), rgba(10,18,32,.35));
+      border-bottom: 1px solid var(--stroke);
+    }
+    .bar{
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 14px 18px;
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .title{display:flex; flex-direction:column; gap:4px; min-width:260px;}
+    .title h1{margin:0; font-size:22px; letter-spacing:.2px;}
+    .title .sub{color:var(--muted); font-size:13px;}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
+      border-radius:999px;
+      color:var(--muted);
+      font-size:12px;
+      white-space:nowrap;
+    }
+    .pill a{color:var(--accent2); text-decoration:none;}
+    .pill a:hover{text-decoration:underline;}
 
-    .map{position:relative;min-height:720px}
-    .mapInner{position:relative;height:720px;border-radius:18px;overflow:hidden;border:1px solid var(--stroke);background:radial-gradient(700px 420px at 50% 50%, rgba(58,167,255,.10), rgba(0,0,0,.15))}
-    .mapGrid{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px, rgba(255,255,255,.07) 1px, transparent 0);background-size:22px 22px;opacity:.25}
-    .mapTitle{position:absolute;top:14px;right:14px;left:14px;display:flex;align-items:flex-start;justify-content:space-between;gap:10px;pointer-events:none}
-    .mapTitle h2{margin:0;font-size:18px}
-    .mapTitle .hint{color:var(--muted2);font-size:12px;text-align:left}
+    .card{
+      border:1px solid var(--stroke);
+      background: linear-gradient(180deg, var(--glass), rgba(7, 15, 26, .35));
+      border-radius:18px;
+      box-shadow: 0 20px 70px rgba(0,0,0,.35);
+      overflow:hidden;
+    }
+    .cardHeader{
+      padding:14px 14px 10px;
+      border-bottom:1px solid var(--stroke);
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+    }
+    .cardHeader h2{margin:0; font-size:16px;}
+    .cardHeader small{color:var(--muted2); font-size:12px;}
+    .cardBody{padding:12px 14px 14px;}
 
-    .node{position:absolute;width:210px;transform:translate(-50%,-50%);border-radius:16px;border:1px solid var(--stroke);
-      background:linear-gradient(180deg, rgba(15,26,42,.75), rgba(9,16,27,.55));
-      box-shadow:0 16px 44px rgba(0,0,0,.35);padding:12px 12px 10px;cursor:pointer;transition:.16s}
-    .node:hover{border-color:rgba(58,167,255,.50);box-shadow:0 18px 52px rgba(0,0,0,.42)}
-    .node .name{font-weight:800;font-size:14px;line-height:1.2;margin-bottom:6px}
-    .node .meta{color:var(--muted2);font-size:12px;display:flex;justify-content:space-between;gap:10px}
-    .node .meta2{font-size:12px;opacity:.95;margin-top:6px;color:rgba(210,240,255,.92)}
-    .node .cta{margin-top:8px;color:var(--accent2);font-size:12px}
-    .node.center{width:280px;border-color:rgba(58,167,255,.55);background:linear-gradient(180deg, rgba(35,86,120,.70), rgba(10,18,32,.55));
-      box-shadow:0 26px 80px rgba(58,167,255,.10), 0 18px 64px rgba(0,0,0,.45)}
-    .node.center .name{font-size:16px}
-    .line{position:absolute;height:1px;background:rgba(58,167,255,.16);transform-origin:0 50%;pointer-events:none}
+    main{
+      max-width: 1400px;
+      margin: 16px auto 14px;
+      padding: 0 14px;
+      display:grid;
+      grid-template-columns: 1fr 440px;
+      grid-template-areas:
+        "map side"
+        "tables tables";
+      gap: 16px;
+    }
+    .mapCard{grid-area:map;}
+    .sideCard{grid-area:side;}
+    .tablesCard{grid-area:tables;}
 
-    table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:14px;border:1px solid var(--stroke);background:rgba(0,0,0,.12)}
-    th,td{padding:10px 12px;font-size:13px;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:middle}
-    th{text-align:right;color:rgba(255,255,255,.85);background:rgba(255,255,255,.04);position:sticky;top:0;z-index:1}
-    tr:hover td{background:rgba(58,167,255,.06)}
-    .tables{margin-top:12px}
-    .tableWrap{border-radius:14px;overflow:hidden}
-    .tableWrap.noScroll{max-height:none!important;overflow:visible!important}
+    label{font-size:13px; color:var(--muted);}
+    input[type="text"], select{
+      width:100%;
+      margin-top:6px;
+      padding:10px 10px;
+      border-radius:12px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
+      color:var(--text);
+      outline:none;
+    }
+    input::placeholder{color: rgba(255,255,255,.45);}
+    /* Fix: dark dropdown options on Windows */
+    select, option{background-color: rgba(8, 22, 38, 0.95); color: var(--text);}
+    select:focus{ outline: 2px solid rgba(94, 212, 255, 0.55); outline-offset: 2px; }
 
-    select, option{background-color: rgba(8,22,38,0.95);color:var(--text)}
-    select:focus{outline:2px solid rgba(94,212,255,0.55);outline-offset:2px}
-    .roundRow{display:flex;gap:10px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
-    .roundRow .btnMini{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.16);background:rgba(18,45,72,0.55)}
-    .roundRow .btnMini:hover{background:rgba(18,45,72,0.75)}
+    .row{display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:10px;}
+    .row3{display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px; margin-top:10px;}
 
-    @media (max-width:1100px){main{grid-template-columns:1fr}.mapInner{height:640px}.map{min-height:640px}}
-    @media (max-width:560px){.node{width:180px}.node.center{width:230px}.row{grid-template-columns:1fr}.row3{grid-template-columns:1fr}th,td{font-size:12px;padding:9px 8px}}
+    .roundRow{display:flex; gap:10px; align-items:center; justify-content:space-between; flex-wrap:wrap; margin-top:6px;}
+    .btnMini{
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.16);
+      background: rgba(18,45,72,0.55);
+      color:var(--text);
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .btnMini:hover{background: rgba(18,45,72,0.75);}
+    .btnMini:disabled{opacity:.45; cursor:not-allowed;}
+
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;}
+    .chip{
+      cursor:pointer; user-select:none;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
+      color:var(--muted);
+      font-size:12px;
+      transition:.15s ease;
+    }
+    .chip:hover{border-color: var(--stroke2); color:var(--text);}
+    .chip.active{
+      border-color: rgba(58,167,255,.55);
+      background: rgba(58,167,255,.12);
+      color:var(--text);
+      box-shadow: 0 0 0 3px rgba(58,167,255,.10) inset;
+    }
+
+    .btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;}
+    button{
+      cursor:pointer;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:14px;
+      font-weight:700;
+      transition:.15s ease;
+      white-space:nowrap;
+    }
+    button:hover{border-color: var(--stroke2); background: rgba(58,167,255,.10);}
+    button.primary{border-color: rgba(58,167,255,.55); background: rgba(58,167,255,.12);}
+
+    .stats{
+      margin-top:12px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px dashed rgba(255,255,255,.14);
+      background: rgba(0,0,0,.15);
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .err{
+      margin-top:10px;
+      padding:10px 12px;
+      border:1px solid rgba(251,191,36,.35);
+      border-radius:14px;
+      background: rgba(251,191,36,.08);
+      color: rgba(255,255,255,.90);
+      font-size:12px;
+      line-height:1.5;
+      white-space:pre-wrap;
+    }
+
+    /* Map */
+    .mapInner{
+      position:relative;
+      height: 760px;
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid var(--stroke);
+      background: radial-gradient(700px 420px at 50% 50%, rgba(58,167,255,.10), rgba(0,0,0,.15));
+    }
+    .mapGrid{
+      position:absolute; inset:0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.07) 1px, transparent 0);
+      background-size: 22px 22px;
+      opacity:.25;
+    }
+    .mapTitle{
+      position:absolute; top:14px; right:14px; left:14px;
+      display:flex; align-items:flex-start; justify-content:space-between; gap:10px;
+      pointer-events:none;
+    }
+    .mapTitle h2{margin:0; font-size:18px;}
+    .mapTitle .hint{color:var(--muted2); font-size:12px; text-align:left;}
+
+    .node{
+      position:absolute;
+      width: 220px;
+      transform: translate(-50%, -50%);
+      border-radius:16px;
+      border:1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(15,26,42,.75), rgba(9,16,27,.55));
+      box-shadow: 0 16px 44px rgba(0,0,0,.35);
+      padding: 12px 12px 10px;
+      cursor:pointer;
+      transition:.16s ease;
+    }
+    .node:hover{border-color: rgba(58,167,255,.50); box-shadow: 0 18px 52px rgba(0,0,0,.42);}
+    .node .name{font-weight:900; font-size:14px; line-height:1.2; margin-bottom:6px;}
+    .node .meta{color:var(--muted2); font-size:12px; display:flex; justify-content:space-between; gap:10px;}
+    .node .meta2{font-size:12px; margin-top:6px; color: rgba(210,240,255,0.92); opacity:.92;}
+    .node .cta{margin-top:8px; color: var(--accent2); font-size:12px;}
+    .node.active{border-color: rgba(58,167,255,.65); background: linear-gradient(180deg, rgba(35,86,120,.62), rgba(10,18,32,.55));}
+    .node.center{
+      width: 290px;
+      border-color: rgba(58,167,255,.55);
+      background: linear-gradient(180deg, rgba(35,86,120,.70), rgba(10,18,32,.55));
+      box-shadow: 0 26px 80px rgba(58,167,255,.10), 0 18px 64px rgba(0,0,0,.45);
+    }
+    .node.center .name{font-size:16px;}
+    .line{
+      position:absolute;
+      height:1px;
+      background: rgba(58,167,255,.16);
+      transform-origin: 0 50%;
+      pointer-events:none;
+    }
+
+    /* Tables full width */
+    .tablesTop{
+      display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      margin-bottom:10px;
+    }
+    .tablesTop .muted{color:var(--muted2); font-size:12px;}
+    .tableWrap{overflow:auto; border-radius:14px; border:1px solid var(--stroke); background: rgba(0,0,0,.12);}
+    table{width:100%; border-collapse: collapse;}
+    th,td{
+      padding: 10px 12px;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    th{
+      text-align:right;
+      color: rgba(255,255,255,.88);
+      background: rgba(255,255,255,.04);
+      position: sticky;
+      top:0;
+      z-index:1;
+    }
+    tr:hover td{background: rgba(58,167,255,.06);}
+    .focusRow td{background: rgba(58,167,255,.10);}
+    .seg{display:flex; gap:10px; flex-wrap:wrap;}
+    .seg button{padding:9px 12px;}
+
+    @media (max-width: 1180px){
+      main{grid-template-columns: 1fr; grid-template-areas:"side" "map" "tables";}
+      .mapInner{height:640px;}
+    }
+    @media (max-width: 560px){
+      .node{width: 185px;}
+      .node.center{width: 240px;}
+      .row{grid-template-columns: 1fr;}
+      .row3{grid-template-columns: 1fr;}
+      th,td{font-size:12px; padding:9px 10px;}
+    }
   </style>
 </head>
 <body>
@@ -120,7 +311,19 @@
     </header>
 
     <main>
-      <section class="card">
+      <section class="card mapCard">
+        <div class="mapInner">
+          <div class="mapGrid"></div>
+          <div class="mapTitle">
+            <h2>מפת יריבות</h2>
+            <div class="hint">לחץ על קבוצה כדי לראות מפגש אחרון + משחקים ביניכם</div>
+          </div>
+          <div id="lines"></div>
+          <div id="nodes"></div>
+        </div>
+      </section>
+
+      <aside class="card sideCard">
         <div class="cardHeader">
           <h2>פילטרים</h2>
           <small id="metaSmall">—</small>
@@ -143,61 +346,59 @@
 
           <div class="row3">
             <div>
-              <label>רק משחקים של הקבוצה</label>
+              <label>רק משחקים של גליל</label>
               <div style="margin-top:10px; display:flex; gap:10px; align-items:center;">
                 <input id="onlyTeam" type="checkbox" style="transform:scale(1.1);" />
-                <span class="muted">מסנן את הטבלאות</span>
+                <span style="color:var(--muted2); font-size:12px;">מסנן את המשחקים</span>
               </div>
             </div>
             <div>
-              <label>בחר יריבה במפה</label>
-              <div class="muted" style="margin-top:10px;">לחיצה על בועה תסנן</div>
+              <label>מצב תצוגה</label>
+              <div class="btns" style="margin-top:6px;">
+                <button class="primary" id="modeRound" type="button">מחזור</button>
+                <button id="modeH2H" type="button">מול יריבה</button>
+              </div>
             </div>
             <div>
               <label>איפוס</label>
               <div class="btns" style="margin-top:6px;">
-                <button id="resetBtn">אפס פילטרים</button>
+                <button id="resetBtn" type="button">אפס פילטרים</button>
               </div>
             </div>
           </div>
 
           <div class="chips" id="teamChips"></div>
 
-          <div class="btns">
-            <button class="primary" id="toggleGames">משחקים</button>
-            <button id="toggleStandings">טבלה מלאה</button>
-          </div>
-
           <div class="stats" id="statsBox"></div>
           <div class="err" id="errBox" style="display:none;"></div>
-          <div class="diag" id="diagBox"></div>
-
-          <div class="tables" id="tables">
-            <div id="gamesWrap" style="display:block;">
-              <div class="muted" style="margin: 6px 0 8px;">משחקים (מחזור / מול יריבה)</div>
-              <div class="tableWrap">
-                <table id="gamesTable"></table>
-              </div>
-            </div>
-            <div id="standingsWrap" style="display:none;">
-              <div class="muted" style="margin: 6px 0 8px;">טבלת הליגה (מלאה)</div>
-              <div class="tableWrap noScroll">
-                <table id="standingsTable"></table>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+      </aside>
 
-      <section class="map">
-        <div class="mapInner card">
-          <div class="mapGrid"></div>
-          <div class="mapTitle">
-            <h2>מפת יריבות</h2>
-            <div class="hint">לחץ על קבוצה כדי לראות משחקים • הקבוצה שלך במרכז</div>
+      <section class="card tablesCard">
+        <div class="cardHeader">
+          <h2 id="tablesTitle">טבלאות</h2>
+          <small id="tablesHint" class="muted">—</small>
+        </div>
+        <div class="cardBody">
+          <div class="tablesTop">
+            <div class="seg">
+              <button class="primary" id="showGames" type="button">משחקים</button>
+              <button id="showStandings" type="button">טבלה מלאה</button>
+            </div>
+            <div class="muted" id="gamesSubtitle">—</div>
           </div>
-          <div id="lines"></div>
-          <div id="nodes"></div>
+
+          <div id="gamesWrap" style="display:block;">
+            <div class="tableWrap">
+              <table id="gamesTable"></table>
+            </div>
+          </div>
+
+          <div id="standingsWrap" style="display:none; margin-top:12px;">
+            <div class="tableWrap">
+              <table id="standingsTable"></table>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -205,13 +406,7 @@
 
 <script>
 (() => {
-  // Try multiple locations to avoid "empty page" when GitHub Pages path differs.
-  const DATA_URLS = [
-    "data.json",
-    "./data.json",
-    "../data.json",
-    "/Galil/data.json"
-  ].map(u => u + "?v=" + Date.now());
+  const DATA_URL = "data.json";
 
   const state = {
     data: null,
@@ -222,58 +417,158 @@
     selectedOpponent: "",
     onlyTeam: false,
     chipTeam: "",
-    dataUrlUsed: ""
+    viewMode: "round", // "round" | "h2h"
+    show: "games" // "games" | "standings"
   };
 
   const el = (id) => document.getElementById(id);
 
-  function normKey(s){
-    return (s||"")
-      .toString()
-      .trim()
-      .replace(/[״"]/g,"")
-      .replace(/[׳']/g,"")
-      .replace(/[()]/g," ")
+  function norm(s){
+    return (s||"").toString().trim().replace(/\s+/g," ");
+  }
+  function canon(s){
+    // remove punctuation that causes duplicates: ׳ ״ ' " . -
+    return norm(s)
+      .replace(/["'\.\-]/g,"")
+      .replace(/[׳״]/g,"")
+      .replace(/\u200f|\u200e/g,"")
       .replace(/\s+/g," ")
       .toLowerCase();
   }
-  function normalizeTeamName(s){ return (s||"").toString().trim().replace(/\s+/g," "); }
+  function sameTeam(a,b){
+    const A = canon(a), B = canon(b);
+    if(!A || !B) return false;
+    return A===B || A.includes(B) || B.includes(A);
+  }
 
-  function safeText(x){ return (x===null || x===undefined) ? "" : String(x); }
+  function formatDate(raw){
+    if(!raw) return "";
+    return String(raw).replace("T"," ").replace("Z","");
+  }
+
+  // ---- Data adapters ----
+  function getGames(){
+    return state.data?.games || [];
+  }
+
+  function getStandingsRaw(){
+    const s = state.data?.standings || [];
+    if(Array.isArray(s) && s.length) return s;
+    // fallback if stored under standingsSource
+    const ss = state.data?.standingsSource || [];
+    return Array.isArray(ss) ? ss : [];
+  }
+
+  function computeStandingsFromGames(games){
+    const rows = new Map(); // canon -> stats
+    const get = (name)=> {
+      const key = canon(name);
+      if(!rows.has(key)){
+        rows.set(key, {name: norm(name), played:0, w:0, d:0, l:0, gf:0, ga:0, gd:0, points:0});
+      }
+      return rows.get(key);
+    };
+
+    const hsVal = (g)=> (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
+    const asVal = (g)=> (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
+
+    const toNum = (v)=>{
+      if(v===null || v===undefined) return null;
+      if(typeof v==="number" && Number.isFinite(v)) return v;
+      const m = String(v).trim().match(/^\d+$/);
+      return m ? Number(m[0]) : null;
+    };
+
+    for(const g of (games||[])){
+      const home = g?.homeTeam?.name || g?.home?.name || g?.home || "";
+      const away = g?.awayTeam?.name || g?.away?.name || g?.away || "";
+      if(!home || !away) continue;
+      const hs = toNum(hsVal(g));
+      const as = toNum(asVal(g));
+      if(hs===null || as===null) continue;
+
+      const H = get(home), A = get(away);
+      H.played++; A.played++;
+      H.gf += hs; H.ga += as;
+      A.gf += as; A.ga += hs;
+
+      if(hs>as){ H.w++; A.l++; H.points += 2; }
+      else if(hs<as){ A.w++; H.l++; A.points += 2; }
+      else { H.d++; A.d++; H.points += 1; A.points += 1; }
+    }
+
+    const arr = Array.from(rows.values()).map(r => ({...r, gd: r.gf - r.ga}));
+    arr.sort((a,b)=> (b.points-a.points) || (b.gd-a.gd) || (b.gf-a.gf) || a.name.localeCompare(b.name,"he"));
+    arr.forEach((r,i)=> { r.rank = i+1; r.position = i+1; });
+    return arr;
+  }
+
+  function normalizeStandingRow(r){
+    const name = norm(r?.name || r?.team || r?.group || r?.club || "");
+    const rank = r?.rank ?? r?.position ?? r?.pos ?? r?.place ?? "";
+    const points = r?.points ?? r?.pts ?? r?.p ?? r?.Points ?? "";
+    const played = r?.games ?? r?.played ?? r?.matches ?? r?.mp ?? "";
+    const w = r?.w ?? r?.wins ?? r?.win ?? "";
+    const l = r?.l ?? r?.losses ?? r?.lose ?? "";
+    const d = r?.d ?? r?.draws ?? r?.tie ?? "";
+    const gf = r?.gf ?? r?.for ?? r?.scored ?? r?.plus ?? "";
+    const ga = r?.ga ?? r?.against ?? r?.conceded ?? r?.minus ?? "";
+    const gd = r?.gd ?? (Number.isFinite(+gf) && Number.isFinite(+ga) ? (+gf - +ga) : "");
+    return { name, rank, points, played, w, d, l, gf, ga, gd };
+  }
 
   function getStandings(){
-    const s = Array.isArray(state.data?.standings) ? state.data.standings : [];
-    if (s.length) return s;
-    // fallback: build standings from games that have scores
-    return computeStandingsFromGames(state.data?.games || []);
+    const raw = getStandingsRaw();
+    // If standings are incomplete, compute from games (for full columns)
+    const mapped = raw.map(normalizeStandingRow).filter(x=>x.name);
+    const hasFull = mapped.some(x => x.played!=="" || x.gf!=="" || x.ga!=="" || x.w!=="" || x.l!=="");
+    if(mapped.length && hasFull) return mapped;
+
+    const computed = computeStandingsFromGames(getGames());
+    return computed.map(r => ({
+      name: r.name,
+      rank: r.rank,
+      points: r.points,
+      played: r.played,
+      w: r.w,
+      d: r.d,
+      l: r.l,
+      gf: r.gf,
+      ga: r.ga,
+      gd: r.gd
+    }));
   }
 
-  function getTeams(){
-    const standings = getStandings();
-    // dedupe by key to avoid "גליל עליון" twice (different apostrophes)
-    const map = new Map();
-    for (const r of standings){
-      const name = normalizeTeamName(r?.name);
-      const k = normKey(name);
-      if (!k) continue;
-      if (!map.has(k)) map.set(k, name);
+  function dedupTeamsFromStandings(){
+    const s = getStandings();
+    const seen = new Set();
+    const out = [];
+    for(const r of s){
+      const key = canon(r.name);
+      if(!key || seen.has(key)) continue;
+      seen.add(key);
+      out.push(norm(r.name));
     }
-    return Array.from(map.values());
+    return out;
   }
 
-  function findTeamKey(name){
-    const target = normKey(name);
-    if (!target) return "";
-    const teams = getTeams();
-    let best = teams.find(t => normKey(t) === target);
-    if (best) return best;
-    best = teams.find(t => normKey(t).includes(target) || target.includes(normKey(t)));
-    return best || normalizeTeamName(name);
+  function findTeamKey(query){
+    const q = norm(query);
+    if(!q) return "";
+    const teams = dedupTeamsFromStandings();
+    // exact by canon
+    const qk = canon(q);
+    const exact = teams.find(t => canon(t) === qk);
+    if(exact) return exact;
+    // contains
+    const contains = teams.find(t => canon(t).includes(qk) || qk.includes(canon(t)));
+    return contains || q;
   }
 
+  // ---- Round helpers ----
   function computeRoundOffset(){
     const nums = state.rounds.map(r => Number(r.number)).filter(n => Number.isFinite(n));
-    if (!nums.length){ state.roundOffset = 0; return; }
+    if(!nums.length){ state.roundOffset = 0; return; }
     const min = Math.min(...nums);
     state.roundOffset = (min === 0) ? 1 : 0;
   }
@@ -281,52 +576,30 @@
     const num = Number(n);
     return Number.isFinite(num) ? (num + state.roundOffset) : n;
   }
-  function formatDateHeb(raw){
-    if(!raw) return "";
-    return String(raw).replace("T"," ").replace("Z","");
-  }
 
-  function isTeamMatch(a,b){
-    const A = normKey(a), B = normKey(b);
-    if(!A || !B) return false;
-    return A===B || A.includes(B) || B.includes(A);
+  // ---- Game helpers ----
+  function gameTeams(g){
+    return {
+      home: norm(g?.homeTeam?.name || g?.home?.name || g?.home || ""),
+      away: norm(g?.awayTeam?.name || g?.away?.name || g?.away || "")
+    };
   }
-  function isTeamInGame(game, team){
-    const t = team;
-    const home = game?.homeTeam?.name;
-    const away = game?.awayTeam?.name;
-    return isTeamMatch(home, t) || isTeamMatch(away, t);
-  }
-  function opponentOf(game, team){
-    const home = game?.homeTeam?.name;
-    const away = game?.awayTeam?.name;
-    if (isTeamMatch(home, team)) return normalizeTeamName(away);
-    if (isTeamMatch(away, team)) return normalizeTeamName(home);
-    return "";
-  }
-
-  function scoreText(game){
-    const hs = game?.homeTeam?.score;
-    const as = game?.awayTeam?.score;
-    const has = (hs!==null && hs!==undefined && hs!=="") || (as!==null && as!==undefined && as!=="");
-    if(!has) return "—";
-    return `${safeText(hs)} - ${safeText(as)}`;
-  }
-
   function gameHasScore(g){
-    const hs = g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome;
-    const as = g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway;
-    return (String(hs).match(/^\d+$/) && String(as).match(/^\d+$/));
+    const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
+    const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
+    const hsNum = (typeof hs==="number") ? hs : (String(hs||"").trim().match(/^\d+$/) ? Number(hs) : null);
+    const asNum = (typeof as==="number") ? as : (String(as||"").trim().match(/^\d+$/) ? Number(as) : null);
+    return (hsNum!==null && asNum!==null);
   }
   function gameScoreStr(g){
-    if(!gameHasScore(g)) return "";
-    const hs = g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome;
-    const as = g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway;
-    return `${hs} : ${as}`;
+    const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
+    const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
+    if(!gameHasScore(g)) return "—";
+    return `${hs} - ${as}`;
   }
   function gameKeyDate(g){
     const iso = g?.dateISO || g?.datetimeISO || g?.dateTimeISO || g?.dateTime || g?.date;
-    if (iso && !isNaN(Date.parse(iso))) return Date.parse(iso);
+    if(iso && !isNaN(Date.parse(iso))) return Date.parse(iso);
     const t = g?.dateText || "";
     const m = String(t).match(/(\d{1,2})\.(\d{1,2})\.(\d{2,4}).*?(\d{1,2}):(\d{2})/);
     if(m){
@@ -337,124 +610,111 @@
     return 0;
   }
 
-  function lastGameForTeam(teamName, games){
+  function isTeamInGame(g, teamName){
     const t = findTeamKey(teamName);
-    const relevant = (games||[]).filter(g => isTeamInGame(g, t) && gameHasScore(g));
-    if(!relevant.length) return null;
-    relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
-    return relevant[0];
+    const {home, away} = gameTeams(g);
+    return sameTeam(home,t) || sameTeam(away,t);
   }
 
   function lastH2H(teamA, teamB, games){
-    const A = findTeamKey(teamA);
-    const B = findTeamKey(teamB);
-    const relevant = (games||[]).filter(g => {
-      const h = g?.homeTeam?.name;
-      const a = g?.awayTeam?.name;
-      const ok = (isTeamMatch(h,A) && isTeamMatch(a,B)) || (isTeamMatch(h,B) && isTeamMatch(a,A));
-      return ok && gameHasScore(g);
+    const a = findTeamKey(teamA);
+    const b = findTeamKey(teamB);
+    const relevant = (games||[]).filter(g=>{
+      if(!gameHasScore(g)) return false;
+      const {home, away} = gameTeams(g);
+      return (sameTeam(home,a) && sameTeam(away,b)) || (sameTeam(home,b) && sameTeam(away,a));
     });
     if(!relevant.length) return null;
-    relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
+    relevant.sort((x,y)=> gameKeyDate(y)-gameKeyDate(x));
     return relevant[0];
   }
 
-  function computeStandingsFromGames(games){
-    const rows = new Map();
-    const get = (name)=>{
-      const k = normKey(name);
-      if(!k) return null;
-      if(!rows.has(k)){
-        rows.set(k,{name:normalizeTeamName(name), played:0, w:0, d:0, l:0, gf:0, ga:0, gd:0, points:0});
-      }
-      return rows.get(k);
-    };
-    for(const g of (games||[])){
-      const home = g?.homeTeam?.name || g?.home?.name || g?.home || "";
-      const away = g?.awayTeam?.name || g?.away?.name || g?.away || "";
-      if(!home || !away) continue;
-      const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
-      const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
-      const hsNum = (typeof hs === "number") ? hs : (String(hs||"").match(/^\d+$/) ? Number(hs) : null);
-      const asNum = (typeof as === "number") ? as : (String(as||"").match(/^\d+$/) ? Number(as) : null);
-      if(hsNum===null || asNum===null) continue;
+  function lastGameForTeam(teamName, games){
+    const t = findTeamKey(teamName);
+    const relevant = (games||[]).filter(g => gameHasScore(g) && isTeamInGame(g, t));
+    if(!relevant.length) return null;
+    relevant.sort((a,b)=> gameKeyDate(b)-gameKeyDate(a));
+    return relevant[0];
+  }
 
-      const H = get(home), A = get(away);
-      if(!H || !A) continue;
-      H.played++; A.played++;
-      H.gf += hsNum; H.ga += asNum;
-      A.gf += asNum; A.ga += hsNum;
+  function opponentOf(game, teamName){
+    const t = findTeamKey(teamName);
+    const {home, away} = gameTeams(game);
+    if(sameTeam(home,t)) return away;
+    if(sameTeam(away,t)) return home;
+    return "";
+  }
 
-      if(hsNum > asNum){ H.w++; A.l++; H.points += 2; }
-      else if(hsNum < asNum){ A.w++; H.l++; A.points += 2; }
-      else { H.d++; A.d++; H.points += 1; A.points += 1; }
-    }
-    const arr = Array.from(rows.values()).map(r=>({...r, gd:r.gf-r.ga}));
-    arr.sort((a,b)=> (b.points-a.points) || (b.gd-a.gd) || (b.gf-a.gf) || a.name.localeCompare(b.name,"he"));
-    arr.forEach((r,i)=>{ r.rank=i+1; r.position=i+1; r.pts=r.points; });
-    return arr;
+  // ---- UI builders ----
+  function setErr(msg){
+    const box = el("errBox");
+    if(!msg){ box.style.display="none"; box.textContent=""; return; }
+    box.style.display="block";
+    box.textContent = msg;
   }
 
   function leagueLine(){
     const m = state.data?.meta || {};
-    const league = state.data?.league?.name || m?.leagueName || "";
-    const season = m?.season || "";
-    const fetchedAt = m?.fetchedAt || m?.last_update || "";
-    const games = (state.data?.games || []).length;
-    const rounds = state.rounds.length;
-    return `${league} • ${season} • משחקים: ${games} • מחזורים: ${rounds} • עודכן: ${formatDateHeb(fetchedAt)}`;
-  }
-
-  function setErr(msg){
-    const box = el("errBox");
-    if(!msg){ box.style.display="none"; box.textContent=""; return; }
-    box.style.display="block"; box.textContent = msg;
-  }
-  function setDiag(html){
-    const box = el("diagBox");
-    if(!html){ box.style.display="none"; box.innerHTML=""; return; }
-    box.style.display="block"; box.innerHTML = html;
+    const league = state.data?.league?.name || m?.leagueName || m?.league || "";
+    const season = m?.season || state.data?.season || "";
+    const fetchedAt = m?.fetchedAt || m?.last_update || m?.lastUpdate || "";
+    return `${league}${season ? " • "+season : ""} • משחקים: ${(getGames()).length} • מחזורים: ${state.rounds.length} • עודכן: ${formatDate(fetchedAt)}`;
   }
 
   function buildChips(){
     const container = el("teamChips");
     container.innerHTML = "";
-    const teams = getTeams();
+    const teams = dedupTeamsFromStandings();
     const focus = findTeamKey(state.focusTeam);
 
-    const add = (label, key) => {
+    const add = (label, key)=>{
       const d = document.createElement("div");
       d.className = "chip" + ((state.chipTeam === key) ? " active" : "");
       d.textContent = label;
-      d.onclick = () => { state.chipTeam = (state.chipTeam === key) ? "" : key; renderAll(); };
+      d.onclick = ()=>{
+        state.chipTeam = (state.chipTeam === key) ? "" : key;
+        // if selecting opponent chip (not focus), switch to h2h
+        if(state.chipTeam && !sameTeam(state.chipTeam, focus)){
+          state.selectedOpponent = findTeamKey(state.chipTeam);
+          state.viewMode = "h2h";
+          syncModeButtons();
+        }else if(!state.chipTeam){
+          // keep whatever mode
+        }
+        renderAll();
+      };
       container.appendChild(d);
     };
 
     add("הכל", "");
     add(focus, focus);
-    teams.filter(t => !isTeamMatch(t, focus)).slice(0, 24).forEach(t => add(t, t));
+    teams.filter(t=> !sameTeam(t, focus)).slice(0, 26).forEach(t=> add(t, t));
   }
 
   function buildRoundSelect(){
     const sel = el("roundSelect");
     sel.innerHTML = "";
-    state.rounds.forEach(r => {
+    for(const r of state.rounds){
       const opt = document.createElement("option");
       opt.value = String(r.number);
       opt.textContent = `מחזור ${displayRound(r.number)} (${r.gamesCount})`;
       sel.appendChild(opt);
-    });
-    if(state.selectedRound===null && state.rounds.length){ state.selectedRound = String(state.rounds[0].number); }
+    }
+    if(state.selectedRound === null && state.rounds.length){
+      state.selectedRound = String(state.rounds[state.rounds.length-1].number);
+    }
     sel.value = String(state.selectedRound ?? "");
-    sel.onchange = () => { state.selectedRound = sel.value; renderAll(); };
+    sel.onchange = ()=>{ state.selectedRound = sel.value; renderAll(); };
 
     const prevBtn = el("roundPrev");
     const nextBtn = el("roundNext");
+
     const setDisabled = ()=>{
       const idx = state.rounds.findIndex(r => String(r.number)===String(state.selectedRound));
       prevBtn.disabled = idx<=0;
       nextBtn.disabled = idx<0 || idx>=state.rounds.length-1;
     };
+
     const go = (delta)=>{
       const idx = state.rounds.findIndex(r => String(r.number)===String(state.selectedRound));
       if(idx<0) return;
@@ -464,62 +724,93 @@
       renderAll();
       setDisabled();
     };
+
     prevBtn.onclick = ()=>go(-1);
     nextBtn.onclick = ()=>go(1);
     setDisabled();
   }
 
-  function filteredGames(){
-    const games = state.data?.games || [];
+  function gamesForCurrentView(){
+    const games = getGames();
     const focus = findTeamKey(state.focusTeam);
     const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
     const chip = state.chipTeam ? findTeamKey(state.chipTeam) : "";
+    const q = norm(el("teamInput").value);
     const onlyTeam = !!state.onlyTeam;
-    const round = state.selectedRound;
 
-    let g = games.filter(x => String(x?.round?.number) === String(round));
+    let g = games.slice();
 
-    if(onlyTeam){ g = g.filter(x => isTeamInGame(x, focus)); }
-    if(chip){ g = g.filter(x => isTeamInGame(x, chip)); }
-    if(opp){
-      g = g.filter(x => (isTeamInGame(x, opp) && isTeamInGame(x, focus)));
+    if(state.viewMode === "round"){
+      const round = state.selectedRound;
+      if(round !== null){
+        g = g.filter(x => String(x?.round?.number) === String(round));
+      }
+      if(onlyTeam){
+        g = g.filter(x => isTeamInGame(x, focus));
+      }
+      if(chip){
+        g = g.filter(x => isTeamInGame(x, chip));
+      }
+    }else{
+      // h2h mode: show all games focus vs opponent (or vs chip)
+      const target = opp || (chip && !sameTeam(chip, focus) ? chip : "");
+      if(target){
+        g = g.filter(x => isTeamInGame(x, focus) && isTeamInGame(x, target));
+      }else{
+        // no opponent chosen yet: just show focus games
+        g = g.filter(x => isTeamInGame(x, focus));
+      }
     }
 
-    const q = normalizeTeamName(el("teamInput").value);
     if(q){
-      const qk = normKey(q);
-      g = g.filter(x => normKey(x?.homeTeam?.name).includes(qk) || normKey(x?.awayTeam?.name).includes(qk));
+      const qk = canon(q);
+      g = g.filter(x => canon(gameTeams(x).home).includes(qk) || canon(gameTeams(x).away).includes(qk));
     }
 
-    g.sort((a,b)=> gameKeyDate(a) - gameKeyDate(b));
+    // sort by date desc in h2h, asc in round
+    g.sort((a,b)=> (state.viewMode==="h2h" ? (gameKeyDate(b)-gameKeyDate(a)) : (gameKeyDate(a)-gameKeyDate(b))));
     return g;
   }
 
   function renderGamesTable(){
     const tbl = el("gamesTable");
-    const g = filteredGames();
+    const g = gamesForCurrentView();
+    const focus = findTeamKey(state.focusTeam);
+    const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
     const rows = [];
+
+    const title = (state.viewMode==="h2h" && (opp || state.chipTeam))
+      ? `משחקים מול ${opp || state.chipTeam} (כל המחזורים)`
+      : `משחקים במחזור ${displayRound(state.selectedRound ?? "")}`;
+
+    el("gamesSubtitle").textContent = `${title} • מוצגים: ${g.length}`;
+
     rows.push(`<thead><tr>
-      <th>תאריך</th><th>בית</th><th>תוצאה</th><th>חוץ</th><th>מיקום</th>
+      <th>מחזור</th><th>תאריך</th><th>בית</th><th>תוצאה</th><th>חוץ</th><th>מיקום</th>
     </tr></thead>`);
     rows.push("<tbody>");
-    if(!g.length){
-      rows.push(`<tr><td colspan="5" class="muted">אין משחקים לתצוגה לפי הסינון הנוכחי</td></tr>`);
-    } else {
-      for(const game of g){
-        const date = game?.dateText || formatDateHeb(game?.date || "");
-        const home = normalizeTeamName(game?.homeTeam?.name);
-        const away = normalizeTeamName(game?.awayTeam?.name);
-        const loc = normalizeTeamName(game?.field?.name || game?.location || "");
-        rows.push(`<tr>
-          <td>${safeText(date)}</td>
-          <td>${safeText(home)}</td>
-          <td><b>${scoreText(game)}</b></td>
-          <td>${safeText(away)}</td>
-          <td class="muted">${safeText(loc)}</td>
-        </tr>`);
-      }
+
+    for(const game of g){
+      const date = formatDate(game?.date || game?.dateText || "");
+      const {home, away} = gameTeams(game);
+      const loc = norm(game?.field?.name || game?.location || "");
+      const round = displayRound(game?.round?.number ?? "");
+      // highlight games involving focus
+      const isFocus = isTeamInGame(game, focus);
+      rows.push(`<tr class="${isFocus ? "focusRow" : ""}">
+        <td>${round}</td>
+        <td>${date}</td>
+        <td>${home}</td>
+        <td><b>${gameScoreStr(game)}</b></td>
+        <td>${away}</td>
+        <td style="color:var(--muted2)">${loc}</td>
+      </tr>`);
     }
+
+    if(!g.length){
+      rows.push(`<tr><td colspan="6" style="color:var(--muted2); padding:14px;">אין משחקים לתצוגה לפי הסינון הנוכחי.</td></tr>`);
+    }
+
     rows.push("</tbody>");
     tbl.innerHTML = rows.join("");
   }
@@ -531,31 +822,23 @@
 
     const rows = [];
     rows.push(`<thead><tr>
-      <th>#</th><th>קבוצה</th><th>נק'</th><th>מש</th><th>נ</th><th>ה</th><th>ת</th><th>+</th><th>-</th><th>הפרש</th>
+      <th>#</th><th>קבוצה</th><th>נק'</th><th>מש</th><th>נצ</th><th>הפ</th><th>ת</th><th>+</th><th>-</th><th>הפרש</th>
     </tr></thead>`);
     rows.push("<tbody>");
     for(const r of s){
-      const name = normalizeTeamName(r.name);
-      const isFocus = isTeamMatch(name, focus);
-      const pts = r.points ?? r.pts ?? "";
-      const played = r.games ?? r.played ?? "";
-      const w = r.w ?? r.wins ?? "";
-      const l = r.l ?? r.losses ?? "";
-      const d = r.d ?? r.draws ?? "";
-      const gf = r.gf ?? "";
-      const ga = r.ga ?? "";
-      const gd = r.gd ?? (gf!=="" && ga!=="" ? (Number(gf)-Number(ga)) : "");
-      rows.push(`<tr style="${isFocus ? 'background: rgba(58,167,255,.10);' : ''}">
-        <td>${r.rank ?? r.position ?? ""}</td>
-        <td><b>${safeText(name)}</b></td>
-        <td><b>${safeText(pts)}</b></td>
-        <td>${safeText(played)}</td>
-        <td>${safeText(w)}</td>
-        <td>${safeText(l)}</td>
-        <td>${safeText(d)}</td>
-        <td>${safeText(gf)}</td>
-        <td>${safeText(ga)}</td>
-        <td>${safeText(gd)}</td>
+      const name = norm(r.name);
+      const isFocus = sameTeam(name, focus);
+      rows.push(`<tr class="${isFocus ? "focusRow" : ""}">
+        <td>${r.rank ?? ""}</td>
+        <td><b>${name}</b></td>
+        <td><b>${r.points ?? ""}</b></td>
+        <td>${r.played ?? ""}</td>
+        <td>${r.w ?? ""}</td>
+        <td>${r.l ?? ""}</td>
+        <td>${r.d ?? ""}</td>
+        <td>${r.gf ?? ""}</td>
+        <td>${r.ga ?? ""}</td>
+        <td>${r.gd ?? ""}</td>
       </tr>`);
     }
     rows.push("</tbody>");
@@ -567,26 +850,28 @@
     const focus = findTeamKey(state.focusTeam);
     const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
     const round = displayRound(state.selectedRound ?? "");
-    const shown = filteredGames().length;
+    const games = getGames();
 
-    const last = lastGameForTeam(focus, state.data?.games || []);
-    const lastOpp = opp ? lastH2H(focus, opp, state.data?.games || []) : null;
+    const last = lastGameForTeam(focus, games);
+    const lastOpp = opp ? lastH2H(focus, opp, games) : null;
 
     const lastLine = last
-      ? `משחק אחרון: <b>${opponentOf(last, focus)}</b> — <b>${gameScoreStr(last)}</b> <span class="muted">(${safeText(last.dateText || "")})</span>`
-      : `משחק אחרון: <span class="muted">אין תוצאה קודמת</span>`;
+      ? `משחק אחרון של <b>${focus}</b>: מול <b>${opponentOf(last, focus)}</b> — <b>${gameScoreStr(last)}</b> <span style="color:var(--muted2)">(${formatDate(last.dateText || last.date || "")})</span>`
+      : `משחק אחרון של <b>${focus}</b>: <span style="color:var(--muted2)">אין תוצאה</span>`;
 
     const lastOppLine = opp
       ? (lastOpp
-          ? `מפגש אחרון מול <b>${opp}</b>: <b>${gameScoreStr(lastOpp)}</b> <span class="muted">(${safeText(lastOpp.dateText || "")})</span>`
-          : `מפגש אחרון מול <b>${opp}</b>: <span class="muted">אין תוצאה</span>`)
-      : `מפגש אחרון מול יריבה: <span class="muted">לא נבחרה</span>`;
+          ? `מפגש אחרון מול <b>${opp}</b>: <b>${gameScoreStr(lastOpp)}</b> <span style="color:var(--muted2)">(${formatDate(lastOpp.dateText || lastOpp.date || "")})</span>`
+          : `מפגש אחרון מול <b>${opp}</b>: <span style="color:var(--muted2)">אין תוצאה</span>`)
+      : `מפגש אחרון מול יריבה: <span style="color:var(--muted2)">לא נבחרה</span>`;
+
+    const modeLine = state.viewMode==="round"
+      ? `מצב: <b>מחזור</b> (מחזור נבחר: <b>${round}</b>)`
+      : `מצב: <b>מול יריבה</b> ${opp ? `(יריבה: <b>${opp}</b>)` : ""}`;
 
     box.innerHTML = [
+      modeLine,
       `קבוצה במרכז: <b>${focus}</b>`,
-      opp ? `יריבה נבחרת: <b>${opp}</b>` : `יריבה נבחרת: <span class="muted">לא נבחרה</span>`,
-      `מחזור: <b>${round}</b>`,
-      `משחקים מוצגים: <b>${shown}</b>`,
       lastLine,
       lastOppLine
     ].join("<br/>");
@@ -598,62 +883,94 @@
     nodesEl.innerHTML = "";
     linesEl.innerHTML = "";
 
-    const teams = getTeams();
+    const teams = dedupTeamsFromStandings();
     const focus = findTeamKey(state.focusTeam);
     if(!teams.length) return;
 
     // Center node
+    const s = getStandings();
+    const focusSt = s.find(x => sameTeam(x.name, focus));
+    const pts = focusSt?.points ?? "—";
+    const rank = focusSt?.rank ?? "—";
+    const played = focusSt?.played ?? "—";
+    const w = focusSt?.w ?? "—";
+    const l = focusSt?.l ?? "—";
+    const d = focusSt?.d ?? "—";
+    const gd = focusSt?.gd ?? "—";
+
     const center = document.createElement("div");
     center.className = "node center";
     center.style.left = "50%";
     center.style.top = "55%";
-
-    const focusStanding = getStandings().find(x => isTeamMatch(x.name, focus));
-    const pts = focusStanding?.points ?? focusStanding?.pts ?? "—";
-    const rank = focusStanding?.rank ?? focusStanding?.position ?? "—";
-    const last = lastGameForTeam(focus, state.data?.games || []);
-    const lastTxt = last ? `${opponentOf(last, focus)} • ${gameScoreStr(last)}${last.dateText ? " • " + last.dateText : ""}` : "אין משחק אחרון";
-
-    center.innerHTML = `<div class="name">${focus}</div>
-      <div class="meta"><span>מקום ${safeText(rank)}</span><span>${safeText(pts)} נק׳</span></div>
-      <div class="meta2">משחק אחרון: ${safeText(lastTxt)}</div>
-      <div class="cta">הקבוצה שלנו (לחץ לאיפוס יריבה)</div>`;
-    center.onclick = () => { state.selectedOpponent = ""; renderAll(); };
+    center.innerHTML = `
+      <div class="name">${focus}</div>
+      <div class="meta"><span>מקום ${rank}</span><span>${pts} נק׳</span></div>
+      <div class="meta2">מש: ${played} • נצ: ${w} • הפ: ${l} • ת: ${d} • הפרש: ${gd}</div>
+      <div class="cta">לחץ כדי לבטל יריבה</div>
+    `;
+    center.onclick = ()=>{
+      state.selectedOpponent = "";
+      state.viewMode = "round";
+      syncModeButtons();
+      renderAll();
+      // scroll to tables when clearing? no
+    };
     nodesEl.appendChild(center);
 
     // Others
-    const others = teams.filter(t => !isTeamMatch(t, focus));
+    const others = teams.filter(t => !sameTeam(t, focus));
     const count = others.length;
-    const radiusX = 310, radiusY = 230;
+    const radiusX = 340;
+    const radiusY = 250;
     const cx = 0.5, cy = 0.55;
 
     const getPos = (i)=>{
       const a = (i / Math.max(1,count)) * Math.PI * 2;
-      return { a, x: cx + (Math.cos(a)*radiusX)/1000, y: cy + (Math.sin(a)*radiusY)/720 };
+      const x = cx + (Math.cos(a) * radiusX) / 1000;
+      const y = cy + (Math.sin(a) * radiusY) / 760;
+      return {x,y};
     };
+
+    const games = getGames();
 
     others.forEach((team, i)=>{
       const p = getPos(i);
-      const left = (p.x*100) + "%";
-      const top  = (p.y*100) + "%";
-      const st = getStandings().find(x => isTeamMatch(x.name, team));
-      const lastVs = lastH2H(focus, team, state.data?.games || []);
-      const lastVsTxt = lastVs ? `${gameScoreStr(lastVs)}${lastVs.dateText ? " • " + lastVs.dateText : ""}` : "אין תוצאה";
+      const left = (p.x * 100) + "%";
+      const top = (p.y * 100) + "%";
 
+      // line
       const line = document.createElement("div");
       line.className = "line";
-      line.dataset.to = JSON.stringify({x:left,y:top});
+      line.dataset.to = JSON.stringify({x:left, y:top});
       linesEl.appendChild(line);
 
+      const st = s.find(x => sameTeam(x.name, team));
+      const lastVs = lastH2H(focus, team, games);
+      const lastVsTxt = lastVs
+        ? `מפגש אחרון: ${gameScoreStr(lastVs)}`
+        : `מפגש אחרון: אין תוצאה`;
+
       const d = document.createElement("div");
-      d.className = "node";
+      d.className = "node" + (state.selectedOpponent && sameTeam(state.selectedOpponent, team) ? " active" : "");
       d.style.left = left;
       d.style.top = top;
-      d.innerHTML = `<div class="name">${team}</div>
-        <div class="meta"><span>מקום ${safeText(st?.rank ?? st?.position ?? "—")}</span><span>${safeText(st?.points ?? st?.pts ?? "—")} נק׳</span></div>
-        <div class="meta2">מפגש אחרון: ${safeText(lastVsTxt)}</div>
-        <div class="cta">לחץ לצפייה</div>`;
-      d.onclick = ()=>{ state.selectedOpponent = team; renderAll(); };
+      d.innerHTML = `
+        <div class="name">${team}</div>
+        <div class="meta"><span>מקום ${st?.rank ?? "—"}</span><span>${st?.points ?? "—"} נק׳</span></div>
+        <div class="meta2">${lastVsTxt}</div>
+        <div class="cta">לחץ לצפייה</div>
+      `;
+      d.onclick = ()=>{
+        state.selectedOpponent = team;
+        state.viewMode = "h2h";
+        syncModeButtons();
+        // show games automatically
+        state.show = "games";
+        syncShowButtons();
+        renderAll();
+        // scroll tables into view for convenience
+        el("gamesTable").scrollIntoView({behavior:"smooth", block:"start"});
+      };
       nodesEl.appendChild(d);
     });
 
@@ -668,92 +985,137 @@
         const yPct = parseFloat(String(to.y).replace("%",""))/100;
         const x2 = rect.width * xPct;
         const y2 = rect.height * yPct;
-        const dx = x2 - centerX, dy = y2 - centerY;
+        const dx = x2 - centerX;
+        const dy = y2 - centerY;
         const len = Math.sqrt(dx*dx + dy*dy);
         const ang = Math.atan2(dy, dx);
         line.style.left = centerX + "px";
-        line.style.top  = centerY + "px";
+        line.style.top = centerY + "px";
         line.style.width = len + "px";
         line.style.transform = `rotate(${ang}rad)`;
       }
     });
   }
 
+  function syncModeButtons(){
+    const isRound = state.viewMode==="round";
+    el("modeRound").classList.toggle("primary", isRound);
+    el("modeH2H").classList.toggle("primary", !isRound);
+  }
+
+  function syncShowButtons(){
+    const isGames = state.show==="games";
+    el("showGames").classList.toggle("primary", isGames);
+    el("showStandings").classList.toggle("primary", !isGames);
+    el("gamesWrap").style.display = isGames ? "block" : "none";
+    el("standingsWrap").style.display = isGames ? "none" : "block";
+  }
+
   function renderAll(){
     state.onlyTeam = el("onlyTeam").checked;
-    renderStats();
-    renderGamesTable();
-    renderStandingsTable();
-    renderMap();
-    buildChips();
 
+    // meta header
     const m = state.data?.meta || {};
     const ver = m?.version ? `v${m.version}` : "";
-    const fetched = m?.fetchedAt || m?.last_update || "";
-    el("metaSmall").textContent = `${ver}${fetched ? " • " + formatDateHeb(fetched) : ""}`;
+    const fetched = m?.fetchedAt || m?.last_update || m?.lastUpdate || "";
+    el("metaSmall").textContent = `${ver}${fetched ? " • " + formatDate(fetched) : ""}`;
+
+    el("leagueLine").textContent = leagueLine();
+
+    renderStats();
+    buildChips();
+    renderMap();
+
+    if(state.show==="games") renderGamesTable();
+    renderStandingsTable();
+
+    // hint
+    const focus = findTeamKey(state.focusTeam);
+    const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
+    el("tablesHint").textContent = state.show==="games"
+      ? (state.viewMode==="h2h" ? `גליל מול ${opp || "—"} • כל המחזורים` : `מחזור ${displayRound(state.selectedRound ?? "")}`)
+      : `טבלה מלאה`;
+
+    syncModeButtons();
+    syncShowButtons();
   }
 
   function setup(){
-    el("toggleGames").onclick = ()=>{ el("gamesWrap").style.display="block"; el("standingsWrap").style.display="none"; };
-    el("toggleStandings").onclick = ()=>{ el("gamesWrap").style.display="none"; el("standingsWrap").style.display="block"; };
+    el("teamInput").addEventListener("input", ()=> renderAll());
+    el("onlyTeam").addEventListener("change", ()=> renderAll());
+
     el("resetBtn").onclick = ()=>{
-      state.selectedOpponent=""; state.chipTeam="";
-      el("teamInput").value=""; el("onlyTeam").checked=false;
+      state.selectedOpponent = "";
+      state.chipTeam = "";
+      el("teamInput").value = "";
+      el("onlyTeam").checked = false;
+      state.viewMode = "round";
+      state.show = "games";
+      syncModeButtons();
+      syncShowButtons();
       renderAll();
     };
-    el("teamInput").addEventListener("input", ()=>renderAll());
-    el("onlyTeam").addEventListener("change", ()=>renderAll());
-  }
 
-  async function fetchJsonAny(){
-    const tries = [];
-    for(const url of DATA_URLS){
-      try{
-        const res = await fetch(url, { cache:"no-store" });
-        tries.push({url, ok:res.ok, status:res.status});
-        if(res.ok){
-          state.dataUrlUsed = url.replace(/\?v=.*$/,"");
-          return await res.json();
-        }
-      }catch(e){
-        tries.push({url, ok:false, err:String(e?.message||e)});
-      }
-    }
-    const diag = tries.map(t => `• <code>${t.url}</code> → ${t.ok ? "OK" : ("FAIL " + (t.status||t.err||""))}`).join("<br/>");
-    setDiag(`<b>ניסיתי לטעון data.json מכמה כתובות:</b><br/>${diag}<br/><span class="muted">אם הכל FAIL — כנראה ש־data.json לא נמצא בפרסום של GitHub Pages או לא הועלה.</span>`);
-    throw new Error("Failed to fetch data.json");
+    el("modeRound").onclick = ()=>{
+      state.viewMode = "round";
+      state.selectedOpponent = "";
+      syncModeButtons();
+      renderAll();
+    };
+    el("modeH2H").onclick = ()=>{
+      state.viewMode = "h2h";
+      syncModeButtons();
+      renderAll();
+    };
+
+    el("showGames").onclick = ()=>{
+      state.show = "games";
+      syncShowButtons();
+      renderAll();
+    };
+    el("showStandings").onclick = ()=>{
+      state.show = "standings";
+      syncShowButtons();
+      renderAll();
+    };
   }
 
   async function load(){
     setup();
     try{
-      state.data = await fetchJsonAny();
+      const res = await fetch(DATA_URL, {cache:"no-store"});
+      if(!res.ok) throw new Error("HTTP " + res.status);
+      state.data = await res.json();
 
-      // Build rounds: meta.roundsFetched OR from games
+      // Build rounds
       const metaRounds = state.data?.meta?.roundsFetched;
       if(Array.isArray(metaRounds) && metaRounds.length){
-        state.rounds = metaRounds.map(r => ({number:String(r.number), gamesCount:Number(r.gamesCount||0)}));
-      } else {
+        state.rounds = metaRounds.map(r => ({number: String(r.number), gamesCount: Number(r.gamesCount||0)}));
+      }else{
         const by = new Map();
-        for(const g of (state.data?.games||[])){
+        for(const g of getGames()){
           const n = String(g?.round?.number ?? "");
           if(!n) continue;
-          by.set(n, (by.get(n)||0)+1);
+          by.set(n, (by.get(n)||0) + 1);
         }
         state.rounds = Array.from(by.entries()).map(([number,gamesCount])=>({number, gamesCount}))
-          .sort((a,b)=> Number(a.number)-Number(b.number));
+          .sort((a,b)=> Number(a.number) - Number(b.number));
       }
-
       computeRoundOffset();
       buildRoundSelect();
-      el("leagueLine").textContent = leagueLine();
+
+      // Default: latest round
+      if(state.rounds.length){
+        state.selectedRound = String(state.rounds[state.rounds.length-1].number);
+        el("roundSelect").value = state.selectedRound;
+      }
+
+      // clear error
       setErr("");
-      setDiag(state.dataUrlUsed ? `<b>data.json נטען מ:</b> <code>${state.dataUrlUsed}</code>` : "");
       renderAll();
     }catch(e){
       console.error(e);
-      setErr("לא הצלחתי לטעון את data.json. אם אתה פותח דרך file:// זה לא יעבוד — פתח דרך Live Server או GitHub Pages. " +
-             "אם אתה ב־GitHub Pages ועדיין אין נתונים — כנראה שחסר data.json בפרסום.\nשגיאה: " + (e?.message||e));
+      setErr("לא הצלחתי לטעון את data.json. אם אתה פותח דרך file:// זה לא יעבוד — פתח דרך Live Server או GitHub Pages.\nשגיאה: " + (e?.message||e));
       el("leagueLine").textContent = "שגיאה בטעינה";
     }
   }
