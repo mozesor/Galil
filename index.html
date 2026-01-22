@@ -344,6 +344,83 @@ a:hover{text-decoration:underline;}
   .tab-panel.active{ display:block; }
 }
 
+
+.teamLink{
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.teamLink:active{ transform: translateY(1px); }
+.modalOverlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 50;
+  padding: 14px;
+}
+.modalOverlay.open{ display: flex; }
+.modal{
+  width: min(720px, 100%);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+.modalHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.modalTitle{
+  font-weight: 800;
+  font-size: 16px;
+}
+.iconBtn{
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.modalBody{ padding: 12px 14px; }
+.kpis{ display:flex; flex-wrap:wrap; gap:10px; }
+.kpi{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 12px;
+  min-width: 140px;
+}
+.kpi .label{ color: var(--muted); font-size: 12px; }
+.kpi .value{ font-weight: 800; margin-top: 4px; }
+.badges{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+.badge{
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+.badge.win{ border-color: rgba(34,197,94,0.35); }
+.badge.lose{ border-color: rgba(255,107,107,0.35); }
+.badge.draw{ border-color: rgba(245,158,11,0.35); }
+.sectionTitle{ margin: 14px 0 8px; font-size: 14px; font-weight: 800; }
+.smallTable td, .smallTable th{ white-space: normal; }
 </style>
 </head>
 <body>
@@ -398,7 +475,7 @@ a:hover{text-decoration:underline;}
                 <th>בית</th>
                 <th>תוצאה</th>
                 <th>חוץ</th>
-                <th>מיקום</th>
+                <th>אצל מי</th>
               </tr>
             </thead>
             <tbody id="gamesBody"></tbody>
@@ -416,6 +493,7 @@ a:hover{text-decoration:underline;}
                 <th>קבוצה</th>
                 <th>נק׳</th>
                 <th>מש</th>
+                <th>נצ׳</th><th>תיקו</th><th>הפ׳</th>
                 <th>+</th>
                 <th>-</th>
                 <th>הפרש</th>
@@ -425,6 +503,16 @@ a:hover{text-decoration:underline;}
           </table>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div id="teamModalOverlay" class="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="teamModalTitle">
+    <div class="modal">
+      <div class="modalHeader">
+        <div class="modalTitle" id="teamModalTitle">סטטיסטיקה</div>
+        <button class="iconBtn" id="teamModalClose" aria-label="סגור">סגור ✕</button>
+      </div>
+      <div class="modalBody" id="teamModalBody"></div>
     </div>
   </div>
 
@@ -465,6 +553,145 @@ a:hover{text-decoration:underline;}
       return String(hg) + " - " + String(ag);
     }
     return "טרם";
+  }
+
+  function esc(s){
+    return String(s ?? "")
+      .replaceAll("&","&amp;")
+      .replaceAll("<","&lt;")
+      .replaceAll(">","&gt;")
+      .replaceAll('"',"&quot;")
+      .replaceAll("'","&#39;");
+  }
+  function escapeAttr(s){ return esc(s).replaceAll("`","&#96;"); }
+
+  function buildOpponentLocation(g, teamQ){
+    const venue = g?.venue || "";
+    const q = (teamQ || "").trim().toLowerCase();
+    if(!q) return venue;
+    const h = (g.home?.name || "");
+    const a = (g.away?.name || "");
+    const hl = h.toLowerCase();
+    const al = a.toLowerCase();
+
+    if(hl.includes(q) && a){
+      return `בית מול ${a}`;
+    }
+    if(al.includes(q) && h){
+      return `חוץ אצל ${h}`;
+    }
+    return venue;
+  }
+
+  function teamOutcomeFor(g, teamQ){
+    const q = (teamQ || "").trim().toLowerCase();
+    const h = (g.home?.name || "");
+    const a = (g.away?.name || "");
+    const hg = normGoal(g.home?.goals);
+    const ag = normGoal(g.away?.goals);
+    if(hg === null || ag === null) return null; // not played
+    if(!q) return null;
+
+    const isHome = h.toLowerCase().includes(q);
+    const isAway = a.toLowerCase().includes(q);
+    if(!isHome && !isAway) return null;
+
+    const my = isHome ? hg : ag;
+    const opp = isHome ? ag : hg;
+    if(my > opp) return "W";
+    if(my < opp) return "L";
+    return "D";
+  }
+
+  function openTeamModal(opponent){
+    if(!DATA) return;
+    const myTeamQ = (document.getElementById("teamFilter")?.value || "").trim() || "גליל";
+    const oppName = (opponent || "").trim();
+    if(!oppName) return;
+
+    const played = (DATA.games || []).filter(g => normGoal(g.home?.goals) !== null && normGoal(g.away?.goals) !== null);
+
+    const h2h = played.filter(g=>{
+      const h = (g.home?.name || "");
+      const a = (g.away?.name || "");
+      const hl=h.toLowerCase(), al=a.toLowerCase();
+      const my=myTeamQ.toLowerCase();
+      const opp=oppName.toLowerCase();
+      return (hl.includes(my) && al.includes(opp)) || (hl.includes(opp) && al.includes(my));
+    }).sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+
+    const last = h2h[0] || null;
+    const last5 = h2h.slice(0,5);
+
+    let w=0,l=0,d=0;
+    for(const g of h2h){
+      const o = teamOutcomeFor(g, myTeamQ);
+      if(o==="W") w++;
+      else if(o==="L") l++;
+      else if(o==="D") d++;
+    }
+
+    const recent = played
+      .filter(g=>includesTeam(g, myTeamQ))
+      .sort((a,b)=>(b.date||"").localeCompare(a.date||""))
+      .slice(0,5);
+
+    const recentBadges = recent.map(g=>{
+      const o = teamOutcomeFor(g, myTeamQ);
+      const score = formatScore(g);
+      const opp = ((g.home?.name||"").toLowerCase().includes(myTeamQ.toLowerCase())) ? (g.away?.name||"") : (g.home?.name||"");
+      const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
+      const label = o==="W" ? "נצח" : o==="L" ? "הפסד" : "תיקו";
+      return `<span class="badge ${cls}">${label} • ${esc(opp)} • ${esc(score)}</span>`;
+    }).join("");
+
+    const lastHtml = last ? `
+      <table class="smallTable" style="width:100%; border-collapse:collapse;">
+        <tr>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">תאריך</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">משחק</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">תוצאה</th>
+        </tr>
+        <tr>
+          <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(fmtDate(last.date))}</td>
+          <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(last.home?.name||"")} מול ${esc(last.away?.name||"")}</td>
+          <td style="padding:8px; border-bottom:1px solid var(--border);"><b>${esc(formatScore(last))}</b></td>
+        </tr>
+      </table>
+    ` : `<div class="tiny">לא נמצא משחק ששוחק עדיין בין "${esc(myTeamQ)}" ל-"${esc(oppName)}".</div>`;
+
+    const last5badges = last5.map(g=>{
+      const o = teamOutcomeFor(g, myTeamQ);
+      const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
+      const label = o==="W" ? "נצח" : o==="L" ? "הפסד" : "תיקו";
+      return `<span class="badge ${cls}">${label} • ${esc(fmtDate(g.date))} • ${esc(formatScore(g))}</span>`;
+    }).join("") || `<div class="tiny">אין מספיק היסטוריה להצגה.</div>`;
+
+    const body = document.getElementById("teamModalBody");
+    document.getElementById("teamModalTitle").textContent = `מול ${oppName}`;
+    body.innerHTML = `
+      <div class="kpis">
+        <div class="kpi"><div class="label">מאזן כללי מול הקבוצה</div><div class="value">${w} נצ׳ • ${l} הפ׳${d?` • ${d} תיקו`:""}</div></div>
+        <div class="kpi"><div class="label">סה״כ מפגשים ששוחקו</div><div class="value">${h2h.length}</div></div>
+        <div class="kpi"><div class="label">הדגשה לפי</div><div class="value">${esc(myTeamQ)}</div></div>
+      </div>
+
+      <div class="sectionTitle">המשחק האחרון ביניהן</div>
+      ${lastHtml}
+
+      <div class="sectionTitle">5 מפגשים אחרונים (ראש בראש)</div>
+      <div class="badges">${last5badges}</div>
+
+      <div class="sectionTitle">5 משחקים אחרונים של הקבוצה (כללי)</div>
+      <div class="badges">${recentBadges || `<div class="tiny">אין נתונים.</div>`}</div>
+    `;
+
+    const ov = document.getElementById("teamModalOverlay");
+    ov.classList.add("open");
+  }
+
+  function closeTeamModal(){
+    document.getElementById("teamModalOverlay")?.classList.remove("open");
   }
 
 function showError(msg){
@@ -514,8 +741,7 @@ const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
          אם פתחת את הקובץ דרך <code>file://</code> זה לא יעבוד – פתח דרך שרת (GitHub Pages / Live Server).<br><br>
          שגיאה: <code>${String(e).replaceAll("<","&lt;").replaceAll(">","&gt;")}</code>`
       );
-      document.getElementById("meta").textContent = "אין נתונים";
-      DATA = null;
+DATA = null;
       document.getElementById("roundSelect").innerHTML = "";
       document.getElementById("gamesBody").innerHTML = "";
       document.getElementById("standBody").innerHTML = "";
@@ -565,12 +791,13 @@ const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
       const tr = document.createElement("tr");
       const isTeam = includesTeam(g, teamQ);
             const score = formatScore(g);
+      const loc = buildOpponentLocation(g, teamQ);
       tr.innerHTML = `
         <td>${fmtDate(g.date)}</td>
-        <td>${g.home?.name || ""}</td>
+        <td><button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></td>
         <td><b><span class="score" dir="auto">${score}</span></b></td>
-        <td>${g.away?.name || ""}</td>
-        <td class="tiny">${g.venue || ""}</td>
+        <td><button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></td>
+        <td class="tiny">${esc(loc)}</td>
       `;
       if(isTeam) tr.className = "hl";
       body.appendChild(tr);
@@ -583,9 +810,12 @@ const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
       const isTeam = teamQ && (t.name || "").toLowerCase().includes(teamQ.toLowerCase());
       tr.innerHTML = `
         <td>${t.rank ?? ""}</td>
-        <td>${t.name ?? ""}</td>
+        <td><button class="teamLink" data-team="${escapeAttr(t.name ?? "")}">${esc(t.name ?? "")}</button></td>
         <td><b>${t.points ?? ""}</b></td>
         <td>${t.games ?? ""}</td>
+        <td>${t.wins ?? ""}</td>
+        <td>${t.draws ?? ""}</td>
+        <td>${t.losses ?? ""}</td>
         <td>${t.gf ?? ""}</td>
         <td>${t.ga ?? ""}</td>
         <td>${t.gd ?? ""}</td>
@@ -601,6 +831,22 @@ const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
   document.getElementById("roundNext").onclick = () => stepRound(1);
   document.getElementById("teamFilter").oninput = render;
   document.getElementById("onlyTeam").onchange = render;
+
+  // Click any team name to open quick stats
+  document.addEventListener("click", (ev)=>{
+    const btn = ev.target?.closest?.(".teamLink");
+    if(!btn) return;
+    const name = btn.getAttribute("data-team") || "";
+    openTeamModal(name);
+  });
+
+  document.getElementById("teamModalClose")?.addEventListener("click", closeTeamModal);
+  document.getElementById("teamModalOverlay")?.addEventListener("click", (e)=>{
+    if(e.target?.id === "teamModalOverlay") closeTeamModal();
+  });
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape") closeTeamModal();
+  });
 
   load();
 </script>
