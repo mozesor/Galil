@@ -5,386 +5,231 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>גליל – לוח יריבות (מפה)</title>
   <style>
-    :root {
-      --bg0:#040812;
-      --bg1:#071427;
-      --glass: rgba(18, 30, 48, .55);
-      --glass2: rgba(18, 30, 48, .38);
-      --stroke: rgba(255,255,255,.10);
-      --stroke2: rgba(58,167,255,.22);
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.70);
-      --muted2: rgba(255,255,255,.55);
-      --accent: #3aa7ff;
-      --accent2:#79d2ff;
-      --good:#4ade80;
-      --warn:#fbbf24;
+    :root{
+      --bg0:#040812;--bg1:#071427;
+      --glass:rgba(18,30,48,.55);--glass2:rgba(18,30,48,.38);
+      --stroke:rgba(255,255,255,.10);--stroke2:rgba(58,167,255,.22);
+      --text:rgba(255,255,255,.92);--muted:rgba(255,255,255,.70);--muted2:rgba(255,255,255,.55);
+      --accent:#3aa7ff;--accent2:#79d2ff;
+      --good:#4ade80;--warn:#fbbf24;
     }
-
-    * { box-sizing:border-box; }
-    html,body { height:100%; }
-    body {
-      margin:0;
-      color:var(--text);
-      font-family: system-ui, -apple-system, "Segoe UI", Arial, "Noto Sans Hebrew", sans-serif;
-      background: radial-gradient(1200px 600px at 70% 20%, rgba(58,167,255,.16), transparent 55%),
-                  radial-gradient(900px 500px at 20% 15%, rgba(121,210,255,.10), transparent 50%),
-                  linear-gradient(180deg, var(--bg1), var(--bg0));
+    *{box-sizing:border-box;}
+    html,body{height:100%;}
+    body{
+      margin:0;color:var(--text);
+      font-family:system-ui,-apple-system,"Segoe UI",Arial,"Noto Sans Hebrew",sans-serif;
+      background:
+        radial-gradient(1200px 600px at 70% 20%, rgba(58,167,255,.16), transparent 55%),
+        radial-gradient(900px 500px at 20% 15%, rgba(121,210,255,.10), transparent 50%),
+        linear-gradient(180deg, var(--bg1), var(--bg0));
       overflow-x:hidden;
     }
-
-    .bg {
-      position:fixed; inset:0;
-      pointer-events:none;
-      background: url("assets/bg-tree.svg") center/cover no-repeat;
-      opacity:.30;
-      filter: blur(0px) saturate(1.05);
+    .bg{
+      position:fixed; inset:0; pointer-events:none;
+      background:url("assets/bg-tree.svg") center/cover no-repeat;
+      opacity:.30; filter:saturate(1.05);
     }
-    .bg::after {
-      content:"";
-      position:absolute; inset:0;
-      background: radial-gradient(900px 600px at 50% 40%, rgba(0,0,0,.10), rgba(0,0,0,.65));
+    .bg::after{
+      content:""; position:absolute; inset:0;
+      background:radial-gradient(900px 600px at 50% 40%, rgba(0,0,0,.10), rgba(0,0,0,.65));
     }
-
-    .wrap { position:relative; min-height:100%; }
-    header {
+    .wrap{position:relative; min-height:100%;}
+    header{
       position:sticky; top:0; z-index:50;
-      backdrop-filter: blur(10px);
-      background: linear-gradient(90deg, rgba(10,18,32,.55), rgba(10,18,32,.35));
-      border-bottom: 1px solid var(--stroke);
+      backdrop-filter:blur(10px);
+      background:linear-gradient(90deg, rgba(10,18,32,.55), rgba(10,18,32,.35));
+      border-bottom:1px solid var(--stroke);
     }
-    .bar {
-      max-width: 1320px;
-      margin: 0 auto;
-      padding: 14px 18px;
-      display:flex;
-      gap:14px;
-      align-items:center;
-      justify-content:space-between;
-      flex-wrap:wrap;
+    .bar{
+      max-width:1320px; margin:0 auto; padding:14px 18px;
+      display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap;
     }
-    .title {
-      display:flex; flex-direction:column; gap:4px;
-      min-width: 260px;
+    .title{display:flex; flex-direction:column; gap:4px; min-width:260px;}
+    .title h1{margin:0;font-size:22px;letter-spacing:.2px;}
+    .title .sub{color:var(--muted);font-size:13px;}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px; border:1px solid var(--stroke);
+      background:rgba(255,255,255,.03); border-radius:999px;
+      color:var(--muted); font-size:12px; white-space:nowrap;
     }
-    .title h1 {
-      margin:0;
-      font-size: 22px;
-      letter-spacing: .2px;
-    }
-    .title .sub {
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .pill {
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding: 8px 10px;
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 12px;
-      white-space:nowrap;
-    }
-    .pill a { color: var(--accent2); text-decoration:none; }
-    .pill a:hover { text-decoration:underline; }
+    .pill a{color:var(--accent2);text-decoration:none;}
+    .pill a:hover{text-decoration:underline;}
 
-    main {
-      max-width: 1320px;
-      margin: 16px auto 26px;
-      padding: 0 14px;
-      display:grid;
-      grid-template-columns: 420px 1fr;
-      gap: 16px;
+    main{
+      max-width:1320px; margin:16px auto 26px; padding:0 14px;
+      display:grid; grid-template-columns:420px 1fr; gap:16px;
     }
 
-    .card {
-      border: 1px solid var(--stroke);
-      background: linear-gradient(180deg, var(--glass), rgba(7, 15, 26, .35));
-      border-radius: 18px;
-      box-shadow: 0 20px 70px rgba(0,0,0,.35);
+    .card{
+      border:1px solid var(--stroke);
+      background:linear-gradient(180deg, var(--glass), rgba(7,15,26,.35));
+      border-radius:18px;
+      box-shadow:0 20px 70px rgba(0,0,0,.35);
       overflow:hidden;
     }
-    .cardHeader {
-      padding: 14px 14px 10px;
-      border-bottom: 1px solid var(--stroke);
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 10px;
+    .cardHeader{
+      padding:14px 14px 10px;
+      border-bottom:1px solid var(--stroke);
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
     }
-    .cardHeader h2 {
-      margin:0;
-      font-size: 16px;
-      color: var(--text);
-    }
-    .cardHeader small {
-      color: var(--muted2);
-      font-size: 12px;
-    }
-    .cardBody { padding: 12px 14px 14px; }
+    .cardHeader h2{margin:0;font-size:16px;color:var(--text);}
+    .cardHeader small{color:var(--muted2);font-size:12px;}
+    .cardBody{padding:12px 14px 14px;}
 
-    label {
-      font-size: 13px;
-      color: var(--muted);
-    }
-    input[type="text"], select {
-      width: 100%;
-      margin-top: 6px;
-      padding: 10px 10px;
-      border-radius: 12px;
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
-      color: var(--text);
+    label{font-size:13px;color:var(--muted);}
+    input[type="text"], select{
+      width:100%; margin-top:6px; padding:10px 10px;
+      border-radius:12px; border:1px solid var(--stroke);
+      background:rgba(255,255,255,.03); color:var(--text);
       outline:none;
+      color-scheme: dark; /* helps Windows dropdown */
     }
-    input::placeholder { color: rgba(255,255,255,.45); }
-    .row {
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 10px;
+    input::placeholder{color:rgba(255,255,255,.45);}
+    .row{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px;}
+    .row3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:10px;}
+
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;}
+    .chip{
+      cursor:pointer; user-select:none;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.03);
+      color:var(--muted); font-size:12px; transition:.15s ease;
     }
-    .row3 {
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px;
-      margin-top: 10px;
+    .chip:hover{border-color:var(--stroke2); color:var(--text);}
+    .chip.active{
+      border-color:rgba(58,167,255,.55);
+      background:rgba(58,167,255,.12);
+      color:var(--text);
+      box-shadow:0 0 0 3px rgba(58,167,255,.10) inset;
     }
 
-    .chips {
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top: 10px;
-    }
-    .chip {
+    .btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;}
+    button{
       cursor:pointer;
-      user-select:none;
-      padding: 8px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
-      color: var(--muted);
-      font-size: 12px;
-      transition: .15s ease;
-    }
-    .chip:hover { border-color: var(--stroke2); color: var(--text); }
-    .chip.active {
-      border-color: rgba(58,167,255,.55);
-      background: rgba(58,167,255,.12);
-      color: var(--text);
-      box-shadow: 0 0 0 3px rgba(58,167,255,.10) inset;
-    }
-
-    .btns {
-      display:flex; gap:10px; flex-wrap:wrap;
-      margin-top: 12px;
-    }
-    button {
-      cursor:pointer;
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.04);
-      color: var(--text);
-      padding: 10px 12px;
-      border-radius: 14px;
-      font-weight: 600;
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:14px;
+      font-weight:600;
       transition:.15s ease;
     }
-    button:hover { border-color: var(--stroke2); background: rgba(58,167,255,.10); }
-    button.primary {
-      border-color: rgba(58,167,255,.55);
-      background: rgba(58,167,255,.12);
+    button:hover{border-color:var(--stroke2); background:rgba(58,167,255,.10);}
+    button.primary{border-color:rgba(58,167,255,.55); background:rgba(58,167,255,.12);}
+    button:disabled{opacity:.45; cursor:not-allowed;}
+
+    .stats{
+      margin-top:12px; padding:10px 12px;
+      border-radius:14px; border:1px dashed rgba(255,255,255,.14);
+      background:rgba(0,0,0,.15);
+      color:var(--muted); font-size:12px; line-height:1.5;
     }
 
-    .stats {
-      margin-top: 12px;
-      padding: 10px 12px;
-      border-radius: 14px;
-      border: 1px dashed rgba(255,255,255,.14);
-      background: rgba(0,0,0,.15);
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.5;
+    .map{position:relative; min-height:720px;}
+    .mapInner{
+      position:relative; height:720px;
+      border-radius:18px; overflow:hidden;
+      border:1px solid var(--stroke);
+      background:radial-gradient(700px 420px at 50% 50%, rgba(58,167,255,.10), rgba(0,0,0,.15));
     }
-
-    .map {
-      position:relative;
-      min-height: 720px;
-    }
-    .mapInner {
-      position:relative;
-      height: 720px;
-      border-radius: 18px;
-      overflow:hidden;
-      border: 1px solid var(--stroke);
-      background: radial-gradient(700px 420px at 50% 50%, rgba(58,167,255,.10), rgba(0,0,0,.15));
-    }
-    .mapGrid {
+    .mapGrid{
       position:absolute; inset:0;
-      background-image:
-        radial-gradient(circle at 1px 1px, rgba(255,255,255,.07) 1px, transparent 0);
-      background-size: 22px 22px;
-      opacity: .25;
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.07) 1px, transparent 0);
+      background-size:22px 22px;
+      opacity:.25;
     }
-    .mapTitle {
-      position:absolute;
-      top:14px; right:14px; left:14px;
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap: 10px;
+    .mapTitle{
+      position:absolute; top:14px; right:14px; left:14px;
+      display:flex; align-items:flex-start; justify-content:space-between; gap:10px;
       pointer-events:none;
     }
-    .mapTitle h2 {
-      margin:0;
-      font-size: 18px;
-    }
-    .mapTitle .hint {
-      color: var(--muted2);
-      font-size: 12px;
-      text-align:left;
-    }
+    .mapTitle h2{margin:0;font-size:18px;}
+    .mapTitle .hint{color:var(--muted2);font-size:12px;text-align:left;}
 
-    .node {
-      position:absolute;
-      width: 210px;
-      transform: translate(-50%, -50%);
-      border-radius: 16px;
-      border: 1px solid var(--stroke);
-      background: linear-gradient(180deg, rgba(15,26,42,.75), rgba(9,16,27,.55));
-      box-shadow: 0 16px 44px rgba(0,0,0,.35);
-      padding: 12px 12px 10px;
-      cursor:pointer;
-      transition: .16s ease;
+    .node{
+      position:absolute; width:210px; transform:translate(-50%,-50%);
+      border-radius:16px; border:1px solid var(--stroke);
+      background:linear-gradient(180deg, rgba(15,26,42,.75), rgba(9,16,27,.55));
+      box-shadow:0 16px 44px rgba(0,0,0,.35);
+      padding:12px 12px 10px;
+      cursor:pointer; transition:.16s ease;
     }
-    .node:hover {
-      border-color: rgba(58,167,255,.50);
-      box-shadow: 0 18px 52px rgba(0,0,0,.42);
+    .node:hover{border-color:rgba(58,167,255,.50); box-shadow:0 18px 52px rgba(0,0,0,.42);}
+    .node .name{font-weight:800;font-size:14px;line-height:1.2;margin-bottom:6px;}
+    .node .meta{color:var(--muted2);font-size:12px;display:flex;justify-content:space-between;gap:10px;}
+    .node .cta{margin-top:8px;color:var(--accent2);font-size:12px;}
+    .node.center{
+      width:270px;
+      border-color:rgba(58,167,255,.55);
+      background:linear-gradient(180deg, rgba(35,86,120,.70), rgba(10,18,32,.55));
+      box-shadow:0 26px 80px rgba(58,167,255,.10), 0 18px 64px rgba(0,0,0,.45);
     }
-    .node .name {
-      font-weight: 800;
-      font-size: 14px;
-      line-height: 1.2;
-      margin-bottom: 6px;
-    }
-    .node .meta {
-      color: var(--muted2);
-      font-size: 12px;
-      display:flex;
-      justify-content:space-between;
-      gap: 10px;
-    }
-    .node .cta {
-      margin-top: 8px;
-      color: var(--accent2);
-      font-size: 12px;
-    }
-    .node.center {
-      width: 270px;
-      border-color: rgba(58,167,255,.55);
-      background: linear-gradient(180deg, rgba(35,86,120,.70), rgba(10,18,32,.55));
-      box-shadow: 0 26px 80px rgba(58,167,255,.10), 0 18px 64px rgba(0,0,0,.45);
-    }
-    .node.center .name { font-size: 16px; }
-    .node.center .meta span:last-child { color: rgba(255,255,255,.85); }
+    .node.center .name{font-size:16px;}
+    .meta2{font-size:12px; opacity:.9; margin-top:6px; color: rgba(210,240,255,0.92);}
 
-    .line {
-      position:absolute;
-      height: 1px;
-      background: rgba(58,167,255,.16);
-      transform-origin: 0 50%;
-      pointer-events:none;
-    }
+    .line{position:absolute;height:1px;background:rgba(58,167,255,.16);transform-origin:0 50%;pointer-events:none;}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    table{
+      width:100%;
+      border-collapse:collapse;
+      border-radius:14px;
+      border:1px solid var(--stroke);
+      background:rgba(0,0,0,.12);
       overflow:hidden;
-      border-radius: 14px;
-      border: 1px solid var(--stroke);
-      background: rgba(0,0,0,.12);
     }
-    th, td {
-      padding: 10px 10px;
-      font-size: 13px;
-      border-bottom: 1px solid rgba(255,255,255,.06);
-      vertical-align: middle;
+    th,td{
+      padding:10px 12px;
+      font-size:14px;
+      border-bottom:1px solid rgba(255,255,255,.06);
+      vertical-align:middle;
     }
-    th {
+    th{
       text-align:right;
-      color: rgba(255,255,255,.85);
-      background: rgba(255,255,255,.04);
-      position:sticky;
-      top:0;
-      z-index:1;
+      color:rgba(255,255,255,.85);
+      background:rgba(255,255,255,.04);
+      position:sticky; top:0; z-index:1;
     }
-    tr:hover td { background: rgba(58,167,255,.06); }
-    .twoTables {
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-      margin-top: 12px;
-    }
-    .muted { color: var(--muted2); }
-    .err {
-      margin-top: 10px;
-      padding: 10px 12px;
-      border: 1px solid rgba(251,191,36,.35);
-      border-radius: 14px;
-      background: rgba(251,191,36,.08);
-      color: rgba(255,255,255,.90);
-      font-size: 12px;
-      line-height: 1.5;
+    tr:hover td{background:rgba(58,167,255,.06);}
+    .twoTables{display:grid; grid-template-columns:1fr; gap:12px; margin-top:12px;}
+    .muted{color:var(--muted2);}
+    .err{
+      margin-top:10px;padding:10px 12px;
+      border:1px solid rgba(251,191,36,.35);
+      border-radius:14px;
+      background:rgba(251,191,36,.08);
+      color:rgba(255,255,255,.90);
+      font-size:12px; line-height:1.5;
     }
 
-    @media (max-width: 1100px) {
-      main { grid-template-columns: 1fr; }
-      .mapInner { height: 640px; }
-      .map { min-height: 640px; }
+    /* Fix: dark dropdown options on Windows */
+    select, option{ background-color: rgba(8,22,38,0.95); color: var(--text); }
+    select:focus{ outline:2px solid rgba(94,212,255,0.55); outline-offset:2px; }
+
+    /* Round navigation buttons */
+    .roundRow{display:flex; gap:10px; align-items:center; justify-content:flex-end; flex-wrap:wrap;}
+    .roundRow .btnMini{
+      padding:8px 12px; border-radius:999px;
+      border:1px solid rgba(255,255,255,0.16);
+      background:rgba(18,45,72,0.55);
+      color:var(--text);
     }
-    @media (max-width: 560px) {
-      .node { width: 180px; }
-      .node.center { width: 220px; }
-      .row { grid-template-columns: 1fr; }
-      .row3 { grid-template-columns: 1fr; }
-      th, td { font-size: 12px; padding: 9px 8px; }
+    .roundRow .btnMini:hover{ background:rgba(18,45,72,0.75); }
+
+    @media (max-width:1100px){
+      main{grid-template-columns:1fr;}
+      .mapInner{height:640px;}
+      .map{min-height:640px;}
     }
-  
-
-/* --- Fix: dark dropdown options on Windows --- */
-select, option{
-  background-color: rgba(8, 22, 38, 0.95);
-  color: var(--text);
-}
-select:focus{ outline: 2px solid rgba(94, 212, 255, 0.55); outline-offset: 2px; }
-
-/* --- Round navigation buttons --- */
-.roundRow{display:flex; gap:10px; align-items:center; justify-content:flex-end; flex-wrap:wrap;}
-.roundRow .btnMini{
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.16);
-  background: rgba(18,45,72,0.55);
-  color: var(--text);
-  cursor:pointer;
-}
-.roundRow .btnMini:hover{ background: rgba(18,45,72,0.75); }
-
-/* --- Standings table readability --- */
-table{ font-size: 16px; }
-th, td{ padding: 10px 12px; }
-.tableWrap{ overflow: visible; }
-@media (max-width: 900px){
-  table{ font-size: 14px; }
-  th, td{ padding: 8px 10px; }
-}
-
-
-.meta2{font-size:12px; opacity:.9; margin-top:6px; color: rgba(210,240,255,0.92);}
-</style>
+    @media (max-width:560px){
+      .node{width:180px;}
+      .node.center{width:220px;}
+      .row{grid-template-columns:1fr;}
+      .row3{grid-template-columns:1fr;}
+      th,td{font-size:12px;padding:9px 8px;}
+    }
+  </style>
 </head>
 <body>
   <div class="bg"></div>
@@ -448,8 +293,8 @@ th, td{ padding: 10px 12px; }
           <div class="chips" id="teamChips"></div>
 
           <div class="btns">
-            <button class="primary" id="toggleGames">משחקים מול היריבה</button>
-            <button id="toggleStandings">טבלה</button>
+            <button class="primary" id="toggleGames">משחקים</button>
+            <button id="toggleStandings">טבלה מלאה</button>
           </div>
 
           <div class="stats" id="statsBox"></div>
@@ -457,14 +302,14 @@ th, td{ padding: 10px 12px; }
 
           <div class="twoTables" id="tables">
             <div id="gamesWrap" style="display:block;">
-              <div class="muted" style="margin: 6px 0 8px;">משחקים במחזור הנבחר (או מול היריבה)</div>
+              <div class="muted" style="margin: 6px 0 8px;">משחקים (מחזור / מול היריבה)</div>
               <div style="max-height: 280px; overflow:auto; border-radius:14px;">
                 <table id="gamesTable"></table>
               </div>
             </div>
             <div id="standingsWrap" style="display:none;">
-              <div class="muted" style="margin: 6px 0 8px;">טבלת הליגה</div>
-              <div style="max-height: 320px; overflow:auto; border-radius:14px;">
+              <div class="muted" style="margin: 6px 0 8px;">טבלת הליגה (בלי גלילה)</div>
+              <div style="overflow:visible; border-radius:14px;">
                 <table id="standingsTable"></table>
               </div>
             </div>
@@ -477,7 +322,7 @@ th, td{ padding: 10px 12px; }
           <div class="mapGrid"></div>
           <div class="mapTitle">
             <h2>מפת יריבות</h2>
-            <div class="hint">לחץ על קבוצה כדי לראות משחקים • הקבוצה שלך במרכז</div>
+            <div class="hint">לחץ על קבוצה כדי לראות מפגש אחרון ותוצאות • הקבוצה שלך במרכז</div>
           </div>
           <div id="lines"></div>
           <div id="nodes"></div>
@@ -498,75 +343,214 @@ th, td{ padding: 10px 12px; }
     selectedOpponent: "",
     onlyTeam: false,
     chipTeam: "",
+    standings: [],
+    standingsMap: new Map(), // normalized name -> row
   };
 
   const el = (id) => document.getElementById(id);
 
-  function normalizeTeamName(s) {
-    return (s||"").toString().trim().replace(/\s+/g, " ");
+  const norm = (s) => (s||"").toString().trim().replace(/\s+/g, " ");
+  const low = (s) => norm(s).toLowerCase();
+
+  function teamEquals(a,b){
+    const A = low(a), B = low(b);
+    if(!A || !B) return false;
+    return A===B || A.includes(B) || B.includes(A);
   }
 
-  function getTeams() {
-    const standings = (state.data?.standings || []);
-    return standings.map(x => normalizeTeamName(x.name)).filter(Boolean);
+  function extractTeamsFromGames(games){
+    const set = new Map();
+    for(const g of (games||[])){
+      const h = norm(g?.homeTeam?.name || g?.home?.name || g?.home || "");
+      const a = norm(g?.awayTeam?.name || g?.away?.name || g?.away || "");
+      if(h) set.set(low(h), h);
+      if(a) set.set(low(a), a);
+    }
+    return Array.from(set.values());
   }
 
-  function findTeamKey(name) {
-    const n = normalizeTeamName(name);
-    if (!n) return "";
-    const teams = getTeams();
-    // try exact
-    const exact = teams.find(t => t === n);
-    if (exact) return exact;
-    // try contains
-    const low = n.toLowerCase();
-    const contains = teams.find(t => t.toLowerCase().includes(low));
-    return contains || n;
+  function gameHasScore(g){
+    const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
+    const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
+    return (String(hs).match(/^\d+$/) && String(as).match(/^\d+$/));
   }
 
-  function computeRoundOffset() {
-    const nums = state.rounds.map(r => Number(r.number)).filter(n => Number.isFinite(n));
+  function gameKeyDate(g){
+    const iso = g?.dateISO || g?.datetimeISO || g?.dateTimeISO || g?.dateTime || g?.date;
+    if(iso && !isNaN(Date.parse(iso))) return Date.parse(iso);
+    const t = g?.dateText || "";
+    const m = String(t).match(/(\d{1,2})\.(\d{1,2})\.(\d{2,4}).*?(\d{1,2}):(\d{2})/);
+    if(m){
+      const dd=+m[1], mm=+m[2], yy=+m[3] + (m[3].length===2 ? 2000 : 0);
+      const hh=+m[4], mi=+m[5];
+      return Date.parse(`${yy}-${String(mm).padStart(2,'0')}-${String(dd).padStart(2,'0')}T${String(hh).padStart(2,'0')}:${String(mi).padStart(2,'0')}:00`);
+    }
+    return 0;
+  }
+
+  function gameScoreStr(g){
+    if(!gameHasScore(g)) return "—";
+    const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
+    const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
+    return `${hs} : ${as}`;
+  }
+
+  function lastH2H(teamA, teamB, games){
+    if(!teamA || !teamB) return null;
+    const relevant = (games||[]).filter(g=>{
+      const h=g?.homeTeam?.name, a=g?.awayTeam?.name;
+      const ok = (teamEquals(h, teamA) && teamEquals(a, teamB)) || (teamEquals(h, teamB) && teamEquals(a, teamA));
+      return ok && gameHasScore(g);
+    });
+    if(!relevant.length) return null;
+    relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
+    return relevant[0];
+  }
+
+  function lastGameForTeam(teamName, games){
+    if(!teamName) return null;
+    const relevant = (games||[]).filter(g=>{
+      const h=g?.homeTeam?.name, a=g?.awayTeam?.name;
+      return (teamEquals(h, teamName) || teamEquals(a, teamName)) && gameHasScore(g);
+    });
+    if(!relevant.length) return null;
+    relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
+    return relevant[0];
+  }
+
+  function computeStandingsFromGames(games){
+    const rows = new Map(); // key -> stats
+    const get = (name)=>{
+      const k = low(name);
+      if(!rows.has(k)){
+        rows.set(k,{name, played:0, w:0, d:0, l:0, gf:0, ga:0, gd:0, points:0});
+      }
+      return rows.get(k);
+    };
+    for(const g of (games||[])){
+      const home = norm(g?.homeTeam?.name || g?.home?.name || g?.home || "");
+      const away = norm(g?.awayTeam?.name || g?.away?.name || g?.away || "");
+      if(!home || !away) continue;
+
+      const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
+      const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
+
+      const hsNum = (typeof hs === "number") ? hs : (String(hs||"").match(/^\d+$/) ? Number(hs) : null);
+      const asNum = (typeof as === "number") ? as : (String(as||"").match(/^\d+$/) ? Number(as) : null);
+      if(hsNum === null || asNum === null) continue;
+
+      const H = get(home), A = get(away);
+      H.played++; A.played++;
+      H.gf += hsNum; H.ga += asNum;
+      A.gf += asNum; A.ga += hsNum;
+
+      if(hsNum > asNum){ H.w++; A.l++; H.points += 2; }
+      else if(hsNum < asNum){ A.w++; H.l++; A.points += 2; }
+      else { H.d++; A.d++; H.points += 1; A.points += 1; }
+    }
+    const arr = Array.from(rows.values()).map(r=>({...r, gd: r.gf - r.ga}));
+    arr.sort((a,b)=> (b.points-a.points) || (b.gd-a.gd) || (b.gf-a.gf) || a.name.localeCompare(b.name, "he"));
+    arr.forEach((r,i)=>{ r.rank = i+1; r.pts=r.points; });
+    return arr;
+  }
+
+  function buildStandings(){
+    const raw = state.data?.standings;
+    let s = Array.isArray(raw) ? raw.slice() : [];
+    // normalize common keys
+    const normalized = s.map(r => ({
+      name: norm(r.name),
+      rank: r.rank ?? r.position ?? r.pos ?? "",
+      points: r.points ?? r.pts ?? r.point ?? "",
+      played: r.played ?? r.games ?? r.gp ?? "",
+      w: r.w ?? r.win ?? r.wins ?? "",
+      d: r.d ?? r.draw ?? r.draws ?? "",
+      l: r.l ?? r.loss ?? r.losses ?? "",
+      gf: r.gf ?? r.plus ?? r.for ?? "",
+      ga: r.ga ?? r.minus ?? r.against ?? "",
+      gd: r.gd ?? r.diff ?? "",
+    })).filter(x => x.name);
+
+    const hasPoints = normalized.some(x => String(x.points).match(/^\d+$/));
+    const hasRanks = normalized.some(x => String(x.rank).match(/^\d+$/));
+    const hasW = normalized.some(x => String(x.w).match(/^\d+$/));
+
+    if(!normalized.length || !hasPoints){
+      // fallback from games results
+      const comp = computeStandingsFromGames(state.data?.games || []);
+      s = comp;
+    } else {
+      s = normalized;
+      // if rank missing, compute sort by points/gd
+      if(!hasRanks){
+        s = s.map(x => ({...x, points: Number(x.points)||0, gd: Number(x.gd)||0, gf: Number(x.gf)||0}));
+        s.sort((a,b)=> (b.points-a.points) || (b.gd-a.gd) || (b.gf-a.gf) || a.name.localeCompare(b.name, "he"));
+        s.forEach((r,i)=> r.rank = i+1);
+      }
+      // If W/L etc missing, try compute from games (but keep points/rank from source)
+      if(!hasW){
+        const compMap = new Map(computeStandingsFromGames(state.data?.games||[]).map(r => [low(r.name), r]));
+        s = s.map(r => {
+          const c = compMap.get(low(r.name));
+          return c ? {...r, played:c.played, w:c.w, d:c.d, l:c.l, gf:c.gf, ga:c.ga, gd:c.gd} : r;
+        });
+      }
+    }
+
+    // standings map
+    state.standings = s;
+    state.standingsMap = new Map();
+    for(const r of s){
+      state.standingsMap.set(low(r.name), r);
+    }
+  }
+
+  function getStanding(teamName){
+    const t = low(teamName);
+    if(!t) return null;
+    // exact key
+    if(state.standingsMap.has(t)) return state.standingsMap.get(t);
+    // contains fallback
+    for(const [k,v] of state.standingsMap.entries()){
+      if(k.includes(t) || t.includes(k)) return v;
+    }
+    return null;
+  }
+
+  function getTeams(){
+    const fromStandings = (state.standings||[]).map(x=>x.name).filter(Boolean);
+    const fromGames = extractTeamsFromGames(state.data?.games||[]);
+    const map = new Map();
+    for(const t of [...fromStandings, ...fromGames]){
+      map.set(low(t), norm(t));
+    }
+    return Array.from(map.values());
+  }
+
+  function computeRoundOffset(){
+    const nums = state.rounds.map(r=>Number(r.number)).filter(n=>Number.isFinite(n));
+    if(!nums.length){ state.roundOffset = 0; return; }
     const min = Math.min(...nums);
     state.roundOffset = (min === 0) ? 1 : 0;
   }
-
-  function displayRound(n) {
+  function displayRound(n){
     const num = Number(n);
     return Number.isFinite(num) ? (num + state.roundOffset) : n;
   }
-
-  function formatDateHeb(raw) {
-    // expected: "YYYY-MM-DD HH:mm" or ISO
-    if (!raw) return "";
-    const s = String(raw).replace("T", " ").replace("Z","");
-    return s;
+  function formatDateHeb(raw){
+    if(!raw) return "";
+    return String(raw).replace("T"," ").replace("Z","");
   }
 
-  function isTeamInGame(game, team) {
-    const t = normalizeTeamName(team);
-    const home = normalizeTeamName(game?.homeTeam?.name);
-    const away = normalizeTeamName(game?.awayTeam?.name);
-    return home.includes(t) || away.includes(t) || t.includes(home) || t.includes(away);
-  }
-
-  function opponentOf(game, team) {
-    const t = normalizeTeamName(team);
-    const home = normalizeTeamName(game?.homeTeam?.name);
-    const away = normalizeTeamName(game?.awayTeam?.name);
-    if (home.includes(t) || t.includes(home)) return away;
-    if (away.includes(t) || t.includes(away)) return home;
-    return "";
-  }
-
-  function scoreText(game) {
+  function scoreText(game){
     const hs = game?.homeTeam?.score;
     const as = game?.awayTeam?.score;
     const hasScore = (hs !== null && hs !== undefined && hs !== "") || (as !== null && as !== undefined && as !== "");
-    if (!hasScore) return "—";
+    if(!hasScore) return "—";
     return `${hs ?? ""} - ${as ?? ""}`;
   }
 
-  function leagueLine() {
+  function leagueLine(){
     const m = state.data?.meta || {};
     const league = state.data?.league?.name || m?.leagueName || "";
     const season = m?.season || "";
@@ -576,61 +560,56 @@ th, td{ padding: 10px 12px; }
     return `${league} • ${season} • משחקים: ${games} • מחזורים: ${rounds} • עודכן: ${formatDateHeb(fetchedAt)}`;
   }
 
-  function setErr(msg) {
+  function setErr(msg){
     const box = el("errBox");
-    if (!msg) { box.style.display="none"; box.textContent=""; return; }
-    box.style.display="block";
-    box.textContent = msg;
+    if(!msg){ box.style.display="none"; box.textContent=""; return; }
+    box.style.display="block"; box.textContent = msg;
   }
 
-  function buildChips() {
+  function buildChips(){
     const container = el("teamChips");
     container.innerHTML = "";
     const teams = getTeams();
-    const focus = findTeamKey(state.focusTeam);
+    const focus = teams.find(t=>teamEquals(t, state.focusTeam)) || state.focusTeam;
 
     const add = (label, key) => {
       const d = document.createElement("div");
-      d.className = "chip" + ((state.chipTeam === key) ? " active" : "");
+      d.className = "chip" + ((state.chipTeam && teamEquals(state.chipTeam, key)) ? " active" : "");
       d.textContent = label;
       d.onclick = () => {
-        state.chipTeam = (state.chipTeam === key) ? "" : key;
+        state.chipTeam = (state.chipTeam && teamEquals(state.chipTeam, key)) ? "" : key;
         renderAll();
       };
       container.appendChild(d);
     };
 
     add("הכל", "");
-    // show focus first + some others
+    // focus first
     add(focus, focus);
-    teams.filter(t => t !== focus).slice(0, 18).forEach(t => add(t, t));
+    teams.filter(t => !teamEquals(t, focus)).slice(0, 20).forEach(t => add(t, t));
   }
 
-  function buildRoundSelect() {
+  function buildRoundSelect(){
     const sel = el("roundSelect");
     sel.innerHTML = "";
-    state.rounds.forEach(r => {
+    state.rounds.forEach(r=>{
       const opt = document.createElement("option");
       opt.value = String(r.number);
       opt.textContent = `מחזור ${displayRound(r.number)} (${r.gamesCount})`;
       sel.appendChild(opt);
     });
-    if (state.selectedRound === null && state.rounds.length) {
+    if(state.selectedRound === null && state.rounds.length){
       state.selectedRound = String(state.rounds[0].number);
     }
     sel.value = String(state.selectedRound ?? "");
-    sel.onchange = () => {
-      state.selectedRound = sel.value;
-      renderAll();
-    };
+    sel.onchange = ()=>{ state.selectedRound = sel.value; renderAll(); };
 
-    // round navigation buttons
-    const prevBtn = document.getElementById("roundPrev");
-    const nextBtn = document.getElementById("roundNext");
+    const prevBtn = el("roundPrev");
+    const nextBtn = el("roundNext");
     const setDisabled = ()=>{
       const idx = state.rounds.findIndex(r=> String(r.number)===String(state.selectedRound));
-      if(prevBtn) prevBtn.disabled = idx<=0;
-      if(nextBtn) nextBtn.disabled = idx<0 || idx>=state.rounds.length-1;
+      prevBtn.disabled = idx<=0;
+      nextBtn.disabled = idx<0 || idx>=state.rounds.length-1;
     };
     const go = (delta)=>{
       const idx = state.rounds.findIndex(r=> String(r.number)===String(state.selectedRound));
@@ -641,50 +620,50 @@ th, td{ padding: 10px 12px; }
       renderAll();
       setDisabled();
     };
-    if(prevBtn) prevBtn.onclick = ()=>go(-1);
-    if(nextBtn) nextBtn.onclick = ()=>go(1);
+    prevBtn.onclick = ()=>go(-1);
+    nextBtn.onclick = ()=>go(1);
     setDisabled();
   }
 
-  function filteredGames() {
-    const games = state.data?.games || [];
-    const focus = findTeamKey(state.focusTeam);
-    const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
-    const chip = state.chipTeam ? findTeamKey(state.chipTeam) : "";
-    const onlyTeam = !!state.onlyTeam;
+  function isTeamInGame(game, team){
+    const t = norm(team);
+    const home = norm(game?.homeTeam?.name);
+    const away = norm(game?.awayTeam?.name);
+    return teamEquals(home,t) || teamEquals(away,t);
+  }
 
+  function filteredGames(){
+    const games = state.data?.games || [];
+    const focus = state.focusTeam;
+    const opp = state.selectedOpponent;
+    const chip = state.chipTeam;
+    const onlyTeam = !!state.onlyTeam;
     const round = state.selectedRound;
+
     let g = games.filter(x => String(x?.round?.number) === String(round));
 
-    if (onlyTeam) {
+    if(onlyTeam){
       g = g.filter(x => isTeamInGame(x, focus));
     }
-    if (chip) {
+    if(chip){
       g = g.filter(x => isTeamInGame(x, chip));
     }
-    if (opp) {
-      g = g.filter(x => {
-        const home = normalizeTeamName(x?.homeTeam?.name);
-        const away = normalizeTeamName(x?.awayTeam?.name);
-        return (home === opp || away === opp);
-      });
-      // also keep focus team relation if onlyTeam is off
-      if (!onlyTeam) {
+    if(opp){
+      g = g.filter(x => isTeamInGame(x, opp));
+      if(!onlyTeam){
         g = g.filter(x => isTeamInGame(x, focus));
       }
     }
-    const q = normalizeTeamName(el("teamInput").value);
-    if (q) {
+    const q = norm(el("teamInput").value);
+    if(q){
       const ql = q.toLowerCase();
-      g = g.filter(x => normalizeTeamName(x?.homeTeam?.name).toLowerCase().includes(ql) ||
-                        normalizeTeamName(x?.awayTeam?.name).toLowerCase().includes(ql));
+      g = g.filter(x => low(x?.homeTeam?.name).includes(ql) || low(x?.awayTeam?.name).includes(ql));
     }
-    // sort by date if exists
-    g.sort((a,b) => String(a?.date||"").localeCompare(String(b?.date||"")));
+    g.sort((a,b)=> (gameKeyDate(a)||0) - (gameKeyDate(b)||0));
     return g;
   }
 
-  function renderGamesTable() {
+  function renderGamesTable(){
     const tbl = el("gamesTable");
     const g = filteredGames();
     const rows = [];
@@ -692,11 +671,11 @@ th, td{ padding: 10px 12px; }
       <th>תאריך</th><th>בית</th><th>תוצאה</th><th>חוץ</th><th>מיקום</th>
     </tr></thead>`);
     rows.push("<tbody>");
-    for (const game of g) {
+    for(const game of g){
       const date = game?.date ? formatDateHeb(game.date) : (game?.dateText || "");
-      const home = normalizeTeamName(game?.homeTeam?.name);
-      const away = normalizeTeamName(game?.awayTeam?.name);
-      const loc = normalizeTeamName(game?.field?.name || game?.location || "");
+      const home = norm(game?.homeTeam?.name);
+      const away = norm(game?.awayTeam?.name);
+      const loc = norm(game?.field?.name || game?.location || "");
       rows.push(`<tr>
         <td>${date}</td>
         <td>${home}</td>
@@ -709,114 +688,27 @@ th, td{ padding: 10px 12px; }
     tbl.innerHTML = rows.join("");
   }
 
-  
-function computeStandingsFromGames(games){
-  const rows = new Map(); // name -> stats
-  const get = (name)=>{
-    if(!rows.has(name)){
-      rows.set(name,{name, played:0, w:0, d:0, l:0, gf:0, ga:0, gd:0, points:0});
-    }
-    return rows.get(name);
-  };
-  for(const g of (games||[])){
-    const home = g?.homeTeam?.name || g?.home?.name || g?.home || "";
-    const away = g?.awayTeam?.name || g?.away?.name || g?.away || "";
-    if(!home || !away) continue;
-
-    const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
-    const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
-
-    // only count games with numeric scores
-    const hsNum = (typeof hs === "number") ? hs : (String(hs||"").match(/^\d+$/) ? Number(hs) : null);
-    const asNum = (typeof as === "number") ? as : (String(as||"").match(/^\d+$/) ? Number(as) : null);
-    if(hsNum === null || asNum === null) continue;
-
-    const H = get(home), A = get(away);
-    H.played++; A.played++;
-    H.gf += hsNum; H.ga += asNum;
-    A.gf += asNum; A.ga += hsNum;
-
-    if(hsNum > asNum){ H.w++; A.l++; H.points += 2; }
-    else if(hsNum < asNum){ A.w++; H.l++; A.points += 2; }
-    else { H.d++; A.d++; H.points += 1; A.points += 1; }
-  }
-  const arr = Array.from(rows.values()).map(r=>({...r, gd: r.gf - r.ga}));
-  arr.sort((a,b)=> (b.points-a.points) || (b.gd-a.gd) || (b.gf-a.gf) || a.name.localeCompare(b.name, "he"));
-  // add rank
-  arr.forEach((r,i)=> r.position = i+1);
-  // keep common aliases
-  arr.forEach(r=>{ r.pts = r.points; r.rank = r.position; });
-  return arr;
-}
-
-function gameHasScore(g){
-  const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
-  const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
-  return (String(hs).match(/^\d+$/) && String(as).match(/^\d+$/));
-}
-
-function gameScoreStr(g){
-  const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
-  const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
-  if(!gameHasScore(g)) return "";
-  return `${hs} : ${as}`;
-}
-
-function gameKeyDate(g){
-  // Try ISO first; otherwise fallback to dateText; if unparseable, keep empty
-  const iso = g?.dateISO || g?.datetimeISO || g?.dateTimeISO || g?.dateTime || g?.date;
-  if(iso && !isNaN(Date.parse(iso))) return Date.parse(iso);
-  const t = g?.dateText || "";
-  // try parse dd.mm.yy hh:mm
-  const m = String(t).match(/(\d{1,2})\.(\d{1,2})\.(\d{2,4}).*?(\d{1,2}):(\d{2})/);
-  if(m){
-    const dd=+m[1], mm=+m[2], yy=+m[3] + (m[3].length===2 ? 2000 : 0);
-    const hh=+m[4], mi=+m[5];
-    return Date.parse(`${yy}-${String(mm).padStart(2,'0')}-${String(dd).padStart(2,'0')}T${String(hh).padStart(2,'0')}:${String(mi).padStart(2,'0')}:00`);
-  }
-  return 0;
-}
-
-function lastGameForTeam(teamName, games){
-  if(!teamName) return null;
-  const relevant = (games||[]).filter(g=>{
-    const h = g?.homeTeam?.name, a = g?.awayTeam?.name;
-    return (h===teamName || a===teamName) && gameHasScore(g);
-  });
-  if(!relevant.length) return null;
-  relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
-  return relevant[0];
-}
-
-function lastH2H(teamA, teamB, games){
-  if(!teamA || !teamB) return null;
-  const relevant = (games||[]).filter(g=>{
-    const h=g?.homeTeam?.name, a=g?.awayTeam?.name;
-    const ok = ( (h===teamA && a===teamB) || (h===teamB && a===teamA) );
-    return ok && gameHasScore(g);
-  });
-  if(!relevant.length) return null;
-  relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
-  return relevant[0];
-}
-
-function renderStandingsTable() {
+  function renderStandingsTable(){
     const tbl = el("standingsTable");
-    const s = state.data?.standings || [];
-    const focus = findTeamKey(state.focusTeam);
+    const s = state.standings || [];
+    const focus = state.focusTeam;
+
     const rows = [];
     rows.push(`<thead><tr>
-      <th>#</th><th>קבוצה</th><th>נק'</th><th>מש</th><th>+</th><th>-</th><th>הפרש</th>
+      <th>#</th><th>קבוצה</th><th>נק'</th><th>מש</th><th>נ</th><th>ה</th><th>ת</th><th>+</th><th>-</th><th>הפרש</th>
     </tr></thead>`);
     rows.push("<tbody>");
-    for (const r of s) {
-      const name = normalizeTeamName(r.name);
-      const isFocus = (name === focus);
+    for(const r of s){
+      const name = norm(r.name);
+      const isFocus = teamEquals(name, focus);
       rows.push(`<tr style="${isFocus ? 'background: rgba(58,167,255,.10);' : ''}">
         <td>${r.rank ?? ""}</td>
         <td><b>${name}</b></td>
-        <td><b>${r.points ?? ""}</b></td>
-        <td>${r.games ?? ""}</td>
+        <td><b>${r.points ?? r.pts ?? ""}</b></td>
+        <td>${r.played ?? r.games ?? ""}</td>
+        <td>${r.w ?? ""}</td>
+        <td>${r.l ?? ""}</td>
+        <td>${r.d ?? ""}</td>
         <td>${r.gf ?? ""}</td>
         <td>${r.ga ?? ""}</td>
         <td>${r.gd ?? ""}</td>
@@ -826,10 +718,10 @@ function renderStandingsTable() {
     tbl.innerHTML = rows.join("");
   }
 
-  function renderStats() {
+  function renderStats(){
     const box = el("statsBox");
-    const focus = findTeamKey(state.focusTeam);
-    const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
+    const focus = state.focusTeam;
+    const opp = state.selectedOpponent;
     const round = displayRound(state.selectedRound ?? "");
     const g = filteredGames();
     const total = g.length;
@@ -838,7 +730,7 @@ function renderStandingsTable() {
     const lastOpp = opp ? lastH2H(focus, opp, state.data?.games || []) : null;
 
     const lastLine = last
-      ? `משחק אחרון: <b>${(last.homeTeam.name===focus ? last.awayTeam.name : last.homeTeam.name)}</b> — <b>${gameScoreStr(last)}</b>${last.dateText ? ` <span class="muted">(${last.dateText})</span>` : ""}`
+      ? `משחק אחרון: <b>${(teamEquals(last.homeTeam?.name, focus) ? last.awayTeam?.name : last.homeTeam?.name)}</b> — <b>${gameScoreStr(last)}</b>${last.dateText ? ` <span class="muted">(${last.dateText})</span>` : ""}`
       : `משחק אחרון: <span class="muted">אין תוצאה קודמת</span>`;
 
     const lastOppLine = opp
@@ -847,99 +739,99 @@ function renderStandingsTable() {
           : `מפגש אחרון מול <b>${opp}</b>: <span class="muted">אין תוצאה</span>`)
       : `מפגש אחרון מול יריבה: <span class="muted">לא נבחרה</span>`;
 
-    const msg = [
+    const st = getStanding(focus);
+    const stLine = st
+      ? `מיקום בטבלה: <b>${st.rank ?? "—"}</b> • נק': <b>${st.points ?? st.pts ?? "—"}</b> • מאזן: <b>${st.w ?? "—"}-${st.l ?? "—"}</b> • הפרש: <b>${st.gd ?? "—"}</b>`
+      : `מיקום בטבלה: <span class="muted">אין נתונים</span>`;
+
+    box.innerHTML = [
       `קבוצה במרכז: <b>${focus}</b>`,
       opp ? `יריבה נבחרת: <b>${opp}</b>` : `יריבה נבחרת: <span class="muted">לא נבחרה</span>`,
-      `מחזור: <b>${round}</b>`,
-      `משחקים מוצגים: <b>${total}</b>`,
+      stLine,
+      `מחזור: <b>${round}</b> • משחקים מוצגים: <b>${total}</b>`,
       lastLine,
       lastOppLine,
     ].join("<br/>");
-    box.innerHTML = msg;
   }
 
-  function renderMap() {
+  function renderMap(){
     const nodesEl = el("nodes");
     const linesEl = el("lines");
     nodesEl.innerHTML = "";
     linesEl.innerHTML = "";
 
     const teams = getTeams();
-    const focus = findTeamKey(state.focusTeam);
-    if (!teams.length) return;
+    if(!teams.length) return;
 
-    // Center
+    // determine focus exact in list (so no empty)
+    const focus = teams.find(t=>teamEquals(t, state.focusTeam)) || state.focusTeam;
+
+    // Center: only in the middle (no duplicate elsewhere)
     const center = document.createElement("div");
     center.className = "node center";
     center.style.left = "50%";
     center.style.top = "55%";
-    const focusStanding = (state.data?.standings || []).find(x => normalizeTeamName(x.name) === focus);
-    const pts = focusStanding?.points ?? "—";
+    const focusStanding = getStanding(focus);
+    const pts = focusStanding?.points ?? focusStanding?.pts ?? "—";
     const rank = focusStanding?.rank ?? "—";
+    const wl = (focusStanding?.w !== undefined && focusStanding?.l !== undefined)
+      ? `${focusStanding.w}-${focusStanding.l}` : "—";
+    const gd = focusStanding?.gd ?? "—";
+
     center.innerHTML = `<div class="name">${focus}</div>
       <div class="meta"><span>מקום ${rank}</span><span>${pts} נק׳</span></div>
-      <div class="cta">הקבוצה שלנו</div>`;
-    center.onclick = () => {
-      state.selectedOpponent = "";
-      renderAll();
-    };
+      <div class="meta2">מאזן ${wl} • הפרש ${gd}</div>
+      <div class="cta">הקבוצה שלנו (לחיצה לאיפוס יריבה)</div>`;
+    center.onclick = ()=>{ state.selectedOpponent = ""; renderAll(); };
     nodesEl.appendChild(center);
 
-    // Others in orbit
-    const others = teams.filter(t => t !== focus);
+    const others = teams.filter(t => !teamEquals(t, focus));
     const count = others.length;
-    const radiusX = 310;
-    const radiusY = 230;
+    const radiusX = 320;
+    const radiusY = 240;
     const cx = 0.5, cy = 0.55;
 
     const getPos = (i) => {
       const a = (i / Math.max(1,count)) * Math.PI * 2;
       const x = cx + (Math.cos(a) * radiusX) / 1000;
       const y = cy + (Math.sin(a) * radiusY) / 720;
-      return {a, x, y};
+      return {x, y};
     };
 
     others.forEach((team, i) => {
       const p = getPos(i);
       const left = (p.x * 100) + "%";
       const top = (p.y * 100) + "%";
-      const st = (state.data?.standings || []).find(x => normalizeTeamName(x.name) === team);
-      const label = team;
-      const gamesVs = (state.data?.games || []).filter(g => isTeamInGame(g, focus) && isTeamInGame(g, team)).length;
+      const st = getStanding(team);
+      const lastOpp = lastH2H(focus, team, state.data?.games || []);
+      const lastOppLine = lastOpp
+        ? `מפגש אחרון: ${gameScoreStr(lastOpp)}${lastOpp.dateText ? ` <span class="muted">(${lastOpp.dateText})</span>` : ""}`
+        : `מפגש אחרון: <span class="muted">אין תוצאה</span>`;
 
-      // line
       const line = document.createElement("div");
       line.className = "line";
-      // compute px positions after layout: we'll approximate using percentages + map size
-      // we'll set via CSS calc using % and transform in JS after render
-      line.dataset.from = JSON.stringify({x:50,y:55});
       line.dataset.to = JSON.stringify({x:left,y:top});
       linesEl.appendChild(line);
 
       const d = document.createElement("div");
-      d.className = "node" + ((state.selectedOpponent && findTeamKey(state.selectedOpponent) === team) ? " active" : "");
+      d.className = "node";
       d.style.left = left;
       d.style.top = top;
-      d.innerHTML = `<div class="name">${label}</div>
-        <div class="meta"><span>מקום ${st?.rank ?? "—"}</span><span>${st?.points ?? "—"} נק׳</span></div>
-        ${lastLine ? `<div class="meta2">${lastLine}</div>` : ""}
+      d.innerHTML = `<div class="name">${team}</div>
+        <div class="meta"><span>מקום ${st?.rank ?? "—"}</span><span>${st?.points ?? st?.pts ?? "—"} נק׳</span></div>
+        <div class="meta2">${lastOppLine}</div>
         <div class="cta">לחץ לצפייה</div>`;
-      d.onclick = () => {
-        state.selectedOpponent = team;
-        renderAll();
-      };
+      d.onclick = ()=>{ state.selectedOpponent = team; renderAll(); };
       nodesEl.appendChild(d);
     });
 
-    // After nodes exist, set line positions in px
     requestAnimationFrame(() => {
       const map = document.querySelector(".mapInner");
       const rect = map.getBoundingClientRect();
       const centerX = rect.width * 0.5;
       const centerY = rect.height * 0.55;
-      for (const line of linesEl.querySelectorAll(".line")) {
+      for(const line of linesEl.querySelectorAll(".line")){
         const to = JSON.parse(line.dataset.to);
-        // to.x is like "62.3%"
         const xPct = parseFloat(String(to.x).replace("%",""))/100;
         const yPct = parseFloat(String(to.y).replace("%",""))/100;
         const x2 = rect.width * xPct;
@@ -956,7 +848,7 @@ function renderStandingsTable() {
     });
   }
 
-  function renderAll() {
+  function renderAll(){
     state.onlyTeam = el("onlyTeam").checked;
 
     renderStats();
@@ -965,62 +857,57 @@ function renderStandingsTable() {
     renderMap();
     buildChips();
 
-    // meta small
     const m = state.data?.meta || {};
     const ver = m?.version ? `v${m.version}` : "";
     const fetched = m?.fetchedAt || m?.last_update || "";
-    el("metaSmall").textContent = `${ver}  ${fetched ? "• " + formatDateHeb(fetched) : ""}`;
+    el("metaSmall").textContent = `${ver}${fetched ? " • " + formatDateHeb(fetched) : ""}`;
   }
 
-  function setupToggles() {
-    el("toggleGames").onclick = () => {
-      el("gamesWrap").style.display = "block";
-      el("standingsWrap").style.display = "none";
-    };
-    el("toggleStandings").onclick = () => {
-      el("gamesWrap").style.display = "none";
-      el("standingsWrap").style.display = "block";
-    };
-    el("resetBtn").onclick = () => {
+  function setupToggles(){
+    el("toggleGames").onclick = ()=>{ el("gamesWrap").style.display="block"; el("standingsWrap").style.display="none"; };
+    el("toggleStandings").onclick = ()=>{ el("gamesWrap").style.display="none"; el("standingsWrap").style.display="block"; };
+    el("resetBtn").onclick = ()=>{
       state.selectedOpponent = "";
       state.chipTeam = "";
       el("teamInput").value = "";
       el("onlyTeam").checked = false;
       renderAll();
     };
-    el("teamInput").addEventListener("input", () => renderAll());
-    el("onlyTeam").addEventListener("change", () => renderAll());
+    el("teamInput").addEventListener("input", ()=>renderAll());
+    el("onlyTeam").addEventListener("change", ()=>renderAll());
   }
 
-  async function load() {
+  async function load(){
     setupToggles();
-    try {
+    try{
       const res = await fetch(DATA_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error("HTTP " + res.status);
+      if(!res.ok) throw new Error("HTTP " + res.status);
       state.data = await res.json();
+
+      // build standings + teams fallback
+      buildStandings();
 
       // rounds from meta.roundsFetched OR derive from games
       const metaRounds = state.data?.meta?.roundsFetched;
-      if (Array.isArray(metaRounds) && metaRounds.length) {
-        state.rounds = metaRounds.map(r => ({ number: String(r.number), gamesCount: Number(r.gamesCount||0) }));
+      if(Array.isArray(metaRounds) && metaRounds.length){
+        state.rounds = metaRounds.map(r=>({ number:String(r.number), gamesCount:Number(r.gamesCount||0) }));
       } else {
         const by = new Map();
-        for (const g of (state.data?.games||[])) {
+        for(const g of (state.data?.games||[])){
           const n = String(g?.round?.number ?? "");
-          if (!n) continue;
+          if(!n) continue;
           by.set(n, (by.get(n)||0) + 1);
         }
-        state.rounds = Array.from(by.entries()).map(([number,gamesCount]) => ({number, gamesCount}))
+        state.rounds = Array.from(by.entries()).map(([number,gamesCount])=>({number, gamesCount}))
           .sort((a,b)=> Number(a.number) - Number(b.number));
       }
       computeRoundOffset();
       buildRoundSelect();
 
-      // set league line
       el("leagueLine").innerHTML = leagueLine();
       renderAll();
       setErr("");
-    } catch (e) {
+    } catch(e){
       console.error(e);
       setErr("לא הצלחתי לטעון את data.json. אם אתה פותח דרך file:// זה לא יעבוד — פתח דרך Live Server או GitHub Pages.\nשגיאה: " + (e?.message||e));
       el("leagueLine").textContent = "שגיאה בטעינה";
@@ -1030,6 +917,5 @@ function renderStandingsTable() {
   load();
 })();
 </script>
-
 </body>
 </html>
