@@ -367,6 +367,21 @@
     .replace(/\s+/g," ")
     .trim();
   const low = canon;
+
+// === Robust accessors (names / scores) ===
+function homeName(g){
+  return norm(g?.homeTeam?.name ?? g?.home?.name ?? g?.homeTeamName ?? g?.home_name ?? g?.homeTeam ?? g?.home ?? "");
+}
+function awayName(g){
+  return norm(g?.awayTeam?.name ?? g?.away?.name ?? g?.awayTeamName ?? g?.away_name ?? g?.awayTeam ?? g?.away ?? "");
+}
+function homeScore(g){
+  return (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome ?? g?.home_team_score ?? g?.score?.home ?? g?.result?.home ?? g?.home?.score ?? null);
+}
+function awayScore(g){
+  return (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway ?? g?.away_team_score ?? g?.score?.away ?? g?.result?.away ?? g?.away?.score ?? null);
+}
+
   function teamEquals(a,b){
     const A = canon(a), B = canon(b);
     if(!A || !B) return false;
@@ -383,12 +398,13 @@
     }
     return Array.from(set.values());
   }
-
-  function gameHasScore(g){
-    const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
-    const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
-    return (String(hs).match(/^\d+$/) && String(as).match(/^\d+$/));
-  }
+function gameHasScore(g){
+  const hs = homeScore(g);
+  const as = awayScore(g);
+  const hsNum = (typeof hs === "number") ? hs : (String(hs ?? "").trim().match(/^\d+$/) ? Number(String(hs).trim()) : null);
+  const asNum = (typeof as === "number") ? as : (String(as ?? "").trim().match(/^\d+$/) ? Number(String(as).trim()) : null);
+  return (hsNum !== null && asNum !== null);
+}
 
   function gameKeyDate(g){
     const iso = g?.dateISO || g?.datetimeISO || g?.dateTimeISO || g?.dateTime || g?.date;
@@ -402,32 +418,37 @@
     }
     return 0;
   }
-
-  function gameScoreStr(g){
-    if(!gameHasScore(g)) return "—";
-    const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
-    const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
-    return `${hs} : ${as}`;
-  }
-
-  function lastH2H(teamA, teamB, games){
-    if(!teamA || !teamB) return null;
-    const relevant = (games||[]).filter(g=>{
-      const h=g?.homeTeam?.name, a=g?.awayTeam?.name;
-      const ok = (teamEquals(h, teamA) && teamEquals(a, teamB)) || (teamEquals(h, teamB) && teamEquals(a, teamA));
-      return ok && gameHasScore(g);
-    });
+function gameScoreStr(g){
+  if(!gameHasScore(g)) return "";
+  const hs = homeScore(g);
+  const as = awayScore(g);
+  return `${String(hs).trim()} : ${String(as).trim()}`;
+}
+function lastH2H(teamA, teamB, games){
+  if(!teamA || !teamB) return null;
+  const relevant = (games||[]).filter(g=>{
+    const h = homeName(g), a = awayName(g);
+    const ok = ((teamEquals(h, teamA) && teamEquals(a, teamB)) || (teamEquals(h, teamB) && teamEquals(a, teamA)));
+    return ok && gameHasScore(g);
+  });
+  if(!relevant.length) return null;
+  relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
+  return relevant[0];
+});
     if(!relevant.length) return null;
     relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
     return relevant[0];
   }
-
-  function lastGameForTeam(teamName, games){
-    if(!teamName) return null;
-    const relevant = (games||[]).filter(g=>{
-      const h=g?.homeTeam?.name, a=g?.awayTeam?.name;
-      return (teamEquals(h, teamName) || teamEquals(a, teamName)) && gameHasScore(g);
-    });
+function lastGameForTeam(teamName, games){
+  if(!teamName) return null;
+  const relevant = (games||[]).filter(g=>{
+    const h = homeName(g), a = awayName(g);
+    return (teamEquals(h, teamName) || teamEquals(a, teamName)) && gameHasScore(g);
+  });
+  if(!relevant.length) return null;
+  relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
+  return relevant[0];
+});
     if(!relevant.length) return null;
     relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
     return relevant[0];
@@ -639,13 +660,12 @@
     nextBtn.onclick = ()=>go(1);
     setDisabled();
   }
-
-  function isTeamInGame(game, team){
-    const t = norm(team);
-    const home = norm(game?.homeTeam?.name);
-    const away = norm(game?.awayTeam?.name);
-    return teamEquals(home,t) || teamEquals(away,t);
-  }
+function isTeamInGame(game, team){
+  const t = norm(team);
+  const home = homeName(game);
+  const away = awayName(game);
+  return teamEquals(home,t) || teamEquals(away,t) || home.includes(t) || away.includes(t) || t.includes(home) || t.includes(away);
+}
 
   function filteredGames(){
     const games = state.data?.games || [];
