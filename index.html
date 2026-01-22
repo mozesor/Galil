@@ -509,12 +509,38 @@
   }
 
   function computeStandingsFromGames(games){
-    const rows = new Map(); // canon -> stats
-    const get = (name)=> {
-      const key = canon(name);
-      if(!rows.has(key)){
-        rows.set(key, {name: norm(name), played:0, w:0, d:0, l:0, gf:0, ga:0, gd:0, points:0});
-      }
+  const rows = new Map(); // name -> stats
+  const get = (name)=>{
+    const key = canon(name);
+    if(!rows.has(key)){
+      rows.set(key,{ name: String(name||"").trim(), played:0, w:0, d:0, l:0, gf:0, ga:0, gd:0, points:0 });
+    }
+    return rows.get(key);
+  };
+
+  for(const g of (games||[])){
+    const t = gameTeams(g);
+    const home = t.home, away = t.away;
+    if(!home || !away) continue;
+
+    const p = scorePair(g);
+    if(!p) continue;
+
+    const H = get(home), A = get(away);
+    H.played++; A.played++;
+    H.gf += p.hs; H.ga += p.as;
+    A.gf += p.as; A.ga += p.hs;
+
+    if(p.hs > p.as){ H.w++; A.l++; H.points += 2; }
+    else if(p.hs < p.as){ A.w++; H.l++; A.points += 2; }
+    else { H.d++; A.d++; H.points += 1; A.points += 1; }
+  }
+
+  const arr = Array.from(rows.values()).map(r=>({...r, gd: r.gf - r.ga}));
+  arr.sort((a,b)=> (b.points-a.points) || (b.gd-a.gd) || (b.gf-a.gf) || a.name.localeCompare(b.name, "he"));
+  arr.forEach((r,i)=>{ r.position=i+1; r.rank=r.position; r.pts=r.points; });
+  return arr;
+}
       return rows.get(key);
     };
 
@@ -633,19 +659,77 @@
       away: norm(g?.awayTeam?.name || g?.away?.name || g?.away || "")
     };
   }
+
+function toInt(v){
+  if(v === 0) return 0;
+  if(v === null || v === undefined) return null;
+  if(typeof v === "number" && Number.isFinite(v)) return v;
+  const s = String(v).trim();
+  if(/^\d+$/.test(s)) return Number(s);
+  return null;
+}
+
+function pairFromString(v){
+  if(v === null || v === undefined) return null;
+  const s = String(v);
+  const m = s.match(/(\d{1,3})\s*[-:]\s*(\d{1,3})/);
+  if(!m) return null;
+  return { hs: Number(m[1]), as: Number(m[2]) };
+}
+
+function scorePair(g){
+  if(!g) return null;
+
+  // Common packed strings
+  const packedKeys = ["scoreText","resultText","score","result","finalScore","outcome","score_str"];
+  for(const k of packedKeys){
+    const p = pairFromString(g?.[k]);
+    if(p) return p;
+  }
+  for(const k of packedKeys){
+    const p = pairFromString(g?.homeTeam?.[k]);
+    if(p) return p;
+  }
+  for(const k of packedKeys){
+    const p = pairFromString(g?.awayTeam?.[k]);
+    if(p) return p;
+  }
+
+  // Common numeric fields (home/away)
+  const hsCandidates = [
+    g?.homeTeam?.score, g?.homeTeam?.points, g?.homeTeam?.pts, g?.homeTeam?.goals, g?.homeTeam?.gf, g?.homeTeam?.result,
+    g?.homeScore, g?.scoreHome, g?.home_score,
+    g?.score?.home, g?.score?.homeScore, g?.result?.home, g?.result?.homeScore
+  ];
+  const asCandidates = [
+    g?.awayTeam?.score, g?.awayTeam?.points, g?.awayTeam?.pts, g?.awayTeam?.goals, g?.awayTeam?.gf, g?.awayTeam?.result,
+    g?.awayScore, g?.scoreAway, g?.away_score,
+    g?.score?.away, g?.score?.awayScore, g?.result?.away, g?.result?.awayScore
+  ];
+
+  let hs = null, as = null;
+  for(const c of hsCandidates){ const n = toInt(c); if(n !== null){ hs = n; break; } }
+  for(const c of asCandidates){ const n = toInt(c); if(n !== null){ as = n; break; } }
+  if(hs !== null && as !== null) return {hs, as};
+
+  // Sometimes score is stored as an array [home,away]
+  if(Array.isArray(g?.score) && g.score.length >= 2){
+    const a = toInt(g.score[0]), b = toInt(g.score[1]);
+    if(a !== null && b !== null) return {hs:a, as:b};
+  }
+
+  return null;
+}
+
   function gameHasScore(g){
-    const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
-    const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
-    const hsNum = (typeof hs==="number") ? hs : (String(hs||"").trim().match(/^\d+$/) ? Number(hs) : null);
-    const asNum = (typeof as==="number") ? as : (String(as||"").trim().match(/^\d+$/) ? Number(as) : null);
-    return (hsNum!==null && asNum!==null);
-  }
+  const p = scorePair(g);
+  return !!(p && Number.isFinite(p.hs) && Number.isFinite(p.as));
+}
   function gameScoreStr(g){
-    const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
-    const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
-    if(!gameHasScore(g)) return "—";
-    return `${hs} - ${as}`;
-  }
+  const p = scorePair(g);
+  if(!p) return "—";
+  return `${p.hs} - ${p.as}`;
+}
   function gameKeyDate(g){
     const iso = g?.dateISO || g?.datetimeISO || g?.dateTimeISO || g?.dateTime || g?.date;
     if(iso && !isNaN(Date.parse(iso))) return Date.parse(iso);
