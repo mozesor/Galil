@@ -20,3 +20,7 @@ http://localhost:8000
 
 ## הפעלת GitHub Pages
 Settings → Pages → Deploy from a branch → main / root
+
+
+### עיצוב כחול
+האתר כולל רקע כחול עם איור (assets/bg-tree.svg). אם לא רואים את הרקע — ודא שהתיקייה assets עלתה ל-GitHub Pages.
