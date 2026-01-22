@@ -373,9 +373,7 @@ a:hover{text-decoration:underline;}
           <input type="checkbox" id="onlyTeam" />
           רק משחקים של הקבוצה
         </label>
-
-        <span class="metaPill" id="meta">טוען…</span>
-        <button id="reload" class="iconBtn" type="button" aria-label="רענון">↻</button>
+<button id="reload" class="iconBtn" type="button" aria-label="רענון">↻</button>
       </div>
 
       <div id="errorBox" class="err" style="display:none;"></div>
@@ -461,15 +459,15 @@ a:hover{text-decoration:underline;}
     const hg = normGoal(g.home?.goals);
     const ag = normGoal(g.away?.goals);
 
-    if(g.is_finished && hg !== null && ag !== null){
+    // Show a real score whenever both sides have non-negative goals.
+    // (Some APIs don't reliably set is_finished, but goals are the source of truth.)
+    if(hg !== null && ag !== null){
       return String(hg) + " - " + String(ag);
     }
-    // future / not finished
     return "טרם";
   }
 
-
-  function showError(msg){
+function showError(msg){
     const box = document.getElementById("errorBox");
     box.style.display = "block";
     box.innerHTML = msg;
@@ -495,11 +493,7 @@ a:hover{text-decoration:underline;}
       const roundsCount = DATA?.rounds?.length || 0;
       const gamesCount = DATA?.gamesCount || 0;
       const shift = DATA?.api?.roundNumberShiftApplied ?? DATA?.api?.roundNumberFixApplied ?? 0;
-
-      document.getElementById("meta").textContent =
-        `${leagueName} • מחזורים: ${roundsCount} • משחקים: ${gamesCount} • עודכן: ${fmtDate(fetchedAt)} ${shift ? "• תיקון מחזורים +1" : ""}`;
-
-      const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
+const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
       const sel = document.getElementById("roundSelect");
       sel.innerHTML = "";
       for(const rr of rs){
