@@ -300,7 +300,29 @@
           <div class="stats" id="statsBox"></div>
           <div class="err" id="errBox" style="display:none;"></div>
 
-          <div class="twoTables" id="tables">
+          
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="mapInner card">
+          <div class="mapGrid"></div>
+          <div class="mapTitle">
+            <h2>מפת יריבות</h2>
+            <div class="hint">לחץ על קבוצה כדי לראות מפגש אחרון ותוצאות • הקבוצה שלך במרכז</div>
+          </div>
+          <div id="lines"></div>
+          <div id="nodes"></div>
+        </div>
+      </section>
+    
+      <section class="card fullSpan" id="tablesCard">
+        <div class="cardHeader">
+          <h2 id="tablesTitle">טבלאות</h2>
+          <small id="tablesHint">התוצאות לפי המסננים</small>
+        </div>
+        <div class="cardBody">
+<div class="twoTables" id="tables">
             <div id="gamesWrap" style="display:block;">
               <div class="muted" style="margin: 6px 0 8px;">משחקים (מחזור / מול היריבה)</div>
               <div style="max-height: 280px; overflow:auto; border-radius:14px;">
@@ -316,19 +338,7 @@
           </div>
         </div>
       </section>
-
-      <section class="map">
-        <div class="mapInner card">
-          <div class="mapGrid"></div>
-          <div class="mapTitle">
-            <h2>מפת יריבות</h2>
-            <div class="hint">לחץ על קבוצה כדי לראות מפגש אחרון ותוצאות • הקבוצה שלך במרכז</div>
-          </div>
-          <div id="lines"></div>
-          <div id="nodes"></div>
-        </div>
-      </section>
-    </main>
+</main>
   </div>
 
 <script>
@@ -349,11 +359,16 @@
 
   const el = (id) => document.getElementById(id);
 
-  const norm = (s) => (s||"").toString().trim().replace(/\s+/g, " ");
-  const low = (s) => norm(s).toLowerCase();
-
+  const norm = (s)=> (s??"").toString().replace(/\s+/g," ").trim();
+  const canon = (s)=> norm(s).toLowerCase()
+    .replace(/[\u05F3\u05F4'"`]/g,"")     // ׳ ״ and quotes
+    .replace(/[\.\u2019\u2018]/g,"")      // dots & smart quotes
+    .replace(/[()\[\]{}]/g," ")
+    .replace(/\s+/g," ")
+    .trim();
+  const low = canon;
   function teamEquals(a,b){
-    const A = low(a), B = low(b);
+    const A = canon(a), B = canon(b);
     if(!A || !B) return false;
     return A===B || A.includes(B) || B.includes(A);
   }
@@ -638,27 +653,24 @@
     const opp = state.selectedOpponent;
     const chip = state.chipTeam;
     const onlyTeam = !!state.onlyTeam;
-    const round = state.selectedRound;
+    const q = canon(el("teamInput").value);
 
-    let g = games.filter(x => String(x?.round?.number) === String(round));
+    let g = [];
+    if (opp){
+      // כשבחרו יריבה – מציגים את כל המפגשים מול היריבה (כל המחזורים)
+      g = games.filter(x => isTeamInGame(x, focus) && isTeamInGame(x, opp));
+    } else {
+      const round = state.selectedRound;
+      g = games.filter(x => String(x?.round?.number) === String(round));
+    }
 
-    if(onlyTeam){
-      g = g.filter(x => isTeamInGame(x, focus));
+    if (onlyTeam) g = g.filter(x => isTeamInGame(x, focus));
+    if (chip) g = g.filter(x => isTeamInGame(x, chip));
+
+    if (q){
+      g = g.filter(x => canon(x?.homeTeam?.name).includes(q) || canon(x?.awayTeam?.name).includes(q));
     }
-    if(chip){
-      g = g.filter(x => isTeamInGame(x, chip));
-    }
-    if(opp){
-      g = g.filter(x => isTeamInGame(x, opp));
-      if(!onlyTeam){
-        g = g.filter(x => isTeamInGame(x, focus));
-      }
-    }
-    const q = norm(el("teamInput").value);
-    if(q){
-      const ql = q.toLowerCase();
-      g = g.filter(x => low(x?.homeTeam?.name).includes(ql) || low(x?.awayTeam?.name).includes(ql));
-    }
+
     g.sort((a,b)=> (gameKeyDate(a)||0) - (gameKeyDate(b)||0));
     return g;
   }
@@ -671,6 +683,7 @@
       <th>תאריך</th><th>בית</th><th>תוצאה</th><th>חוץ</th><th>מיקום</th>
     </tr></thead>`);
     rows.push("<tbody>");
+    if(!g.length){ rows.push(`<tr><td colspan="5" style="text-align:center; color: rgba(255,255,255,.70); padding: 14px 10px;">אין משחקים לתצוגה לפי הסינון הנוכחי</td></tr>`); }
     for(const game of g){
       const date = game?.date ? formatDateHeb(game.date) : (game?.dateText || "");
       const home = norm(game?.homeTeam?.name);
@@ -856,6 +869,24 @@
     renderStandingsTable();
     renderMap();
     buildChips();
+
+    // כותרת טבלאות + ניווט
+    const tTitle = el("tablesTitle");
+    const tHint = el("tablesHint");
+    if (tTitle && tHint){
+      if (state.selectedOpponent){
+        tTitle.textContent = `משחקים מול ${state.selectedOpponent}`;
+        tHint.textContent = `כל המפגשים בין ${state.focusTeam} ל-${state.selectedOpponent} (כל המחזורים)`;
+        // כשנבחרה יריבה – נציג כברירת מחדל את משחקים
+        el("gamesWrap").style.display = "block";
+        el("standingsWrap").style.display = "none";
+      } else {
+        tTitle.textContent = `מחזור ${displayRound(state.selectedRound ?? "")} — משחקים`;
+        tHint.textContent = "משחקים במחזור הנבחר";
+      }
+    }
+    const tablesCard = el("tablesCard");
+    if (tablesCard) tablesCard.style.display = "block";
 
     const m = state.data?.meta || {};
     const ver = m?.version ? `v${m.version}` : "";
