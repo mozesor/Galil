@@ -539,12 +539,38 @@ a:hover{text-decoration:underline;}
     }catch{ return s; }
   }
 
+  function normTeamName(s){
+    return String(s||"")
+      .toLowerCase()
+      .replace(/["'״׳`´]/g,"")
+      .replace(/[\u05F3\u05F4]/g,"")      // geresh/gershayim
+      .replace(/[\.\,\-–—\(\)\[\]\{\}:;!؟?]/g," ")
+      .replace(/\s+/g," ")
+      .trim();
+  }
+
+  function isGalilQuery(qn){
+    return qn.includes("גליל") && qn.includes("עליון");
+  }
+
+  function matchTeamName(name, q){
+    const n = normTeamName(name);
+    const qn = normTeamName(q);
+
+    if(!qn) return false;
+
+    // Special: focus on "גליל עליון" regardless of abbreviation (הפ', הפועל, וכו')
+    if(isGalilQuery(qn)){
+      return n.includes("גליל") && n.includes("עליון");
+    }
+
+    // General: substring match on normalized strings
+    return n.includes(qn) || qn.includes(n);
+  }
+
   function includesTeam(game, q){
     if(!q) return false;
-    const t = q.toLowerCase();
-    const h = (game.home?.name || "").toLowerCase();
-    const a = (game.away?.name || "").toLowerCase();
-    return h.includes(t) || a.includes(t);
+    return matchTeamName(game.home?.name || "", q) || matchTeamName(game.away?.name || "", q);
   }
 
   function normGoal(v){
@@ -604,8 +630,8 @@ a:hover{text-decoration:underline;}
     if(hg === null || ag === null) return null; // not played
     if(!q) return null;
 
-    const isHome = h.toLowerCase().includes(q);
-    const isAway = a.toLowerCase().includes(q);
+    const isHome = matchTeamName(h, teamQ);
+    const isAway = matchTeamName(a, teamQ);
     if(!isHome && !isAway) return null;
 
     const my = isHome ? hg : ag;
@@ -629,7 +655,7 @@ a:hover{text-decoration:underline;}
       const hl=h.toLowerCase(), al=a.toLowerCase();
       const my=myTeamQ.toLowerCase();
       const opp=oppName.toLowerCase();
-      return (hl.includes(my) && al.includes(opp)) || (hl.includes(opp) && al.includes(my));
+      return (matchTeamName(h, myTeamQ) && matchTeamName(a, oppName)) || (matchTeamName(h, oppName) && matchTeamName(a, myTeamQ));
     }).sort((a,b)=>(b.date||"").localeCompare(a.date||""));
 
     const last = h2h[0] || null;
@@ -651,7 +677,7 @@ a:hover{text-decoration:underline;}
     const recentBadges = recent.map(g=>{
       const o = teamOutcomeFor(g, myTeamQ);
       const score = formatScore(g);
-      const opp = ((g.home?.name||"").toLowerCase().includes(myTeamQ.toLowerCase())) ? (g.away?.name||"") : (g.home?.name||"");
+      const opp = matchTeamName((g.home?.name||""), myTeamQ) ? (g.away?.name||"") : (g.home?.name||"");
       const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
       const label = o==="W" ? "נצח" : o==="L" ? "הפסד" : "תיקו";
       return `<span class="badge ${cls}">${label} • ${esc(opp)} • ${esc(score)}</span>`;
@@ -819,7 +845,7 @@ DATA = null;
     sb.innerHTML = "";
     for(const t of (DATA.standings || [])){
       const tr = document.createElement("tr");
-      const isTeam = teamQ && (t.name || "").toLowerCase().includes(teamQ.toLowerCase());
+      const isTeam = teamQ && matchTeamName((t.name||""), teamQ);
       tr.innerHTML = `
         <td>${t.rank ?? ""}</td>
         <td><button class="teamLink" data-team="${escapeAttr(t.name ?? "")}">${esc(t.name ?? "")}</button></td>
