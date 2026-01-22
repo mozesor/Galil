@@ -426,17 +426,29 @@ a:hover{text-decoration:underline;}
 .kpi .value{ font-weight: 800; margin-top: 4px; }
 .badges{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px; }
 .badge{
-  border: 1px solid rgba(34,197,94,0.30);
-  background: rgba(34,197,94,0.08);
-  color: #064e3b;
+  border: 1px solid var(--border);
+  background: rgba(148,163,184,0.10);
+  color: var(--text);
   border-radius: 999px;
   padding: 7px 10px;
   font-size: 13px;
   line-height: 1.2;
 }
-.badge.win{ border-color: rgba(34,197,94,0.35); }
-.badge.lose{ border-color: rgba(255,107,107,0.35); }
-.badge.draw{ border-color: rgba(245,158,11,0.35); }
+.badge.win{
+  border-color: rgba(34,197,94,0.38);
+  background: rgba(34,197,94,0.12);
+  color: #064e3b;
+}
+.badge.lose{
+  border-color: rgba(255,107,107,0.38);
+  background: rgba(255,107,107,0.10);
+  color: #7f1d1d;
+}
+.badge.draw{
+  border-color: rgba(245,158,11,0.42);
+  background: rgba(245,158,11,0.12);
+  color: #7c2d12;
+}
 .sectionTitle{ margin: 14px 0 8px; font-size: 14px; font-weight: 800; }
 .smallTable td, .smallTable th{ white-space: normal; }
 
@@ -525,8 +537,7 @@ a:hover{text-decoration:underline;}
                 <th>בית</th>
                 <th>תוצאה</th>
                 <th>חוץ</th>
-                <th>אצל מי</th>
-              </tr>
+</tr>
             </thead>
             <tbody id="gamesBody"></tbody>
           </table>
@@ -709,56 +720,58 @@ a:hover{text-decoration:underline;}
       else if(o==="D") d++;
     }
 
+    const last2 = h2h.slice(0,2);
+
     const recent = played
-      .filter(g=>includesTeam(g, myTeamQ))
+      .filter(g=>includesTeam(g, oppName))
       .sort((a,b)=>(b.date||"").localeCompare(a.date||""))
       .slice(0,5);
 
     const recentBadges = recent.map(g=>{
-      const o = teamOutcomeFor(g, myTeamQ);
+      const o = teamOutcomeFor(g, oppName);
       const score = formatScore(g);
-      const opp = matchTeamName((g.home?.name||""), myTeamQ) ? (g.away?.name||"") : (g.home?.name||"");
+      const opp = matchTeamName((g.home?.name||""), oppName) ? (g.away?.name||"") : (g.home?.name||"");
       const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
-      const label = o==="W" ? "נצח" : o==="L" ? "הפסד" : "תיקו";
+      const label = o==="W" ? "ניצחון" : o==="L" ? "הפסד" : "תיקו";
       return `<span class="badge ${cls}">${label} • ${esc(opp)} • ${esc(score)}</span>`;
     }).join("");
 
-    const lastHtml = last ? `
+    const lastHtml = last2.length ? `
       <table class="smallTable" style="width:100%; border-collapse:collapse;">
         <tr>
           <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">תאריך</th>
           <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">משחק</th>
           <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">תוצאה</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">גליל</th>
         </tr>
-        <tr>
-          <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(fmtDate(last.date))}</td>
-          <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(last.home?.name||"")} מול ${esc(last.away?.name||"")}</td>
-          <td style="padding:8px; border-bottom:1px solid var(--border);"><b>${esc(formatScore(last))}</b></td>
-        </tr>
+        ${last2.map(g=>{
+          const o = teamOutcomeFor(g, myTeamQ); // תוצאה מנקודת מבט של גליל
+          const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
+          const label = o==="W" ? "ניצחון" : o==="L" ? "הפסד" : "תיקו";
+          return `
+          <tr>
+            <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(fmtDate(g.date))}</td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(g.home?.name||"")} מול ${esc(g.away?.name||"")}</td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);"><b>${esc(formatScore(g))}</b></td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);"><span class="badge ${cls}">${label}</span></td>
+          </tr>`;
+        }).join("")}
       </table>
+      <div class="tiny" style="margin-top:8px;">מוצגים עד שני המשחקים האחרונים ששוחקו מול גליל.</div>
     ` : `<div class="tiny">לא נמצא משחק ששוחק עדיין בין "${esc(myTeamQ)}" ל-"${esc(oppName)}".</div>`;
 
-    const last5badges = last5.map(g=>{
-      const o = teamOutcomeFor(g, myTeamQ);
-      const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
-      const label = o==="W" ? "נצח" : o==="L" ? "הפסד" : "תיקו";
-      return `<span class="badge ${cls}">${label} • ${esc(fmtDate(g.date))} • ${esc(formatScore(g))}</span>`;
-    }).join("") || `<div class="tiny">אין מספיק היסטוריה להצגה.</div>`;
-
     const body = document.getElementById("teamModalBody");
+const body = document.getElementById("teamModalBody");
     document.getElementById("teamModalTitle").textContent = `מול ${oppName}`;
     body.innerHTML = `
       <div class="kpis">
-        <div class="kpi"><div class="label">מאזן כללי מול הקבוצה</div><div class="value">${w} נצ׳ • ${l} הפ׳${d?` • ${d} תיקו`:""}</div></div>
+        <div class="kpi"><div class="label">מאזן גליל מול הקבוצה</div><div class="value">${w} נצ׳ • ${l} הפ׳${d?` • ${d} תיקו`:""}</div></div>
         <div class="kpi"><div class="label">סה״כ מפגשים ששוחקו</div><div class="value">${h2h.length}</div></div>
-        <div class="kpi"><div class="label">הדגשה לפי</div><div class="value">${esc(myTeamQ)}</div></div>
+        <div class="kpi"><div class="label">מיקוד</div><div class="value">הפ׳ גליל עליון</div></div>
       </div>
 
       <div class="sectionTitle">המשחק האחרון ביניהן</div>
       ${lastHtml}
-
-      <div class="sectionTitle">5 מפגשים אחרונים (ראש בראש)</div>
-      <div class="badges">${last5badges}</div>
 
       <div class="sectionTitle">5 משחקים אחרונים של הקבוצה (כללי)</div>
       <div class="badges">${recentBadges || `<div class="tiny">אין נתונים.</div>`}</div>
@@ -862,14 +875,12 @@ DATA = null;
       const tr = document.createElement("tr");
       const isTeam = includesTeam(g, teamQ);
             const score = formatScore(g);
-      const loc = buildOpponentLocation(g, teamQ);
-      tr.innerHTML = `
+tr.innerHTML = `
         <td>${fmtDate(g.date)}</td>
         <td><button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></td>
         <td><b><span class="score" dir="auto">${score}</span></b></td>
         <td><button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></td>
-        <td class="tiny">${esc(loc)}</td>
-      `;
+              `;
       if(isTeam) tr.className = "hl";
       body.appendChild(tr);
     }
