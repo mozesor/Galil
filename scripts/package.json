@@ -1,11 +1,9 @@
 {
   "name": "galil-data-fetcher",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "private": true,
-  "description": "Fetch Galil league data from vole.one.co.il and update root data.json",
-  "type": "commonjs",
+  "description": "Fetches league rounds/games and writes data.json for GitHub Pages",
   "scripts": {
     "fetch": "node fetch-data.js"
-  },
-  "dependencies": {}
+  }
 }

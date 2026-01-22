@@ -3,41 +3,52 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>גליל - בדיקה מקומית</title>
+  <title>גליל – לוח משחקים</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 16px; line-height: 1.35; margin:0; }
-    .wrap { max-width: 1100px; margin: 0 auto; }
-    .top { display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content: space-between; }
-    .card { background:#f7f7f7; border:1px solid #e5e5e5; border-radius: 14px; padding: 12px; }
-    button, select, input { padding: 10px 12px; border-radius: 12px; border: 1px solid #ccc; font-size: 14px; }
-    button { cursor:pointer; }
-    .muted { opacity: .8; font-size: 13px; }
-    .grid { display:grid; grid-template-columns: 1fr; gap: 12px; margin-top: 12px; }
-    @media (min-width: 900px) { .grid { grid-template-columns: 2fr 1fr; } }
-    table { width:100%; border-collapse: collapse; }
-    th, td { padding: 8px; border-bottom: 1px solid #e3e3e3; text-align:right; }
-    th { position: sticky; top: 0; background: #fafafa; }
-    .tag { display:inline-block; padding: 2px 8px; border-radius: 999px; background:#eef; font-size:12px; }
-    .rowFlex { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
-    .pill { background:#eef; padding: 6px 10px; border-radius: 999px; }
-    .small { font-size:12px; }
+    :root{--bg:#ffffff;--card:#f7f7f7;--border:#e6e6e6;--text:#111;--muted:#666;}
+    body{font-family:Arial,system-ui; margin:0; background:var(--bg); color:var(--text);}
+    .wrap{max-width:1200px; margin:0 auto; padding:16px;}
+    h1{margin:0; font-size:22px;}
+    .sub{color:var(--muted); margin-top:6px; font-size:13px;}
+    .topbar{display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;}
+    .pill{background:#eef; padding:6px 10px; border-radius:999px; font-size:13px;}
+    .row{display:flex; gap:10px; align-items:center; flex-wrap:wrap;}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:12px;}
+    input,select,button{border:1px solid #ccc; border-radius:12px; padding:10px 12px; font-size:14px;}
+    button{cursor:pointer;}
+    .grid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:12px;}
+    @media (min-width: 960px){ .grid{grid-template-columns: 1.2fr 1fr;} }
+    .scroll{overflow:auto; max-height:70vh;}
+    table{width:100%; border-collapse:collapse;}
+    th,td{padding:8px; border-bottom:1px solid var(--border); text-align:right; white-space:nowrap;}
+    th{position:sticky; top:0; background:#fafafa; z-index:1;}
+    .hl{background:#fff7d6;}
+    .hl2{background:#dff7ff;}
+    .err{background:#ffe3e3; border:1px solid #ffb4b4; padding:10px; border-radius:12px; margin-top:10px;}
+    a{color:#0b57d0; text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .tiny{font-size:12px; color:var(--muted);}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="top">
+    <div class="topbar">
       <div>
-        <h2 style="margin:0 0 6px 0;">גליל - לוח משחקים מקומי</h2>
-        <div class="muted">הנתונים נטענים מ־<code>public/data.json</code> אחרי הרצת <b>npm run fetch</b></div>
+        <h1>גליל – לוח משחקים</h1>
+        <div class="sub">
+          הנתונים נטענים מקובץ <code>data.json</code> (מתעדכן ע"י GitHub Actions).
+          בדיקה מקומית: חובה לפתוח דרך שרת (לא file://).
+        </div>
       </div>
-      <div class="rowFlex">
-        <span class="pill">URL: <b>http://localhost:5173</b></span>
+      <div class="row">
+        <span class="pill">GitHub Pages</span>
         <button id="reload">רענן</button>
+        <a class="pill" id="dbgLink" href="./debug_endpoints.json" target="_blank">debug_endpoints.json</a>
       </div>
     </div>
 
     <div class="card" style="margin-top:12px;">
-      <div class="rowFlex">
+      <div class="row">
         <label>בחר מחזור:
           <select id="roundSelect"></select>
         </label>
@@ -46,19 +57,21 @@
           <input id="teamFilter" placeholder="לדוגמה: גליל עליון" value="גליל" />
         </label>
 
-        <label class="small">
+        <label class="tiny">
           <input type="checkbox" id="onlyTeam" />
           רק משחקים של הקבוצה
         </label>
 
-        <span class="tag" id="metaTag">טוען...</span>
+        <span class="pill" id="meta">טוען…</span>
       </div>
+
+      <div id="errorBox" class="err" style="display:none;"></div>
     </div>
 
     <div class="grid">
-      <div class="card" id="gamesCard">
+      <div class="card">
         <h3 style="margin:0 0 10px 0;">משחקים</h3>
-        <div style="overflow:auto; max-height: 70vh;">
+        <div class="scroll">
           <table>
             <thead>
               <tr>
@@ -76,7 +89,7 @@
 
       <div class="card">
         <h3 style="margin:0 0 10px 0;">טבלה</h3>
-        <div style="overflow:auto; max-height: 70vh;">
+        <div class="scroll">
           <table>
             <thead>
               <tr>
@@ -97,92 +110,118 @@
   </div>
 
 <script>
-  function fmtDate(s) {
-    if (!s) return "";
-    try {
+  let DATA = null;
+
+  function fmtDate(s){
+    if(!s) return "";
+    try{
       const d = new Date(s);
       return d.toLocaleString("he-IL", { weekday:"short", year:"2-digit", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit" });
-    } catch { return s; }
+    }catch{ return s; }
   }
 
-  function includesTeam(game, q) {
-    if (!q) return false;
+  function includesTeam(game, q){
+    if(!q) return false;
     const t = q.toLowerCase();
     const h = (game.home?.name || "").toLowerCase();
     const a = (game.away?.name || "").toLowerCase();
     return h.includes(t) || a.includes(t);
   }
 
-  let DATA = null;
-
-  async function load() {
-    const r = await fetch("/data.json?ts=" + Date.now());
-    DATA = await r.json();
-
-    const leagueName = DATA?.league?.name || "ליגה";
-    const fetchedAt = DATA?.fetchedAt || "";
-    const roundsCount = DATA?.rounds?.length || 0;
-    const gamesCount = DATA?.gamesCount || 0;
-    const shift = DATA?.api?.roundNumberShiftApplied ?? 0;
-
-    document.getElementById("metaTag").textContent =
-      `${leagueName} • מחזורים: ${roundsCount} • משחקים: ${gamesCount} • עודכן: ${fmtDate(fetchedAt)} ${shift ? "• תיקון מחזורים +1" : ""}`;
-
-    const rs = (DATA.rounds || []).slice().sort((a,b)=> (a.number||0) - (b.number||0));
-    const sel = document.getElementById("roundSelect");
-    sel.innerHTML = "";
-    for (const r of rs) {
-      const opt = document.createElement("option");
-      opt.value = r.number;
-      opt.textContent = `מחזור ${r.number} (${r.gamesCount || 0})`;
-      sel.appendChild(opt);
-    }
-
-    const cur = DATA?.league?.currentRoundNumber;
-    if (cur) sel.value = String(cur);
-
-    render();
+  function showError(msg){
+    const box = document.getElementById("errorBox");
+    box.style.display = "block";
+    box.innerHTML = msg;
+  }
+  function hideError(){
+    const box = document.getElementById("errorBox");
+    box.style.display = "none";
+    box.innerHTML = "";
   }
 
-  function render() {
-    if (!DATA) return;
+  async function load(){
+    hideError();
+    try{
+      const r = await fetch("./data.json?ts=" + Date.now());
+      if(!r.ok){
+        const t = await r.text();
+        throw new Error("HTTP " + r.status + " " + r.statusText + "<br><pre style='white-space:pre-wrap'>" + (t.slice(0,400)) + "</pre>");
+      }
+      DATA = await r.json();
+
+      const leagueName = DATA?.league?.name || "ליגה";
+      const fetchedAt = DATA?.fetchedAt || "";
+      const roundsCount = DATA?.rounds?.length || 0;
+      const gamesCount = DATA?.gamesCount || 0;
+      const shift = DATA?.api?.roundNumberShiftApplied ?? DATA?.api?.roundNumberFixApplied ?? 0;
+
+      document.getElementById("meta").textContent =
+        `${leagueName} • מחזורים: ${roundsCount} • משחקים: ${gamesCount} • עודכן: ${fmtDate(fetchedAt)} ${shift ? "• תיקון מחזורים +1" : ""}`;
+
+      const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
+      const sel = document.getElementById("roundSelect");
+      sel.innerHTML = "";
+      for(const rr of rs){
+        const opt = document.createElement("option");
+        opt.value = rr.number;
+        opt.textContent = `מחזור ${rr.number} (${rr.gamesCount || 0})`;
+        sel.appendChild(opt);
+      }
+
+      const cur = DATA?.league?.currentRoundNumber;
+      if(cur) sel.value = String(cur);
+      if(!sel.value && rs.length) sel.value = String(rs[0].number);
+
+      render();
+    }catch(e){
+      showError(
+        `<b>לא הצלחתי לטעון נתונים.</b><br>
+         אם פתחת את הקובץ דרך <code>file://</code> זה לא יעבוד – פתח דרך שרת (GitHub Pages / Live Server).<br><br>
+         שגיאה: <code>${String(e).replaceAll("<","&lt;").replaceAll(">","&gt;")}</code>`
+      );
+      document.getElementById("meta").textContent = "אין נתונים";
+      DATA = null;
+      document.getElementById("roundSelect").innerHTML = "";
+      document.getElementById("gamesBody").innerHTML = "";
+      document.getElementById("standBody").innerHTML = "";
+    }
+  }
+
+  function render(){
+    if(!DATA) return;
 
     const roundNo = Number(document.getElementById("roundSelect").value);
     const teamQ = document.getElementById("teamFilter").value.trim();
     const onlyTeam = document.getElementById("onlyTeam").checked;
 
-    const gamesAll = DATA.games || [];
-    let games = gamesAll.filter(g => (g.round?.number ?? null) === roundNo);
+    let games = (DATA.games || []).filter(g => (g.round?.number ?? null) === roundNo);
+    games.sort((a,b)=>(a.date||"").localeCompare(b.date||""));
 
-    games.sort((a,b)=> (a.date||"").localeCompare(b.date||""));
-
-    if (onlyTeam && teamQ) games = games.filter(g => includesTeam(g, teamQ));
-
-    if (teamQ) {
-      games.sort((a,b)=> (includesTeam(b, teamQ) - includesTeam(a, teamQ)) || (a.date||"").localeCompare(b.date||""));
+    if(onlyTeam && teamQ) games = games.filter(g => includesTeam(g, teamQ));
+    if(teamQ){
+      games.sort((a,b)=>(includesTeam(b,teamQ)-includesTeam(a,teamQ)) || (a.date||"").localeCompare(b.date||""));
     }
 
     const body = document.getElementById("gamesBody");
     body.innerHTML = "";
-    for (const g of games) {
+    for(const g of games){
       const tr = document.createElement("tr");
       const isTeam = includesTeam(g, teamQ);
-
       const score = (g.home?.goals ?? "") + (g.is_finished ? " - " : " vs ") + (g.away?.goals ?? "");
       tr.innerHTML = `
         <td>${fmtDate(g.date)}</td>
         <td>${g.home?.name || ""}</td>
         <td><b>${score}</b></td>
         <td>${g.away?.name || ""}</td>
-        <td class="small">${g.venue || ""}</td>
+        <td class="tiny">${g.venue || ""}</td>
       `;
-      if (isTeam) tr.style.background = "#fff7d6";
+      if(isTeam) tr.className = "hl";
       body.appendChild(tr);
     }
 
     const sb = document.getElementById("standBody");
     sb.innerHTML = "";
-    for (const t of (DATA.standings || [])) {
+    for(const t of (DATA.standings || [])){
       const tr = document.createElement("tr");
       const isTeam = teamQ && (t.name || "").toLowerCase().includes(teamQ.toLowerCase());
       tr.innerHTML = `
@@ -194,7 +233,7 @@
         <td>${t.ga ?? ""}</td>
         <td>${t.gd ?? ""}</td>
       `;
-      if (isTeam) tr.style.background = "#dff7ff";
+      if(isTeam) tr.className = "hl2";
       sb.appendChild(tr);
     }
   }

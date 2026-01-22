@@ -1,34 +1,22 @@
-# Galil – לוח משחקים (GitHub Pages) + עדכון נתונים אוטומטי
+# Galil – לוח משחקים (GitHub Pages)
 
-האתר קורא את `data.json` מהשורש ומציג:
-- טבלת דירוג
-- משחקים לפי מחזור
-- פילטר “רק משחקי הקבוצה”
+## מה יש פה
+- `index.html` מציג משחקים + טבלה + בחירת מחזור.
+- `data.json` מתעדכן אוטומטית ע"י GitHub Actions כל 30 דקות.
+- תיקון מספור: אם המחזורים מגיעים מ-0, אנחנו מזיזים +1 כדי להתאים לאתר.
 
-## איך מפעילים באתר (GitHub Pages)
-1. העלה/י את כל הקבצים מהריפו הזה ל־GitHub.
-2. ב־GitHub → Settings → Pages:
-   - Source: Deploy from a branch
-   - Branch: `main` / root
-3. פתח/י את כתובת ה־Pages.
+## בדיקה מקומית (חשוב!)
+אל תפתח `index.html` עם double click (file://) — הדפדפן חוסם קריאת JSON.
+פתח עם שרת פשוט, לדוגמה:
 
-## עדכון אוטומטי של data.json
-יש Workflow שמריץ כל 30 דקות:
-`.github/workflows/update-data.yml`
-
-הוא מריץ:
-- `npm install` בתיקיית `scripts`
-- `npm run fetch`
-ומעדכן `data.json` בריפו אם יש שינוי.
-
-## הפעלה מקומית לבדיקה
-בתיקיית `scripts`:
-```bash
-npm install
-npm run fetch
+### Windows (PowerShell) – Python
+```powershell
+python -m http.server 8000
 ```
-אחרי זה אפשר לפתוח את `index.html` בדפדפן (או להפעיל שרת סטטי קטן).
+ואז:
+http://localhost:8000
 
-## הערה על המחזורים
-ה־API של Vole לפעמים מחזיר מחזורים ב־0-based (מחזור 0) בעוד שבאתר מוצג מחזור 1.
-הסקריפט `scripts/fetch-data.js` מנרמל את המספור כך שיתחיל מ־1.
+או תשתמש ב־VSCode Live Server.
+
+## הפעלת GitHub Pages
+Settings → Pages → Deploy from a branch → main / root

@@ -1,4 +1,5 @@
 const fs = require("fs/promises");
+const path = require("path");
 
 const LEAGUE_ID = 1276;
 const BASE = "https://vole.one.co.il";
@@ -15,7 +16,7 @@ async function fetchJson(url) {
     },
   });
   const text = await res.text();
-  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText} | ${text.slice(0, 140)}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText} | ${text.slice(0, 180)}`);
   return JSON.parse(text);
 }
 
@@ -67,7 +68,6 @@ function normalizeGame(g) {
 
 function buildStandingsFromGames(games) {
   const map = new Map();
-
   for (const g of games) {
     for (const side of ["home", "away"]) {
       const t = g?.[side];
@@ -87,7 +87,6 @@ function buildStandingsFromGames(games) {
       });
     }
   }
-
   const arr = Array.from(map.values());
   arr.sort((a, b) => {
     const pa = a.points ?? -999, pb = b.points ?? -999;
@@ -97,12 +96,11 @@ function buildStandingsFromGames(games) {
     const gfa = a.gf ?? -999, gfb = b.gf ?? -999;
     return gfb - gfa;
   });
-
   return arr.map((x, i) => ({ rank: i + 1, ...x }));
 }
 
 function buildRoundsFromGames(games) {
-  const m = new Map(); // roundNumber -> count
+  const m = new Map();
   for (const g of games) {
     const n = g?.round?.number;
     if (typeof n !== "number") continue;
@@ -114,71 +112,19 @@ function buildRoundsFromGames(games) {
 }
 
 function normalizeRoundNumbersIfZeroBased(games, leagueInfo) {
-  // ✅ תיקון חכם: לפעמים ה-API מחזיר round.number שמתחיל מ-0,
-  // ובמקביל round.name הוא "מחזור 1". לפעמים number הוא string.
-  // המטרה: לאחד את המספור כך שיתחיל מ-1 ויתאים למה שמוצג באתר.
-
-  function toInt(v) {
-    if (typeof v === "number" && Number.isFinite(v)) return v;
-    if (typeof v === "string") {
-      const m = v.match(/-?\d+/);
-      if (m) return Number(m[0]);
-    }
-    return null;
-  }
-
-  function numFromName(name) {
-    if (typeof name !== "string") return null;
-    const m = name.match(/(\d+)/);
-    return m ? Number(m[1]) : null;
-  }
-
-  // 1) ננסה להסיק מספור נכון לפי name ("מחזור X") כשאפשר
-  let touched = false;
-  for (const g of games) {
-    if (!g || !g.round) continue;
-    const n = toInt(g.round.number);
-    const nn = numFromName(g.round.name);
-    if (nn != null) {
-      // אם יש לנו name-num והוא שונה (לדוגמה name=2, number=1) – נעדיף את name-num
-      if (n == null || nn !== n) {
-        g.round.number = nn;
-        touched = true;
-      }
-    } else if (n != null) {
-      g.round.number = n; // ננרמל string->number
-    }
-  }
-
-  // 2) אם עדיין יש 0-based (מינימום 0) – נבצע shift +1
-  const nums = games
-    .map(g => toInt(g?.round?.number))
-    .filter(n => typeof n === "number" && Number.isFinite(n));
+  const nums = games.map(g => g?.round?.number).filter(n => typeof n === "number");
   const min = nums.length ? Math.min(...nums) : null;
-
   let shift = 0;
   if (min === 0) shift = 1;
 
   if (shift) {
     for (const g of games) {
-      const n = toInt(g?.round?.number);
-      if (n != null) g.round.number = n + shift;
+      if (typeof g?.round?.number === "number") g.round.number += shift;
     }
+    if (typeof leagueInfo.currentRoundNumber === "number") leagueInfo.currentRoundNumber += shift;
   }
-
-  // 3) גם לליג־אינפו (אם יש)
-  const curN = toInt(leagueInfo.currentRoundNumber);
-  const curNN = numFromName(leagueInfo.currentRoundName);
-  if (curNN != null && (curN == null || curNN !== curN)) {
-    leagueInfo.currentRoundNumber = curNN;
-  } else if (curN != null) {
-    leagueInfo.currentRoundNumber = curN + shift;
-  }
-
-  // אם השתמשנו ב-name או ביצענו shift – נחזיר 1 כדי לסמן שבוצע תיקון
-  return (touched || shift) ? 1 : 0;
+  return shift;
 }
-
 
 async function detectRoundParam() {
   for (const p of ROUND_PARAM_CANDIDATES) {
@@ -193,14 +139,13 @@ async function detectRoundParam() {
 }
 
 async function main() {
-  // Save HTML for debugging
-  const html = await (await fetch(LEAGUE_URL, { headers: { "user-agent": "Mozilla/5.0" } })).text();
-  await fs.writeFile("../league.html", html, "utf8");
+  const outDataPath = path.join(__dirname, "..", "data.json");
+  const outDebugPath = path.join(__dirname, "..", "debug_endpoints.json");
 
   const baseResp = await fetchJson(ROUNDS_API);
   const leagueInfo = getLeagueInfo(baseResp);
-
   const roundParam = await detectRoundParam();
+
   const tried = [];
   let allGames = [];
 
@@ -213,7 +158,6 @@ async function main() {
     let emptyStreak = 0;
     let anyFound = false;
 
-    // נתחיל מ-0 (כמו קודם) כדי לא לפספס, ונבצע "shift" בסוף אם צריך
     for (let n = 0; n <= maxTry; n++) {
       const url = `${ROUNDS_API}&${roundParam}=${n}`;
       try {
@@ -221,9 +165,8 @@ async function main() {
         const gamesRaw = getGames(j);
         tried.push({ url, ok: true, games: gamesRaw.length });
 
-        if (!gamesRaw.length) {
-          emptyStreak++;
-        } else {
+        if (!gamesRaw.length) emptyStreak++;
+        else {
           emptyStreak = 0;
           anyFound = true;
           allGames.push(...gamesRaw.map(normalizeGame));
@@ -243,7 +186,6 @@ async function main() {
   const games = Array.from(map.values());
   games.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
 
-  // ✅ fix zero-based rounds
   const shift = normalizeRoundNumbersIfZeroBased(games, leagueInfo);
 
   const standings = buildStandingsFromGames(games);
@@ -262,7 +204,7 @@ async function main() {
     api: {
       rounds: ROUNDS_API,
       roundParamDetected: roundParam,
-      roundNumberFixApplied: shift, // 0 או 1
+      roundNumberShiftApplied: shift,
     },
     rounds,
     gamesCount: games.length,
@@ -270,8 +212,8 @@ async function main() {
     standings,
   };
 
-  await fs.writeFile("../data.json", JSON.stringify(out, null, 2), "utf8");
-  await fs.writeFile("../debug_endpoints.json", JSON.stringify({ leagueInfo, roundParam, tried, shift }, null, 2), "utf8");
+  await fs.writeFile(outDataPath, JSON.stringify(out, null, 2), "utf8");
+  await fs.writeFile(outDebugPath, JSON.stringify({ leagueInfo, roundParam, shift, tried }, null, 2), "utf8");
 
   console.log("✅ Saved data.json + debug_endpoints.json");
   console.log("✅ roundParamDetected:", roundParam);
