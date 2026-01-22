@@ -234,7 +234,9 @@
     .node:hover{border-color: rgba(58,167,255,.50); box-shadow: 0 18px 52px rgba(0,0,0,.42);}
     .node .name{font-weight:900; font-size:14px; line-height:1.2; margin-bottom:6px;}
     .node .meta{color:var(--muted2); font-size:12px; display:flex; justify-content:space-between; gap:10px;}
-    .node .meta2{font-size:12px; margin-top:6px; color: rgba(210,240,255,0.92); opacity:.92;}
+    .node 
+.ltr{direction:ltr; unicode-bidi: embed;}
+.meta2{font-size:12px; margin-top:6px; color: rgba(210,240,255,0.92); opacity:.92;}
     .node .cta{margin-top:8px; color: var(--accent2); font-size:12px;}
     .node.active{border-color: rgba(58,167,255,.65); background: linear-gradient(180deg, rgba(35,86,120,.62), rgba(10,18,32,.55));}
     .node.center{
@@ -441,10 +443,57 @@
     return A===B || A.includes(B) || B.includes(A);
   }
 
-  function formatDate(raw){
-    if(!raw) return "";
-    return String(raw).replace("T"," ").replace("Z","");
+  
+  function parseDateAny(raw){
+    if(!raw) return null;
+    if(raw instanceof Date && !isNaN(raw)) return raw;
+    if(typeof raw === "number" && isFinite(raw)) return new Date(raw);
+    let s = String(raw).trim();
+    if(!s) return null;
+
+    // cleanup
+    s = s.replace(/&nbsp;/g," ").replace(/\u200f/g,"").replace(/\u200e/g,"");
+    // strip milliseconds / trailing Z
+    s = s.replace(/\.\d{3,6}Z?$/,"").replace(/Z$/,"");
+
+    // "YYYY-MM-DD HH:mm[:ss]" -> ISO
+    if(/^\d{4}-\d{2}-\d{2}\s+\d{1,2}:\d{2}(:\d{2})?$/.test(s)){
+      s = s.replace(" ","T");
+    }
+    // "YYYY-MM-DD"
+    if(/^\d{4}-\d{2}-\d{2}$/.test(s)){
+      s = s + "T00:00:00";
+    }
+
+    const t = Date.parse(s);
+    if(!isNaN(t)) return new Date(t);
+
+    // dd.mm.yyyy [hh:mm]
+    const m = s.match(/(\d{1,2})\.(\d{1,2})\.(\d{2,4})(?:.*?(\d{1,2}):(\d{2}))?/);
+    if(m){
+      const dd = Number(m[1]), mm = Number(m[2]), yy = Number(m[3]) + (String(m[3]).length===2 ? 2000 : 0);
+      const hh = m[4] ? Number(m[4]) : 0;
+      const mi = m[5] ? Number(m[5]) : 0;
+      const iso = `${yy}-${String(mm).padStart(2,"0")}-${String(dd).padStart(2,"0")}T${String(hh).padStart(2,"0")}:${String(mi).padStart(2,"0")}:00`;
+      const tt = Date.parse(iso);
+      if(!isNaN(tt)) return new Date(tt);
+    }
+    return null;
   }
+
+  function formatDate(raw){
+    const d = parseDateAny(raw);
+    if(!d) {
+      return String(raw||"").replace("T"," ").replace("Z","").replace(/\.\d{3,6}/,"").trim();
+    }
+    const dd = String(d.getDate()).padStart(2,"0");
+    const mm = String(d.getMonth()+1).padStart(2,"0");
+    const yy = d.getFullYear();
+    const hh = String(d.getHours()).padStart(2,"0");
+    const mi = String(d.getMinutes()).padStart(2,"0");
+    return `${dd}.${mm}.${yy} ${hh}:${mi}`;
+  }
+
 
   // ---- Data adapters ----
   function getGames(){
@@ -629,7 +678,46 @@
     return relevant[0];
   }
 
-  function lastGameForTeam(teamName, games){
+  
+  function h2hSummary(teamA, teamB, games){
+    const a = findTeamKey(teamA);
+    const b = findTeamKey(teamB);
+    const relevant = (games||[]).filter(g=>{
+      const {home, away} = gameTeams(g);
+      return (sameTeam(home,a) && sameTeam(away,b)) || (sameTeam(home,b) && sameTeam(away,a));
+    });
+    if(!relevant.length) return {type:"none", game:null, a, b};
+
+    // sort by date (desc). If no parseable date, they sink to bottom.
+    relevant.sort((x,y)=> (gameKeyDate(y)||0) - (gameKeyDate(x)||0));
+
+    const played = relevant.find(g=>gameHasScore(g));
+    if(played) return {type:"played", game:played, a, b};
+
+    const now = Date.now();
+    const withT = relevant.map(g=>({g, t: gameKeyDate(g)||0})).filter(x=>x.t>0);
+    const future = withT.filter(x=>x.t >= now).sort((x,y)=> x.t - y.t)[0];
+    if(future) return {type:"upcoming", game:future.g, a, b};
+
+    return {type:"scheduled", game: withT[0]?.g || relevant[0], a, b};
+  }
+
+  function h2hText(summary){
+    if(!summary || !summary.game) return "אין משחקים";
+    const g = summary.game;
+    const dtRaw = g?.dateISO || g?.datetimeISO || g?.dateTimeISO || g?.dateTime || g?.date || g?.dateText || "";
+    const dt = dtRaw ? formatDate(dtRaw) : "";
+    const score = gameHasScore(g) ? gameScoreStr(g) : "—";
+    if(summary.type === "played"){
+      return `מפגש אחרון: <b>${score}</b>${dt ? ` <span style="color:var(--muted2)">(${dt})</span>` : ""}`;
+    }
+    if(summary.type === "upcoming"){
+      return `המשחק הקרוב: <span class="ltr">${dt || "—"}</span>`;
+    }
+    return `מפגש אחרון ללא תוצאה: <span class="ltr">${dt || "—"}</span>`;
+  }
+
+function lastGameForTeam(teamName, games){
     const t = findTeamKey(teamName);
     const relevant = (games||[]).filter(g => gameHasScore(g) && isTeamInGame(g, t));
     if(!relevant.length) return null;
@@ -791,7 +879,7 @@
     rows.push("<tbody>");
 
     for(const game of g){
-      const date = formatDate(game?.date || game?.dateText || "");
+      const date = formatDate(game?.dateISO || game?.datetimeISO || game?.dateTimeISO || game?.dateTime || game?.date || game?.dateText || "");
       const {home, away} = gameTeams(game);
       const loc = norm(game?.field?.name || game?.location || "");
       const round = displayRound(game?.round?.number ?? "");
@@ -853,17 +941,15 @@
     const games = getGames();
 
     const last = lastGameForTeam(focus, games);
-    const lastOpp = opp ? lastH2H(focus, opp, games) : null;
+    const h2h = opp ? h2hSummary(focus, opp, games) : null;
 
     const lastLine = last
       ? `משחק אחרון של <b>${focus}</b>: מול <b>${opponentOf(last, focus)}</b> — <b>${gameScoreStr(last)}</b> <span style="color:var(--muted2)">(${formatDate(last.dateText || last.date || "")})</span>`
       : `משחק אחרון של <b>${focus}</b>: <span style="color:var(--muted2)">אין תוצאה</span>`;
 
-    const lastOppLine = opp
-      ? (lastOpp
-          ? `מפגש אחרון מול <b>${opp}</b>: <b>${gameScoreStr(lastOpp)}</b> <span style="color:var(--muted2)">(${formatDate(lastOpp.dateText || lastOpp.date || "")})</span>`
-          : `מפגש אחרון מול <b>${opp}</b>: <span style="color:var(--muted2)">אין תוצאה</span>`)
-      : `מפגש אחרון מול יריבה: <span style="color:var(--muted2)">לא נבחרה</span>`;
+        const lastOppLine = opp
+      ? `מול <b>${opp}</b>: ${h2hText(h2h)}`
+      : `מול יריבה: <span style="color:var(--muted2)">לא נבחרה</span>`;
 
     const modeLine = state.viewMode==="round"
       ? `מצב: <b>מחזור</b> (מחזור נבחר: <b>${round}</b>)`
