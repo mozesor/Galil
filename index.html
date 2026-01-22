@@ -116,7 +116,7 @@ h1{margin:0; font-size:22px; letter-spacing:0.2px;}
 
 @media (min-width: 760px){
   .controls{
-    grid-template-columns: 220px 1fr auto auto;
+    grid-template-columns: 260px 1fr auto auto auto;
     align-items:end;
   }
 }
@@ -140,6 +140,26 @@ input,select,button{
   background: rgba(0,0,0,0.18);
   outline:none;
 }
+
+/* --- round navigation + icon buttons --- */
+.roundPicker{min-width:0}
+.roundNav{display:flex; gap:8px; align-items:center}
+.roundNav select{flex:1; min-width:0}
+.iconBtn{
+  width:auto;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .2px;
+}
+.iconBtn:disabled{opacity:.45; cursor:not-allowed}
+@media (max-width: 420px){
+  .iconBtn{padding: 10px 12px}
+}
+/* keep score order in RTL */
+.score{display:inline-block; font-variant-numeric: tabular-nums}
+
 
 @media (prefers-color-scheme: light){
   input,select,button{ background: #ffffff; color: var(--text); }
@@ -331,23 +351,19 @@ a:hover{text-decoration:underline;}
     <div class="topbar"><div class="topbarInner">
       <div>
         <h1>גליל – לוח משחקים</h1>
-        <div class="sub">
-          הנתונים נטענים מקובץ <code>data.json</code> (מתעדכן ע"י GitHub Actions).
-          בדיקה מקומית: חובה לפתוח דרך שרת (לא file://).
-        </div>
+        <div class="sub">לוח משחקים ותוצאות מעודכנים.</div>
       </div>
-      <div class="row topActions">
-        <span class="pill">GitHub Pages</span>
-        <button id="reload">רענן</button>
-        <a class="pill" id="dbgLink" href="./debug_endpoints.json" target="_blank">debug_endpoints.json</a>
-      </div>
-    </div></div>
+</div></div>
 
     <div class="card" style="margin-top:12px;">
       <div class="controls">
-        <label>בחר מחזור:
-          <select id="roundSelect"></select>
-        </label>
+        <label class="roundPicker">מחזור:
+  <div class="roundNav">
+    <button type="button" id="roundPrev" class="iconBtn" aria-label="מחזור קודם">‹</button>
+    <select id="roundSelect"></select>
+    <button type="button" id="roundNext" class="iconBtn" aria-label="מחזור הבא">›</button>
+  </div>
+</label>
 
         <label>הדגש קבוצה:
           <input id="teamFilter" placeholder="לדוגמה: גליל עליון" value="גליל" />
@@ -359,6 +375,7 @@ a:hover{text-decoration:underline;}
         </label>
 
         <span class="metaPill" id="meta">טוען…</span>
+        <button id="reload" class="iconBtn" type="button" aria-label="רענון">↻</button>
       </div>
 
       <div id="errorBox" class="err" style="display:none;"></div>
@@ -432,6 +449,26 @@ a:hover{text-decoration:underline;}
     return h.includes(t) || a.includes(t);
   }
 
+  function normGoal(v){
+    if(v === null || v === undefined || v === "") return null;
+    const n = Number(v);
+    if(!Number.isFinite(n)) return null;
+    if(n < 0) return null; // API uses -1 for not played yet
+    return n;
+  }
+
+  function formatScore(g){
+    const hg = normGoal(g.home?.goals);
+    const ag = normGoal(g.away?.goals);
+
+    if(g.is_finished && hg !== null && ag !== null){
+      return String(hg) + " - " + String(ag);
+    }
+    // future / not finished
+    return "טרם";
+  }
+
+
   function showError(msg){
     const box = document.getElementById("errorBox");
     box.style.display = "block";
@@ -491,8 +528,30 @@ a:hover{text-decoration:underline;}
     }
   }
 
+  function updateRoundButtons(){
+    const sel = document.getElementById("roundSelect");
+    const prev = document.getElementById("roundPrev");
+    const next = document.getElementById("roundNext");
+    if(!sel || !prev || !next) return;
+    const i = sel.selectedIndex;
+    prev.disabled = (i <= 0);
+    next.disabled = (i >= sel.options.length - 1);
+  }
+
+  function stepRound(delta){
+    const sel = document.getElementById("roundSelect");
+    if(!sel) return;
+    const i = sel.selectedIndex;
+    const ni = i + delta;
+    if(ni < 0 || ni > sel.options.length - 1) return;
+    sel.selectedIndex = ni;
+    render();
+  }
+
   function render(){
     if(!DATA) return;
+
+    updateRoundButtons();
 
     const roundNo = Number(document.getElementById("roundSelect").value);
     const teamQ = document.getElementById("teamFilter").value.trim();
@@ -511,11 +570,11 @@ a:hover{text-decoration:underline;}
     for(const g of games){
       const tr = document.createElement("tr");
       const isTeam = includesTeam(g, teamQ);
-      const score = (g.home?.goals ?? "") + (g.is_finished ? " - " : " vs ") + (g.away?.goals ?? "");
+            const score = formatScore(g);
       tr.innerHTML = `
         <td>${fmtDate(g.date)}</td>
         <td>${g.home?.name || ""}</td>
-        <td><b>${score}</b></td>
+        <td><b><span class="score" dir="auto">${score}</span></b></td>
         <td>${g.away?.name || ""}</td>
         <td class="tiny">${g.venue || ""}</td>
       `;
@@ -544,6 +603,8 @@ a:hover{text-decoration:underline;}
 
   document.getElementById("reload").onclick = load;
   document.getElementById("roundSelect").onchange = render;
+  document.getElementById("roundPrev").onclick = () => stepRound(-1);
+  document.getElementById("roundNext").onclick = () => stepRound(1);
   document.getElementById("teamFilter").oninput = render;
   document.getElementById("onlyTeam").onchange = render;
 
