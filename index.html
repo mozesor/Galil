@@ -354,25 +354,36 @@
     }
   
 
-/* ===== UX fixes v5.2 ===== */
-.roundRow{display:flex;gap:10px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
-.navBtn{
-  padding:10px 12px;border-radius:14px;border:1px solid rgba(255,255,255,0.18);
-  background:rgba(255,255,255,0.06);color:#eaf4ff;cursor:pointer;
+/* --- Fix: dark dropdown options on Windows --- */
+select, option{
+  background-color: rgba(8, 22, 38, 0.95);
+  color: var(--text);
 }
-.navBtn:hover{background:rgba(255,255,255,0.10)}
-#roundSelect{
-  min-width:180px;
-  color:#eaf4ff;
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.18);
-  border-radius:14px;
-  padding:10px 12px;
+select:focus{ outline: 2px solid rgba(94, 212, 255, 0.55); outline-offset: 2px; }
+
+/* --- Round navigation buttons --- */
+.roundRow{display:flex; gap:10px; align-items:center; justify-content:flex-end; flex-wrap:wrap;}
+.roundRow .btnMini{
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(18,45,72,0.55);
+  color: var(--text);
+  cursor:pointer;
 }
-#roundSelect option{color:#0b1220;background:#ffffff;}
-table{font-size:15px}
-th,td{padding:10px 12px}
-.tableBox{overflow:visible}
+.roundRow .btnMini:hover{ background: rgba(18,45,72,0.75); }
+
+/* --- Standings table readability --- */
+table{ font-size: 16px; }
+th, td{ padding: 10px 12px; }
+.tableWrap{ overflow: visible; }
+@media (max-width: 900px){
+  table{ font-size: 14px; }
+  th, td{ padding: 8px 10px; }
+}
+
+
+.meta2{font-size:12px; opacity:.9; margin-top:6px; color: rgba(210,240,255,0.92);}
 </style>
 </head>
 <body>
@@ -403,10 +414,10 @@ th,td{padding:10px 12px}
             <div>
               <label>בחר מחזור</label>
               <div class="roundRow">
-      <button id="prevRoundBtn" class="navBtn" type="button">⟵ מחזור קודם</button>
-      <select id="roundSelect"></select>
-      <button id="nextRoundBtn" class="navBtn" type="button">מחזור הבא ⟶</button>
-    </div>
+                <button id="roundPrev" class="btnMini" type="button">← מחזור קודם</button>
+                <select id="roundSelect"></select>
+                <button id="roundNext" class="btnMini" type="button">מחזור הבא →</button>
+              </div>
             </div>
             <div>
               <label>הדגש קבוצה (שם חלקי)</label>
@@ -491,93 +502,27 @@ th,td{padding:10px 12px}
 
   const el = (id) => document.getElementById(id);
 
-  
-function normalizeTeamName(s) {
-  return (s||"").toString().trim().replace(/\s+/g, " ");
-}
-
-function normalizeTeamKey(name){
-  let s = (name || "").toString().toLowerCase();
-  s = s.replace(/[״"]/g,'');
-  s = s.replace(/[׳'’`]/g,'');
-  s = s.replace(/[\.\u05BE\-]/g,' ');
-  s = s.replace(/\s+/g,' ').trim();
-  s = s.replace(/^הפועל\s+/,'הפ ');
-  s = s.replace(/^הפ\s+/,'הפ ');
-  return s.trim();
-}
-
-function getHomeTeam(game){ return game?.homeTeam || game?.home || {}; }
-function getAwayTeam(game){ return game?.awayTeam || game?.away || {}; }
-function teamGoals(team){
-  const v = (team?.goals ?? team?.score ?? team?.points ?? team?.pts);
-  return (v === undefined || v === null) ? null : v;
-}
-
-function standingPoints(s){
-  const v = (s?.points ?? s?.pts);
-  return (v === undefined || v === null) ? null : v;
-}
-function standingRank(s){
-  const v = (s?.rank ?? s?.pos ?? s?.position);
-  return (v === undefined || v === null) ? null : v;
-}
-function standingWins(s){ return (s?.wins ?? s?.w); }
-function standingDraws(s){ return (s?.draws ?? s?.d); }
-function standingLosses(s){ return (s?.losses ?? s?.l); }
-function standingGF(s){ return (s?.gf ?? s?.goals_for); }
-function standingGA(s){ return (s?.ga ?? s?.goals_against); }
-function standingGD(s){ return (s?.gd ?? ((standingGF(s)||0)-(standingGA(s)||0))); }
-
-function buildStandingsIndex(){
-  const idx = {};
-  for(const s of (state.data?.standings || [])){
-    const k = normalizeTeamKey(s.name);
-    if(!idx[k]) idx[k] = s;
+  function normalizeTeamName(s) {
+    return (s||"").toString().trim().replace(/\s+/g, " ");
   }
-  return idx;
-}
-function buildTeamDisplayMap(){
-  const m = {};
-  for(const s of (state.data?.standings || [])){
-    const k = normalizeTeamKey(s.name);
-    if(!m[k]) m[k] = s.name;
+
+  function getTeams() {
+    const standings = (state.data?.standings || []);
+    return standings.map(x => normalizeTeamName(x.name)).filter(Boolean);
   }
-  return m;
-}
 
-function gameDateTime(game){
-  const d = game?.date || game?.game_date || game?.datetime || "";
-  const t = game?.time || game?.game_time || "";
-  if(d && d.includes("T")) return new Date(d);
-  if(d){
-    const hhmm = t ? t : "00:00";
-    return new Date(`${d}T${hhmm}:00`);
+  function findTeamKey(name) {
+    const n = normalizeTeamName(name);
+    if (!n) return "";
+    const teams = getTeams();
+    // try exact
+    const exact = teams.find(t => t === n);
+    if (exact) return exact;
+    // try contains
+    const low = n.toLowerCase();
+    const contains = teams.find(t => t.toLowerCase().includes(low));
+    return contains || n;
   }
-  return new Date(0);
-}
-function isFinished(game){
-  return !!(game?.is_finished || game?.finished || game?.status === 'finished');
-}
-
-
-  
-function getTeams() {
-  const map = buildTeamDisplayMap();
-  return Object.keys(map);
-}
-
-  
-function findTeamKey(term){
-  const t = normalizeTeamKey(term);
-  const keys = getTeams();
-  if(!t) return "";
-  if(keys.includes(t)) return t;
-  const starts = keys.find(k => k.startsWith(t));
-  if(starts) return starts;
-  const any = keys.find(k => k.includes(t));
-  return any || t;
-}
 
   function computeRoundOffset() {
     const nums = state.rounds.map(r => Number(r.number)).filter(n => Number.isFinite(n));
@@ -597,35 +542,29 @@ function findTeamKey(term){
     return s;
   }
 
-  
-function isTeamInGame(game, teamKey){
-  const H = getHomeTeam(game);
-  const A = getAwayTeam(game);
-  const hk = normalizeTeamKey(H.name);
-  const ak = normalizeTeamKey(A.name);
-  return hk === teamKey || ak === teamKey;
-}
+  function isTeamInGame(game, team) {
+    const t = normalizeTeamName(team);
+    const home = normalizeTeamName(game?.homeTeam?.name);
+    const away = normalizeTeamName(game?.awayTeam?.name);
+    return home.includes(t) || away.includes(t) || t.includes(home) || t.includes(away);
+  }
 
-  
-function opponentOf(game, teamKey){
-  const H = getHomeTeam(game);
-  const A = getAwayTeam(game);
-  const hk = normalizeTeamKey(H.name);
-  const ak = normalizeTeamKey(A.name);
-  if(hk === teamKey) return A.name;
-  if(ak === teamKey) return H.name;
-  return "";
-}
+  function opponentOf(game, team) {
+    const t = normalizeTeamName(team);
+    const home = normalizeTeamName(game?.homeTeam?.name);
+    const away = normalizeTeamName(game?.awayTeam?.name);
+    if (home.includes(t) || t.includes(home)) return away;
+    if (away.includes(t) || t.includes(away)) return home;
+    return "";
+  }
 
-  
-function scoreText(game){
-  const H = getHomeTeam(game);
-  const A = getAwayTeam(game);
-  const hg = teamGoals(H);
-  const ag = teamGoals(A);
-  if(hg === null || ag === null || hg === "" || ag === "") return "—";
-  return `${hg} : ${ag}`;
-}
+  function scoreText(game) {
+    const hs = game?.homeTeam?.score;
+    const as = game?.awayTeam?.score;
+    const hasScore = (hs !== null && hs !== undefined && hs !== "") || (as !== null && as !== undefined && as !== "");
+    if (!hasScore) return "—";
+    return `${hs ?? ""} - ${as ?? ""}`;
+  }
 
   function leagueLine() {
     const m = state.data?.meta || {};
@@ -667,54 +606,59 @@ function scoreText(game){
     teams.filter(t => t !== focus).slice(0, 18).forEach(t => add(t, t));
   }
 
-  
-function buildRoundSelect() {
-  const sel = $('#roundSelect');
-  const prevBtn = $('#prevRoundBtn');
-  const nextBtn = $('#nextRoundBtn');
-
-  sel.innerHTML = (state.rounds || [])
-    .map(r => `<option value="${escapeAttr(r.key)}">${escapeHtml(r.label)}</option>`)
-    .join('');
-
-  sel.value = state.selectedRoundKey || '';
-
-  sel.onchange = () => {
-    state.selectedRoundKey = sel.value;
-    renderAll();
-  };
-
-  function step(delta){
-    const nextKey = computeRoundOffset(delta);
-    if(!nextKey) return;
-    state.selectedRoundKey = nextKey;
-    sel.value = nextKey;
-    renderAll();
-  }
-
-  if(prevBtn) prevBtn.onclick = () => step(-1);
-  if(nextBtn) nextBtn.onclick = () => step(+1);
-}
+  function buildRoundSelect() {
+    const sel = el("roundSelect");
+    sel.innerHTML = "";
+    state.rounds.forEach(r => {
+      const opt = document.createElement("option");
+      opt.value = String(r.number);
+      opt.textContent = `מחזור ${displayRound(r.number)} (${r.gamesCount})`;
+      sel.appendChild(opt);
+    });
+    if (state.selectedRound === null && state.rounds.length) {
+      state.selectedRound = String(state.rounds[0].number);
+    }
     sel.value = String(state.selectedRound ?? "");
     sel.onchange = () => {
       state.selectedRound = sel.value;
       renderAll();
     };
+
+    // round navigation buttons
+    const prevBtn = document.getElementById("roundPrev");
+    const nextBtn = document.getElementById("roundNext");
+    const setDisabled = ()=>{
+      const idx = state.rounds.findIndex(r=> String(r.number)===String(state.selectedRound));
+      if(prevBtn) prevBtn.disabled = idx<=0;
+      if(nextBtn) nextBtn.disabled = idx<0 || idx>=state.rounds.length-1;
+    };
+    const go = (delta)=>{
+      const idx = state.rounds.findIndex(r=> String(r.number)===String(state.selectedRound));
+      if(idx<0) return;
+      const ni = Math.max(0, Math.min(state.rounds.length-1, idx+delta));
+      state.selectedRound = String(state.rounds[ni].number);
+      sel.value = state.selectedRound;
+      renderAll();
+      setDisabled();
+    };
+    if(prevBtn) prevBtn.onclick = ()=>go(-1);
+    if(nextBtn) nextBtn.onclick = ()=>go(1);
+    setDisabled();
   }
 
-  
-function filteredGames() {
-  const focusKey = findTeamKey(state.focusTeam);
-  const oppKey = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
-  const roundKey = state.selectedRoundKey;
+  function filteredGames() {
+    const games = state.data?.games || [];
+    const focus = findTeamKey(state.focusTeam);
+    const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
+    const chip = state.chipTeam ? findTeamKey(state.chipTeam) : "";
+    const onlyTeam = !!state.onlyTeam;
 
-  return (state.data.games || []).filter(g => {
-    if (roundKey && g.roundKey !== roundKey) return false;
-    if (focusKey && !isTeamInGame(g, focusKey)) return false;
-    if (oppKey && !isTeamInGame(g, oppKey)) return false;
-    return true;
-  });
-}
+    const round = state.selectedRound;
+    let g = games.filter(x => String(x?.round?.number) === String(round));
+
+    if (onlyTeam) {
+      g = g.filter(x => isTeamInGame(x, focus));
+    }
     if (chip) {
       g = g.filter(x => isTeamInGame(x, chip));
     }
@@ -740,207 +684,275 @@ function filteredGames() {
     return g;
   }
 
-  
-function renderGamesTable() {
-  const tbody = $('#gamesTable');
-  const games = filteredGames();
-
-  if (!games.length) {
-    tbody.innerHTML = '<tr><td colspan="6" class="muted">אין משחקים לתצוגה</td></tr>';
-    return;
-  }
-
-  tbody.innerHTML = games.map(g => {
-    const H = getHomeTeam(g), A = getAwayTeam(g);
-    return `
-      <tr>
-        <td>${escapeHtml(formatDateHeb(g.date, g.time))}</td>
-        <td>${escapeHtml(H.name || '')}</td>
-        <td><b>${escapeHtml(scoreText(g))}</b></td>
-        <td>${escapeHtml(A.name || '')}</td>
-        <td>${escapeHtml(g.field || g.venue || '')}</td>
-        <td>${escapeHtml(g.roundLabel || '')}</td>
-      </tr>`;
-  }).join('');
-}
-    rows.push("</tbody>");
-    tbl.innerHTML = rows.join("");
-  }
-
-  
-function renderStandingsTable() {
-  const el = $('#standingsTable');
-  const rows = state.data?.standings || [];
-  if (!rows.length) {
-    el.innerHTML = '<tr><td colspan="10">אין טבלה</td></tr>';
-    return;
-  }
-
-  const teamMap = buildTeamDisplayMap();
-  const focusKey = findTeamKey(state.focusTeam);
-
-  el.innerHTML = `
-    <tr>
-      <th>#</th><th>קבוצה</th>
-      <th>מש</th><th>נצ</th><th>ת</th><th>הפ</th>
-      <th>נק'</th><th>זכ'</th><th>חוב'</th><th>הפרש</th>
-    </tr>
-    ${rows.map(s => {
-      const k = normalizeTeamKey(s.name);
-      const isFocus = k === focusKey;
-      const r = standingRank(s) ?? '';
-      const name = teamMap[k] || s.name;
-      const games = s.games ?? s.played ?? '';
-      const w = standingWins(s) ?? '';
-      const d = standingDraws(s) ?? '';
-      const l = standingLosses(s) ?? '';
-      const pts = standingPoints(s) ?? '';
-      const gf = standingGF(s) ?? '';
-      const ga = standingGA(s) ?? '';
-      const gd = standingGD(s);
-      return `
-        <tr class="${isFocus ? 'focusRow' : ''}">
-          <td>${r}</td>
-          <td class="teamCell">${escapeHtml(name)}</td>
-          <td>${games}</td><td>${w}</td><td>${d}</td><td>${l}</td>
-          <td><b>${pts}</b></td>
-          <td>${gf}</td><td>${ga}</td><td>${gd ?? ''}</td>
-        </tr>`;
-    }).join('')}
-  `;
-}
-    rows.push("</tbody>");
-    tbl.innerHTML = rows.join("");
-  }
-
-  
-function renderStats() {
-  const box = $('#statsBox');
-  if (!state.data) { box.textContent = ''; return; }
-
-  const idx = buildStandingsIndex();
-  const teamMap = buildTeamDisplayMap();
-
-  const focusKey = findTeamKey(state.focusTeam);
-  const focusName = teamMap[focusKey] || state.focusTeam;
-  const s = idx[focusKey];
-
-  const oppKey = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
-  const oppName = oppKey ? (teamMap[oppKey] || state.selectedOpponent) : "";
-
-  let vsLine = '';
-  if(oppKey){
-    const games = (state.data.games || []).filter(g=>{
-      const hk = normalizeTeamKey(getHomeTeam(g).name);
-      const ak = normalizeTeamKey(getAwayTeam(g).name);
-      return (hk===focusKey && ak===oppKey) || (hk===oppKey && ak===focusKey);
-    }).sort((a,b)=>gameDateTime(b)-gameDateTime(a));
-
-    const last = games[0];
-    if(last){
-      const H = getHomeTeam(last), A = getAwayTeam(last);
-      const when = formatDateHeb(last.date, last.time);
-      if(isFinished(last)){
-        vsLine = `משחק אחרון מול <b>${escapeHtml(oppName)}</b>: ${escapeHtml(H.name)} <b>${escapeHtml(scoreText(last))}</b> ${escapeHtml(A.name)} <span class="muted">(${escapeHtml(when)})</span>`;
-      }else{
-        vsLine = `המשחק הקרוב מול <b>${escapeHtml(oppName)}</b>: ${escapeHtml(H.name)} vs ${escapeHtml(A.name)} <span class="muted">(${escapeHtml(when)})</span>`;
-      }
-    }else{
-      vsLine = `לא נמצאו משחקים מול <b>${escapeHtml(oppName)}</b>`;
+  function renderGamesTable() {
+    const tbl = el("gamesTable");
+    const g = filteredGames();
+    const rows = [];
+    rows.push(`<thead><tr>
+      <th>תאריך</th><th>בית</th><th>תוצאה</th><th>חוץ</th><th>מיקום</th>
+    </tr></thead>`);
+    rows.push("<tbody>");
+    for (const game of g) {
+      const date = game?.date ? formatDateHeb(game.date) : (game?.dateText || "");
+      const home = normalizeTeamName(game?.homeTeam?.name);
+      const away = normalizeTeamName(game?.awayTeam?.name);
+      const loc = normalizeTeamName(game?.field?.name || game?.location || "");
+      rows.push(`<tr>
+        <td>${date}</td>
+        <td>${home}</td>
+        <td><b>${scoreText(game)}</b></td>
+        <td>${away}</td>
+        <td class="muted">${loc}</td>
+      </tr>`);
     }
+    rows.push("</tbody>");
+    tbl.innerHTML = rows.join("");
   }
-
-  const rank = s ? (standingRank(s) ?? '') : '';
-  const pts = s ? (standingPoints(s) ?? '') : '';
-
-  box.innerHTML = `
-    <div><b>קבוצה:</b> ${escapeHtml(focusName)}</div>
-    <div class="muted">${rank!==''?`מיקום: ${rank}`:''}${rank!=='' && pts!==''?' • ':''}${pts!==''?`נק׳: ${pts}`:''}</div>
-    ${s ? `<div class="muted">
-      ${standingWins(s)??''!==''?`ניצחונות: ${standingWins(s)}`:''}
-      ${(standingDraws(s)??'')!==''?` • תיקו: ${standingDraws(s)}`:''}
-      ${(standingLosses(s)??'')!==''?` • הפסדים: ${standingLosses(s)}`:''}
-      ${(standingGF(s)??'')!==''?` • זכות: ${standingGF(s)}`:''}
-      ${(standingGA(s)??'')!==''?` • חובה: ${standingGA(s)}`:''}
-      ${(standingGD(s)??'')!==''?` • הפרש: ${standingGD(s)}`:''}
-    </div>` : ''}
-    ${vsLine ? `<div class="hr"></div><div>${vsLine}</div>` : ''}
-  `;
-}
 
   
-function renderMap() {
-  const box = $('#mapBox');
-  const standings = state.data?.standings || [];
-  if (!standings.length) {
-    box.innerHTML = '';
-    return;
+function computeStandingsFromGames(games){
+  const rows = new Map(); // name -> stats
+  const get = (name)=>{
+    if(!rows.has(name)){
+      rows.set(name,{name, played:0, w:0, d:0, l:0, gf:0, ga:0, gd:0, points:0});
+    }
+    return rows.get(name);
+  };
+  for(const g of (games||[])){
+    const home = g?.homeTeam?.name || g?.home?.name || g?.home || "";
+    const away = g?.awayTeam?.name || g?.away?.name || g?.away || "";
+    if(!home || !away) continue;
+
+    const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
+    const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
+
+    // only count games with numeric scores
+    const hsNum = (typeof hs === "number") ? hs : (String(hs||"").match(/^\d+$/) ? Number(hs) : null);
+    const asNum = (typeof as === "number") ? as : (String(as||"").match(/^\d+$/) ? Number(as) : null);
+    if(hsNum === null || asNum === null) continue;
+
+    const H = get(home), A = get(away);
+    H.played++; A.played++;
+    H.gf += hsNum; H.ga += asNum;
+    A.gf += asNum; A.ga += hsNum;
+
+    if(hsNum > asNum){ H.w++; A.l++; H.points += 2; }
+    else if(hsNum < asNum){ A.w++; H.l++; A.points += 2; }
+    else { H.d++; A.d++; H.points += 1; A.points += 1; }
   }
-
-  const idx = buildStandingsIndex();
-  const teamMap = buildTeamDisplayMap();
-
-  const focusKey = findTeamKey(state.focusTeam);
-  const focusStanding = idx[focusKey] || null;
-  const focusName = teamMap[focusKey] || state.focusTeam;
-
-  const nodes = standings
-    .map(s => ({ key: normalizeTeamKey(s.name), name: teamMap[normalizeTeamKey(s.name)] || s.name, standing: s }))
-    .filter(n => n.key && n.key !== focusKey);
-
-  const W = 620, H = 520;
-  const cx = W / 2, cy = H / 2;
-  const radius = 190;
-
-  const svgLines = [];
-  const nodeDivs = [];
-
-  const cRank = focusStanding ? (standingRank(focusStanding) ?? '') : '';
-  const cPts  = focusStanding ? (standingPoints(focusStanding) ?? '') : '';
-
-  nodeDivs.push(`
-    <div class="node center" style="left:${cx}px;top:${cy}px">
-      <div class="nodeTitle">${escapeHtml(focusName)}</div>
-      <div class="nodeMeta">${cRank ? `מיקום ${cRank}` : ''}${cRank && cPts!=='' ? ' • ' : ''}${cPts!=='' ? `${cPts} נק` : ''}</div>
-      <div class="nodeHint">הקבוצה שלנו</div>
-    </div>
-  `);
-
-  const n = nodes.length;
-  for (let i = 0; i < n; i++) {
-    const a = (Math.PI * 2 * i) / Math.max(1, n);
-    const x = cx + Math.cos(a) * radius;
-    const y = cy + Math.sin(a) * radius;
-    const node = nodes[i];
-
-    svgLines.push(`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"></line>`);
-
-    const rank = standingRank(node.standing) ?? '';
-    const pts = standingPoints(node.standing) ?? '';
-
-    nodeDivs.push(`
-      <div class="node" data-team="${escapeAttr(node.name)}" style="left:${x}px;top:${y}px">
-        <div class="nodeTitle">${escapeHtml(node.name)}</div>
-        <div class="nodeMeta">${rank!==''?`מיקום ${rank}`:''}${rank!=='' && pts!==''?' • ':''}${pts!==''?`${pts} נק`:''}</div>
-        <div class="nodeHint">לחץ לצפייה</div>
-      </div>
-    `);
-  }
-
-  box.innerHTML = `
-    <svg class="lines" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
-      ${svgLines.join('')}
-    </svg>
-    ${nodeDivs.join('')}
-  `;
-
-  box.querySelectorAll('.node[data-team]').forEach(n => {
-    n.addEventListener('click', () => {
-      state.selectedOpponent = n.getAttribute('data-team');
-      renderAll();
-    });
-  });
+  const arr = Array.from(rows.values()).map(r=>({...r, gd: r.gf - r.ga}));
+  arr.sort((a,b)=> (b.points-a.points) || (b.gd-a.gd) || (b.gf-a.gf) || a.name.localeCompare(b.name, "he"));
+  // add rank
+  arr.forEach((r,i)=> r.position = i+1);
+  // keep common aliases
+  arr.forEach(r=>{ r.pts = r.points; r.rank = r.position; });
+  return arr;
 }
+
+function gameHasScore(g){
+  const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
+  const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
+  return (String(hs).match(/^\d+$/) && String(as).match(/^\d+$/));
+}
+
+function gameScoreStr(g){
+  const hs = (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
+  const as = (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
+  if(!gameHasScore(g)) return "";
+  return `${hs} : ${as}`;
+}
+
+function gameKeyDate(g){
+  // Try ISO first; otherwise fallback to dateText; if unparseable, keep empty
+  const iso = g?.dateISO || g?.datetimeISO || g?.dateTimeISO || g?.dateTime || g?.date;
+  if(iso && !isNaN(Date.parse(iso))) return Date.parse(iso);
+  const t = g?.dateText || "";
+  // try parse dd.mm.yy hh:mm
+  const m = String(t).match(/(\d{1,2})\.(\d{1,2})\.(\d{2,4}).*?(\d{1,2}):(\d{2})/);
+  if(m){
+    const dd=+m[1], mm=+m[2], yy=+m[3] + (m[3].length===2 ? 2000 : 0);
+    const hh=+m[4], mi=+m[5];
+    return Date.parse(`${yy}-${String(mm).padStart(2,'0')}-${String(dd).padStart(2,'0')}T${String(hh).padStart(2,'0')}:${String(mi).padStart(2,'0')}:00`);
+  }
+  return 0;
+}
+
+function lastGameForTeam(teamName, games){
+  if(!teamName) return null;
+  const relevant = (games||[]).filter(g=>{
+    const h = g?.homeTeam?.name, a = g?.awayTeam?.name;
+    return (h===teamName || a===teamName) && gameHasScore(g);
+  });
+  if(!relevant.length) return null;
+  relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
+  return relevant[0];
+}
+
+function lastH2H(teamA, teamB, games){
+  if(!teamA || !teamB) return null;
+  const relevant = (games||[]).filter(g=>{
+    const h=g?.homeTeam?.name, a=g?.awayTeam?.name;
+    const ok = ( (h===teamA && a===teamB) || (h===teamB && a===teamA) );
+    return ok && gameHasScore(g);
+  });
+  if(!relevant.length) return null;
+  relevant.sort((a,b)=> gameKeyDate(b) - gameKeyDate(a));
+  return relevant[0];
+}
+
+function renderStandingsTable() {
+    const tbl = el("standingsTable");
+    const s = state.data?.standings || [];
+    const focus = findTeamKey(state.focusTeam);
+    const rows = [];
+    rows.push(`<thead><tr>
+      <th>#</th><th>קבוצה</th><th>נק'</th><th>מש</th><th>+</th><th>-</th><th>הפרש</th>
+    </tr></thead>`);
+    rows.push("<tbody>");
+    for (const r of s) {
+      const name = normalizeTeamName(r.name);
+      const isFocus = (name === focus);
+      rows.push(`<tr style="${isFocus ? 'background: rgba(58,167,255,.10);' : ''}">
+        <td>${r.rank ?? ""}</td>
+        <td><b>${name}</b></td>
+        <td><b>${r.points ?? ""}</b></td>
+        <td>${r.games ?? ""}</td>
+        <td>${r.gf ?? ""}</td>
+        <td>${r.ga ?? ""}</td>
+        <td>${r.gd ?? ""}</td>
+      </tr>`);
+    }
+    rows.push("</tbody>");
+    tbl.innerHTML = rows.join("");
+  }
+
+  function renderStats() {
+    const box = el("statsBox");
+    const focus = findTeamKey(state.focusTeam);
+    const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
+    const round = displayRound(state.selectedRound ?? "");
+    const g = filteredGames();
+    const total = g.length;
+
+    const last = lastGameForTeam(focus, state.data?.games || []);
+    const lastOpp = opp ? lastH2H(focus, opp, state.data?.games || []) : null;
+
+    const lastLine = last
+      ? `משחק אחרון: <b>${(last.homeTeam.name===focus ? last.awayTeam.name : last.homeTeam.name)}</b> — <b>${gameScoreStr(last)}</b>${last.dateText ? ` <span class="muted">(${last.dateText})</span>` : ""}`
+      : `משחק אחרון: <span class="muted">אין תוצאה קודמת</span>`;
+
+    const lastOppLine = opp
+      ? (lastOpp
+          ? `מפגש אחרון מול <b>${opp}</b>: <b>${gameScoreStr(lastOpp)}</b>${lastOpp.dateText ? ` <span class="muted">(${lastOpp.dateText})</span>` : ""}`
+          : `מפגש אחרון מול <b>${opp}</b>: <span class="muted">אין תוצאה</span>`)
+      : `מפגש אחרון מול יריבה: <span class="muted">לא נבחרה</span>`;
+
+    const msg = [
+      `קבוצה במרכז: <b>${focus}</b>`,
+      opp ? `יריבה נבחרת: <b>${opp}</b>` : `יריבה נבחרת: <span class="muted">לא נבחרה</span>`,
+      `מחזור: <b>${round}</b>`,
+      `משחקים מוצגים: <b>${total}</b>`,
+      lastLine,
+      lastOppLine,
+    ].join("<br/>");
+    box.innerHTML = msg;
+  }
+
+  function renderMap() {
+    const nodesEl = el("nodes");
+    const linesEl = el("lines");
+    nodesEl.innerHTML = "";
+    linesEl.innerHTML = "";
+
+    const teams = getTeams();
+    const focus = findTeamKey(state.focusTeam);
+    if (!teams.length) return;
+
+    // Center
+    const center = document.createElement("div");
+    center.className = "node center";
+    center.style.left = "50%";
+    center.style.top = "55%";
+    const focusStanding = (state.data?.standings || []).find(x => normalizeTeamName(x.name) === focus);
+    const pts = focusStanding?.points ?? "—";
+    const rank = focusStanding?.rank ?? "—";
+    center.innerHTML = `<div class="name">${focus}</div>
+      <div class="meta"><span>מקום ${rank}</span><span>${pts} נק׳</span></div>
+      <div class="cta">הקבוצה שלנו</div>`;
+    center.onclick = () => {
+      state.selectedOpponent = "";
+      renderAll();
+    };
+    nodesEl.appendChild(center);
+
+    // Others in orbit
+    const others = teams.filter(t => t !== focus);
+    const count = others.length;
+    const radiusX = 310;
+    const radiusY = 230;
+    const cx = 0.5, cy = 0.55;
+
+    const getPos = (i) => {
+      const a = (i / Math.max(1,count)) * Math.PI * 2;
+      const x = cx + (Math.cos(a) * radiusX) / 1000;
+      const y = cy + (Math.sin(a) * radiusY) / 720;
+      return {a, x, y};
+    };
+
+    others.forEach((team, i) => {
+      const p = getPos(i);
+      const left = (p.x * 100) + "%";
+      const top = (p.y * 100) + "%";
+      const st = (state.data?.standings || []).find(x => normalizeTeamName(x.name) === team);
+      const label = team;
+      const gamesVs = (state.data?.games || []).filter(g => isTeamInGame(g, focus) && isTeamInGame(g, team)).length;
+
+      // line
+      const line = document.createElement("div");
+      line.className = "line";
+      // compute px positions after layout: we'll approximate using percentages + map size
+      // we'll set via CSS calc using % and transform in JS after render
+      line.dataset.from = JSON.stringify({x:50,y:55});
+      line.dataset.to = JSON.stringify({x:left,y:top});
+      linesEl.appendChild(line);
+
+      const d = document.createElement("div");
+      d.className = "node" + ((state.selectedOpponent && findTeamKey(state.selectedOpponent) === team) ? " active" : "");
+      d.style.left = left;
+      d.style.top = top;
+      d.innerHTML = `<div class="name">${label}</div>
+        <div class="meta"><span>מקום ${st?.rank ?? "—"}</span><span>${st?.points ?? "—"} נק׳</span></div>
+        ${lastLine ? `<div class="meta2">${lastLine}</div>` : ""}
+        <div class="cta">לחץ לצפייה</div>`;
+      d.onclick = () => {
+        state.selectedOpponent = team;
+        renderAll();
+      };
+      nodesEl.appendChild(d);
+    });
+
+    // After nodes exist, set line positions in px
+    requestAnimationFrame(() => {
+      const map = document.querySelector(".mapInner");
+      const rect = map.getBoundingClientRect();
+      const centerX = rect.width * 0.5;
+      const centerY = rect.height * 0.55;
+      for (const line of linesEl.querySelectorAll(".line")) {
+        const to = JSON.parse(line.dataset.to);
+        // to.x is like "62.3%"
+        const xPct = parseFloat(String(to.x).replace("%",""))/100;
+        const yPct = parseFloat(String(to.y).replace("%",""))/100;
+        const x2 = rect.width * xPct;
+        const y2 = rect.height * yPct;
+        const dx = x2 - centerX;
+        const dy = y2 - centerY;
+        const len = Math.sqrt(dx*dx + dy*dy);
+        const ang = Math.atan2(dy, dx);
+        line.style.left = centerX + "px";
+        line.style.top = centerY + "px";
+        line.style.width = len + "px";
+        line.style.transform = `rotate(${ang}rad)`;
+      }
     });
   }
 
