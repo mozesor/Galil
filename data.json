@@ -7,7 +7,7 @@
     "currentRoundNumber": 12,
     "currentRoundName": "מחזור 11"
   },
-  "fetchedAt": "2026-01-22T03:18:40.082Z",
+  "fetchedAt": "2026-01-22T04:31:52.507Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -3849,7 +3849,7 @@
     },
     {
       "id": "68e09eac1b7b720e58c01065",
-      "provider_id": -1,
+      "provider_id": 1098622,
       "date": "2026-01-21T16:45:00.000Z",
       "is_finished": false,
       "round": {
@@ -3998,156 +3998,6 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c01076",
-      "provider_id": -1,
-      "date": "2026-01-23T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 13",
-        "number": 13,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adefaf",
-        "provider_id": 8303,
-        "name": "מ.ע.קרית אתא 3",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 4,
-          "draws": 1,
-          "losses": 6,
-          "goals": {
-            "for": 33,
-            "against": 41,
-            "difference": -8
-          },
-          "points": 13
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef9d",
-        "provider_id": 6331,
-        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 10,
-          "wins": 2,
-          "draws": 1,
-          "losses": 7,
-          "goals": {
-            "for": 14,
-            "against": 29,
-            "difference": -15
-          },
-          "points": 7
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c0107a",
-      "provider_id": -1,
-      "date": "2026-01-23T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 13",
-        "number": 13,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee74",
-        "provider_id": 7471,
-        "name": "מכבי צור שלום ק. ביאליק 2",
-        "has_logo": true,
-        "stats": {
-          "games": 10,
-          "wins": 3,
-          "draws": 3,
-          "losses": 4,
-          "goals": {
-            "for": 32,
-            "against": 21,
-            "difference": 11
-          },
-          "points": 12
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeed7",
-        "provider_id": 2679,
-        "name": "הפ' גליל עליון",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 8,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
-          },
-          "points": 26
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c0107e",
-      "provider_id": -1,
-      "date": "2026-01-25T15:15:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 13",
-        "number": 13,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef2e",
-        "provider_id": 3675,
-        "name": "מ.כ. גליל גולן דרום",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 7,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
-          },
-          "points": 23
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeebc",
-        "provider_id": 6897,
-        "name": "מ.ס. חיפה רובי שפירא",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 9,
-          "draws": 2,
-          "losses": 1,
-          "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
-          },
-          "points": 29
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c01086",
       "provider_id": -1,
       "date": "2026-01-26T16:45:00.000Z",
@@ -4193,6 +4043,56 @@
             "difference": -14
           },
           "points": 10
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c0107a",
+      "provider_id": -1,
+      "date": "2026-01-27T17:30:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 3,
+          "draws": 3,
+          "losses": 4,
+          "goals": {
+            "for": 32,
+            "against": 21,
+            "difference": 11
+          },
+          "points": 12
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 8,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 41,
+            "against": 18,
+            "difference": 23
+          },
+          "points": 26
         },
         "goals": -1
       }
@@ -4593,6 +4493,56 @@
             "difference": -132
           },
           "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c0107e",
+      "provider_id": -1,
+      "date": "2026-02-04T15:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef2e",
+        "provider_id": 3675,
+        "name": "מ.כ. גליל גולן דרום",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 7,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 43,
+            "against": 18,
+            "difference": 25
+          },
+          "points": 23
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeebc",
+        "provider_id": 6897,
+        "name": "מ.ס. חיפה רובי שפירא",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 9,
+          "draws": 2,
+          "losses": 1,
+          "goals": {
+            "for": 50,
+            "against": 18,
+            "difference": 32
+          },
+          "points": 29
         },
         "goals": -1
       }
@@ -6043,6 +5993,56 @@
             "difference": 27
           },
           "points": 14
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c01076",
+      "provider_id": -1,
+      "date": "2026-03-06T12:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adefaf",
+        "provider_id": 8303,
+        "name": "מ.ע.קרית אתא 3",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 4,
+          "draws": 1,
+          "losses": 6,
+          "goals": {
+            "for": 33,
+            "against": 41,
+            "difference": -8
+          },
+          "points": 13
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 2,
+          "draws": 1,
+          "losses": 7,
+          "goals": {
+            "for": 14,
+            "against": 29,
+            "difference": -15
+          },
+          "points": 7
         },
         "goals": -1
       }
