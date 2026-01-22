@@ -3,67 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>גליל – מפת יריבות + טבלה מלאה</title>
+  <title>גליל – לוח יריבות (מפה)</title>
   <style>
     :root{
-      --bg0:#040812;
-      --bg1:#071427;
-      --glass: rgba(18, 30, 48, .55);
-      --glass2: rgba(18, 30, 48, .38);
+      --bg0:#040812; --bg1:#071427;
+      --glass: rgba(18,30,48,.55);
+      --glass2: rgba(18,30,48,.38);
       --stroke: rgba(255,255,255,.10);
       --stroke2: rgba(58,167,255,.22);
       --text: rgba(255,255,255,.92);
       --muted: rgba(255,255,255,.70);
       --muted2: rgba(255,255,255,.55);
-      --accent:#3aa7ff;
-      --accent2:#79d2ff;
-      --good:#4ade80;
-      --warn:#fbbf24;
+      --accent:#3aa7ff; --accent2:#79d2ff;
     }
-    *{box-sizing:border-box;}
-    html,body{height:100%;}
+    *{box-sizing:border-box}
+    html,body{height:100%}
     body{
-      margin:0;
-      color:var(--text);
-      font-family: system-ui, -apple-system, "Segoe UI", Arial, "Noto Sans Hebrew", sans-serif;
+      margin:0; color:var(--text);
+      font-family: system-ui,-apple-system,"Segoe UI",Arial,"Noto Sans Hebrew",sans-serif;
       background:
         radial-gradient(1200px 600px at 70% 20%, rgba(58,167,255,.16), transparent 55%),
         radial-gradient(900px 500px at 20% 15%, rgba(121,210,255,.10), transparent 50%),
-        linear-gradient(180deg, var(--bg1), var(--bg0));
+        linear-gradient(180deg,var(--bg1),var(--bg0));
       overflow-x:hidden;
     }
     .bg{
-      position:fixed; inset:0;
-      pointer-events:none;
-      background:url("assets/bg-tree.svg") center/cover no-repeat;
+      position:fixed; inset:0; pointer-events:none;
+      background: url("assets/bg-tree.svg") center/cover no-repeat;
       opacity:.30;
     }
     .bg::after{
-      content:"";
-      position:absolute; inset:0;
-      background: radial-gradient(900px 600px at 50% 40%, rgba(0,0,0,.10), rgba(0,0,0,.70));
+      content:""; position:absolute; inset:0;
+      background: radial-gradient(900px 600px at 50% 40%, rgba(0,0,0,.10), rgba(0,0,0,.65));
     }
-
-    .wrap{position:relative; min-height:100%;}
+    .wrap{position:relative; min-height:100%}
     header{
       position:sticky; top:0; z-index:50;
       backdrop-filter: blur(10px);
       background: linear-gradient(90deg, rgba(10,18,32,.55), rgba(10,18,32,.35));
-      border-bottom: 1px solid var(--stroke);
+      border-bottom:1px solid var(--stroke);
     }
     .bar{
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 14px 18px;
-      display:flex;
-      gap:14px;
-      align-items:center;
-      justify-content:space-between;
+      max-width:1320px; margin:0 auto;
+      padding:14px 18px;
+      display:flex; gap:14px;
+      align-items:center; justify-content:space-between;
       flex-wrap:wrap;
     }
-    .title{display:flex; flex-direction:column; gap:4px; min-width:260px;}
-    .title h1{margin:0; font-size:22px; letter-spacing:.2px;}
-    .title .sub{color:var(--muted); font-size:13px;}
+    .title{display:flex; flex-direction:column; gap:4px; min-width:260px}
+    .title h1{margin:0; font-size:22px; letter-spacing:.2px}
+    .title .sub{color:var(--muted); font-size:13px}
     .pill{
       display:inline-flex; align-items:center; gap:8px;
       padding:8px 10px;
@@ -74,14 +63,26 @@
       font-size:12px;
       white-space:nowrap;
     }
-    .pill a{color:var(--accent2); text-decoration:none;}
-    .pill a:hover{text-decoration:underline;}
+    .pill a{color:var(--accent2); text-decoration:none}
+    .pill a:hover{text-decoration:underline}
+
+    main{
+      max-width:1320px;
+      margin:16px auto 26px;
+      padding:0 14px;
+      display:grid;
+      grid-template-columns: 420px 1fr;
+      grid-template-areas:
+        "filters map"
+        "tables tables";
+      gap:16px;
+    }
 
     .card{
       border:1px solid var(--stroke);
-      background: linear-gradient(180deg, var(--glass), rgba(7, 15, 26, .35));
+      background: linear-gradient(180deg,var(--glass), rgba(7,15,26,.35));
       border-radius:18px;
-      box-shadow: 0 20px 70px rgba(0,0,0,.35);
+      box-shadow:0 20px 70px rgba(0,0,0,.35);
       overflow:hidden;
     }
     .cardHeader{
@@ -89,26 +90,11 @@
       border-bottom:1px solid var(--stroke);
       display:flex; align-items:center; justify-content:space-between; gap:10px;
     }
-    .cardHeader h2{margin:0; font-size:16px;}
-    .cardHeader small{color:var(--muted2); font-size:12px;}
-    .cardBody{padding:12px 14px 14px;}
+    .cardHeader h2{margin:0; font-size:16px}
+    .cardHeader small{color:var(--muted2); font-size:12px}
+    .cardBody{padding:12px 14px 14px}
 
-    main{
-      max-width: 1400px;
-      margin: 16px auto 14px;
-      padding: 0 14px;
-      display:grid;
-      grid-template-columns: 1fr 440px;
-      grid-template-areas:
-        "map side"
-        "tables tables";
-      gap: 16px;
-    }
-    .mapCard{grid-area:map;}
-    .sideCard{grid-area:side;}
-    .tablesCard{grid-area:tables;}
-
-    label{font-size:13px; color:var(--muted);}
+    label{font-size:13px; color:var(--muted)}
     input[type="text"], select{
       width:100%;
       margin-top:6px;
@@ -119,28 +105,15 @@
       color:var(--text);
       outline:none;
     }
-    input::placeholder{color: rgba(255,255,255,.45);}
-    /* Fix: dark dropdown options on Windows */
-    select, option{background-color: rgba(8, 22, 38, 0.95); color: var(--text);}
-    select:focus{ outline: 2px solid rgba(94, 212, 255, 0.55); outline-offset: 2px; }
+    input::placeholder{color: rgba(255,255,255,.45)}
+    .row{display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:10px}
+    .row3{display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px; margin-top:10px}
 
-    .row{display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:10px;}
-    .row3{display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px; margin-top:10px;}
+    /* Windows dropdown fix */
+    select, option{ background-color: rgba(8,22,38,.98); color:var(--text); }
+    select:focus{ outline:2px solid rgba(94,212,255,.55); outline-offset:2px; }
 
-    .roundRow{display:flex; gap:10px; align-items:center; justify-content:space-between; flex-wrap:wrap; margin-top:6px;}
-    .btnMini{
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,0.16);
-      background: rgba(18,45,72,0.55);
-      color:var(--text);
-      cursor:pointer;
-      white-space:nowrap;
-    }
-    .btnMini:hover{background: rgba(18,45,72,0.75);}
-    .btnMini:disabled{opacity:.45; cursor:not-allowed;}
-
-    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
     .chip{
       cursor:pointer; user-select:none;
       padding:8px 10px;
@@ -151,28 +124,38 @@
       font-size:12px;
       transition:.15s ease;
     }
-    .chip:hover{border-color: var(--stroke2); color:var(--text);}
+    .chip:hover{border-color:var(--stroke2); color:var(--text)}
     .chip.active{
       border-color: rgba(58,167,255,.55);
       background: rgba(58,167,255,.12);
-      color:var(--text);
+      color: var(--text);
       box-shadow: 0 0 0 3px rgba(58,167,255,.10) inset;
     }
 
-    .btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;}
+    .btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
     button{
       cursor:pointer;
       border:1px solid var(--stroke);
       background: rgba(255,255,255,.04);
-      color:var(--text);
+      color: var(--text);
       padding:10px 12px;
       border-radius:14px;
-      font-weight:700;
+      font-weight:600;
       transition:.15s ease;
-      white-space:nowrap;
     }
-    button:hover{border-color: var(--stroke2); background: rgba(58,167,255,.10);}
-    button.primary{border-color: rgba(58,167,255,.55); background: rgba(58,167,255,.12);}
+    button:hover{border-color:var(--stroke2); background: rgba(58,167,255,.10)}
+    button.primary{border-color: rgba(58,167,255,.55); background: rgba(58,167,255,.12)}
+    button:disabled{opacity:.45; cursor:not-allowed}
+
+    .roundRow{display:flex; gap:10px; align-items:center; justify-content:flex-end; flex-wrap:wrap}
+    .roundRow .btnMini{
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(18,45,72,.55);
+      color:var(--text);
+    }
+    .roundRow .btnMini:hover{background: rgba(18,45,72,.75)}
 
     .stats{
       margin-top:12px;
@@ -180,10 +163,11 @@
       border-radius:14px;
       border:1px dashed rgba(255,255,255,.14);
       background: rgba(0,0,0,.15);
-      color:var(--muted);
+      color: var(--muted);
       font-size:12px;
       line-height:1.6;
     }
+
     .err{
       margin-top:10px;
       padding:10px 12px;
@@ -195,20 +179,31 @@
       line-height:1.5;
       white-space:pre-wrap;
     }
+    .warn{
+      margin-top:10px;
+      padding:10px 12px;
+      border:1px solid rgba(58,167,255,.35);
+      border-radius:14px;
+      background: rgba(58,167,255,.08);
+      color: rgba(255,255,255,.90);
+      font-size:12px;
+      line-height:1.5;
+      white-space:pre-wrap;
+    }
 
     /* Map */
+    .filters{grid-area:filters}
+    .map{grid-area:map; position:relative; min-height:720px}
     .mapInner{
-      position:relative;
-      height: 760px;
-      border-radius:18px;
-      overflow:hidden;
+      position:relative; height:720px;
+      border-radius:18px; overflow:hidden;
       border:1px solid var(--stroke);
       background: radial-gradient(700px 420px at 50% 50%, rgba(58,167,255,.10), rgba(0,0,0,.15));
     }
     .mapGrid{
       position:absolute; inset:0;
       background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.07) 1px, transparent 0);
-      background-size: 22px 22px;
+      background-size:22px 22px;
       opacity:.25;
     }
     .mapTitle{
@@ -216,82 +211,82 @@
       display:flex; align-items:flex-start; justify-content:space-between; gap:10px;
       pointer-events:none;
     }
-    .mapTitle h2{margin:0; font-size:18px;}
-    .mapTitle .hint{color:var(--muted2); font-size:12px; text-align:left;}
+    .mapTitle h2{margin:0; font-size:18px}
+    .mapTitle .hint{color:var(--muted2); font-size:12px; text-align:left}
 
     .node{
       position:absolute;
-      width: 220px;
-      transform: translate(-50%, -50%);
-      border-radius:16px;
-      border:1px solid var(--stroke);
+      width: 210px;
+      transform: translate(-50%,-50%);
+      border-radius: 16px;
+      border: 1px solid var(--stroke);
       background: linear-gradient(180deg, rgba(15,26,42,.75), rgba(9,16,27,.55));
       box-shadow: 0 16px 44px rgba(0,0,0,.35);
       padding: 12px 12px 10px;
       cursor:pointer;
       transition:.16s ease;
     }
-    .node:hover{border-color: rgba(58,167,255,.50); box-shadow: 0 18px 52px rgba(0,0,0,.42);}
-    .node .name{font-weight:900; font-size:14px; line-height:1.2; margin-bottom:6px;}
-    .node .meta{color:var(--muted2); font-size:12px; display:flex; justify-content:space-between; gap:10px;}
-    .node 
-.ltr{direction:ltr; unicode-bidi: embed;}
-.meta2{font-size:12px; margin-top:6px; color: rgba(210,240,255,0.92); opacity:.92;}
-    .node .cta{margin-top:8px; color: var(--accent2); font-size:12px;}
-    .node.active{border-color: rgba(58,167,255,.65); background: linear-gradient(180deg, rgba(35,86,120,.62), rgba(10,18,32,.55));}
+    .node:hover{border-color: rgba(58,167,255,.50); box-shadow:0 18px 52px rgba(0,0,0,.42)}
+    .node .name{font-weight:800; font-size:14px; line-height:1.2; margin-bottom:6px}
+    .node .meta{color:var(--muted2); font-size:12px; display:flex; justify-content:space-between; gap:10px}
+    .node .meta2{font-size:12px; opacity:.92; margin-top:6px; color: rgba(210,240,255,.92)}
+    .node .cta{margin-top:8px; color:var(--accent2); font-size:12px}
     .node.center{
-      width: 290px;
+      width: 270px;
       border-color: rgba(58,167,255,.55);
       background: linear-gradient(180deg, rgba(35,86,120,.70), rgba(10,18,32,.55));
       box-shadow: 0 26px 80px rgba(58,167,255,.10), 0 18px 64px rgba(0,0,0,.45);
     }
-    .node.center .name{font-size:16px;}
+    .node.center .name{font-size:16px}
+
     .line{
-      position:absolute;
-      height:1px;
+      position:absolute; height:1px;
       background: rgba(58,167,255,.16);
       transform-origin: 0 50%;
       pointer-events:none;
     }
 
-    /* Tables full width */
+    /* Tables (full width) */
+    .tables{grid-area:tables}
+    .tables .cardBody{padding-top:10px}
     .tablesTop{
-      display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;
-      margin-bottom:10px;
+      display:flex; gap:10px; align-items:center; justify-content:flex-end; flex-wrap:wrap;
     }
-    .tablesTop .muted{color:var(--muted2); font-size:12px;}
-    .tableWrap{overflow:auto; border-radius:14px; border:1px solid var(--stroke); background: rgba(0,0,0,.12);}
-    table{width:100%; border-collapse: collapse;}
-    th,td{
-      padding: 10px 12px;
-      font-size: 13px;
-      border-bottom: 1px solid rgba(255,255,255,.06);
-      vertical-align: middle;
-      white-space: nowrap;
+    .tablesHint{color:var(--muted2); font-size:12px; margin-top:6px}
+    .tableWrap{
+      margin-top:10px;
+      overflow-x:auto;
+      border-radius:14px;
+      border:1px solid var(--stroke);
+      background: rgba(0,0,0,.12);
     }
-    th{
-      text-align:right;
-      color: rgba(255,255,255,.88);
-      background: rgba(255,255,255,.04);
-      position: sticky;
-      top:0;
-      z-index:1;
-    }
-    tr:hover td{background: rgba(58,167,255,.06);}
-    .focusRow td{background: rgba(58,167,255,.10);}
-    .seg{display:flex; gap:10px; flex-wrap:wrap;}
-    .seg button{padding:9px 12px;}
+    table{width:100%; border-collapse:collapse; min-width: 820px}
+    th,td{padding:12px 12px; font-size:14px; border-bottom:1px solid rgba(255,255,255,.06); vertical-align:middle; white-space:nowrap}
+    th{ text-align:right; color: rgba(255,255,255,.85); background: rgba(255,255,255,.04); position:sticky; top:0; z-index:1 }
+    tr:hover td{ background: rgba(58,167,255,.06) }
+    .muted{color:var(--muted2)}
+    .kbd{font-size:11px; padding:2px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.12); background: rgba(0,0,0,.18); color: rgba(255,255,255,.80)}
+    .focusRow td{background: rgba(58,167,255,.10)}
 
-    @media (max-width: 1180px){
-      main{grid-template-columns: 1fr; grid-template-areas:"side" "map" "tables";}
-      .mapInner{height:640px;}
+    @media (max-width:1100px){
+      main{
+        grid-template-columns:1fr;
+        grid-template-areas:
+          "filters"
+          "map"
+          "tables";
+      }
+      .mapInner{height:640px}
+      .map{min-height:640px}
+      table{min-width: 760px}
     }
-    @media (max-width: 560px){
-      .node{width: 185px;}
-      .node.center{width: 240px;}
-      .row{grid-template-columns: 1fr;}
-      .row3{grid-template-columns: 1fr;}
-      th,td{font-size:12px; padding:9px 10px;}
+    @media (max-width:560px){
+      .node{width:180px}
+      .node.center{width:220px}
+      .row{grid-template-columns:1fr}
+      .row3{grid-template-columns:1fr}
+      th,td{font-size:13px; padding:10px 10px}
+      table{min-width: 720px}
     }
   </style>
 </head>
@@ -313,19 +308,7 @@
     </header>
 
     <main>
-      <section class="card mapCard">
-        <div class="mapInner">
-          <div class="mapGrid"></div>
-          <div class="mapTitle">
-            <h2>מפת יריבות</h2>
-            <div class="hint">לחץ על קבוצה כדי לראות מפגש אחרון + משחקים ביניכם</div>
-          </div>
-          <div id="lines"></div>
-          <div id="nodes"></div>
-        </div>
-      </section>
-
-      <aside class="card sideCard">
+      <section class="card filters">
         <div class="cardHeader">
           <h2>פילטרים</h2>
           <small id="metaSmall">—</small>
@@ -351,20 +334,17 @@
               <label>רק משחקים של גליל</label>
               <div style="margin-top:10px; display:flex; gap:10px; align-items:center;">
                 <input id="onlyTeam" type="checkbox" style="transform:scale(1.1);" />
-                <span style="color:var(--muted2); font-size:12px;">מסנן את המשחקים</span>
+                <span class="muted">מסנן את הטבלאות</span>
               </div>
             </div>
             <div>
-              <label>מצב תצוגה</label>
-              <div class="btns" style="margin-top:6px;">
-                <button class="primary" id="modeRound" type="button">מחזור</button>
-                <button id="modeH2H" type="button">מול יריבה</button>
-              </div>
+              <label>בחר יריבה במפה / בצ'יפים</label>
+              <div class="muted" style="margin-top:10px;">לחיצה על בועה או צ'יפ תסנן</div>
             </div>
             <div>
               <label>איפוס</label>
               <div class="btns" style="margin-top:6px;">
-                <button id="resetBtn" type="button">אפס פילטרים</button>
+                <button id="resetBtn">אפס פילטרים</button>
               </div>
             </div>
           </div>
@@ -372,34 +352,41 @@
           <div class="chips" id="teamChips"></div>
 
           <div class="stats" id="statsBox"></div>
+          <div class="warn" id="warnBox" style="display:none;"></div>
           <div class="err" id="errBox" style="display:none;"></div>
         </div>
-      </aside>
+      </section>
 
-      <section class="card tablesCard">
+      <section class="map">
+        <div class="mapInner card">
+          <div class="mapGrid"></div>
+          <div class="mapTitle">
+            <h2>מפת יריבות</h2>
+            <div class="hint">לחץ על קבוצה כדי לראות מפגש אחרון + משחקים ביניהם</div>
+          </div>
+          <div id="lines"></div>
+          <div id="nodes"></div>
+        </div>
+      </section>
+
+      <section class="card tables">
         <div class="cardHeader">
-          <h2 id="tablesTitle">טבלאות</h2>
-          <small id="tablesHint" class="muted">—</small>
+          <h2>טבלאות</h2>
+          <small class="muted">הטבלאות תמיד נפרסות על כל הרוחב</small>
         </div>
         <div class="cardBody">
           <div class="tablesTop">
-            <div class="seg">
-              <button class="primary" id="showGames" type="button">משחקים</button>
-              <button id="showStandings" type="button">טבלה מלאה</button>
-            </div>
-            <div class="muted" id="gamesSubtitle">—</div>
+            <button class="primary" id="toggleGames" type="button">משחקים</button>
+            <button id="toggleStandings" type="button">טבלה מלאה</button>
+          </div>
+          <div class="tablesHint" id="tablesHint">—</div>
+
+          <div id="gamesWrap">
+            <div class="tableWrap"><table id="gamesTable"></table></div>
           </div>
 
-          <div id="gamesWrap" style="display:block;">
-            <div class="tableWrap">
-              <table id="gamesTable"></table>
-            </div>
-          </div>
-
-          <div id="standingsWrap" style="display:none; margin-top:12px;">
-            <div class="tableWrap">
-              <table id="standingsTable"></table>
-            </div>
+          <div id="standingsWrap" style="display:none;">
+            <div class="tableWrap"><table id="standingsTable"></table></div>
           </div>
         </div>
       </section>
@@ -408,239 +395,93 @@
 
 <script>
 (() => {
-  const DATA_URL = "data.json";
+  // If data.json is missing (rare), we fallback to data.sample.json so the page isn't blank.
+  const PRIMARY_DATA_URL = "data.json";
+  const FALLBACK_DATA_URL = "data.sample.json";
 
   const state = {
     data: null,
     rounds: [],
     roundOffset: 0,
     selectedRound: null,
-    focusTeam: "הפ׳ גליל עליון",
+    focusTeamWanted: "גליל עליון", // fuzzy search
+    focusTeam: "",                // resolved actual team name
     selectedOpponent: "",
-    onlyTeam: false,
+    onlyTeam: true,
     chipTeam: "",
-    viewMode: "round", // "round" | "h2h"
-    show: "games" // "games" | "standings"
   };
 
   const el = (id) => document.getElementById(id);
 
+  // ---------- utils ----------
+  const PUNCT_RE = /[״"׳'`~!@#$%^&*()\-_=+[\]{};:,.<>/?\\|]/g;
+
   function norm(s){
-    return (s||"").toString().trim().replace(/\s+/g," ");
+    return (s ?? "").toString().trim().replace(/\s+/g," ");
   }
   function canon(s){
-    // remove punctuation that causes duplicates: ׳ ״ ' " . -
     return norm(s)
-      .replace(/["'\.\-]/g,"")
-      .replace(/[׳״]/g,"")
-      .replace(/\u200f|\u200e/g,"")
-      .replace(/\s+/g," ")
+      .replace(PUNCT_RE, "")
+      .replace(/\u200f|\u200e/g, "")
       .toLowerCase();
   }
-  function sameTeam(a,b){
+  function matchTeam(a,b){
     const A = canon(a), B = canon(b);
     if(!A || !B) return false;
-    return A===B || A.includes(B) || B.includes(A);
+    if(A === B) return true;
+    return A.includes(B) || B.includes(A);
   }
+  function safeArr(v){ return Array.isArray(v) ? v : []; }
 
-  
-  function parseDateAny(raw){
-    if(!raw) return null;
-    if(raw instanceof Date && !isNaN(raw)) return raw;
-    if(typeof raw === "number" && isFinite(raw)) return new Date(raw);
-    let s = String(raw).trim();
-    if(!s) return null;
-
-    // cleanup
-    s = s.replace(/&nbsp;/g," ").replace(/\u200f/g,"").replace(/\u200e/g,"");
-    // strip milliseconds / trailing Z
-    s = s.replace(/\.\d{3,6}Z?$/,"").replace(/Z$/,"");
-
-    // "YYYY-MM-DD HH:mm[:ss]" -> ISO
-    if(/^\d{4}-\d{2}-\d{2}\s+\d{1,2}:\d{2}(:\d{2})?$/.test(s)){
-      s = s.replace(" ","T");
-    }
-    // "YYYY-MM-DD"
-    if(/^\d{4}-\d{2}-\d{2}$/.test(s)){
-      s = s + "T00:00:00";
-    }
-
-    const t = Date.parse(s);
-    if(!isNaN(t)) return new Date(t);
-
-    // dd.mm.yyyy [hh:mm]
-    const m = s.match(/(\d{1,2})\.(\d{1,2})\.(\d{2,4})(?:.*?(\d{1,2}):(\d{2}))?/);
-    if(m){
-      const dd = Number(m[1]), mm = Number(m[2]), yy = Number(m[3]) + (String(m[3]).length===2 ? 2000 : 0);
-      const hh = m[4] ? Number(m[4]) : 0;
-      const mi = m[5] ? Number(m[5]) : 0;
-      const iso = `${yy}-${String(mm).padStart(2,"0")}-${String(dd).padStart(2,"0")}T${String(hh).padStart(2,"0")}:${String(mi).padStart(2,"0")}:00`;
-      const tt = Date.parse(iso);
-      if(!isNaN(tt)) return new Date(tt);
-    }
-    return null;
-  }
-
-  function formatDate(raw){
-    const d = parseDateAny(raw);
-    if(!d) {
-      return String(raw||"").replace("T"," ").replace("Z","").replace(/\.\d{3,6}/,"").trim();
-    }
-    const dd = String(d.getDate()).padStart(2,"0");
-    const mm = String(d.getMonth()+1).padStart(2,"0");
-    const yy = d.getFullYear();
-    const hh = String(d.getHours()).padStart(2,"0");
-    const mi = String(d.getMinutes()).padStart(2,"0");
-    return `${dd}.${mm}.${yy} ${hh}:${mi}`;
-  }
-
-
-  // ---- Data adapters ----
-  function getGames(){
-    return state.data?.games || [];
-  }
-
-  function getStandingsRaw(){
-    const s = state.data?.standings || [];
-    if(Array.isArray(s) && s.length) return s;
-    // fallback if stored under standingsSource
-    const ss = state.data?.standingsSource || [];
-    return Array.isArray(ss) ? ss : [];
-  }
-
-  function computeStandingsFromGames(games){
-  const rows = new Map(); // name -> stats
-  const get = (name)=>{
-    const key = canon(name);
-    if(!rows.has(key)){
-      rows.set(key,{ name: String(name||"").trim(), played:0, w:0, d:0, l:0, gf:0, ga:0, gd:0, points:0 });
-    }
-    return rows.get(key);
-  };
-
-  for(const g of (games||[])){
-    const t = gameTeams(g);
-    const home = t.home, away = t.away;
-    if(!home || !away) continue;
-
-    const p = scorePair(g);
-    if(!p) continue;
-
-    const H = get(home), A = get(away);
-    H.played++; A.played++;
-    H.gf += p.hs; H.ga += p.as;
-    A.gf += p.as; A.ga += p.hs;
-
-    if(p.hs > p.as){ H.w++; A.l++; H.points += 2; }
-    else if(p.hs < p.as){ A.w++; H.l++; A.points += 2; }
-    else { H.d++; A.d++; H.points += 1; A.points += 1; }
-  }
-
-  const arr = Array.from(rows.values()).map(r=>({...r, gd: r.gf - r.ga}));
-  arr.sort((a,b)=> (b.points-a.points) || (b.gd-a.gd) || (b.gf-a.gf) || a.name.localeCompare(b.name, "he"));
-  arr.forEach((r,i)=>{ r.position=i+1; r.rank=r.position; r.pts=r.points; });
-  return arr;
-}
-      return rows.get(key);
+  function getMeta(){
+    const d = state.data || {};
+    // support old schema (root) and new schema (meta)
+    const meta = d.meta || {};
+    return {
+      leagueName: d.league?.name || meta.leagueName || d.leagueName || "",
+      season: meta.season || d.season || "",
+      fetchedAt: meta.fetchedAt || meta.last_update || d.fetchedAt || d.last_update || "",
+      version: meta.version || d.version || "",
     };
-
-    const hsVal = (g)=> (g?.homeTeam?.score ?? g?.homeScore ?? g?.scoreHome);
-    const asVal = (g)=> (g?.awayTeam?.score ?? g?.awayScore ?? g?.scoreAway);
-
-    const toNum = (v)=>{
-      if(v===null || v===undefined) return null;
-      if(typeof v==="number" && Number.isFinite(v)) return v;
-      const m = String(v).trim().match(/^\d+$/);
-      return m ? Number(m[0]) : null;
-    };
-
-    for(const g of (games||[])){
-      const home = g?.homeTeam?.name || g?.home?.name || g?.home || "";
-      const away = g?.awayTeam?.name || g?.away?.name || g?.away || "";
-      if(!home || !away) continue;
-      const hs = toNum(hsVal(g));
-      const as = toNum(asVal(g));
-      if(hs===null || as===null) continue;
-
-      const H = get(home), A = get(away);
-      H.played++; A.played++;
-      H.gf += hs; H.ga += as;
-      A.gf += as; A.ga += hs;
-
-      if(hs>as){ H.w++; A.l++; H.points += 2; }
-      else if(hs<as){ A.w++; H.l++; A.points += 2; }
-      else { H.d++; A.d++; H.points += 1; A.points += 1; }
-    }
-
-    const arr = Array.from(rows.values()).map(r => ({...r, gd: r.gf - r.ga}));
-    arr.sort((a,b)=> (b.points-a.points) || (b.gd-a.gd) || (b.gf-a.gf) || a.name.localeCompare(b.name,"he"));
-    arr.forEach((r,i)=> { r.rank = i+1; r.position = i+1; });
-    return arr;
-  }
-
-  function normalizeStandingRow(r){
-    const name = norm(r?.name || r?.team || r?.group || r?.club || "");
-    const rank = r?.rank ?? r?.position ?? r?.pos ?? r?.place ?? "";
-    const points = r?.points ?? r?.pts ?? r?.p ?? r?.Points ?? "";
-    const played = r?.games ?? r?.played ?? r?.matches ?? r?.mp ?? "";
-    const w = r?.w ?? r?.wins ?? r?.win ?? "";
-    const l = r?.l ?? r?.losses ?? r?.lose ?? "";
-    const d = r?.d ?? r?.draws ?? r?.tie ?? "";
-    const gf = r?.gf ?? r?.for ?? r?.scored ?? r?.plus ?? "";
-    const ga = r?.ga ?? r?.against ?? r?.conceded ?? r?.minus ?? "";
-    const gd = r?.gd ?? (Number.isFinite(+gf) && Number.isFinite(+ga) ? (+gf - +ga) : "");
-    return { name, rank, points, played, w, d, l, gf, ga, gd };
   }
 
   function getStandings(){
-    const raw = getStandingsRaw();
-    // If standings are incomplete, compute from games (for full columns)
-    const mapped = raw.map(normalizeStandingRow).filter(x=>x.name);
-    const hasFull = mapped.some(x => x.played!=="" || x.gf!=="" || x.ga!=="" || x.w!=="" || x.l!=="");
-    if(mapped.length && hasFull) return mapped;
-
-    const computed = computeStandingsFromGames(getGames());
-    return computed.map(r => ({
-      name: r.name,
-      rank: r.rank,
-      points: r.points,
-      played: r.played,
-      w: r.w,
-      d: r.d,
-      l: r.l,
-      gf: r.gf,
-      ga: r.ga,
-      gd: r.gd
-    }));
+    const d = state.data || {};
+    return safeArr(d.standings || d.standingsSource || d.table || d.leagueTable);
   }
 
-  function dedupTeamsFromStandings(){
-    const s = getStandings();
+  function getGames(){
+    const d = state.data || {};
+    return safeArr(d.games || d.matches || d.schedule || d.fixtures || d.results);
+  }
+
+  function resolveFocusTeam(){
+    const standings = getStandings();
+    const wanted = state.focusTeamWanted;
+    const byContains = standings.find(r => matchTeam(r?.name, wanted));
+    if(byContains?.name) return norm(byContains.name);
+
+    // fallback: any team containing "גליל"
+    const byGalil = standings.find(r => matchTeam(r?.name, "גליל"));
+    if(byGalil?.name) return norm(byGalil.name);
+
+    // last resort
+    return norm(standings[0]?.name || wanted);
+  }
+
+  function uniqueTeams(){
+    const teams = getStandings().map(r => norm(r?.name)).filter(Boolean);
     const seen = new Set();
     const out = [];
-    for(const r of s){
-      const key = canon(r.name);
-      if(!key || seen.has(key)) continue;
-      seen.add(key);
-      out.push(norm(r.name));
+    for(const t of teams){
+      const k = canon(t);
+      if(!k || seen.has(k)) continue;
+      seen.add(k);
+      out.push(t);
     }
     return out;
   }
 
-  function findTeamKey(query){
-    const q = norm(query);
-    if(!q) return "";
-    const teams = dedupTeamsFromStandings();
-    // exact by canon
-    const qk = canon(q);
-    const exact = teams.find(t => canon(t) === qk);
-    if(exact) return exact;
-    // contains
-    const contains = teams.find(t => canon(t).includes(qk) || qk.includes(canon(t)));
-    return contains || q;
-  }
-
-  // ---- Round helpers ----
   function computeRoundOffset(){
     const nums = state.rounds.map(r => Number(r.number)).filter(n => Number.isFinite(n));
     if(!nums.length){ state.roundOffset = 0; return; }
@@ -652,215 +493,158 @@
     return Number.isFinite(num) ? (num + state.roundOffset) : n;
   }
 
-  // ---- Game helpers ----
-  function gameTeams(g){
-    return {
-      home: norm(g?.homeTeam?.name || g?.home?.name || g?.home || ""),
-      away: norm(g?.awayTeam?.name || g?.away?.name || g?.away || "")
-    };
-  }
+  function parseDateMs(raw){
+    if(!raw) return 0;
+    const s = String(raw);
 
-function toInt(v){
-  if(v === 0) return 0;
-  if(v === null || v === undefined) return null;
-  if(typeof v === "number" && Number.isFinite(v)) return v;
-  const s = String(v).trim();
-  if(/^\d+$/.test(s)) return Number(s);
-  return null;
-}
+    // ISO-ish
+    const tryIso = s.includes("T") ? s : s.replace(" ", "T");
+    const isoMs = Date.parse(tryIso);
+    if(!Number.isNaN(isoMs)) return isoMs;
 
-function pairFromString(v){
-  if(v === null || v === undefined) return null;
-  const s = String(v);
-  const m = s.match(/(\d{1,3})\s*[-:]\s*(\d{1,3})/);
-  if(!m) return null;
-  return { hs: Number(m[1]), as: Number(m[2]) };
-}
-
-function scorePair(g){
-  if(!g) return null;
-
-  // Common packed strings
-  const packedKeys = ["scoreText","resultText","score","result","finalScore","outcome","score_str"];
-  for(const k of packedKeys){
-    const p = pairFromString(g?.[k]);
-    if(p) return p;
-  }
-  for(const k of packedKeys){
-    const p = pairFromString(g?.homeTeam?.[k]);
-    if(p) return p;
-  }
-  for(const k of packedKeys){
-    const p = pairFromString(g?.awayTeam?.[k]);
-    if(p) return p;
-  }
-
-  // Common numeric fields (home/away)
-  const hsCandidates = [
-    g?.homeTeam?.score, g?.homeTeam?.points, g?.homeTeam?.pts, g?.homeTeam?.goals, g?.homeTeam?.gf, g?.homeTeam?.result,
-    g?.homeScore, g?.scoreHome, g?.home_score,
-    g?.score?.home, g?.score?.homeScore, g?.result?.home, g?.result?.homeScore
-  ];
-  const asCandidates = [
-    g?.awayTeam?.score, g?.awayTeam?.points, g?.awayTeam?.pts, g?.awayTeam?.goals, g?.awayTeam?.gf, g?.awayTeam?.result,
-    g?.awayScore, g?.scoreAway, g?.away_score,
-    g?.score?.away, g?.score?.awayScore, g?.result?.away, g?.result?.awayScore
-  ];
-
-  let hs = null, as = null;
-  for(const c of hsCandidates){ const n = toInt(c); if(n !== null){ hs = n; break; } }
-  for(const c of asCandidates){ const n = toInt(c); if(n !== null){ as = n; break; } }
-  if(hs !== null && as !== null) return {hs, as};
-
-  // Sometimes score is stored as an array [home,away]
-  if(Array.isArray(g?.score) && g.score.length >= 2){
-    const a = toInt(g.score[0]), b = toInt(g.score[1]);
-    if(a !== null && b !== null) return {hs:a, as:b};
-  }
-
-  return null;
-}
-
-  function gameHasScore(g){
-  const p = scorePair(g);
-  return !!(p && Number.isFinite(p.hs) && Number.isFinite(p.as));
-}
-  function gameScoreStr(g){
-  const p = scorePair(g);
-  if(!p) return "—";
-  return `${p.hs} - ${p.as}`;
-}
-  function gameKeyDate(g){
-    const iso = g?.dateISO || g?.datetimeISO || g?.dateTimeISO || g?.dateTime || g?.date;
-    if(iso && !isNaN(Date.parse(iso))) return Date.parse(iso);
-    const t = g?.dateText || "";
-    const m = String(t).match(/(\d{1,2})\.(\d{1,2})\.(\d{2,4}).*?(\d{1,2}):(\d{2})/);
+    // dd.mm.yyyy hh:mm
+    const m = s.match(/(\d{1,2})\.(\d{1,2})\.(\d{2,4}).*?(\d{1,2}):(\d{2})/);
     if(m){
       const dd=+m[1], mm=+m[2], yy=+m[3] + (m[3].length===2 ? 2000 : 0);
       const hh=+m[4], mi=+m[5];
-      return Date.parse(`${yy}-${String(mm).padStart(2,'0')}-${String(dd).padStart(2,'0')}T${String(hh).padStart(2,'0')}:${String(mi).padStart(2,'0')}:00`);
+      const ms = Date.parse(`${yy}-${String(mm).padStart(2,'0')}-${String(dd).padStart(2,'0')}T${String(hh).padStart(2,'0')}:${String(mi).padStart(2,'0')}:00`);
+      if(!Number.isNaN(ms)) return ms;
     }
     return 0;
   }
 
-  function isTeamInGame(g, teamName){
-    const t = findTeamKey(teamName);
-    const {home, away} = gameTeams(g);
-    return sameTeam(home,t) || sameTeam(away,t);
-  }
-
-  function lastH2H(teamA, teamB, games){
-    const a = findTeamKey(teamA);
-    const b = findTeamKey(teamB);
-    const relevant = (games||[]).filter(g=>{
-      if(!gameHasScore(g)) return false;
-      const {home, away} = gameTeams(g);
-      return (sameTeam(home,a) && sameTeam(away,b)) || (sameTeam(home,b) && sameTeam(away,a));
-    });
-    if(!relevant.length) return null;
-    relevant.sort((x,y)=> gameKeyDate(y)-gameKeyDate(x));
-    return relevant[0];
-  }
-
-  
-  function h2hSummary(teamA, teamB, games){
-    const a = findTeamKey(teamA);
-    const b = findTeamKey(teamB);
-    const relevant = (games||[]).filter(g=>{
-      const {home, away} = gameTeams(g);
-      return (sameTeam(home,a) && sameTeam(away,b)) || (sameTeam(home,b) && sameTeam(away,a));
-    });
-    if(!relevant.length) return {type:"none", game:null, a, b};
-
-    // sort by date (desc). If no parseable date, they sink to bottom.
-    relevant.sort((x,y)=> (gameKeyDate(y)||0) - (gameKeyDate(x)||0));
-
-    const played = relevant.find(g=>gameHasScore(g));
-    if(played) return {type:"played", game:played, a, b};
-
-    const now = Date.now();
-    const withT = relevant.map(g=>({g, t: gameKeyDate(g)||0})).filter(x=>x.t>0);
-    const future = withT.filter(x=>x.t >= now).sort((x,y)=> x.t - y.t)[0];
-    if(future) return {type:"upcoming", game:future.g, a, b};
-
-    return {type:"scheduled", game: withT[0]?.g || relevant[0], a, b};
-  }
-
-  function h2hText(summary){
-    if(!summary || !summary.game) return "אין משחקים";
-    const g = summary.game;
-    const dtRaw = g?.dateISO || g?.datetimeISO || g?.dateTimeISO || g?.dateTime || g?.date || g?.dateText || "";
-    const dt = dtRaw ? formatDate(dtRaw) : "";
-    const score = gameHasScore(g) ? gameScoreStr(g) : "—";
-    if(summary.type === "played"){
-      return `מפגש אחרון: <b>${score}</b>${dt ? ` <span style="color:var(--muted2)">(${dt})</span>` : ""}`;
+  function formatDateHeb(game){
+    // accepts game object or raw string
+    const raw = typeof game === "string" ? game : (
+      game?.dateISO || game?.datetimeISO || game?.dateTimeISO || game?.dateTime || game?.date || game?.dateText || ""
+    );
+    const ms = parseDateMs(raw);
+    if(ms){
+      const dt = new Date(ms);
+      // he-IL gives RTL-friendly ordering; keep 24h
+      const d = new Intl.DateTimeFormat("he-IL", { day:"2-digit", month:"2-digit", year:"numeric" }).format(dt);
+      const t = new Intl.DateTimeFormat("he-IL", { hour:"2-digit", minute:"2-digit", hour12:false }).format(dt);
+      return `${t} ${d}`; // time then date (matches your screenshots)
     }
-    if(summary.type === "upcoming"){
-      return `המשחק הקרוב: <span class="ltr">${dt || "—"}</span>`;
-    }
-    return `מפגש אחרון ללא תוצאה: <span class="ltr">${dt || "—"}</span>`;
+    // fallback: clean string
+    return String(raw).replace("T"," ").replace(".000","").replace("Z","").trim();
   }
 
-function lastGameForTeam(teamName, games){
-    const t = findTeamKey(teamName);
-    const relevant = (games||[]).filter(g => gameHasScore(g) && isTeamInGame(g, t));
-    if(!relevant.length) return null;
-    relevant.sort((a,b)=> gameKeyDate(b)-gameKeyDate(a));
-    return relevant[0];
+  function scoreNums(game){
+    const hs = (game?.homeTeam?.score ?? game?.homeScore ?? game?.scoreHome ?? game?.home?.score ?? game?.score?.home);
+    const as = (game?.awayTeam?.score ?? game?.awayScore ?? game?.scoreAway ?? game?.away?.score ?? game?.score?.away);
+    const hsNum = (typeof hs === "number") ? hs : (String(hs ?? "").match(/^\d+$/) ? Number(hs) : null);
+    const asNum = (typeof as === "number") ? as : (String(as ?? "").match(/^\d+$/) ? Number(as) : null);
+    return {hsNum, asNum};
   }
 
-  function opponentOf(game, teamName){
-    const t = findTeamKey(teamName);
-    const {home, away} = gameTeams(game);
-    if(sameTeam(home,t)) return away;
-    if(sameTeam(away,t)) return home;
+  function hasScore(game){
+    const {hsNum, asNum} = scoreNums(game);
+    return hsNum !== null && asNum !== null;
+  }
+
+  function scoreText(game){
+    const {hsNum, asNum} = scoreNums(game);
+    if(hsNum === null || asNum === null) return "—";
+    return `${hsNum} - ${asNum}`;
+  }
+
+  function teamNameFromGame(game, side){
+    // try multiple schemas
+    if(side === "home") return norm(game?.homeTeam?.name || game?.home?.name || game?.homeTeamName || game?.home || "");
+    return norm(game?.awayTeam?.name || game?.away?.name || game?.awayTeamName || game?.away || "");
+  }
+
+  function isTeamInGame(game, team){
+    const t = norm(team);
+    const home = teamNameFromGame(game, "home");
+    const away = teamNameFromGame(game, "away");
+    return matchTeam(home, t) || matchTeam(away, t);
+  }
+
+  function opponentOf(game, team){
+    const t = norm(team);
+    const home = teamNameFromGame(game,"home");
+    const away = teamNameFromGame(game,"away");
+    if(matchTeam(home, t)) return away;
+    if(matchTeam(away, t)) return home;
     return "";
   }
 
-  // ---- UI builders ----
+  function gamesBetween(teamA, teamB, games){
+    const A = norm(teamA), B = norm(teamB);
+    return (games || []).filter(g => isTeamInGame(g, A) && isTeamInGame(g, B));
+  }
+
+  function lastGameBetween(teamA, teamB, games){
+    const arr = gamesBetween(teamA, teamB, games).filter(hasScore);
+    if(!arr.length) return null;
+    arr.sort((a,b) => parseDateMs(b?.dateISO || b?.dateTime || b?.date || b?.dateText) - parseDateMs(a?.dateISO || a?.dateTime || a?.date || a?.dateText));
+    return arr[0];
+  }
+
+  function lastGameForTeam(team, games){
+    const arr = (games || []).filter(g => isTeamInGame(g, team) && hasScore(g));
+    if(!arr.length) return null;
+    arr.sort((a,b) => parseDateMs(b?.dateISO || b?.dateTime || b?.date || b?.dateText) - parseDateMs(a?.dateISO || a?.dateTime || a?.date || a?.dateText));
+    return arr[0];
+  }
+
+  // ---------- UI builders ----------
   function setErr(msg){
     const box = el("errBox");
     if(!msg){ box.style.display="none"; box.textContent=""; return; }
     box.style.display="block";
     box.textContent = msg;
   }
+  function setWarn(msg){
+    const box = el("warnBox");
+    if(!msg){ box.style.display="none"; box.textContent=""; return; }
+    box.style.display="block";
+    box.textContent = msg;
+  }
 
   function leagueLine(){
-    const m = state.data?.meta || {};
-    const league = state.data?.league?.name || m?.leagueName || m?.league || "";
-    const season = m?.season || state.data?.season || "";
-    const fetchedAt = m?.fetchedAt || m?.last_update || m?.lastUpdate || "";
-    return `${league}${season ? " • "+season : ""} • משחקים: ${(getGames()).length} • מחזורים: ${state.rounds.length} • עודכן: ${formatDate(fetchedAt)}`;
+    const m = getMeta();
+    const games = getGames().length;
+    const rounds = state.rounds.length;
+    const pieces = [
+      m.leagueName || "ליגה",
+      m.season || "",
+      `משחקים: ${games}`,
+      `מחזורים: ${rounds}`,
+      m.fetchedAt ? `עודכן: ${m.fetchedAt}` : ""
+    ].filter(Boolean);
+    return pieces.join(" • ");
   }
 
   function buildChips(){
     const container = el("teamChips");
     container.innerHTML = "";
-    const teams = dedupTeamsFromStandings();
-    const focus = findTeamKey(state.focusTeam);
+    const teams = uniqueTeams();
+    const focus = state.focusTeam;
 
-    const add = (label, key)=>{
+    const add = (label, key) => {
       const d = document.createElement("div");
-      d.className = "chip" + ((state.chipTeam === key) ? " active" : "");
+      d.className = "chip" + ((state.chipTeam && matchTeam(state.chipTeam, key)) ? " active" : "");
       d.textContent = label;
-      d.onclick = ()=>{
-        state.chipTeam = (state.chipTeam === key) ? "" : key;
-        // if selecting opponent chip (not focus), switch to h2h
-        if(state.chipTeam && !sameTeam(state.chipTeam, focus)){
-          state.selectedOpponent = findTeamKey(state.chipTeam);
-          state.viewMode = "h2h";
-          syncModeButtons();
-        }else if(!state.chipTeam){
-          // keep whatever mode
-        }
+      d.onclick = () => {
+        // toggle
+        if(state.chipTeam && matchTeam(state.chipTeam, key)) state.chipTeam = "";
+        else state.chipTeam = key;
+
+        // selecting a chip = selecting opponent (except focus itself)
+        if(key && !matchTeam(key, focus)) state.selectedOpponent = key;
+        else state.selectedOpponent = "";
+
         renderAll();
       };
       container.appendChild(d);
     };
 
     add("הכל", "");
-    add(focus, focus);
-    teams.filter(t=> !sameTeam(t, focus)).slice(0, 26).forEach(t=> add(t, t));
+    if(focus) add(focus, focus);
+    teams.filter(t => focus ? !matchTeam(t, focus) : true).slice(0, 24).forEach(t => add(t, t));
   }
 
   function buildRoundSelect(){
@@ -872,179 +656,221 @@ function lastGameForTeam(teamName, games){
       opt.textContent = `מחזור ${displayRound(r.number)} (${r.gamesCount})`;
       sel.appendChild(opt);
     }
+
     if(state.selectedRound === null && state.rounds.length){
-      state.selectedRound = String(state.rounds[state.rounds.length-1].number);
+      // default: first round in list
+      state.selectedRound = String(state.rounds[0].number);
     }
     sel.value = String(state.selectedRound ?? "");
-    sel.onchange = ()=>{ state.selectedRound = sel.value; renderAll(); };
+    sel.onchange = () => { state.selectedRound = sel.value; renderAll(); };
 
     const prevBtn = el("roundPrev");
     const nextBtn = el("roundNext");
 
-    const setDisabled = ()=>{
-      const idx = state.rounds.findIndex(r => String(r.number)===String(state.selectedRound));
-      prevBtn.disabled = idx<=0;
-      nextBtn.disabled = idx<0 || idx>=state.rounds.length-1;
+    const setDisabled = () => {
+      const idx = state.rounds.findIndex(r => String(r.number) === String(state.selectedRound));
+      prevBtn.disabled = idx <= 0;
+      nextBtn.disabled = idx < 0 || idx >= state.rounds.length - 1;
     };
 
-    const go = (delta)=>{
-      const idx = state.rounds.findIndex(r => String(r.number)===String(state.selectedRound));
-      if(idx<0) return;
-      const ni = Math.max(0, Math.min(state.rounds.length-1, idx+delta));
+    const go = (delta) => {
+      const idx = state.rounds.findIndex(r => String(r.number) === String(state.selectedRound));
+      if(idx < 0) return;
+      const ni = Math.max(0, Math.min(state.rounds.length - 1, idx + delta));
       state.selectedRound = String(state.rounds[ni].number);
       sel.value = state.selectedRound;
       renderAll();
       setDisabled();
     };
 
-    prevBtn.onclick = ()=>go(-1);
-    nextBtn.onclick = ()=>go(1);
+    prevBtn.onclick = () => go(-1);
+    nextBtn.onclick = () => go(1);
     setDisabled();
   }
 
-  function gamesForCurrentView(){
+  // ---------- filtering ----------
+  function filteredGames(){
     const games = getGames();
-    const focus = findTeamKey(state.focusTeam);
-    const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
-    const chip = state.chipTeam ? findTeamKey(state.chipTeam) : "";
-    const q = norm(el("teamInput").value);
+    const focus = state.focusTeam;
+    const opp = state.selectedOpponent ? norm(state.selectedOpponent) : "";
+    const chip = state.chipTeam ? norm(state.chipTeam) : "";
     const onlyTeam = !!state.onlyTeam;
+    const round = state.selectedRound;
 
     let g = games.slice();
 
-    if(state.viewMode === "round"){
-      const round = state.selectedRound;
-      if(round !== null){
-        g = g.filter(x => String(x?.round?.number) === String(round));
-      }
-      if(onlyTeam){
-        g = g.filter(x => isTeamInGame(x, focus));
-      }
-      if(chip){
-        g = g.filter(x => isTeamInGame(x, chip));
-      }
-    }else{
-      // h2h mode: show all games focus vs opponent (or vs chip)
-      const target = opp || (chip && !sameTeam(chip, focus) ? chip : "");
-      if(target){
-        g = g.filter(x => isTeamInGame(x, focus) && isTeamInGame(x, target));
-      }else{
-        // no opponent chosen yet: just show focus games
-        g = g.filter(x => isTeamInGame(x, focus));
-      }
+    // round filter (if we have round info)
+    if(round !== null && round !== "" && g.some(x => x?.round?.number !== undefined)){
+      g = g.filter(x => String(x?.round?.number) === String(round));
     }
 
+    // if opponent selected -> show only head-to-head vs focus
+    if(opp){
+      g = g.filter(x => isTeamInGame(x, focus) && isTeamInGame(x, opp));
+    } else {
+      if(onlyTeam) g = g.filter(x => isTeamInGame(x, focus));
+      if(chip && !matchTeam(chip, focus)) g = g.filter(x => isTeamInGame(x, chip));
+    }
+
+    // search box (partial)
+    const q = norm(el("teamInput").value);
     if(q){
-      const qk = canon(q);
-      g = g.filter(x => canon(gameTeams(x).home).includes(qk) || canon(gameTeams(x).away).includes(qk));
+      const ql = canon(q);
+      g = g.filter(x => canon(teamNameFromGame(x,"home")).includes(ql) || canon(teamNameFromGame(x,"away")).includes(ql));
     }
 
-    // sort by date desc in h2h, asc in round
-    g.sort((a,b)=> (state.viewMode==="h2h" ? (gameKeyDate(b)-gameKeyDate(a)) : (gameKeyDate(a)-gameKeyDate(b))));
+    // sort by date/time if possible
+    g.sort((a,b) => (parseDateMs(a?.dateISO || a?.dateTime || a?.date || a?.dateText) - parseDateMs(b?.dateISO || b?.dateTime || b?.date || b?.dateText)));
     return g;
+  }
+
+  // ---------- render ----------
+  function renderStats(){
+    const focus = state.focusTeam;
+    const opp = state.selectedOpponent ? norm(state.selectedOpponent) : "";
+    const games = getGames();
+    const roundDisplay = state.selectedRound !== null ? displayRound(state.selectedRound) : "—";
+
+    const last = lastGameForTeam(focus, games);
+    const lastVs = opp ? lastGameBetween(focus, opp, games) : null;
+
+    const lastLine = last
+      ? `משחק אחרון של גליל: <b>${opponentOf(last, focus)}</b> — <b>${scoreText(last)}</b> <span class="muted">(${formatDateHeb(last)})</span>`
+      : `משחק אחרון של גליל: <span class="muted">אין תוצאה</span>`;
+
+    const lastVsLine = opp
+      ? (lastVs
+        ? `מפגש אחרון מול <b>${opp}</b>: <b>${scoreText(lastVs)}</b> <span class="muted">(${formatDateHeb(lastVs)})</span>`
+        : `מפגש אחרון מול <b>${opp}</b>: <span class="muted">אין תוצאה</span>`)
+      : `יריבה נבחרת: <span class="muted">לא נבחרה</span>`;
+
+    const shown = filteredGames().length;
+
+    el("statsBox").innerHTML = [
+      `קבוצה במרכז: <b>${focus || "—"}</b>`,
+      `מחזור נבחר: <b>${roundDisplay}</b>`,
+      opp ? `יריבה נבחרת: <b>${opp}</b>` : `יריבה נבחרת: <span class="muted">לא נבחרה</span>`,
+      `משחקים בטבלה: <b>${shown}</b>`,
+      lastLine,
+      lastVsLine
+    ].join("<br/>");
   }
 
   function renderGamesTable(){
     const tbl = el("gamesTable");
-    const g = gamesForCurrentView();
-    const focus = findTeamKey(state.focusTeam);
-    const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
-    const rows = [];
+    const g = filteredGames();
+    const focus = state.focusTeam;
+    const opp = state.selectedOpponent ? norm(state.selectedOpponent) : "";
 
-    const title = (state.viewMode==="h2h" && (opp || state.chipTeam))
-      ? `משחקים מול ${opp || state.chipTeam} (כל המחזורים)`
-      : `משחקים במחזור ${displayRound(state.selectedRound ?? "")}`;
+    el("tablesHint").textContent = opp
+      ? `משחקים בין ${focus} ל-${opp} (כל המחזורים) • מוצגים: ${g.length}`
+      : `משחקים במחזור הנבחר (או לפי הסינון) • מוצגים: ${g.length}`;
 
-    el("gamesSubtitle").textContent = `${title} • מוצגים: ${g.length}`;
-
-    rows.push(`<thead><tr>
+    const head = `<thead><tr>
       <th>מחזור</th><th>תאריך</th><th>בית</th><th>תוצאה</th><th>חוץ</th><th>מיקום</th>
-    </tr></thead>`);
-    rows.push("<tbody>");
-
+    </tr></thead>`;
+    const rows = [];
     for(const game of g){
-      const date = formatDate(game?.dateISO || game?.datetimeISO || game?.dateTimeISO || game?.dateTime || game?.date || game?.dateText || "");
-      const {home, away} = gameTeams(game);
-      const loc = norm(game?.field?.name || game?.location || "");
-      const round = displayRound(game?.round?.number ?? "");
-      // highlight games involving focus
-      const isFocus = isTeamInGame(game, focus);
-      rows.push(`<tr class="${isFocus ? "focusRow" : ""}">
-        <td>${round}</td>
-        <td>${date}</td>
-        <td>${home}</td>
-        <td><b>${gameScoreStr(game)}</b></td>
-        <td>${away}</td>
-        <td style="color:var(--muted2)">${loc}</td>
+      const r = game?.round?.number !== undefined ? displayRound(game.round.number) : "—";
+      const home = teamNameFromGame(game,"home");
+      const away = teamNameFromGame(game,"away");
+      const loc = norm(game?.field?.name || game?.location || game?.venue || "");
+      const date = formatDateHeb(game);
+
+      rows.push(`<tr>
+        <td>${r}</td>
+        <td dir="rtl">${date}</td>
+        <td><b>${home}</b></td>
+        <td><b>${scoreText(game)}</b></td>
+        <td><b>${away}</b></td>
+        <td class="muted">${loc || "—"}</td>
       </tr>`);
     }
+    tbl.innerHTML = head + `<tbody>${rows.join("")}</tbody>`;
+  }
 
-    if(!g.length){
-      rows.push(`<tr><td colspan="6" style="color:var(--muted2); padding:14px;">אין משחקים לתצוגה לפי הסינון הנוכחי.</td></tr>`);
+  function computeStandingsFromGames(){
+    const games = getGames();
+    const map = new Map(); // canon name -> stats
+    const get = (name) => {
+      const key = canon(name);
+      if(!key) return null;
+      if(!map.has(key)){
+        map.set(key, { name: norm(name), played:0, w:0, d:0, l:0, gf:0, ga:0, gd:0, points:0 });
+      }
+      return map.get(key);
+    };
+
+    for(const g of games){
+      const home = teamNameFromGame(g,"home");
+      const away = teamNameFromGame(g,"away");
+      if(!home || !away) continue;
+
+      const {hsNum, asNum} = scoreNums(g);
+      if(hsNum === null || asNum === null) continue;
+
+      const H = get(home), A = get(away);
+      if(!H || !A) continue;
+      H.played++; A.played++;
+      H.gf += hsNum; H.ga += asNum;
+      A.gf += asNum; A.ga += hsNum;
+
+      // Israeli youth leagues often 2 points win, 1 draw
+      if(hsNum > asNum){ H.w++; A.l++; H.points += 2; }
+      else if(hsNum < asNum){ A.w++; H.l++; A.points += 2; }
+      else { H.d++; A.d++; H.points += 1; A.points += 1; }
     }
 
-    rows.push("</tbody>");
-    tbl.innerHTML = rows.join("");
+    const arr = Array.from(map.values()).map(r => ({...r, gd: r.gf - r.ga}));
+    arr.sort((a,b) => (b.points-a.points) || (b.gd-a.gd) || (b.gf-a.gf) || a.name.localeCompare(b.name,"he"));
+    arr.forEach((r,i)=> r.rank = i+1);
+    return arr;
   }
 
   function renderStandingsTable(){
     const tbl = el("standingsTable");
-    const s = getStandings();
-    const focus = findTeamKey(state.focusTeam);
+    const focus = state.focusTeam;
 
+    // Prefer standings from file; else compute from games (works even when file doesn't have standings)
+    let s = getStandings();
+    if(!s.length){
+      s = computeStandingsFromGames();
+    } else {
+      // normalize keys
+      s = s.map(r => ({
+        name: norm(r.name),
+        rank: r.rank ?? r.position ?? r.place ?? "",
+        points: r.points ?? r.pts ?? r.p ?? "",
+        played: r.games ?? r.played ?? r.matches ?? "",
+        w: r.w ?? r.win ?? "",
+        l: r.l ?? r.loss ?? "",
+        d: r.d ?? r.draw ?? "",
+        gf: r.gf ?? r.for ?? r.goals_for ?? "",
+        ga: r.ga ?? r.against ?? r.goals_against ?? "",
+        gd: r.gd ?? ((Number(r.gf)||0) - (Number(r.ga)||0)),
+      }));
+    }
+
+    const head = `<thead><tr>
+      <th>#</th><th>קבוצה</th><th>נק'</th><th>מש</th><th>נ</th><th>ת</th><th>ה</th><th>+</th><th>-</th><th>הפרש</th>
+    </tr></thead>`;
     const rows = [];
-    rows.push(`<thead><tr>
-      <th>#</th><th>קבוצה</th><th>נק'</th><th>מש</th><th>נצ</th><th>הפ</th><th>ת</th><th>+</th><th>-</th><th>הפרש</th>
-    </tr></thead>`);
-    rows.push("<tbody>");
     for(const r of s){
-      const name = norm(r.name);
-      const isFocus = sameTeam(name, focus);
+      const isFocus = focus && matchTeam(r.name, focus);
       rows.push(`<tr class="${isFocus ? "focusRow" : ""}">
         <td>${r.rank ?? ""}</td>
-        <td><b>${name}</b></td>
+        <td><b>${r.name}</b></td>
         <td><b>${r.points ?? ""}</b></td>
         <td>${r.played ?? ""}</td>
         <td>${r.w ?? ""}</td>
-        <td>${r.l ?? ""}</td>
         <td>${r.d ?? ""}</td>
+        <td>${r.l ?? ""}</td>
         <td>${r.gf ?? ""}</td>
         <td>${r.ga ?? ""}</td>
         <td>${r.gd ?? ""}</td>
       </tr>`);
     }
-    rows.push("</tbody>");
-    tbl.innerHTML = rows.join("");
-  }
-
-  function renderStats(){
-    const box = el("statsBox");
-    const focus = findTeamKey(state.focusTeam);
-    const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
-    const round = displayRound(state.selectedRound ?? "");
-    const games = getGames();
-
-    const last = lastGameForTeam(focus, games);
-    const h2h = opp ? h2hSummary(focus, opp, games) : null;
-
-    const lastLine = last
-      ? `משחק אחרון של <b>${focus}</b>: מול <b>${opponentOf(last, focus)}</b> — <b>${gameScoreStr(last)}</b> <span style="color:var(--muted2)">(${formatDate(last.dateText || last.date || "")})</span>`
-      : `משחק אחרון של <b>${focus}</b>: <span style="color:var(--muted2)">אין תוצאה</span>`;
-
-        const lastOppLine = opp
-      ? `מול <b>${opp}</b>: ${h2hText(h2h)}`
-      : `מול יריבה: <span style="color:var(--muted2)">לא נבחרה</span>`;
-
-    const modeLine = state.viewMode==="round"
-      ? `מצב: <b>מחזור</b> (מחזור נבחר: <b>${round}</b>)`
-      : `מצב: <b>מול יריבה</b> ${opp ? `(יריבה: <b>${opp}</b>)` : ""}`;
-
-    box.innerHTML = [
-      modeLine,
-      `קבוצה במרכז: <b>${focus}</b>`,
-      lastLine,
-      lastOppLine
-    ].join("<br/>");
+    tbl.innerHTML = head + `<tbody>${rows.join("")}</tbody>`;
   }
 
   function renderMap(){
@@ -1053,60 +879,67 @@ function lastGameForTeam(teamName, games){
     nodesEl.innerHTML = "";
     linesEl.innerHTML = "";
 
-    const teams = dedupTeamsFromStandings();
-    const focus = findTeamKey(state.focusTeam);
+    const teams = uniqueTeams();
+    const focus = state.focusTeam;
+    if(!teams.length){
+      // If standings missing, still try to build from games
+      const gs = getGames();
+      const fromGames = [];
+      const seen = new Set();
+      for(const g of gs){
+        for(const t of [teamNameFromGame(g,"home"), teamNameFromGame(g,"away")]){
+          const k = canon(t);
+          if(k && !seen.has(k)){ seen.add(k); fromGames.push(norm(t)); }
+        }
+      }
+      teams.push(...fromGames.filter(t => !teams.some(x => matchTeam(x,t))));
+    }
     if(!teams.length) return;
 
     // Center node
-    const s = getStandings();
-    const focusSt = s.find(x => sameTeam(x.name, focus));
-    const pts = focusSt?.points ?? "—";
-    const rank = focusSt?.rank ?? "—";
-    const played = focusSt?.played ?? "—";
-    const w = focusSt?.w ?? "—";
-    const l = focusSt?.l ?? "—";
-    const d = focusSt?.d ?? "—";
-    const gd = focusSt?.gd ?? "—";
-
     const center = document.createElement("div");
     center.className = "node center";
     center.style.left = "50%";
     center.style.top = "55%";
-    center.innerHTML = `
-      <div class="name">${focus}</div>
+
+    const standings = getStandings();
+    const row = standings.find(x => matchTeam(x?.name, focus));
+    const pts = row?.points ?? row?.pts ?? "—";
+    const rank = row?.rank ?? row?.position ?? "—";
+
+    center.innerHTML = `<div class="name">${focus}</div>
       <div class="meta"><span>מקום ${rank}</span><span>${pts} נק׳</span></div>
-      <div class="meta2">מש: ${played} • נצ: ${w} • הפ: ${l} • ת: ${d} • הפרש: ${gd}</div>
-      <div class="cta">לחץ כדי לבטל יריבה</div>
-    `;
-    center.onclick = ()=>{
-      state.selectedOpponent = "";
-      state.viewMode = "round";
-      syncModeButtons();
-      renderAll();
-      // scroll to tables when clearing? no
-    };
+      <div class="cta">הקבוצה שלנו (לחץ לאיפוס יריבה)</div>`;
+    center.onclick = () => { state.selectedOpponent = ""; state.chipTeam = ""; renderAll(); };
     nodesEl.appendChild(center);
 
-    // Others
-    const others = teams.filter(t => !sameTeam(t, focus));
-    const count = others.length;
-    const radiusX = 340;
-    const radiusY = 250;
+    const others = teams.filter(t => !matchTeam(t, focus));
+    const count = others.length || 1;
+
+    const radiusX = 310;
+    const radiusY = 230;
     const cx = 0.5, cy = 0.55;
 
-    const getPos = (i)=>{
-      const a = (i / Math.max(1,count)) * Math.PI * 2;
+    function pos(i){
+      const a = (i / count) * Math.PI * 2;
       const x = cx + (Math.cos(a) * radiusX) / 1000;
-      const y = cy + (Math.sin(a) * radiusY) / 760;
-      return {x,y};
-    };
+      const y = cy + (Math.sin(a) * radiusY) / 720;
+      return {x: x*100, y: y*100};
+    }
 
     const games = getGames();
 
-    others.forEach((team, i)=>{
-      const p = getPos(i);
-      const left = (p.x * 100) + "%";
-      const top = (p.y * 100) + "%";
+    others.forEach((team, i) => {
+      const p = pos(i);
+      const left = `${p.x}%`;
+      const top  = `${p.y}%`;
+
+      const st = standings.find(x => matchTeam(x?.name, team));
+      const lastVs = lastGameBetween(focus, team, games);
+
+      const lastLine = lastVs
+        ? `מפגש אחרון: ${scoreText(lastVs)} • ${formatDateHeb(lastVs)}`
+        : `מפגש אחרון: אין תוצאה`;
 
       // line
       const line = document.createElement("div");
@@ -1114,49 +947,35 @@ function lastGameForTeam(teamName, games){
       line.dataset.to = JSON.stringify({x:left, y:top});
       linesEl.appendChild(line);
 
-      const st = s.find(x => sameTeam(x.name, team));
-      const lastVs = lastH2H(focus, team, games);
-      const lastVsTxt = lastVs
-        ? `מפגש אחרון: ${gameScoreStr(lastVs)}`
-        : `מפגש אחרון: אין תוצאה`;
-
       const d = document.createElement("div");
-      d.className = "node" + (state.selectedOpponent && sameTeam(state.selectedOpponent, team) ? " active" : "");
+      const active = state.selectedOpponent && matchTeam(state.selectedOpponent, team);
+      d.className = "node" + (active ? " active" : "");
       d.style.left = left;
       d.style.top = top;
-      d.innerHTML = `
-        <div class="name">${team}</div>
-        <div class="meta"><span>מקום ${st?.rank ?? "—"}</span><span>${st?.points ?? "—"} נק׳</span></div>
-        <div class="meta2">${lastVsTxt}</div>
-        <div class="cta">לחץ לצפייה</div>
-      `;
-      d.onclick = ()=>{
-        state.selectedOpponent = team;
-        state.viewMode = "h2h";
-        syncModeButtons();
-        // show games automatically
-        state.show = "games";
-        syncShowButtons();
-        renderAll();
-        // scroll tables into view for convenience
-        el("gamesTable").scrollIntoView({behavior:"smooth", block:"start"});
-      };
+
+      d.innerHTML = `<div class="name">${team}</div>
+        <div class="meta"><span>מקום ${st?.rank ?? st?.position ?? "—"}</span><span>${st?.points ?? st?.pts ?? "—"} נק׳</span></div>
+        <div class="meta2">${lastLine}</div>
+        <div class="cta">לחץ לסינון היריבה</div>`;
+
+      d.onclick = () => { state.selectedOpponent = team; state.chipTeam = team; renderAll(); };
       nodesEl.appendChild(d);
     });
 
-    requestAnimationFrame(()=>{
+    // position lines after layout
+    requestAnimationFrame(() => {
       const map = document.querySelector(".mapInner");
       const rect = map.getBoundingClientRect();
       const centerX = rect.width * 0.5;
       const centerY = rect.height * 0.55;
+
       for(const line of linesEl.querySelectorAll(".line")){
         const to = JSON.parse(line.dataset.to);
         const xPct = parseFloat(String(to.x).replace("%",""))/100;
         const yPct = parseFloat(String(to.y).replace("%",""))/100;
         const x2 = rect.width * xPct;
         const y2 = rect.height * yPct;
-        const dx = x2 - centerX;
-        const dy = y2 - centerY;
+        const dx = x2 - centerX, dy = y2 - centerY;
         const len = Math.sqrt(dx*dx + dy*dy);
         const ang = Math.atan2(dy, dx);
         line.style.left = centerX + "px";
@@ -1167,125 +986,112 @@ function lastGameForTeam(teamName, games){
     });
   }
 
-  function syncModeButtons(){
-    const isRound = state.viewMode==="round";
-    el("modeRound").classList.toggle("primary", isRound);
-    el("modeH2H").classList.toggle("primary", !isRound);
-  }
-
-  function syncShowButtons(){
-    const isGames = state.show==="games";
-    el("showGames").classList.toggle("primary", isGames);
-    el("showStandings").classList.toggle("primary", !isGames);
-    el("gamesWrap").style.display = isGames ? "block" : "none";
-    el("standingsWrap").style.display = isGames ? "none" : "block";
-  }
-
   function renderAll(){
     state.onlyTeam = el("onlyTeam").checked;
 
-    // meta header
-    const m = state.data?.meta || {};
-    const ver = m?.version ? `v${m.version}` : "";
-    const fetched = m?.fetchedAt || m?.last_update || m?.lastUpdate || "";
-    el("metaSmall").textContent = `${ver}${fetched ? " • " + formatDate(fetched) : ""}`;
-
-    el("leagueLine").textContent = leagueLine();
+    // defensive: if focus empty, resolve
+    if(!state.focusTeam){
+      state.focusTeam = resolveFocusTeam();
+    }
 
     renderStats();
-    buildChips();
-    renderMap();
-
-    if(state.show==="games") renderGamesTable();
+    renderGamesTable();
     renderStandingsTable();
+    renderMap();
+    buildChips();
 
-    // hint
-    const focus = findTeamKey(state.focusTeam);
-    const opp = state.selectedOpponent ? findTeamKey(state.selectedOpponent) : "";
-    el("tablesHint").textContent = state.show==="games"
-      ? (state.viewMode==="h2h" ? `גליל מול ${opp || "—"} • כל המחזורים` : `מחזור ${displayRound(state.selectedRound ?? "")}`)
-      : `טבלה מלאה`;
-
-    syncModeButtons();
-    syncShowButtons();
+    const m = getMeta();
+    const metaBits = [];
+    if(m.version) metaBits.push("v" + m.version);
+    if(m.fetchedAt) metaBits.push(m.fetchedAt);
+    el("metaSmall").textContent = metaBits.join(" • ") || "—";
   }
 
   function setup(){
-    el("teamInput").addEventListener("input", ()=> renderAll());
-    el("onlyTeam").addEventListener("change", ()=> renderAll());
+    el("onlyTeam").checked = true;
 
-    el("resetBtn").onclick = ()=>{
+    el("toggleGames").onclick = () => {
+      el("gamesWrap").style.display = "block";
+      el("standingsWrap").style.display = "none";
+      el("toggleGames").classList.add("primary");
+      el("toggleStandings").classList.remove("primary");
+    };
+    el("toggleStandings").onclick = () => {
+      el("gamesWrap").style.display = "none";
+      el("standingsWrap").style.display = "block";
+      el("toggleStandings").classList.add("primary");
+      el("toggleGames").classList.remove("primary");
+    };
+    el("resetBtn").onclick = () => {
       state.selectedOpponent = "";
       state.chipTeam = "";
       el("teamInput").value = "";
-      el("onlyTeam").checked = false;
-      state.viewMode = "round";
-      state.show = "games";
-      syncModeButtons();
-      syncShowButtons();
+      el("onlyTeam").checked = true;
       renderAll();
     };
+    el("teamInput").addEventListener("input", () => renderAll());
+    el("onlyTeam").addEventListener("change", () => renderAll());
+  }
 
-    el("modeRound").onclick = ()=>{
-      state.viewMode = "round";
-      state.selectedOpponent = "";
-      syncModeButtons();
-      renderAll();
-    };
-    el("modeH2H").onclick = ()=>{
-      state.viewMode = "h2h";
-      syncModeButtons();
-      renderAll();
-    };
-
-    el("showGames").onclick = ()=>{
-      state.show = "games";
-      syncShowButtons();
-      renderAll();
-    };
-    el("showStandings").onclick = ()=>{
-      state.show = "standings";
-      syncShowButtons();
-      renderAll();
-    };
+  async function fetchJson(url){
+    const res = await fetch(url, { cache: "no-store" });
+    if(!res.ok) throw new Error(`HTTP ${res.status} (${url})`);
+    return res.json();
   }
 
   async function load(){
     setup();
     try{
-      const res = await fetch(DATA_URL, {cache:"no-store"});
-      if(!res.ok) throw new Error("HTTP " + res.status);
-      state.data = await res.json();
+      let usedUrl = PRIMARY_DATA_URL;
+      let data;
+      try{
+        data = await fetchJson(PRIMARY_DATA_URL);
+      } catch(e1){
+        // fallback to sample
+        data = await fetchJson(FALLBACK_DATA_URL);
+        usedUrl = FALLBACK_DATA_URL;
+        setWarn(`הערה: לא נמצא ${PRIMARY_DATA_URL}, נטענו נתוני דוגמה (${FALLBACK_DATA_URL}). ב-GitHub Pages אמור להיות ${PRIMARY_DATA_URL}.`);
+      }
 
-      // Build rounds
-      const metaRounds = state.data?.meta?.roundsFetched;
-      if(Array.isArray(metaRounds) && metaRounds.length){
-        state.rounds = metaRounds.map(r => ({number: String(r.number), gamesCount: Number(r.gamesCount||0)}));
-      }else{
+      state.data = data;
+
+      // resolve focus team from standings/games
+      state.focusTeam = resolveFocusTeam();
+
+      // rounds: support old schema and new schema
+      const meta = data.meta || {};
+      if(Array.isArray(meta.roundsFetched) && meta.roundsFetched.length){
+        state.rounds = meta.roundsFetched.map(r => ({ number: String(r.number), gamesCount: Number(r.gamesCount || 0) }));
+      } else if(Array.isArray(data.rounds) && data.rounds.length){
+        state.rounds = data.rounds.map(r => ({ number: String(r.number), gamesCount: Number(r.gamesCount || 0) }));
+      } else {
+        // derive from games
         const by = new Map();
         for(const g of getGames()){
           const n = String(g?.round?.number ?? "");
           if(!n) continue;
-          by.set(n, (by.get(n)||0) + 1);
+          by.set(n, (by.get(n) || 0) + 1);
         }
-        state.rounds = Array.from(by.entries()).map(([number,gamesCount])=>({number, gamesCount}))
-          .sort((a,b)=> Number(a.number) - Number(b.number));
+        state.rounds = Array.from(by.entries()).map(([number, gamesCount]) => ({ number, gamesCount }))
+          .sort((a,b) => Number(a.number) - Number(b.number));
       }
+
       computeRoundOffset();
       buildRoundSelect();
 
-      // Default: latest round
-      if(state.rounds.length){
-        state.selectedRound = String(state.rounds[state.rounds.length-1].number);
-        el("roundSelect").value = state.selectedRound;
-      }
+      el("leagueLine").textContent = leagueLine();
+      el("sourceLine").textContent = `מקור: ${usedUrl === PRIMARY_DATA_URL ? "GitHub Pages" : "דוגמה מקומית"}`;
 
-      // clear error
-      setErr("");
       renderAll();
-    }catch(e){
+      setErr("");
+    } catch(e){
       console.error(e);
-      setErr("לא הצלחתי לטעון את data.json. אם אתה פותח דרך file:// זה לא יעבוד — פתח דרך Live Server או GitHub Pages.\nשגיאה: " + (e?.message||e));
+      setWarn("");
+      setErr(
+`לא הצלחתי לטעון נתונים.
+ודא ש-${PRIMARY_DATA_URL} קיים בשורש הריפו (אותיות קטנות בדיוק) ושאין שגיאות בקונסול.
+שגיאה: ${e?.message || e}`
+      );
       el("leagueLine").textContent = "שגיאה בטעינה";
     }
   }
