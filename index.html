@@ -1,0 +1,2056 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>לוח משחקים • גליל עליון</title>
+  <style>
+:root{
+  --bg: #0b1020;
+  --bg2:#0f172a;
+  --surface: rgba(255,255,255,0.08);
+  --surface2: rgba(255,255,255,0.12);
+  --border: rgba(255,255,255,0.14);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.70);
+  --accent: #4f8cff;
+  --accent2:#22c55e;
+  --warn:#ffcc66;
+  --danger:#ff6b6b;
+  --shadow: 0 10px 30px rgba(0,0,0,0.28);
+  --radius: 18px;
+}
+
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#f6f7fb;
+    --bg2:#eef2ff;
+    --surface:#ffffff;
+    --surface2:#f7f8ff;
+    --border: rgba(17,24,39,0.10);
+    --text:#0b1220;
+    --muted: rgba(11,18,32,0.62);
+    --accent:#2563eb;
+    --accent2:#16a34a;
+    --warn:#f59e0b;
+    --danger:#dc2626;
+    --shadow: 0 12px 28px rgba(15,23,42,0.10);
+  }
+}
+
+*{box-sizing:border-box;}
+html,body{max-width:100%;overflow-x:hidden;}
+html,body{height:100%;}
+body{
+  margin:0;
+  font-family: system-ui,-apple-system,"Segoe UI","Assistant",Arial,sans-serif;
+  background:
+    radial-gradient(1200px 800px at 80% -10%, rgba(79,140,255,0.35), transparent 55%),
+    radial-gradient(900px 700px at 10% 0%, rgba(34,197,94,0.25), transparent 55%),
+    linear-gradient(180deg, var(--bg2), var(--bg));
+  color:var(--text);
+}
+
+.wrap{max-width:1100px; margin:0 auto; padding:14px; padding-bottom:40px;}
+
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin: -14px -14px 12px -14px;
+  padding: 14px;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.05));
+}
+@media (prefers-color-scheme: light){
+  .topbar{ background: linear-gradient(180deg, rgba(255,255,255,0.90), rgba(255,255,255,0.55)); }
+}
+
+.topbarInner{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+h1{margin:0; font-size:22px; letter-spacing:0.2px;}
+.sub{color:var(--muted); margin-top:6px; font-size:13px; line-height:1.35;}
+.sub code{
+  background: rgba(0,0,0,0.25);
+  padding: 2px 6px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+@media (prefers-color-scheme: light){
+  .sub code{ background: rgba(37,99,235,0.08); }
+}
+
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:13px;
+  color: var(--text);
+  white-space:nowrap;
+}
+
+.row{display:flex; gap:10px; align-items:center; flex-wrap:wrap;}
+
+.card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  box-shadow: var(--shadow);
+}
+
+.controls{
+  display:grid;
+  gap:10px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 760px){
+  .controls{
+    grid-template-columns: 260px 1fr auto auto auto;
+    align-items:end;
+  }
+}
+
+label{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  font-size:13px;
+  color: var(--muted);
+  min-width: 180px;
+}
+
+input,select,button{
+  width:100%;
+  border:1px solid var(--border);
+  border-radius: 14px;
+  padding: 11px 12px;
+  font-size: 15px;
+  color: var(--text);
+  background: rgba(0,0,0,0.18);
+  outline:none;
+}
+
+/* --- round navigation + icon buttons --- */
+.roundPicker{min-width:0}
+.roundNav{display:grid; grid-template-columns:56px 1fr 56px; gap:10px; align-items:center; width:100%;}
+.roundNav select{width:100%; min-width:0; font-weight:800;}
+.roundStatus{
+  margin-top:10px;
+  text-align:center;
+  font-weight:900;
+  color: var(--text);
+  font-size: 14px;
+  display:inline-block;
+  padding:6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  width:100%;
+}
+.iconBtn{
+  border: 1px solid rgba(15,23,42,0.14);
+  background: rgba(15,23,42,0.04);
+  color: #0b1020;
+  border-radius: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.iconBtn:hover{ background: rgba(15,23,42,0.07); }
+.iconBtn:active{ transform: translateY(1px); }
+.iconBtn:disabled{opacity:.45; cursor:not-allowed}
+@media (max-width: 420px){
+  .iconBtn{padding: 10px 12px}
+}
+/* keep score order in RTL */
+.score{display:inline-block; font-variant-numeric: tabular-nums}
+
+
+@media (prefers-color-scheme: light){
+  input,select,button{ background: #ffffff; color: var(--text); }
+}
+
+input::placeholder{color: rgba(255,255,255,0.55);}
+@media (prefers-color-scheme: light){
+  input::placeholder{color: rgba(11,18,32,0.45);}
+}
+
+button{
+  cursor:pointer;
+  background: linear-gradient(180deg, rgba(79,140,255,0.95), rgba(79,140,255,0.75));
+  border-color: rgba(79,140,255,0.35);
+  font-weight: 650;
+}
+button:hover{filter:brightness(1.05);}
+button:active{transform:translateY(1px);}
+
+.tiny{
+  font-size:13px;
+  color: var(--muted);
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width: 0;
+}
+.tiny input{width:auto; padding:0; transform: scale(1.1);}
+
+.metaPill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.18);
+  color: var(--text);
+  font-size: 13px;
+  white-space: nowrap;
+}
+@media (prefers-color-scheme: light){
+  .metaPill{ background:#ffffff; }
+}
+
+.grid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:12px;}
+@media (min-width: 960px){ .grid{grid-template-columns: 1.35fr 1fr;} }
+
+.scroll{
+  overflow-y:auto;
+  overflow-x:auto;
+  max-height:70vh;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  -webkit-overflow-scrolling: touch;
+}
+
+table{width:100%; border-collapse:separate; border-spacing:0;}
+/* Allow horizontal scroll when many columns */
+.standPanel table{min-width: 860px;}
+.gamesPanel table{min-width: 700px;}
+th,td{
+  padding:10px 10px;
+  border-bottom:1px solid var(--border);
+  text-align:right;
+  vertical-align: middle;
+  white-space:nowrap;
+  font-size:14px;
+}
+
+/* Center score column */
+.gamesPanel table th:nth-child(3),
+.gamesPanel table td:nth-child(3){
+  text-align:center;
+}
+.gamesPanel table td:nth-child(3){ width: 140px; }
+
+/* Desktop: don't repeat team names inside the score column (keep just the badge) */
+@media (min-width: 900px){
+  .matchTeams{ justify-content:center; }
+  .matchTeams .teamName{ display:none; }
+}
+th{
+  position:sticky; top:0;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  color: var(--muted);
+  font-weight: 700;
+}
+@media (prefers-color-scheme: light){
+  th{ background: rgba(255,255,255,0.95); }
+}
+
+
+.matchLine{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.matchTeams{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  width:100%;
+}
+.teamName{
+  max-width:46%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-weight:650;
+}
+.teamName.winner{ color: var(--accent2); font-weight:800; }
+.teamName.loser{ opacity:0.72; }
+.scoreBadge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.18);
+  font-weight:800;
+  min-width:74px;
+}
+@media (prefers-color-scheme: light){
+  .scoreBadge{ background:#ffffff; }
+}
+.scoreBadge.win{ border-color: rgba(34,197,94,0.45); background: rgba(34,197,94,0.15); }
+.scoreBadge.lose{ border-color: rgba(220,38,38,0.45); background: rgba(220,38,38,0.13); }
+.scoreBadge.draw{ border-color: rgba(245,158,11,0.55); background: rgba(245,158,11,0.12); }
+.scoreBadge.pending{ opacity:0.85; }
+.matchMeta{
+  margin-top:8px;
+  color: var(--muted);
+  font-size: 12.5px;
+  display:none;
+}
+@media (max-width: 640px){
+  .matchMeta{display:block;}
+}
+tbody tr:hover td{background: rgba(79,140,255,0.08);}
+
+
+.scoreBadge .score{direction:ltr; unicode-bidi:embed;}
+.badgeScore{direction:ltr; unicode-bidi:embed;}
+.hl{background: rgba(245,158,11,0.10) !important; border-right: 3px solid rgba(245,158,11,0.55);}
+.hl2{background: rgba(34,197,94,0.10) !important; border-right: 3px solid rgba(34,197,94,0.55);}
+
+.err{
+  background: rgba(255,107,107,0.18);
+  border: 1px solid rgba(255,107,107,0.35);
+  padding: 12px;
+  border-radius: 14px;
+  margin-top: 10px;
+  color: var(--text);
+}
+
+a{color: var(--accent); text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* Mobile tweaks */
+@media (max-width: 640px){
+  .wrap{padding:12px;}
+  .topbar{margin:-12px -12px 12px -12px; padding:12px;}
+  .card{padding:12px; border-radius:16px;}
+  h1{font-size:20px;}
+  .sub{font-size:12.5px;}
+  label{min-width:0;}
+  .controls{gap:10px;}
+  .roundNav{width:100%;}
+  .roundNav{display:grid; grid-template-columns:52px 1fr 52px; gap:10px; align-items:center;}
+  .roundNav select{width:100%;}
+  .roundStatus{
+    margin-top:8px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /* --- Games: render each match as a clean card (single row) --- */
+  .gamesPanel .scroll{border:none; max-height:none;}
+  .gamesPanel table, .gamesPanel tbody, .gamesPanel tr, .gamesPanel td{display:block; width:100%;}
+  .gamesPanel thead{display:none;}
+  .gamesPanel tr{
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    border-radius: 16px;
+    margin-bottom: 10px;
+    overflow:hidden;
+  }
+  /* show only the combined result cell on mobile */
+  .gamesPanel td:nth-child(1),
+  .gamesPanel td:nth-child(2),
+  .gamesPanel td:nth-child(4){display:none;}
+  .gamesPanel td:nth-child(3){
+    border-bottom:none;
+    padding:12px;
+  }
+  /* Ensure team names are readable on mobile */
+  /* IMPORTANT: iOS Safari can collapse flex items to min-content width, which
+     caused team names to show as a single letter. Use a grid with minmax(0,1fr)
+     so names always get real width. */
+  .gamesPanel td:nth-child(3){ text-align: initial; }
+  .matchTeams{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    width:100%;
+  }
+  .matchTeams .teamName{
+    width:100%;
+    text-align:center;
+    font-weight:750;
+    font-size:16px;
+    line-height:1.25;
+    white-space:normal;
+    overflow:visible;
+    text-overflow:clip;
+    word-break:normal;
+    overflow-wrap:anywhere;
+  }
+  .matchTeams .teamName.winner{ color: var(--accent2); }
+  .matchTeams .teamName.loser{ opacity:0.72; } 
+  .scoreBadge{ min-width: 96px; align-self: center; justify-content:center; }
+
+
+  /* --- Standings (mobile): compact columns, tap row for details --- */
+  .standPanel .scroll{
+    overflow: visible;
+    max-height: none;
+    border: none;
+    border-radius: 0;
+  }
+  .standPanel table{
+    width:100%;
+    min-width:0;
+  }
+  .standPanel th, .standPanel td{
+    white-space:nowrap;
+    font-size:13px;
+    padding:10px 8px;
+  }
+  /* Hide extra columns on mobile; details are in the modal */
+  .standPanel th:nth-child(4),
+  .standPanel td:nth-child(4), /* מש */
+  .standPanel th:nth-child(6),
+  .standPanel td:nth-child(6), /* תיקו */
+  .standPanel th:nth-child(8),
+  .standPanel td:nth-child(8), /* + */
+  .standPanel th:nth-child(9),
+  .standPanel td:nth-child(9)  /* - */{
+    display:none;
+  }
+  .standPanel tbody tr{ cursor:pointer; }
+
+
+/* Tabs (mobile) */
+.tabsWrap{ margin:12px 0 0 0; }
+.tabs{
+  display:none;
+  flex-direction: row;
+  gap:8px;
+  align-items:center;
+  justify-content:space-between;
+  padding:6px;
+  border-radius:999px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+.tabs button{
+  flex:1;
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  padding:10px 12px;
+  border-radius:999px;
+  font-weight:800;
+  cursor:pointer;
+  font-size:14px;
+}
+.tabs button.active{
+  color:#fff;
+  background: linear-gradient(135deg, var(--accent), #7c3aed);
+  box-shadow: 0 10px 24px rgba(37,99,235,0.25);
+}
+.tabs{
+  width: 100%;
+  max-width: 520px;
+  margin: 10px auto 0;
+}
+.tabs button{
+  min-width: 0;
+  white-space: nowrap;
+}
+.tabs button:not(.active){
+  background: var(--surface2);
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 820px){
+  .tabs{ 
+    display:flex;
+    position: sticky;
+    top: 66px; /* מתחת לכותרת הדביקה */
+    z-index: 15;
+    backdrop-filter: blur(10px);
+  }
+  .tab-panel{ display:none; }
+  .tab-panel.active{ display:block; }
+}
+
+
+.teamLink{
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.teamLink:active{ transform: translateY(1px); }
+.modalOverlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 60;
+  padding: 14px;
+}
+.modalOverlay.open{ display:flex; }
+
+@media (max-width: 700px){
+  .modalOverlay{ align-items: flex-end; }
+
+  .gamesTable{display:none;}
+  .gamesCards{display:block;}
+  /* make cards use full width */
+  .gameCard{margin: 12px 0;}
+
+}
+.modalOverlay.open{ display: flex; }
+.modal{
+  width: min(760px, 100%);
+  background: rgba(255,255,255,0.96);
+  color: #0b1020;
+  border: 1px solid rgba(15,23,42,0.14);
+  border-radius: 18px;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.22);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 700px){
+  .modal{ border-radius: 18px 18px 0 0; }
+}
+.modalHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(15,23,42,0.10);
+  background: linear-gradient(180deg, rgba(15,23,42,0.04), rgba(15,23,42,0.0));
+}
+.modalTitle{
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+.iconBtn{
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.modalBody{ padding: 14px 16px 16px; }
+.kpis{ display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:10px; }
+@media (max-width: 700px){ .kpis{ grid-template-columns: 1fr; } }
+.kpi{
+  background: rgba(15,23,42,0.03);
+  border: 1px solid rgba(15,23,42,0.10);
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+.kpi .label{ color: rgba(15,23,42,0.72); font-size: 12px; }
+.kpi .value{ font-weight: 900; margin-top: 4px; }
+.kpi .label{ color: var(--muted); font-size: 12px; }
+.kpi .value{ font-weight: 800; margin-top: 4px; }
+.badges{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px; }
+.badge{
+  border: 1px solid var(--border);
+  background: rgba(148,163,184,0.10);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+.badge.win{
+  border-color: rgba(34,197,94,0.38);
+  background: rgba(34,197,94,0.12);
+  color: #064e3b;
+}
+.badge.lose{
+  border-color: rgba(255,107,107,0.38);
+  background: rgba(255,107,107,0.10);
+  color: #7f1d1d;
+}
+.badge.draw{
+  border-color: rgba(245,158,11,0.42);
+  background: rgba(245,158,11,0.12);
+  color: #7c2d12;
+}
+.sectionTitle{ margin: 14px 0 8px; font-size: 14px; font-weight: 800; }
+.smallTable td, .smallTable th{ white-space: normal; }
+
+/* Professional round bar */
+.controls{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.roundPicker{
+  font-weight:800;
+  color: var(--muted);
+}
+.roundNav{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background: rgba(255,255,255,0.06);
+  border:1px solid var(--border);
+  border-radius: 16px;
+  padding: 10px 12px;
+}
+#roundSelect{
+  min-width: 180px;
+  font-weight:800;
+}
+.iconBtn{
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-weight:900;
+}
+@media (max-width: 720px){
+  .roundNav{ width:100%; justify-content:space-between; }
+  #roundSelect{ flex:1; min-width:0; }
+}
+
+
+/* ======= UI hotfix: consistent tabs + single-panel layout + better tables ======= */
+:root{
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans Hebrew", "Heebo", sans-serif;
+}
+html, body{ font-family: var(--font); }
+
+/* Tabs always visible (web + mobile) */
+.tabs{ display:flex !important; position: sticky; top: 14px; z-index: 20; backdrop-filter: blur(10px); }
+.tabsWrap{ margin: 14px 0 10px 0; }
+.tabs{ gap:10px; padding:8px; }
+.tabs button{
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  padding: 10px 14px;
+  /* Inactive tab MUST be readable on the light background (mobile Safari) */
+  background: rgba(255,255,255,0.82);
+  border: 1px solid rgba(15,23,42,0.14);
+  color: rgba(15,23,42,0.92);
+}
+.tabs button.active{
+  background: linear-gradient(90deg, rgba(79,140,255,0.95), rgba(34,197,94,0.60));
+  border-color: rgba(255,255,255,0.20);
+  color: #0b1020;
+}
+
+@media (prefers-color-scheme: dark){
+  .tabs button{
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.16);
+    color: rgba(255,255,255,0.88);
+  }
+}
+
+/* Toggle layout: show only active panel on ALL sizes */
+.tab-panel{ display:none !important; }
+.tab-panel.active{ display:block !important; }
+
+/* Grid should not reserve two columns when using tabs */
+.grid{ grid-template-columns: 1fr !important; gap: 14px !important; }
+
+/* Table scrolling inside panel (not the whole page) */
+.scroll{
+  overflow-x: auto !important;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll table{ min-width: 720px; } /* allows horizontal scroll on desktop if needed */
+
+/* Score column always centered & LTR */
+td.score, .scoreBadge{
+  direction: ltr;
+  unicode-bidi: plaintext;
+  text-align: center;
+}
+table td:nth-child(3), table th:nth-child(3){ text-align:center; }
+
+/* Remove heavy blue pills for team names in web tables */
+.pill{
+  background: rgba(255,255,255,0.08) !important;
+  color: rgba(255,255,255,0.92) !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+}
+.pill.galil{
+  background: rgba(34,197,94,0.14) !important;
+  border-color: rgba(34,197,94,0.22) !important;
+}
+
+/* Mobile: allow team names to wrap (no clipping) */
+@media (max-width: 700px){
+  .scroll table{ min-width: 0; width: 100%; }
+  .grid{ gap: 12px !important; }
+  table td, table th{ white-space: normal; }
+  table td:nth-child(2), table td:nth-child(4){ word-break: break-word; }
+}
+
+/* Modal close button: icon only, no random "X" feeling */
+#teamModalClose{ padding: 8px 10px; }
+#teamModalClose{ font-weight: 700; }
+#teamModalClose::before{ content:"✕"; }
+#teamModalClose{ color: rgba(255,255,255,0.85); }
+#teamModalClose{ font-size: 14px; }
+#teamModalClose{ line-height: 1; }
+#teamModalClose{ white-space: nowrap; }
+#teamModalClose{ }
+#teamModalClose{ }
+#teamModalClose{ }
+
+.gamesCards{display:block;}
+  /* make cards use full width */
+  .gameCard{margin: 12px 0;}
+
+}
+.modalOverlay.open{ display: flex; }
+.modal{
+  width: min(760px, 100%);
+  background: rgba(255,255,255,0.96);
+  color: #0b1020;
+  border: 1px solid rgba(15,23,42,0.14);
+  border-radius: 18px;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.22);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 700px){
+  .modal{ border-radius: 18px 18px 0 0; }
+}
+.modalHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(15,23,42,0.10);
+  background: linear-gradient(180deg, rgba(15,23,42,0.04), rgba(15,23,42,0.0));
+}
+.modalTitle{
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+.iconBtn{
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.modalBody{ padding: 14px 16px 16px; }
+.kpis{ display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:10px; }
+@media (max-width: 700px){ .kpis{ grid-template-columns: 1fr; } }
+.kpi{
+  background: rgba(15,23,42,0.03);
+  border: 1px solid rgba(15,23,42,0.10);
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+.kpi .label{ color: rgba(15,23,42,0.72); font-size: 12px; }
+.kpi .value{ font-weight: 900; margin-top: 4px; }
+.kpi .label{ color: var(--muted); font-size: 12px; }
+.kpi .value{ font-weight: 800; margin-top: 4px; }
+.badges{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px; }
+.badge{
+  border: 1px solid var(--border);
+  background: rgba(148,163,184,0.10);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+.badge.win{
+  border-color: rgba(34,197,94,0.38);
+  background: rgba(34,197,94,0.12);
+  color: #064e3b;
+}
+.badge.lose{
+  border-color: rgba(255,107,107,0.38);
+  background: rgba(255,107,107,0.10);
+  color: #7f1d1d;
+}
+.badge.draw{
+  border-color: rgba(245,158,11,0.42);
+  background: rgba(245,158,11,0.12);
+  color: #7c2d12;
+}
+.sectionTitle{ margin: 14px 0 8px; font-size: 14px; font-weight: 800; }
+.smallTable td, .smallTable th{ white-space: normal; }
+
+/* Professional round bar */
+.controls{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.roundPicker{
+  font-weight:800;
+  color: var(--muted);
+}
+.roundNav{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background: rgba(255,255,255,0.06);
+  border:1px solid var(--border);
+  border-radius: 16px;
+  padding: 10px 12px;
+}
+#roundSelect{
+  min-width: 180px;
+  font-weight:800;
+}
+.iconBtn{
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-weight:900;
+}
+@media (max-width: 720px){
+  .roundNav{ width:100%; justify-content:space-between; }
+  #roundSelect{ flex:1; min-width:0; }
+}
+
+
+/* ======= UI hotfix: consistent tabs + single-panel layout + better tables ======= */
+:root{
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans Hebrew", "Heebo", sans-serif;
+}
+html, body{ font-family: var(--font); }
+
+/* Tabs always visible (web + mobile) */
+.tabs{ display:flex !important; position: sticky; top: 14px; z-index: 20; backdrop-filter: blur(10px); }
+.tabsWrap{ margin: 14px 0 10px 0; }
+.tabs{ gap:10px; padding:8px; }
+.tabs button{
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  padding: 10px 14px;
+  /* Inactive tab MUST be readable on the light background (mobile Safari) */
+  background: rgba(255,255,255,0.82);
+  border: 1px solid rgba(15,23,42,0.14);
+  color: rgba(15,23,42,0.92);
+}
+.tabs button.active{
+  background: linear-gradient(90deg, rgba(79,140,255,0.95), rgba(34,197,94,0.60));
+  border-color: rgba(255,255,255,0.20);
+  color: #0b1020;
+}
+
+@media (prefers-color-scheme: dark){
+  .tabs button{
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.16);
+    color: rgba(255,255,255,0.88);
+  }
+}
+
+/* Toggle layout: show only active panel on ALL sizes */
+.tab-panel{ display:none !important; }
+.tab-panel.active{ display:block !important; }
+
+/* Grid should not reserve two columns when using tabs */
+.grid{ grid-template-columns: 1fr !important; gap: 14px !important; }
+
+/* Table scrolling inside panel (not the whole page) */
+.scroll{
+  overflow-x: auto !important;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll table{ min-width: 720px; } /* allows horizontal scroll on desktop if needed */
+
+/* Score column always centered & LTR */
+td.score, .scoreBadge{
+  direction: ltr;
+  unicode-bidi: plaintext;
+  text-align: center;
+}
+table td:nth-child(3), table th:nth-child(3){ text-align:center; }
+
+/* Remove heavy blue pills for team names in web tables */
+.pill{
+  background: rgba(255,255,255,0.08) !important;
+  color: rgba(255,255,255,0.92) !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+}
+.pill.galil{
+  background: rgba(34,197,94,0.14) !important;
+  border-color: rgba(34,197,94,0.22) !important;
+}
+
+/* Mobile: allow team names to wrap (no clipping) */
+@media (max-width: 700px){
+  .scroll table{ min-width: 0; width: 100%; }
+  .grid{ gap: 12px !important; }
+  table td, table th{ white-space: normal; }
+  table td:nth-child(2), table td:nth-child(4){ word-break: break-word; }
+}
+
+/* Modal close button: icon only, no random "X" feeling */
+#teamModalClose{ padding: 8px 10px; }
+#teamModalClose{ font-weight: 700; }
+#teamModalClose::before{ content:"✕"; }
+#teamModalClose{ color: rgba(255,255,255,0.85); }
+#teamModalClose{ font-size: 14px; }
+#teamModalClose{ line-height: 1; }
+#teamModalClose{ white-space: nowrap; }
+#teamModalClose{ }
+#teamModalClose{ }
+#teamModalClose{ }
+
+@media (max-width: 680px){
+  .gcTeam .teamLink{width:100%; text-align:inherit; background:transparent; border:0; padding:0; margin:0;}
+  .gameCard{width:100%;}
+}
+
+@media (max-width: 680px){
+  .gcTeam .teamLink{width:100%; text-align:inherit; background:transparent; border:0; padding:0; margin:0;}
+  .gameCard{width:100%;}
+}
+</style>
+  <!-- PWA / Home Screen -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1e40ff">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="גליל">
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar"><div class="topbarInner">
+      <div>
+        <h1>לוח משחקים • גליל עליון</h1>
+        <div class="sub">לוח משחקים ותוצאות מעודכנים בליגה — תצוגה מותאמת למובייל.</div>
+      </div>
+</div></div>
+
+    <div class="card" style="margin-top:12px;">
+      <div class="controls">
+        <label class="roundPicker">בחירת מחזור:
+  <div class="roundNav">
+    <button type="button" id="roundPrev" class="iconBtn" aria-label="מחזור קודם">‹</button>
+    <select id="roundSelect"></select>
+    <button type="button" id="roundNext" class="iconBtn" aria-label="מחזור הבא">›</button>
+  </div>
+  <div id="roundStatus" class="roundStatus" aria-live="polite"></div>
+</label>
+        <!-- האתר ממוקד בהפועל גליל עליון: סינון הקבוצה קבוע ומוסתר -->
+        <input id="teamFilter" value="הפ׳ גליל עליון" type="hidden" />
+        <input type="checkbox" id="onlyTeam" checked style="display:none" />
+<button id="reload" class="iconBtn" type="button" aria-label="רענון">↻</button>
+      </div>
+      <div class="sub" style="margin-top:6px; color:var(--muted); font-size:13px;">מציג את כל משחקי המחזור. משחקי גליל מסומנים להבלטה ובלחיצה על קבוצה תקבל/י היסטוריה מולה מול גליל.</div>
+
+
+      <div id="errorBox" class="err" style="display:none;"></div>
+    </div>
+
+    <div class="tabsWrap">
+      <div class="tabs" role="tablist" aria-label="תצוגות">
+        <button type="button" class="active" data-tab="games" role="tab" aria-selected="true">משחקים</button>
+        <button type="button" data-tab="standings" role="tab" aria-selected="false">טבלה</button>
+      </div>
+    </div>
+
+
+    <div class="grid">
+      <div class="card tab-panel active gamesPanel" data-panel="games">
+        <h3 style="margin:0 0 10px 0;">משחקים</h3>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>תאריך</th>
+                <th>בית</th>
+                <th>תוצאה</th>
+                <th>חוץ</th>
+</tr>
+            </thead>
+            <tbody id="gamesBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card tab-panel standPanel" data-panel="standings">
+        <h3 style="margin:0 0 10px 0;">טבלה</h3>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>קבוצה</th>
+                <th>נק׳</th>
+                <th>מש</th>
+                <th>נצ׳</th><th>תיקו</th><th>הפ׳</th>
+                <th>+</th>
+                <th>-</th>
+                <th>הפרש</th>
+              </tr>
+            </thead>
+            <tbody id="standBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="teamModalOverlay" class="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="teamModalTitle">
+    <div class="modal">
+      <div class="modalHeader">
+        <div class="modalTitle" id="teamModalTitle">סטטיסטיקה</div>
+        <button class="iconBtn" id="teamModalClose" aria-label="סגור"></button>
+      </div>
+      <div class="modalBody" id="teamModalBody"></div>
+    </div>
+  </div>
+
+<script>
+  let DATA = null;
+
+  function fmtDate(s){
+    if(!s) return "";
+    try{
+      const d = new Date(s);
+      return d.toLocaleString("he-IL", { weekday:"short", year:"2-digit", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit" });
+    }catch{ return s; }
+  }
+
+  function normTeamName(s){
+    return String(s||"")
+      .toLowerCase()
+      .replace(/["'״׳`´]/g,"")
+      .replace(/[\u05F3\u05F4]/g,"")      // geresh/gershayim
+      .replace(/[\.\,\-–—\(\)\[\]\{\}:;!؟?]/g," ")
+      .replace(/\s+/g," ")
+      .trim();
+  }
+
+  function isGalilQuery(qn){
+    return qn.includes("גליל") && qn.includes("עליון");
+  }
+
+  function matchTeamName(name, q){
+    const n = normTeamName(name);
+    const qn = normTeamName(q);
+
+    if(!qn) return false;
+
+    // Special: focus on "גליל עליון" regardless of abbreviation (הפ', הפועל, וכו')
+    if(isGalilQuery(qn)){
+      return n.includes("גליל") && n.includes("עליון");
+    }
+
+    // General: substring match on normalized strings
+    return n.includes(qn) || qn.includes(n);
+  }
+
+  function includesTeam(game, q){
+    if(!q) return false;
+    return matchTeamName(game.home?.name || "", q) || matchTeamName(game.away?.name || "", q);
+  }
+
+  function normGoal(v){
+    if(v === null || v === undefined || v === "") return null;
+    const n = Number(v);
+    if(!Number.isFinite(n)) return null;
+    if(n < 0) return null; // API uses -1 for not played yet
+    return n;
+  }
+
+  function formatScore(g){
+    const hg = normGoal(g.home?.goals);
+    const ag = normGoal(g.away?.goals);
+
+    // Show a real score whenever both sides have non-negative goals.
+    // (Some APIs don't reliably set is_finished, but goals are the source of truth.)
+    if(hg !== null && ag !== null){
+      return String(hg) + ":" + String(ag);
+    }
+    return "טרם";
+  }
+
+  function esc(s){
+    return String(s ?? "")
+      .replaceAll("&","&amp;")
+      .replaceAll("<","&lt;")
+      .replaceAll(">","&gt;")
+      .replaceAll('"',"&quot;")
+      .replaceAll("'","&#39;");
+  }
+  function escapeAttr(s){ return esc(s).replaceAll("`","&#96;"); }
+
+  function buildOpponentLocation(g, focusTeamQ){
+    // עמודת "אצל מי" — ברירת מחדל: הקבוצה המארחת (בית)
+    const h = (g.home?.name || "");
+    const a = (g.away?.name || "");
+    const q = (focusTeamQ || "").trim();
+    if(!q) return h || (g?.venue || "");
+
+    // אם המשחק כולל את גליל — נציג את היריבה בצורה ידידותית
+    if(matchTeamName(h, q) && a){
+      return `בית מול ${a}`;
+    }
+    if(matchTeamName(a, q) && h){
+      return `חוץ אצל ${h}`;
+    }
+
+    // משחקים אחרים בליגה: "אצל מי" = הקבוצה בבית
+    return h || (g?.venue || "");
+  }
+
+
+  function teamOutcomeFor(g, teamQ){
+    const q = (teamQ || "").trim().toLowerCase();
+    const h = (g.home?.name || "");
+    const a = (g.away?.name || "");
+    const hg = normGoal(g.home?.goals);
+    const ag = normGoal(g.away?.goals);
+    if(hg === null || ag === null) return null; // not played
+    if(!q) return null;
+
+    const isHome = matchTeamName(h, teamQ);
+    const isAway = matchTeamName(a, teamQ);
+    if(!isHome && !isAway) return null;
+
+    const my = isHome ? hg : ag;
+    const opp = isHome ? ag : hg;
+    if(my > opp) return "W";
+    if(my < opp) return "L";
+    return "D";
+  }
+
+  function openTeamModal(opponent){
+    if(!DATA) return;
+    const myTeamQ = (document.getElementById("teamFilter")?.value || "").trim() || "גליל";
+    const oppName = (opponent || "").trim();
+    if(!oppName) return;
+
+    const played = (DATA.games || []).filter(g => normGoal(g.home?.goals) !== null && normGoal(g.away?.goals) !== null);
+
+    const h2h = played.filter(g=>{
+      const h = (g.home?.name || "");
+      const a = (g.away?.name || "");
+      const hl=h.toLowerCase(), al=a.toLowerCase();
+      const my=myTeamQ.toLowerCase();
+      const opp=oppName.toLowerCase();
+      return (matchTeamName(h, myTeamQ) && matchTeamName(a, oppName)) || (matchTeamName(h, oppName) && matchTeamName(a, myTeamQ));
+    }).sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+
+    const last = h2h[0] || null;
+    const last5 = h2h.slice(0,5);
+
+    let w=0,l=0,d=0;
+    for(const g of h2h){
+      const o = teamOutcomeFor(g, myTeamQ);
+      if(o==="W") w++;
+      else if(o==="L") l++;
+      else if(o==="D") d++;
+    }
+
+    const last2 = h2h.slice(0,2);
+
+    const recent = played
+      .filter(g=>includesTeam(g, oppName))
+      .sort((a,b)=>(b.date||"").localeCompare(a.date||""))
+      .slice(0,5);
+
+    const recentBadges = recent.map(g=>{
+      const o = teamOutcomeFor(g, oppName);
+      const score = formatScore(g);
+      const opp = matchTeamName((g.home?.name||""), oppName) ? (g.away?.name||"") : (g.home?.name||"");
+      const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
+      const label = o==="W" ? "ניצחון" : o==="L" ? "הפסד" : "תיקו";
+      return `<span class="badge ${cls}">${label} • ${esc(opp)} • ${esc(score)}</span>`;
+    }).join("");
+
+    const lastHtml = last2.length ? `
+      <table class="smallTable" style="width:100%; border-collapse:collapse;">
+        <tr>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">תאריך</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">משחק</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">תוצאה</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">גליל</th>
+        </tr>
+        ${last2.map(g=>{
+          const o = teamOutcomeFor(g, myTeamQ); // תוצאה מנקודת מבט של גליל
+          const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
+          const label = o==="W" ? "ניצחון" : o==="L" ? "הפסד" : "תיקו";
+          return `
+          <tr>
+            <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(fmtDate(g.date))}</td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(g.home?.name||"")} מול ${esc(g.away?.name||"")}</td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);"><b dir="ltr">${esc(formatScore(g))}</b></td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);"><span class="badge ${cls}">${label}</span></td>
+          </tr>`;
+        }).join("")}
+      </table>
+      <div class="tiny" style="margin-top:8px;">מוצגים עד שני המשחקים האחרונים ששוחקו מול גליל.</div>
+    ` : `<div class="tiny">לא נמצא משחק ששוחק עדיין בין "${esc(myTeamQ)}" ל-"${esc(oppName)}".</div>`;
+
+    const body = document.getElementById("teamModalBody");
+    document.getElementById("teamModalTitle").textContent = `מול ${oppName}`;
+    body.innerHTML = `
+      <div class="kpis">
+        <div class="kpi"><div class="label">מאזן גליל מול הקבוצה</div><div class="value">${w} נצ׳ • ${l} הפ׳${d?` • ${d} תיקו`:""}</div></div>
+        <div class="kpi"><div class="label">סה״כ מפגשים ששוחקו</div><div class="value">${h2h.length}</div></div>
+        <div class="kpi"><div class="label">מיקוד</div><div class="value">הפ׳ גליל עליון</div></div>
+      </div>
+
+      <div class="sectionTitle">המשחק האחרון ביניהן</div>
+      ${lastHtml}
+
+      <div class="sectionTitle">5 משחקים אחרונים של הקבוצה (כללי)</div>
+      <div class="badges">${recentBadges || `<div class="tiny">אין נתונים.</div>`}</div>
+    `;
+
+    const ov = document.getElementById("teamModalOverlay");
+    ov.classList.add("open");
+  }
+
+  function closeTeamModal(){
+    document.getElementById("teamModalOverlay")?.classList.remove("open");
+  }
+
+function showError(msg){
+    const box = document.getElementById("errorBox");
+    box.style.display = "block";
+    box.innerHTML = msg;
+  }
+  function hideError(){
+    const box = document.getElementById("errorBox");
+    box.style.display = "none";
+    box.innerHTML = "";
+  }
+
+  async function load(){
+    hideError();
+    try{
+      const r = await fetch("./data.json?ts=" + Date.now(), { cache: "no-store" });
+      const t = await r.text();
+      if(!r.ok){
+        // Friendly message when data.json is missing on GitHub Pages
+        throw new Error("לא הצלחתי לטעון את קובץ <b>data.json</b>.<br>ודא שכל הקבצים הועלו לריפו (במיוחד <b>data.json</b>) ולא רק index.html.<br><small>סטטוס: " + r.status + " " + r.statusText + "</small>");
+      }
+      // Sometimes GitHub Pages returns an HTML page instead of JSON when the file is missing
+      if(t.trim().startsWith("<")){
+        throw new Error("נראה שקובץ <b>data.json</b> לא נמצא בנתיב הנוכחי (התקבלה תשובת HTML).<br>העלה מחדש את כל הקבצים כולל <b>data.json</b> ובצע רענון קשיח.");
+      }
+      try{
+        DATA = JSON.parse(t);
+      }catch(e){
+        throw new Error("קובץ data.json נטען אבל אינו JSON תקין.");
+      }
+
+
+      const leagueName = DATA?.league?.name || "ליגה";
+      const fetchedAt = DATA?.fetchedAt || "";
+      const roundsCount = DATA?.rounds?.length || 0;
+      const gamesCount = DATA?.gamesCount || 0;
+      const shift = DATA?.api?.roundNumberShiftApplied ?? DATA?.api?.roundNumberFixApplied ?? 0;
+const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
+      const sel = document.getElementById("roundSelect");
+      sel.innerHTML = "";
+      for(const rr of rs){
+        const opt = document.createElement("option");
+        opt.value = rr.number;
+        opt.textContent = `מחזור ${rr.number} (${rr.gamesCount || 0})`;
+        sel.appendChild(opt);
+      }
+
+      const cur = DATA?.league?.currentRoundNumber;
+      if(cur) sel.value = String(cur);
+      if(!sel.value && rs.length) sel.value = String(rs[0].number);
+
+      updateRoundStatus();
+      render();
+    }catch(e){
+      showError(
+        `<b>לא הצלחתי לטעון נתונים.</b><br>
+         אם פתחת את הקובץ דרך <code>file://</code> זה לא יעבוד – פתח דרך שרת (GitHub Pages / Live Server).<br><br>
+         שגיאה: <code>${String(e).replaceAll("<","&lt;").replaceAll(">","&gt;")}</code>`
+      );
+DATA = null;
+      document.getElementById("roundSelect").innerHTML = "";
+      document.getElementById("gamesBody").innerHTML = "";
+      document.getElementById("standBody").innerHTML = "";
+    }
+  }
+
+  
+  function updateRoundStatus(){
+    const sel = document.getElementById("roundSelect");
+    const out = document.getElementById("roundStatus");
+    if(!sel || !out) return;
+    const total = sel.options.length || 0;
+    const val = sel.value || "";
+    out.textContent = total ? `מחזור ${val} מתוך ${total}` : "";
+  }
+
+function updateRoundButtons(){
+    const sel = document.getElementById("roundSelect");
+    const prev = document.getElementById("roundPrev");
+    const next = document.getElementById("roundNext");
+    if(!sel || !prev || !next) return;
+    const i = sel.selectedIndex;
+    prev.disabled = (i <= 0);
+    next.disabled = (i >= sel.options.length - 1);
+  }
+
+  function stepRound(delta){
+    const sel = document.getElementById("roundSelect");
+    if(!sel) return;
+    const i = sel.selectedIndex;
+    const ni = i + delta;
+    if(ni < 0 || ni > sel.options.length - 1) return;
+    sel.selectedIndex = ni;
+    render();
+  }
+
+  function render(){
+    if(!DATA) return;
+
+    updateRoundButtons();
+    updateRoundStatus();
+
+    const roundNo = Number(document.getElementById("roundSelect").value);
+    const teamQ = document.getElementById("teamFilter").value.trim();
+        let games = (DATA.games || []).filter(g => (g.round?.number ?? null) === roundNo);
+    games.sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+
+    const body = document.getElementById("gamesBody");
+    body.innerHTML = "";
+    const cards = document.getElementById("gamesCards");
+    if(cards) cards.innerHTML = "";
+    for(const g of games){
+      const tr = document.createElement("tr");
+      const isTeam = includesTeam(g, teamQ);
+            const score = formatScore(g);
+      const hg = normGoal(g.home?.goals);
+      const ag = normGoal(g.away?.goals);
+      let out = "pending"; // win/lose/draw/pending relative to Galil will be shown in modal; here it's match outcome
+      if(hg !== null && ag !== null){
+        if(hg > ag) out = "home";
+        else if(ag > hg) out = "away";
+        else out = "draw";
+      }
+      const homeCls = (out==="home") ? "winner" : (out==="away" ? "loser" : "");
+      const awayCls = (out==="away") ? "winner" : (out==="home" ? "loser" : "");
+      const badgeCls = (out==="home" || out==="away") ? "win" : (out==="draw" ? "draw" : "pending");
+tr.innerHTML = `
+        <td>${fmtDate(g.date)}</td>
+        <td><button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></td>
+        <td>
+          <div class="matchTeams">
+            <span class="teamName ${homeCls}">${esc(g.home?.name || "")}</span>
+            <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
+            <span class="teamName ${awayCls}">${esc(g.away?.name || "")}</span>
+          </div>
+          <div class="matchMeta">${fmtDate(g.date)}</div>
+        </td>
+        <td><button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></td>
+              `;
+      if(isTeam) tr.className = "hl";
+      body.appendChild(tr);
+
+      if(cards){
+        const card = document.createElement("div");
+        card.className = "gameCard" + (isTeam ? " hl" : "");
+        card.innerHTML = `
+          <div class="gcRow">
+            <div class="gcTeam gcHome"><button class="teamLink ${homeCls}" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></div>
+            <div class="gcScore">
+              <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
+              <div class="matchMeta">${fmtDate(g.date)}</div>
+            </div>
+            <div class="gcTeam gcAway"><button class="teamLink ${awayCls}" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></div>
+          </div>
+        `;
+        cards.appendChild(card);
+      }
+    }
+
+    const sb = document.getElementById("standBody");
+    sb.innerHTML = "";
+    for(const t of (DATA.standings || [])){
+      const tr = document.createElement("tr");
+      tr.classList.add('standRow');
+      tr.addEventListener('click', ()=> openTeamModal(t.name ?? ""));
+      const isTeam = teamQ && matchTeamName((t.name||""), teamQ);
+      tr.innerHTML = `
+        <td>${t.rank ?? ""}</td>
+        <td><button class="teamLink" data-team="${escapeAttr(t.name ?? "")}">${esc(t.name ?? "")}</button></td>
+        <td><b>${t.points ?? ""}</b></td>
+        <td>${t.games ?? ""}</td>
+        <td>${t.wins ?? ""}</td>
+        <td>${t.draws ?? ""}</td>
+        <td>${t.losses ?? ""}</td>
+        <td>${t.gf ?? ""}</td>
+        <td>${t.ga ?? ""}</td>
+        <td>${t.gd ?? ""}</td>
+      `;
+      if(isTeam) tr.className = "hl2";
+      sb.appendChild(tr);
+    }
+  }
+
+  document.getElementById("reload").onclick = load;
+  document.getElementById("roundSelect").onchange = render;
+  document.getElementById("roundPrev").onclick = () => stepRound(-1);
+  document.getElementById("roundNext").onclick = () => stepRound(1);
+  document.getElementById("teamFilter").oninput = render;
+  document.getElementById("onlyTeam").onchange = render;
+
+  // Click any team name to open quick stats
+  document.addEventListener("click", (ev)=>{
+    const btn = ev.target?.closest?.(".teamLink");
+    if(!btn) return;
+    const name = btn.getAttribute("data-team") || "";
+    openTeamModal(name);
+  });
+
+  document.getElementById("teamModalClose")?.addEventListener("click", closeTeamModal);
+  document.getElementById("teamModalOverlay")?.addEventListener("click", (e)=>{
+    if(e.target?.id === "teamModalOverlay") closeTeamModal();
+  });
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape") closeTeamModal();
+  });
+
+  load();
+</script>
+
+<script>
+(function(){
+  const tabs = Array.from(document.querySelectorAll(".tabs [data-tab]"));
+  const panels = Array.from(document.querySelectorAll(".tab-panel[data-panel]"));
+  if(!tabs.length || !panels.length) return;
+
+  function setAria(){
+    tabs.forEach(btn=>{
+      const on = btn.classList.contains("active");
+      btn.setAttribute("aria-selected", on ? "true" : "false");
+    });
+  }
+
+  function setTab(name){
+    tabs.forEach(btn=>btn.classList.toggle("active", btn.dataset.tab === name));
+    panels.forEach(p=>p.classList.toggle("active", p.dataset.panel === name));
+    setAria();
+    try{ localStorage.setItem("galil_active_tab", name); }catch(e){}
+  }
+
+  tabs.forEach(btn=>{
+    btn.addEventListener("click", ()=> setTab(btn.dataset.tab));
+  });
+
+  let initial = "games";
+  try{
+    const saved = localStorage.getItem("galil_active_tab");
+    if(saved) initial = saved;
+  }catch(e){}
+  setTab(initial);
+})();
+</script>
+
+</body>
+</html<div id="gamesCards" class="gamesCards" aria-label="כרטיסי משחקים"></div>
+      
+  .gamesCards{display:none;}
+  .gameCard{
+    background: var(--card);
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 16px;
+    padding: 12px 12px 10px;
+    margin: 10px 0;
+    box-shadow: 0 10px 26px rgba(15,23,42,.06);
+  }
+  .gcRow{display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-items:center; gap:10px; direction:ltr;}
+  .gcHome{text-align:right;}
+  .gcAway{text-align:left;}
+  .gcTeam{min-width:0;}
+  .gcTeam .teamLink{display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden; text-overflow:ellipsis; font-weight:800; line-height:1.15;}
+  .gcTeam .teamLink:hover{ background: rgba(59,130,246,.16); }
+  .gcScore{display:flex; flex-direction:column; align-items:center; gap:6px; min-width:78px;}
+  .gcScore .scoreBadge{margin:0; }
+  .gcMeta{margin-top:10px; color: var(--muted); font-weight:600; font-size: .92rem; text-align:center;}
+</style>
+  <!-- PWA / Home Screen -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1e40ff">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="גליל">
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar"><div class="topbarInner">
+      <div>
+        <h1>לוח משחקים • גליל עליון</h1>
+        <div class="sub">לוח משחקים ותוצאות מעודכנים בליגה — תצוגה מותאמת למובייל.</div>
+      </div>
+</div></div>
+
+    <div class="card" style="margin-top:12px;">
+      <div class="controls">
+        <label class="roundPicker">בחירת מחזור:
+  <div class="roundNav">
+    <button type="button" id="roundPrev" class="iconBtn" aria-label="מחזור קודם">‹</button>
+    <select id="roundSelect"></select>
+    <button type="button" id="roundNext" class="iconBtn" aria-label="מחזור הבא">›</button>
+  </div>
+  <div id="roundStatus" class="roundStatus" aria-live="polite"></div>
+</label>
+        <!-- האתר ממוקד בהפועל גליל עליון: סינון הקבוצה קבוע ומוסתר -->
+        <input id="teamFilter" value="הפ׳ גליל עליון" type="hidden" />
+        <input type="checkbox" id="onlyTeam" checked style="display:none" />
+<button id="reload" class="iconBtn" type="button" aria-label="רענון">↻</button>
+      </div>
+      <div class="sub" style="margin-top:6px; color:var(--muted); font-size:13px;">מציג את כל משחקי המחזור. משחקי גליל מסומנים להבלטה ובלחיצה על קבוצה תקבל/י היסטוריה מולה מול גליל.</div>
+
+
+      <div id="errorBox" class="err" style="display:none;"></div>
+    </div>
+
+    <div class="tabsWrap">
+      <div class="tabs" role="tablist" aria-label="תצוגות">
+        <button type="button" class="active" data-tab="games" role="tab" aria-selected="true">משחקים</button>
+        <button type="button" data-tab="standings" role="tab" aria-selected="false">טבלה</button>
+      </div>
+    </div>
+
+
+    <div class="grid">
+      <div class="card tab-panel active gamesPanel" data-panel="games">
+        <h3 style="margin:0 0 10px 0;">משחקים</h3>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>תאריך</th>
+                <th>בית</th>
+                <th>תוצאה</th>
+                <th>חוץ</th>
+</tr>
+            </thead>
+            <tbody id="gamesBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card tab-panel standPanel" data-panel="standings">
+        <h3 style="margin:0 0 10px 0;">טבלה</h3>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>קבוצה</th>
+                <th>נק׳</th>
+                <th>מש</th>
+                <th>נצ׳</th><th>תיקו</th><th>הפ׳</th>
+                <th>+</th>
+                <th>-</th>
+                <th>הפרש</th>
+              </tr>
+            </thead>
+            <tbody id="standBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="teamModalOverlay" class="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="teamModalTitle">
+    <div class="modal">
+      <div class="modalHeader">
+        <div class="modalTitle" id="teamModalTitle">סטטיסטיקה</div>
+        <button class="iconBtn" id="teamModalClose" aria-label="סגור"></button>
+      </div>
+      <div class="modalBody" id="teamModalBody"></div>
+    </div>
+  </div>
+
+<script>
+  let DATA = null;
+
+  function fmtDate(s){
+    if(!s) return "";
+    try{
+      const d = new Date(s);
+      return d.toLocaleString("he-IL", { weekday:"short", year:"2-digit", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit" });
+    }catch{ return s; }
+  }
+
+  function normTeamName(s){
+    return String(s||"")
+      .toLowerCase()
+      .replace(/["'״׳`´]/g,"")
+      .replace(/[\u05F3\u05F4]/g,"")      // geresh/gershayim
+      .replace(/[\.\,\-–—\(\)\[\]\{\}:;!؟?]/g," ")
+      .replace(/\s+/g," ")
+      .trim();
+  }
+
+  function isGalilQuery(qn){
+    return qn.includes("גליל") && qn.includes("עליון");
+  }
+
+  function matchTeamName(name, q){
+    const n = normTeamName(name);
+    const qn = normTeamName(q);
+
+    if(!qn) return false;
+
+    // Special: focus on "גליל עליון" regardless of abbreviation (הפ', הפועל, וכו')
+    if(isGalilQuery(qn)){
+      return n.includes("גליל") && n.includes("עליון");
+    }
+
+    // General: substring match on normalized strings
+    return n.includes(qn) || qn.includes(n);
+  }
+
+  function includesTeam(game, q){
+    if(!q) return false;
+    return matchTeamName(game.home?.name || "", q) || matchTeamName(game.away?.name || "", q);
+  }
+
+  function normGoal(v){
+    if(v === null || v === undefined || v === "") return null;
+    const n = Number(v);
+    if(!Number.isFinite(n)) return null;
+    if(n < 0) return null; // API uses -1 for not played yet
+    return n;
+  }
+
+  function formatScore(g){
+    const hg = normGoal(g.home?.goals);
+    const ag = normGoal(g.away?.goals);
+
+    // Show a real score whenever both sides have non-negative goals.
+    // (Some APIs don't reliably set is_finished, but goals are the source of truth.)
+    if(hg !== null && ag !== null){
+      return String(hg) + ":" + String(ag);
+    }
+    return "טרם";
+  }
+
+  function esc(s){
+    return String(s ?? "")
+      .replaceAll("&","&amp;")
+      .replaceAll("<","&lt;")
+      .replaceAll(">","&gt;")
+      .replaceAll('"',"&quot;")
+      .replaceAll("'","&#39;");
+  }
+  function escapeAttr(s){ return esc(s).replaceAll("`","&#96;"); }
+
+  function buildOpponentLocation(g, focusTeamQ){
+    // עמודת "אצל מי" — ברירת מחדל: הקבוצה המארחת (בית)
+    const h = (g.home?.name || "");
+    const a = (g.away?.name || "");
+    const q = (focusTeamQ || "").trim();
+    if(!q) return h || (g?.venue || "");
+
+    // אם המשחק כולל את גליל — נציג את היריבה בצורה ידידותית
+    if(matchTeamName(h, q) && a){
+      return `בית מול ${a}`;
+    }
+    if(matchTeamName(a, q) && h){
+      return `חוץ אצל ${h}`;
+    }
+
+    // משחקים אחרים בליגה: "אצל מי" = הקבוצה בבית
+    return h || (g?.venue || "");
+  }
+
+
+  function teamOutcomeFor(g, teamQ){
+    const q = (teamQ || "").trim().toLowerCase();
+    const h = (g.home?.name || "");
+    const a = (g.away?.name || "");
+    const hg = normGoal(g.home?.goals);
+    const ag = normGoal(g.away?.goals);
+    if(hg === null || ag === null) return null; // not played
+    if(!q) return null;
+
+    const isHome = matchTeamName(h, teamQ);
+    const isAway = matchTeamName(a, teamQ);
+    if(!isHome && !isAway) return null;
+
+    const my = isHome ? hg : ag;
+    const opp = isHome ? ag : hg;
+    if(my > opp) return "W";
+    if(my < opp) return "L";
+    return "D";
+  }
+
+  function openTeamModal(opponent){
+    if(!DATA) return;
+    const myTeamQ = (document.getElementById("teamFilter")?.value || "").trim() || "גליל";
+    const oppName = (opponent || "").trim();
+    if(!oppName) return;
+
+    const played = (DATA.games || []).filter(g => normGoal(g.home?.goals) !== null && normGoal(g.away?.goals) !== null);
+
+    const h2h = played.filter(g=>{
+      const h = (g.home?.name || "");
+      const a = (g.away?.name || "");
+      const hl=h.toLowerCase(), al=a.toLowerCase();
+      const my=myTeamQ.toLowerCase();
+      const opp=oppName.toLowerCase();
+      return (matchTeamName(h, myTeamQ) && matchTeamName(a, oppName)) || (matchTeamName(h, oppName) && matchTeamName(a, myTeamQ));
+    }).sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+
+    const last = h2h[0] || null;
+    const last5 = h2h.slice(0,5);
+
+    let w=0,l=0,d=0;
+    for(const g of h2h){
+      const o = teamOutcomeFor(g, myTeamQ);
+      if(o==="W") w++;
+      else if(o==="L") l++;
+      else if(o==="D") d++;
+    }
+
+    const last2 = h2h.slice(0,2);
+
+    const recent = played
+      .filter(g=>includesTeam(g, oppName))
+      .sort((a,b)=>(b.date||"").localeCompare(a.date||""))
+      .slice(0,5);
+
+    const recentBadges = recent.map(g=>{
+      const o = teamOutcomeFor(g, oppName);
+      const score = formatScore(g);
+      const opp = matchTeamName((g.home?.name||""), oppName) ? (g.away?.name||"") : (g.home?.name||"");
+      const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
+      const label = o==="W" ? "ניצחון" : o==="L" ? "הפסד" : "תיקו";
+      return `<span class="badge ${cls}">${label} • ${esc(opp)} • ${esc(score)}</span>`;
+    }).join("");
+
+    const lastHtml = last2.length ? `
+      <table class="smallTable" style="width:100%; border-collapse:collapse;">
+        <tr>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">תאריך</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">משחק</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">תוצאה</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">גליל</th>
+        </tr>
+        ${last2.map(g=>{
+          const o = teamOutcomeFor(g, myTeamQ); // תוצאה מנקודת מבט של גליל
+          const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
+          const label = o==="W" ? "ניצחון" : o==="L" ? "הפסד" : "תיקו";
+          return `
+          <tr>
+            <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(fmtDate(g.date))}</td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(g.home?.name||"")} מול ${esc(g.away?.name||"")}</td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);"><b dir="ltr">${esc(formatScore(g))}</b></td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);"><span class="badge ${cls}">${label}</span></td>
+          </tr>`;
+        }).join("")}
+      </table>
+      <div class="tiny" style="margin-top:8px;">מוצגים עד שני המשחקים האחרונים ששוחקו מול גליל.</div>
+    ` : `<div class="tiny">לא נמצא משחק ששוחק עדיין בין "${esc(myTeamQ)}" ל-"${esc(oppName)}".</div>`;
+
+    const body = document.getElementById("teamModalBody");
+    document.getElementById("teamModalTitle").textContent = `מול ${oppName}`;
+    body.innerHTML = `
+      <div class="kpis">
+        <div class="kpi"><div class="label">מאזן גליל מול הקבוצה</div><div class="value">${w} נצ׳ • ${l} הפ׳${d?` • ${d} תיקו`:""}</div></div>
+        <div class="kpi"><div class="label">סה״כ מפגשים ששוחקו</div><div class="value">${h2h.length}</div></div>
+        <div class="kpi"><div class="label">מיקוד</div><div class="value">הפ׳ גליל עליון</div></div>
+      </div>
+
+      <div class="sectionTitle">המשחק האחרון ביניהן</div>
+      ${lastHtml}
+
+      <div class="sectionTitle">5 משחקים אחרונים של הקבוצה (כללי)</div>
+      <div class="badges">${recentBadges || `<div class="tiny">אין נתונים.</div>`}</div>
+    `;
+
+    const ov = document.getElementById("teamModalOverlay");
+    ov.classList.add("open");
+  }
+
+  function closeTeamModal(){
+    document.getElementById("teamModalOverlay")?.classList.remove("open");
+  }
+
+function showError(msg){
+    const box = document.getElementById("errorBox");
+    box.style.display = "block";
+    box.innerHTML = msg;
+  }
+  function hideError(){
+    const box = document.getElementById("errorBox");
+    box.style.display = "none";
+    box.innerHTML = "";
+  }
+
+  async function load(){
+    hideError();
+    try{
+      const r = await fetch("./data.json?ts=" + Date.now());
+      if(!r.ok){
+        const t = await r.text();
+        throw new Error("HTTP " + r.status + " " + r.statusText + "<br><pre style='white-space:pre-wrap'>" + (t.slice(0,400)) + "</pre>");
+      }
+      DATA = await r.json();
+
+      const leagueName = DATA?.league?.name || "ליגה";
+      const fetchedAt = DATA?.fetchedAt || "";
+      const roundsCount = DATA?.rounds?.length || 0;
+      const gamesCount = DATA?.gamesCount || 0;
+      const shift = DATA?.api?.roundNumberShiftApplied ?? DATA?.api?.roundNumberFixApplied ?? 0;
+const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
+      const sel = document.getElementById("roundSelect");
+      sel.innerHTML = "";
+      for(const rr of rs){
+        const opt = document.createElement("option");
+        opt.value = rr.number;
+        opt.textContent = `מחזור ${rr.number} (${rr.gamesCount || 0})`;
+        sel.appendChild(opt);
+      }
+
+      const cur = DATA?.league?.currentRoundNumber;
+      if(cur) sel.value = String(cur);
+      if(!sel.value && rs.length) sel.value = String(rs[0].number);
+
+      updateRoundStatus();
+      render();
+    }catch(e){
+      showError(
+        `<b>לא הצלחתי לטעון נתונים.</b><br>
+         אם פתחת את הקובץ דרך <code>file://</code> זה לא יעבוד – פתח דרך שרת (GitHub Pages / Live Server).<br><br>
+         שגיאה: <code>${String(e).replaceAll("<","&lt;").replaceAll(">","&gt;")}</code>`
+      );
+DATA = null;
+      document.getElementById("roundSelect").innerHTML = "";
+      document.getElementById("gamesBody").innerHTML = "";
+      document.getElementById("standBody").innerHTML = "";
+    }
+  }
+
+  
+  function updateRoundStatus(){
+    const sel = document.getElementById("roundSelect");
+    const out = document.getElementById("roundStatus");
+    if(!sel || !out) return;
+    const total = sel.options.length || 0;
+    const val = sel.value || "";
+    out.textContent = total ? `מחזור ${val} מתוך ${total}` : "";
+  }
+
+function updateRoundButtons(){
+    const sel = document.getElementById("roundSelect");
+    const prev = document.getElementById("roundPrev");
+    const next = document.getElementById("roundNext");
+    if(!sel || !prev || !next) return;
+    const i = sel.selectedIndex;
+    prev.disabled = (i <= 0);
+    next.disabled = (i >= sel.options.length - 1);
+  }
+
+  function stepRound(delta){
+    const sel = document.getElementById("roundSelect");
+    if(!sel) return;
+    const i = sel.selectedIndex;
+    const ni = i + delta;
+    if(ni < 0 || ni > sel.options.length - 1) return;
+    sel.selectedIndex = ni;
+    render();
+  }
+
+  function render(){
+    if(!DATA) return;
+
+    updateRoundButtons();
+    updateRoundStatus();
+
+    const roundNo = Number(document.getElementById("roundSelect").value);
+    const teamQ = document.getElementById("teamFilter").value.trim();
+        let games = (DATA.games || []).filter(g => (g.round?.number ?? null) === roundNo);
+    games.sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+
+    const body = document.getElementById("gamesBody");
+    body.innerHTML = "";
+    const cards = document.getElementById("gamesCards");
+    if(cards) cards.innerHTML = "";
+    for(const g of games){
+      const tr = document.createElement("tr");
+      const isTeam = includesTeam(g, teamQ);
+            const score = formatScore(g);
+      const hg = normGoal(g.home?.goals);
+      const ag = normGoal(g.away?.goals);
+      let out = "pending"; // win/lose/draw/pending relative to Galil will be shown in modal; here it's match outcome
+      if(hg !== null && ag !== null){
+        if(hg > ag) out = "home";
+        else if(ag > hg) out = "away";
+        else out = "draw";
+      }
+      const homeCls = (out==="home") ? "winner" : (out==="away" ? "loser" : "");
+      const awayCls = (out==="away") ? "winner" : (out==="home" ? "loser" : "");
+      const badgeCls = (out==="home" || out==="away") ? "win" : (out==="draw" ? "draw" : "pending");
+tr.innerHTML = `
+        <td>${fmtDate(g.date)}</td>
+        <td><button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></td>
+        <td>
+          <div class="matchTeams">
+            <span class="teamName ${homeCls}">${esc(g.home?.name || "")}</span>
+            <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
+            <span class="teamName ${awayCls}">${esc(g.away?.name || "")}</span>
+          </div>
+          <div class="matchMeta">${fmtDate(g.date)}</div>
+        </td>
+        <td><button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></td>
+              `;
+      if(isTeam) tr.className = "hl";
+      body.appendChild(tr);
+
+      if(cards){
+        const card = document.createElement("div");
+        card.className = "gameCard" + (isTeam ? " hl" : "");
+        card.innerHTML = `
+          <div class="gcRow">
+            <div class="gcTeam gcHome"><button class="teamLink ${homeCls}" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></div>
+            <div class="gcScore">
+              <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
+              <div class="matchMeta">${fmtDate(g.date)}</div>
+            </div>
+            <div class="gcTeam gcAway"><button class="teamLink ${awayCls}" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></div>
+          </div>
+        `;
+        cards.appendChild(card);
+      }
+    }
+
+    const sb = document.getElementById("standBody");
+    sb.innerHTML = "";
+    for(const t of (DATA.standings || [])){
+      const tr = document.createElement("tr");
+      tr.classList.add('standRow');
+      tr.addEventListener('click', ()=> openTeamModal(t.name ?? ""));
+      const isTeam = teamQ && matchTeamName((t.name||""), teamQ);
+      tr.innerHTML = `
+        <td>${t.rank ?? ""}</td>
+        <td><button class="teamLink" data-team="${escapeAttr(t.name ?? "")}">${esc(t.name ?? "")}</button></td>
+        <td><b>${t.points ?? ""}</b></td>
+        <td>${t.games ?? ""}</td>
+        <td>${t.wins ?? ""}</td>
+        <td>${t.draws ?? ""}</td>
+        <td>${t.losses ?? ""}</td>
+        <td>${t.gf ?? ""}</td>
+        <td>${t.ga ?? ""}</td>
+        <td>${t.gd ?? ""}</td>
+      `;
+      if(isTeam) tr.className = "hl2";
+      sb.appendChild(tr);
+    }
+  }
+
+  document.getElementById("reload").onclick = load;
+  document.getElementById("roundSelect").onchange = render;
+  document.getElementById("roundPrev").onclick = () => stepRound(-1);
+  document.getElementById("roundNext").onclick = () => stepRound(1);
+  document.getElementById("teamFilter").oninput = render;
+  document.getElementById("onlyTeam").onchange = render;
+
+  // Click any team name to open quick stats
+  document.addEventListener("click", (ev)=>{
+    const btn = ev.target?.closest?.(".teamLink");
+    if(!btn) return;
+    const name = btn.getAttribute("data-team") || "";
+    openTeamModal(name);
+  });
+
+  document.getElementById("teamModalClose")?.addEventListener("click", closeTeamModal);
+  document.getElementById("teamModalOverlay")?.addEventListener("click", (e)=>{
+    if(e.target?.id === "teamModalOverlay") closeTeamModal();
+  });
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape") closeTeamModal();
+  });
+
+  load();
+</script>
+
+<script>
+(function(){
+  const tabs = Array.from(document.querySelectorAll(".tabs [data-tab]"));
+  const panels = Array.from(document.querySelectorAll(".tab-panel[data-panel]"));
+  if(!tabs.length || !panels.length) return;
+
+  function setAria(){
+    tabs.forEach(btn=>{
+      const on = btn.classList.contains("active");
+      btn.setAttribute("aria-selected", on ? "true" : "false");
+    });
+  }
+
+  function setTab(name){
+    tabs.forEach(btn=>btn.classList.toggle("active", btn.dataset.tab === name));
+    panels.forEach(p=>p.classList.toggle("active", p.dataset.panel === name));
+    setAria();
+    try{ localStorage.setItem("galil_active_tab", name); }catch(e){}
+  }
+
+  tabs.forEach(btn=>{
+    btn.addEventListener("click", ()=> setTab(btn.dataset.tab));
+  });
+
+  let initial = "games";
+  try{
+    const saved = localStorage.getItem("galil_active_tab");
+    if(saved) initial = saved;
+  }catch(e){}
+  setTab(initial);
+})();
+</script>
+
+</body>
+</html>
