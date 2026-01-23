@@ -7,7 +7,7 @@
     "currentRoundNumber": 14,
     "currentRoundName": "מחזור 13"
   },
-  "fetchedAt": "2026-01-23T11:41:11.570Z",
+  "fetchedAt": "2026-01-23T12:29:18.423Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -164,16 +164,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 1
       },
@@ -264,14 +264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -464,16 +464,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 4
       },
@@ -633,14 +633,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -914,16 +914,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 9
       },
@@ -1014,14 +1014,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -1233,14 +1233,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -1714,16 +1714,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 2
       },
@@ -1814,14 +1814,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -1864,16 +1864,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 2
       },
@@ -1933,16 +1933,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 0
       }
@@ -2083,14 +2083,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -2214,16 +2214,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 5
       },
@@ -2264,14 +2264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -2483,14 +2483,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -2583,16 +2583,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 1
       }
@@ -2914,14 +2914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -3014,16 +3014,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 4
       },
@@ -3133,14 +3133,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -3233,16 +3233,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 2
       }
@@ -3464,16 +3464,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 0
       },
@@ -3683,14 +3683,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -3833,16 +3833,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": 0
       }
@@ -3914,18 +3914,18 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adef7c",
@@ -3933,18 +3933,18 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
-        "goals": -1
+        "goals": 9
       }
     },
     {
@@ -4283,16 +4283,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -4483,14 +4483,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -4583,16 +4583,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -4614,14 +4614,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -4933,16 +4933,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -5183,14 +5183,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -5283,16 +5283,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -5364,14 +5364,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -5683,16 +5683,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -5883,14 +5883,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -6064,16 +6064,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -6214,14 +6214,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -6433,16 +6433,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -6583,14 +6583,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -6764,16 +6764,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -6964,14 +6964,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -7133,16 +7133,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -7233,14 +7233,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -7464,16 +7464,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -7714,14 +7714,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -7833,16 +7833,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -7883,14 +7883,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -8164,16 +8164,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -8464,14 +8464,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -8514,16 +8514,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 4,
+          "games": 13,
+          "wins": 5,
           "draws": 2,
           "losses": 6,
           "goals": {
-            "for": 30,
+            "for": 39,
             "against": 25,
-            "difference": 5
+            "difference": 14
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -8533,14 +8533,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
+          "losses": 12,
           "goals": {
             "for": 5,
-            "against": 137,
-            "difference": -132
+            "against": 146,
+            "difference": -141
           },
           "points": 0
         },
@@ -8903,6 +8903,19 @@
     },
     {
       "rank": 5,
+      "provider_id": 7700,
+      "name": "מ.ס.קרית ים  2",
+      "games": 13,
+      "wins": 5,
+      "draws": 2,
+      "losses": 6,
+      "gf": 39,
+      "ga": 25,
+      "gd": 14,
+      "points": 17
+    },
+    {
+      "rank": 6,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2",
       "games": 9,
@@ -8915,7 +8928,7 @@
       "points": 17
     },
     {
-      "rank": 6,
+      "rank": 7,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
       "games": 10,
@@ -8925,19 +8938,6 @@
       "gf": 48,
       "ga": 21,
       "gd": 27,
-      "points": 14
-    },
-    {
-      "rank": 7,
-      "provider_id": 7700,
-      "name": "מ.ס.קרית ים  2",
-      "games": 12,
-      "wins": 4,
-      "draws": 2,
-      "losses": 6,
-      "gf": 30,
-      "ga": 25,
-      "gd": 5,
       "points": 14
     },
     {
@@ -9022,13 +9022,13 @@
       "rank": 14,
       "provider_id": 8368,
       "name": "הפועל קרית חיים  \"צו פיוס\"",
-      "games": 11,
+      "games": 12,
       "wins": 0,
       "draws": 0,
-      "losses": 11,
+      "losses": 12,
       "gf": 5,
-      "ga": 137,
-      "gd": -132,
+      "ga": 146,
+      "gd": -141,
       "points": 0
     }
   ]
