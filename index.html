@@ -1266,12 +1266,22 @@ function showError(msg){
   async function load(){
     hideError();
     try{
-      const r = await fetch("./data.json?ts=" + Date.now());
+      const r = await fetch("./data.json?ts=" + Date.now(), { cache: "no-store" });
+      const t = await r.text();
       if(!r.ok){
-        const t = await r.text();
-        throw new Error("HTTP " + r.status + " " + r.statusText + "<br><pre style='white-space:pre-wrap'>" + (t.slice(0,400)) + "</pre>");
+        // Friendly message when data.json is missing on GitHub Pages
+        throw new Error("לא הצלחתי לטעון את קובץ <b>data.json</b>.<br>ודא שכל הקבצים הועלו לריפו (במיוחד <b>data.json</b>) ולא רק index.html.<br><small>סטטוס: " + r.status + " " + r.statusText + "</small>");
       }
-      DATA = await r.json();
+      // Sometimes GitHub Pages returns an HTML page instead of JSON when the file is missing
+      if(t.trim().startsWith("<")){
+        throw new Error("נראה שקובץ <b>data.json</b> לא נמצא בנתיב הנוכחי (התקבלה תשובת HTML).<br>העלה מחדש את כל הקבצים כולל <b>data.json</b> ובצע רענון קשיח.");
+      }
+      try{
+        DATA = JSON.parse(t);
+      }catch(e){
+        throw new Error("קובץ data.json נטען אבל אינו JSON תקין.");
+      }
+
 
       const leagueName = DATA?.league?.name || "ליגה";
       const fetchedAt = DATA?.fetchedAt || "";
