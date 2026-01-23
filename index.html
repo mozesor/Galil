@@ -592,6 +592,85 @@ a:hover{text-decoration:underline;}
   #roundSelect{ flex:1; min-width:0; }
 }
 
+
+/* ======= UI hotfix: consistent tabs + single-panel layout + better tables ======= */
+:root{
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans Hebrew", "Heebo", sans-serif;
+}
+html, body{ font-family: var(--font); }
+
+/* Tabs always visible (web + mobile) */
+.tabs{ display:flex !important; position: sticky; top: 14px; z-index: 20; backdrop-filter: blur(10px); }
+.tabsWrap{ margin: 14px 0 10px 0; }
+.tabs{ gap:10px; padding:8px; }
+.tabs button{
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  padding: 10px 14px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.16);
+  color: rgba(255,255,255,0.85);
+}
+.tabs button.active{
+  background: linear-gradient(90deg, rgba(79,140,255,0.95), rgba(34,197,94,0.60));
+  border-color: rgba(255,255,255,0.20);
+  color: #0b1020;
+}
+
+/* Toggle layout: show only active panel on ALL sizes */
+.tab-panel{ display:none !important; }
+.tab-panel.active{ display:block !important; }
+
+/* Grid should not reserve two columns when using tabs */
+.grid{ grid-template-columns: 1fr !important; gap: 14px !important; }
+
+/* Table scrolling inside panel (not the whole page) */
+.scroll{
+  overflow-x: auto !important;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll table{ min-width: 720px; } /* allows horizontal scroll on desktop if needed */
+
+/* Score column always centered & LTR */
+td.score, .scoreBadge{
+  direction: ltr;
+  unicode-bidi: plaintext;
+  text-align: center;
+}
+table td:nth-child(3), table th:nth-child(3){ text-align:center; }
+
+/* Remove heavy blue pills for team names in web tables */
+.pill{
+  background: rgba(255,255,255,0.08) !important;
+  color: rgba(255,255,255,0.92) !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+}
+.pill.galil{
+  background: rgba(34,197,94,0.14) !important;
+  border-color: rgba(34,197,94,0.22) !important;
+}
+
+/* Mobile: allow team names to wrap (no clipping) */
+@media (max-width: 700px){
+  .scroll table{ min-width: 0; width: 100%; }
+  .grid{ gap: 12px !important; }
+  table td, table th{ white-space: normal; }
+  table td:nth-child(2), table td:nth-child(4){ word-break: break-word; }
+}
+
+/* Modal close button: icon only, no random "X" feeling */
+#teamModalClose{ padding: 8px 10px; }
+#teamModalClose{ font-weight: 700; }
+#teamModalClose::before{ content:"✕"; }
+#teamModalClose{ color: rgba(255,255,255,0.85); }
+#teamModalClose{ font-size: 14px; }
+#teamModalClose{ line-height: 1; }
+#teamModalClose{ white-space: nowrap; }
+#teamModalClose{ }
+#teamModalClose{ }
+#teamModalClose{ }
 </style>
   <!-- PWA / Home Screen -->
   <link rel="manifest" href="manifest.webmanifest">
@@ -686,7 +765,7 @@ a:hover{text-decoration:underline;}
     <div class="modal">
       <div class="modalHeader">
         <div class="modalTitle" id="teamModalTitle">סטטיסטיקה</div>
-        <button class="iconBtn" id="teamModalClose" aria-label="סגור">סגור ✕</button>
+        <button class="iconBtn" id="teamModalClose" aria-label="סגור"></button>
       </div>
       <div class="modalBody" id="teamModalBody"></div>
     </div>
