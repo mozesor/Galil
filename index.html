@@ -39,6 +39,7 @@
 }
 
 *{box-sizing:border-box;}
+html,body{max-width:100%;overflow-x:hidden;}
 html,body{height:100%;}
 body{
   margin:0;
@@ -289,6 +290,9 @@ th{
 }
 tbody tr:hover td{background: rgba(79,140,255,0.08);}
 
+
+.scoreBadge .score{direction:ltr; unicode-bidi:embed;}
+.badgeScore{direction:ltr; unicode-bidi:embed;}
 .hl{background: rgba(255,204,102,0.20) !important;}
 .hl2{background: rgba(34,197,94,0.18) !important;}
 
@@ -715,7 +719,7 @@ a:hover{text-decoration:underline;}
     // Show a real score whenever both sides have non-negative goals.
     // (Some APIs don't reliably set is_finished, but goals are the source of truth.)
     if(hg !== null && ag !== null){
-      return String(hg) + " - " + String(ag);
+      return String(hg) + ":" + String(ag);
     }
     return "טרם";
   }
@@ -830,7 +834,7 @@ a:hover{text-decoration:underline;}
           <tr>
             <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(fmtDate(g.date))}</td>
             <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(g.home?.name||"")} מול ${esc(g.away?.name||"")}</td>
-            <td style="padding:8px; border-bottom:1px solid var(--border);"><b>${esc(formatScore(g))}</b></td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);"><b dir="ltr">${esc(formatScore(g))}</b></td>
             <td style="padding:8px; border-bottom:1px solid var(--border);"><span class="badge ${cls}">${label}</span></td>
           </tr>`;
         }).join("")}
@@ -981,7 +985,7 @@ tr.innerHTML = `
         <td>
           <div class="matchTeams">
             <span class="teamName ${homeCls}">${esc(g.home?.name || "")}</span>
-            <span class="scoreBadge ${badgeCls}"><span class="score" dir="auto">${score}</span></span>
+            <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
             <span class="teamName ${awayCls}">${esc(g.away?.name || "")}</span>
           </div>
           <div class="matchMeta">${fmtDate(g.date)}</div>
