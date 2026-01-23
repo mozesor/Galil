@@ -951,15 +951,34 @@ table td:nth-child(3), table th:nth-child(3){ text-align:center; }
   .gameCard{width:100%;}
 }
 
-/* Center the score column and keep it consistent */
-.gamesTable th:nth-child(3), .gamesTable td:nth-child(3),
-.gamesTable .scoreCell{
-  text-align:center !important;
+/* ===== HOTFIX: desktop = table only, clean links, centered result ===== */
+.resultCell{ text-align:center; }
+.resultCell .scoreBadge{ margin: 0 auto; }
+.teamLink{
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: var(--accent) !important;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
-.gamesTable .scoreCell .scoreBadge{
-  margin: 0 auto;
+.teamLink.winner, .teamLink.loser{ background: transparent !important; }
+.gamesCards{ display:none; }
+@media (max-width: 700px){
+  .gamesTable{ display:none; }
+  .gamesCards{ display:block; }
 }
-
+.modalOverlay{
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9999 !important;
+}
+body.modalOpen{ overflow: hidden; }
 </style>
   <!-- PWA / Home Screen -->
   <link rel="manifest" href="manifest.webmanifest">
@@ -1263,11 +1282,13 @@ table td:nth-child(3), table th:nth-child(3){ text-align:center; }
 
     const ov = document.getElementById("teamModalOverlay");
     ov.classList.add("open");
-  }
+    document.body.classList.add("modalOpen");
+}
 
   function closeTeamModal(){
     document.getElementById("teamModalOverlay")?.classList.remove("open");
-  }
+    document.body.classList.remove("modalOpen");
+}
 
 function showError(msg){
     const box = document.getElementById("errorBox");
@@ -1396,13 +1417,13 @@ function updateRoundButtons(){
       const badgeCls = (out==="home" || out==="away") ? "win" : (out==="draw" ? "draw" : "pending");
 tr.innerHTML = `
         <td>${fmtDate(g.date)}</td>
-        <td><button class="teamLink ${homeCls}" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></td>
-        <td class="scoreCell">
+        <td><button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></td>
+        <td class="resultCell">
           <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
         </td>
-        <td><button class="teamLink ${awayCls}" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></td>
-`;
-      if(isTeam) tr.className = "hl";
+        <td><button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></td>
+      `;
+if(isTeam) tr.className = "hl";
       body.appendChild(tr);
 
       if(cards){
