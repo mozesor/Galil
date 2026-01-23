@@ -394,13 +394,13 @@ a:hover{text-decoration:underline;}
   .matchTeams .teamName{
     min-width: 0;
     max-width: none;
-    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    line-height: 1.18;
+    white-space: nowrap;
+    display: block;
+    word-break: normal;
+    writing-mode: horizontal-tb;
+    line-height: 1.2;
     font-size: 15px;
   }
   .matchTeams .teamName:first-child{ text-align: right; }
