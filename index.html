@@ -11,19 +11,20 @@
 <title>לוח משחקים • גליל עליון</title>
   <style>
 :root{
-  --bg: #0b1020;
+  --bg:#0b1020;
   --bg2:#0f172a;
-  --surface: rgba(255,255,255,0.08);
-  --surface2: rgba(255,255,255,0.12);
-  --border: rgba(255,255,255,0.14);
-  --text: rgba(255,255,255,0.92);
-  --muted: rgba(255,255,255,0.70);
-  --accent: #4f8cff;
+  --surface:rgba(255,255,255,0.08);
+  --surface2:rgba(255,255,255,0.12);
+  --border:rgba(255,255,255,0.14);
+  --text:rgba(255,255,255,0.92);
+  --muted:rgba(255,255,255,0.70);
+  --accent:#4f8cff;
   --accent2:#22c55e;
   --warn:#ffcc66;
   --danger:#ff6b6b;
-  --shadow: 0 10px 30px rgba(0,0,0,0.28);
-  --radius: 18px;
+  --shadow:0 10px 30px rgba(0,0,0,0.28);
+  --radius:18px;
+  --font: system-ui,-apple-system,"Segoe UI","Assistant",Arial,"Noto Sans Hebrew","Heebo",sans-serif;
 }
 
 @media (prefers-color-scheme: light){
@@ -32,23 +33,22 @@
     --bg2:#eef2ff;
     --surface:#ffffff;
     --surface2:#f7f8ff;
-    --border: rgba(17,24,39,0.10);
+    --border:rgba(17,24,39,0.10);
     --text:#0b1220;
-    --muted: rgba(11,18,32,0.62);
+    --muted:rgba(11,18,32,0.62);
     --accent:#2563eb;
     --accent2:#16a34a;
     --warn:#f59e0b;
     --danger:#dc2626;
-    --shadow: 0 12px 28px rgba(15,23,42,0.10);
+    --shadow:0 12px 28px rgba(15,23,42,0.10);
   }
 }
 
 *{box-sizing:border-box;}
-html,body{max-width:100%;overflow-x:hidden;}
-html,body{height:100%;}
+html,body{height:100%; max-width:100%; overflow-x:hidden;}
 body{
   margin:0;
-  font-family: system-ui,-apple-system,"Segoe UI","Assistant",Arial,sans-serif;
+  font-family:var(--font);
   background:
     radial-gradient(1200px 800px at 80% -10%, rgba(79,140,255,0.35), transparent 55%),
     radial-gradient(900px 700px at 10% 0%, rgba(34,197,94,0.25), transparent 55%),
@@ -79,32 +79,8 @@ body{
   flex-wrap:wrap;
 }
 
-h1{margin:0; font-size:22px; letter-spacing:0.2px;}
+h1{margin:0; font-size:22px; letter-spacing:.2px;}
 .sub{color:var(--muted); margin-top:6px; font-size:13px; line-height:1.35;}
-.sub code{
-  background: rgba(0,0,0,0.25);
-  padding: 2px 6px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-}
-@media (prefers-color-scheme: light){
-  .sub code{ background: rgba(37,99,235,0.08); }
-}
-
-.pill{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  padding:6px 10px;
-  border-radius:999px;
-  font-size:13px;
-  color: var(--text);
-  white-space:nowrap;
-}
-
-.row{display:flex; gap:10px; align-items:center; flex-wrap:wrap;}
 
 .card{
   background: var(--surface);
@@ -115,16 +91,11 @@ h1{margin:0; font-size:22px; letter-spacing:0.2px;}
 }
 
 .controls{
-  display:grid;
-  gap:10px;
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 760px){
-  .controls{
-    grid-template-columns: 260px 1fr auto auto auto;
-    align-items:end;
-  }
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
 }
 
 label{
@@ -147,7 +118,10 @@ input,select,button{
   outline:none;
 }
 
-/* --- round navigation + icon buttons --- */
+@media (prefers-color-scheme: light){
+  input,select,button{ background:#fff; color:var(--text); }
+}
+
 .roundPicker{min-width:0}
 .roundNav{display:grid; grid-template-columns:56px 1fr 56px; gap:10px; align-items:center; width:100%;}
 .roundNav select{width:100%; min-width:0; font-weight:800;}
@@ -164,32 +138,22 @@ input,select,button{
   background: var(--surface2);
   width:100%;
 }
+
 .iconBtn{
-  border: 1px solid rgba(15,23,42,0.14);
-  background: rgba(15,23,42,0.04);
-  color: #0b1020;
+  width:auto;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
   border-radius: 12px;
   padding: 8px 10px;
   cursor: pointer;
 }
-.iconBtn:hover{ background: rgba(15,23,42,0.07); }
-.iconBtn:active{ transform: translateY(1px); }
+@media (prefers-color-scheme: light){
+  .iconBtn{ background: rgba(15,23,42,0.04); color:#0b1020; }
+}
+.iconBtn:hover{filter:brightness(1.05);}
+.iconBtn:active{transform:translateY(1px);}
 .iconBtn:disabled{opacity:.45; cursor:not-allowed}
-@media (max-width: 420px){
-  .iconBtn{padding: 10px 12px}
-}
-/* keep score order in RTL */
-.score{display:inline-block; font-variant-numeric: tabular-nums}
-
-
-@media (prefers-color-scheme: light){
-  input,select,button{ background: #ffffff; color: var(--text); }
-}
-
-input::placeholder{color: rgba(255,255,255,0.55);}
-@media (prefers-color-scheme: light){
-  input::placeholder{color: rgba(11,18,32,0.45);}
-}
 
 button{
   cursor:pointer;
@@ -197,51 +161,34 @@ button{
   border-color: rgba(79,140,255,0.35);
   font-weight: 650;
 }
-button:hover{filter:brightness(1.05);}
-button:active{transform:translateY(1px);}
+button.iconBtn{ background: rgba(255,255,255,0.06); }
 
-.tiny{
-  font-size:13px;
-  color: var(--muted);
-  display:flex;
-  align-items:center;
-  gap:10px;
-  min-width: 0;
-}
-.tiny input{width:auto; padding:0; transform: scale(1.1);}
-
-.metaPill{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding: 10px 12px;
+.err{
+  background: rgba(255,107,107,0.18);
+  border: 1px solid rgba(255,107,107,0.35);
+  padding: 12px;
   border-radius: 14px;
-  border: 1px solid var(--border);
-  background: rgba(0,0,0,0.18);
+  margin-top: 10px;
   color: var(--text);
-  font-size: 13px;
-  white-space: nowrap;
-}
-@media (prefers-color-scheme: light){
-  .metaPill{ background:#ffffff; }
 }
 
-.grid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:12px;}
-@media (min-width: 960px){ .grid{grid-template-columns: 1.35fr 1fr;} }
+a{color: var(--accent); text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.grid{display:grid; grid-template-columns:1fr; gap:14px; margin-top:12px;}
 
 .scroll{
-  overflow-y:auto;
   overflow-x:auto;
-  max-height:70vh;
+  overflow-y:hidden;
   border-radius: 14px;
   border: 1px solid var(--border);
   -webkit-overflow-scrolling: touch;
 }
 
 table{width:100%; border-collapse:separate; border-spacing:0;}
-/* Allow horizontal scroll when many columns */
+.gamesPanel table{min-width: 720px;}
 .standPanel table{min-width: 860px;}
-.gamesPanel table{min-width: 700px;}
+
 th,td{
   padding:10px 10px;
   border-bottom:1px solid var(--border);
@@ -251,18 +198,6 @@ th,td{
   font-size:14px;
 }
 
-/* Center score column */
-.gamesPanel table th:nth-child(3),
-.gamesPanel table td:nth-child(3){
-  text-align:center;
-}
-.gamesPanel table td:nth-child(3){ width: 140px; }
-
-/* Desktop: don't repeat team names inside the score column (keep just the badge) */
-@media (min-width: 900px){
-  .matchTeams{ justify-content:center; }
-  .matchTeams .teamName{ display:none; }
-}
 th{
   position:sticky; top:0;
   background: rgba(0,0,0,0.25);
@@ -275,13 +210,11 @@ th{
   th{ background: rgba(255,255,255,0.95); }
 }
 
+/* score column */
+.gamesPanel table th:nth-child(3),
+.gamesPanel table td:nth-child(3){ text-align:center; }
+.scoreBadge .score{direction:ltr; unicode-bidi:embed;}
 
-.matchLine{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:10px;
-}
 .matchTeams{
   display:flex;
   align-items:center;
@@ -298,6 +231,7 @@ th{
 }
 .teamName.winner{ color: var(--accent2); font-weight:800; }
 .teamName.loser{ opacity:0.72; }
+
 .scoreBadge{
   display:inline-flex;
   align-items:center;
@@ -310,195 +244,63 @@ th{
   min-width:74px;
 }
 @media (prefers-color-scheme: light){
-  .scoreBadge{ background:#ffffff; }
+  .scoreBadge{ background:#fff; }
 }
 .scoreBadge.win{ border-color: rgba(34,197,94,0.45); background: rgba(34,197,94,0.15); }
 .scoreBadge.lose{ border-color: rgba(220,38,38,0.45); background: rgba(220,38,38,0.13); }
 .scoreBadge.draw{ border-color: rgba(245,158,11,0.55); background: rgba(245,158,11,0.12); }
 .scoreBadge.pending{ opacity:0.85; }
-.matchMeta{
-  margin-top:8px;
-  color: var(--muted);
-  font-size: 12.5px;
-  display:none;
-}
-@media (max-width: 640px){
-  .matchMeta{display:block;}
-}
+
+.matchMeta{ margin-top:8px; color: var(--muted); font-size: 12.5px; display:none; }
+@media (max-width: 640px){ .matchMeta{display:block;} }
+
 tbody tr:hover td{background: rgba(79,140,255,0.08);}
-
-
-.scoreBadge .score{direction:ltr; unicode-bidi:embed;}
-.badgeScore{direction:ltr; unicode-bidi:embed;}
 .hl{background: rgba(245,158,11,0.10) !important; border-right: 3px solid rgba(245,158,11,0.55);}
 .hl2{background: rgba(34,197,94,0.10) !important; border-right: 3px solid rgba(34,197,94,0.55);}
 
-.err{
-  background: rgba(255,107,107,0.18);
-  border: 1px solid rgba(255,107,107,0.35);
-  padding: 12px;
-  border-radius: 14px;
-  margin-top: 10px;
-  color: var(--text);
-}
-
-a{color: var(--accent); text-decoration:none;}
-a:hover{text-decoration:underline;}
-
-/* Mobile tweaks */
-@media (max-width: 640px){
-  .wrap{padding:12px;}
-  .topbar{margin:-12px -12px 12px -12px; padding:12px;}
-  .card{padding:12px; border-radius:16px;}
-  h1{font-size:20px;}
-  .sub{font-size:12.5px;}
-  label{min-width:0;}
-  .controls{gap:10px;}
-  .roundNav{width:100%;}
-  .roundNav{display:grid; grid-template-columns:52px 1fr 52px; gap:10px; align-items:center;}
-  .roundNav select{width:100%;}
-  .roundStatus{
-    margin-top:8px;
-    color: var(--muted);
-    font-size: 13px;
-    text-align: center;
-  }
-
-  /* --- Games: render each match as a clean card (single row) --- */
-  .gamesPanel .scroll{border:none; max-height:none;}
-  .gamesPanel table, .gamesPanel tbody, .gamesPanel tr, .gamesPanel td{display:block; width:100%;}
-  .gamesPanel thead{display:none;}
-  .gamesPanel tr{
-    border: 1px solid var(--border);
-    background: var(--surface2);
-    border-radius: 16px;
-    margin-bottom: 10px;
-    overflow:hidden;
-  }
-  /* show only the combined result cell on mobile */
-  .gamesPanel td:nth-child(1),
-  .gamesPanel td:nth-child(2),
-  .gamesPanel td:nth-child(4){display:none;}
-  .gamesPanel td:nth-child(3){
-    border-bottom:none;
-    padding:12px;
-  }
-  /* Ensure team names are readable on mobile */
-  /* IMPORTANT: iOS Safari can collapse flex items to min-content width, which
-     caused team names to show as a single letter. Use a grid with minmax(0,1fr)
-     so names always get real width. */
-  .gamesPanel td:nth-child(3){ text-align: initial; }
-  .matchTeams{
-    display:flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-    width:100%;
-  }
-  .matchTeams .teamName{
-    width:100%;
-    text-align:center;
-    font-weight:750;
-    font-size:16px;
-    line-height:1.25;
-    white-space:normal;
-    overflow:visible;
-    text-overflow:clip;
-    word-break:normal;
-    overflow-wrap:anywhere;
-  }
-  .matchTeams .teamName.winner{ color: var(--accent2); }
-  .matchTeams .teamName.loser{ opacity:0.72; } 
-  .scoreBadge{ min-width: 96px; align-self: center; justify-content:center; }
-
-
-  /* --- Standings (mobile): compact columns, tap row for details --- */
-  .standPanel .scroll{
-    overflow: visible;
-    max-height: none;
-    border: none;
-    border-radius: 0;
-  }
-  .standPanel table{
-    width:100%;
-    min-width:0;
-  }
-  .standPanel th, .standPanel td{
-    white-space:nowrap;
-    font-size:13px;
-    padding:10px 8px;
-  }
-  /* Hide extra columns on mobile; details are in the modal */
-  .standPanel th:nth-child(4),
-  .standPanel td:nth-child(4), /* מש */
-  .standPanel th:nth-child(6),
-  .standPanel td:nth-child(6), /* תיקו */
-  .standPanel th:nth-child(8),
-  .standPanel td:nth-child(8), /* + */
-  .standPanel th:nth-child(9),
-  .standPanel td:nth-child(9)  /* - */{
-    display:none;
-  }
-  .standPanel tbody tr{ cursor:pointer; }
-
-
-/* Tabs (mobile) */
-.tabsWrap{ margin:12px 0 0 0; }
+/* Tabs */
+.tabsWrap{ margin: 14px 0 10px 0; }
 .tabs{
-  display:none;
-  flex-direction: row;
-  gap:8px;
-  align-items:center;
-  justify-content:space-between;
-  padding:6px;
+  display:flex;
+  gap:10px;
+  padding:8px;
   border-radius:999px;
   background:var(--surface);
   border:1px solid var(--border);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  position: sticky;
+  top: 74px; /* below topbar */
+  z-index: 18;
+  backdrop-filter: blur(10px);
 }
 .tabs button{
   flex:1;
-  border:0;
-  background:transparent;
-  color:var(--muted);
-  padding:10px 12px;
+  border: 1px solid rgba(15,23,42,0.14);
+  background: rgba(255,255,255,0.82);
+  color: rgba(15,23,42,0.92);
   border-radius:999px;
+  padding:10px 12px;
   font-weight:800;
   cursor:pointer;
   font-size:14px;
 }
 .tabs button.active{
-  color:#fff;
-  background: linear-gradient(135deg, var(--accent), #7c3aed);
-  box-shadow: 0 10px 24px rgba(37,99,235,0.25);
+  background: linear-gradient(90deg, rgba(79,140,255,0.95), rgba(34,197,94,0.60));
+  border-color: rgba(255,255,255,0.20);
+  color: #0b1020;
 }
-.tabs{
-  width: 100%;
-  max-width: 520px;
-  margin: 10px auto 0;
-}
-.tabs button{
-  min-width: 0;
-  white-space: nowrap;
-}
-.tabs button:not(.active){
-  background: var(--surface2);
-  border: 1px solid var(--border);
-}
-
-@media (max-width: 820px){
-  .tabs{ 
-    display:flex;
-    position: sticky;
-    top: 66px; /* מתחת לכותרת הדביקה */
-    z-index: 15;
-    backdrop-filter: blur(10px);
+@media (prefers-color-scheme: dark){
+  .tabs button{
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.16);
+    color: rgba(255,255,255,0.88);
   }
-  .tab-panel{ display:none; }
-  .tab-panel.active{ display:block; }
 }
 
+/* panels */
+.tab-panel{ display:none; }
+.tab-panel.active{ display:block; }
 
+/* Team link */
 .teamLink{
   background: none;
   border: none;
@@ -511,6 +313,11 @@ a:hover{text-decoration:underline;}
   text-underline-offset: 3px;
 }
 .teamLink:active{ transform: translateY(1px); }
+
+/* Cards container (used on mobile) */
+.gamesCards{ display:none; }
+
+/* ===== Modal (GLOBAL, so it centers on desktop) ===== */
 .modalOverlay{
   position: fixed;
   inset: 0;
@@ -518,34 +325,21 @@ a:hover{text-decoration:underline;}
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 60;
-  padding: 14px;
+  z-index: 9999;
+  padding: 18px;
 }
 .modalOverlay.open{ display:flex; }
 
-@media (max-width: 700px){
-  .modalOverlay{ align-items: flex-end; }
-
-  .gamesTable{display:none;}
-  .gamesCards{display:block;}
-  /* make cards use full width */
-  .gameCard{margin: 12px 0;}
-
-}
-.modalOverlay.open{ display: flex; }
 .modal{
   width: min(760px, 100%);
+  max-height: 85vh;
+  overflow: auto;
   background: rgba(255,255,255,0.96);
   color: #0b1020;
   border: 1px solid rgba(15,23,42,0.14);
   border-radius: 18px;
   box-shadow: 0 18px 60px rgba(0,0,0,0.22);
-  overflow: hidden;
   backdrop-filter: blur(10px);
-}
-
-@media (max-width: 700px){
-  .modal{ border-radius: 18px 18px 0 0; }
 }
 .modalHeader{
   display:flex;
@@ -556,20 +350,22 @@ a:hover{text-decoration:underline;}
   border-bottom: 1px solid rgba(15,23,42,0.10);
   background: linear-gradient(180deg, rgba(15,23,42,0.04), rgba(15,23,42,0.0));
 }
-.modalTitle{
-  font-weight: 900;
-  font-size: 18px;
-  letter-spacing: 0.2px;
-}
-.iconBtn{
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.06);
-  color: var(--text);
+.modalTitle{ font-weight: 900; font-size: 18px; letter-spacing: .2px; }
+.modalBody{ padding: 14px 16px 16px; }
+
+#teamModalClose{
+  width:auto;
+  border: 1px solid rgba(15,23,42,0.14);
+  background: rgba(15,23,42,0.04);
+  color: #0b1020;
   border-radius: 12px;
   padding: 8px 10px;
   cursor: pointer;
+  line-height: 1;
 }
-.modalBody{ padding: 14px 16px 16px; }
+#teamModalClose::before{ content:"✕"; }
+
+/* KPI blocks inside modal */
 .kpis{ display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:10px; }
 @media (max-width: 700px){ .kpis{ grid-template-columns: 1fr; } }
 .kpi{
@@ -580,377 +376,52 @@ a:hover{text-decoration:underline;}
 }
 .kpi .label{ color: rgba(15,23,42,0.72); font-size: 12px; }
 .kpi .value{ font-weight: 900; margin-top: 4px; }
-.kpi .label{ color: var(--muted); font-size: 12px; }
-.kpi .value{ font-weight: 800; margin-top: 4px; }
+
 .badges{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px; }
 .badge{
-  border: 1px solid var(--border);
+  border: 1px solid rgba(15,23,42,0.16);
   background: rgba(148,163,184,0.10);
-  color: var(--text);
+  color: #0b1020;
   border-radius: 999px;
   padding: 7px 10px;
   font-size: 13px;
   line-height: 1.2;
 }
-.badge.win{
-  border-color: rgba(34,197,94,0.38);
-  background: rgba(34,197,94,0.12);
-  color: #064e3b;
-}
-.badge.lose{
-  border-color: rgba(255,107,107,0.38);
-  background: rgba(255,107,107,0.10);
-  color: #7f1d1d;
-}
-.badge.draw{
-  border-color: rgba(245,158,11,0.42);
-  background: rgba(245,158,11,0.12);
-  color: #7c2d12;
-}
+.badge.win{ border-color: rgba(34,197,94,0.38); background: rgba(34,197,94,0.12); color:#064e3b; }
+.badge.lose{ border-color: rgba(255,107,107,0.38); background: rgba(255,107,107,0.10); color:#7f1d1d; }
+.badge.draw{ border-color: rgba(245,158,11,0.42); background: rgba(245,158,11,0.12); color:#7c2d12; }
 .sectionTitle{ margin: 14px 0 8px; font-size: 14px; font-weight: 800; }
 .smallTable td, .smallTable th{ white-space: normal; }
 
-/* Professional round bar */
-.controls{
-  display:flex;
-  gap:12px;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-}
-.roundPicker{
-  font-weight:800;
-  color: var(--muted);
-}
-.roundNav{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  background: rgba(255,255,255,0.06);
-  border:1px solid var(--border);
-  border-radius: 16px;
-  padding: 10px 12px;
-}
-#roundSelect{
-  min-width: 180px;
-  font-weight:800;
-}
-.iconBtn{
-  border-radius: 14px;
-  padding: 10px 14px;
-  font-weight:900;
-}
-@media (max-width: 720px){
-  .roundNav{ width:100%; justify-content:space-between; }
-  #roundSelect{ flex:1; min-width:0; }
-}
-
-
-/* ======= UI hotfix: consistent tabs + single-panel layout + better tables ======= */
-:root{
-  --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans Hebrew", "Heebo", sans-serif;
-}
-html, body{ font-family: var(--font); }
-
-/* Tabs always visible (web + mobile) */
-.tabs{ display:flex !important; position: sticky; top: 14px; z-index: 20; backdrop-filter: blur(10px); }
-.tabsWrap{ margin: 14px 0 10px 0; }
-.tabs{ gap:10px; padding:8px; }
-.tabs button{
-  border-radius: 999px;
-  font-weight: 700;
-  letter-spacing: .2px;
-  padding: 10px 14px;
-  /* Inactive tab MUST be readable on the light background (mobile Safari) */
-  background: rgba(255,255,255,0.82);
-  border: 1px solid rgba(15,23,42,0.14);
-  color: rgba(15,23,42,0.92);
-}
-.tabs button.active{
-  background: linear-gradient(90deg, rgba(79,140,255,0.95), rgba(34,197,94,0.60));
-  border-color: rgba(255,255,255,0.20);
-  color: #0b1020;
-}
-
-@media (prefers-color-scheme: dark){
-  .tabs button{
-    background: rgba(255,255,255,0.10);
-    border: 1px solid rgba(255,255,255,0.16);
-    color: rgba(255,255,255,0.88);
-  }
-}
-
-/* Toggle layout: show only active panel on ALL sizes */
-.tab-panel{ display:none !important; }
-.tab-panel.active{ display:block !important; }
-
-/* Grid should not reserve two columns when using tabs */
-.grid{ grid-template-columns: 1fr !important; gap: 14px !important; }
-
-/* Table scrolling inside panel (not the whole page) */
-.scroll{
-  overflow-x: auto !important;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-.scroll table{ min-width: 720px; } /* allows horizontal scroll on desktop if needed */
-
-/* Score column always centered & LTR */
-td.score, .scoreBadge{
-  direction: ltr;
-  unicode-bidi: plaintext;
-  text-align: center;
-}
-table td:nth-child(3), table th:nth-child(3){ text-align:center; }
-
-/* Remove heavy blue pills for team names in web tables */
-.pill{
-  background: rgba(255,255,255,0.08) !important;
-  color: rgba(255,255,255,0.92) !important;
-  border: 1px solid rgba(255,255,255,0.14) !important;
-}
-.pill.galil{
-  background: rgba(34,197,94,0.14) !important;
-  border-color: rgba(34,197,94,0.22) !important;
-}
-
-/* Mobile: allow team names to wrap (no clipping) */
+/* ===== Mobile ===== */
 @media (max-width: 700px){
-  .scroll table{ min-width: 0; width: 100%; }
-  .grid{ gap: 12px !important; }
-  table td, table th{ white-space: normal; }
-  table td:nth-child(2), table td:nth-child(4){ word-break: break-word; }
-}
+  .wrap{padding:12px;}
+  .topbar{margin:-12px -12px 12px -12px; padding:12px;}
+  .card{padding:12px; border-radius:16px;}
+  h1{font-size:20px;}
+  .sub{font-size:12.5px;}
+  label{min-width:0;}
+  .roundNav{grid-template-columns:52px 1fr 52px;}
+  .tabs{ top: 66px; }
 
-/* Modal close button: icon only, no random "X" feeling */
-#teamModalClose{ padding: 8px 10px; }
-#teamModalClose{ font-weight: 700; }
-#teamModalClose::before{ content:"✕"; }
-#teamModalClose{ color: rgba(255,255,255,0.85); }
-#teamModalClose{ font-size: 14px; }
-#teamModalClose{ line-height: 1; }
-#teamModalClose{ white-space: nowrap; }
-#teamModalClose{ }
-#teamModalClose{ }
-#teamModalClose{ }
+  /* show cards instead of table */
+  .gamesTable{ display:none; }
+  .gamesCards{ display:block; }
 
-.gamesCards{display:none;}
-  /* make cards use full width */
-  .gameCard{margin: 12px 0;}
+  /* modal bottom-sheet feel */
+  .modalOverlay{ align-items: flex-end; padding: 0; }
+  .modal{ border-radius: 18px 18px 0 0; max-height: 88vh; width: 100%; }
 
-}
-.modalOverlay.open{ display: flex; }
-.modal{
-  width: min(760px, 100%);
-  background: rgba(255,255,255,0.96);
-  color: #0b1020;
-  border: 1px solid rgba(15,23,42,0.14);
-  border-radius: 18px;
-  box-shadow: 0 18px 60px rgba(0,0,0,0.22);
-  overflow: hidden;
-  backdrop-filter: blur(10px);
-}
-
-@media (max-width: 700px){
-  .modal{ border-radius: 18px 18px 0 0; }
-}
-.modalHeader{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:10px;
-  padding: 14px 16px;
-  border-bottom: 1px solid rgba(15,23,42,0.10);
-  background: linear-gradient(180deg, rgba(15,23,42,0.04), rgba(15,23,42,0.0));
-}
-.modalTitle{
-  font-weight: 900;
-  font-size: 18px;
-  letter-spacing: 0.2px;
-}
-.iconBtn{
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.06);
-  color: var(--text);
-  border-radius: 12px;
-  padding: 8px 10px;
-  cursor: pointer;
-}
-.modalBody{ padding: 14px 16px 16px; }
-.kpis{ display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:10px; }
-@media (max-width: 700px){ .kpis{ grid-template-columns: 1fr; } }
-.kpi{
-  background: rgba(15,23,42,0.03);
-  border: 1px solid rgba(15,23,42,0.10);
-  border-radius: 14px;
-  padding: 10px 12px;
-}
-.kpi .label{ color: rgba(15,23,42,0.72); font-size: 12px; }
-.kpi .value{ font-weight: 900; margin-top: 4px; }
-.kpi .label{ color: var(--muted); font-size: 12px; }
-.kpi .value{ font-weight: 800; margin-top: 4px; }
-.badges{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px; }
-.badge{
-  border: 1px solid var(--border);
-  background: rgba(148,163,184,0.10);
-  color: var(--text);
-  border-radius: 999px;
-  padding: 7px 10px;
-  font-size: 13px;
-  line-height: 1.2;
-}
-.badge.win{
-  border-color: rgba(34,197,94,0.38);
-  background: rgba(34,197,94,0.12);
-  color: #064e3b;
-}
-.badge.lose{
-  border-color: rgba(255,107,107,0.38);
-  background: rgba(255,107,107,0.10);
-  color: #7f1d1d;
-}
-.badge.draw{
-  border-color: rgba(245,158,11,0.42);
-  background: rgba(245,158,11,0.12);
-  color: #7c2d12;
-}
-.sectionTitle{ margin: 14px 0 8px; font-size: 14px; font-weight: 800; }
-.smallTable td, .smallTable th{ white-space: normal; }
-
-/* Professional round bar */
-.controls{
-  display:flex;
-  gap:12px;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-}
-.roundPicker{
-  font-weight:800;
-  color: var(--muted);
-}
-.roundNav{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  background: rgba(255,255,255,0.06);
-  border:1px solid var(--border);
-  border-radius: 16px;
-  padding: 10px 12px;
-}
-#roundSelect{
-  min-width: 180px;
-  font-weight:800;
-}
-.iconBtn{
-  border-radius: 14px;
-  padding: 10px 14px;
-  font-weight:900;
-}
-@media (max-width: 720px){
-  .roundNav{ width:100%; justify-content:space-between; }
-  #roundSelect{ flex:1; min-width:0; }
-}
-
-
-/* ======= UI hotfix: consistent tabs + single-panel layout + better tables ======= */
-:root{
-  --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans Hebrew", "Heebo", sans-serif;
-}
-html, body{ font-family: var(--font); }
-
-/* Tabs always visible (web + mobile) */
-.tabs{ display:flex !important; position: sticky; top: 14px; z-index: 20; backdrop-filter: blur(10px); }
-.tabsWrap{ margin: 14px 0 10px 0; }
-.tabs{ gap:10px; padding:8px; }
-.tabs button{
-  border-radius: 999px;
-  font-weight: 700;
-  letter-spacing: .2px;
-  padding: 10px 14px;
-  /* Inactive tab MUST be readable on the light background (mobile Safari) */
-  background: rgba(255,255,255,0.82);
-  border: 1px solid rgba(15,23,42,0.14);
-  color: rgba(15,23,42,0.92);
-}
-.tabs button.active{
-  background: linear-gradient(90deg, rgba(79,140,255,0.95), rgba(34,197,94,0.60));
-  border-color: rgba(255,255,255,0.20);
-  color: #0b1020;
-}
-
-@media (prefers-color-scheme: dark){
-  .tabs button{
-    background: rgba(255,255,255,0.10);
-    border: 1px solid rgba(255,255,255,0.16);
-    color: rgba(255,255,255,0.88);
-  }
-}
-
-/* Toggle layout: show only active panel on ALL sizes */
-.tab-panel{ display:none !important; }
-.tab-panel.active{ display:block !important; }
-
-/* Grid should not reserve two columns when using tabs */
-.grid{ grid-template-columns: 1fr !important; gap: 14px !important; }
-
-/* Table scrolling inside panel (not the whole page) */
-.scroll{
-  overflow-x: auto !important;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-.scroll table{ min-width: 720px; } /* allows horizontal scroll on desktop if needed */
-
-/* Score column always centered & LTR */
-td.score, .scoreBadge{
-  direction: ltr;
-  unicode-bidi: plaintext;
-  text-align: center;
-}
-table td:nth-child(3), table th:nth-child(3){ text-align:center; }
-
-/* Remove heavy blue pills for team names in web tables */
-.pill{
-  background: rgba(255,255,255,0.08) !important;
-  color: rgba(255,255,255,0.92) !important;
-  border: 1px solid rgba(255,255,255,0.14) !important;
-}
-.pill.galil{
-  background: rgba(34,197,94,0.14) !important;
-  border-color: rgba(34,197,94,0.22) !important;
-}
-
-/* Mobile: allow team names to wrap (no clipping) */
-@media (max-width: 700px){
-  .scroll table{ min-width: 0; width: 100%; }
-  .grid{ gap: 12px !important; }
-  table td, table th{ white-space: normal; }
-  table td:nth-child(2), table td:nth-child(4){ word-break: break-word; }
-}
-
-/* Modal close button: icon only, no random "X" feeling */
-#teamModalClose{ padding: 8px 10px; }
-#teamModalClose{ font-weight: 700; }
-#teamModalClose::before{ content:"✕"; }
-#teamModalClose{ color: rgba(255,255,255,0.85); }
-#teamModalClose{ font-size: 14px; }
-#teamModalClose{ line-height: 1; }
-#teamModalClose{ white-space: nowrap; }
-#teamModalClose{ }
-#teamModalClose{ }
-#teamModalClose{ }
-
-@media (max-width: 680px){
-  .gcTeam .teamLink{width:100%; text-align:inherit; background:transparent; border:0; padding:0; margin:0;}
-  .gameCard{width:100%;}
-}
-
-@media (max-width: 680px){
-  .gcTeam .teamLink{width:100%; text-align:inherit; background:transparent; border:0; padding:0; margin:0;}
-  .gameCard{width:100%;}
+  /* standings: hide extra columns */
+  .standPanel table{ min-width:0; width:100%; }
+  .standPanel th, .standPanel td{ font-size:13px; padding:10px 8px; }
+  .standPanel th:nth-child(4), .standPanel td:nth-child(4),
+  .standPanel th:nth-child(6), .standPanel td:nth-child(6),
+  .standPanel th:nth-child(8), .standPanel td:nth-child(8),
+  .standPanel th:nth-child(9), .standPanel td:nth-child(9){ display:none; }
 }
 </style>
+
   <!-- PWA / Home Screen -->
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#1e40ff">
