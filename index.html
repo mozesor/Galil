@@ -516,8 +516,6 @@ a:hover{text-decoration:underline;}
 .gcHome{text-align:right;}
 .gcAway{text-align:left;}
 .gcTeam{min-width:0;}
-.gcTeam 
-}
 
 .teamLink{
   display:-webkit-box;
@@ -771,7 +769,7 @@ table td:nth-child(3), table th:nth-child(3){ text-align:center; }
 #teamModalClose{ }
 #teamModalClose{ }
 
-.modalOverlay.open{ display: flex; }
+
 .modal{
   width: min(760px, 100%);
   background: rgba(255,255,255,0.96);
@@ -1086,7 +1084,17 @@ table td:nth-child(3), table th:nth-child(3){ text-align:center; }
 <script>
   let DATA = null;
 
-  function fmtDate(s){
+  
+  // Ensure only ONE games view is visible:
+  // Desktop/Web: show table, hide cards. Mobile: hide table, show cards.
+  function updateGamesLayout(){
+    const isMobile = window.matchMedia("(max-width: 700px)").matches;
+    const tableWrap = document.querySelector(".gamesTable");
+    const cardsWrap = document.getElementById("gamesCards");
+    if(tableWrap) tableWrap.style.display = isMobile ? "none" : "block";
+    if(cardsWrap) cardsWrap.style.display = isMobile ? "block" : "none";
+  }
+function fmtDate(s){
     if(!s) return "";
     try{
       const d = new Date(s);
@@ -1448,6 +1456,8 @@ tr.innerHTML = `
       }
     }
 
+    updateGamesLayout();
+
     const sb = document.getElementById("standBody");
     sb.innerHTML = "";
     for(const t of (DATA.standings || [])){
@@ -1495,8 +1505,12 @@ tr.innerHTML = `
     if(e.key === "Escape") closeTeamModal();
   });
 
+  updateGamesLayout();
+  window.addEventListener("resize", updateGamesLayout);
+
   load();
 </script>
+
 
 <script>
 (function(){
@@ -1529,7 +1543,3 @@ tr.innerHTML = `
   }catch(e){}
   setTab(initial);
 })();
-</script>
-
-</body>
-</html>
