@@ -7,7 +7,7 @@
     "currentRoundNumber": 14,
     "currentRoundName": "מחזור 13"
   },
-  "fetchedAt": "2026-01-23T14:21:34.496Z",
+  "fetchedAt": "2026-01-23T14:50:23.278Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -314,14 +314,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -533,14 +533,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -614,16 +614,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": 24
       },
@@ -814,16 +814,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": 3
       },
@@ -864,14 +864,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -983,16 +983,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": 6
       }
@@ -1164,16 +1164,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": 6
       },
@@ -1383,14 +1383,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -1614,14 +1614,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -1883,16 +1883,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": 3
       }
@@ -2014,14 +2014,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -2164,16 +2164,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -2364,14 +2364,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -2433,16 +2433,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": 2
       }
@@ -2683,14 +2683,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -2733,16 +2733,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": 1
       }
@@ -2964,16 +2964,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": 2
       },
@@ -3033,14 +3033,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -3364,14 +3364,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -3783,16 +3783,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": 1
       }
@@ -3864,16 +3864,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": 0
       },
@@ -3964,18 +3964,18 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
-        "goals": -1
+        "goals": 4
       },
       "away": {
         "id": "68d612211b7b720e58adeec5",
@@ -3983,18 +3983,18 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -4033,14 +4033,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -4114,14 +4114,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -4414,16 +4414,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -4633,16 +4633,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -4714,14 +4714,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -5083,14 +5083,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -5233,16 +5233,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -5264,16 +5264,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -5464,14 +5464,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -5783,14 +5783,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -5983,16 +5983,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -6114,16 +6114,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -6333,14 +6333,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -6483,14 +6483,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -6683,16 +6683,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -6864,16 +6864,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -7064,14 +7064,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -7114,14 +7114,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -7333,16 +7333,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -7633,16 +7633,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -7783,14 +7783,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -7864,14 +7864,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -7983,16 +7983,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -8364,16 +8364,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -8433,14 +8433,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -8614,14 +8614,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 24,
-            "against": 38,
-            "difference": -14
+            "for": 25,
+            "against": 42,
+            "difference": -17
           },
           "points": 10
         },
@@ -8633,16 +8633,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 4,
+          "games": 11,
+          "wins": 5,
           "draws": 2,
           "losses": 4,
           "goals": {
-            "for": 48,
-            "against": 21,
-            "difference": 27
+            "for": 52,
+            "against": 22,
+            "difference": 30
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -8903,6 +8903,19 @@
     },
     {
       "rank": 5,
+      "provider_id": 8295,
+      "name": "הפועל עכו 2",
+      "games": 11,
+      "wins": 5,
+      "draws": 2,
+      "losses": 4,
+      "gf": 52,
+      "ga": 22,
+      "gd": 30,
+      "points": 17
+    },
+    {
+      "rank": 6,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 13,
@@ -8915,7 +8928,7 @@
       "points": 17
     },
     {
-      "rank": 6,
+      "rank": 7,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2",
       "games": 9,
@@ -8926,19 +8939,6 @@
       "ga": 22,
       "gd": 14,
       "points": 17
-    },
-    {
-      "rank": 7,
-      "provider_id": 8295,
-      "name": "הפועל עכו 2",
-      "games": 10,
-      "wins": 4,
-      "draws": 2,
-      "losses": 4,
-      "gf": 48,
-      "ga": 21,
-      "gd": 27,
-      "points": 14
     },
     {
       "rank": 8,
@@ -8996,13 +8996,13 @@
       "rank": 12,
       "provider_id": 2157,
       "name": "הפועל חיפה 2",
-      "games": 10,
+      "games": 11,
       "wins": 3,
       "draws": 1,
-      "losses": 6,
-      "gf": 24,
-      "ga": 38,
-      "gd": -14,
+      "losses": 7,
+      "gf": 25,
+      "ga": 42,
+      "gd": -17,
       "points": 10
     },
     {
