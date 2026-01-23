@@ -951,34 +951,63 @@ table td:nth-child(3), table th:nth-child(3){ text-align:center; }
   .gameCard{width:100%;}
 }
 
-/* ===== HOTFIX: desktop = table only, clean links, centered result ===== */
-.resultCell{ text-align:center; }
-.resultCell .scoreBadge{ margin: 0 auto; }
-.teamLink{
-  background: transparent !important;
-  border: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  color: var(--accent) !important;
-  font-weight: 600;
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.teamLink.winner, .teamLink.loser{ background: transparent !important; }
-.gamesCards{ display:none; }
-@media (max-width: 700px){
-  .gamesTable{ display:none; }
-  .gamesCards{ display:block; }
-}
+/* ===== PATCH v4.3: Modal always centered + scrollable + clickable close ===== */
 .modalOverlay{
   position: fixed !important;
   inset: 0 !important;
   z-index: 9999 !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  background: rgba(15,23,42,0.55) !important;
 }
-body.modalOpen{ overflow: hidden; }
+.modalOverlay.open{ display: flex !important; }
+
+.modal{
+  width: min(860px, 100%) !important;
+  max-height: calc(100dvh - 40px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+.modalBody{
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modalHeader .iconBtn{
+  background: rgba(15,23,42,0.06) !important;
+  border-color: rgba(15,23,42,0.18) !important;
+  color: #0b1020 !important;
+}
+
+#teamModalClose{
+  min-width: 40px;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+}
+#teamModalClose::before{ content: none !important; }
+
+@media (max-width: 700px){
+  .modalOverlay{
+    align-items: flex-end !important;
+    padding: 0 !important;
+  }
+  .modal{
+    width: 100% !important;
+    max-height: 92dvh !important;
+    border-radius: 18px 18px 0 0 !important;
+  }
+}
+/* ===== END PATCH ===== */
+
 </style>
   <!-- PWA / Home Screen -->
   <link rel="manifest" href="manifest.webmanifest">
@@ -1075,7 +1104,7 @@ body.modalOpen{ overflow: hidden; }
     <div class="modal">
       <div class="modalHeader">
         <div class="modalTitle" id="teamModalTitle">סטטיסטיקה</div>
-        <button class="iconBtn" id="teamModalClose" aria-label="סגור"></button>
+        <button class="iconBtn" id="teamModalClose" aria-label="סגור" type="button">✕</button>
       </div>
       <div class="modalBody" id="teamModalBody"></div>
     </div>
@@ -1282,13 +1311,25 @@ body.modalOpen{ overflow: hidden; }
 
     const ov = document.getElementById("teamModalOverlay");
     ov.classList.add("open");
-    document.body.classList.add("modalOpen");
-}
+    // lock page scroll while modal is open
+    if(!document.body.dataset._prevOverflow){
+      document.body.dataset._prevOverflow = document.body.style.overflow || "";
+    }
+    document.body.style.overflow = "hidden";
+  }
 
   function closeTeamModal(){
-    document.getElementById("teamModalOverlay")?.classList.remove("open");
-    document.body.classList.remove("modalOpen");
-}
+    const ov = document.getElementById("teamModalOverlay");
+    ov?.classList.remove("open");
+    // restore page scroll
+    const prev = document.body.dataset._prevOverflow;
+    if(prev !== undefined){
+      document.body.style.overflow = prev;
+      delete document.body.dataset._prevOverflow;
+    } else {
+      document.body.style.overflow = "";
+    }
+  }
 
 function showError(msg){
     const box = document.getElementById("errorBox");
@@ -1418,12 +1459,17 @@ function updateRoundButtons(){
 tr.innerHTML = `
         <td>${fmtDate(g.date)}</td>
         <td><button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></td>
-        <td class="resultCell">
-          <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
+        <td>
+          <div class="matchTeams">
+            <span class="teamName ${homeCls}">${esc(g.home?.name || "")}</span>
+            <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
+            <span class="teamName ${awayCls}">${esc(g.away?.name || "")}</span>
+          </div>
+          <div class="matchMeta">${fmtDate(g.date)}</div>
         </td>
         <td><button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></td>
-      `;
-if(isTeam) tr.className = "hl";
+              `;
+      if(isTeam) tr.className = "hl";
       body.appendChild(tr);
 
       if(cards){
