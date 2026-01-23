@@ -90,9 +90,9 @@ h1{margin:0; font-size:22px; letter-spacing:0.2px;}
   display:inline-flex;
   align-items:center;
   gap:8px;
-  background: rgba(79,140,255,0.14);
-  border: 1px solid rgba(79,140,255,0.22);
-  padding:7px 12px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding:6px 10px;
   border-radius:999px;
   font-size:13px;
   color: var(--text);
@@ -144,8 +144,21 @@ input,select,button{
 
 /* --- round navigation + icon buttons --- */
 .roundPicker{min-width:0}
-.roundNav{display:flex; gap:8px; align-items:center}
-.roundNav select{flex:1; min-width:0}
+.roundNav{display:grid; grid-template-columns:56px 1fr 56px; gap:10px; align-items:center; width:100%;}
+.roundNav select{width:100%; min-width:0; font-weight:800;}
+.roundStatus{
+  margin-top:10px;
+  text-align:center;
+  font-weight:900;
+  color: var(--text);
+  font-size: 14px;
+  display:inline-block;
+  padding:6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  width:100%;
+}
 .iconBtn{
   border: 1px solid rgba(15,23,42,0.14);
   background: rgba(15,23,42,0.04);
@@ -212,19 +225,38 @@ button:active{transform:translateY(1px);}
 @media (min-width: 960px){ .grid{grid-template-columns: 1.35fr 1fr;} }
 
 .scroll{
-  overflow:auto;
+  overflow-y:auto;
+  overflow-x:auto;
   max-height:70vh;
   border-radius: 14px;
   border: 1px solid var(--border);
+  -webkit-overflow-scrolling: touch;
 }
 
 table{width:100%; border-collapse:separate; border-spacing:0;}
+/* Allow horizontal scroll when many columns */
+.standPanel table{min-width: 860px;}
+.gamesPanel table{min-width: 700px;}
 th,td{
   padding:10px 10px;
   border-bottom:1px solid var(--border);
   text-align:right;
+  vertical-align: middle;
   white-space:nowrap;
   font-size:14px;
+}
+
+/* Center score column */
+.gamesPanel table th:nth-child(3),
+.gamesPanel table td:nth-child(3){
+  text-align:center;
+}
+.gamesPanel table td:nth-child(3){ width: 140px; }
+
+/* Desktop: don't repeat team names inside the score column (keep just the badge) */
+@media (min-width: 900px){
+  .matchTeams{ justify-content:center; }
+  .matchTeams .teamName{ display:none; }
 }
 th{
   position:sticky; top:0;
@@ -293,8 +325,8 @@ tbody tr:hover td{background: rgba(79,140,255,0.08);}
 
 .scoreBadge .score{direction:ltr; unicode-bidi:embed;}
 .badgeScore{direction:ltr; unicode-bidi:embed;}
-.hl{background: rgba(255,204,102,0.20) !important;}
-.hl2{background: rgba(34,197,94,0.18) !important;}
+.hl{background: rgba(245,158,11,0.10) !important; border-right: 3px solid rgba(245,158,11,0.55);}
+.hl2{background: rgba(34,197,94,0.10) !important; border-right: 3px solid rgba(34,197,94,0.55);}
 
 .err{
   background: rgba(255,107,107,0.18);
@@ -381,6 +413,7 @@ a:hover{text-decoration:underline;}
 .tabsWrap{ margin:12px 0 0 0; }
 .tabs{
   display:none;
+  flex-direction: row;
   gap:8px;
   align-items:center;
   justify-content:space-between;
