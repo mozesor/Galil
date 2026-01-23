@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>לוח משחקים • גליל עליון</title>
+  
+  <!-- build: v4.2 FINAL fixTabs-noDup -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+<title>לוח משחקים • גליל עליון</title>
   <style>
 :root{
   --bg: #0b1020;
@@ -494,46 +499,6 @@ a:hover{text-decoration:underline;}
 }
 
 
-
-/* Cards view (mobile) */
-.gamesTable{display:block;}
-.gamesCards{display:none;}
-.gameCard{
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 12px 12px 10px;
-  margin: 10px 0;
-  box-shadow: var(--shadow);
-}
-.gcRow{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
-  align-items:center;
-  gap:10px;
-  direction:ltr;
-}
-.gcHome{text-align:right;}
-.gcAway{text-align:left;}
-.gcTeam{min-width:0;}
-
-.teamLink{
-  display:-webkit-box;
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:2;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  font-weight:800;
-  line-height:1.15;
-}
-.gcScore{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:6px;
-  min-width:78px;
-}
-
 .teamLink{
   background: none;
   border: none;
@@ -769,7 +734,12 @@ table td:nth-child(3), table th:nth-child(3){ text-align:center; }
 #teamModalClose{ }
 #teamModalClose{ }
 
+.gamesCards{display:none;}
+  /* make cards use full width */
+  .gameCard{margin: 12px 0;}
 
+}
+.modalOverlay.open{ display: flex; }
 .modal{
   width: min(760px, 100%);
   background: rgba(255,255,255,0.96);
@@ -1032,8 +1002,8 @@ table td:nth-child(3), table th:nth-child(3){ text-align:center; }
     <div class="grid">
       <div class="card tab-panel active gamesPanel" data-panel="games">
         <h3 style="margin:0 0 10px 0;">משחקים</h3>
-        <div class="scroll gamesTable">
-          <table>
+        <div class="scroll">
+          <table class="gamesTable">
             <thead>
               <tr>
                 <th>תאריך</th>
@@ -1044,8 +1014,9 @@ table td:nth-child(3), table th:nth-child(3){ text-align:center; }
             </thead>
             <tbody id="gamesBody"></tbody>
           </table>
-        </div>
+
         <div id="gamesCards" class="gamesCards" aria-label="כרטיסי משחקים"></div>
+        </div>
       </div>
 
       <div class="card tab-panel standPanel" data-panel="standings">
@@ -1084,17 +1055,7 @@ table td:nth-child(3), table th:nth-child(3){ text-align:center; }
 <script>
   let DATA = null;
 
-  
-  // Ensure only ONE games view is visible:
-  // Desktop/Web: show table, hide cards. Mobile: hide table, show cards.
-  function updateGamesLayout(){
-    const isMobile = window.matchMedia("(max-width: 700px)").matches;
-    const tableWrap = document.querySelector(".gamesTable");
-    const cardsWrap = document.getElementById("gamesCards");
-    if(tableWrap) tableWrap.style.display = isMobile ? "none" : "block";
-    if(cardsWrap) cardsWrap.style.display = isMobile ? "block" : "none";
-  }
-function fmtDate(s){
+  function fmtDate(s){
     if(!s) return "";
     try{
       const d = new Date(s);
@@ -1456,8 +1417,6 @@ tr.innerHTML = `
       }
     }
 
-    updateGamesLayout();
-
     const sb = document.getElementById("standBody");
     sb.innerHTML = "";
     for(const t of (DATA.standings || [])){
@@ -1505,12 +1464,8 @@ tr.innerHTML = `
     if(e.key === "Escape") closeTeamModal();
   });
 
-  updateGamesLayout();
-  window.addEventListener("resize", updateGamesLayout);
-
   load();
 </script>
-
 
 <script>
 (function(){
@@ -1543,3 +1498,7 @@ tr.innerHTML = `
   }catch(e){}
   setTab(initial);
 })();
+</script>
+
+</body>
+</html>
