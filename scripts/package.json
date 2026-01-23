@@ -1,9 +1,0 @@
-{
-  "name": "galil-data-fetcher",
-  "version": "4.1.0",
-  "private": true,
-  "description": "Fetches league rounds/games and writes data.json for GitHub Pages",
-  "scripts": {
-    "fetch": "node fetch-data.js"
-  }
-}
