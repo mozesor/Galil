@@ -520,6 +520,12 @@ a:hover{text-decoration:underline;}
 
 @media (max-width: 700px){
   .modalOverlay{ align-items: flex-end; }
+
+  .gamesTable{display:none;}
+  .gamesCards{display:block;}
+  /* make cards use full width */
+  .gameCard{margin: 12px 0;}
+
 }
 .modalOverlay.open{ display: flex; }
 .modal{
@@ -1127,6 +1133,8 @@ function updateRoundButtons(){
 
     const body = document.getElementById("gamesBody");
     body.innerHTML = "";
+    const cards = document.getElementById("gamesCards");
+    if(cards) cards.innerHTML = "";
     for(const g of games){
       const tr = document.createElement("tr");
       const isTeam = includesTeam(g, teamQ);
@@ -1157,6 +1165,22 @@ tr.innerHTML = `
               `;
       if(isTeam) tr.className = "hl";
       body.appendChild(tr);
+
+      if(cards){
+        const card = document.createElement("div");
+        card.className = "gameCard" + (isTeam ? " hl" : "");
+        card.innerHTML = `
+          <div class="gcRow">
+            <div class="gcTeam gcHome"><button class="teamLink ${homeCls}" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></div>
+            <div class="gcScore">
+              <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
+              <div class="matchMeta">${fmtDate(g.date)}</div>
+            </div>
+            <div class="gcTeam gcAway"><button class="teamLink ${awayCls}" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></div>
+          </div>
+        `;
+        cards.appendChild(card);
+      }
     }
 
     const sb = document.getElementById("standBody");
@@ -1243,4 +1267,45 @@ tr.innerHTML = `
 </script>
 
 </body>
-</html>
+</html<div id="gamesCards" class="gamesCards" aria-label="כרטיסי משחקים"></div>
+      
+  .gamesCards{display:none;}
+  .gameCard{
+    background: var(--card);
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 16px;
+    padding: 12px 12px 10px;
+    margin: 10px 0;
+    box-shadow: 0 10px 26px rgba(15,23,42,.06);
+  }
+  .gcRow{
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "home score away";
+    gap: 10px;
+    align-items:center;
+  }
+  .gcHome{grid-area:home; text-align:right;}
+  .gcAway{grid-area:away; text-align:left;}
+  .gcTeam{min-width:0;}
+  .gcTeam .teamLink{
+    display:block;
+    width:100%;
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: rgba(59,130,246,.12);
+    border: 1px solid rgba(59,130,246,.18);
+    font-weight: 800;
+    line-height: 1.25;
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .gcTeam .teamLink:hover{ background: rgba(59,130,246,.16); }
+  .gcScore{grid-area:score; display:flex; flex-direction:column; align-items:center; gap:6px; min-width:72px;}
+  .gcScore .scoreBadge{margin:0; }
+  .gcMeta{margin-top:10px; color: var(--muted); font-weight:600; font-size: .92rem; text-align:center;}
+
+>
