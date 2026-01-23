@@ -237,6 +237,56 @@ th{
   th{ background: rgba(255,255,255,0.95); }
 }
 
+
+.matchLine{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.matchTeams{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  width:100%;
+}
+.teamName{
+  max-width:46%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-weight:650;
+}
+.teamName.winner{ color: var(--accent2); font-weight:800; }
+.teamName.loser{ opacity:0.72; }
+.scoreBadge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.18);
+  font-weight:800;
+  min-width:74px;
+}
+@media (prefers-color-scheme: light){
+  .scoreBadge{ background:#ffffff; }
+}
+.scoreBadge.win{ border-color: rgba(34,197,94,0.45); background: rgba(34,197,94,0.15); }
+.scoreBadge.lose{ border-color: rgba(220,38,38,0.45); background: rgba(220,38,38,0.13); }
+.scoreBadge.draw{ border-color: rgba(245,158,11,0.55); background: rgba(245,158,11,0.12); }
+.scoreBadge.pending{ opacity:0.85; }
+.matchMeta{
+  margin-top:8px;
+  color: var(--muted);
+  font-size: 12.5px;
+  display:none;
+}
+@media (max-width: 640px){
+  .matchMeta{display:block;}
+}
 tbody tr:hover td{background: rgba(79,140,255,0.08);}
 
 .hl{background: rgba(255,204,102,0.20) !important;}
@@ -254,56 +304,74 @@ tbody tr:hover td{background: rgba(79,140,255,0.08);}
 a{color: var(--accent); text-decoration:none;}
 a:hover{text-decoration:underline;}
 
-/* Mobile table -> cards (no code changes) */
+/* Mobile tweaks */
 @media (max-width: 640px){
   .wrap{padding:12px;}
   .topbar{margin:-12px -12px 12px -12px; padding:12px;}
   .card{padding:12px; border-radius:16px;}
   h1{font-size:20px;}
   .sub{font-size:12.5px;}
+  label{min-width:0;}
+  .controls{gap:10px;}
+  .roundNav{width:100%;}
+  .roundNav{display:grid; grid-template-columns:52px 1fr 52px; gap:10px; align-items:center;}
+  .roundNav select{width:100%;}
+  .roundStatus{
+    margin-top:8px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
 
-  .scroll{border:none; max-height:none;}
-  table,tbody,tr,td{display:block; width:100%;}
-  thead{display:none;}
-  tr{
+  /* --- Games: render each match as a clean card (single row) --- */
+  .gamesPanel .scroll{border:none; max-height:none;}
+  .gamesPanel table, .gamesPanel tbody, .gamesPanel tr, .gamesPanel td{display:block; width:100%;}
+  .gamesPanel thead{display:none;}
+  .gamesPanel tr{
     border: 1px solid var(--border);
     background: var(--surface2);
     border-radius: 16px;
     margin-bottom: 10px;
     overflow:hidden;
   }
-  td{
-    border-bottom:1px solid var(--border);
-    display:flex;
-    justify-content:space-between;
-    gap:12px;
-    padding:10px 12px;
-    white-space:normal;
-  }
-  td:last-child{border-bottom:none;}
-  td::before{
-    content:"";
-    color: var(--muted);
-    font-weight: 700;
-    flex: 0 0 auto;
+  /* show only the combined result cell on mobile */
+  .gamesPanel td:nth-child(1),
+  .gamesPanel td:nth-child(2),
+  .gamesPanel td:nth-child(4){display:none;}
+  .gamesPanel td:nth-child(3){
+    border-bottom:none;
+    padding:12px;
   }
 
-  /* Games table labels (first card in .grid) */
-  .grid > .card:first-child td:nth-child(1)::before{content:"תאריך";}
-  .grid > .card:first-child td:nth-child(2)::before{content:"בית";}
-  .grid > .card:first-child td:nth-child(3)::before{content:"תוצאה";}
-  .grid > .card:first-child td:nth-child(4)::before{content:"חוץ";}
-  .grid > .card:first-child td:nth-child(5)::before{content:"מיקום";}
+  /* --- Standings (mobile): compact columns, tap row for details --- */
+  .standPanel .scroll{
+    overflow: visible;
+    max-height: none;
+    border: none;
+    border-radius: 0;
+  }
+  .standPanel table{
+    width:100%;
+    min-width:0;
+  }
+  .standPanel th, .standPanel td{
+    white-space:nowrap;
+    font-size:13px;
+    padding:10px 8px;
+  }
+  /* Hide extra columns on mobile; details are in the modal */
+  .standPanel th:nth-child(4),
+  .standPanel td:nth-child(4), /* מש */
+  .standPanel th:nth-child(6),
+  .standPanel td:nth-child(6), /* תיקו */
+  .standPanel th:nth-child(8),
+  .standPanel td:nth-child(8), /* + */
+  .standPanel th:nth-child(9),
+  .standPanel td:nth-child(9)  /* - */{
+    display:none;
+  }
+  .standPanel tbody tr{ cursor:pointer; }
 
-  /* Standings table labels (second card in .grid) */
-  .grid > .card:last-child td:nth-child(1)::before{content:"#";}
-  .grid > .card:last-child td:nth-child(2)::before{content:"קבוצה";}
-  .grid > .card:last-child td:nth-child(3)::before{content:"נק׳";}
-  .grid > .card:last-child td:nth-child(4)::before{content:"מש";}
-  .grid > .card:last-child td:nth-child(5)::before{content:"+";}
-  .grid > .card:last-child td:nth-child(6)::before{content:"-";}
-  .grid > .card:last-child td:nth-child(7)::before{content:"הפרש";}
-}
 
 /* Tabs (mobile) */
 .tabsWrap{ margin:12px 0 0 0; }
@@ -488,6 +556,15 @@ a:hover{text-decoration:underline;}
 }
 
 </style>
+  <!-- PWA / Home Screen -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1e40ff">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="גליל">
 </head>
 <body>
   <div class="wrap">
@@ -506,6 +583,7 @@ a:hover{text-decoration:underline;}
     <select id="roundSelect"></select>
     <button type="button" id="roundNext" class="iconBtn" aria-label="מחזור הבא">›</button>
   </div>
+  <div id="roundStatus" class="roundStatus" aria-live="polite"></div>
 </label>
         <!-- האתר ממוקד בהפועל גליל עליון: סינון הקבוצה קבוע ומוסתר -->
         <input id="teamFilter" value="הפ׳ גליל עליון" type="hidden" />
@@ -527,7 +605,7 @@ a:hover{text-decoration:underline;}
 
 
     <div class="grid">
-      <div class="card tab-panel active" data-panel="games">
+      <div class="card tab-panel active gamesPanel" data-panel="games">
         <h3 style="margin:0 0 10px 0;">משחקים</h3>
         <div class="scroll">
           <table>
@@ -544,7 +622,7 @@ a:hover{text-decoration:underline;}
         </div>
       </div>
 
-      <div class="card tab-panel" data-panel="standings">
+      <div class="card tab-panel standPanel" data-panel="standings">
         <h3 style="margin:0 0 10px 0;">טבלה</h3>
         <div class="scroll">
           <table>
@@ -824,6 +902,7 @@ const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
       if(cur) sel.value = String(cur);
       if(!sel.value && rs.length) sel.value = String(rs[0].number);
 
+      updateRoundStatus();
       render();
     }catch(e){
       showError(
@@ -838,7 +917,17 @@ DATA = null;
     }
   }
 
-  function updateRoundButtons(){
+  
+  function updateRoundStatus(){
+    const sel = document.getElementById("roundSelect");
+    const out = document.getElementById("roundStatus");
+    if(!sel || !out) return;
+    const total = sel.options.length || 0;
+    const val = sel.value || "";
+    out.textContent = total ? `מחזור ${val} מתוך ${total}` : "";
+  }
+
+function updateRoundButtons(){
     const sel = document.getElementById("roundSelect");
     const prev = document.getElementById("roundPrev");
     const next = document.getElementById("roundNext");
@@ -862,6 +951,7 @@ DATA = null;
     if(!DATA) return;
 
     updateRoundButtons();
+    updateRoundStatus();
 
     const roundNo = Number(document.getElementById("roundSelect").value);
     const teamQ = document.getElementById("teamFilter").value.trim();
@@ -874,10 +964,28 @@ DATA = null;
       const tr = document.createElement("tr");
       const isTeam = includesTeam(g, teamQ);
             const score = formatScore(g);
+      const hg = normGoal(g.home?.goals);
+      const ag = normGoal(g.away?.goals);
+      let out = "pending"; // win/lose/draw/pending relative to Galil will be shown in modal; here it's match outcome
+      if(hg !== null && ag !== null){
+        if(hg > ag) out = "home";
+        else if(ag > hg) out = "away";
+        else out = "draw";
+      }
+      const homeCls = (out==="home") ? "winner" : (out==="away" ? "loser" : "");
+      const awayCls = (out==="away") ? "winner" : (out==="home" ? "loser" : "");
+      const badgeCls = (out==="home" || out==="away") ? "win" : (out==="draw" ? "draw" : "pending");
 tr.innerHTML = `
         <td>${fmtDate(g.date)}</td>
         <td><button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></td>
-        <td><b><span class="score" dir="auto">${score}</span></b></td>
+        <td>
+          <div class="matchTeams">
+            <span class="teamName ${homeCls}">${esc(g.home?.name || "")}</span>
+            <span class="scoreBadge ${badgeCls}"><span class="score" dir="auto">${score}</span></span>
+            <span class="teamName ${awayCls}">${esc(g.away?.name || "")}</span>
+          </div>
+          <div class="matchMeta">${fmtDate(g.date)}</div>
+        </td>
         <td><button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></td>
               `;
       if(isTeam) tr.className = "hl";
@@ -888,6 +996,8 @@ tr.innerHTML = `
     sb.innerHTML = "";
     for(const t of (DATA.standings || [])){
       const tr = document.createElement("tr");
+      tr.classList.add('standRow');
+      tr.addEventListener('click', ()=> openTeamModal(t.name ?? ""));
       const isTeam = teamQ && matchTeamName((t.name||""), teamQ);
       tr.innerHTML = `
         <td>${t.rank ?? ""}</td>
