@@ -42,6 +42,16 @@
   --radius: 16px;
 }
 
+  }
+  .calendarGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+[data-theme="dark"] .modalOverlay{
+  background: rgba(0,0,0,0.95);
+}
+
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -307,6 +317,11 @@ tr.standRow:hover{
   font-weight:900;
   font-size: 14px;
 }
+.scoreBadge.draw{
+  background: #fef3c7;
+  border-color: #fbbf24;
+  color: #78350f;
+}
 .scoreBadge.lose{
   background: #fee2e2;
   border-color: #fca5a5;
@@ -369,6 +384,11 @@ td.scoreCell{text-align:center;}
     font-size: 13px;
     white-space: nowrap;
   }
+  .themeToggle{
+    padding: 11px 16px;
+    font-size: 14px;
+  }
+  
   #errorBox{
     margin: 14px 16px;
     border-radius: 12px;
@@ -822,6 +842,24 @@ button[id*="Close"]:hover{
   align-items:center;
   flex-wrap:wrap;
 }
+.themeToggle{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:8px 12px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font-size:14px;
+  font-weight:600;
+  color:var(--text);
+  transition:all 0.2s ease;
+}
+.themeToggle:hover{
+  background:var(--pill-bg);
+  border-color:var(--pill-border);
+}
 .filterBtn{
   background:var(--card);
   border:1px solid var(--border);
@@ -851,27 +889,32 @@ button[id*="Close"]:hover{
 }
 .calendarGrid{
   display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
-  gap:12px;
+  grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
+  gap:14px;
   margin-top:12px;
 }
 .calendarDay{
   background:var(--card);
   border:1px solid var(--border);
   border-radius:12px;
-  padding:12px;
+  padding:14px;
   box-shadow:var(--shadow-sm);
+  transition: all 0.2s ease;
 }
 .calendarDay:hover{
   box-shadow:var(--shadow);
+  transform: translateY(-2px);
 }
 .dayHeader{
   font-weight:700;
-  font-size:14px;
+  font-size:13px;
   color:var(--text);
-  margin-bottom:8px;
+  margin-bottom:10px;
   padding-bottom:8px;
   border-bottom:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 .dayGames{
   display:flex;
@@ -879,15 +922,58 @@ button[id*="Close"]:hover{
   gap:6px;
 }
 .miniGame{
-  font-size:12px;
+  font-size:11px;
   padding:6px 8px;
   background:var(--pill-bg);
   border-radius:8px;
   color:var(--text);
+  line-height:1.4;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  justify-content:space-between;
+}
+.miniGame .teams{
+  flex:1;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.miniGame .score{
+  font-weight:900;
+  font-size:12px;
+  padding:3px 6px;
+  border-radius:6px;
+  min-width:45px;
+  text-align:center;
 }
 .miniGame.highlight{
   background:rgba(34,197,94,0.15);
   border:1px solid rgba(34,197,94,0.3);
+}
+.miniGame.highlight .score{
+  background:#dcfce7;
+  color:#14532d;
+}
+.miniGame .score.win{
+  background:#dcfce7;
+  border:1px solid #86efac;
+  color:#14532d;
+}
+.miniGame .score.lose{
+  background:#fee2e2;
+  border:1px solid #fca5a5;
+  color:#7f1d1d;
+}
+.miniGame .score.draw{
+  background:#fef3c7;
+  border:1px solid #fbbf24;
+  color:#78350f;
+}
+.gameCount{
+  font-size:11px;
+  color:var(--muted);
+  font-weight:600;
 }
 
 /* Improved responsiveness */
@@ -990,7 +1076,7 @@ button[id*="Close"]:hover{
 
     <div class="topBar">
       <div class="filterGroup">
-<button class="filterBtn active" data-filter="all">הכל</button>
+        <button class="filterBtn active" data-filter="all">הכל</button>
         <button class="filterBtn" data-filter="upcoming">משחקים עתידיים</button>
         <button class="filterBtn" data-filter="past">משחקים שעברו</button>
       </div>
@@ -1278,13 +1364,18 @@ button[id*="Close"]:hover{
       <div class="tiny" style="margin-top:8px;">מוצגים עד שני המשחקים האחרונים ששוחקו מול גליל.</div>
     ` : `<div class="tiny">לא נמצא משחק ששוחק עדיין בין "${esc(myTeamQ)}" ל-"${esc(oppName)}".</div>`;
 
+    // Find opponent's rank in standings
+    const oppStanding = (DATA.standings || []).find(t => matchTeamName(t.name || "", oppName));
+    const oppRank = oppStanding ? `#${oppStanding.rank}` : "לא ידוע";
+    const oppPoints = oppStanding ? `${oppStanding.points} נק'` : "";
+
     const body = document.getElementById("teamModalBody");
     document.getElementById("teamModalTitle").textContent = `מול ${oppName}`;
     body.innerHTML = `
       <div class="kpis">
         <div class="kpi"><div class="label">מאזן גליל מול הקבוצה</div><div class="value">${w} נצ׳ • ${l} הפ׳${d?` • ${d} תיקו`:""}</div></div>
         <div class="kpi"><div class="label">סה״כ מפגשים ששוחקו</div><div class="value">${h2h.length}</div></div>
-        <div class="kpi"><div class="label">מיקוד</div><div class="value">הפ׳ גליל עליון</div></div>
+        <div class="kpi"><div class="label">מיקום הקבוצה</div><div class="value">${oppRank}${oppPoints ? ` • ${oppPoints}` : ""}</div></div>
       </div>
 
       <div class="sectionTitle">המשחקים האחרונים ביניהן</div>
@@ -1551,7 +1642,6 @@ document.getElementById("roundSelect").onchange = render;
 
 // ========== NEW FEATURES ==========
 
-
 // Favorites Management - Fixed to Galil Elyon only
 const favorites = ['הפ׳ גליל עליון', 'הפועל גליל עליון', 'גליל עליון'];
 
@@ -1760,21 +1850,45 @@ function renderCalendar(){
   
   container.innerHTML = sortedDays.map(([dayKey, dayGames]) => {
     const date = new Date(dayKey);
-    const dayName = date.toLocaleDateString('he-IL', { weekday: 'long', day: 'numeric', month: 'long' });
+    const dayName = date.toLocaleDateString('he-IL', { weekday: 'short', day: 'numeric', month: 'short' });
     
     const gamesHtml = dayGames.map(g => {
       const isGalil = includesTeam(g, 'גליל עליון');
       const score = formatScore(g);
+      const hg = normGoal(g.home?.goals);
+      const ag = normGoal(g.away?.goals);
+      
+      let scoreCls = '';
+      if(hg !== null && ag !== null){
+        const isGalilHome = isFavoriteTeam(g.home?.name || "");
+        const isGalilAway = isFavoriteTeam(g.away?.name || "");
+        if(isGalilHome || isGalilAway){
+          if(isGalilHome){
+            if(hg > ag) scoreCls = 'win';
+            else if(hg < ag) scoreCls = 'lose';
+            else scoreCls = 'draw';
+          } else {
+            if(ag > hg) scoreCls = 'win';
+            else if(ag < hg) scoreCls = 'lose';
+            else scoreCls = 'draw';
+          }
+        }
+      }
+      
       return `
         <div class="miniGame ${isGalil ? 'highlight' : ''}">
-          ${esc(g.home?.name || '')} ${score} ${esc(g.away?.name || '')}
+          <span class="teams">${esc(g.home?.name || '')} נ' ${esc(g.away?.name || '')}</span>
+          <span class="score ${scoreCls}" dir="ltr">${score}</span>
         </div>
       `;
     }).join('');
     
     return `
       <div class="calendarDay">
-        <div class="dayHeader">${esc(dayName)}</div>
+        <div class="dayHeader">
+          <span>${esc(dayName)}</span>
+          <span class="gameCount">${dayGames.length} משחקים</span>
+        </div>
         <div class="dayGames">${gamesHtml}</div>
       </div>
     `;
