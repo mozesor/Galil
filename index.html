@@ -1734,7 +1734,6 @@ document.getElementById("roundSelect").onchange = render;
   document.getElementById("roundPrev").onclick = () => stepRound(-1);
   document.getElementById("roundNext").onclick = () => stepRound(1);
   document.getElementById("jumpToCurrentRound").onclick = jumpToCurrentRound;
-  document.getElementById("scrollToCurrentInCalendar").onclick = scrollToCurrentInCalendar;
   document.getElementById("teamFilter").oninput = render;
   document.getElementById("onlyTeam").onchange = render;
 
@@ -1743,6 +1742,13 @@ document.getElementById("roundSelect").onchange = render;
     if(!btn) return;
     const name = btn.getAttribute("data-team") || "";
     openTeamModal(name);
+  });
+  
+  // Calendar jump button using event delegation
+  document.addEventListener("click", (ev)=>{
+    if(ev.target?.id === "scrollToCurrentInCalendar" || ev.target?.closest?.("#scrollToCurrentInCalendar")){
+      scrollToCurrentInCalendar();
+    }
   });
 
   document.getElementById("teamModalClose")?.addEventListener("click", closeTeamModal);
