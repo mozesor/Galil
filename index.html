@@ -24,10 +24,10 @@
   --pill-border: #cbd5e1;
   --pill-text: #334155;
 
-  /* Score colors */
-  --score-bg: #dcfce7;
-  --score-border: #86efac;
-  --score-text: #14532d;
+  /* Score colors - default is gray for pending */
+  --score-bg: #f1f5f9;
+  --score-border: #cbd5e1;
+  --score-text: #475569;
 
   /* Button colors - modern gradient */
   --btn-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
@@ -145,6 +145,28 @@ body{
   transform: none;
   background: #fff;
 }
+
+.jumpBtn{
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #ffffff;
+  font-size: 13px;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+.jumpBtn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+.jumpBtn:active{
+  transform: translateY(0);
+}
+
 .select{
   border:1px solid var(--border);
   background:#fff;
@@ -316,6 +338,11 @@ tr.standRow:hover{
   color: var(--score-text);
   font-weight:900;
   font-size: 14px;
+}
+.scoreBadge.win{
+  background: #dcfce7;
+  border-color: #86efac;
+  color: #14532d;
 }
 .scoreBadge.draw{
   background: #fef3c7;
@@ -914,6 +941,10 @@ button[id*="Close"]:hover{
   box-shadow:var(--shadow-sm);
   transition: all 0.2s ease;
 }
+.calendarDay.hasCurrentRound{
+  border:2px solid #3b82f6;
+  box-shadow:0 4px 16px rgba(59, 130, 246, 0.2);
+}
 .calendarDay:hover{
   box-shadow:var(--shadow);
   transform: translateY(-2px);
@@ -945,6 +976,11 @@ button[id*="Close"]:hover{
   align-items:center;
   gap:6px;
   justify-content:space-between;
+  border:1px solid transparent;
+}
+.miniGame.currentRound{
+  border:1px solid #3b82f6;
+  background:rgba(59, 130, 246, 0.08);
 }
 .miniGame .teams{
   flex:1;
@@ -1104,6 +1140,7 @@ button[id*="Close"]:hover{
           <select id="roundSelect" class="select" aria-label="בחר מחזור"></select>
           <button id="roundNext" class="iconBtn">←</button>
         </div>
+        <button id="jumpToCurrentRound" class="jumpBtn" style="display:none;">📍 קפוץ למחזור הנוכחי</button>
         <span id="roundStatus" class="sub"></span>
       </div>
       <!-- האתר ממוקד בהפועל גליל עליון: סינון הקבוצה קבוע ומוסתר -->
@@ -1520,10 +1557,52 @@ function updateRoundButtons(){
     const sel = document.getElementById("roundSelect");
     const prev = document.getElementById("roundPrev");
     const next = document.getElementById("roundNext");
+    const jumpBtn = document.getElementById("jumpToCurrentRound");
     if(!sel || !prev || !next) return;
     const i = sel.selectedIndex;
     prev.disabled = (i <= 0);
     next.disabled = (i >= sel.options.length - 1);
+    
+    // Show/hide jump button
+    if(jumpBtn && DATA){
+      const currentRound = Number(sel.value);
+      const bestRound = findBestRound();
+      if(bestRound && currentRound !== bestRound){
+        jumpBtn.style.display = 'block';
+      } else {
+        jumpBtn.style.display = 'none';
+      }
+    }
+  }
+
+  function findBestRound(){
+    if(!DATA) return null;
+    const rs = DATA.league?.rounds || [];
+    const now = new Date();
+    
+    for(const rr of rs){
+      const roundGames = (DATA.games || []).filter(g => g.round?.number === rr.number);
+      const hasFutureGames = roundGames.some(g => {
+        if(!g.date) return false;
+        return new Date(g.date) > now;
+      });
+      if(hasFutureGames) return rr.number;
+    }
+    
+    for(let i = rs.length - 1; i >= 0; i--){
+      if(rs[i].gamesCount > 0) return rs[i].number;
+    }
+    return null;
+  }
+
+  function jumpToCurrentRound(){
+    const sel = document.getElementById("roundSelect");
+    if(!sel) return;
+    const bestRound = findBestRound();
+    if(bestRound){
+      sel.value = String(bestRound);
+      render();
+    }
   }
 
   function stepRound(delta){
@@ -1633,6 +1712,7 @@ function updateRoundButtons(){
 document.getElementById("roundSelect").onchange = render;
   document.getElementById("roundPrev").onclick = () => stepRound(-1);
   document.getElementById("roundNext").onclick = () => stepRound(1);
+  document.getElementById("jumpToCurrentRound").onclick = jumpToCurrentRound;
   document.getElementById("teamFilter").oninput = render;
   document.getElementById("onlyTeam").onchange = render;
 
@@ -1848,6 +1928,7 @@ function renderCalendar(){
   
   const games = DATA.games || [];
   const dayMap = new Map();
+  const bestRound = findBestRound();
   
   games.forEach(g => {
     if(!g.date) return;
@@ -1865,8 +1946,12 @@ function renderCalendar(){
     const date = new Date(dayKey);
     const dayName = date.toLocaleDateString('he-IL', { weekday: 'short', day: 'numeric', month: 'short' });
     
+    // Check if any game in this day belongs to the current round
+    const hasCurrentRoundGame = dayGames.some(g => g.round?.number === bestRound);
+    
     const gamesHtml = dayGames.map(g => {
       const isGalil = includesTeam(g, 'גליל עליון');
+      const isCurrentRound = g.round?.number === bestRound;
       const score = formatScore(g);
       const hg = normGoal(g.home?.goals);
       const ag = normGoal(g.away?.goals);
@@ -1889,7 +1974,7 @@ function renderCalendar(){
       }
       
       return `
-        <div class="miniGame ${isGalil ? 'highlight' : ''}">
+        <div class="miniGame ${isGalil ? 'highlight' : ''} ${isCurrentRound ? 'currentRound' : ''}">
           <span class="teams">${esc(g.home?.name || '')} נ' ${esc(g.away?.name || '')}</span>
           <span class="score ${scoreCls}" dir="ltr">${score}</span>
         </div>
@@ -1897,9 +1982,9 @@ function renderCalendar(){
     }).join('');
     
     return `
-      <div class="calendarDay">
+      <div class="calendarDay ${hasCurrentRoundGame ? 'hasCurrentRound' : ''}">
         <div class="dayHeader">
-          <span>${esc(dayName)}</span>
+          <span>${esc(dayName)}${hasCurrentRoundGame ? ' 📍' : ''}</span>
           <span class="gameCount">${dayGames.length} משחקים</span>
         </div>
         <div class="dayGames">${gamesHtml}</div>
