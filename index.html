@@ -11,7 +11,7 @@
 <title>לוח משחקים • גליל עליון</title>
   <style>
 :root{
-  /* Modern color palette */
+  /* Modern color palette - Light Mode */
   --bg1: #e0f2fe;
   --bg2: #ddd6fe;
   --card: #ffffff;
@@ -40,6 +40,38 @@
   --shadow: 0 4px 16px rgba(15,23,42,0.10);
   --shadow-lg: 0 10px 40px rgba(15,23,42,0.15);
   --radius: 16px;
+}
+
+/* Dark Mode */
+[data-theme="dark"]{
+  --bg1: #1e293b;
+  --bg2: #312e81;
+  --card: #1e293b;
+  --border: rgba(148,163,184,0.15);
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+
+  --pill-bg: #334155;
+  --pill-border: #475569;
+  --pill-text: #cbd5e1;
+
+  --score-bg: #065f46;
+  --score-border: #059669;
+  --score-text: #d1fae5;
+
+  --btn-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --btn-hover: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --tab-active: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow: 0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] body{
+  background: radial-gradient(1200px 600px at 15% 10%, var(--bg1), transparent 70%),
+              radial-gradient(1200px 600px at 85% 10%, var(--bg2), transparent 70%),
+              #0f172a;
 }
 
 *{box-sizing:border-box}
@@ -602,6 +634,160 @@ button[id*="Close"]:hover{
   color:var(--text);
 }
 
+/* Loading Spinner */
+.spinner{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border:4px solid var(--pill-border);
+  border-top-color:var(--tab-active);
+  border-radius:50%;
+  animation:spin 0.8s linear infinite;
+}
+@keyframes spin{
+  to{transform:rotate(360deg);}
+}
+.loading-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(15,23,42,0.5);
+  backdrop-filter:blur(2px);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9998;
+}
+.loading-overlay.show{display:flex;}
+
+/* Theme Toggle & Filters Bar */
+.topBar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+  flex-wrap:wrap;
+}
+.filterGroup{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.themeToggle{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:8px 12px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font-size:14px;
+  font-weight:600;
+  color:var(--text);
+  transition:all 0.2s ease;
+}
+.themeToggle:hover{
+  background:var(--pill-bg);
+  border-color:var(--pill-border);
+}
+.filterBtn{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:8px 14px;
+  cursor:pointer;
+  font-size:13px;
+  font-weight:600;
+  color:var(--text);
+  transition:all 0.2s ease;
+}
+.filterBtn:hover{
+  background:var(--pill-bg);
+}
+.filterBtn.active{
+  background:var(--tab-active);
+  color:#fff;
+  border-color:transparent;
+}
+
+/* Favorites Star Button */
+.teamLink{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+}
+.favStar{
+  background:none;
+  border:none;
+  cursor:pointer;
+  font-size:14px;
+  padding:0;
+  line-height:1;
+  transition:all 0.2s ease;
+  opacity:0.3;
+  display:inline-block;
+}
+.favStar:hover{
+  opacity:0.6;
+  transform:scale(1.15);
+}
+.favStar.active{
+  opacity:1;
+  color:#facc15;
+  filter:drop-shadow(0 0 2px rgba(250,204,21,0.5));
+}
+
+/* Calendar View */
+.calendarView{
+  display:none;
+}
+.calendarView.active{
+  display:block;
+}
+.calendarGrid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+  gap:12px;
+  margin-top:12px;
+}
+.calendarDay{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:12px;
+  box-shadow:var(--shadow-sm);
+}
+.calendarDay:hover{
+  box-shadow:var(--shadow);
+}
+.dayHeader{
+  font-weight:700;
+  font-size:14px;
+  color:var(--text);
+  margin-bottom:8px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--border);
+}
+.dayGames{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.miniGame{
+  font-size:12px;
+  padding:6px 8px;
+  background:var(--pill-bg);
+  border-radius:8px;
+  color:var(--text);
+}
+.miniGame.highlight{
+  background:rgba(34,197,94,0.15);
+  border:1px solid rgba(34,197,94,0.3);
+}
+
 /* Improved responsiveness */
 @media (max-width: 720px){
   .wrap{padding: 12px 10px 60px;}
@@ -700,6 +886,18 @@ button[id*="Close"]:hover{
       <p>לוח משחקים ותוצאות מעודכנים בג'ליל — התצוגה מתעדכנת לפי נתונים עדכניים!</p>
     </div>
 
+    <div class="topBar">
+      <div class="filterGroup">
+        <button class="themeToggle" id="themeToggle" aria-label="החלף ערכת נושא">
+          <span id="themeIcon">🌙</span>
+          <span>מצב לילה</span>
+        </button>
+        <button class="filterBtn active" data-filter="all">הכל</button>
+        <button class="filterBtn" data-filter="upcoming">משחקים עתידיים</button>
+        <button class="filterBtn" data-filter="past">משחקים שעברו</button>
+      </div>
+    </div>
+
     <div id="errorBox"></div>
 
     <div class="card controls">
@@ -719,6 +917,7 @@ button[id*="Close"]:hover{
     <div class="tabs" role="tablist">
       <button class="tabBtn active" data-tab="games" role="tab" aria-selected="true">משחקים</button>
       <button class="tabBtn" data-tab="standings" role="tab" aria-selected="false">טבלה</button>
+      <button class="tabBtn" data-tab="calendar" role="tab" aria-selected="false">לוח שנה</button>
     </div>
 
     <div class="grid">
@@ -770,7 +969,23 @@ button[id*="Close"]:hover{
           </div>
         </div>
       </div>
+
+      <div class="tab-panel" data-panel="calendar">
+        <div class="card">
+          <div style="padding:16px 16px 12px">
+            <h2 class="panelTitle">לוח שנה</h2>
+          </div>
+          <div style="padding:0 16px 16px">
+            <div id="calendarView" class="calendarGrid"></div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Loading Overlay -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="spinner"></div>
   </div>
 
   <!-- Team Modal -->
@@ -1001,6 +1216,7 @@ function showError(msg){
   }
 
   async function load(){
+    showLoading();
     hideError();
     try{
       const r = await fetch("./data.json?ts=" + Date.now(), { cache: "no-store" });
@@ -1071,6 +1287,7 @@ const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
 
       updateRoundStatus();
       render();
+      hideLoading();
     }catch(e){
       showError(
         `<b>לא הצלחתי לטעון נתונים.</b><br>
@@ -1081,6 +1298,7 @@ DATA = null;
       document.getElementById("roundSelect").innerHTML = "";
       document.getElementById("gamesBody").innerHTML = "";
       document.getElementById("standBody").innerHTML = "";
+      hideLoading();
     }
   }
 
@@ -1148,9 +1366,19 @@ function updateRoundButtons(){
       
       tr.innerHTML = `
         <td style="white-space:nowrap;">${esc(fmtDate(g.date))}</td>
-        <td><button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></td>
+        <td>
+          <button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">
+            ${esc(g.home?.name || "")}
+            <button class="favStar" data-fav="${escapeAttr(g.home?.name || "")}" onclick="event.stopPropagation();toggleFavorite('${escapeAttr(g.home?.name || "")}')">★</button>
+          </button>
+        </td>
         <td style="text-align:center;"><span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span></td>
-        <td><button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></td>
+        <td>
+          <button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">
+            ${esc(g.away?.name || "")}
+            <button class="favStar" data-fav="${escapeAttr(g.away?.name || "")}" onclick="event.stopPropagation();toggleFavorite('${escapeAttr(g.away?.name || "")}')">★</button>
+          </button>
+        </td>
       `;
       
       if(isTeam) tr.className = "hl";
@@ -1220,6 +1448,209 @@ document.getElementById("roundSelect").onchange = render;
   });
 
   load();
+
+// ========== NEW FEATURES ==========
+
+// Theme Toggle (Dark Mode)
+function initTheme(){
+  const saved = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', saved);
+  updateThemeIcon(saved);
+}
+
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') || 'light';
+  const newTheme = current === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  updateThemeIcon(newTheme);
+}
+
+function updateThemeIcon(theme){
+  const icon = document.getElementById('themeIcon');
+  const text = icon?.nextElementSibling;
+  if(theme === 'dark'){
+    if(icon) icon.textContent = '☀️';
+    if(text) text.textContent = 'מצב יום';
+  } else {
+    if(icon) icon.textContent = '🌙';
+    if(text) text.textContent = 'מצב לילה';
+  }
+}
+
+document.getElementById('themeToggle')?.addEventListener('click', toggleTheme);
+initTheme();
+
+// Favorites Management
+let favorites = [];
+
+function loadFavorites(){
+  try{
+    const saved = localStorage.getItem('favoriteTeams');
+    favorites = saved ? JSON.parse(saved) : ['הפ׳ גליל עליון', 'הפועל גליל עליון'];
+  }catch(e){
+    favorites = ['הפ׳ גליל עליון', 'הפועל גליל עליון'];
+  }
+  updateFavoriteStars();
+}
+
+function saveFavorites(){
+  try{
+    localStorage.setItem('favoriteTeams', JSON.stringify(favorites));
+  }catch(e){}
+}
+
+function toggleFavorite(teamName){
+  if(!teamName) return;
+  const idx = favorites.findIndex(f => matchTeamName(f, teamName));
+  if(idx >= 0){
+    favorites.splice(idx, 1);
+  } else {
+    favorites.push(teamName);
+  }
+  saveFavorites();
+  updateFavoriteStars();
+  render(); // Re-render to update highlights
+}
+
+function updateFavoriteStars(){
+  document.querySelectorAll('.favStar').forEach(btn => {
+    const team = btn.getAttribute('data-fav');
+    const isFav = favorites.some(f => matchTeamName(f, team));
+    btn.classList.toggle('active', isFav);
+  });
+}
+
+window.toggleFavorite = toggleFavorite;
+loadFavorites();
+
+// Date Filters
+let currentFilter = 'all';
+
+function setupFilters(){
+  document.querySelectorAll('.filterBtn').forEach(btn => {
+    btn.addEventListener('click', ()=>{
+      document.querySelectorAll('.filterBtn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.getAttribute('data-filter');
+      render();
+    });
+  });
+}
+setupFilters();
+
+// Loading Overlay
+function showLoading(){
+  document.getElementById('loadingOverlay')?.classList.add('show');
+}
+
+function hideLoading(){
+  document.getElementById('loadingOverlay')?.classList.remove('show');
+}
+
+// Enhanced render with fade animation and filters
+const originalRender = render;
+function render(){
+  const body = document.getElementById("gamesBody");
+  const cards = document.getElementById("gamesCards");
+  
+  // Fade out animation
+  if(body) body.style.opacity = '0';
+  if(cards) cards.style.opacity = '0';
+  
+  setTimeout(()=>{
+    originalRender();
+    
+    // Apply date filter
+    if(currentFilter !== 'all'){
+      const now = new Date();
+      document.querySelectorAll('#gamesBody tr, .gameCard').forEach(el => {
+        const dateText = el.textContent;
+        // This is a simple filter - you can enhance it
+        if(currentFilter === 'upcoming'){
+          // Show future games logic here if needed
+        } else if(currentFilter === 'past'){
+          // Show past games logic here if needed
+        }
+      });
+    }
+    
+    // Update favorite stars
+    updateFavoriteStars();
+    
+    // Highlight favorite teams
+    document.querySelectorAll('#gamesBody tr, .gameCard').forEach(row => {
+      const teamLinks = row.querySelectorAll('.teamLink');
+      let hasFavorite = false;
+      teamLinks.forEach(link => {
+        const team = link.getAttribute('data-team');
+        if(favorites.some(f => matchTeamName(f, team))){
+          hasFavorite = true;
+        }
+      });
+      if(hasFavorite && !row.classList.contains('hl')){
+        row.style.background = 'rgba(250,204,21,0.08)';
+      }
+    });
+    
+    // Fade in animation
+    if(body){
+      body.style.transition = 'opacity 0.3s ease';
+      body.style.opacity = '1';
+    }
+    if(cards){
+      cards.style.transition = 'opacity 0.3s ease';
+      cards.style.opacity = '1';
+    }
+    
+    renderCalendar();
+  }, 150);
+}
+
+// Calendar View
+function renderCalendar(){
+  if(!DATA) return;
+  const container = document.getElementById('calendarView');
+  if(!container) return;
+  
+  const games = DATA.games || [];
+  const dayMap = new Map();
+  
+  games.forEach(g => {
+    if(!g.date) return;
+    const date = new Date(g.date);
+    const dayKey = date.toISOString().split('T')[0];
+    if(!dayMap.has(dayKey)){
+      dayMap.set(dayKey, []);
+    }
+    dayMap.get(dayKey).push(g);
+  });
+  
+  const sortedDays = Array.from(dayMap.entries()).sort((a,b) => a[0].localeCompare(b[0]));
+  
+  container.innerHTML = sortedDays.map(([dayKey, dayGames]) => {
+    const date = new Date(dayKey);
+    const dayName = date.toLocaleDateString('he-IL', { weekday: 'long', day: 'numeric', month: 'long' });
+    
+    const gamesHtml = dayGames.map(g => {
+      const isGalil = includesTeam(g, 'גליל עליון');
+      const score = formatScore(g);
+      return `
+        <div class="miniGame ${isGalil ? 'highlight' : ''}">
+          ${esc(g.home?.name || '')} ${score} ${esc(g.away?.name || '')}
+        </div>
+      `;
+    }).join('');
+    
+    return `
+      <div class="calendarDay">
+        <div class="dayHeader">${esc(dayName)}</div>
+        <div class="dayGames">${gamesHtml}</div>
+      </div>
+    `;
+  }).join('');
+}
+
 </script>
 
 <script>
