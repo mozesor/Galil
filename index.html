@@ -198,6 +198,7 @@ tbody tr.hl{background: rgba(16,185,129,.10);}
   font-weight:900;
   border: 1px solid rgba(15,23,42,.12);
   background: rgba(15,23,42,.02);
+  direction: ltr;
 }
 .scoreBadge.pending{color: rgba(15,23,42,.65);}
 .scoreBadge.win{background: rgba(16,185,129,.16); border-color: rgba(16,185,129,.35);}
@@ -267,6 +268,7 @@ tbody tr.hl{background: rgba(16,185,129,.10);}
   justify-content:center;
   padding: 16px;
   z-index: 4000;
+  overflow-y: auto;
 }
 .modalOverlay.open{display:flex;}
 .modal{
@@ -277,6 +279,7 @@ tbody tr.hl{background: rgba(16,185,129,.10);}
   overflow:auto;
   border: 1px solid rgba(255,255,255,.16);
   box-shadow: 0 30px 80px rgba(2,6,23,.35);
+  margin: auto;
 }
 .modalHeader{
   display:flex;
@@ -301,6 +304,17 @@ tbody tr.hl{background: rgba(16,185,129,.10);}
   line-height: 1;
 }
 .modalBody{padding: 14px;}
+.modalBody .kpis{display: grid; gap: 12px; margin-bottom: 20px;}
+.modalBody .kpi{background: rgba(15,23,42,.03); padding: 12px; border-radius: 12px; border: 1px solid var(--border);}
+.modalBody .kpi .label{font-size: 12px; color: var(--muted); margin-bottom: 4px;}
+.modalBody .kpi .value{font-weight: 800; font-size: 16px;}
+.modalBody .sectionTitle{font-weight: 800; margin: 20px 0 10px; font-size: 14px;}
+.modalBody .badges{display: flex; flex-wrap: wrap; gap: 8px;}
+.modalBody .badge{display: inline-block; padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; border: 1px solid var(--border);}
+.modalBody .badge.win{background: rgba(16,185,129,.16); border-color: rgba(16,185,129,.35);}
+.modalBody .badge.lose{background: rgba(239,68,68,.14); border-color: rgba(239,68,68,.30);}
+.modalBody .badge.draw{background: rgba(245,158,11,.16); border-color: rgba(245,158,11,.32);}
+.modalBody .tiny{font-size: 12px; color: var(--muted);}
 
 body.modalOpen{overflow:hidden;}
 
@@ -308,11 +322,19 @@ body.modalOpen{overflow:hidden;}
   .controlsRow{grid-template-columns: 1fr;}
   #roundStatus{text-align:right}
   select{min-width: 0; width:100%;}
-  .tab{min-width: 0; flex:1;}
-  .tableWrap{padding: 10px;}
+  .tab{min-width: 0; flex:1; font-size: 14px; padding: 0 12px;}
+  .tableWrap{padding: 10px; overflow-x: auto;}
   .gamesTableWrap{display:none;}
   .gamesCards{display:grid; gap: 10px; padding: 10px 12px 14px;}
-  thead th{font-size:12px;}
+  thead th{font-size:11px; padding: 8px 6px;}
+  tbody td{font-size:13px; padding: 8px 6px;}
+  .header h1{font-size: 20px;}
+  .header p{font-size: 13px;}
+  .panelHeader{font-size: 16px;}
+  
+  /* Improve standings table on mobile */
+  table{font-size: 12px;}
+  .teamLink{font-size: 12px;}
 }
 </style>
 </head>
@@ -320,7 +342,7 @@ body.modalOpen{overflow:hidden;}
   <div class="wrap">
     <div class="header">
       <h1>לוח משחקים · גליל עליון</h1>
-      <p>לוח משחקים ותוצאות מעודכנים בליגה — תצוגה מותאמת למובייל.</p>
+      <p>לוח משחקים ותוצאות מעודכנים בליגה – תצוגה מותאמת למובייל.</p>
     </div>
 
     <div id="errorBox" class="errorBox" role="alert"></div>
@@ -378,7 +400,7 @@ body.modalOpen{overflow:hidden;}
               <th>#</th>
               <th>קבוצה</th>
               <th>נק׳</th>
-              <th>מש׳</th>
+              <th>משׂ</th>
               <th>נצ׳</th>
               <th>תיקו</th>
               <th>הפ׳</th>
@@ -418,9 +440,9 @@ body.modalOpen{overflow:hidden;}
   function normTeamName(s){
     return String(s||"")
       .toLowerCase()
-      .replace(/["'״׳`´]/g,"")
-      .replace(/[\u05F3\u05F4]/g,"")      // geresh/gershayim
-      .replace(/[\.\,\-–—\(\)\[\]\{\}:;!؟?]/g," ")
+      .replace(/["'´³`´]/g,"")
+      .replace(/[\u05F3\u05F4]/g,"")
+      .replace(/[\.\,\-—–\(\)\[\]\{\}:;!¿?]/g," ")
       .replace(/\s+/g," ")
       .trim();
   }
@@ -435,12 +457,10 @@ body.modalOpen{overflow:hidden;}
 
     if(!qn) return false;
 
-    // Special: focus on "גליל עליון" regardless of abbreviation (הפ', הפועל, וכו')
     if(isGalilQuery(qn)){
       return n.includes("גליל") && n.includes("עליון");
     }
 
-    // General: substring match on normalized strings
     return n.includes(qn) || qn.includes(n);
   }
 
@@ -453,7 +473,7 @@ body.modalOpen{overflow:hidden;}
     if(v === null || v === undefined || v === "") return null;
     const n = Number(v);
     if(!Number.isFinite(n)) return null;
-    if(n < 0) return null; // API uses -1 for not played yet
+    if(n < 0) return null;
     return n;
   }
 
@@ -461,8 +481,6 @@ body.modalOpen{overflow:hidden;}
     const hg = normGoal(g.home?.goals);
     const ag = normGoal(g.away?.goals);
 
-    // Show a real score whenever both sides have non-negative goals.
-    // (Some APIs don't reliably set is_finished, but goals are the source of truth.)
     if(hg !== null && ag !== null){
       return String(hg) + ":" + String(ag);
     }
@@ -480,13 +498,11 @@ body.modalOpen{overflow:hidden;}
   function escapeAttr(s){ return esc(s).replaceAll("`","&#96;"); }
 
   function buildOpponentLocation(g, focusTeamQ){
-    // עמודת "אצל מי" — ברירת מחדל: הקבוצה המארחת (בית)
     const h = (g.home?.name || "");
     const a = (g.away?.name || "");
     const q = (focusTeamQ || "").trim();
     if(!q) return h || (g?.venue || "");
 
-    // אם המשחק כולל את גליל — נציג את היריבה בצורה ידידותית
     if(matchTeamName(h, q) && a){
       return `בית מול ${a}`;
     }
@@ -494,10 +510,8 @@ body.modalOpen{overflow:hidden;}
       return `חוץ אצל ${h}`;
     }
 
-    // משחקים אחרים בליגה: "אצל מי" = הקבוצה בבית
     return h || (g?.venue || "");
   }
-
 
   function teamOutcomeFor(g, teamQ){
     const q = (teamQ || "").trim().toLowerCase();
@@ -505,7 +519,7 @@ body.modalOpen{overflow:hidden;}
     const a = (g.away?.name || "");
     const hg = normGoal(g.home?.goals);
     const ag = normGoal(g.away?.goals);
-    if(hg === null || ag === null) return null; // not played
+    if(hg === null || ag === null) return null;
     if(!q) return null;
 
     const isHome = matchTeamName(h, teamQ);
@@ -559,7 +573,7 @@ body.modalOpen{overflow:hidden;}
       const score = formatScore(g);
       const opp = matchTeamName((g.home?.name||""), oppName) ? (g.away?.name||"") : (g.home?.name||"");
       const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
-      const label = o==="W" ? "ניצחון" : o==="L" ? "הפסד" : "תיקו";
+      const label = o==="W" ? "נצחון" : o==="L" ? "הפסד" : "תיקו";
       return `<span class="badge ${cls}">${label} • ${esc(opp)} • ${esc(score)}</span>`;
     }).join("");
 
@@ -572,9 +586,9 @@ body.modalOpen{overflow:hidden;}
           <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">גליל</th>
         </tr>
         ${last2.map(g=>{
-          const o = teamOutcomeFor(g, myTeamQ); // תוצאה מנקודת מבט של גליל
+          const o = teamOutcomeFor(g, myTeamQ);
           const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
-          const label = o==="W" ? "ניצחון" : o==="L" ? "הפסד" : "תיקו";
+          const label = o==="W" ? "נצחון" : o==="L" ? "הפסד" : "תיקו";
           return `
           <tr>
             <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(fmtDate(g.date))}</td>
@@ -618,7 +632,7 @@ body.modalOpen{overflow:hidden;}
     document.body.classList.remove("modalOpen");
   }
 
-function showError(msg){
+  function showError(msg){
     const box = document.getElementById("errorBox");
     box.style.display = "block";
     box.innerHTML = msg;
@@ -635,10 +649,8 @@ function showError(msg){
       const r = await fetch("./data.json?ts=" + Date.now(), { cache: "no-store" });
       const t = await r.text();
       if(!r.ok){
-        // Friendly message when data.json is missing on GitHub Pages
         throw new Error("לא הצלחתי לטעון את קובץ <b>data.json</b>.<br>ודא שכל הקבצים הועלו לריפו (במיוחד <b>data.json</b>) ולא רק index.html.<br><small>סטטוס: " + r.status + " " + r.statusText + "</small>");
       }
-      // Sometimes GitHub Pages returns an HTML page instead of JSON when the file is missing
       if(t.trim().startsWith("<")){
         throw new Error("נראה שקובץ <b>data.json</b> לא נמצא בנתיב הנוכחי (התקבלה תשובת HTML).<br>העלה מחדש את כל הקבצים כולל <b>data.json</b> ובצע רענון קשיח.");
       }
@@ -648,13 +660,12 @@ function showError(msg){
         throw new Error("קובץ data.json נטען אבל אינו JSON תקין.");
       }
 
-
       const leagueName = DATA?.league?.name || "ליגה";
       const fetchedAt = DATA?.fetchedAt || "";
       const roundsCount = DATA?.rounds?.length || 0;
       const gamesCount = DATA?.gamesCount || 0;
       const shift = DATA?.api?.roundNumberShiftApplied ?? DATA?.api?.roundNumberFixApplied ?? 0;
-const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
+      const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
       const sel = document.getElementById("roundSelect");
       sel.innerHTML = "";
       for(const rr of rs){
@@ -669,193 +680,10 @@ const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
       if(!sel.value && rs.length) sel.value = String(rs[0].number);
 
       updateRoundStatus();
+      updateRoundButtons();
       render();
     }catch(e){
       showError(
         `<b>לא הצלחתי לטעון נתונים.</b><br>
          אם פתחת את הקובץ דרך <code>file://</code> זה לא יעבוד – פתח דרך שרת (GitHub Pages / Live Server).<br><br>
-         שגיאה: <code>${String(e).replaceAll("<","&lt;").replaceAll(">","&gt;")}</code>`
-      );
-DATA = null;
-      document.getElementById("roundSelect").innerHTML = "";
-      document.getElementById("gamesBody").innerHTML = "";
-      document.getElementById("standBody").innerHTML = "";
-    }
-  }
-
-  
-  function updateRoundStatus(){
-    const sel = document.getElementById("roundSelect");
-    const out = document.getElementById("roundStatus");
-    if(!sel || !out) return;
-    const total = sel.options.length || 0;
-    const val = sel.value || "";
-    out.textContent = total ? `מחזור ${val} מתוך ${total}` : "";
-  }
-
-function updateRoundButtons(){
-    const sel = document.getElementById("roundSelect");
-    const prev = document.getElementById("roundPrev");
-    const next = document.getElementById("roundNext");
-    if(!sel || !prev || !next) return;
-    const i = sel.selectedIndex;
-    prev.disabled = (i <= 0);
-    next.disabled = (i >= sel.options.length - 1);
-  }
-
-  function stepRound(delta){
-    const sel = document.getElementById("roundSelect");
-    if(!sel) return;
-    const i = sel.selectedIndex;
-    const ni = i + delta;
-    if(ni < 0 || ni > sel.options.length - 1) return;
-    sel.selectedIndex = ni;
-    render();
-  }
-
-  function render(){
-    if(!DATA) return;
-
-    // Main team (hidden filter) is used for highlighting + "only team" filter
-    const mainTeam = (document.getElementById("teamFilter")?.value || DATA?.meta?.team || "הפ׳ גליל עליון").trim() || "הפ׳ גליל עליון";
-    const onlyMain = !!document.getElementById("onlyTeam")?.checked;
-
-    // Selected round
-    const sel = document.getElementById("roundSelect");
-    const roundNum = sel ? parseInt(sel.value || "0", 10) : 0;
-
-    const allGames = Array.isArray(DATA.games) ? DATA.games : [];
-    let games = allGames.filter(g => (g.round?.number ?? g.roundNumber ?? 0) == roundNum);
-
-    if(onlyMain){
-      games = games.filter(g => includesTeam(g, mainTeam));
-    }
-
-    // Sort by date asc
-    games.sort((a,b)=> (a.date||"").localeCompare(b.date||""));
-
-    const tbody = document.getElementById("gamesBody");
-    const cards = document.getElementById("gamesCards");
-    if(!tbody || !cards) return;
-
-    if(!games.length){
-      tbody.innerHTML = `<tr><td colspan="4" style="text-align:center; color:var(--muted); padding:18px;">אין משחקים לתצוגה</td></tr>`;
-      cards.innerHTML = `<div class="emptyNote">אין משחקים לתצוגה</div>`;
-      return;
-    }
-
-    // Build table rows (desktop)
-    tbody.innerHTML = games.map(g=>{
-      const home = (g.home?.name || "").trim();
-      const away = (g.away?.name || "").trim();
-      const played = normGoal(g.home?.goals) !== null && normGoal(g.away?.goals) !== null;
-      const score = played ? formatScore(g) : "טרם";
-      const hl = includesTeam(g, mainTeam) ? "hl" : "";
-      let cls = played ? "played" : "pending";
-      if(played && includesTeam(g, mainTeam)){
-        const o = teamOutcomeFor(g, mainTeam);
-        cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
-      }
-      return `
-        <tr class="${hl}">
-          <td class="dtCell">${esc(fmtDate(g.date))}</td>
-          <td class="teamCell">
-            <button type="button" class="teamLink" data-team="${escapeAttr(home)}">${esc(home)}</button>
-          </td>
-          <td class="scoreCell">
-            <span class="scoreBadge ${cls}"><span class="score" dir="ltr">${esc(score)}</span></span>
-          </td>
-          <td class="teamCell">
-            <button type="button" class="teamLink" data-team="${escapeAttr(away)}">${esc(away)}</button>
-          </td>
-        </tr>
-      `;
-    }).join("");
-
-    // Build cards (mobile)
-    cards.innerHTML = games.map(g=>{
-      const home = (g.home?.name || "").trim();
-      const away = (g.away?.name || "").trim();
-      const played = normGoal(g.home?.goals) !== null && normGoal(g.away?.goals) !== null;
-      const score = played ? formatScore(g) : "טרם";
-      const hl = includesTeam(g, mainTeam) ? "hl" : "";
-      let cls = played ? "played" : "pending";
-      if(played && includesTeam(g, mainTeam)){
-        const o = teamOutcomeFor(g, mainTeam);
-        cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
-      }
-      return `
-        <div class="gameCard ${hl}">
-          <div class="gcMeta">${esc(fmtDate(g.date))}</div>
-          <div class="gcRow">
-            <button type="button" class="gcTeam teamLink" data-team="${escapeAttr(home)}">${esc(home)}</button>
-            <div class="gcScore"><span class="scoreBadge ${cls}"><span class="score" dir="ltr">${esc(score)}</span></span></div>
-            <button type="button" class="gcTeam teamLink" data-team="${escapeAttr(away)}">${esc(away)}</button>
-          </div>
-        </div>
-      `;
-    }).join("");
-
-    updateRoundStatus();
-    updateRoundButtons();
-  }
-
-  document.getElementById("reload")?.addEventListener("click", load);
-  document.getElementById("roundSelect")?.addEventListener("change", ()=>render());
-  document.getElementById("roundPrev")?.addEventListener("click", ()=>stepRound(-1));
-  document.getElementById("roundNext")?.addEventListener("click", ()=>stepRound(1));
-  document.getElementById("teamFilter")?.addEventListener("input", ()=>render());
-  document.getElementById("onlyTeam")?.addEventListener("change", render);
-
-  // Click any team name to open quick stats
-  document.addEventListener("click", (ev)=>{
-    const btn = ev.target?.closest?.(".teamLink");
-    if(!btn) return;
-    const name = btn.getAttribute("data-team") || "";
-    openTeamModal(name);
-  });
-
-  document.getElementById("teamModalClose")?.addEventListener("click", closeTeamModal);
-  document.getElementById("teamModalOverlay")?.addEventListener("click", (e)=>{
-    if(e.target?.id === "teamModalOverlay") closeTeamModal();
-  });
-  document.addEventListener("keydown", (e)=>{
-    if(e.key === "Escape") closeTeamModal();
-  });
-
-  load();
-</script>
-  <script>
-(function(){
-  const tabs = Array.from(document.querySelectorAll(".tabs [data-tab]"));
-  const panels = Array.from(document.querySelectorAll(".tab-panel[data-panel]"));
-  if(!tabs.length || !panels.length) return;
-
-  function setAria(){
-    tabs.forEach(btn=>{
-      const on = btn.classList.contains("active");
-      btn.setAttribute("aria-selected", on ? "true" : "false");
-    });
-  }
-
-  function setTab(name){
-    tabs.forEach(btn=>btn.classList.toggle("active", btn.dataset.tab === name));
-    panels.forEach(p=>p.classList.toggle("active", p.dataset.panel === name));
-    setAria();
-    try{ localStorage.setItem("galil_active_tab", name); }catch(e){}
-  }
-
-  tabs.forEach(btn=>{
-    btn.addEventListener("click", ()=> setTab(btn.dataset.tab));
-  });
-
-  let initial = "games";
-  try{
-    const saved = localStorage.getItem("galil_active_tab");
-    if(saved) initial = saved;
-  }catch(e){}
-  setTab(initial);
-})();
-</script>
-</body>
-</html>
+         שגיאה: <code>${String(
