@@ -395,12 +395,15 @@ td.scoreCell{text-align:center;}
   }
   
   .controls{
-    padding: 18px 16px;
+    padding: 12px 0;
     margin: 0;
     border-radius: 0;
     border-left: none;
     border-right: none;
+    border-top: none;
+    border-bottom: 1px solid var(--border);
     width: 100%;
+    background: transparent;
   }
   .controlsRow{
     justify-content: center;
@@ -409,13 +412,17 @@ td.scoreCell{text-align:center;}
     align-items: center;
   }
   .roundBox{
-    padding: 12px 16px;
+    padding: 10px 16px;
     gap: 10px;
-    flex: 1;
-    max-width: 100%;
+    max-width: calc(100% - 32px);
+    margin: 0 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
   }
   .iconBtn{
     padding: 12px 16px;
@@ -441,14 +448,18 @@ td.scoreCell{text-align:center;}
   
   .tabs{
     gap: 8px;
-    margin: 0;
-    padding: 10px 16px;
-    background: #f8fafc;
-    width: 100%;
+    margin: 0 16px;
+    margin-bottom: 12px;
+    padding: 10px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
   }
   .tabBtn{
-    padding: 14px 12px;
-    font-size: 15px;
+    padding: 12px 10px;
+    font-size: 14px;
     flex: 1;
   }
   
