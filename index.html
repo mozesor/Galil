@@ -18,7 +18,7 @@
   --border: rgba(15,23,42,0.08);
   --text: #0f172a;
   --muted: #64748b;
-ש
+
   /* Pill colors - softer tones */
   --pill-bg: #f1f5f9;
   --pill-border: #cbd5e1;
@@ -1593,12 +1593,19 @@ function updateRoundButtons(){
         if(!g.date) return false;
         return new Date(g.date) > now;
       });
-      if(hasFutureGames) return rr.number;
+      if(hasFutureGames) {
+        console.log('Best round found:', rr.number);
+        return rr.number;
+      }
     }
     
     for(let i = rs.length - 1; i >= 0; i--){
-      if(rs[i].gamesCount > 0) return rs[i].number;
+      if(rs[i].gamesCount > 0) {
+        console.log('Best round (last with games):', rs[i].number);
+        return rs[i].number;
+      }
     }
+    console.log('No best round found');
     return null;
   }
 
@@ -1982,6 +1989,7 @@ function renderCalendar(){
   const games = DATA.games || [];
   const dayMap = new Map();
   const bestRound = findBestRound();
+  console.log('renderCalendar: bestRound =', bestRound);
   
   games.forEach(g => {
     if(!g.date) return;
