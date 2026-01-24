@@ -42,231 +42,6 @@
   --radius: 16px;
 }
 
-/* Dark Mode */
-[data-theme="dark"]{
-  --bg1: #0f172a;
-  --bg2: #1e1b4b;
-  --card: #1e293b;
-  --border: rgba(148,163,184,0.3);
-  --text: #f1f5f9;
-  --muted: #cbd5e1;
-
-  --pill-bg: #475569;
-  --pill-border: #64748b;
-  --pill-text: #f1f5f9;
-
-  --score-bg: #065f46;
-  --score-border: #10b981;
-  --score-text: #d1fae5;
-
-  --btn-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  --btn-hover: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-  --tab-active: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-  
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.5);
-  --shadow: 0 4px 16px rgba(0,0,0,0.6);
-  --shadow-lg: 0 10px 40px rgba(0,0,0,0.7);
-}
-
-[data-theme="dark"] body{
-  background: radial-gradient(1200px 600px at 15% 10%, #1e293b, transparent 70%),
-              radial-gradient(1200px 600px at 85% 10%, #312e81, transparent 70%),
-              #0f172a;
-}
-
-[data-theme="dark"] .card{
-  background: #1e293b;
-  border-color: rgba(148,163,184,0.25);
-}
-
-[data-theme="dark"] .roundBox{
-  background: rgba(51,65,85,0.5);
-  border-color: rgba(148,163,184,0.3);
-}
-
-[data-theme="dark"] .iconBtn,
-[data-theme="dark"] .select{
-  background: #475569;
-  border-color: #64748b;
-  color: #f1f5f9;
-}
-
-[data-theme="dark"] .iconBtn:hover,
-[data-theme="dark"] .select:hover{
-  background: #5a6a7a;
-  border-color: #7d8a9a;
-}
-
-[data-theme="dark"] .iconBtn:disabled{
-  background: #334155;
-  color: #64748b;
-}
-
-[data-theme="dark"] .themeToggle,
-[data-theme="dark"] .filterBtn{
-  background: #475569;
-  border-color: #64748b;
-  color: #f1f5f9;
-}
-
-[data-theme="dark"] .themeToggle:hover,
-[data-theme="dark"] .filterBtn:hover{
-  background: #5a6a7a;
-  border-color: #7d8a9a;
-}
-
-[data-theme="dark"] .filterBtn.active{
-  background: var(--tab-active);
-  color: #ffffff;
-  border-color: transparent;
-}
-
-[data-theme="dark"] .teamLink{
-  background: #475569;
-  border-color: #64748b;
-  color: #f1f5f9;
-}
-
-[data-theme="dark"] .teamLink:hover{
-  background: #5a6a7a;
-  border-color: #7d8a9a;
-}
-
-[data-theme="dark"] th{
-  background: #334155;
-  color: #e2e8f0;
-  border-bottom-color: rgba(148,163,184,0.2);
-}
-
-[data-theme="dark"] td{
-  color: #e2e8f0;
-  border-bottom-color: rgba(148,163,184,0.15);
-}
-
-[data-theme="dark"] tr.hl{
-  background: rgba(34,197,94,0.2);
-}
-
-[data-theme="dark"] tr.hl2{
-  background: rgba(245,158,11,0.25);
-}
-
-[data-theme="dark"] tr.standRow:hover{
-  background: rgba(51,65,85,0.5);
-}
-
-[data-theme="dark"] .scoreBadge.win{
-  background: #065f46;
-  border-color: #10b981;
-  color: #d1fae5;
-}
-
-[data-theme="dark"] .scoreBadge.lose{
-  background: #7f1d1d;
-  border-color: #dc2626;
-  color: #fecaca;
-}
-
-[data-theme="dark"] .scoreBadge.draw{
-  background: #713f12;
-  border-color: #f59e0b;
-  color: #fef3c7;
-}
-
-[data-theme="dark"] .scoreBadge.other{
-  background: #334155;
-  border-color: #64748b;
-  color: #94a3b8;
-}
-
-[data-theme="dark"] .scoreBadge.pending{
-  background: #334155;
-  border-color: #64748b;
-  color: #cbd5e1;
-}
-
-[data-theme="dark"] .modal{
-  background: #1e293b;
-  border-color: rgba(148,163,184,0.3);
-}
-
-[data-theme="dark"] .modalHeader{
-  background: linear-gradient(to bottom, #334155, #1e293b);
-  border-bottom-color: rgba(148,163,184,0.2);
-}
-
-[data-theme="dark"] .kpi{
-  background: #334155;
-  border-color: #475569;
-  color: #e2e8f0;
-}
-
-[data-theme="dark"] .kpi .label{
-  color: #cbd5e1;
-}
-
-[data-theme="dark"] .kpi .value{
-  color: #f1f5f9;
-}
-
-[data-theme="dark"] .badge.win{
-  background: #064e3b;
-  border-color: #059669;
-  color: #d1fae5;
-}
-
-[data-theme="dark"] .badge.lose{
-  background: #7f1d1d;
-  border-color: #dc2626;
-  color: #fecaca;
-}
-
-[data-theme="dark"] .badge.draw{
-  background: #713f12;
-  border-color: #f59e0b;
-  color: #fef3c7;
-}
-
-[data-theme="dark"] .calendarDay{
-  background: #1e293b;
-  border-color: rgba(148,163,184,0.25);
-}
-
-[data-theme="dark"] .dayHeader{
-  color: #f1f5f9;
-  border-bottom-color: rgba(148,163,184,0.2);
-}
-
-[data-theme="dark"] .miniGame{
-  background: #334155;
-  color: #e2e8f0;
-}
-
-[data-theme="dark"] .miniGame.highlight{
-  background: rgba(34,197,94,0.25);
-  border-color: rgba(34,197,94,0.4);
-}
-
-[data-theme="dark"] #errorBox{
-  background: #7f1d1d;
-  border-color: #dc2626;
-  color: #fecaca;
-}
-
-@media (max-width: 720px){
-  [data-theme="dark"] .header{
-    background: linear-gradient(135deg, #1e293b 0%, #312e81 100%);
-  }
-  [data-theme="dark"] .topBar,
-  [data-theme="dark"] .tabs{
-    background: #0f172a;
-  }
-}
-
-[data-theme="dark"] .modalOverlay{
-  background: rgba(0,0,0,0.95);
-}
-
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -594,11 +369,6 @@ td.scoreCell{text-align:center;}
     font-size: 13px;
     white-space: nowrap;
   }
-  .themeToggle{
-    padding: 11px 16px;
-    font-size: 14px;
-  }
-  
   #errorBox{
     margin: 14px 16px;
     border-radius: 12px;
@@ -1052,24 +822,6 @@ button[id*="Close"]:hover{
   align-items:center;
   flex-wrap:wrap;
 }
-.themeToggle{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:10px;
-  padding:8px 12px;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  gap:6px;
-  font-size:14px;
-  font-weight:600;
-  color:var(--text);
-  transition:all 0.2s ease;
-}
-.themeToggle:hover{
-  background:var(--pill-bg);
-  border-color:var(--pill-border);
-}
 .filterBtn{
   background:var(--card);
   border:1px solid var(--border);
@@ -1238,11 +990,7 @@ button[id*="Close"]:hover{
 
     <div class="topBar">
       <div class="filterGroup">
-        <button class="themeToggle" id="themeToggle" aria-label="החלף ערכת נושא">
-          <span id="themeIcon">🌙</span>
-          <span>מצב לילה</span>
-        </button>
-        <button class="filterBtn active" data-filter="all">הכל</button>
+<button class="filterBtn active" data-filter="all">הכל</button>
         <button class="filterBtn" data-filter="upcoming">משחקים עתידיים</button>
         <button class="filterBtn" data-filter="past">משחקים שעברו</button>
       </div>
@@ -1803,35 +1551,6 @@ document.getElementById("roundSelect").onchange = render;
 
 // ========== NEW FEATURES ==========
 
-// Theme Toggle (Dark Mode)
-function initTheme(){
-  const saved = localStorage.getItem('theme') || 'light';
-  document.documentElement.setAttribute('data-theme', saved);
-  updateThemeIcon(saved);
-}
-
-function toggleTheme(){
-  const current = document.documentElement.getAttribute('data-theme') || 'light';
-  const newTheme = current === 'light' ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-  updateThemeIcon(newTheme);
-}
-
-function updateThemeIcon(theme){
-  const icon = document.getElementById('themeIcon');
-  const text = icon?.nextElementSibling;
-  if(theme === 'dark'){
-    if(icon) icon.textContent = '☀️';
-    if(text) text.textContent = 'מצב יום';
-  } else {
-    if(icon) icon.textContent = '🌙';
-    if(text) text.textContent = 'מצב לילה';
-  }
-}
-
-document.getElementById('themeToggle')?.addEventListener('click', toggleTheme);
-initTheme();
 
 // Favorites Management - Fixed to Galil Elyon only
 const favorites = ['הפ׳ גליל עליון', 'הפועל גליל עליון', 'גליל עליון'];
