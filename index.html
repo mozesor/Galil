@@ -2,7 +2,7 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
   
   <!-- build: v4.3 IMPROVED DESIGN -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -313,9 +313,40 @@ td.scoreCell{text-align:center;}
 .gameCard{display:none;} /* only mobile */
 
 @media (max-width: 720px){
-  .wrap{padding-bottom:80px;}
-  .controlsRow{justify-content:space-between;}
-  .select{min-width: 160px;}
+  .wrap{padding: 12px 10px 80px;}
+  .header{margin: 8px 0 16px;}
+  .header h1{font-size:24px;}
+  .header p{font-size:14px;}
+  .controls{padding:12px;}
+  .controlsRow{justify-content:center; gap:10px;}
+  .roundBox{
+    padding:8px 12px;
+    gap:8px;
+  }
+  .iconBtn{
+    padding:10px 14px;
+    font-size:16px;
+  }
+  .select{
+    min-width:160px; 
+    font-size:14px;
+    padding:10px 12px;
+  }
+  .tabs{
+    gap:8px;
+    margin:10px 0 14px;
+  }
+  .tabBtn{
+    padding:12px 14px;
+    font-size:14px;
+  }
+  .panelTitle{
+    font-size:18px;
+  }
+  .card{
+    border-radius:14px;
+  }
+  /* Switch to cards view on mobile */
   .gamesTable{display:none;}
   .gamesCards{display:block;}
   .gamesCards .gameCard{
@@ -328,15 +359,31 @@ td.scoreCell{text-align:center;}
     box-shadow: var(--shadow);
     transition: all 0.2s ease;
   }
-  .gamesCards .gameCard:hover{
+  .gamesCards .gameCard.hl{
+    background: rgba(34,197,94,0.08);
+  }
+  .gamesCards .gameCard:active{
     box-shadow: var(--shadow-lg);
     transform: translateY(-2px);
   }
-  .gcTop{display:flex; justify-content:space-between; color:var(--muted); font-size:12px; gap:10px;}
-  .gcRow{display:grid; grid-template-columns: 1fr auto 1fr; gap:10px; align-items:center; margin-top:10px;}
+  .gcRow{
+    display:grid; 
+    grid-template-columns: 1fr auto 1fr; 
+    gap:10px; 
+    align-items:center;
+  }
   .gcTeam{text-align:center;}
-  .gcTeam .teamLink,.teamPill{max-width:100%; width:100%; text-align:center;}
+  .gcTeam .teamLink{
+    max-width:100%; 
+    width:100%; 
+    text-align:center;
+    font-size:13px;
+    padding:8px 10px;
+  }
   .gcScore{text-align:center;}
+  .gcScore .scoreBadge{
+    font-size:14px;
+  }
   .matchMeta{
     color:var(--muted);
     font-size:12px;
@@ -349,6 +396,23 @@ td.scoreCell{text-align:center;}
   .teamName.loser{
     color:var(--muted);
     font-weight:700;
+  }
+  /* Better table scrolling on desktop mobile view */
+  .scroll{
+    border-radius:10px;
+  }
+  th, td{
+    padding:10px 8px;
+    font-size:13px;
+  }
+  .teamLink{
+    padding:6px 10px;
+    font-size:13px;
+  }
+  .scoreBadge{
+    padding:6px 10px;
+    min-width:50px;
+    font-size:13px;
   }
 }
 
@@ -539,14 +603,90 @@ button[id*="Close"]:hover{
 }
 
 /* Improved responsiveness */
-@media (max-width: 520px){
+@media (max-width: 720px){
+  .wrap{padding: 12px 10px 60px;}
+  .header{margin: 8px 0 16px;}
   .header h1{font-size:24px;}
-  .tabs{flex-direction:column;}
-  .tabBtn{padding:12px;}
+  .header p{font-size:14px;}
   .controls{padding:12px;}
-  .controlsRow{gap:8px;}
-  .roundBox{padding:8px 10px;}
-  .select{min-width:140px; font-size:14px;}
+  .controlsRow{gap:10px;}
+  .roundBox{
+    padding:8px 12px;
+    gap:8px;
+  }
+  .iconBtn{
+    padding:10px 14px;
+    font-size:16px;
+  }
+  .select{
+    min-width:150px; 
+    font-size:14px;
+    padding:10px 12px;
+  }
+  .tabs{
+    gap:8px;
+    margin:10px 0 14px;
+  }
+  .tabBtn{
+    padding:12px 14px;
+    font-size:14px;
+  }
+  .panelTitle{
+    font-size:18px;
+  }
+  .card{
+    border-radius:14px;
+  }
+  /* Better table scrolling on mobile */
+  .scroll{
+    border-radius:10px;
+  }
+  th, td{
+    padding:10px 8px;
+    font-size:13px;
+  }
+  .teamLink{
+    padding:6px 10px;
+    font-size:13px;
+  }
+  .scoreBadge{
+    padding:6px 10px;
+    min-width:50px;
+    font-size:13px;
+  }
+}
+
+@media (max-width: 480px){
+  .header h1{font-size:22px;}
+  .header p{font-size:13px; line-height:1.5;}
+  .roundBox{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .select{
+    min-width:120px;
+    font-size:13px;
+  }
+  .iconBtn{
+    padding:8px 12px;
+  }
+  th, td{
+    padding:8px 6px;
+    font-size:12px;
+  }
+  .teamLink{
+    padding:5px 8px;
+    font-size:12px;
+    max-width:140px;
+  }
+  .scoreBadge{
+    min-width:45px;
+    font-size:12px;
+  }
+  /* Make modal KPIs stack on very small screens */
+  .kpis{
+    grid-template-columns: 1fr;
+  }
 }
 </style>
   <!-- PWA / Home Screen -->
