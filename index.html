@@ -18,7 +18,7 @@
   --border: rgba(15,23,42,0.08);
   --text: #0f172a;
   --muted: #64748b;
-
+ש
   /* Pill colors - softer tones */
   --pill-bg: #f1f5f9;
   --pill-border: #cbd5e1;
@@ -1613,16 +1613,38 @@ function updateRoundButtons(){
   }
 
   function scrollToCurrentInCalendar(){
+    // First, make sure calendar is rendered
     const container = document.getElementById('calendarView');
-    if(!container) return;
-    const firstCurrentDay = container.querySelector('.calendarDay.hasCurrentRound');
-    if(firstCurrentDay){
-      firstCurrentDay.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // Add a pulse animation to highlight it
-      firstCurrentDay.style.animation = 'pulse 1s ease';
+    if(!container) {
+      console.log('Calendar container not found');
+      return;
+    }
+    
+    // If calendar is empty, render it first
+    if(container.innerHTML.trim() === ''){
+      console.log('Calendar empty, rendering...');
+      renderCalendar();
+      // Wait for render to complete
       setTimeout(() => {
-        firstCurrentDay.style.animation = '';
-      }, 1000);
+        doScroll();
+      }, 200);
+    } else {
+      doScroll();
+    }
+    
+    function doScroll(){
+      const firstCurrentDay = container.querySelector('.calendarDay.hasCurrentRound');
+      if(firstCurrentDay){
+        console.log('Found current round day, scrolling...');
+        firstCurrentDay.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Add a pulse animation to highlight it
+        firstCurrentDay.style.animation = 'pulse 1s ease';
+        setTimeout(() => {
+          firstCurrentDay.style.animation = '';
+        }, 1000);
+      } else {
+        console.log('No current round day found in calendar');
+      }
     }
   }
 
@@ -1747,6 +1769,9 @@ document.getElementById("roundSelect").onchange = render;
   // Calendar jump button using event delegation
   document.addEventListener("click", (ev)=>{
     if(ev.target?.id === "scrollToCurrentInCalendar" || ev.target?.closest?.("#scrollToCurrentInCalendar")){
+      console.log('Calendar jump button clicked!');
+      ev.preventDefault();
+      ev.stopPropagation();
       scrollToCurrentInCalendar();
     }
   });
