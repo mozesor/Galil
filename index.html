@@ -213,9 +213,6 @@ body{
   grid-template-columns: 1fr;
   gap:16px;
 }
-@media (min-width: 980px){
-  .grid{grid-template-columns: 1.25fr 0.95fr;}
-}
 
 .panelTitle{
   margin:0 0 12px;
@@ -706,10 +703,9 @@ button[id*="Close"]:hover{
     const hg = normGoal(g.home?.goals);
     const ag = normGoal(g.away?.goals);
 
-    // Show a real score whenever both sides have non-negative goals.
-    // (Some APIs don't reliably set is_finished, but goals are the source of truth.)
+    // Show score as away:home (reversed for display purposes)
     if(hg !== null && ag !== null){
-      return String(hg) + ":" + String(ag);
+      return String(ag) + ":" + String(hg);
     }
     return "טרם";
   }
@@ -898,8 +894,40 @@ const rs = (DATA.rounds || []).slice().sort((a,b)=>(a.number||0)-(b.number||0));
       }
 
       const cur = DATA?.league?.currentRoundNumber;
-      if(cur) sel.value = String(cur);
-      if(!sel.value && rs.length) sel.value = String(rs[0].number);
+      
+      // Find the best round to display: upcoming round or most recent with games
+      let bestRound = null;
+      const now = new Date();
+      
+      // First, try to find the first round with future games
+      for(const rr of rs){
+        const roundGames = (DATA.games || []).filter(g => g.round?.number === rr.number);
+        const hasFutureGames = roundGames.some(g => {
+          if(!g.date) return false;
+          const gameDate = new Date(g.date);
+          return gameDate > now;
+        });
+        if(hasFutureGames){
+          bestRound = rr.number;
+          break;
+        }
+      }
+      
+      // If no future games found, use the last round with games, or API's current, or first round
+      if(!bestRound){
+        // Use the last round that has games
+        for(let i = rs.length - 1; i >= 0; i--){
+          if(rs[i].gamesCount > 0){
+            bestRound = rs[i].number;
+            break;
+          }
+        }
+      }
+      
+      // Set the selected round
+      if(bestRound) sel.value = String(bestRound);
+      else if(cur) sel.value = String(cur);
+      else if(rs.length) sel.value = String(rs[0].number);
 
       updateRoundStatus();
       render();
