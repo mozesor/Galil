@@ -550,8 +550,8 @@ td.scoreCell{text-align:center;}
   .gamesCards{display:block;}
   .gamesCards .gameCard{
     display:block;
-    margin:12px 0;
-    padding:14px;
+    margin:10px 0;
+    padding:16px;
     border:1px solid var(--border);
     border-radius: 14px;
     background:#fff;
@@ -560,33 +560,50 @@ td.scoreCell{text-align:center;}
   }
   .gamesCards .gameCard.hl{
     background: rgba(34,197,94,0.08);
+    border-color: rgba(34,197,94,0.3);
   }
   .gamesCards .gameCard:active{
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-2px);
+    transform: scale(0.98);
   }
   .gcRow{
     display:grid; 
     grid-template-columns: 1fr auto 1fr; 
-    gap:10px; 
+    gap:12px; 
     align-items:center;
   }
-  .gcTeam{text-align:center;}
+  .gcTeam{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+  }
   .gcTeam .teamLink{
     max-width:100%; 
     width:100%; 
     text-align:center;
     font-size:13px;
     padding:8px 10px;
+    word-break:break-word;
   }
-  .gcScore{text-align:center;}
+  .gcScore{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+  }
   .gcScore .scoreBadge{
-    font-size:14px;
+    font-size:16px;
+    font-weight:900;
+    padding:8px 12px;
+    min-width:60px;
   }
   .matchMeta{
     color:var(--muted);
-    font-size:12px;
-    margin-top:6px;
+    font-size:11px;
+    margin-top:4px;
+    white-space:nowrap;
   }
   .teamName.winner{
     color:#059669;
@@ -599,6 +616,7 @@ td.scoreCell{text-align:center;}
   /* Better table scrolling on desktop mobile view */
   .scroll{
     border-radius:10px;
+    overflow-x:auto;
   }
   th, td{
     padding:10px 8px;
@@ -612,6 +630,20 @@ td.scoreCell{text-align:center;}
     padding:6px 10px;
     min-width:50px;
     font-size:13px;
+  }
+  /* Top bar mobile adjustments */
+  .topBar{
+    flex-direction:column;
+    gap:10px;
+  }
+  .filterGroup{
+    width:100%;
+    justify-content:center;
+  }
+  .filterBtn{
+    flex:1;
+    padding:10px 12px;
+    font-size:12px;
   }
 }
 
@@ -675,6 +707,20 @@ td.scoreCell{text-align:center;}
 .modalBody{
   padding: 18px;
   overflow:auto;
+  max-width:100%;
+}
+.modalBody table{
+  width:100%;
+  max-width:100%;
+  table-layout:fixed;
+}
+.modalBody th,
+.modalBody td{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding:8px 6px;
+  font-size:13px;
 }
 
 /* Mobile adjustments - but keep centered */
@@ -685,9 +731,34 @@ td.scoreCell{text-align:center;}
   .modal{
     max-height: 90vh;
     border-radius: 16px;
+    width:calc(100% - 28px);
+  }
+  .modalBody{
+    padding:14px;
+  }
+  .modalBody table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
   }
   .header h1{
     font-size: 26px;
+  }
+  .kpis{
+    grid-template-columns:1fr;
+  }
+  .kpi{
+    padding:12px;
+  }
+  .sectionTitle{
+    font-size:15px;
+  }
+  .badges{
+    gap:6px;
+  }
+  .badge{
+    font-size:11px;
+    padding:5px 10px;
   }
 }
 
