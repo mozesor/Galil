@@ -1549,8 +1549,7 @@ function hideLoading(){
 }
 
 // Enhanced render with fade animation and filters
-const originalRender = render;
-function render(){
+function renderWithAnimation(){
   const body = document.getElementById("gamesBody");
   const cards = document.getElementById("gamesCards");
   
@@ -1559,26 +1558,12 @@ function render(){
   if(cards) cards.style.opacity = '0';
   
   setTimeout(()=>{
-    originalRender();
-    
-    // Apply date filter
-    if(currentFilter !== 'all'){
-      const now = new Date();
-      document.querySelectorAll('#gamesBody tr, .gameCard').forEach(el => {
-        const dateText = el.textContent;
-        // This is a simple filter - you can enhance it
-        if(currentFilter === 'upcoming'){
-          // Show future games logic here if needed
-        } else if(currentFilter === 'past'){
-          // Show past games logic here if needed
-        }
-      });
-    }
+    renderActual();
     
     // Update favorite stars
     updateFavoriteStars();
     
-    // Highlight favorite teams
+    // Highlight favorite teams (in addition to Galil)
     document.querySelectorAll('#gamesBody tr, .gameCard').forEach(row => {
       const teamLinks = row.querySelectorAll('.teamLink');
       let hasFavorite = false;
@@ -1605,6 +1590,121 @@ function render(){
     
     renderCalendar();
   }, 150);
+}
+
+function renderActual(){
+  if(!DATA) return;
+
+  updateRoundButtons();
+  updateRoundStatus();
+
+  const roundNo = Number(document.getElementById("roundSelect").value);
+  const teamQ = (document.getElementById("teamFilter")?.value || "").trim();
+  let games = (DATA.games || []).filter(g => (g.round?.number ?? null) === roundNo);
+  
+  // Apply date filter
+  if(currentFilter === 'upcoming'){
+    const now = new Date();
+    games = games.filter(g => {
+      if(!g.date) return false;
+      return new Date(g.date) > now;
+    });
+  } else if(currentFilter === 'past'){
+    const now = new Date();
+    games = games.filter(g => {
+      if(!g.date) return true;
+      return new Date(g.date) <= now;
+    });
+  }
+  
+  games.sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+
+  const body = document.getElementById("gamesBody");
+  body.innerHTML = "";
+  const cards = document.getElementById("gamesCards");
+  if(cards) cards.innerHTML = "";
+  
+  for(const g of games){
+    const tr = document.createElement("tr");
+    const isTeam = includesTeam(g, teamQ);
+    const score = formatScore(g);
+    const hg = normGoal(g.home?.goals);
+    const ag = normGoal(g.away?.goals);
+    
+    let out = "pending";
+    if(hg !== null && ag !== null){
+      if(hg > ag) out = "home";
+      else if(ag > hg) out = "away";
+      else out = "draw";
+    }
+    
+    const badgeCls = (out==="home" || out==="away") ? "win" : (out==="draw" ? "draw" : "pending");
+    
+    tr.innerHTML = `
+      <td style="white-space:nowrap;">${esc(fmtDate(g.date))}</td>
+      <td>
+        <button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">
+          ${esc(g.home?.name || "")}
+          <button class="favStar" data-fav="${escapeAttr(g.home?.name || "")}" onclick="event.stopPropagation();toggleFavorite('${escapeAttr(g.home?.name || "")}')">★</button>
+        </button>
+      </td>
+      <td style="text-align:center;"><span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span></td>
+      <td>
+        <button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">
+          ${esc(g.away?.name || "")}
+          <button class="favStar" data-fav="${escapeAttr(g.away?.name || "")}" onclick="event.stopPropagation();toggleFavorite('${escapeAttr(g.away?.name || "")}')">★</button>
+        </button>
+      </td>
+    `;
+    
+    if(isTeam) tr.className = "hl";
+    body.appendChild(tr);
+
+    if(cards){
+      const card = document.createElement("div");
+      card.className = "gameCard" + (isTeam ? " hl" : "");
+      const homeCls = (out==="home") ? "winner" : (out==="away" ? "loser" : "");
+      const awayCls = (out==="away") ? "winner" : (out==="home" ? "loser" : "");
+      card.innerHTML = `
+        <div class="gcRow">
+          <div class="gcTeam gcHome"><button class="teamLink ${homeCls}" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}<button class="favStar" data-fav="${escapeAttr(g.home?.name || "")}" onclick="event.stopPropagation();toggleFavorite('${escapeAttr(g.home?.name || "")}')">★</button></button></div>
+          <div class="gcScore">
+            <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
+            <div class="matchMeta">${esc(fmtDate(g.date))}</div>
+          </div>
+          <div class="gcTeam gcAway"><button class="teamLink ${awayCls}" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}<button class="favStar" data-fav="${escapeAttr(g.away?.name || "")}" onclick="event.stopPropagation();toggleFavorite('${escapeAttr(g.away?.name || "")}')">★</button></button></div>
+        </div>
+      `;
+      cards.appendChild(card);
+    }
+  }
+
+  const sb = document.getElementById("standBody");
+  sb.innerHTML = "";
+  for(const t of (DATA.standings || [])){
+    const tr = document.createElement("tr");
+    tr.classList.add('standRow');
+    tr.addEventListener('click', ()=> openTeamModal(t.name ?? ""));
+    const isTeam = teamQ && matchTeamName((t.name||""), teamQ);
+    tr.innerHTML = `
+      <td>${t.rank ?? ""}</td>
+      <td><button class="teamLink" data-team="${escapeAttr(t.name ?? "")}">${esc(t.name ?? "")}<button class="favStar" data-fav="${escapeAttr(t.name ?? "")}" onclick="event.stopPropagation();toggleFavorite('${escapeAttr(t.name ?? "")}')">★</button></button></td>
+      <td><b>${t.points ?? ""}</b></td>
+      <td>${t.games ?? ""}</td>
+      <td>${t.wins ?? ""}</td>
+      <td>${t.draws ?? ""}</td>
+      <td>${t.losses ?? ""}</td>
+      <td>${t.gf ?? ""}</td>
+      <td>${t.ga ?? ""}</td>
+      <td>${t.gd ?? ""}</td>
+    `;
+    if(isTeam) tr.className = "hl2";
+    sb.appendChild(tr);
+  }
+}
+
+function render(){
+  renderWithAnimation();
 }
 
 // Calendar View
