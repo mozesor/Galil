@@ -303,6 +303,12 @@ tr.standRow:hover{
   100% { opacity: 1; }
 }
 
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4); }
+  100% { transform: scale(1); }
+}
+
 .teamLink,.teamPill{
   display:inline-block;
   padding:8px 14px;
@@ -1206,8 +1212,9 @@ button[id*="Close"]:hover{
 
       <div class="tab-panel" data-panel="calendar">
         <div class="card">
-          <div style="padding:16px 16px 12px">
-            <h2 class="panelTitle">לוח שנה</h2>
+          <div style="padding:16px 16px 12px; display:flex; justify-content:space-between; align-items:center;">
+            <h2 class="panelTitle" style="margin:0;">לוח שנה</h2>
+            <button id="scrollToCurrentInCalendar" class="jumpBtn" style="display:inline-block; margin:0;">📍 קפוץ למחזור הנוכחי</button>
           </div>
           <div style="padding:0 16px 16px">
             <div id="calendarView" class="calendarGrid"></div>
@@ -1605,6 +1612,20 @@ function updateRoundButtons(){
     }
   }
 
+  function scrollToCurrentInCalendar(){
+    const container = document.getElementById('calendarView');
+    if(!container) return;
+    const firstCurrentDay = container.querySelector('.calendarDay.hasCurrentRound');
+    if(firstCurrentDay){
+      firstCurrentDay.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Add a pulse animation to highlight it
+      firstCurrentDay.style.animation = 'pulse 1s ease';
+      setTimeout(() => {
+        firstCurrentDay.style.animation = '';
+      }, 1000);
+    }
+  }
+
   function stepRound(delta){
     const sel = document.getElementById("roundSelect");
     if(!sel) return;
@@ -1713,6 +1734,7 @@ document.getElementById("roundSelect").onchange = render;
   document.getElementById("roundPrev").onclick = () => stepRound(-1);
   document.getElementById("roundNext").onclick = () => stepRound(1);
   document.getElementById("jumpToCurrentRound").onclick = jumpToCurrentRound;
+  document.getElementById("scrollToCurrentInCalendar").onclick = scrollToCurrentInCalendar;
   document.getElementById("teamFilter").oninput = render;
   document.getElementById("onlyTeam").onchange = render;
 
@@ -1991,6 +2013,14 @@ function renderCalendar(){
       </div>
     `;
   }).join('');
+  
+  // Auto-scroll to first current round day
+  setTimeout(() => {
+    const firstCurrentDay = container.querySelector('.calendarDay.hasCurrentRound');
+    if(firstCurrentDay){
+      firstCurrentDay.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, 100);
 }
 
 </script>
