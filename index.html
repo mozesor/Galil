@@ -580,7 +580,9 @@ button[id*="Close"]:hover{
         </div>
         <span id="roundStatus" class="sub"></span>
       </div>
-      <input type="search" id="teamFilter" class="search" placeholder="חפש קבוצה..." aria-label="חפש קבוצה" />
+      <!-- האתר ממוקד בהפועל גליל עליון: סינון הקבוצה קבוע ומוסתר -->
+      <input id="teamFilter" value="הפ׳ גליל עליון" type="hidden" />
+      <input type="checkbox" id="onlyTeam" checked style="display:none" />
     </div>
 
     <div class="tabs" role="tablist">
@@ -600,7 +602,7 @@ button[id*="Close"]:hover{
                 <tr>
                   <th>תאריך</th>
                   <th>בית</th>
-                  <th style="display:none;"></th>
+                  <th>תוצאה</th>
                   <th>חוץ</th>
                 </tr>
               </thead>
@@ -656,135 +658,185 @@ button[id*="Close"]:hover{
 <script>
   let DATA = null;
 
-  function esc(s){ 
-    return String(s||"")
-      .replace(/&/g,"&amp;")
-      .replace(/</g,"&lt;")
-      .replace(/>/g,"&gt;")
-      .replace(/"/g,"&quot;");
-  }
-  function escapeAttr(s){ return esc(s); }
-
-  function fmtDate(iso){
-    if(!iso) return "—";
+  function fmtDate(s){
+    if(!s) return "";
     try{
-      const d = new Date(iso);
-      const day = String(d.getDate()).padStart(2,"0");
-      const mon = String(d.getMonth()+1).padStart(2,"0");
-      const yr = String(d.getFullYear()).slice(2);
-      const hh = String(d.getHours()).padStart(2,"0");
-      const mm = String(d.getMinutes()).padStart(2,"0");
-      return `שבת, ${day}.${mon}.${yr}, ${hh}:${mm}`;
-    }catch(e){
-      return iso.replace(/T/, " ").slice(0,16);
+      const d = new Date(s);
+      return d.toLocaleString("he-IL", { weekday:"short", year:"2-digit", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit" });
+    }catch{ return s; }
+  }
+
+  function normTeamName(s){
+    return String(s||"")
+      .toLowerCase()
+      .replace(/["'״׳`´]/g,"")
+      .replace(/[\u05F3\u05F4]/g,"")      // geresh/gershayim
+      .replace(/[\.\,\-–—\(\)\[\]\{\}:;!؟?]/g," ")
+      .replace(/\s+/g," ")
+      .trim();
+  }
+
+  function isGalilQuery(qn){
+    return qn.includes("גליל") && qn.includes("עליון");
+  }
+
+  function matchTeamName(name, q){
+    const n = normTeamName(name);
+    const qn = normTeamName(q);
+
+    if(!qn) return false;
+
+    // Special: focus on "גליל עליון" regardless of abbreviation (הפ', הפועל, וכו')
+    if(isGalilQuery(qn)){
+      return n.includes("גליל") && n.includes("עליון");
     }
+
+    // General: substring match on normalized strings
+    return n.includes(qn) || qn.includes(n);
   }
 
-  function normGoal(g){
-    return (typeof g === "number") ? g : null;
-  }
-  function formatScore(game){
-    const hg = normGoal(game.home?.goals);
-    const ag = normGoal(game.away?.goals);
-    if(hg === null || ag === null) return "—";
-    return `${hg}:${ag}`;
+  function includesTeam(game, q){
+    if(!q) return false;
+    return matchTeamName(game.home?.name || "", q) || matchTeamName(game.away?.name || "", q);
   }
 
-  function matchTeamName(a, b){
-    const n1 = String(a||"").trim();
-    const n2 = String(b||"").trim();
-    return n1.includes(n2) || n2.includes(n1);
-  }
-  function includesTeam(game, query){
-    if(!query) return false;
-    return matchTeamName(game.home?.name || "", query) || matchTeamName(game.away?.name || "", query);
+  function normGoal(v){
+    if(v === null || v === undefined || v === "") return null;
+    const n = Number(v);
+    if(!Number.isFinite(n)) return null;
+    if(n < 0) return null; // API uses -1 for not played yet
+    return n;
   }
 
-  function openTeamModal(teamName){
-    if(!DATA || !teamName) return;
-    const title = document.getElementById("teamModalTitle");
-    const body = document.getElementById("teamModalBody");
-    title.textContent = `מול ${teamName}`;
+  function formatScore(g){
+    const hg = normGoal(g.home?.goals);
+    const ag = normGoal(g.away?.goals);
 
-    const galilNames = ["הפועל גליל עליון","גליל עליון","הפ' גליל עליון"];
-    function isGalil(n){ return galilNames.some(g=>matchTeamName(n,g)); }
+    // Show a real score whenever both sides have non-negative goals.
+    // (Some APIs don't reliably set is_finished, but goals are the source of truth.)
+    if(hg !== null && ag !== null){
+      return String(hg) + ":" + String(ag);
+    }
+    return "טרם";
+  }
 
-    const allGames = DATA.games || [];
-    const h2h = allGames.filter(g=>{
-      const hn = g.home?.name || "";
-      const an = g.away?.name || "";
-      const isGh = isGalil(hn);
-      const isGa = isGalil(an);
-      if(isGh && matchTeamName(an, teamName)) return true;
-      if(isGa && matchTeamName(hn, teamName)) return true;
-      return false;
-    });
-    h2h.sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+  function esc(s){
+    return String(s ?? "")
+      .replaceAll("&","&amp;")
+      .replaceAll("<","&lt;")
+      .replaceAll(">","&gt;")
+      .replaceAll('"',"&quot;")
+      .replaceAll("'","&#39;");
+  }
+  function escapeAttr(s){ return esc(s).replaceAll("`","&#96;"); }
 
-    let w=0, l=0, d=0;
+  function buildOpponentLocation(g, focusTeamQ){
+    // עמודת "אצל מי" — ברירת מחדל: הקבוצה המארחת (בית)
+    const h = (g.home?.name || "");
+    const a = (g.away?.name || "");
+    const q = (focusTeamQ || "").trim();
+    if(!q) return h || (g?.venue || "");
+
+    // אם המשחק כולל את גליל — נציג את היריבה בצורה ידידותית
+    if(matchTeamName(h, q) && a){
+      return `בית מול ${a}`;
+    }
+    if(matchTeamName(a, q) && h){
+      return `חוץ אצל ${h}`;
+    }
+
+    // משחקים אחרים בליגה: "אצל מי" = הקבוצה בבית
+    return h || (g?.venue || "");
+  }
+
+
+  function teamOutcomeFor(g, teamQ){
+    const q = (teamQ || "").trim().toLowerCase();
+    const h = (g.home?.name || "");
+    const a = (g.away?.name || "");
+    const hg = normGoal(g.home?.goals);
+    const ag = normGoal(g.away?.goals);
+    if(hg === null || ag === null) return null; // not played
+    if(!q) return null;
+
+    const isHome = matchTeamName(h, teamQ);
+    const isAway = matchTeamName(a, teamQ);
+    if(!isHome && !isAway) return null;
+
+    const my = isHome ? hg : ag;
+    const opp = isHome ? ag : hg;
+    if(my > opp) return "W";
+    if(my < opp) return "L";
+    return "D";
+  }
+
+  function openTeamModal(opponent){
+    if(!DATA) return;
+    const myTeamQ = (document.getElementById("teamFilter")?.value || "").trim() || "גליל";
+    const oppName = (opponent || "").trim();
+    if(!oppName) return;
+
+    const played = (DATA.games || []).filter(g => normGoal(g.home?.goals) !== null && normGoal(g.away?.goals) !== null);
+
+    const h2h = played.filter(g=>{
+      const h = (g.home?.name || "");
+      const a = (g.away?.name || "");
+      return (matchTeamName(h, myTeamQ) && matchTeamName(a, oppName)) || (matchTeamName(h, oppName) && matchTeamName(a, myTeamQ));
+    }).sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+
+    const last = h2h[0] || null;
+    const last5 = h2h.slice(0,5);
+
+    let w=0,l=0,d=0;
     for(const g of h2h){
-      if(!g.is_finished) continue;
-      const hg = normGoal(g.home?.goals);
-      const ag = normGoal(g.away?.goals);
-      if(hg === null || ag === null) continue;
-      const isGh = isGalil(g.home?.name || "");
-      const isGa = isGalil(g.away?.name || "");
-      if(!isGh && !isGa) continue;
-      if(isGh){
-        if(hg>ag) w++; else if(hg<ag) l++; else d++;
-      } else {
-        if(ag>hg) w++; else if(ag<hg) l++; else d++;
-      }
+      const o = teamOutcomeFor(g, myTeamQ);
+      if(o==="W") w++;
+      else if(o==="L") l++;
+      else if(o==="D") d++;
     }
 
-    const teamGames = allGames.filter(g=>{
-      const hn = g.home?.name || "";
-      const an = g.away?.name || "";
-      return matchTeamName(hn, teamName) || matchTeamName(an, teamName);
-    });
-    teamGames.sort((a,b)=>(b.date||"").localeCompare(a.date||""));
-    const recent = teamGames.slice(0,5);
+    const last2 = h2h.slice(0,2);
 
-    let recentBadges = "";
-    for(const g of recent){
-      if(!g.is_finished){
-        recentBadges += `<span class="badge pending">טרם שוחק</span>`;
-        continue;
-      }
-      const hg = normGoal(g.home?.goals);
-      const ag = normGoal(g.away?.goals);
-      if(hg === null || ag === null){
-        recentBadges += `<span class="badge pending">—</span>`;
-        continue;
-      }
-      const isHome = matchTeamName(g.home?.name || "", teamName);
-      const isAway = matchTeamName(g.away?.name || "", teamName);
-      let type = "pending";
-      if(isHome){
-        if(hg>ag) type="win"; else if(hg<ag) type="lose"; else type="draw";
-      } else if(isAway){
-        if(ag>hg) type="win"; else if(ag<hg) type="lose"; else type="draw";
-      }
-      const label = (type==="win") ? "ניצחון" : (type==="lose") ? "הפסד" : "תיקו";
-      const oppName = isHome ? (g.away?.name || "") : (g.home?.name || "");
-      recentBadges += `<span class="badge ${type}">${label} ${hg}:${ag} מול ${esc(oppName)}</span>`;
-    }
+    const recent = played
+      .filter(g=>includesTeam(g, oppName))
+      .sort((a,b)=>(b.date||"").localeCompare(a.date||""))
+      .slice(0,5);
 
-    let lastHtml = `<div class="tiny">אין משחק קודם מול קבוצה זו.</div>`;
-    if(h2h.length){
-      const last = h2h[h2h.length - 1];
-      const hg = normGoal(last.home?.goals);
-      const ag = normGoal(last.away?.goals);
-      const score = (hg !== null && ag !== null) ? `${hg}:${ag}` : "—";
-      lastHtml = `
-        <div class="kpi" style="max-width:400px;">
-          <div class="label">${esc(last.home?.name || "")} vs ${esc(last.away?.name || "")}</div>
-          <div class="value">${score}</div>
-          <div class="tiny">${fmtDate(last.date)}</div>
-        </div>
-      `;
-    }
+    const recentBadges = recent.map(g=>{
+      const o = teamOutcomeFor(g, oppName);
+      const score = formatScore(g);
+      const opp = matchTeamName((g.home?.name||""), oppName) ? (g.away?.name||"") : (g.home?.name||"");
+      const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
+      const label = o==="W" ? "ניצחון" : o==="L" ? "הפסד" : "תיקו";
+      return `<span class="badge ${cls}">${label} • ${esc(opp)} • ${esc(score)}</span>`;
+    }).join("");
 
+    const lastHtml = last2.length ? `
+      <table class="smallTable" style="width:100%; border-collapse:collapse;">
+        <tr>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">תאריך</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">משחק</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">תוצאה</th>
+          <th style="text-align:right; padding:8px; border-bottom:1px solid var(--border);">גליל</th>
+        </tr>
+        ${last2.map(g=>{
+          const o = teamOutcomeFor(g, myTeamQ);
+          const cls = o==="W" ? "win" : o==="L" ? "lose" : "draw";
+          const label = o==="W" ? "ניצחון" : o==="L" ? "הפסד" : "תיקו";
+          return `
+          <tr>
+            <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(fmtDate(g.date))}</td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);">${esc(g.home?.name||"")} מול ${esc(g.away?.name||"")}</td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);"><b dir="ltr">${esc(formatScore(g))}</b></td>
+            <td style="padding:8px; border-bottom:1px solid var(--border);"><span class="badge ${cls}">${label}</span></td>
+          </tr>`;
+        }).join("")}
+      </table>
+      <div class="tiny" style="margin-top:8px;">מוצגים עד שני המשחקים האחרונים ששוחקו מול גליל.</div>
+    ` : `<div class="tiny">לא נמצא משחק ששוחק עדיין בין "${esc(myTeamQ)}" ל-"${esc(oppName)}".</div>`;
+
+    const body = document.getElementById("teamModalBody");
+    document.getElementById("teamModalTitle").textContent = `מול ${oppName}`;
     body.innerHTML = `
       <div class="kpis">
         <div class="kpi"><div class="label">מאזן גליל מול הקבוצה</div><div class="value">${w} נצ׳ • ${l} הפ׳${d?` • ${d} תיקו`:""}</div></div>
@@ -792,7 +844,7 @@ button[id*="Close"]:hover{
         <div class="kpi"><div class="label">מיקוד</div><div class="value">הפ׳ גליל עליון</div></div>
       </div>
 
-      <div class="sectionTitle">המשחק האחרון ביניהן</div>
+      <div class="sectionTitle">המשחקים האחרונים ביניהן</div>
       ${lastHtml}
 
       <div class="sectionTitle">5 משחקים אחרונים של הקבוצה (כללי)</div>
@@ -907,31 +959,35 @@ function updateRoundButtons(){
     updateRoundStatus();
 
     const roundNo = Number(document.getElementById("roundSelect").value);
-    const teamQ = document.getElementById("teamFilter").value.trim();
-        let games = (DATA.games || []).filter(g => (g.round?.number ?? null) === roundNo);
+    const teamQ = (document.getElementById("teamFilter")?.value || "").trim();
+    let games = (DATA.games || []).filter(g => (g.round?.number ?? null) === roundNo);
     games.sort((a,b)=>(a.date||"").localeCompare(b.date||""));
 
     const body = document.getElementById("gamesBody");
     body.innerHTML = "";
     const cards = document.getElementById("gamesCards");
     if(cards) cards.innerHTML = "";
+    
     for(const g of games){
       const tr = document.createElement("tr");
       const isTeam = includesTeam(g, teamQ);
-            const score = formatScore(g);
+      const score = formatScore(g);
       const hg = normGoal(g.home?.goals);
       const ag = normGoal(g.away?.goals);
+      
       let out = "pending";
       if(hg !== null && ag !== null){
         if(hg > ag) out = "home";
         else if(ag > hg) out = "away";
         else out = "draw";
       }
+      
       const homeCls = (out==="home") ? "winner" : (out==="away" ? "loser" : "");
       const awayCls = (out==="away") ? "winner" : (out==="home" ? "loser" : "");
       const badgeCls = (out==="home" || out==="away") ? "win" : (out==="draw" ? "draw" : "pending");
-tr.innerHTML = `
-        <td>${fmtDate(g.date)}</td>
+      
+      tr.innerHTML = `
+        <td>${esc(fmtDate(g.date))}</td>
         <td><button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></td>
         <td>
           <div class="matchTeams">
@@ -939,10 +995,11 @@ tr.innerHTML = `
             <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
             <span class="teamName ${awayCls}">${esc(g.away?.name || "")}</span>
           </div>
-          <div class="matchMeta">${fmtDate(g.date)}</div>
+          <div class="matchMeta">${esc(fmtDate(g.date))}</div>
         </td>
         <td><button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></td>
-              `;
+      `;
+      
       if(isTeam) tr.className = "hl";
       body.appendChild(tr);
 
@@ -954,7 +1011,7 @@ tr.innerHTML = `
             <div class="gcTeam gcHome"><button class="teamLink ${homeCls}" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></div>
             <div class="gcScore">
               <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
-              <div class="matchMeta">${fmtDate(g.date)}</div>
+              <div class="matchMeta">${esc(fmtDate(g.date))}</div>
             </div>
             <div class="gcTeam gcAway"><button class="teamLink ${awayCls}" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></div>
           </div>
