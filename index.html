@@ -94,7 +94,7 @@ body{
   display:flex;
   gap:12px;
   align-items:center;
-  justify-content:flex-end;
+  justify-content:center;
   flex-wrap:wrap;
 }
 .roundBox{
@@ -168,7 +168,12 @@ body{
   box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
 }
 
-.sub{color:var(--muted); font-size:13px;}
+.sub{
+  color:var(--muted); 
+  font-size:13px;
+  text-align:center;
+  width:100%;
+}
 
 .tabs{
   margin:12px 0 16px;
@@ -563,9 +568,9 @@ button[id*="Close"]:hover{
     <div class="card controls">
       <div class="controlsRow">
         <div class="roundBox">
-          <button id="roundPrev" class="iconBtn">←</button>
+          <button id="roundPrev" class="iconBtn">→</button>
           <select id="roundSelect" class="select" aria-label="בחר מחזור"></select>
-          <button id="roundNext" class="iconBtn">→</button>
+          <button id="roundNext" class="iconBtn">←</button>
         </div>
         <span id="roundStatus" class="sub"></span>
       </div>
