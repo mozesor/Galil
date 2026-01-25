@@ -1214,7 +1214,7 @@ button[id*="Close"]:hover{
         <div class="card">
           <div style="padding:16px 16px 12px; display:flex; justify-content:space-between; align-items:center;">
             <h2 class="panelTitle" style="margin:0;">לוח שנה</h2>
-            <button id="scrollToCurrentInCalendar" class="jumpBtn" style="display:inline-block; margin:0;">📍 קפוץ למחזור הנוכחי</button>
+            <button id="scrollToCurrentInCalendar" class="jumpBtn" style="display:inline-block; margin:0;">📍 המשחק הבא של גליל</button>
           </div>
           <div style="padding:0 16px 16px">
             <div id="calendarView" class="calendarGrid"></div>
@@ -1663,7 +1663,7 @@ function updateRoundButtons(){
     function doScroll(){
       const firstCurrentDay = container.querySelector('.calendarDay.hasCurrentRound');
       if(firstCurrentDay){
-        console.log('Found current round day, scrolling...');
+        console.log('Found next Galil game day, scrolling...');
         firstCurrentDay.scrollIntoView({ behavior: 'smooth', block: 'center' });
         // Add a pulse animation to highlight it
         firstCurrentDay.style.animation = 'pulse 1s ease';
@@ -1671,7 +1671,7 @@ function updateRoundButtons(){
           firstCurrentDay.style.animation = '';
         }, 1000);
       } else {
-        console.log('No current round day found in calendar');
+        console.log('No next Galil game found in calendar');
       }
     }
   }
@@ -2009,8 +2009,19 @@ function renderCalendar(){
   
   const games = DATA.games || [];
   const dayMap = new Map();
-  const bestRound = findBestRound();
-  console.log('renderCalendar: bestRound =', bestRound);
+  const now = new Date();
+  
+  // Find Galil Elyon's next game
+  const galilGames = games.filter(g => includesTeam(g, 'גליל עליון'));
+  const futureGalilGames = galilGames.filter(g => {
+    if(!g.date) return false;
+    return new Date(g.date) > now;
+  }).sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+  
+  const nextGalilGame = futureGalilGames[0];
+  const nextGalilDate = nextGalilGame?.date ? new Date(nextGalilGame.date).toISOString().split('T')[0] : null;
+  
+  console.log('renderCalendar: next Galil game date =', nextGalilDate);
   
   games.forEach(g => {
     if(!g.date) return;
@@ -2028,12 +2039,12 @@ function renderCalendar(){
     const date = new Date(dayKey);
     const dayName = date.toLocaleDateString('he-IL', { weekday: 'short', day: 'numeric', month: 'short' });
     
-    // Check if any game in this day belongs to the current round
-    const hasCurrentRoundGame = dayGames.some(g => g.round?.number === bestRound);
+    // Check if this is the day with Galil's next game
+    const hasNextGalilGame = dayKey === nextGalilDate;
     
     const gamesHtml = dayGames.map(g => {
       const isGalil = includesTeam(g, 'גליל עליון');
-      const isCurrentRound = g.round?.number === bestRound;
+      const isNextGalilGame = isGalil && g.date && new Date(g.date).toISOString().split('T')[0] === nextGalilDate;
       const score = formatScore(g);
       const hg = normGoal(g.home?.goals);
       const ag = normGoal(g.away?.goals);
@@ -2056,7 +2067,7 @@ function renderCalendar(){
       }
       
       return `
-        <div class="miniGame ${isGalil ? 'highlight' : ''} ${isCurrentRound ? 'currentRound' : ''}">
+        <div class="miniGame ${isGalil ? 'highlight' : ''} ${isNextGalilGame ? 'currentRound' : ''}">
           <span class="teams">${esc(g.home?.name || '')} נ' ${esc(g.away?.name || '')}</span>
           <span class="score ${scoreCls}" dir="ltr">${score}</span>
         </div>
@@ -2064,9 +2075,9 @@ function renderCalendar(){
     }).join('');
     
     return `
-      <div class="calendarDay ${hasCurrentRoundGame ? 'hasCurrentRound' : ''}">
+      <div class="calendarDay ${hasNextGalilGame ? 'hasCurrentRound' : ''}">
         <div class="dayHeader">
-          <span>${esc(dayName)}${hasCurrentRoundGame ? ' 📍' : ''}</span>
+          <span>${esc(dayName)}${hasNextGalilGame ? ' 📍' : ''}</span>
           <span class="gameCount">${dayGames.length} משחקים</span>
         </div>
         <div class="dayGames">${gamesHtml}</div>
