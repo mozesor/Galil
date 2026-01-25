@@ -1146,7 +1146,7 @@ button[id*="Close"]:hover{
           <select id="roundSelect" class="select" aria-label="בחר מחזור"></select>
           <button id="roundNext" class="iconBtn">←</button>
         </div>
-        <button id="jumpToCurrentRound" class="jumpBtn" style="display:none;">📍 קפוץ למחזור הנוכחי</button>
+        <button id="jumpToCurrentRound" class="jumpBtn" style="display:none;">📍 קפיצה למחזור הבא</button>
         <span id="roundStatus" class="sub"></span>
       </div>
       <!-- האתר ממוקד בהפועל גליל עליון: סינון הקבוצה קבוע ומוסתר -->
@@ -1214,7 +1214,7 @@ button[id*="Close"]:hover{
         <div class="card">
           <div style="padding:16px 16px 12px; display:flex; justify-content:space-between; align-items:center;">
             <h2 class="panelTitle" style="margin:0;">לוח שנה</h2>
-            <button id="scrollToCurrentInCalendar" class="jumpBtn" style="display:inline-block; margin:0;">📍 המשחק הבא של גליל</button>
+            <button id="scrollToCurrentInCalendar" class="jumpBtn" style="display:inline-block; margin:0;">📍 קפוץ למשחק הבא</button>
           </div>
           <div style="padding:0 16px 16px">
             <div id="calendarView" class="calendarGrid"></div>
@@ -1570,11 +1570,21 @@ function updateRoundButtons(){
     prev.disabled = (i <= 0);
     next.disabled = (i >= sel.options.length - 1);
     
-    // Show/hide jump button
+    // Show/hide jump button - check if we're at Galil's next game round
     if(jumpBtn && DATA){
       const currentRound = Number(sel.value);
-      const bestRound = findBestRound();
-      if(bestRound && currentRound !== bestRound){
+      
+      // Find Galil's next game round
+      const now = new Date();
+      const galilGames = (DATA.games || []).filter(g => includesTeam(g, 'גליל עליון'));
+      const futureGalilGames = galilGames.filter(g => {
+        if(!g.date) return false;
+        return new Date(g.date) > now;
+      }).sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+      
+      const nextGalilRound = futureGalilGames[0]?.round?.number;
+      
+      if(nextGalilRound && currentRound !== nextGalilRound){
         jumpBtn.style.display = 'block';
       } else {
         jumpBtn.style.display = 'none';
@@ -1632,11 +1642,29 @@ function updateRoundButtons(){
 
   function jumpToCurrentRound(){
     const sel = document.getElementById("roundSelect");
-    if(!sel) return;
-    const bestRound = findBestRound();
-    if(bestRound){
-      sel.value = String(bestRound);
+    if(!sel || !DATA) return;
+    
+    // Find Galil Elyon's next game
+    const now = new Date();
+    const galilGames = (DATA.games || []).filter(g => includesTeam(g, 'גליל עליון'));
+    const futureGalilGames = galilGames.filter(g => {
+      if(!g.date) return false;
+      return new Date(g.date) > now;
+    }).sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+    
+    const nextGalilGame = futureGalilGames[0];
+    if(nextGalilGame && nextGalilGame.round?.number){
+      console.log('Jumping to Galil next game in round:', nextGalilGame.round.number);
+      sel.value = String(nextGalilGame.round.number);
       render();
+    } else {
+      console.log('No future Galil game found');
+      // Fallback to findBestRound
+      const bestRound = findBestRound();
+      if(bestRound){
+        sel.value = String(bestRound);
+        render();
+      }
     }
   }
 
