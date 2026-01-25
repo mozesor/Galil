@@ -1583,10 +1583,17 @@ function updateRoundButtons(){
   }
 
   function findBestRound(){
-    if(!DATA) return null;
+    if(!DATA) {
+      console.log('findBestRound: no DATA');
+      return null;
+    }
     const rs = DATA.league?.rounds || [];
+    const cur = DATA?.league?.currentRoundNumber;
     const now = new Date();
     
+    console.log('findBestRound: checking', rs.length, 'rounds, cur=', cur);
+    
+    // First, try to find the first round with future games
     for(const rr of rs){
       const roundGames = (DATA.games || []).filter(g => g.round?.number === rr.number);
       const hasFutureGames = roundGames.some(g => {
@@ -1594,18 +1601,32 @@ function updateRoundButtons(){
         return new Date(g.date) > now;
       });
       if(hasFutureGames) {
-        console.log('Best round found:', rr.number);
+        console.log('Best round found (with future games):', rr.number);
         return rr.number;
       }
     }
     
+    // If no future games found, use the last round with games
     for(let i = rs.length - 1; i >= 0; i--){
       if(rs[i].gamesCount > 0) {
         console.log('Best round (last with games):', rs[i].number);
         return rs[i].number;
       }
     }
-    console.log('No best round found');
+    
+    // Fallback to API's current round
+    if(cur) {
+      console.log('Best round (API current):', cur);
+      return cur;
+    }
+    
+    // Last resort: first round
+    if(rs.length) {
+      console.log('Best round (first round):', rs[0].number);
+      return rs[0].number;
+    }
+    
+    console.log('No best round found at all');
     return null;
   }
 
