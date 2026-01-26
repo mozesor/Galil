@@ -7,7 +7,7 @@
     "currentRoundNumber": 15,
     "currentRoundName": "מחזור 14"
   },
-  "fetchedAt": "2026-01-26T19:42:31.561Z",
+  "fetchedAt": "2026-01-26T20:17:14.469Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -314,16 +314,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 6
       },
@@ -333,16 +333,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": 2
       }
@@ -533,16 +533,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 2
       }
@@ -664,16 +664,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": 3
       },
@@ -864,16 +864,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 2
       },
@@ -1033,16 +1033,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": 12
       }
@@ -1183,16 +1183,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": 1
       }
@@ -1383,16 +1383,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 1
       }
@@ -1464,16 +1464,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": 6
       },
@@ -1614,16 +1614,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 3
       },
@@ -1914,16 +1914,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": 1
       },
@@ -2014,16 +2014,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 2
       },
@@ -2364,16 +2364,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 1
       },
@@ -2683,16 +2683,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 3
       }
@@ -2883,16 +2883,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": 1
       }
@@ -3033,16 +3033,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 1
       }
@@ -3064,16 +3064,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": 0
       },
@@ -3283,16 +3283,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": 0
       }
@@ -3364,16 +3364,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 3
       },
@@ -3633,16 +3633,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": 1
       }
@@ -3983,16 +3983,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": 1
       }
@@ -4014,18 +4014,18 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
-        "goals": -1
+        "goals": 1
       },
       "away": {
         "id": "68d612211b7b720e58adeec5",
@@ -4033,18 +4033,18 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -4114,16 +4114,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -4683,16 +4683,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       }
@@ -4714,16 +4714,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -5083,16 +5083,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       }
@@ -5164,16 +5164,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       },
@@ -5333,16 +5333,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       }
@@ -5464,16 +5464,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -5614,16 +5614,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       },
@@ -5783,16 +5783,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       }
@@ -5964,16 +5964,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       },
@@ -6083,16 +6083,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       }
@@ -6333,16 +6333,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       }
@@ -6483,16 +6483,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       }
@@ -6733,16 +6733,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       }
@@ -6814,16 +6814,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       },
@@ -7064,16 +7064,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -7114,16 +7114,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -7383,16 +7383,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       }
@@ -7564,16 +7564,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       },
@@ -7783,16 +7783,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       }
@@ -7864,16 +7864,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -8033,16 +8033,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       }
@@ -8314,16 +8314,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       },
@@ -8433,16 +8433,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       }
@@ -8614,16 +8614,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 7,
           "goals": {
-            "for": 25,
-            "against": 42,
+            "for": 26,
+            "against": 43,
             "difference": -17
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -8683,16 +8683,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 27,
-            "against": 24,
+            "for": 28,
+            "against": 25,
             "difference": 3
           },
-          "points": 13
+          "points": 14
         },
         "goals": -1
       }
@@ -8944,14 +8944,14 @@
       "rank": 8,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-      "games": 10,
+      "games": 11,
       "wins": 4,
-      "draws": 1,
+      "draws": 2,
       "losses": 5,
-      "gf": 27,
-      "ga": 24,
+      "gf": 28,
+      "ga": 25,
       "gd": 3,
-      "points": 13
+      "points": 14
     },
     {
       "rank": 9,
@@ -8981,6 +8981,19 @@
     },
     {
       "rank": 11,
+      "provider_id": 2157,
+      "name": "הפועל חיפה 2",
+      "games": 12,
+      "wins": 3,
+      "draws": 2,
+      "losses": 7,
+      "gf": 26,
+      "ga": 43,
+      "gd": -17,
+      "points": 11
+    },
+    {
+      "rank": 12,
       "provider_id": 2411,
       "name": "מרכז קהילתי גולן קצרין",
       "games": 9,
@@ -8990,19 +9003,6 @@
       "gf": 39,
       "ga": 42,
       "gd": -3,
-      "points": 10
-    },
-    {
-      "rank": 12,
-      "provider_id": 2157,
-      "name": "הפועל חיפה 2",
-      "games": 11,
-      "wins": 3,
-      "draws": 1,
-      "losses": 7,
-      "gf": 25,
-      "ga": 42,
-      "gd": -17,
       "points": 10
     },
     {
