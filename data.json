@@ -7,7 +7,7 @@
     "currentRoundNumber": 15,
     "currentRoundName": "מחזור 14"
   },
-  "fetchedAt": "2026-01-27T03:19:58.059Z",
+  "fetchedAt": "2026-01-27T04:30:09.601Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -3999,7 +3999,7 @@
     },
     {
       "id": "68e09ead1b7b720e58c01086",
-      "provider_id": -1,
+      "provider_id": 1098644,
       "date": "2026-01-26T16:45:00.000Z",
       "is_finished": false,
       "round": {
@@ -4045,56 +4045,6 @@
           "points": 11
         },
         "goals": 1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c0107a",
-      "provider_id": -1,
-      "date": "2026-01-27T17:30:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 13",
-        "number": 13,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee74",
-        "provider_id": 7471,
-        "name": "מכבי צור שלום ק. ביאליק 2",
-        "has_logo": true,
-        "stats": {
-          "games": 10,
-          "wins": 3,
-          "draws": 3,
-          "losses": 4,
-          "goals": {
-            "for": 32,
-            "against": 21,
-            "difference": 11
-          },
-          "points": 12
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeed7",
-        "provider_id": 2679,
-        "name": "הפ' גליל עליון",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 8,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
-          },
-          "points": 26
-        },
-        "goals": -1
       }
     },
     {
@@ -4198,6 +4148,56 @@
       }
     },
     {
+      "id": "68e09ead1b7b720e58c0107a",
+      "provider_id": -1,
+      "date": "2026-01-28T17:15:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 3,
+          "draws": 3,
+          "losses": 4,
+          "goals": {
+            "for": 32,
+            "against": 21,
+            "difference": 11
+          },
+          "points": 12
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 8,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 41,
+            "against": 18,
+            "difference": 23
+          },
+          "points": 26
+        },
+        "goals": -1
+      }
+    },
+    {
       "id": "68e09ead1b7b720e58c01081",
       "provider_id": -1,
       "date": "2026-01-30T10:30:00.000Z",
@@ -4243,56 +4243,6 @@
             "difference": -3
           },
           "points": 10
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c0107f",
-      "provider_id": -1,
-      "date": "2026-01-30T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 14",
-        "number": 14,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adeebc",
-        "provider_id": 6897,
-        "name": "מ.ס. חיפה רובי שפירא",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 9,
-          "draws": 2,
-          "losses": 1,
-          "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
-          },
-          "points": 29
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef7c",
-        "provider_id": 7700,
-        "name": "מ.ס.קרית ים  2",
-        "has_logo": true,
-        "stats": {
-          "games": 13,
-          "wins": 5,
-          "draws": 2,
-          "losses": 6,
-          "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
-          },
-          "points": 17
         },
         "goals": -1
       }
@@ -4493,6 +4443,56 @@
             "difference": -144
           },
           "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c0107f",
+      "provider_id": -1,
+      "date": "2026-01-31T13:20:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeebc",
+        "provider_id": 6897,
+        "name": "מ.ס. חיפה רובי שפירא",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 9,
+          "draws": 2,
+          "losses": 1,
+          "goals": {
+            "for": 50,
+            "against": 18,
+            "difference": 32
+          },
+          "points": 29
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 13,
+          "wins": 5,
+          "draws": 2,
+          "losses": 6,
+          "goals": {
+            "for": 42,
+            "against": 25,
+            "difference": 17
+          },
+          "points": 17
         },
         "goals": -1
       }
