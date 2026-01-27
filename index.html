@@ -1171,6 +1171,7 @@ button[id*="Close"]:hover{
               <thead>
                 <tr>
                   <th>תאריך</th>
+                  <th>מחזור</th>
                   <th>בית</th>
                   <th style="text-align:center;">תוצאה</th>
                   <th>חוץ</th>
@@ -1748,6 +1749,7 @@ function updateRoundButtons(){
       
       tr.innerHTML = `
         <td style="white-space:nowrap;">${esc(fmtDate(g.date))}</td>
+        <td style="text-align:center; font-size:13px; color:var(--muted);">${g.round?.number || ""}</td>
         <td>
           <button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">
             ${esc(g.home?.name || "")}
@@ -1771,12 +1773,13 @@ function updateRoundButtons(){
         card.className = "gameCard" + (isTeam ? " hl" : "");
         const homeCls = (out==="home") ? "winner" : (out==="away" ? "loser" : "");
         const awayCls = (out==="away") ? "winner" : (out==="home" ? "loser" : "");
+        const roundText = g.round?.number ? ` • מחזור ${g.round.number}` : "";
         card.innerHTML = `
           <div class="gcRow">
             <div class="gcTeam gcHome"><button class="teamLink ${homeCls}" data-team="${escapeAttr(g.home?.name || "")}">${esc(g.home?.name || "")}</button></div>
             <div class="gcScore">
               <span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span>
-              <div class="matchMeta">${esc(fmtDate(g.date))}</div>
+              <div class="matchMeta">${esc(fmtDate(g.date))}${roundText}</div>
             </div>
             <div class="gcTeam gcAway"><button class="teamLink ${awayCls}" data-team="${escapeAttr(g.away?.name || "")}">${esc(g.away?.name || "")}</button></div>
           </div>
@@ -2094,9 +2097,11 @@ function renderCalendar(){
         }
       }
       
+      const roundNum = g.round?.number ? `<span style="font-size:10px; opacity:0.7;">מ${g.round.number}</span>` : '';
+      
       return `
         <div class="miniGame ${isGalil ? 'highlight' : ''} ${isNextGalilGame ? 'currentRound' : ''}">
-          <span class="teams">${esc(g.home?.name || '')} נ' ${esc(g.away?.name || '')}</span>
+          <span class="teams">${esc(g.home?.name || '')} נ' ${esc(g.away?.name || '')} ${roundNum}</span>
           <span class="score ${scoreCls}" dir="ltr">${score}</span>
         </div>
       `;
