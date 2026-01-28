@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v2.6-SIMPLE]</title>
+<title>לוח משחקים • גליל עליון [v2.7-INLINE-WIDTH]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -274,15 +274,6 @@ th,td{
   text-align:right;
   vertical-align:middle;
   white-space:nowrap;
-}
-/* Round column - small and centered */
-table th:nth-child(2),
-table td:nth-child(2){
-  width:1%;
-  white-space:nowrap;
-  text-align:center;
-  padding-left:8px;
-  padding-right:8px;
 }
 th{
   font-size:13px; 
@@ -1187,7 +1178,7 @@ button[id*="Close"]:hover{
               <thead>
                 <tr>
                   <th>תאריך</th>
-                  <th>מחזור</th>
+                  <th style="width:1%; text-align:center; padding:8px;">מחזור</th>
                   <th>בית</th>
                   <th style="text-align:center;">תוצאה</th>
                   <th>חוץ</th>
@@ -1767,7 +1758,7 @@ function updateRoundButtons(){
       
       tr.innerHTML = `
         <td style="white-space:nowrap;">${esc(fmtDate(g.date))}</td>
-        <td style="text-align:center; font-size:13px; color:var(--muted); white-space:nowrap;">${g.round?.number || ""}</td>
+        <td style="width:1%; text-align:center; font-size:13px; color:var(--muted); white-space:nowrap; padding:8px;">${g.round?.number || ""}</td>
         <td>
           <button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">
             ${esc(g.home?.name || "")}
