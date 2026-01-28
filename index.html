@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v2.7-INLINE-WIDTH]</title>
+<title>לוח משחקים • גליל עליון [v3.0-INLINE-ROUND]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -1178,7 +1178,6 @@ button[id*="Close"]:hover{
               <thead>
                 <tr>
                   <th>תאריך</th>
-                  <th style="width:1%; text-align:center; padding:8px;">מחזור</th>
                   <th>בית</th>
                   <th style="text-align:center;">תוצאה</th>
                   <th>חוץ</th>
@@ -1756,12 +1755,13 @@ function updateRoundButtons(){
       
       const badgeCls = (out==="home" || out==="away") ? "win" : (out==="draw" ? "draw" : "pending");
       
+      const roundNum = g.round?.number ? `<span style="font-size:10px; opacity:0.7; margin-right:4px;">מ${g.round.number}</span>` : '';
+      
       tr.innerHTML = `
         <td style="white-space:nowrap;">${esc(fmtDate(g.date))}</td>
-        <td style="width:1%; text-align:center; font-size:13px; color:var(--muted); white-space:nowrap; padding:8px;">${g.round?.number || ""}</td>
         <td>
           <button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">
-            ${esc(g.home?.name || "")}
+            ${roundNum}${esc(g.home?.name || "")}
             <button class="favStar" data-fav="${escapeAttr(g.home?.name || "")}" onclick="event.stopPropagation();toggleFavorite('${escapeAttr(g.home?.name || "")}')">★</button>
           </button>
         </td>
