@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v2.4-FIXED]</title>
+<title>לוח משחקים • גליל עליון [v2.5-TABLE-LAYOUT]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -263,14 +263,26 @@ body{
   -webkit-overflow-scrolling: touch;
 }
 
-table{width:100%; border-collapse:separate; border-spacing:0;}
+table{
+  width:100%; 
+  border-collapse:separate; 
+  border-spacing:0;
+  table-layout:fixed;
+}
 th,td{
   padding:14px 12px;
   border-bottom:1px solid rgba(15,23,42,0.06);
   text-align:right;
   vertical-align:middle;
-  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
+/* Column widths */
+table thead th:nth-child(1){width:12%;} /* תאריך */
+table thead th:nth-child(2){width:8%;} /* מחזור */
+table thead th:nth-child(3){width:32%;} /* בית */
+table thead th:nth-child(4){width:16%;} /* תוצאה */
+table thead th:nth-child(5){width:32%;} /* חוץ */
 th{
   font-size:13px; 
   color:var(--muted); 
@@ -1754,14 +1766,14 @@ function updateRoundButtons(){
       
       tr.innerHTML = `
         <td style="white-space:nowrap;">${esc(fmtDate(g.date))}</td>
-        <td style="text-align:center; font-size:13px; color:var(--muted);">${g.round?.number || ""}</td>
+        <td style="text-align:center; font-size:13px; color:var(--muted); white-space:nowrap;">${g.round?.number || ""}</td>
         <td>
           <button class="teamLink" data-team="${escapeAttr(g.home?.name || "")}">
             ${esc(g.home?.name || "")}
             <button class="favStar" data-fav="${escapeAttr(g.home?.name || "")}" onclick="event.stopPropagation();toggleFavorite('${escapeAttr(g.home?.name || "")}')">★</button>
           </button>
         </td>
-        <td style="text-align:center;"><span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span></td>
+        <td style="text-align:center; white-space:nowrap;"><span class="scoreBadge ${badgeCls}"><span class="score" dir="ltr">${score}</span></span></td>
         <td>
           <button class="teamLink" data-team="${escapeAttr(g.away?.name || "")}">
             ${esc(g.away?.name || "")}
