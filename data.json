@@ -4,10 +4,10 @@
     "name": "ליגת ילדים ג מפרץ",
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 15,
-    "currentRoundName": "מחזור 14"
+    "currentRoundNumber": 13,
+    "currentRoundName": "מחזור 12"
   },
-  "fetchedAt": "2026-01-28T03:16:53.857Z",
+  "fetchedAt": "2026-01-28T04:29:17.143Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -4248,59 +4248,9 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c01084",
-      "provider_id": -1,
-      "date": "2026-01-30T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 14",
-        "number": 14,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef3d",
-        "provider_id": 5718,
-        "name": "בית\"ר נהריה 2",
-        "has_logo": true,
-        "stats": {
-          "games": 9,
-          "wins": 5,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
-          },
-          "points": 17
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeed7",
-        "provider_id": 2679,
-        "name": "הפ' גליל עליון",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 8,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
-          },
-          "points": 26
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c01085",
       "provider_id": -1,
-      "date": "2026-01-30T22:00:00.000Z",
+      "date": "2026-01-31T09:00:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 14",
@@ -4343,106 +4293,6 @@
             "difference": 32
           },
           "points": 23
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c01087",
-      "provider_id": -1,
-      "date": "2026-01-30T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 14",
-        "number": 14,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee75",
-        "provider_id": 8295,
-        "name": "הפועל עכו 2",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 5,
-          "draws": 2,
-          "losses": 4,
-          "goals": {
-            "for": 52,
-            "against": 22,
-            "difference": 30
-          },
-          "points": 17
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef9d",
-        "provider_id": 6331,
-        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 10,
-          "wins": 2,
-          "draws": 1,
-          "losses": 7,
-          "goals": {
-            "for": 14,
-            "against": 29,
-            "difference": -15
-          },
-          "points": 7
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c01088",
-      "provider_id": -1,
-      "date": "2026-01-30T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 14",
-        "number": 14,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adefaf",
-        "provider_id": 8303,
-        "name": "מ.ע.קרית אתא 3",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 4,
-          "draws": 1,
-          "losses": 6,
-          "goals": {
-            "for": 33,
-            "against": 41,
-            "difference": -8
-          },
-          "points": 13
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68e09eac1b7b720e58c01005",
-        "provider_id": 8368,
-        "name": "הפועל קרית חיים  \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 0,
-          "draws": 0,
-          "losses": 12,
-          "goals": {
-            "for": 5,
-            "against": 149,
-            "difference": -144
-          },
-          "points": 0
         },
         "goals": -1
       }
@@ -4498,6 +4348,56 @@
       }
     },
     {
+      "id": "68e09ead1b7b720e58c01088",
+      "provider_id": -1,
+      "date": "2026-02-02T13:30:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adefaf",
+        "provider_id": 8303,
+        "name": "מ.ע.קרית אתא 3",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 4,
+          "draws": 1,
+          "losses": 6,
+          "goals": {
+            "for": 33,
+            "against": 41,
+            "difference": -8
+          },
+          "points": 13
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 0,
+          "draws": 0,
+          "losses": 12,
+          "goals": {
+            "for": 5,
+            "against": 149,
+            "difference": -144
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
       "id": "68e09ead1b7b720e58c0107e",
       "provider_id": -1,
       "date": "2026-02-04T15:00:00.000Z",
@@ -4543,6 +4443,56 @@
             "difference": 32
           },
           "points": 29
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c01084",
+      "provider_id": -1,
+      "date": "2026-02-04T16:15:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 9,
+          "wins": 5,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 36,
+            "against": 22,
+            "difference": 14
+          },
+          "points": 17
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 8,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 41,
+            "against": 18,
+            "difference": 23
+          },
+          "points": 26
         },
         "goals": -1
       }
@@ -4893,6 +4843,56 @@
             "difference": 32
           },
           "points": 29
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c01087",
+      "provider_id": -1,
+      "date": "2026-02-10T17:15:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 5,
+          "draws": 2,
+          "losses": 4,
+          "goals": {
+            "for": 52,
+            "against": 22,
+            "difference": 30
+          },
+          "points": 17
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 2,
+          "draws": 1,
+          "losses": 7,
+          "goals": {
+            "for": 14,
+            "against": 29,
+            "difference": -15
+          },
+          "points": 7
         },
         "goals": -1
       }
