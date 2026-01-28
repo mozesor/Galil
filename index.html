@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v2.5-TABLE-LAYOUT]</title>
+<title>לוח משחקים • גליל עליון [v2.6-SIMPLE]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -267,22 +267,23 @@ table{
   width:100%; 
   border-collapse:separate; 
   border-spacing:0;
-  table-layout:fixed;
 }
 th,td{
   padding:14px 12px;
   border-bottom:1px solid rgba(15,23,42,0.06);
   text-align:right;
   vertical-align:middle;
-  overflow:hidden;
-  text-overflow:ellipsis;
+  white-space:nowrap;
 }
-/* Column widths */
-table thead th:nth-child(1){width:12%;} /* תאריך */
-table thead th:nth-child(2){width:8%;} /* מחזור */
-table thead th:nth-child(3){width:32%;} /* בית */
-table thead th:nth-child(4){width:16%;} /* תוצאה */
-table thead th:nth-child(5){width:32%;} /* חוץ */
+/* Round column - small and centered */
+table th:nth-child(2),
+table td:nth-child(2){
+  width:1%;
+  white-space:nowrap;
+  text-align:center;
+  padding-left:8px;
+  padding-right:8px;
+}
 th{
   font-size:13px; 
   color:var(--muted); 
