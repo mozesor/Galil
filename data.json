@@ -7,7 +7,7 @@
     "currentRoundNumber": 13,
     "currentRoundName": "מחזור 12"
   },
-  "fetchedAt": "2026-01-28T17:54:34.381Z",
+  "fetchedAt": "2026-01-28T18:26:49.230Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -233,16 +233,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": 3
       }
@@ -433,14 +433,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -564,14 +564,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -714,16 +714,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": 3
       },
@@ -883,16 +883,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": 5
       }
@@ -933,14 +933,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -1283,14 +1283,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -1414,16 +1414,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": 4
       },
@@ -1533,14 +1533,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -1833,16 +1833,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": 8
       }
@@ -1964,16 +1964,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": 7
       },
@@ -2033,14 +2033,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -2183,16 +2183,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -2464,14 +2464,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -2783,14 +2783,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -2864,16 +2864,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": 3
       },
@@ -3214,16 +3214,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": 2
       },
@@ -3564,14 +3564,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -3733,16 +3733,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": 1
       }
@@ -4114,18 +4114,18 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
-        "goals": -1
+        "goals": 7
       },
       "away": {
         "id": "68d612211b7b720e58adef64",
@@ -4133,18 +4133,18 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
-        "goals": -1
+        "goals": 4
       }
     },
     {
@@ -4233,14 +4233,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -4464,16 +4464,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -4733,16 +4733,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -4814,14 +4814,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -4914,14 +4914,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -5064,16 +5064,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -5433,16 +5433,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -5564,14 +5564,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -5714,14 +5714,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -5864,16 +5864,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -6183,16 +6183,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -6314,14 +6314,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -6514,14 +6514,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -6664,16 +6664,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -6833,16 +6833,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -6983,14 +6983,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -7264,14 +7264,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -7414,16 +7414,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -7483,16 +7483,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -7614,14 +7614,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -8014,14 +8014,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -8133,16 +8133,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -8214,16 +8214,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -8283,14 +8283,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -8764,14 +8764,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 9,
+          "games": 10,
           "wins": 3,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 39,
-            "against": 42,
-            "difference": -3
+            "for": 43,
+            "against": 49,
+            "difference": -6
           },
           "points": 10
         },
@@ -8783,16 +8783,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 9,
-          "wins": 5,
+          "games": 10,
+          "wins": 6,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 36,
-            "against": 22,
-            "difference": 14
+            "for": 43,
+            "against": 26,
+            "difference": 17
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -8903,6 +8903,19 @@
     },
     {
       "rank": 5,
+      "provider_id": 5718,
+      "name": "בית\"ר נהריה 2",
+      "games": 10,
+      "wins": 6,
+      "draws": 2,
+      "losses": 2,
+      "gf": 43,
+      "ga": 26,
+      "gd": 17,
+      "points": 20
+    },
+    {
+      "rank": 6,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
       "games": 11,
@@ -8915,7 +8928,7 @@
       "points": 17
     },
     {
-      "rank": 6,
+      "rank": 7,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 13,
@@ -8925,19 +8938,6 @@
       "gf": 42,
       "ga": 25,
       "gd": 17,
-      "points": 17
-    },
-    {
-      "rank": 7,
-      "provider_id": 5718,
-      "name": "בית\"ר נהריה 2",
-      "games": 9,
-      "wins": 5,
-      "draws": 2,
-      "losses": 2,
-      "gf": 36,
-      "ga": 22,
-      "gd": 14,
       "points": 17
     },
     {
@@ -8996,13 +8996,13 @@
       "rank": 12,
       "provider_id": 2411,
       "name": "מרכז קהילתי גולן קצרין",
-      "games": 9,
+      "games": 10,
       "wins": 3,
       "draws": 1,
-      "losses": 5,
-      "gf": 39,
-      "ga": 42,
-      "gd": -3,
+      "losses": 6,
+      "gf": 43,
+      "ga": 49,
+      "gd": -6,
       "points": 10
     },
     {
