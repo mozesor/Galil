@@ -2,8 +2,8 @@
   "leagueInfo": {
     "id": "689c7b852c807e5273a17c5a",
     "name": "ליגת ילדים ג מפרץ",
-    "currentRoundName": "מחזור 12",
-    "currentRoundNumber": 13,
+    "currentRoundName": "מחזור 13",
+    "currentRoundNumber": 14,
     "season_id": null
   },
   "roundParam": "round",
@@ -67,12 +67,12 @@
     {
       "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=11",
       "ok": true,
-      "games": 7
+      "games": 6
     },
     {
       "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=12",
       "ok": true,
-      "games": 7
+      "games": 6
     },
     {
       "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=13",
