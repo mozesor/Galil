@@ -7,7 +7,7 @@
     "currentRoundNumber": 15,
     "currentRoundName": "מחזור 14"
   },
-  "fetchedAt": "2026-01-30T11:33:39.825Z",
+  "fetchedAt": "2026-01-30T12:34:59.351Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -364,16 +364,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       },
@@ -433,14 +433,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -564,14 +564,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -583,16 +583,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 8
       }
@@ -783,16 +783,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 2
       }
@@ -933,14 +933,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -1283,14 +1283,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -1364,16 +1364,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 5
       },
@@ -1533,14 +1533,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -1583,16 +1583,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       }
@@ -2033,14 +2033,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -2064,16 +2064,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 11
       },
@@ -2333,16 +2333,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 2
       }
@@ -2464,14 +2464,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -2714,16 +2714,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -2783,14 +2783,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -3083,16 +3083,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 0
       }
@@ -3164,16 +3164,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 1
       },
@@ -3564,14 +3564,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -3814,16 +3814,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       },
@@ -4083,14 +4083,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -4114,18 +4114,18 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
-        "goals": -1
+        "goals": 8
       },
       "away": {
         "id": "68d612211b7b720e58adef64",
@@ -4133,18 +4133,18 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
-        "goals": -1
+        "goals": 2
       }
     },
     {
@@ -4314,16 +4314,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -4433,16 +4433,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -4664,14 +4664,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -4814,14 +4814,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -4914,16 +4914,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -5383,16 +5383,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -5464,14 +5464,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -5614,14 +5614,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -5714,16 +5714,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -6133,16 +6133,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -6214,14 +6214,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -6414,14 +6414,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -6514,16 +6514,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -6783,16 +6783,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -6883,14 +6883,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -7164,14 +7164,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -7264,16 +7264,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -7433,16 +7433,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -7514,14 +7514,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -7914,14 +7914,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -8014,16 +8014,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -8083,16 +8083,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -8183,14 +8183,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -8664,14 +8664,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 43,
-            "against": 49,
-            "difference": -6
+            "for": 45,
+            "against": 57,
+            "difference": -12
           },
           "points": 10
         },
@@ -8733,16 +8733,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 18,
-            "difference": 25
+            "for": 51,
+            "against": 20,
+            "difference": 31
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -8764,6 +8764,19 @@
     },
     {
       "rank": 2,
+      "provider_id": 3675,
+      "name": "מ.כ. גליל גולן דרום",
+      "games": 12,
+      "wins": 8,
+      "draws": 2,
+      "losses": 2,
+      "gf": 51,
+      "ga": 20,
+      "gd": 31,
+      "points": 26
+    },
+    {
+      "rank": 3,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
       "games": 12,
@@ -8776,7 +8789,7 @@
       "points": 26
     },
     {
-      "rank": 3,
+      "rank": 4,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
       "games": 11,
@@ -8786,19 +8799,6 @@
       "gf": 61,
       "ga": 29,
       "gd": 32,
-      "points": 23
-    },
-    {
-      "rank": 4,
-      "provider_id": 3675,
-      "name": "מ.כ. גליל גולן דרום",
-      "games": 11,
-      "wins": 7,
-      "draws": 2,
-      "losses": 2,
-      "gf": 43,
-      "ga": 18,
-      "gd": 25,
       "points": 23
     },
     {
@@ -8896,13 +8896,13 @@
       "rank": 12,
       "provider_id": 2411,
       "name": "מרכז קהילתי גולן קצרין",
-      "games": 10,
+      "games": 11,
       "wins": 3,
       "draws": 1,
-      "losses": 6,
-      "gf": 43,
-      "ga": 49,
-      "gd": -6,
+      "losses": 7,
+      "gf": 45,
+      "ga": 57,
+      "gd": -12,
       "points": 10
     },
     {
