@@ -7,7 +7,7 @@
     "currentRoundNumber": 15,
     "currentRoundName": "מחזור 14"
   },
-  "fetchedAt": "2026-01-31T15:15:28.085Z",
+  "fetchedAt": "2026-01-31T15:44:53.830Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -164,14 +164,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -183,16 +183,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 3
       }
@@ -414,16 +414,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 9
       },
@@ -464,14 +464,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -914,14 +914,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -1314,16 +1314,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 7
       },
@@ -1633,16 +1633,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 3
       }
@@ -1714,14 +1714,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -1783,16 +1783,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 1
       }
@@ -1864,14 +1864,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -1933,14 +1933,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -2214,14 +2214,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -2283,16 +2283,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 11
       }
@@ -2583,14 +2583,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -2633,16 +2633,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       }
@@ -2814,16 +2814,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 1
       },
@@ -2983,16 +2983,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 2
       }
@@ -3014,14 +3014,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -3233,14 +3233,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -3264,16 +3264,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 2
       },
@@ -3464,14 +3464,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -3533,16 +3533,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 2
       }
@@ -3714,16 +3714,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 5
       },
@@ -3833,14 +3833,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -3933,14 +3933,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -4214,18 +4214,18 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
-        "goals": -1
+        "goals": 4
       },
       "away": {
         "id": "68d612211b7b720e58adef7c",
@@ -4233,18 +4233,18 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
-        "goals": -1
+        "goals": 3
       }
     },
     {
@@ -4333,16 +4333,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -4483,14 +4483,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -4683,16 +4683,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -4833,14 +4833,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -4864,16 +4864,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -5183,14 +5183,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -5433,16 +5433,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -5583,14 +5583,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -5664,16 +5664,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -5964,14 +5964,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -6183,16 +6183,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -6333,14 +6333,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -6464,16 +6464,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -6664,14 +6664,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -6814,16 +6814,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -7033,14 +7033,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -7214,16 +7214,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -7364,14 +7364,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -7483,16 +7483,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -7733,14 +7733,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -7964,16 +7964,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -8064,14 +8064,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -8133,16 +8133,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -8414,14 +8414,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 5,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 42,
-            "against": 25,
-            "difference": 17
+            "for": 45,
+            "against": 29,
+            "difference": 16
           },
           "points": 17
         },
@@ -8714,16 +8714,16 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 9,
+          "games": 13,
+          "wins": 10,
           "draws": 2,
           "losses": 1,
           "goals": {
-            "for": 50,
-            "against": 18,
-            "difference": 32
+            "for": 54,
+            "against": 21,
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -8753,14 +8753,14 @@
       "rank": 1,
       "provider_id": 6897,
       "name": "מ.ס. חיפה רובי שפירא",
-      "games": 12,
-      "wins": 9,
+      "games": 13,
+      "wins": 10,
       "draws": 2,
       "losses": 1,
-      "gf": 50,
-      "ga": 18,
-      "gd": 32,
-      "points": 29
+      "gf": 54,
+      "ga": 21,
+      "gd": 33,
+      "points": 32
     },
     {
       "rank": 2,
@@ -8831,13 +8831,13 @@
       "rank": 7,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
-      "games": 13,
+      "games": 14,
       "wins": 5,
       "draws": 2,
-      "losses": 6,
-      "gf": 42,
-      "ga": 25,
-      "gd": 17,
+      "losses": 7,
+      "gf": 45,
+      "ga": 29,
+      "gd": 16,
       "points": 17
     },
     {
