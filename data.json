@@ -7,7 +7,7 @@
     "currentRoundNumber": 15,
     "currentRoundName": "מחזור 14"
   },
-  "fetchedAt": "2026-01-31T12:28:28.272Z",
+  "fetchedAt": "2026-01-31T13:23:36.511Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -514,14 +514,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -733,16 +733,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 5
       }
@@ -764,16 +764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -1083,14 +1083,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -1114,16 +1114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -1133,14 +1133,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -1214,14 +1214,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -1333,16 +1333,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 2
       }
@@ -1514,16 +1514,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -1683,14 +1683,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -2133,16 +2133,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       }
@@ -2233,16 +2233,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       }
@@ -2414,14 +2414,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -2564,14 +2564,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -2664,16 +2664,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -3114,16 +3114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 21
       },
@@ -3183,14 +3183,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -3414,16 +3414,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 5
       },
@@ -3514,14 +3514,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -3583,14 +3583,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -3764,16 +3764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -4164,18 +4164,18 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adef07",
@@ -4183,18 +4183,18 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
-        "goals": -1
+        "goals": 3
       }
     },
     {
@@ -4614,16 +4614,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -4733,14 +4733,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -4933,16 +4933,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -5014,14 +5014,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -5283,14 +5283,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -5414,16 +5414,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -5533,16 +5533,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -5633,16 +5633,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -5814,14 +5814,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -6033,14 +6033,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -6264,16 +6264,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -6314,16 +6314,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -6614,14 +6614,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -6683,14 +6683,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -6983,16 +6983,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -7064,16 +7064,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -7333,14 +7333,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -7414,14 +7414,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -7633,16 +7633,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -7833,16 +7833,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -7983,14 +7983,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -8164,14 +8164,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -8283,16 +8283,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -8564,16 +8564,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 7,
+          "games": 12,
+          "wins": 8,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 61,
+            "for": 64,
             "against": 29,
-            "difference": 32
+            "difference": 35
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -8633,14 +8633,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
+          "games": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 32,
-            "against": 21,
-            "difference": 11
+            "against": 24,
+            "difference": 8
           },
           "points": 12
         },
@@ -8764,6 +8764,19 @@
     },
     {
       "rank": 2,
+      "provider_id": 7709,
+      "name": "ה.מטה אשר 3",
+      "games": 12,
+      "wins": 8,
+      "draws": 2,
+      "losses": 2,
+      "gf": 64,
+      "ga": 29,
+      "gd": 35,
+      "points": 26
+    },
+    {
+      "rank": 3,
       "provider_id": 3675,
       "name": "מ.כ. גליל גולן דרום",
       "games": 12,
@@ -8776,7 +8789,7 @@
       "points": 26
     },
     {
-      "rank": 3,
+      "rank": 4,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
       "games": 12,
@@ -8787,19 +8800,6 @@
       "ga": 18,
       "gd": 23,
       "points": 26
-    },
-    {
-      "rank": 4,
-      "provider_id": 7709,
-      "name": "ה.מטה אשר 3",
-      "games": 11,
-      "wins": 7,
-      "draws": 2,
-      "losses": 2,
-      "gf": 61,
-      "ga": 29,
-      "gd": 32,
-      "points": 23
     },
     {
       "rank": 5,
@@ -8870,13 +8870,13 @@
       "rank": 10,
       "provider_id": 7471,
       "name": "מכבי צור שלום ק. ביאליק 2",
-      "games": 10,
+      "games": 11,
       "wins": 3,
       "draws": 3,
-      "losses": 4,
+      "losses": 5,
       "gf": 32,
-      "ga": 21,
-      "gd": 11,
+      "ga": 24,
+      "gd": 8,
       "points": 12
     },
     {
