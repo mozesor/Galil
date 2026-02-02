@@ -7,7 +7,7 @@
     "currentRoundNumber": 15,
     "currentRoundName": "מחזור 14"
   },
-  "fetchedAt": "2026-02-02T17:09:11.866Z",
+  "fetchedAt": "2026-02-02T18:02:27.796Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -264,14 +264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -283,16 +283,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 10
       }
@@ -483,16 +483,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 0
       }
@@ -633,14 +633,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -833,16 +833,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 3
       }
@@ -1014,14 +1014,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -1233,14 +1233,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -1483,16 +1483,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 3
       }
@@ -1664,16 +1664,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 5
       },
@@ -1814,14 +1814,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -1983,16 +1983,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 2
       }
@@ -2083,14 +2083,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -2264,14 +2264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -2314,16 +2314,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 5
       },
@@ -2483,14 +2483,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -2614,16 +2614,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 1
       },
@@ -2764,16 +2764,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 4
       },
@@ -2914,14 +2914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -3133,14 +3133,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -3333,16 +3333,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 0
       }
@@ -3433,16 +3433,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": 0
       }
@@ -3683,14 +3683,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -3914,14 +3914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -4264,18 +4264,18 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
-        "goals": -1
+        "goals": 9
       },
       "away": {
         "id": "68e09eac1b7b720e58c01005",
@@ -4283,18 +4283,18 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       }
     },
     {
@@ -4464,16 +4464,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -4514,14 +4514,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -5083,14 +5083,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -5114,16 +5114,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -5214,16 +5214,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -5264,14 +5264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -5783,14 +5783,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -5833,16 +5833,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       }
@@ -5914,16 +5914,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -6064,16 +6064,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -6114,14 +6114,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -6483,14 +6483,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -6533,16 +6533,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       }
@@ -6833,16 +6833,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       }
@@ -6864,14 +6864,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -7133,14 +7133,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -7183,16 +7183,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       }
@@ -7564,16 +7564,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -7614,14 +7614,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -7783,14 +7783,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -7814,16 +7814,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -8314,16 +8314,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -8364,14 +8364,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -8433,14 +8433,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 0,
           "draws": 0,
-          "losses": 12,
+          "losses": 13,
           "goals": {
             "for": 5,
-            "against": 149,
-            "difference": -144
+            "against": 158,
+            "difference": -153
           },
           "points": 0
         },
@@ -8483,16 +8483,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 33,
+            "for": 42,
             "against": 41,
-            "difference": -8
+            "difference": 1
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       }
@@ -8842,6 +8842,19 @@
     },
     {
       "rank": 8,
+      "provider_id": 8303,
+      "name": "מ.ע.קרית אתא 3",
+      "games": 12,
+      "wins": 5,
+      "draws": 1,
+      "losses": 6,
+      "gf": 42,
+      "ga": 41,
+      "gd": 1,
+      "points": 16
+    },
+    {
+      "rank": 9,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
       "games": 11,
@@ -8852,19 +8865,6 @@
       "ga": 25,
       "gd": 3,
       "points": 14
-    },
-    {
-      "rank": 9,
-      "provider_id": 8303,
-      "name": "מ.ע.קרית אתא 3",
-      "games": 11,
-      "wins": 4,
-      "draws": 1,
-      "losses": 6,
-      "gf": 33,
-      "ga": 41,
-      "gd": -8,
-      "points": 13
     },
     {
       "rank": 10,
@@ -8922,13 +8922,13 @@
       "rank": 14,
       "provider_id": 8368,
       "name": "הפועל קרית חיים  \"צו פיוס\"",
-      "games": 12,
+      "games": 13,
       "wins": 0,
       "draws": 0,
-      "losses": 12,
+      "losses": 13,
       "gf": 5,
-      "ga": 149,
-      "gd": -144,
+      "ga": 158,
+      "gd": -153,
       "points": 0
     }
   ]
