@@ -7,7 +7,7 @@
     "currentRoundNumber": 15,
     "currentRoundName": "מחזור 14"
   },
-  "fetchedAt": "2026-02-03T03:53:03.964Z",
+  "fetchedAt": "2026-02-03T05:11:37.373Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -4249,7 +4249,7 @@
     },
     {
       "id": "68e09ead1b7b720e58c01088",
-      "provider_id": -1,
+      "provider_id": 1098646,
       "date": "2026-02-02T13:30:00.000Z",
       "is_finished": false,
       "round": {
@@ -4598,106 +4598,6 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c0108e",
-      "provider_id": -1,
-      "date": "2026-02-06T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 15",
-        "number": 15,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef07",
-        "provider_id": 7709,
-        "name": "ה.מטה אשר 3",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 8,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
-          },
-          "points": 26
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef3d",
-        "provider_id": 5718,
-        "name": "בית\"ר נהריה 2",
-        "has_logo": true,
-        "stats": {
-          "games": 10,
-          "wins": 6,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
-          },
-          "points": 20
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c01092",
-      "provider_id": -1,
-      "date": "2026-02-06T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 15",
-        "number": 15,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef64",
-        "provider_id": 2411,
-        "name": "מרכז קהילתי גולן קצרין",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 3,
-          "draws": 1,
-          "losses": 7,
-          "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
-          },
-          "points": 10
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeebc",
-        "provider_id": 6897,
-        "name": "מ.ס. חיפה רובי שפירא",
-        "has_logo": true,
-        "stats": {
-          "games": 13,
-          "wins": 10,
-          "draws": 2,
-          "losses": 1,
-          "goals": {
-            "for": 54,
-            "against": 21,
-            "difference": 33
-          },
-          "points": 32
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c0108c",
       "provider_id": -1,
       "date": "2026-02-07T07:00:00.000Z",
@@ -4743,6 +4643,56 @@
             "difference": 8
           },
           "points": 12
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c0108e",
+      "provider_id": -1,
+      "date": "2026-02-07T17:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 8,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 64,
+            "against": 29,
+            "difference": 35
+          },
+          "points": 26
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 6,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 43,
+            "against": 26,
+            "difference": 17
+          },
+          "points": 20
         },
         "goals": -1
       }
@@ -5943,6 +5893,56 @@
             "difference": -15
           },
           "points": 7
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c01092",
+      "provider_id": -1,
+      "date": "2026-03-06T12:25:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef64",
+        "provider_id": 2411,
+        "name": "מרכז קהילתי גולן קצרין",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 3,
+          "draws": 1,
+          "losses": 7,
+          "goals": {
+            "for": 45,
+            "against": 57,
+            "difference": -12
+          },
+          "points": 10
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeebc",
+        "provider_id": 6897,
+        "name": "מ.ס. חיפה רובי שפירא",
+        "has_logo": true,
+        "stats": {
+          "games": 13,
+          "wins": 10,
+          "draws": 2,
+          "losses": 1,
+          "goals": {
+            "for": 54,
+            "against": 21,
+            "difference": 33
+          },
+          "points": 32
         },
         "goals": -1
       }
