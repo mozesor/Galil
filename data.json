@@ -7,7 +7,7 @@
     "currentRoundNumber": 14,
     "currentRoundName": "מחזור 13"
   },
-  "fetchedAt": "2026-02-04T19:33:36.649Z",
+  "fetchedAt": "2026-02-04T20:24:13.801Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -214,14 +214,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -233,16 +233,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": 3
       }
@@ -383,14 +383,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -714,16 +714,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": 3
       },
@@ -883,16 +883,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": 5
       }
@@ -1264,14 +1264,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -1414,16 +1414,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": 4
       },
@@ -1733,14 +1733,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -1764,14 +1764,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -1833,16 +1833,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": 8
       }
@@ -1964,16 +1964,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": 7
       },
@@ -2114,14 +2114,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -2183,16 +2183,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       }
@@ -2383,14 +2383,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -2514,14 +2514,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -2864,16 +2864,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": 3
       },
@@ -2933,14 +2933,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -3214,16 +3214,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": 2
       },
@@ -3314,14 +3314,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -3614,14 +3614,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -3733,16 +3733,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": 1
       }
@@ -3883,14 +3883,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -4064,16 +4064,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": 7
       },
@@ -4364,18 +4364,18 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
-        "goals": -1
+        "goals": 5
       },
       "away": {
         "id": "68d612211b7b720e58adeed7",
@@ -4383,18 +4383,18 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -4414,14 +4414,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -4633,16 +4633,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       }
@@ -4833,14 +4833,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -4914,16 +4914,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       },
@@ -5283,16 +5283,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       }
@@ -5433,14 +5433,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -5514,14 +5514,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -5714,16 +5714,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       },
@@ -6083,16 +6083,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       }
@@ -6283,14 +6283,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -6364,14 +6364,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -6564,16 +6564,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       },
@@ -6733,16 +6733,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       }
@@ -6933,14 +6933,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -7114,14 +7114,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -7314,16 +7314,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       },
@@ -7383,16 +7383,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       }
@@ -7583,14 +7583,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -7864,14 +7864,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -8033,16 +8033,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       }
@@ -8114,16 +8114,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       },
@@ -8233,14 +8233,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -8614,14 +8614,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 8,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 41,
-            "against": 18,
-            "difference": 23
+            "for": 42,
+            "against": 23,
+            "difference": 19
           },
           "points": 26
         },
@@ -8683,16 +8683,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 6,
+          "games": 11,
+          "wins": 7,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 43,
-            "against": 26,
-            "difference": 17
+            "for": 48,
+            "against": 27,
+            "difference": 21
           },
-          "points": 20
+          "points": 23
         },
         "goals": -1
       }
@@ -8792,27 +8792,27 @@
       "rank": 4,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
-      "games": 12,
+      "games": 13,
       "wins": 8,
       "draws": 2,
-      "losses": 2,
-      "gf": 41,
-      "ga": 18,
-      "gd": 23,
+      "losses": 3,
+      "gf": 42,
+      "ga": 23,
+      "gd": 19,
       "points": 26
     },
     {
       "rank": 5,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2",
-      "games": 10,
-      "wins": 6,
+      "games": 11,
+      "wins": 7,
       "draws": 2,
       "losses": 2,
-      "gf": 43,
-      "ga": 26,
-      "gd": 17,
-      "points": 20
+      "gf": 48,
+      "ga": 27,
+      "gd": 21,
+      "points": 23
     },
     {
       "rank": 6,
