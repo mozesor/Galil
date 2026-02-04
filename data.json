@@ -4,10 +4,10 @@
     "name": "ליגת ילדים ג מפרץ",
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 15,
-    "currentRoundName": "מחזור 14"
+    "currentRoundNumber": 14,
+    "currentRoundName": "מחזור 13"
   },
-  "fetchedAt": "2026-02-04T03:42:26.237Z",
+  "fetchedAt": "2026-02-04T05:05:43.327Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -4448,106 +4448,6 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c01089",
-      "provider_id": -1,
-      "date": "2026-02-06T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 15",
-        "number": 15,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adefaf",
-        "provider_id": 8303,
-        "name": "מ.ע.קרית אתא 3",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 5,
-          "draws": 1,
-          "losses": 6,
-          "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
-          },
-          "points": 16
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef7c",
-        "provider_id": 7700,
-        "name": "מ.ס.קרית ים  2",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 5,
-          "draws": 2,
-          "losses": 7,
-          "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
-          },
-          "points": 17
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c0108a",
-      "provider_id": -1,
-      "date": "2026-02-06T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 15",
-        "number": 15,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68e09eac1b7b720e58c01005",
-        "provider_id": 8368,
-        "name": "הפועל קרית חיים  \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 13,
-          "wins": 0,
-          "draws": 0,
-          "losses": 13,
-          "goals": {
-            "for": 5,
-            "against": 158,
-            "difference": -153
-          },
-          "points": 0
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee75",
-        "provider_id": 8295,
-        "name": "הפועל עכו 2",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 5,
-          "draws": 2,
-          "losses": 4,
-          "goals": {
-            "for": 52,
-            "against": 22,
-            "difference": 30
-          },
-          "points": 17
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c0108b",
       "provider_id": -1,
       "date": "2026-02-06T22:00:00.000Z",
@@ -4648,6 +4548,56 @@
       }
     },
     {
+      "id": "68e09ead1b7b720e58c01089",
+      "provider_id": -1,
+      "date": "2026-02-07T12:20:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adefaf",
+        "provider_id": 8303,
+        "name": "מ.ע.קרית אתא 3",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 5,
+          "draws": 1,
+          "losses": 6,
+          "goals": {
+            "for": 42,
+            "against": 41,
+            "difference": 1
+          },
+          "points": 16
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 14,
+          "wins": 5,
+          "draws": 2,
+          "losses": 7,
+          "goals": {
+            "for": 45,
+            "against": 29,
+            "difference": 16
+          },
+          "points": 17
+        },
+        "goals": -1
+      }
+    },
+    {
       "id": "68e09ead1b7b720e58c0108e",
       "provider_id": -1,
       "date": "2026-02-07T17:00:00.000Z",
@@ -4743,6 +4693,56 @@
             "difference": -15
           },
           "points": 7
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c0108a",
+      "provider_id": -1,
+      "date": "2026-02-12T13:30:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 13,
+          "wins": 0,
+          "draws": 0,
+          "losses": 13,
+          "goals": {
+            "for": 5,
+            "against": 158,
+            "difference": -153
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 5,
+          "draws": 2,
+          "losses": 4,
+          "goals": {
+            "for": 52,
+            "against": 22,
+            "difference": 30
+          },
+          "points": 17
         },
         "goals": -1
       }
