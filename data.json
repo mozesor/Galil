@@ -7,7 +7,7 @@
     "currentRoundNumber": 14,
     "currentRoundName": "מחזור 13"
   },
-  "fetchedAt": "2026-02-05T03:44:11.079Z",
+  "fetchedAt": "2026-02-05T05:13:37.210Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -4299,7 +4299,7 @@
     },
     {
       "id": "68e09ead1b7b720e58c0107e",
-      "provider_id": -1,
+      "provider_id": 1098639,
       "date": "2026-02-04T15:00:00.000Z",
       "is_finished": false,
       "round": {
@@ -4349,7 +4349,7 @@
     },
     {
       "id": "68e09ead1b7b720e58c01084",
-      "provider_id": -1,
+      "provider_id": 1098642,
       "date": "2026-02-04T16:15:00.000Z",
       "is_finished": false,
       "round": {
@@ -4400,7 +4400,7 @@
     {
       "id": "68e09ead1b7b720e58c01090",
       "provider_id": -1,
-      "date": "2026-02-06T10:30:00.000Z",
+      "date": "2026-02-06T10:00:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 15",
@@ -4443,56 +4443,6 @@
             "difference": 32
           },
           "points": 29
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c0108b",
-      "provider_id": -1,
-      "date": "2026-02-06T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 15",
-        "number": 15,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef9d",
-        "provider_id": 6331,
-        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 10,
-          "wins": 2,
-          "draws": 1,
-          "losses": 7,
-          "goals": {
-            "for": 14,
-            "against": 29,
-            "difference": -15
-          },
-          "points": 7
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee89",
-        "provider_id": 8484,
-        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 4,
-          "draws": 2,
-          "losses": 5,
-          "goals": {
-            "for": 28,
-            "against": 25,
-            "difference": 3
-          },
-          "points": 14
         },
         "goals": -1
       }
@@ -5443,6 +5393,56 @@
             "difference": 19
           },
           "points": 26
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c0108b",
+      "provider_id": -1,
+      "date": "2026-02-23T17:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 10,
+          "wins": 2,
+          "draws": 1,
+          "losses": 7,
+          "goals": {
+            "for": 14,
+            "against": 29,
+            "difference": -15
+          },
+          "points": 7
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 4,
+          "draws": 2,
+          "losses": 5,
+          "goals": {
+            "for": 28,
+            "against": 25,
+            "difference": 3
+          },
+          "points": 14
         },
         "goals": -1
       }
