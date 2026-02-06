@@ -4,10 +4,10 @@
     "name": "ליגת ילדים ג מפרץ",
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 14,
-    "currentRoundName": "מחזור 13"
+    "currentRoundNumber": 16,
+    "currentRoundName": "מחזור 15"
   },
-  "fetchedAt": "2026-02-06T03:43:17.496Z",
+  "fetchedAt": "2026-02-06T05:11:33.395Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -4698,6 +4698,56 @@
       }
     },
     {
+      "id": "68e09ead1b7b720e58c01097",
+      "provider_id": -1,
+      "date": "2026-02-13T10:30:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 16",
+        "number": 16,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef2e",
+        "provider_id": 3675,
+        "name": "מ.כ. גליל גולן דרום",
+        "has_logo": true,
+        "stats": {
+          "games": 13,
+          "wins": 9,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 53,
+            "against": 21,
+            "difference": 32
+          },
+          "points": 29
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 8,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 64,
+            "against": 29,
+            "difference": 35
+          },
+          "points": 26
+        },
+        "goals": -1
+      }
+    },
+    {
       "id": "68e09ead1b7b720e58c01094",
       "provider_id": -1,
       "date": "2026-02-13T22:00:00.000Z",
@@ -4791,56 +4841,6 @@
             "for": 42,
             "against": 23,
             "difference": 19
-          },
-          "points": 26
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c01097",
-      "provider_id": -1,
-      "date": "2026-02-13T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 16",
-        "number": 16,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef2e",
-        "provider_id": 3675,
-        "name": "מ.כ. גליל גולן דרום",
-        "has_logo": true,
-        "stats": {
-          "games": 13,
-          "wins": 9,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 53,
-            "against": 21,
-            "difference": 32
-          },
-          "points": 29
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef07",
-        "provider_id": 7709,
-        "name": "ה.מטה אשר 3",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 8,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
           },
           "points": 26
         },
@@ -4948,56 +4948,6 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c0109b",
-      "provider_id": -1,
-      "date": "2026-02-13T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 16",
-        "number": 16,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee89",
-        "provider_id": 8484,
-        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 11,
-          "wins": 4,
-          "draws": 2,
-          "losses": 5,
-          "goals": {
-            "for": 28,
-            "against": 25,
-            "difference": 3
-          },
-          "points": 14
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68e09eac1b7b720e58c01005",
-        "provider_id": 8368,
-        "name": "הפועל קרית חיים  \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 13,
-          "wins": 0,
-          "draws": 0,
-          "losses": 13,
-          "goals": {
-            "for": 5,
-            "against": 158,
-            "difference": -153
-          },
-          "points": 0
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c0109c",
       "provider_id": -1,
       "date": "2026-02-13T22:00:00.000Z",
@@ -5043,6 +4993,56 @@
             "difference": 30
           },
           "points": 17
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c0109b",
+      "provider_id": -1,
+      "date": "2026-02-17T17:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 16",
+        "number": 16,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 11,
+          "wins": 4,
+          "draws": 2,
+          "losses": 5,
+          "goals": {
+            "for": 28,
+            "against": 25,
+            "difference": 3
+          },
+          "points": 14
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 13,
+          "wins": 0,
+          "draws": 0,
+          "losses": 13,
+          "goals": {
+            "for": 5,
+            "against": 158,
+            "difference": -153
+          },
+          "points": 0
         },
         "goals": -1
       }
