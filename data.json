@@ -7,7 +7,7 @@
     "currentRoundNumber": 16,
     "currentRoundName": "מחזור 15"
   },
-  "fetchedAt": "2026-02-06T11:52:49.755Z",
+  "fetchedAt": "2026-02-06T12:38:52.914Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -214,16 +214,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 3
       },
@@ -364,16 +364,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 3
       },
@@ -383,16 +383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 1
       }
@@ -583,16 +583,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 8
       }
@@ -783,16 +783,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 2
       }
@@ -1264,16 +1264,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 1
       },
@@ -1364,16 +1364,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 5
       },
@@ -1583,16 +1583,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 4
       }
@@ -1733,16 +1733,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 3
       }
@@ -1764,16 +1764,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 3
       },
@@ -2064,16 +2064,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 11
       },
@@ -2114,16 +2114,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 4
       },
@@ -2333,16 +2333,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 2
       }
@@ -2383,16 +2383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 4
       }
@@ -2514,16 +2514,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 4
       },
@@ -2714,16 +2714,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 4
       },
@@ -2933,16 +2933,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 12
       }
@@ -3083,16 +3083,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 0
       }
@@ -3164,16 +3164,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 1
       },
@@ -3314,16 +3314,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 3
       },
@@ -3614,16 +3614,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 2
       },
@@ -3814,16 +3814,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 3
       },
@@ -3883,16 +3883,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 1
       }
@@ -4114,16 +4114,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 8
       },
@@ -4314,16 +4314,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": 2
       },
@@ -4383,16 +4383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": 1
       }
@@ -4414,18 +4414,18 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
-        "goals": -1
+        "goals": 1
       },
       "away": {
         "id": "68d612211b7b720e58adef2e",
@@ -4433,18 +4433,18 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -4714,16 +4714,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       },
@@ -4833,16 +4833,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       }
@@ -5283,16 +5283,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       }
@@ -5383,16 +5383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       }
@@ -5514,16 +5514,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       },
@@ -5664,16 +5664,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       },
@@ -6133,16 +6133,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       }
@@ -6283,16 +6283,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       }
@@ -6364,16 +6364,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       },
@@ -6514,16 +6514,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       },
@@ -6783,16 +6783,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       }
@@ -6933,16 +6933,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       }
@@ -7114,16 +7114,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       },
@@ -7264,16 +7264,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       },
@@ -7433,16 +7433,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       }
@@ -7583,16 +7583,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       }
@@ -7864,16 +7864,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       },
@@ -8014,16 +8014,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       },
@@ -8083,16 +8083,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       }
@@ -8233,16 +8233,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       }
@@ -8614,16 +8614,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
           "goals": {
-            "for": 42,
-            "against": 23,
+            "for": 43,
+            "against": 24,
             "difference": 19
           },
-          "points": 26
+          "points": 27
         },
         "goals": -1
       },
@@ -8733,16 +8733,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 9,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": {
-            "for": 53,
-            "against": 21,
+            "for": 54,
+            "against": 22,
             "difference": 32
           },
-          "points": 29
+          "points": 30
         },
         "goals": -1
       }
@@ -8766,17 +8766,30 @@
       "rank": 2,
       "provider_id": 3675,
       "name": "מ.כ. גליל גולן דרום",
-      "games": 13,
+      "games": 14,
       "wins": 9,
-      "draws": 2,
+      "draws": 3,
       "losses": 2,
-      "gf": 53,
-      "ga": 21,
+      "gf": 54,
+      "ga": 22,
       "gd": 32,
-      "points": 29
+      "points": 30
     },
     {
       "rank": 3,
+      "provider_id": 2679,
+      "name": "הפ' גליל עליון",
+      "games": 14,
+      "wins": 8,
+      "draws": 3,
+      "losses": 3,
+      "gf": 43,
+      "ga": 24,
+      "gd": 19,
+      "points": 27
+    },
+    {
+      "rank": 4,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
       "games": 12,
@@ -8786,19 +8799,6 @@
       "gf": 64,
       "ga": 29,
       "gd": 35,
-      "points": 26
-    },
-    {
-      "rank": 4,
-      "provider_id": 2679,
-      "name": "הפ' גליל עליון",
-      "games": 13,
-      "wins": 8,
-      "draws": 2,
-      "losses": 3,
-      "gf": 42,
-      "ga": 23,
-      "gd": 19,
       "points": 26
     },
     {
