@@ -7,7 +7,7 @@
     "currentRoundNumber": 16,
     "currentRoundName": "מחזור 15"
   },
-  "fetchedAt": "2026-02-07T18:22:49.644Z",
+  "fetchedAt": "2026-02-07T18:58:27.505Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -233,14 +233,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -714,14 +714,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -733,16 +733,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 5
       }
@@ -764,16 +764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 4
       },
@@ -883,14 +883,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -1114,16 +1114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 4
       },
@@ -1333,16 +1333,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 2
       }
@@ -1414,14 +1414,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -1514,16 +1514,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 4
       },
@@ -1833,14 +1833,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -1964,14 +1964,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -2133,16 +2133,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 4
       }
@@ -2183,14 +2183,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -2233,16 +2233,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 4
       }
@@ -2664,16 +2664,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 4
       },
@@ -2864,14 +2864,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -3114,16 +3114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 21
       },
@@ -3214,14 +3214,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -3414,16 +3414,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 5
       },
@@ -3733,14 +3733,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -3764,16 +3764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 4
       },
@@ -4064,14 +4064,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -4183,16 +4183,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": 3
       }
@@ -4364,14 +4364,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -4564,18 +4564,18 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
-        "goals": -1
+        "goals": 4
       },
       "away": {
         "id": "68d612211b7b720e58adef3d",
@@ -4583,18 +4583,18 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
-        "goals": -1
+        "goals": 2
       }
     },
     {
@@ -4733,16 +4733,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       }
@@ -4864,14 +4864,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -5233,14 +5233,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -5314,16 +5314,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       },
@@ -5483,16 +5483,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       }
@@ -5583,16 +5583,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       }
@@ -5714,14 +5714,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -6083,14 +6083,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -6264,16 +6264,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       },
@@ -6314,16 +6314,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       },
@@ -6564,14 +6564,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -6733,14 +6733,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -6983,16 +6983,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       }
@@ -7064,16 +7064,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       },
@@ -7314,14 +7314,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -7383,14 +7383,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -7633,16 +7633,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       }
@@ -7833,16 +7833,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       }
@@ -8033,14 +8033,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -8114,14 +8114,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -8283,16 +8283,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       }
@@ -8564,16 +8564,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 8,
+          "games": 13,
+          "wins": 9,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 64,
-            "against": 29,
-            "difference": 35
+            "for": 68,
+            "against": 31,
+            "difference": 37
           },
-          "points": 26
+          "points": 29
         },
         "goals": -1
       },
@@ -8683,14 +8683,14 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 7,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 48,
-            "against": 27,
-            "difference": 21
+            "for": 50,
+            "against": 31,
+            "difference": 19
           },
           "points": 23
         },
@@ -8777,6 +8777,19 @@
     },
     {
       "rank": 3,
+      "provider_id": 7709,
+      "name": "ה.מטה אשר 3",
+      "games": 13,
+      "wins": 9,
+      "draws": 2,
+      "losses": 2,
+      "gf": 68,
+      "ga": 31,
+      "gd": 37,
+      "points": 29
+    },
+    {
+      "rank": 4,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
       "games": 14,
@@ -8789,29 +8802,16 @@
       "points": 27
     },
     {
-      "rank": 4,
-      "provider_id": 7709,
-      "name": "ה.מטה אשר 3",
-      "games": 12,
-      "wins": 8,
-      "draws": 2,
-      "losses": 2,
-      "gf": 64,
-      "ga": 29,
-      "gd": 35,
-      "points": 26
-    },
-    {
       "rank": 5,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2",
-      "games": 11,
+      "games": 12,
       "wins": 7,
       "draws": 2,
-      "losses": 2,
-      "gf": 48,
-      "ga": 27,
-      "gd": 21,
+      "losses": 3,
+      "gf": 50,
+      "ga": 31,
+      "gd": 19,
       "points": 23
     },
     {
