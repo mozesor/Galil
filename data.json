@@ -7,7 +7,7 @@
     "currentRoundNumber": 16,
     "currentRoundName": "מחזור 15"
   },
-  "fetchedAt": "2026-02-07T15:17:03.624Z",
+  "fetchedAt": "2026-02-07T15:46:43.310Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -169,8 +169,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -288,8 +288,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -469,8 +469,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -488,8 +488,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -838,8 +838,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -919,8 +919,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -1488,8 +1488,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -1669,8 +1669,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -1719,8 +1719,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -1869,8 +1869,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -1938,8 +1938,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -1988,8 +1988,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -2219,8 +2219,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -2319,8 +2319,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -2588,8 +2588,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -2619,8 +2619,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -2769,8 +2769,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -3019,8 +3019,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -3238,8 +3238,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -3338,8 +3338,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -3438,8 +3438,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -3469,8 +3469,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -3838,8 +3838,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -3938,8 +3938,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -4238,8 +4238,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -4269,8 +4269,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -4519,13 +4519,13 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
         },
-        "goals": 4
+        "goals": 3
       },
       "away": {
         "id": "68d612211b7b720e58adef7c",
@@ -4538,13 +4538,13 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
         },
-        "goals": 3
+        "goals": 2
       }
     },
     {
@@ -4788,8 +4788,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -4969,8 +4969,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -5088,8 +5088,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -5119,8 +5119,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -5538,8 +5538,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -5788,8 +5788,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -5869,8 +5869,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -5969,8 +5969,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -6069,8 +6069,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -6338,8 +6338,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -6538,8 +6538,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -6669,8 +6669,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -6838,8 +6838,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -7038,8 +7038,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -7188,8 +7188,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -7369,8 +7369,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -7569,8 +7569,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -7738,8 +7738,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -7819,8 +7819,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -8069,8 +8069,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -8319,8 +8319,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -8419,8 +8419,8 @@
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 48,
-            "against": 33,
+            "for": 47,
+            "against": 32,
             "difference": 15
           },
           "points": 17
@@ -8488,8 +8488,8 @@
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 46,
-            "against": 44,
+            "for": 45,
+            "against": 43,
             "difference": 2
           },
           "points": 19
@@ -8822,8 +8822,8 @@
       "wins": 6,
       "draws": 1,
       "losses": 6,
-      "gf": 46,
-      "ga": 44,
+      "gf": 45,
+      "ga": 43,
       "gd": 2,
       "points": 19
     },
@@ -8848,8 +8848,8 @@
       "wins": 5,
       "draws": 2,
       "losses": 8,
-      "gf": 48,
-      "ga": 33,
+      "gf": 47,
+      "ga": 32,
       "gd": 15,
       "points": 17
     },
