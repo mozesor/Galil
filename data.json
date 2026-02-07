@@ -7,7 +7,7 @@
     "currentRoundNumber": 16,
     "currentRoundName": "מחזור 15"
   },
-  "fetchedAt": "2026-02-07T11:42:45.111Z",
+  "fetchedAt": "2026-02-07T12:29:01.601Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -314,16 +314,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 6
       },
@@ -514,16 +514,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 1
       },
@@ -533,16 +533,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 2
       }
@@ -864,16 +864,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 2
       },
@@ -1083,16 +1083,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 2
       }
@@ -1133,16 +1133,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 0
       }
@@ -1214,16 +1214,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 13
       },
@@ -1383,16 +1383,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 1
       }
@@ -1614,16 +1614,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 3
       },
@@ -1683,16 +1683,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 4
       }
@@ -2014,16 +2014,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 2
       },
@@ -2364,16 +2364,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 1
       },
@@ -2414,16 +2414,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 4
       },
@@ -2564,16 +2564,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 1
       },
@@ -2683,16 +2683,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 3
       }
@@ -3033,16 +3033,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 1
       }
@@ -3183,16 +3183,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 1
       }
@@ -3364,16 +3364,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 3
       },
@@ -3514,16 +3514,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 1
       },
@@ -3583,16 +3583,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 5
       }
@@ -3983,16 +3983,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 1
       }
@@ -4033,16 +4033,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": 1
       }
@@ -4164,16 +4164,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": 0
       },
@@ -4464,18 +4464,18 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
-        "goals": -1
+        "goals": 5
       },
       "away": {
         "id": "68d612211b7b720e58adee74",
@@ -4483,18 +4483,18 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
-        "goals": -1
+        "goals": 5
       }
     },
     {
@@ -4883,16 +4883,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       }
@@ -4914,16 +4914,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       },
@@ -5183,16 +5183,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       }
@@ -5264,16 +5264,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       },
@@ -5633,16 +5633,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       }
@@ -5764,16 +5764,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       },
@@ -6033,16 +6033,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       }
@@ -6233,16 +6233,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       }
@@ -6383,16 +6383,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       }
@@ -6614,16 +6614,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       },
@@ -6683,16 +6683,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       }
@@ -6964,16 +6964,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       },
@@ -7014,16 +7014,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       },
@@ -7333,16 +7333,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       }
@@ -7414,16 +7414,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       },
@@ -7683,16 +7683,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       }
@@ -7764,16 +7764,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       },
@@ -7983,16 +7983,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       }
@@ -8164,16 +8164,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       },
@@ -8333,16 +8333,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       }
@@ -8514,16 +8514,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
           "goals": {
-            "for": 26,
-            "against": 43,
+            "for": 31,
+            "against": 48,
             "difference": -17
           },
-          "points": 11
+          "points": 12
         },
         "goals": -1
       },
@@ -8633,16 +8633,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 24,
+            "for": 37,
+            "against": 29,
             "difference": 8
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       }
@@ -8870,27 +8870,27 @@
       "rank": 10,
       "provider_id": 7471,
       "name": "מכבי צור שלום ק. ביאליק 2",
-      "games": 11,
+      "games": 12,
       "wins": 3,
-      "draws": 3,
+      "draws": 4,
       "losses": 5,
-      "gf": 32,
-      "ga": 24,
+      "gf": 37,
+      "ga": 29,
       "gd": 8,
-      "points": 12
+      "points": 13
     },
     {
       "rank": 11,
       "provider_id": 2157,
       "name": "הפועל חיפה 2",
-      "games": 12,
+      "games": 13,
       "wins": 3,
-      "draws": 2,
+      "draws": 3,
       "losses": 7,
-      "gf": 26,
-      "ga": 43,
+      "gf": 31,
+      "ga": 48,
       "gd": -17,
-      "points": 11
+      "points": 12
     },
     {
       "rank": 12,
