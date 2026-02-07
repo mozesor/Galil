@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v3.7-SORT-GAMES]</title>
+<title>לוח משחקים • גליל עליון [v3.8-NOON-FIX]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -2076,12 +2076,13 @@ function renderCalendar(){
   const sortedDays = Array.from(dayMap.entries()).sort((a,b) => a[0].localeCompare(b[0]));
   
   container.innerHTML = sortedDays.map(([dayKey, dayGames]) => {
-    // Sort games by time to get the earliest one for day name
+    // Sort games by time
     const sortedGames = dayGames.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
     
-    // Use fmtDate to match the games display exactly
-    const firstGameDate = sortedGames[0].date;
-    const fullDateTime = fmtDate(firstGameDate);
+    // Use the dayKey but parse it as a full ISO datetime at noon to avoid timezone issues
+    const [year, month, day] = dayKey.split('-');
+    const dateAtNoon = `${year}-${month}-${day}T12:00:00`;
+    const fullDateTime = fmtDate(dateAtNoon);
     // Extract just the date part (before the time)
     const dayName = fullDateTime.split(',').slice(0, 2).join(',');
     
