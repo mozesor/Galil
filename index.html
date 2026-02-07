@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v3.6-USE-FMTDATE]</title>
+<title>לוח משחקים • גליל עליון [v3.7-SORT-GAMES]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -2076,8 +2076,11 @@ function renderCalendar(){
   const sortedDays = Array.from(dayMap.entries()).sort((a,b) => a[0].localeCompare(b[0]));
   
   container.innerHTML = sortedDays.map(([dayKey, dayGames]) => {
+    // Sort games by time to get the earliest one for day name
+    const sortedGames = dayGames.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+    
     // Use fmtDate to match the games display exactly
-    const firstGameDate = dayGames[0].date;
+    const firstGameDate = sortedGames[0].date;
     const fullDateTime = fmtDate(firstGameDate);
     // Extract just the date part (before the time)
     const dayName = fullDateTime.split(',').slice(0, 2).join(',');
@@ -2085,7 +2088,7 @@ function renderCalendar(){
     // Check if this is the day with Galil's next game
     const hasNextGalilGame = dayKey === nextGalilDate;
     
-    const gamesHtml = dayGames.map(g => {
+    const gamesHtml = sortedGames.map(g => {
       const isGalil = includesTeam(g, 'גליל עליון');
       const isNextGalilGame = isGalil && g.date && new Date(g.date).toISOString().split('T')[0] === nextGalilDate;
       const score = formatScore(g);
