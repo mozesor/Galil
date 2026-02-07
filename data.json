@@ -7,7 +7,7 @@
     "currentRoundNumber": 16,
     "currentRoundName": "מחזור 15"
   },
-  "fetchedAt": "2026-02-07T14:50:27.218Z",
+  "fetchedAt": "2026-02-07T15:17:03.624Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -164,14 +164,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -283,16 +283,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 10
       }
@@ -464,14 +464,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -483,16 +483,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 0
       }
@@ -833,16 +833,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 3
       }
@@ -914,14 +914,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -1483,16 +1483,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 3
       }
@@ -1664,16 +1664,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 5
       },
@@ -1714,14 +1714,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -1864,14 +1864,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -1933,14 +1933,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -1983,16 +1983,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 2
       }
@@ -2214,14 +2214,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -2314,16 +2314,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 5
       },
@@ -2583,14 +2583,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -2614,16 +2614,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 1
       },
@@ -2764,16 +2764,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 4
       },
@@ -3014,14 +3014,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -3233,14 +3233,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -3333,16 +3333,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 0
       }
@@ -3433,16 +3433,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 0
       }
@@ -3464,14 +3464,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -3833,14 +3833,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -3933,14 +3933,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -4233,14 +4233,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -4264,16 +4264,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": 9
       },
@@ -4514,18 +4514,18 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
-        "goals": -1
+        "goals": 4
       },
       "away": {
         "id": "68d612211b7b720e58adef7c",
@@ -4533,18 +4533,18 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
-        "goals": -1
+        "goals": 3
       }
     },
     {
@@ -4783,14 +4783,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -4964,16 +4964,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       },
@@ -5083,14 +5083,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -5114,16 +5114,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       },
@@ -5533,14 +5533,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -5783,16 +5783,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       }
@@ -5864,16 +5864,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       },
@@ -5964,14 +5964,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -6064,16 +6064,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       },
@@ -6333,14 +6333,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -6533,16 +6533,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       }
@@ -6664,14 +6664,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -6833,16 +6833,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       }
@@ -7033,14 +7033,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -7183,16 +7183,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       }
@@ -7364,14 +7364,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -7564,16 +7564,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       },
@@ -7733,14 +7733,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -7814,16 +7814,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       },
@@ -8064,14 +8064,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -8314,16 +8314,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       },
@@ -8414,14 +8414,14 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 5,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 29,
-            "difference": 16
+            "for": 48,
+            "against": 33,
+            "difference": 15
           },
           "points": 17
         },
@@ -8483,16 +8483,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 41,
-            "difference": 1
+            "for": 46,
+            "against": 44,
+            "difference": 2
           },
-          "points": 16
+          "points": 19
         },
         "goals": -1
       }
@@ -8816,6 +8816,19 @@
     },
     {
       "rank": 6,
+      "provider_id": 8303,
+      "name": "מ.ע.קרית אתא 3",
+      "games": 13,
+      "wins": 6,
+      "draws": 1,
+      "losses": 6,
+      "gf": 46,
+      "ga": 44,
+      "gd": 2,
+      "points": 19
+    },
+    {
+      "rank": 7,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
       "games": 11,
@@ -8828,30 +8841,17 @@
       "points": 17
     },
     {
-      "rank": 7,
+      "rank": 8,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
-      "games": 14,
+      "games": 15,
       "wins": 5,
       "draws": 2,
-      "losses": 7,
-      "gf": 45,
-      "ga": 29,
-      "gd": 16,
+      "losses": 8,
+      "gf": 48,
+      "ga": 33,
+      "gd": 15,
       "points": 17
-    },
-    {
-      "rank": 8,
-      "provider_id": 8303,
-      "name": "מ.ע.קרית אתא 3",
-      "games": 12,
-      "wins": 5,
-      "draws": 1,
-      "losses": 6,
-      "gf": 42,
-      "ga": 41,
-      "gd": 1,
-      "points": 16
     },
     {
       "rank": 9,
