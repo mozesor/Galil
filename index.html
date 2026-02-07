@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v3.1-DATE-FIX]</title>
+<title>לוח משחקים • גליל עליון [v3.3-REVERT-CALENDAR]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -1255,6 +1255,21 @@ button[id*="Close"]:hover{
   function fmtDate(s){
     if(!s) return "";
     try{
+      // Parse ISO date string in local timezone to avoid UTC issues
+      const dateMatch = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if(dateMatch){
+        const [_, year, month, day] = dateMatch;
+        const timeMatch = s.match(/T(\d{2}):(\d{2})/);
+        if(timeMatch){
+          const [__, hour, minute] = timeMatch;
+          const d = new Date(Number(year), Number(month) - 1, Number(day), Number(hour), Number(minute));
+          return d.toLocaleString("he-IL", { weekday:"short", year:"2-digit", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit" });
+        } else {
+          const d = new Date(Number(year), Number(month) - 1, Number(day));
+          return d.toLocaleString("he-IL", { weekday:"short", year:"2-digit", month:"2-digit", day:"2-digit" });
+        }
+      }
+      // Fallback to old method
       const d = new Date(s);
       return d.toLocaleString("he-IL", { weekday:"short", year:"2-digit", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit" });
     }catch{ return s; }
@@ -2076,9 +2091,7 @@ function renderCalendar(){
   const sortedDays = Array.from(dayMap.entries()).sort((a,b) => a[0].localeCompare(b[0]));
   
   container.innerHTML = sortedDays.map(([dayKey, dayGames]) => {
-    // Parse date in local timezone to avoid UTC midnight issues
-    const [year, month, day] = dayKey.split('-').map(Number);
-    const date = new Date(year, month - 1, day);
+    const date = new Date(dayKey);
     const dayName = date.toLocaleDateString('he-IL', { weekday: 'short', day: 'numeric', month: 'short' });
     
     // Check if this is the day with Galil's next game
