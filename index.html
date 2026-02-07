@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v3.5-CALENDAR-DATE-FIX]</title>
+<title>לוח משחקים • גליל עליון [v3.6-USE-FMTDATE]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -2076,9 +2076,11 @@ function renderCalendar(){
   const sortedDays = Array.from(dayMap.entries()).sort((a,b) => a[0].localeCompare(b[0]));
   
   container.innerHTML = sortedDays.map(([dayKey, dayGames]) => {
-    // Use the first game's actual date instead of the dayKey to get correct weekday
-    const date = new Date(dayGames[0].date);
-    const dayName = date.toLocaleDateString('he-IL', { weekday: 'short', day: 'numeric', month: 'short' });
+    // Use fmtDate to match the games display exactly
+    const firstGameDate = dayGames[0].date;
+    const fullDateTime = fmtDate(firstGameDate);
+    // Extract just the date part (before the time)
+    const dayName = fullDateTime.split(',').slice(0, 2).join(',');
     
     // Check if this is the day with Galil's next game
     const hasNextGalilGame = dayKey === nextGalilDate;
