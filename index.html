@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v3.8-NOON-FIX]</title>
+<title>לוח משחקים • גליל עליון [v3.9-LOCAL-DAYKEY]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -2059,14 +2059,25 @@ function renderCalendar(){
   }).sort((a,b)=>(a.date||"").localeCompare(b.date||""));
   
   const nextGalilGame = futureGalilGames[0];
-  const nextGalilDate = nextGalilGame?.date ? new Date(nextGalilGame.date).toISOString().split('T')[0] : null;
+  let nextGalilDate = null;
+  if(nextGalilGame?.date){
+    const d = new Date(nextGalilGame.date);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    nextGalilDate = `${year}-${month}-${day}`;
+  }
   
   console.log('renderCalendar: next Galil game date =', nextGalilDate);
   
   games.forEach(g => {
     if(!g.date) return;
     const date = new Date(g.date);
-    const dayKey = date.toISOString().split('T')[0];
+    // Use local date instead of UTC for dayKey
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const dayKey = `${year}-${month}-${day}`;
     if(!dayMap.has(dayKey)){
       dayMap.set(dayKey, []);
     }
