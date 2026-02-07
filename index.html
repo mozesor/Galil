@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v3.0-INLINE-ROUND]</title>
+<title>לוח משחקים • גליל עליון [v3.1-DATE-FIX]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -2076,7 +2076,9 @@ function renderCalendar(){
   const sortedDays = Array.from(dayMap.entries()).sort((a,b) => a[0].localeCompare(b[0]));
   
   container.innerHTML = sortedDays.map(([dayKey, dayGames]) => {
-    const date = new Date(dayKey);
+    // Parse date in local timezone to avoid UTC midnight issues
+    const [year, month, day] = dayKey.split('-').map(Number);
+    const date = new Date(year, month - 1, day);
     const dayName = date.toLocaleDateString('he-IL', { weekday: 'short', day: 'numeric', month: 'short' });
     
     // Check if this is the day with Galil's next game
