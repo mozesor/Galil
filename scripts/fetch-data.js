@@ -20,6 +20,120 @@ async function fetchJson(url) {
   return JSON.parse(text);
 }
 
+async function fetchHtml(url) {
+  const res = await fetch(url, {
+    headers: {
+      "user-agent": "Mozilla/5.0",
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      referer: LEAGUE_URL,
+    },
+  });
+  const text = await res.text();
+  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+  return text;
+}
+
+/**
+ * Extract game times from VOLE HTML page
+ * This scrapes the actual display times from the website UI
+ */
+async function extractGameTimesFromHTML(roundNumber) {
+  try {
+    const url = `${LEAGUE_URL}?round=${roundNumber}`;
+    console.log(`  Scraping times from HTML: round ${roundNumber}...`);
+    
+    const html = await fetchHtml(url);
+    
+    // Map to store provider_id -> time string (e.g., "14:20")
+    const timeMap = new Map();
+    
+    // Parse HTML to extract game times
+    // The HTML structure typically has game cards with time displays
+    // We'll look for patterns like: <div class="time">14:20</div>
+    
+    // Extract game IDs and times using regex patterns
+    // Pattern 1: Look for game provider IDs and nearby times
+    const gameIdPattern = /data-game-id="(\d+)"|provider.*?id[\"']?\s*:\s*(\d+)/gi;
+    const timePattern = /(\d{1,2}:\d{2})/g;
+    
+    // Split HTML into game sections
+    const gameSections = html.split(/class=["']game|id=["']game/i);
+    
+    for (const section of gameSections) {
+      // Try to find provider ID in this section
+      const idMatch = section.match(/provider.*?id[\"']?\s*:\s*(\d+)|data-provider-id=["'](\d+)/i);
+      if (!idMatch) continue;
+      
+      const providerId = parseInt(idMatch[1] || idMatch[2]);
+      if (!providerId || providerId === -1) continue;
+      
+      // Look for time pattern in the next 500 characters
+      const snippet = section.slice(0, 500);
+      const timeMatch = snippet.match(/(\d{1,2}:\d{2})/);
+      
+      if (timeMatch) {
+        const timeStr = timeMatch[1];
+        // Validate it's a reasonable time (00:00-23:59)
+        const [hours, mins] = timeStr.split(':').map(Number);
+        if (hours >= 0 && hours < 24 && mins >= 0 && mins < 60) {
+          timeMap.set(providerId, timeStr);
+        }
+      }
+    }
+    
+    console.log(`  Found ${timeMap.size} game times in HTML for round ${roundNumber}`);
+    return timeMap;
+    
+  } catch (error) {
+    console.warn(`  Warning: Could not scrape times for round ${roundNumber}:`, error.message);
+    return new Map();
+  }
+}
+
+/**
+ * Merge scraped HTML times into API game data
+ */
+function mergeGameTimes(games, timesByRound) {
+  let mergedCount = 0;
+  
+  for (const game of games) {
+    const roundNum = game?.round?.number;
+    const providerId = game?.provider_id;
+    
+    if (!roundNum || !providerId || providerId === -1) continue;
+    
+    const timesMap = timesByRound.get(roundNum);
+    if (!timesMap) continue;
+    
+    const timeStr = timesMap.get(providerId);
+    if (!timeStr) continue;
+    
+    // Parse current date
+    const currentDate = game.date ? new Date(game.date) : null;
+    if (!currentDate || isNaN(currentDate.getTime())) continue;
+    
+    // Extract hours and minutes from scraped time
+    const [hours, minutes] = timeStr.split(':').map(Number);
+    
+    // Create new date with scraped time (in local Israel timezone)
+    // We need to set the time in UTC such that when displayed in Israel (UTC+2), it shows the correct time
+    const year = currentDate.getUTCFullYear();
+    const month = currentDate.getUTCMonth();
+    const day = currentDate.getUTCDate();
+    
+    // Israel is UTC+2 (or UTC+3 in summer), let's use UTC+2 as baseline
+    // If VOLE shows 14:20 in Israel time, we need to store it as 12:20 UTC
+    const newDate = new Date(Date.UTC(year, month, day, hours - 2, minutes, 0, 0));
+    
+    game.date = newDate.toISOString();
+    game.scraped_time = timeStr; // Mark that this time was scraped
+    mergedCount++;
+  }
+  
+  console.log(`✅ Merged ${mergedCount} game times from HTML scraping`);
+  return games;
+}
+
 function getGames(j) {
   if (!j) return [];
   if (Array.isArray(j.games)) return j.games;
@@ -142,6 +256,7 @@ async function main() {
   const outDataPath = path.join(__dirname, "..", "data.json");
   const outDebugPath = path.join(__dirname, "..", "debug_endpoints.json");
 
+  console.log("🔄 Fetching data from VOLE API...");
   const baseResp = await fetchJson(ROUNDS_API);
   const leagueInfo = getLeagueInfo(baseResp);
   const roundParam = await detectRoundParam();
@@ -180,13 +295,30 @@ async function main() {
     }
   }
 
-  // de-dup
+  // De-duplicate
   const map = new Map();
   for (const g of allGames) if (g?.id) map.set(g.id, g);
-  const games = Array.from(map.values());
+  let games = Array.from(map.values());
   games.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
 
   const shift = normalizeRoundNumbersIfZeroBased(games, leagueInfo);
+
+  // 🆕 SCRAPE GAME TIMES FROM HTML
+  console.log("\n🌐 Scraping game times from VOLE website HTML...");
+  const timesByRound = new Map();
+  const roundsToScrape = buildRoundsFromGames(games).map(r => r.number);
+  
+  for (const roundNum of roundsToScrape) {
+    const timesMap = await extractGameTimesFromHTML(roundNum);
+    if (timesMap.size > 0) {
+      timesByRound.set(roundNum, timesMap);
+    }
+    // Small delay to be nice to their server
+    await new Promise(r => setTimeout(r, 300));
+  }
+  
+  // Merge scraped times into game data
+  games = mergeGameTimes(games, timesByRound);
 
   const standings = buildStandingsFromGames(games);
   const rounds = buildRoundsFromGames(games);
@@ -215,7 +347,7 @@ async function main() {
   await fs.writeFile(outDataPath, JSON.stringify(out, null, 2), "utf8");
   await fs.writeFile(outDebugPath, JSON.stringify({ leagueInfo, roundParam, shift, tried }, null, 2), "utf8");
 
-  console.log("✅ Saved data.json + debug_endpoints.json");
+  console.log("\n✅ Saved data.json + debug_endpoints.json");
   console.log("✅ roundParamDetected:", roundParam);
   console.log("✅ roundNumberFixApplied:", shift);
   console.log("✅ games:", games.length, "| rounds:", rounds.length);
