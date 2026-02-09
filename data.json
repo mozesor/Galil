@@ -4,10 +4,10 @@
     "name": "ליגת ילדים ג מפרץ",
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 16,
-    "currentRoundName": "מחזור 15"
+    "currentRoundNumber": 15,
+    "currentRoundName": "מחזור 14"
   },
-  "fetchedAt": "2026-02-09T04:02:44.732Z",
+  "fetchedAt": "2026-02-09T05:50:39.524Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
