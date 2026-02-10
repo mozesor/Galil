@@ -7,7 +7,7 @@
     "currentRoundNumber": 15,
     "currentRoundName": "מחזור 14"
   },
-  "fetchedAt": "2026-02-10T18:54:51.892Z",
+  "fetchedAt": "2026-02-10T19:56:23.854Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -614,14 +614,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -683,16 +683,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": 2
       }
@@ -814,14 +814,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -964,16 +964,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": 0
       },
@@ -983,14 +983,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -1064,16 +1064,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": 2
       },
@@ -1164,14 +1164,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -1433,16 +1433,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": 0
       }
@@ -1564,16 +1564,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": 0
       },
@@ -1883,14 +1883,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -2164,14 +2164,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -2433,14 +2433,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -2533,16 +2533,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": 1
       }
@@ -2733,14 +2733,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -2833,16 +2833,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": 0
       }
@@ -2964,14 +2964,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -3383,16 +3383,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": 2
       }
@@ -3483,16 +3483,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": 1
       }
@@ -3664,16 +3664,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": 6
       },
@@ -3783,14 +3783,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -3864,14 +3864,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -3964,14 +3964,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -4614,18 +4614,18 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adef9d",
@@ -4633,18 +4633,18 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -4683,14 +4683,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -4933,16 +4933,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       }
@@ -4983,14 +4983,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -5064,14 +5064,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -5214,16 +5214,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       },
@@ -5414,16 +5414,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       },
@@ -5683,16 +5683,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       }
@@ -5833,14 +5833,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -5883,16 +5883,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       }
@@ -6014,14 +6014,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -6164,16 +6164,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       },
@@ -6433,16 +6433,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       }
@@ -6583,14 +6583,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -6764,14 +6764,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -6914,16 +6914,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       },
@@ -7083,16 +7083,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       }
@@ -7233,14 +7233,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -7533,14 +7533,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -7664,16 +7664,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       },
@@ -7714,16 +7714,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       },
@@ -7883,14 +7883,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -8264,14 +8264,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -8383,16 +8383,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       }
@@ -8464,16 +8464,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 10,
-          "wins": 2,
+          "games": 11,
+          "wins": 3,
           "draws": 1,
           "losses": 7,
           "goals": {
-            "for": 14,
+            "for": 15,
             "against": 29,
-            "difference": -15
+            "difference": -14
           },
-          "points": 7
+          "points": 10
         },
         "goals": -1
       },
@@ -8533,14 +8533,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals": {
             "for": 52,
-            "against": 22,
-            "difference": 30
+            "against": 23,
+            "difference": 29
           },
           "points": 17
         },
@@ -8831,13 +8831,13 @@
       "rank": 7,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
-      "games": 11,
+      "games": 12,
       "wins": 5,
       "draws": 2,
-      "losses": 4,
+      "losses": 5,
       "gf": 52,
-      "ga": 22,
-      "gd": 30,
+      "ga": 23,
+      "gd": 29,
       "points": 17
     },
     {
@@ -8909,14 +8909,14 @@
       "rank": 13,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-      "games": 10,
-      "wins": 2,
+      "games": 11,
+      "wins": 3,
       "draws": 1,
       "losses": 7,
-      "gf": 14,
+      "gf": 15,
       "ga": 29,
-      "gd": -15,
-      "points": 7
+      "gd": -14,
+      "points": 10
     },
     {
       "rank": 14,
