@@ -7,7 +7,7 @@
     "currentRoundNumber": 16,
     "currentRoundName": "מחזור 15"
   },
-  "fetchedAt": "2026-02-12T16:14:33.091Z",
+  "fetchedAt": "2026-02-12T17:32:12.214Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -264,14 +264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -614,16 +614,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 24
       },
@@ -633,14 +633,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -814,16 +814,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 3
       },
@@ -983,16 +983,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 6
       }
@@ -1014,14 +1014,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -1164,16 +1164,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 6
       },
@@ -1233,14 +1233,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -1814,14 +1814,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -1883,16 +1883,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 3
       }
@@ -2083,14 +2083,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -2164,16 +2164,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -2264,14 +2264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -2433,16 +2433,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 2
       }
@@ -2483,14 +2483,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -2733,16 +2733,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 1
       }
@@ -2914,14 +2914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -2964,16 +2964,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 2
       },
@@ -3133,14 +3133,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -3683,14 +3683,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -3783,16 +3783,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 1
       }
@@ -3864,16 +3864,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 0
       },
@@ -3914,14 +3914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -3964,16 +3964,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 4
       },
@@ -4283,14 +4283,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -4614,16 +4614,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": 0
       },
@@ -4664,18 +4664,18 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adee75",
@@ -4683,18 +4683,18 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
-        "goals": -1
+        "goals": 11
       }
     },
     {
@@ -4833,16 +4833,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -4883,14 +4883,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -5014,16 +5014,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -5114,14 +5114,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -5683,14 +5683,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -5783,16 +5783,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -6014,16 +6014,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -6114,14 +6114,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -6483,14 +6483,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -6583,16 +6583,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -6764,16 +6764,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -6864,14 +6864,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -7133,14 +7133,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -7233,16 +7233,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -7533,16 +7533,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -7614,14 +7614,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -7783,14 +7783,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -7883,16 +7883,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -8264,16 +8264,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -8364,14 +8364,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -8433,14 +8433,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 0,
           "draws": 0,
-          "losses": 13,
+          "losses": 14,
           "goals": {
             "for": 5,
-            "against": 158,
-            "difference": -153
+            "against": 169,
+            "difference": -164
           },
           "points": 0
         },
@@ -8533,16 +8533,16 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 52,
+            "for": 63,
             "against": 23,
-            "difference": 29
+            "difference": 40
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -8816,6 +8816,19 @@
     },
     {
       "rank": 6,
+      "provider_id": 8295,
+      "name": "הפועל עכו 2",
+      "games": 13,
+      "wins": 6,
+      "draws": 2,
+      "losses": 5,
+      "gf": 63,
+      "ga": 23,
+      "gd": 40,
+      "points": 20
+    },
+    {
+      "rank": 7,
       "provider_id": 8303,
       "name": "מ.ע.קרית אתא 3",
       "games": 13,
@@ -8826,19 +8839,6 @@
       "ga": 43,
       "gd": 2,
       "points": 19
-    },
-    {
-      "rank": 7,
-      "provider_id": 8295,
-      "name": "הפועל עכו 2",
-      "games": 12,
-      "wins": 5,
-      "draws": 2,
-      "losses": 5,
-      "gf": 52,
-      "ga": 23,
-      "gd": 29,
-      "points": 17
     },
     {
       "rank": 8,
@@ -8922,13 +8922,13 @@
       "rank": 14,
       "provider_id": 8368,
       "name": "הפועל קרית חיים  \"צו פיוס\"",
-      "games": 13,
+      "games": 14,
       "wins": 0,
       "draws": 0,
-      "losses": 13,
+      "losses": 14,
       "gf": 5,
-      "ga": 158,
-      "gd": -153,
+      "ga": 169,
+      "gd": -164,
       "points": 0
     }
   ]
