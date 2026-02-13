@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-13T13:56:22.283Z",
+  "fetchedAt": "2026-02-13T14:37:34.598Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -164,16 +164,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 1
       },
@@ -433,14 +433,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -464,16 +464,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 4
       },
@@ -564,14 +564,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -914,16 +914,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 9
       },
@@ -933,14 +933,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -1283,14 +1283,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -1533,14 +1533,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -1714,16 +1714,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 2
       },
@@ -1864,16 +1864,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 2
       },
@@ -1933,16 +1933,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 0
       }
@@ -2033,14 +2033,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -2214,16 +2214,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 5
       },
@@ -2464,14 +2464,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -2583,16 +2583,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 1
       }
@@ -2783,14 +2783,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -3014,16 +3014,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 4
       },
@@ -3233,16 +3233,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 2
       }
@@ -3464,16 +3464,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 0
       },
@@ -3564,14 +3564,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -3833,16 +3833,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 0
       }
@@ -3933,16 +3933,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 12
       }
@@ -4083,14 +4083,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -4133,14 +4133,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -4233,16 +4233,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 3
       }
@@ -4533,16 +4533,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": 2
       }
@@ -4764,18 +4764,18 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
-        "goals": -1
+        "goals": 1
       },
       "away": {
         "id": "68d612211b7b720e58adef7c",
@@ -4783,18 +4783,18 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
-        "goals": -1
+        "goals": 2
       }
     },
     {
@@ -4964,14 +4964,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -5033,16 +5033,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -5483,16 +5483,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -5514,14 +5514,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -5914,14 +5914,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -5964,16 +5964,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -6214,14 +6214,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -6333,16 +6333,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -6414,14 +6414,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -6664,16 +6664,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -6883,14 +6883,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -7033,16 +7033,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -7164,14 +7164,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -7364,16 +7364,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -7514,14 +7514,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -7733,16 +7733,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -7914,14 +7914,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -8064,16 +8064,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -8183,14 +8183,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -8414,16 +8414,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 5,
+          "games": 16,
+          "wins": 6,
           "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 47,
-            "against": 32,
-            "difference": 15
+            "for": 49,
+            "against": 33,
+            "difference": 16
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -8664,14 +8664,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 11,
+          "games": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 45,
-            "against": 57,
-            "difference": -12
+            "for": 46,
+            "against": 59,
+            "difference": -13
           },
           "points": 10
         },
@@ -8829,6 +8829,19 @@
     },
     {
       "rank": 7,
+      "provider_id": 7700,
+      "name": "מ.ס.קרית ים  2",
+      "games": 16,
+      "wins": 6,
+      "draws": 2,
+      "losses": 8,
+      "gf": 49,
+      "ga": 33,
+      "gd": 16,
+      "points": 20
+    },
+    {
+      "rank": 8,
       "provider_id": 8303,
       "name": "מ.ע.קרית אתא 3",
       "games": 13,
@@ -8839,19 +8852,6 @@
       "ga": 43,
       "gd": 2,
       "points": 19
-    },
-    {
-      "rank": 8,
-      "provider_id": 7700,
-      "name": "מ.ס.קרית ים  2",
-      "games": 15,
-      "wins": 5,
-      "draws": 2,
-      "losses": 8,
-      "gf": 47,
-      "ga": 32,
-      "gd": 15,
-      "points": 17
     },
     {
       "rank": 9,
@@ -8896,13 +8896,13 @@
       "rank": 12,
       "provider_id": 2411,
       "name": "מרכז קהילתי גולן קצרין",
-      "games": 11,
+      "games": 12,
       "wins": 3,
       "draws": 1,
-      "losses": 7,
-      "gf": 45,
-      "ga": 57,
-      "gd": -12,
+      "losses": 8,
+      "gf": 46,
+      "ga": 59,
+      "gd": -13,
       "points": 10
     },
     {
