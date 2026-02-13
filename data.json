@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-13T12:37:54.227Z",
+  "fetchedAt": "2026-02-13T13:56:22.283Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -364,14 +364,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -583,14 +583,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -733,16 +733,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 5
       }
@@ -764,16 +764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       },
@@ -783,14 +783,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -1114,16 +1114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       },
@@ -1333,16 +1333,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 2
       }
@@ -1364,14 +1364,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -1514,16 +1514,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       },
@@ -1583,14 +1583,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -2064,14 +2064,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -2133,16 +2133,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       }
@@ -2233,16 +2233,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       }
@@ -2333,14 +2333,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -2664,16 +2664,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       },
@@ -2714,14 +2714,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -3083,14 +3083,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -3114,16 +3114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 21
       },
@@ -3164,14 +3164,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -3414,16 +3414,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 5
       },
@@ -3764,16 +3764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       },
@@ -3814,14 +3814,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -4114,14 +4114,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -4183,16 +4183,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 3
       }
@@ -4314,14 +4314,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -4433,14 +4433,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -4564,16 +4564,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       },
@@ -4714,18 +4714,18 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
-        "goals": -1
+        "goals": 2
       },
       "away": {
         "id": "68d612211b7b720e58adef07",
@@ -4733,18 +4733,18 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
-        "goals": -1
+        "goals": 5
       }
     },
     {
@@ -5233,14 +5233,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -5264,16 +5264,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -5383,16 +5383,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -5533,16 +5533,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -5614,14 +5614,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -6133,14 +6133,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -6264,16 +6264,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -6314,16 +6314,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -6514,14 +6514,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -6783,14 +6783,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -6983,16 +6983,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -7064,16 +7064,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -7264,14 +7264,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -7433,14 +7433,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -7633,16 +7633,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -7833,16 +7833,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -8014,14 +8014,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -8083,14 +8083,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -8283,16 +8283,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -8564,16 +8564,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 9,
+          "games": 14,
+          "wins": 10,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 68,
-            "against": 31,
-            "difference": 37
+            "for": 73,
+            "against": 33,
+            "difference": 40
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -8733,14 +8733,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 54,
-            "against": 22,
-            "difference": 32
+            "for": 56,
+            "against": 27,
+            "difference": 29
           },
           "points": 30
         },
@@ -8751,6 +8751,19 @@
   "standings": [
     {
       "rank": 1,
+      "provider_id": 7709,
+      "name": "ה.מטה אשר 3",
+      "games": 14,
+      "wins": 10,
+      "draws": 2,
+      "losses": 2,
+      "gf": 73,
+      "ga": 33,
+      "gd": 40,
+      "points": 32
+    },
+    {
+      "rank": 2,
       "provider_id": 6897,
       "name": "מ.ס. חיפה רובי שפירא",
       "games": 14,
@@ -8763,30 +8776,17 @@
       "points": 32
     },
     {
-      "rank": 2,
+      "rank": 3,
       "provider_id": 3675,
       "name": "מ.כ. גליל גולן דרום",
-      "games": 14,
+      "games": 15,
       "wins": 9,
       "draws": 3,
-      "losses": 2,
-      "gf": 54,
-      "ga": 22,
-      "gd": 32,
+      "losses": 3,
+      "gf": 56,
+      "ga": 27,
+      "gd": 29,
       "points": 30
-    },
-    {
-      "rank": 3,
-      "provider_id": 7709,
-      "name": "ה.מטה אשר 3",
-      "games": 13,
-      "wins": 9,
-      "draws": 2,
-      "losses": 2,
-      "gf": 68,
-      "ga": 31,
-      "gd": 37,
-      "points": 29
     },
     {
       "rank": 4,
