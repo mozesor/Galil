@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-14T18:22:24.881Z",
+  "fetchedAt": "2026-02-14T18:58:08.864Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -284,15 +284,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 10
       }
@@ -484,15 +484,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 0
       }
@@ -616,14 +616,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 24
       },
@@ -816,14 +816,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 3
       },
@@ -834,15 +834,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 3
       }
@@ -985,14 +985,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 6
       }
@@ -1166,14 +1166,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 6
       },
@@ -1484,15 +1484,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 3
       }
@@ -1665,15 +1665,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 5
       },
@@ -1885,14 +1885,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 3
       }
@@ -1984,15 +1984,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 2
       }
@@ -2166,14 +2166,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       },
@@ -2315,15 +2315,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 5
       },
@@ -2435,14 +2435,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 2
       }
@@ -2615,15 +2615,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 1
       },
@@ -2735,14 +2735,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 1
       }
@@ -2765,15 +2765,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 4
       },
@@ -2966,14 +2966,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 2
       },
@@ -3334,15 +3334,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 0
       }
@@ -3434,15 +3434,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 0
       }
@@ -3785,14 +3785,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 1
       }
@@ -3866,14 +3866,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 0
       },
@@ -3966,14 +3966,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 4
       },
@@ -4265,15 +4265,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 9
       },
@@ -4515,15 +4515,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": 3
       },
@@ -4616,14 +4616,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 0
       },
@@ -4685,14 +4685,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 11
       }
@@ -4815,17 +4815,17 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "id": "68d612211b7b720e58adee75",
@@ -4835,14 +4835,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": 0
       }
@@ -5016,14 +5016,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       },
@@ -5065,15 +5065,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       },
@@ -5734,15 +5734,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       }
@@ -5785,14 +5785,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       }
@@ -5865,15 +5865,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       },
@@ -6016,14 +6016,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       },
@@ -6065,15 +6065,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       },
@@ -6534,15 +6534,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       }
@@ -6585,14 +6585,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       }
@@ -6766,14 +6766,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       },
@@ -6834,15 +6834,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       }
@@ -7184,15 +7184,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       }
@@ -7235,14 +7235,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       }
@@ -7535,14 +7535,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       }
@@ -7565,15 +7565,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       },
@@ -7815,15 +7815,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       },
@@ -7885,14 +7885,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       }
@@ -8266,14 +8266,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       },
@@ -8315,15 +8315,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       },
@@ -8484,15 +8484,15 @@
         "has_logo": true,
         "stats": {
           "games": 14,
-          "wins": 6,
-          "draws": 2,
+          "wins": 7,
+          "draws": 1,
           "losses": 6,
           "goals": {
-            "for": 45,
+            "for": 46,
             "against": 43,
-            "difference": 2
+            "difference": 3
           },
-          "points": 20
+          "points": 22
         },
         "goals": -1
       }
@@ -8535,14 +8535,14 @@
         "stats": {
           "games": 14,
           "wins": 6,
-          "draws": 3,
-          "losses": 5,
+          "draws": 2,
+          "losses": 6,
           "goals": {
             "for": 63,
-            "against": 23,
-            "difference": 40
+            "against": 24,
+            "difference": 39
           },
-          "points": 21
+          "points": 20
         },
         "goals": -1
       }
@@ -8816,19 +8816,32 @@
     },
     {
       "rank": 6,
+      "provider_id": 8303,
+      "name": "מ.ע.קרית אתא 3",
+      "games": 14,
+      "wins": 7,
+      "draws": 1,
+      "losses": 6,
+      "gf": 46,
+      "ga": 43,
+      "gd": 3,
+      "points": 22
+    },
+    {
+      "rank": 7,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
       "games": 14,
       "wins": 6,
-      "draws": 3,
-      "losses": 5,
+      "draws": 2,
+      "losses": 6,
       "gf": 63,
-      "ga": 23,
-      "gd": 40,
-      "points": 21
+      "ga": 24,
+      "gd": 39,
+      "points": 20
     },
     {
-      "rank": 7,
+      "rank": 8,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 16,
@@ -8838,19 +8851,6 @@
       "gf": 49,
       "ga": 33,
       "gd": 16,
-      "points": 20
-    },
-    {
-      "rank": 8,
-      "provider_id": 8303,
-      "name": "מ.ע.קרית אתא 3",
-      "games": 14,
-      "wins": 6,
-      "draws": 2,
-      "losses": 6,
-      "gf": 45,
-      "ga": 43,
-      "gd": 2,
       "points": 20
     },
     {
