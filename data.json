@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-17T01:18:03.913Z",
+  "fetchedAt": "2026-02-17T05:18:55.235Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -4950,7 +4950,7 @@
     {
       "id": "68e09ead1b7b720e58c010a6",
       "provider_id": -1,
-      "date": "2026-02-20T08:00:00.000Z",
+      "date": "2026-02-20T08:30:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 17",
@@ -4993,56 +4993,6 @@
             "difference": 19
           },
           "points": 27
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c0109d",
-      "provider_id": -1,
-      "date": "2026-02-20T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 17",
-        "number": 17,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee75",
-        "provider_id": 8295,
-        "name": "הפועל עכו 2",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 6,
-          "draws": 2,
-          "losses": 6,
-          "goals": {
-            "for": 63,
-            "against": 24,
-            "difference": 39
-          },
-          "points": 20
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef7c",
-        "provider_id": 7700,
-        "name": "מ.ס.קרית ים  2",
-        "has_logo": true,
-        "stats": {
-          "games": 16,
-          "wins": 6,
-          "draws": 2,
-          "losses": 8,
-          "goals": {
-            "for": 49,
-            "against": 33,
-            "difference": 16
-          },
-          "points": 20
         },
         "goals": -1
       }
@@ -5250,7 +5200,7 @@
     {
       "id": "68e09ead1b7b720e58c010a3",
       "provider_id": -1,
-      "date": "2026-02-20T22:00:00.000Z",
+      "date": "2026-02-21T10:00:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 17",
@@ -5293,6 +5243,56 @@
             "difference": 32
           },
           "points": 32
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c0109d",
+      "provider_id": -1,
+      "date": "2026-02-21T11:15:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 17",
+        "number": 17,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 14,
+          "wins": 6,
+          "draws": 2,
+          "losses": 6,
+          "goals": {
+            "for": 63,
+            "against": 24,
+            "difference": 39
+          },
+          "points": 20
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 16,
+          "wins": 6,
+          "draws": 2,
+          "losses": 8,
+          "goals": {
+            "for": 49,
+            "against": 33,
+            "difference": 16
+          },
+          "points": 20
         },
         "goals": -1
       }
