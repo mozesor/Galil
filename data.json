@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-17T21:02:31.026Z",
+  "fetchedAt": "2026-02-17T21:53:00.734Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -264,14 +264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -333,16 +333,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 2
       }
@@ -633,14 +633,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -664,16 +664,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 3
       },
@@ -1014,14 +1014,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -1033,16 +1033,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 12
       }
@@ -1183,16 +1183,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 1
       }
@@ -1233,14 +1233,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -1464,16 +1464,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 6
       },
@@ -1814,14 +1814,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -1914,16 +1914,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 1
       },
@@ -2083,14 +2083,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -2264,14 +2264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -2483,14 +2483,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -2883,16 +2883,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 1
       }
@@ -2914,14 +2914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -3064,16 +3064,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 0
       },
@@ -3133,14 +3133,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -3283,16 +3283,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 0
       }
@@ -3633,16 +3633,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 1
       }
@@ -3683,14 +3683,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -3914,14 +3914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -4014,16 +4014,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": 1
       },
@@ -4283,14 +4283,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -4664,14 +4664,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -4864,18 +4864,18 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
-        "goals": -1
+        "goals": 4
       },
       "away": {
         "id": "68e09eac1b7b720e58c01005",
@@ -4883,18 +4883,18 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       }
     },
     {
@@ -5033,16 +5033,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -5064,14 +5064,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -5333,16 +5333,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -5364,16 +5364,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -5683,14 +5683,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -5764,16 +5764,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -5983,16 +5983,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -6114,14 +6114,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -6483,14 +6483,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -6633,16 +6633,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -6714,16 +6714,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -6864,14 +6864,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -7133,14 +7133,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -7283,16 +7283,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -7464,16 +7464,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -7614,14 +7614,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -7783,14 +7783,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -7933,16 +7933,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -8214,16 +8214,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       },
@@ -8364,14 +8364,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -8433,14 +8433,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 0,
           "draws": 0,
-          "losses": 14,
+          "losses": 15,
           "goals": {
             "for": 5,
-            "against": 169,
-            "difference": -164
+            "against": 173,
+            "difference": -168
           },
           "points": 0
         },
@@ -8583,16 +8583,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 11,
-          "wins": 4,
+          "games": 12,
+          "wins": 5,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 28,
+            "for": 32,
             "against": 25,
-            "difference": 3
+            "difference": 7
           },
-          "points": 14
+          "points": 17
         },
         "goals": -1
       }
@@ -8857,14 +8857,14 @@
       "rank": 9,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-      "games": 11,
-      "wins": 4,
+      "games": 12,
+      "wins": 5,
       "draws": 2,
       "losses": 5,
-      "gf": 28,
+      "gf": 32,
       "ga": 25,
-      "gd": 3,
-      "points": 14
+      "gd": 7,
+      "points": 17
     },
     {
       "rank": 10,
@@ -8922,13 +8922,13 @@
       "rank": 14,
       "provider_id": 8368,
       "name": "הפועל קרית חיים  \"צו פיוס\"",
-      "games": 14,
+      "games": 15,
       "wins": 0,
       "draws": 0,
-      "losses": 14,
+      "losses": 15,
       "gf": 5,
-      "ga": 169,
-      "gd": -164,
+      "ga": 173,
+      "gd": -168,
       "points": 0
     }
   ]
