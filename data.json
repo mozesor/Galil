@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-18T03:58:09.967Z",
+  "fetchedAt": "2026-02-18T05:22:25.280Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -4849,8 +4849,8 @@
     },
     {
       "id": "68e09ead1b7b720e58c0109b",
-      "provider_id": -1,
-      "date": "2026-02-17T17:00:00.000Z",
+      "provider_id": 1098659,
+      "date": "2026-02-17T16:55:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 16",
@@ -4895,6 +4895,56 @@
           "points": 0
         },
         "goals": 0
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c0109f",
+      "provider_id": -1,
+      "date": "2026-02-19T13:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 17",
+        "number": 17,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 15,
+          "wins": 0,
+          "draws": 0,
+          "losses": 15,
+          "goals": {
+            "for": 5,
+            "against": 173,
+            "difference": -168
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 3,
+          "draws": 4,
+          "losses": 5,
+          "goals": {
+            "for": 37,
+            "against": 29,
+            "difference": 8
+          },
+          "points": 13
+        },
+        "goals": -1
       }
     },
     {
@@ -4998,109 +5048,9 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c0109e",
-      "provider_id": -1,
-      "date": "2026-02-20T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 17",
-        "number": 17,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adefaf",
-        "provider_id": 8303,
-        "name": "מ.ע.קרית אתא 3",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 7,
-          "draws": 1,
-          "losses": 6,
-          "goals": {
-            "for": 46,
-            "against": 43,
-            "difference": 3
-          },
-          "points": 22
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee89",
-        "provider_id": 8484,
-        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 5,
-          "draws": 2,
-          "losses": 5,
-          "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
-          },
-          "points": 17
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c0109f",
-      "provider_id": -1,
-      "date": "2026-02-20T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 17",
-        "number": 17,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68e09eac1b7b720e58c01005",
-        "provider_id": 8368,
-        "name": "הפועל קרית חיים  \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 0,
-          "draws": 0,
-          "losses": 15,
-          "goals": {
-            "for": 5,
-            "against": 173,
-            "difference": -168
-          },
-          "points": 0
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee74",
-        "provider_id": 7471,
-        "name": "מכבי צור שלום ק. ביאליק 2",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 3,
-          "draws": 4,
-          "losses": 5,
-          "goals": {
-            "for": 37,
-            "against": 29,
-            "difference": 8
-          },
-          "points": 13
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c010a1",
       "provider_id": -1,
-      "date": "2026-02-20T22:00:00.000Z",
+      "date": "2026-02-20T13:05:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 17",
@@ -5148,7 +5098,7 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c010a2",
+      "id": "68e09ead1b7b720e58c0109e",
       "provider_id": -1,
       "date": "2026-02-20T22:00:00.000Z",
       "is_finished": false,
@@ -5159,40 +5109,40 @@
       },
       "venue": null,
       "home": {
-        "id": "68d612211b7b720e58adeec5",
-        "provider_id": 2157,
-        "name": "הפועל חיפה 2",
+        "id": "68d612211b7b720e58adefaf",
+        "provider_id": 8303,
+        "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
-          "draws": 3,
-          "losses": 7,
+          "games": 14,
+          "wins": 7,
+          "draws": 1,
+          "losses": 6,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 46,
+            "against": 43,
+            "difference": 3
           },
-          "points": 12
+          "points": 22
         },
         "goals": -1
       },
       "away": {
-        "id": "68d612211b7b720e58adef2e",
-        "provider_id": 3675,
-        "name": "מ.כ. גליל גולן דרום",
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 9,
-          "draws": 3,
-          "losses": 3,
+          "games": 12,
+          "wins": 5,
+          "draws": 2,
+          "losses": 5,
           "goals": {
-            "for": 56,
-            "against": 27,
-            "difference": 29
+            "for": 32,
+            "against": 25,
+            "difference": 7
           },
-          "points": 30
+          "points": 17
         },
         "goals": -1
       }
@@ -5943,6 +5893,56 @@
             "difference": 32
           },
           "points": 32
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c010a2",
+      "provider_id": -1,
+      "date": "2026-03-10T17:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 17",
+        "number": 17,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeec5",
+        "provider_id": 2157,
+        "name": "הפועל חיפה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 13,
+          "wins": 3,
+          "draws": 3,
+          "losses": 7,
+          "goals": {
+            "for": 31,
+            "against": 48,
+            "difference": -17
+          },
+          "points": 12
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef2e",
+        "provider_id": 3675,
+        "name": "מ.כ. גליל גולן דרום",
+        "has_logo": true,
+        "stats": {
+          "games": 15,
+          "wins": 9,
+          "draws": 3,
+          "losses": 3,
+          "goals": {
+            "for": 56,
+            "against": 27,
+            "difference": 29
+          },
+          "points": 30
         },
         "goals": -1
       }
