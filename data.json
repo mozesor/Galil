@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-19T18:10:19.581Z",
+  "fetchedAt": "2026-02-19T19:15:52.407Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -233,16 +233,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       }
@@ -264,14 +264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -314,14 +314,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -514,16 +514,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 1
       },
@@ -533,14 +533,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -633,14 +633,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -714,16 +714,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       },
@@ -864,14 +864,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -883,16 +883,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 5
       }
@@ -1014,14 +1014,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -1083,16 +1083,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 2
       }
@@ -1133,16 +1133,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 0
       }
@@ -1214,16 +1214,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 13
       },
@@ -1233,14 +1233,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -1383,14 +1383,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -1414,16 +1414,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 4
       },
@@ -1614,14 +1614,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -1683,16 +1683,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 4
       }
@@ -1814,14 +1814,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -1833,16 +1833,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 8
       }
@@ -1964,16 +1964,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 7
       },
@@ -2014,14 +2014,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -2083,14 +2083,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -2183,16 +2183,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -2264,14 +2264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -2364,14 +2364,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -2414,16 +2414,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 4
       },
@@ -2483,14 +2483,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -2564,16 +2564,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 1
       },
@@ -2683,14 +2683,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -2864,16 +2864,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 3
       },
@@ -2914,14 +2914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -3033,14 +3033,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -3133,14 +3133,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -3183,16 +3183,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 1
       }
@@ -3214,16 +3214,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 2
       },
@@ -3364,14 +3364,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -3514,16 +3514,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 1
       },
@@ -3583,16 +3583,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 5
       }
@@ -3683,14 +3683,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -3733,16 +3733,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 1
       }
@@ -3914,14 +3914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -3983,14 +3983,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -4033,14 +4033,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -4064,16 +4064,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 7
       },
@@ -4164,16 +4164,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 0
       },
@@ -4283,14 +4283,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -4364,16 +4364,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 5
       },
@@ -4464,14 +4464,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -4483,16 +4483,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": 5
       }
@@ -4583,16 +4583,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": 2
       }
@@ -4664,14 +4664,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -4883,14 +4883,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -4914,18 +4914,18 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adee74",
@@ -4933,18 +4933,18 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
-        "goals": -1
+        "goals": 5
       }
     },
     {
@@ -4964,18 +4964,18 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
-        "goals": -1
+        "goals": 4
       },
       "away": {
         "id": "68d612211b7b720e58adeec5",
@@ -4983,18 +4983,18 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -5083,16 +5083,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -5364,16 +5364,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -5483,14 +5483,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -5564,16 +5564,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -5583,14 +5583,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -5614,16 +5614,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -5864,14 +5864,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -5983,16 +5983,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       }
@@ -6033,16 +6033,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -6064,14 +6064,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -6183,14 +6183,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -6333,14 +6333,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -6433,14 +6433,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -6514,16 +6514,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -6564,16 +6564,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -6633,16 +6633,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       }
@@ -6683,16 +6683,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -6814,14 +6814,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -6914,14 +6914,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -6964,14 +6964,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -7083,14 +7083,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -7264,16 +7264,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -7283,16 +7283,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       }
@@ -7333,16 +7333,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -7364,16 +7364,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -7564,14 +7564,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -7633,14 +7633,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -7714,14 +7714,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -7733,14 +7733,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -7933,16 +7933,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       }
@@ -7983,16 +7983,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -8114,16 +8114,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       },
@@ -8164,16 +8164,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       },
@@ -8333,14 +8333,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -8364,14 +8364,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -8433,14 +8433,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 0,
           "draws": 0,
-          "losses": 15,
+          "losses": 16,
           "goals": {
             "for": 5,
-            "against": 173,
-            "difference": -168
+            "against": 178,
+            "difference": -173
           },
           "points": 0
         },
@@ -8514,14 +8514,14 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 3,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 31,
-            "against": 48,
-            "difference": -17
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
           "points": 12
         },
@@ -8633,16 +8633,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 3,
+          "games": 13,
+          "wins": 4,
           "draws": 4,
           "losses": 5,
           "goals": {
-            "for": 37,
+            "for": 42,
             "against": 29,
-            "difference": 8
+            "difference": 13
           },
-          "points": 13
+          "points": 16
         },
         "goals": -1
       }
@@ -8683,16 +8683,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 7,
+          "games": 13,
+          "wins": 8,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 50,
-            "against": 31,
-            "difference": 19
+            "for": 54,
+            "against": 32,
+            "difference": 22
           },
-          "points": 23
+          "points": 26
         },
         "goals": -1
       }
@@ -8805,14 +8805,14 @@
       "rank": 5,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2",
-      "games": 12,
-      "wins": 7,
+      "games": 13,
+      "wins": 8,
       "draws": 2,
       "losses": 3,
-      "gf": 50,
-      "ga": 31,
-      "gd": 19,
-      "points": 23
+      "gf": 54,
+      "ga": 32,
+      "gd": 22,
+      "points": 26
     },
     {
       "rank": 6,
@@ -8870,26 +8870,26 @@
       "rank": 10,
       "provider_id": 7471,
       "name": "מכבי צור שלום ק. ביאליק 2",
-      "games": 12,
-      "wins": 3,
+      "games": 13,
+      "wins": 4,
       "draws": 4,
       "losses": 5,
-      "gf": 37,
+      "gf": 42,
       "ga": 29,
-      "gd": 8,
-      "points": 13
+      "gd": 13,
+      "points": 16
     },
     {
       "rank": 11,
       "provider_id": 2157,
       "name": "הפועל חיפה 2",
-      "games": 13,
+      "games": 14,
       "wins": 3,
       "draws": 3,
-      "losses": 7,
-      "gf": 31,
-      "ga": 48,
-      "gd": -17,
+      "losses": 8,
+      "gf": 32,
+      "ga": 52,
+      "gd": -20,
       "points": 12
     },
     {
@@ -8922,13 +8922,13 @@
       "rank": 14,
       "provider_id": 8368,
       "name": "הפועל קרית חיים  \"צו פיוס\"",
-      "games": 15,
+      "games": 16,
       "wins": 0,
       "draws": 0,
-      "losses": 15,
+      "losses": 16,
       "gf": 5,
-      "ga": 173,
-      "gd": -168,
+      "ga": 178,
+      "gd": -173,
       "points": 0
     }
   ]
