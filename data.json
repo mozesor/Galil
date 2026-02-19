@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-19T03:57:40.508Z",
+  "fetchedAt": "2026-02-19T04:51:04.139Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -5098,56 +5098,6 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c0109e",
-      "provider_id": -1,
-      "date": "2026-02-20T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 17",
-        "number": 17,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adefaf",
-        "provider_id": 8303,
-        "name": "מ.ע.קרית אתא 3",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 7,
-          "draws": 1,
-          "losses": 6,
-          "goals": {
-            "for": 46,
-            "against": 43,
-            "difference": 3
-          },
-          "points": 22
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee89",
-        "provider_id": 8484,
-        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 12,
-          "wins": 5,
-          "draws": 2,
-          "losses": 5,
-          "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
-          },
-          "points": 17
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c010a3",
       "provider_id": -1,
       "date": "2026-02-21T10:00:00.000Z",
@@ -5224,6 +5174,56 @@
             "difference": 39
           },
           "points": 20
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 16,
+          "wins": 6,
+          "draws": 2,
+          "losses": 8,
+          "goals": {
+            "for": 49,
+            "against": 33,
+            "difference": 16
+          },
+          "points": 20
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c010a8",
+      "provider_id": -1,
+      "date": "2026-02-23T15:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 18",
+        "number": 18,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 14,
+          "wins": 8,
+          "draws": 3,
+          "losses": 3,
+          "goals": {
+            "for": 43,
+            "against": 24,
+            "difference": 19
+          },
+          "points": 27
         },
         "goals": -1
       },
@@ -5398,59 +5398,9 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c010a8",
-      "provider_id": -1,
-      "date": "2026-02-27T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 18",
-        "number": 18,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adeed7",
-        "provider_id": 2679,
-        "name": "הפ' גליל עליון",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 8,
-          "draws": 3,
-          "losses": 3,
-          "goals": {
-            "for": 43,
-            "against": 24,
-            "difference": 19
-          },
-          "points": 27
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef7c",
-        "provider_id": 7700,
-        "name": "מ.ס.קרית ים  2",
-        "has_logo": true,
-        "stats": {
-          "games": 16,
-          "wins": 6,
-          "draws": 2,
-          "losses": 8,
-          "goals": {
-            "for": 49,
-            "against": 33,
-            "difference": 16
-          },
-          "points": 20
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c010aa",
       "provider_id": -1,
-      "date": "2026-02-27T22:00:00.000Z",
+      "date": "2026-02-27T11:30:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 18",
@@ -8043,6 +7993,56 @@
             "difference": 19
           },
           "points": 23
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c0109e",
+      "provider_id": -1,
+      "date": "2026-04-24T11:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 17",
+        "number": 17,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adefaf",
+        "provider_id": 8303,
+        "name": "מ.ע.קרית אתא 3",
+        "has_logo": true,
+        "stats": {
+          "games": 14,
+          "wins": 7,
+          "draws": 1,
+          "losses": 6,
+          "goals": {
+            "for": 46,
+            "against": 43,
+            "difference": 3
+          },
+          "points": 22
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 5,
+          "draws": 2,
+          "losses": 5,
+          "goals": {
+            "for": 32,
+            "against": 25,
+            "difference": 7
+          },
+          "points": 17
         },
         "goals": -1
       }
