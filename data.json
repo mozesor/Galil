@@ -7,7 +7,7 @@
     "currentRoundNumber": 18,
     "currentRoundName": "מחזור 17"
   },
-  "fetchedAt": "2026-02-20T10:02:26.209Z",
+  "fetchedAt": "2026-02-20T11:02:48.533Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -214,16 +214,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 3
       },
@@ -383,16 +383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 1
       }
@@ -433,16 +433,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 3
       }
@@ -564,16 +564,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 5
       },
@@ -933,16 +933,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 3
       }
@@ -1264,16 +1264,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 1
       },
@@ -1283,16 +1283,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 2
       }
@@ -1533,16 +1533,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 4
       }
@@ -1733,16 +1733,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 3
       }
@@ -1764,16 +1764,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 3
       },
@@ -2033,16 +2033,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 8
       }
@@ -2114,16 +2114,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 4
       },
@@ -2383,16 +2383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 4
       }
@@ -2464,16 +2464,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 9
       },
@@ -2514,16 +2514,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 4
       },
@@ -2783,16 +2783,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 3
       }
@@ -2933,16 +2933,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 12
       }
@@ -3314,16 +3314,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 3
       },
@@ -3564,16 +3564,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 2
       },
@@ -3614,16 +3614,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 2
       },
@@ -3883,16 +3883,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 1
       }
@@ -4083,16 +4083,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 4
       }
@@ -4133,16 +4133,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 2
       }
@@ -4383,16 +4383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 1
       }
@@ -4414,16 +4414,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": 1
       },
@@ -4764,16 +4764,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": 1
       },
@@ -5014,18 +5014,18 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
-        "goals": -1
+        "goals": 1
       },
       "away": {
         "id": "68d612211b7b720e58adeed7",
@@ -5033,18 +5033,18 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -5214,16 +5214,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": -1
       },
@@ -5414,16 +5414,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -5733,16 +5733,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": -1
       }
@@ -5814,16 +5814,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -6164,16 +6164,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -6233,16 +6233,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": -1
       }
@@ -6314,16 +6314,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": -1
       },
@@ -6364,16 +6364,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -6833,16 +6833,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       }
@@ -6883,16 +6883,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": -1
       }
@@ -7064,16 +7064,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": -1
       },
@@ -7114,16 +7114,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -7464,16 +7464,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -7533,16 +7533,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": -1
       }
@@ -7814,16 +7814,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": -1
       },
@@ -7864,16 +7864,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -8183,16 +8183,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       }
@@ -8233,16 +8233,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": -1
       }
@@ -8614,16 +8614,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
           "goals": {
-            "for": 43,
-            "against": 24,
+            "for": 44,
+            "against": 25,
             "difference": 19
           },
-          "points": 27
+          "points": 28
         },
         "goals": -1
       },
@@ -8664,16 +8664,16 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 8,
           "goals": {
-            "for": 46,
-            "against": 59,
+            "for": 47,
+            "against": 60,
             "difference": -13
           },
-          "points": 10
+          "points": 11
         },
         "goals": -1
       },
@@ -8792,14 +8792,14 @@
       "rank": 4,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
-      "games": 14,
+      "games": 15,
       "wins": 8,
-      "draws": 3,
+      "draws": 4,
       "losses": 3,
-      "gf": 43,
-      "ga": 24,
+      "gf": 44,
+      "ga": 25,
       "gd": 19,
-      "points": 27
+      "points": 28
     },
     {
       "rank": 5,
@@ -8896,14 +8896,14 @@
       "rank": 12,
       "provider_id": 2411,
       "name": "מרכז קהילתי גולן קצרין",
-      "games": 12,
+      "games": 13,
       "wins": 3,
-      "draws": 1,
+      "draws": 2,
       "losses": 8,
-      "gf": 46,
-      "ga": 59,
+      "gf": 47,
+      "ga": 60,
       "gd": -13,
-      "points": 10
+      "points": 11
     },
     {
       "rank": 13,
