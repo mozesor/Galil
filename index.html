@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<title>לוח משחקים • גליל עליון [v4.1-VOLE-LINK]</title>
+<title>לוח משחקים • גליל עליון [v4.2-CALENDAR-SCORES]</title>
   <style>
 :root{
   /* Modern color palette - Light Mode */
@@ -2064,7 +2064,19 @@ function renderCalendar(){
   const container = document.getElementById('calendarView');
   if(!container) return;
   
-  const games = DATA.games || [];
+  // Use filtered games from current round (same as games table)
+  const sel = document.getElementById("roundSelect");
+  const selVal = sel?.value;
+  let games = DATA.games || [];
+  
+  // Filter by selected round
+  if(selVal && selVal !== "all"){
+    const rn = Number(selVal);
+    if(!isNaN(rn)){
+      games = games.filter(g => g?.round?.number === rn);
+    }
+  }
+  
   const dayMap = new Map();
   const now = new Date();
   
