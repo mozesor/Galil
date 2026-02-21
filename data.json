@@ -7,7 +7,7 @@
     "currentRoundNumber": 18,
     "currentRoundName": "מחזור 17"
   },
-  "fetchedAt": "2026-02-21T11:15:29.312Z",
+  "fetchedAt": "2026-02-21T11:42:46.630Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -183,14 +183,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -414,14 +414,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -733,16 +733,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 5
       }
@@ -764,16 +764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 4
       },
@@ -1114,16 +1114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 4
       },
@@ -1314,14 +1314,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -1333,16 +1333,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 2
       }
@@ -1514,16 +1514,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 4
       },
@@ -1633,14 +1633,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -1783,14 +1783,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -2133,16 +2133,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 4
       }
@@ -2233,16 +2233,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 4
       }
@@ -2283,14 +2283,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -2633,14 +2633,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -2664,16 +2664,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 4
       },
@@ -2814,14 +2814,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -2983,14 +2983,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -3114,16 +3114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 21
       },
@@ -3264,14 +3264,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -3414,16 +3414,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 5
       },
@@ -3533,14 +3533,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -3714,14 +3714,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -3764,16 +3764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 4
       },
@@ -4183,16 +4183,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 3
       }
@@ -4214,14 +4214,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -4333,14 +4333,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -4564,16 +4564,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 4
       },
@@ -4733,16 +4733,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": 4
       }
@@ -5114,18 +5114,18 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
-        "goals": -1
+        "goals": 6
       },
       "away": {
         "id": "68d612211b7b720e58adeebc",
@@ -5133,18 +5133,18 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
-        "goals": -1
+        "goals": 0
       }
     },
     {
@@ -5333,16 +5333,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": -1
       }
@@ -5433,16 +5433,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": -1
       }
@@ -5464,14 +5464,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -5714,14 +5714,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -5833,14 +5833,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -6133,14 +6133,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -6214,16 +6214,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": -1
       },
@@ -6264,16 +6264,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": -1
       },
@@ -6414,14 +6414,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -6764,14 +6764,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -6933,16 +6933,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": -1
       }
@@ -7014,16 +7014,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": -1
       },
@@ -7164,14 +7164,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -7433,14 +7433,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -7583,16 +7583,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": -1
       }
@@ -7783,16 +7783,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": -1
       }
@@ -7914,14 +7914,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -8133,14 +8133,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -8283,16 +8283,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": -1
       }
@@ -8564,16 +8564,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 10,
+          "games": 15,
+          "wins": 11,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 72,
+            "for": 78,
             "against": 33,
-            "difference": 39
+            "difference": 45
           },
-          "points": 32
+          "points": 35
         },
         "goals": -1
       },
@@ -8714,14 +8714,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 10,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "goals": {
             "for": 55,
-            "against": 23,
-            "difference": 32
+            "against": 29,
+            "difference": 26
           },
           "points": 32
         },
@@ -8753,26 +8753,26 @@
       "rank": 1,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
-      "games": 14,
-      "wins": 10,
+      "games": 15,
+      "wins": 11,
       "draws": 2,
       "losses": 2,
-      "gf": 72,
+      "gf": 78,
       "ga": 33,
-      "gd": 39,
-      "points": 32
+      "gd": 45,
+      "points": 35
     },
     {
       "rank": 2,
       "provider_id": 6897,
       "name": "מ.ס. חיפה רובי שפירא",
-      "games": 14,
+      "games": 15,
       "wins": 10,
       "draws": 2,
-      "losses": 2,
+      "losses": 3,
       "gf": 55,
-      "ga": 23,
-      "gd": 32,
+      "ga": 29,
+      "gd": 26,
       "points": 32
     },
     {
