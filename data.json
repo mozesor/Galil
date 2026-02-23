@@ -7,7 +7,7 @@
     "currentRoundNumber": 16,
     "currentRoundName": "מחזור 15"
   },
-  "fetchedAt": "2026-02-23T17:35:11.900Z",
+  "fetchedAt": "2026-02-23T18:52:16.824Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -164,16 +164,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 1
       },
@@ -214,16 +214,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 3
       },
@@ -383,16 +383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 1
       }
@@ -464,16 +464,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 4
       },
@@ -914,16 +914,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 9
       },
@@ -1264,16 +1264,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 1
       },
@@ -1714,16 +1714,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 2
       },
@@ -1733,16 +1733,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 3
       }
@@ -1764,16 +1764,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 3
       },
@@ -1864,16 +1864,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 2
       },
@@ -1933,16 +1933,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 0
       }
@@ -2114,16 +2114,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 4
       },
@@ -2214,16 +2214,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 5
       },
@@ -2383,16 +2383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 4
       }
@@ -2514,16 +2514,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 4
       },
@@ -2583,16 +2583,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 1
       }
@@ -2933,16 +2933,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 12
       }
@@ -3014,16 +3014,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 4
       },
@@ -3233,16 +3233,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 2
       }
@@ -3314,16 +3314,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 3
       },
@@ -3464,16 +3464,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 0
       },
@@ -3614,16 +3614,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 2
       },
@@ -3833,16 +3833,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 0
       }
@@ -3883,16 +3883,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 1
       }
@@ -4783,16 +4783,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 2
       }
@@ -5033,16 +5033,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 1
       }
@@ -5183,16 +5183,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 1
       }
@@ -5214,18 +5214,18 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
-        "goals": -1
+        "goals": 1
       },
       "away": {
         "id": "68d612211b7b720e58adef7c",
@@ -5233,18 +5233,18 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -5683,16 +5683,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": -1
       }
@@ -5914,16 +5914,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": -1
       },
@@ -6233,16 +6233,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": -1
       }
@@ -6283,16 +6283,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": -1
       }
@@ -6314,16 +6314,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": -1
       },
@@ -6614,16 +6614,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": -1
       },
@@ -6883,16 +6883,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": -1
       }
@@ -6983,16 +6983,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": -1
       }
@@ -7064,16 +7064,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": -1
       },
@@ -7314,16 +7314,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": -1
       },
@@ -7533,16 +7533,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": -1
       }
@@ -7683,16 +7683,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": -1
       }
@@ -7814,16 +7814,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": -1
       },
@@ -8064,16 +8064,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": -1
       },
@@ -8233,16 +8233,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": -1
       }
@@ -8414,16 +8414,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": -1
       },
@@ -8614,16 +8614,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": -1
       },
@@ -8805,27 +8805,27 @@
       "rank": 5,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
-      "games": 15,
+      "games": 16,
       "wins": 8,
-      "draws": 4,
+      "draws": 5,
       "losses": 3,
-      "gf": 44,
-      "ga": 25,
+      "gf": 45,
+      "ga": 26,
       "gd": 19,
-      "points": 28
+      "points": 29
     },
     {
       "rank": 6,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
-      "games": 17,
+      "games": 18,
       "wins": 7,
-      "draws": 2,
+      "draws": 3,
       "losses": 8,
-      "gf": 50,
-      "ga": 33,
+      "gf": 51,
+      "ga": 34,
       "gd": 17,
-      "points": 23
+      "points": 24
     },
     {
       "rank": 7,
