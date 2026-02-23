@@ -4,10 +4,10 @@
     "name": "ליגת ילדים ג מפרץ",
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 18,
-    "currentRoundName": "מחזור 17"
+    "currentRoundNumber": 16,
+    "currentRoundName": "מחזור 15"
   },
-  "fetchedAt": "2026-02-23T03:59:49.096Z",
+  "fetchedAt": "2026-02-23T05:27:32.018Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -5448,56 +5448,6 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c010ab",
-      "provider_id": -1,
-      "date": "2026-02-27T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 18",
-        "number": 18,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adeebc",
-        "provider_id": 6897,
-        "name": "מ.ס. חיפה רובי שפירא",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 10,
-          "draws": 2,
-          "losses": 3,
-          "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
-          },
-          "points": 32
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeec5",
-        "provider_id": 2157,
-        "name": "הפועל חיפה 2",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 3,
-          "draws": 3,
-          "losses": 8,
-          "goals": {
-            "for": 32,
-            "against": 52,
-            "difference": -20
-          },
-          "points": 12
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c010ac",
       "provider_id": -1,
       "date": "2026-02-27T22:00:00.000Z",
@@ -5648,9 +5598,9 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c010b0",
+      "id": "68e09ead1b7b720e58c010ab",
       "provider_id": -1,
-      "date": "2026-02-27T22:00:00.000Z",
+      "date": "2026-02-28T11:30:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 18",
@@ -5659,40 +5609,40 @@
       },
       "venue": null,
       "home": {
-        "id": "68d612211b7b720e58adee89",
-        "provider_id": 8484,
-        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "id": "68d612211b7b720e58adeebc",
+        "provider_id": 6897,
+        "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
-          "losses": 5,
+          "losses": 3,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 55,
+            "against": 29,
+            "difference": 26
           },
-          "points": 17
+          "points": 32
         },
         "goals": -1
       },
       "away": {
-        "id": "68d612211b7b720e58adee75",
-        "provider_id": 8295,
-        "name": "הפועל עכו 2",
+        "id": "68d612211b7b720e58adeec5",
+        "provider_id": 2157,
+        "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 6,
-          "draws": 2,
-          "losses": 7,
+          "games": 14,
+          "wins": 3,
+          "draws": 3,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 32,
+            "against": 52,
+            "difference": -20
           },
-          "points": 20
+          "points": 12
         },
         "goals": -1
       }
@@ -5743,6 +5693,56 @@
             "difference": 19
           },
           "points": 28
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c010b0",
+      "provider_id": -1,
+      "date": "2026-03-05T16:45:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 18",
+        "number": 18,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 12,
+          "wins": 5,
+          "draws": 2,
+          "losses": 5,
+          "goals": {
+            "for": 32,
+            "against": 25,
+            "difference": 7
+          },
+          "points": 17
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 15,
+          "wins": 6,
+          "draws": 2,
+          "losses": 7,
+          "goals": {
+            "for": 63,
+            "against": 25,
+            "difference": 38
+          },
+          "points": 20
         },
         "goals": -1
       }
