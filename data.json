@@ -7,7 +7,7 @@
     "currentRoundNumber": 16,
     "currentRoundName": "מחזור 15"
   },
-  "fetchedAt": "2026-02-23T18:52:16.824Z",
+  "fetchedAt": "2026-02-23T19:53:00.898Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -333,16 +333,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 2
       }
@@ -664,16 +664,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 3
       },
@@ -683,14 +683,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -964,14 +964,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -1033,16 +1033,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 12
       }
@@ -1064,14 +1064,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -1183,16 +1183,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 1
       }
@@ -1433,14 +1433,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -1464,16 +1464,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 6
       },
@@ -1564,14 +1564,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -1914,16 +1914,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 1
       },
@@ -2533,14 +2533,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -2833,14 +2833,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -2883,16 +2883,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 1
       }
@@ -3064,16 +3064,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 0
       },
@@ -3283,16 +3283,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 0
       }
@@ -3383,14 +3383,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -3483,14 +3483,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -3633,16 +3633,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 1
       }
@@ -3664,14 +3664,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -3933,16 +3933,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 12
       }
@@ -4014,16 +4014,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 1
       },
@@ -4233,16 +4233,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 3
       }
@@ -4383,16 +4383,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 1
       }
@@ -4414,16 +4414,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 8,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 44,
-            "against": 25,
+            "for": 45,
+            "against": 26,
             "difference": 19
           },
-          "points": 28
+          "points": 29
         },
         "goals": 1
       },
@@ -4533,16 +4533,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 17,
+          "games": 18,
           "wins": 7,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 50,
-            "against": 33,
+            "for": 51,
+            "against": 34,
             "difference": 17
           },
-          "points": 23
+          "points": 24
         },
         "goals": 2
       }
@@ -4633,14 +4633,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -4864,16 +4864,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": 4
       },
@@ -5064,14 +5064,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -5264,18 +5264,18 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
-        "goals": -1
+        "goals": 1
       },
       "away": {
         "id": "68d612211b7b720e58adee89",
@@ -5283,18 +5283,18 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
-        "goals": -1
+        "goals": 3
       }
     },
     {
@@ -5314,16 +5314,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -5383,14 +5383,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -5483,14 +5483,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -5714,16 +5714,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -5783,14 +5783,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -5933,16 +5933,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -6114,14 +6114,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -6383,14 +6383,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -6583,16 +6583,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -6664,16 +6664,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -6864,14 +6864,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -7033,14 +7033,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -7233,16 +7233,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -7414,16 +7414,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -7614,14 +7614,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -7664,14 +7664,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -7883,16 +7883,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -8033,16 +8033,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -8214,16 +8214,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       },
@@ -8383,14 +8383,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -8464,14 +8464,14 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
+          "games": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 16,
-            "against": 31,
-            "difference": -15
+            "for": 17,
+            "against": 34,
+            "difference": -17
           },
           "points": 10
         },
@@ -8583,16 +8583,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 12,
-          "wins": 5,
+          "games": 13,
+          "wins": 6,
           "draws": 2,
           "losses": 5,
           "goals": {
-            "for": 32,
-            "against": 25,
-            "difference": 7
+            "for": 35,
+            "against": 26,
+            "difference": 9
           },
-          "points": 17
+          "points": 20
         },
         "goals": -1
       }
@@ -8857,14 +8857,14 @@
       "rank": 9,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-      "games": 12,
-      "wins": 5,
+      "games": 13,
+      "wins": 6,
       "draws": 2,
       "losses": 5,
-      "gf": 32,
-      "ga": 25,
-      "gd": 7,
-      "points": 17
+      "gf": 35,
+      "ga": 26,
+      "gd": 9,
+      "points": 20
     },
     {
       "rank": 10,
@@ -8909,13 +8909,13 @@
       "rank": 13,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-      "games": 12,
+      "games": 13,
       "wins": 3,
       "draws": 1,
-      "losses": 8,
-      "gf": 16,
-      "ga": 31,
-      "gd": -15,
+      "losses": 9,
+      "gf": 17,
+      "ga": 34,
+      "gd": -17,
       "points": 10
     },
     {
