@@ -7,7 +7,7 @@
     "currentRoundNumber": 14,
     "currentRoundName": "מחזור 13"
   },
-  "fetchedAt": "2026-02-24T17:51:56.978Z",
+  "fetchedAt": "2026-02-24T18:50:00.473Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -333,14 +333,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -664,14 +664,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -733,16 +733,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 5
       }
@@ -764,16 +764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 4
       },
@@ -1033,14 +1033,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -1114,16 +1114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 4
       },
@@ -1183,14 +1183,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -1333,16 +1333,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 2
       }
@@ -1464,14 +1464,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -1514,16 +1514,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 4
       },
@@ -1914,14 +1914,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -2133,16 +2133,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 4
       }
@@ -2233,16 +2233,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 4
       }
@@ -2664,16 +2664,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 4
       },
@@ -2883,14 +2883,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -3064,14 +3064,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -3114,16 +3114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 21
       },
@@ -3283,14 +3283,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -3414,16 +3414,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 5
       },
@@ -3633,14 +3633,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -3764,16 +3764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 4
       },
@@ -4014,14 +4014,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -4183,16 +4183,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 3
       }
@@ -4564,16 +4564,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 4
       },
@@ -4733,16 +4733,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 4
       }
@@ -4864,14 +4864,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -5114,16 +5114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": 6
       },
@@ -5283,14 +5283,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -5314,18 +5314,18 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adef07",
@@ -5333,18 +5333,18 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -5433,16 +5433,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": -1
       }
@@ -5714,14 +5714,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -5933,14 +5933,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -6214,16 +6214,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": -1
       },
@@ -6264,16 +6264,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": -1
       },
@@ -6583,14 +6583,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -6664,14 +6664,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -6933,16 +6933,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": -1
       }
@@ -7014,16 +7014,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": -1
       },
@@ -7233,14 +7233,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -7414,14 +7414,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -7583,16 +7583,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": -1
       }
@@ -7783,16 +7783,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": -1
       }
@@ -7883,14 +7883,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -8033,14 +8033,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -8214,14 +8214,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -8283,16 +8283,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": -1
       }
@@ -8564,16 +8564,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 15,
-          "wins": 11,
+          "games": 16,
+          "wins": 12,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 78,
+            "for": 79,
             "against": 33,
-            "difference": 45
+            "difference": 46
           },
-          "points": 35
+          "points": 38
         },
         "goals": -1
       },
@@ -8583,14 +8583,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 6,
           "draws": 2,
-          "losses": 5,
+          "losses": 6,
           "goals": {
             "for": 35,
-            "against": 26,
-            "difference": 9
+            "against": 27,
+            "difference": 8
           },
           "points": 20
         },
@@ -8753,14 +8753,14 @@
       "rank": 1,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
-      "games": 15,
-      "wins": 11,
+      "games": 16,
+      "wins": 12,
       "draws": 2,
       "losses": 2,
-      "gf": 78,
+      "gf": 79,
       "ga": 33,
-      "gd": 45,
-      "points": 35
+      "gd": 46,
+      "points": 38
     },
     {
       "rank": 2,
@@ -8857,13 +8857,13 @@
       "rank": 9,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-      "games": 13,
+      "games": 14,
       "wins": 6,
       "draws": 2,
-      "losses": 5,
+      "losses": 6,
       "gf": 35,
-      "ga": 26,
-      "gd": 9,
+      "ga": 27,
+      "gd": 8,
       "points": 20
     },
     {
