@@ -4,10 +4,10 @@
     "name": "ליגת ילדים ג מפרץ",
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 16,
-    "currentRoundName": "מחזור 15"
+    "currentRoundNumber": 14,
+    "currentRoundName": "מחזור 13"
   },
-  "fetchedAt": "2026-02-24T03:56:14.794Z",
+  "fetchedAt": "2026-02-24T05:18:54.361Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -5199,7 +5199,7 @@
     },
     {
       "id": "68e09ead1b7b720e58c010a8",
-      "provider_id": -1,
+      "provider_id": 1098668,
       "date": "2026-02-23T15:00:00.000Z",
       "is_finished": false,
       "round": {
@@ -5448,6 +5448,56 @@
       }
     },
     {
+      "id": "68e09ead1b7b720e58c010ae",
+      "provider_id": -1,
+      "date": "2026-02-27T12:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 18",
+        "number": 18,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 14,
+          "wins": 9,
+          "draws": 2,
+          "losses": 3,
+          "goals": {
+            "for": 56,
+            "against": 33,
+            "difference": 23
+          },
+          "points": 29
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 16,
+          "wins": 0,
+          "draws": 0,
+          "losses": 16,
+          "goals": {
+            "for": 5,
+            "against": 178,
+            "difference": -173
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
       "id": "68e09ead1b7b720e58c010ac",
       "provider_id": -1,
       "date": "2026-02-27T22:00:00.000Z",
@@ -5493,56 +5543,6 @@
             "difference": -17
           },
           "points": 10
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c010ae",
-      "provider_id": -1,
-      "date": "2026-02-27T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 18",
-        "number": 18,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef3d",
-        "provider_id": 5718,
-        "name": "בית\"ר נהריה 2",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 9,
-          "draws": 2,
-          "losses": 3,
-          "goals": {
-            "for": 56,
-            "against": 33,
-            "difference": 23
-          },
-          "points": 29
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68e09eac1b7b720e58c01005",
-        "provider_id": 8368,
-        "name": "הפועל קרית חיים  \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 16,
-          "wins": 0,
-          "draws": 0,
-          "losses": 16,
-          "goals": {
-            "for": 5,
-            "against": 178,
-            "difference": -173
-          },
-          "points": 0
         },
         "goals": -1
       }
