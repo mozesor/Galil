@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-26T17:33:22.738Z",
+  "fetchedAt": "2026-02-26T18:40:01.798Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -514,14 +514,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -683,16 +683,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 2
       }
@@ -964,16 +964,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 0
       },
@@ -1064,16 +1064,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 2
       },
@@ -1083,14 +1083,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -1133,14 +1133,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -1214,14 +1214,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -1433,16 +1433,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 0
       }
@@ -1564,16 +1564,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 0
       },
@@ -1683,14 +1683,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -2414,14 +2414,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -2533,16 +2533,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 1
       }
@@ -2564,14 +2564,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -2833,16 +2833,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 0
       }
@@ -3183,14 +3183,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -3383,16 +3383,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 2
       }
@@ -3483,16 +3483,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 1
       }
@@ -3514,14 +3514,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -3583,14 +3583,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -3664,16 +3664,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 6
       },
@@ -4164,14 +4164,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -4483,14 +4483,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -4633,16 +4633,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 1
       }
@@ -4933,14 +4933,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -5064,16 +5064,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 1
       },
@@ -5264,16 +5264,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": 1
       },
@@ -5364,18 +5364,18 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
-        "goals": -1
+        "goals": 3
       },
       "away": {
         "id": "68d612211b7b720e58adef9d",
@@ -5383,18 +5383,18 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
-        "goals": -1
+        "goals": 5
       }
     },
     {
@@ -5564,14 +5564,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -5683,16 +5683,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": -1
       }
@@ -5783,16 +5783,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": -1
       }
@@ -5983,14 +5983,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -6114,16 +6114,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": -1
       },
@@ -6383,16 +6383,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": -1
       }
@@ -6564,14 +6564,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -6633,14 +6633,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -6864,16 +6864,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": -1
       },
@@ -7033,16 +7033,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": -1
       }
@@ -7283,14 +7283,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -7364,14 +7364,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -7614,16 +7614,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": -1
       },
@@ -7664,16 +7664,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": -1
       },
@@ -7933,14 +7933,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -8164,14 +8164,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -8383,16 +8383,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": -1
       }
@@ -8464,16 +8464,16 @@
         "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 13,
-          "wins": 3,
+          "games": 14,
+          "wins": 4,
           "draws": 1,
           "losses": 9,
           "goals": {
-            "for": 17,
-            "against": 34,
-            "difference": -17
+            "for": 22,
+            "against": 37,
+            "difference": -15
           },
-          "points": 10
+          "points": 13
         },
         "goals": -1
       },
@@ -8633,14 +8633,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 4,
           "draws": 4,
-          "losses": 5,
+          "losses": 6,
           "goals": {
-            "for": 42,
-            "against": 29,
-            "difference": 13
+            "for": 45,
+            "against": 34,
+            "difference": 11
           },
           "points": 16
         },
@@ -8870,17 +8870,30 @@
       "rank": 10,
       "provider_id": 7471,
       "name": "מכבי צור שלום ק. ביאליק 2",
-      "games": 13,
+      "games": 14,
       "wins": 4,
       "draws": 4,
-      "losses": 5,
-      "gf": 42,
-      "ga": 29,
-      "gd": 13,
+      "losses": 6,
+      "gf": 45,
+      "ga": 34,
+      "gd": 11,
       "points": 16
     },
     {
       "rank": 11,
+      "provider_id": 6331,
+      "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+      "games": 14,
+      "wins": 4,
+      "draws": 1,
+      "losses": 9,
+      "gf": 22,
+      "ga": 37,
+      "gd": -15,
+      "points": 13
+    },
+    {
+      "rank": 12,
       "provider_id": 2157,
       "name": "הפועל חיפה 2",
       "games": 14,
@@ -8893,7 +8906,7 @@
       "points": 12
     },
     {
-      "rank": 12,
+      "rank": 13,
       "provider_id": 2411,
       "name": "מרכז קהילתי גולן קצרין",
       "games": 13,
@@ -8904,19 +8917,6 @@
       "ga": 60,
       "gd": -13,
       "points": 11
-    },
-    {
-      "rank": 13,
-      "provider_id": 6331,
-      "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-      "games": 13,
-      "wins": 3,
-      "draws": 1,
-      "losses": 9,
-      "gf": 17,
-      "ga": 34,
-      "gd": -17,
-      "points": 10
     },
     {
       "rank": 14,
