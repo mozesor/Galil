@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-27T12:37:22.541Z",
+  "fetchedAt": "2026-02-27T13:53:53.366Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -233,16 +233,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 3
       }
@@ -264,14 +264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -433,14 +433,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -564,14 +564,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -633,14 +633,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -714,16 +714,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 3
       },
@@ -733,16 +733,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 5
       }
@@ -764,16 +764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 4
       },
@@ -883,16 +883,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 5
       }
@@ -933,14 +933,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -1014,14 +1014,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -1114,16 +1114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 4
       },
@@ -1233,14 +1233,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -1283,14 +1283,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -1333,16 +1333,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 2
       }
@@ -1414,16 +1414,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       },
@@ -1514,16 +1514,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 4
       },
@@ -1533,14 +1533,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -1814,14 +1814,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -1833,16 +1833,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 8
       }
@@ -1964,16 +1964,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 7
       },
@@ -2033,14 +2033,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -2083,14 +2083,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -2133,16 +2133,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 4
       }
@@ -2183,16 +2183,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -2233,16 +2233,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 4
       }
@@ -2264,14 +2264,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -2464,14 +2464,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -2483,14 +2483,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -2664,16 +2664,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 4
       },
@@ -2783,14 +2783,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -2864,16 +2864,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 3
       },
@@ -2914,14 +2914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -3114,16 +3114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 21
       },
@@ -3133,14 +3133,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -3214,16 +3214,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 2
       },
@@ -3414,16 +3414,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 5
       },
@@ -3564,14 +3564,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -3683,14 +3683,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -3733,16 +3733,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 1
       }
@@ -3764,16 +3764,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 4
       },
@@ -3914,14 +3914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -4064,16 +4064,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 7
       },
@@ -4083,14 +4083,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -4133,14 +4133,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -4183,16 +4183,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 3
       }
@@ -4283,14 +4283,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -4364,16 +4364,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 5
       },
@@ -4564,16 +4564,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 4
       },
@@ -4583,16 +4583,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 2
       }
@@ -4664,14 +4664,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -4733,16 +4733,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 4
       }
@@ -4764,14 +4764,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -4883,14 +4883,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -4914,14 +4914,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -4964,16 +4964,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       },
@@ -5014,14 +5014,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -5083,16 +5083,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": 2
       }
@@ -5114,16 +5114,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 6
       },
@@ -5333,16 +5333,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": 1
       }
@@ -5414,18 +5414,18 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
-        "goals": -1
+        "goals": 1
       },
       "away": {
         "id": "68d612211b7b720e58adef07",
@@ -5433,18 +5433,18 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
-        "goals": -1
+        "goals": 7
       }
     },
     {
@@ -5464,18 +5464,18 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
-        "goals": -1
+        "goals": 10
       },
       "away": {
         "id": "68e09eac1b7b720e58c01005",
@@ -5483,18 +5483,18 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       }
     },
     {
@@ -5814,14 +5814,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -6033,16 +6033,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -6064,14 +6064,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -6164,14 +6164,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -6214,16 +6214,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": -1
       },
@@ -6264,16 +6264,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": -1
       },
@@ -6364,14 +6364,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -6433,14 +6433,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -6514,16 +6514,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -6683,16 +6683,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -6814,14 +6814,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -6833,14 +6833,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -6933,16 +6933,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": -1
       }
@@ -7014,16 +7014,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": -1
       },
@@ -7083,14 +7083,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -7114,14 +7114,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -7264,16 +7264,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -7333,16 +7333,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -7464,14 +7464,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -7564,14 +7564,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -7583,16 +7583,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": -1
       }
@@ -7733,14 +7733,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -7783,16 +7783,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": -1
       }
@@ -7864,14 +7864,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -7983,16 +7983,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -8114,16 +8114,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -8183,14 +8183,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -8283,16 +8283,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": -1
       }
@@ -8364,14 +8364,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -8433,14 +8433,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 16,
+          "games": 17,
           "wins": 0,
           "draws": 0,
-          "losses": 16,
+          "losses": 17,
           "goals": {
             "for": 5,
-            "against": 178,
-            "difference": -173
+            "against": 188,
+            "difference": -183
           },
           "points": 0
         },
@@ -8564,16 +8564,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 12,
+          "games": 17,
+          "wins": 13,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 79,
-            "against": 33,
-            "difference": 46
+            "for": 86,
+            "against": 34,
+            "difference": 52
           },
-          "points": 38
+          "points": 41
         },
         "goals": -1
       },
@@ -8664,14 +8664,14 @@
         "name": "מרכז קהילתי גולן קצרין",
         "has_logo": true,
         "stats": {
-          "games": 13,
+          "games": 14,
           "wins": 3,
           "draws": 2,
-          "losses": 8,
+          "losses": 9,
           "goals": {
-            "for": 47,
-            "against": 60,
-            "difference": -13
+            "for": 48,
+            "against": 67,
+            "difference": -19
           },
           "points": 11
         },
@@ -8683,16 +8683,16 @@
         "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
-          "wins": 9,
+          "games": 15,
+          "wins": 10,
           "draws": 2,
           "losses": 3,
           "goals": {
-            "for": 56,
+            "for": 66,
             "against": 33,
-            "difference": 23
+            "difference": 33
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       }
@@ -8753,17 +8753,30 @@
       "rank": 1,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
-      "games": 16,
-      "wins": 12,
+      "games": 17,
+      "wins": 13,
       "draws": 2,
       "losses": 2,
-      "gf": 79,
-      "ga": 33,
-      "gd": 46,
-      "points": 38
+      "gf": 86,
+      "ga": 34,
+      "gd": 52,
+      "points": 41
     },
     {
       "rank": 2,
+      "provider_id": 5718,
+      "name": "בית\"ר נהריה 2",
+      "games": 15,
+      "wins": 10,
+      "draws": 2,
+      "losses": 3,
+      "gf": 66,
+      "ga": 33,
+      "gd": 33,
+      "points": 32
+    },
+    {
+      "rank": 3,
       "provider_id": 6897,
       "name": "מ.ס. חיפה רובי שפירא",
       "games": 15,
@@ -8776,7 +8789,7 @@
       "points": 32
     },
     {
-      "rank": 3,
+      "rank": 4,
       "provider_id": 3675,
       "name": "מ.כ. גליל גולן דרום",
       "games": 15,
@@ -8787,19 +8800,6 @@
       "ga": 26,
       "gd": 30,
       "points": 30
-    },
-    {
-      "rank": 4,
-      "provider_id": 5718,
-      "name": "בית\"ר נהריה 2",
-      "games": 14,
-      "wins": 9,
-      "draws": 2,
-      "losses": 3,
-      "gf": 56,
-      "ga": 33,
-      "gd": 23,
-      "points": 29
     },
     {
       "rank": 5,
@@ -8909,26 +8909,26 @@
       "rank": 13,
       "provider_id": 2411,
       "name": "מרכז קהילתי גולן קצרין",
-      "games": 13,
+      "games": 14,
       "wins": 3,
       "draws": 2,
-      "losses": 8,
-      "gf": 47,
-      "ga": 60,
-      "gd": -13,
+      "losses": 9,
+      "gf": 48,
+      "ga": 67,
+      "gd": -19,
       "points": 11
     },
     {
       "rank": 14,
       "provider_id": 8368,
       "name": "הפועל קרית חיים  \"צו פיוס\"",
-      "games": 16,
+      "games": 17,
       "wins": 0,
       "draws": 0,
-      "losses": 16,
+      "losses": 17,
       "gf": 5,
-      "ga": 178,
-      "gd": -173,
+      "ga": 188,
+      "gd": -183,
       "points": 0
     }
   ]
