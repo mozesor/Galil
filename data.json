@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-02-28T04:38:13.818Z",
+  "fetchedAt": "2026-02-28T05:27:04.467Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -5449,7 +5449,7 @@
     },
     {
       "id": "68e09ead1b7b720e58c010ae",
-      "provider_id": -1,
+      "provider_id": 1098672,
       "date": "2026-02-27T12:00:00.000Z",
       "is_finished": false,
       "round": {
