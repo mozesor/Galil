@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-03-01T04:00:37.660Z",
+  "fetchedAt": "2026-03-01T05:34:00.604Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -102,7 +102,7 @@
     {
       "number": 18,
       "name": "מחזור 18",
-      "gamesCount": 7
+      "gamesCount": 5
     },
     {
       "number": 19,
@@ -145,7 +145,7 @@
       "gamesCount": 7
     }
   ],
-  "gamesCount": 172,
+  "gamesCount": 170,
   "games": [
     {
       "id": "68e09eac1b7b720e58c00ffc",
@@ -5495,106 +5495,6 @@
           "points": 0
         },
         "goals": 0
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c010ab",
-      "provider_id": -1,
-      "date": "2026-02-28T11:30:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 18",
-        "number": 18,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adeebc",
-        "provider_id": 6897,
-        "name": "מ.ס. חיפה רובי שפירא",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 10,
-          "draws": 2,
-          "losses": 3,
-          "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
-          },
-          "points": 32
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeec5",
-        "provider_id": 2157,
-        "name": "הפועל חיפה 2",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 3,
-          "draws": 3,
-          "losses": 8,
-          "goals": {
-            "for": 32,
-            "against": 52,
-            "difference": -20
-          },
-          "points": 12
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c010af",
-      "provider_id": -1,
-      "date": "2026-02-28T13:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 18",
-        "number": 18,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee74",
-        "provider_id": 7471,
-        "name": "מכבי צור שלום ק. ביאליק 2",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 4,
-          "draws": 4,
-          "losses": 6,
-          "goals": {
-            "for": 45,
-            "against": 34,
-            "difference": 11
-          },
-          "points": 16
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adefaf",
-        "provider_id": 8303,
-        "name": "מ.ע.קרית אתא 3",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 7,
-          "draws": 1,
-          "losses": 6,
-          "goals": {
-            "for": 46,
-            "against": 43,
-            "difference": 3
-          },
-          "points": 22
-        },
-        "goals": -1
       }
     },
     {
