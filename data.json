@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-03-03T03:44:26.196Z",
+  "fetchedAt": "2026-03-03T05:11:12.790Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -92,7 +92,7 @@
     {
       "number": 16,
       "name": "מחזור 16",
-      "gamesCount": 7
+      "gamesCount": 6
     },
     {
       "number": 17,
@@ -102,7 +102,7 @@
     {
       "number": 18,
       "name": "מחזור 18",
-      "gamesCount": 5
+      "gamesCount": 4
     },
     {
       "number": 19,
@@ -145,7 +145,7 @@
       "gamesCount": 7
     }
   ],
-  "gamesCount": 170,
+  "gamesCount": 168,
   "games": [
     {
       "id": "68e09eac1b7b720e58c00ffc",
@@ -5495,106 +5495,6 @@
           "points": 0
         },
         "goals": 0
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c01096",
-      "provider_id": -1,
-      "date": "2026-03-03T12:20:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 16",
-        "number": 16,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adeebc",
-        "provider_id": 6897,
-        "name": "מ.ס. חיפה רובי שפירא",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 10,
-          "draws": 2,
-          "losses": 3,
-          "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
-          },
-          "points": 32
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeed7",
-        "provider_id": 2679,
-        "name": "הפ' גליל עליון",
-        "has_logo": true,
-        "stats": {
-          "games": 16,
-          "wins": 8,
-          "draws": 5,
-          "losses": 3,
-          "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
-          },
-          "points": 29
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c010ac",
-      "provider_id": -1,
-      "date": "2026-03-04T17:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 18",
-        "number": 18,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef2e",
-        "provider_id": 3675,
-        "name": "מ.כ. גליל גולן דרום",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 9,
-          "draws": 3,
-          "losses": 3,
-          "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
-          },
-          "points": 30
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef9d",
-        "provider_id": 6331,
-        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 4,
-          "draws": 1,
-          "losses": 9,
-          "goals": {
-            "for": 22,
-            "against": 37,
-            "difference": -15
-          },
-          "points": 13
-        },
-        "goals": -1
       }
     },
     {
