@@ -7,7 +7,7 @@
     "currentRoundNumber": 17,
     "currentRoundName": "מחזור 16"
   },
-  "fetchedAt": "2026-03-05T03:40:49.100Z",
+  "fetchedAt": "2026-03-05T05:08:56.629Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -77,7 +77,7 @@
     {
       "number": 13,
       "name": "מחזור 13",
-      "gamesCount": 6
+      "gamesCount": 5
     },
     {
       "number": 14,
@@ -87,7 +87,7 @@
     {
       "number": 15,
       "name": "מחזור 15",
-      "gamesCount": 7
+      "gamesCount": 6
     },
     {
       "number": 16,
@@ -102,7 +102,7 @@
     {
       "number": 18,
       "name": "מחזור 18",
-      "gamesCount": 4
+      "gamesCount": 3
     },
     {
       "number": 19,
@@ -145,7 +145,7 @@
       "gamesCount": 7
     }
   ],
-  "gamesCount": 168,
+  "gamesCount": 165,
   "games": [
     {
       "id": "68e09eac1b7b720e58c00ffc",
@@ -5495,156 +5495,6 @@
           "points": 0
         },
         "goals": 0
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c010b0",
-      "provider_id": -1,
-      "date": "2026-03-05T16:45:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 18",
-        "number": 18,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee89",
-        "provider_id": 8484,
-        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 6,
-          "draws": 2,
-          "losses": 6,
-          "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
-          },
-          "points": 20
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee75",
-        "provider_id": 8295,
-        "name": "הפועל עכו 2",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 6,
-          "draws": 2,
-          "losses": 7,
-          "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
-          },
-          "points": 20
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c01076",
-      "provider_id": -1,
-      "date": "2026-03-06T12:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 13",
-        "number": 13,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adefaf",
-        "provider_id": 8303,
-        "name": "מ.ע.קרית אתא 3",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 7,
-          "draws": 1,
-          "losses": 6,
-          "goals": {
-            "for": 46,
-            "against": 43,
-            "difference": 3
-          },
-          "points": 22
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef9d",
-        "provider_id": 6331,
-        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 4,
-          "draws": 1,
-          "losses": 9,
-          "goals": {
-            "for": 22,
-            "against": 37,
-            "difference": -15
-          },
-          "points": 13
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c01092",
-      "provider_id": -1,
-      "date": "2026-03-06T12:25:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 15",
-        "number": 15,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef64",
-        "provider_id": 2411,
-        "name": "מרכז קהילתי גולן קצרין",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 3,
-          "draws": 2,
-          "losses": 9,
-          "goals": {
-            "for": 48,
-            "against": 67,
-            "difference": -19
-          },
-          "points": 11
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adeebc",
-        "provider_id": 6897,
-        "name": "מ.ס. חיפה רובי שפירא",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 10,
-          "draws": 2,
-          "losses": 3,
-          "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
-          },
-          "points": 32
-        },
-        "goals": -1
       }
     },
     {
