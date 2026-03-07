@@ -1,13 +1,13 @@
 {
   "league": {
-    "id": "689c7b852c807e5273a17c5a",
-    "name": "ליגת ילדים ג מפרץ",
+    "id": null,
+    "name": null,
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 18,
-    "currentRoundName": "מחזור 17"
+    "currentRoundNumber": null,
+    "currentRoundName": null
   },
-  "fetchedAt": "2026-03-07T08:20:08.383Z",
+  "fetchedAt": "2026-03-07T08:52:17.026Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
