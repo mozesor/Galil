@@ -7,7 +7,7 @@
     "currentRoundNumber": 18,
     "currentRoundName": "מחזור 17"
   },
-  "fetchedAt": "2026-03-08T09:50:08.773Z",
+  "fetchedAt": "2026-03-08T10:17:06.754Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
