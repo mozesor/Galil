@@ -4,10 +4,10 @@
     "name": "ליגת ילדים ג מפרץ",
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 18,
-    "currentRoundName": "מחזור 17"
+    "currentRoundNumber": 20,
+    "currentRoundName": "מחזור 19"
   },
-  "fetchedAt": "2026-03-10T03:37:33.421Z",
+  "fetchedAt": "2026-03-10T05:05:42.039Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -97,7 +97,7 @@
     {
       "number": 17,
       "name": "מחזור 17",
-      "gamesCount": 7
+      "gamesCount": 6
     },
     {
       "number": 18,
@@ -145,7 +145,7 @@
       "gamesCount": 7
     }
   ],
-  "gamesCount": 165,
+  "gamesCount": 164,
   "games": [
     {
       "id": "68e09eac1b7b720e58c00ffc",
@@ -5495,56 +5495,6 @@
           "points": 0
         },
         "goals": 0
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c010a2",
-      "provider_id": -1,
-      "date": "2026-03-10T17:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 17",
-        "number": 17,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adeec5",
-        "provider_id": 2157,
-        "name": "הפועל חיפה 2",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 3,
-          "draws": 3,
-          "losses": 8,
-          "goals": {
-            "for": 32,
-            "against": 52,
-            "difference": -20
-          },
-          "points": 12
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef2e",
-        "provider_id": 3675,
-        "name": "מ.כ. גליל גולן דרום",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 9,
-          "draws": 3,
-          "losses": 3,
-          "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
-          },
-          "points": 30
-        },
-        "goals": -1
       }
     },
     {
