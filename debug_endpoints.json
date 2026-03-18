@@ -1,183 +1,418 @@
 {
   "leagueInfo": {
-    "id": "689c7b852c807e5273a17c5a",
-    "name": "ליגת ילדים ג מפרץ",
-    "currentRoundName": "מחזור 20",
-    "currentRoundNumber": 21,
+    "id": null,
+    "name": null,
+    "currentRoundName": null,
+    "currentRoundNumber": null,
     "season_id": null
   },
-  "roundParam": "round",
-  "shift": 1,
+  "roundParam": "number",
+  "shift": 0,
   "tried": [
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=0",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=0",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=1",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=1",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=2",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=2",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=3",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=3",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=4",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=4",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=5",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=5",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=6",
-      "ok": true,
-      "games": 5
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=7",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=6",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=8",
-      "ok": true,
-      "games": 5
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=9",
-      "ok": true,
-      "games": 6
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=10",
-      "ok": true,
-      "games": 4
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=11",
-      "ok": true,
-      "games": 6
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=12",
-      "ok": true,
-      "games": 5
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=13",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=7",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=14",
-      "ok": true,
-      "games": 6
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=15",
-      "ok": true,
-      "games": 6
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=16",
-      "ok": true,
-      "games": 6
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=17",
-      "ok": true,
-      "games": 3
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=18",
-      "ok": true,
-      "games": 0
-    },
-    {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=19",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=8",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=20",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=9",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=21",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=10",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=22",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=11",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=23",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=12",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=24",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=13",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=25",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=14",
       "ok": true,
       "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=26",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=15",
       "ok": true,
-      "games": 0
+      "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=27",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=16",
       "ok": true,
-      "games": 0
+      "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=28",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=17",
       "ok": true,
-      "games": 0
+      "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=29",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=18",
       "ok": true,
-      "games": 0
+      "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=30",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=19",
       "ok": true,
-      "games": 0
+      "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=31",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=20",
       "ok": true,
-      "games": 0
+      "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=32",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=21",
       "ok": true,
-      "games": 0
+      "games": 7
     },
     {
-      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=33",
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=22",
       "ok": true,
-      "games": 0
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=23",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=24",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=25",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=26",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=27",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=28",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=29",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=30",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=31",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=32",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=33",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=34",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=35",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=36",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=37",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=38",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=39",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=40",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=41",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=42",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=43",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=44",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=45",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=46",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=47",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=48",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=49",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=50",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=51",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=52",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=53",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=54",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=55",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=56",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=57",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=58",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=59",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=60",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=61",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=62",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=63",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=64",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=65",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=66",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=67",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=68",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=69",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=70",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=71",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=72",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=73",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=74",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=75",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=76",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=77",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=78",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=79",
+      "ok": true,
+      "games": 7
+    },
+    {
+      "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&number=80",
+      "ok": true,
+      "games": 7
     }
   ]
 }
