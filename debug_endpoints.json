@@ -2,8 +2,8 @@
   "leagueInfo": {
     "id": "689c7b852c807e5273a17c5a",
     "name": "ליגת ילדים ג מפרץ",
-    "currentRoundName": "מחזור 20",
-    "currentRoundNumber": 21,
+    "currentRoundName": "מחזור 21",
+    "currentRoundNumber": 22,
     "season_id": null
   },
   "roundParam": "round",
@@ -107,7 +107,7 @@
     {
       "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=19",
       "ok": true,
-      "games": 7
+      "games": 0
     },
     {
       "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=20",
