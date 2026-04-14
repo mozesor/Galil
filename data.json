@@ -7,7 +7,7 @@
     "currentRoundNumber": 25,
     "currentRoundName": "מחזור 24"
   },
-  "fetchedAt": "2026-04-14T03:46:30.509Z",
+  "fetchedAt": "2026-04-14T05:55:30.966Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -107,7 +107,7 @@
     {
       "number": 24,
       "name": "מחזור 24",
-      "gamesCount": 7
+      "gamesCount": 5
     },
     {
       "number": 25,
@@ -120,7 +120,7 @@
       "gamesCount": 7
     }
   ],
-  "gamesCount": 129,
+  "gamesCount": 127,
   "games": [
     {
       "id": "68e09eac1b7b720e58c00ffc",
@@ -5473,56 +5473,6 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c010e3",
-      "provider_id": -1,
-      "date": "2026-04-17T21:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 24",
-        "number": 24,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef9d",
-        "provider_id": 6331,
-        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 4,
-          "draws": 1,
-          "losses": 9,
-          "goals": {
-            "for": 22,
-            "against": 37,
-            "difference": -15
-          },
-          "points": 13
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef7c",
-        "provider_id": 7700,
-        "name": "מ.ס.קרית ים  2",
-        "has_logo": true,
-        "stats": {
-          "games": 18,
-          "wins": 7,
-          "draws": 3,
-          "losses": 8,
-          "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
-          },
-          "points": 24
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c010e4",
       "provider_id": -1,
       "date": "2026-04-17T21:00:00.000Z",
@@ -5718,56 +5668,6 @@
             "difference": 8
           },
           "points": 20
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c010ea",
-      "provider_id": -1,
-      "date": "2026-04-17T21:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 24",
-        "number": 24,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adeebc",
-        "provider_id": 6897,
-        "name": "מ.ס. חיפה רובי שפירא",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 10,
-          "draws": 2,
-          "losses": 3,
-          "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
-          },
-          "points": 32
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee74",
-        "provider_id": 7471,
-        "name": "מכבי צור שלום ק. ביאליק 2",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 4,
-          "draws": 4,
-          "losses": 6,
-          "goals": {
-            "for": 45,
-            "against": 34,
-            "difference": 11
-          },
-          "points": 16
         },
         "goals": -1
       }
