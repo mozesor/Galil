@@ -7,7 +7,7 @@
     "currentRoundNumber": 25,
     "currentRoundName": "מחזור 24"
   },
-  "fetchedAt": "2026-04-13T23:07:26.228Z",
+  "fetchedAt": "2026-04-14T00:03:32.204Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
