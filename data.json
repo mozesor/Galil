@@ -7,7 +7,7 @@
     "currentRoundNumber": 26,
     "currentRoundName": "מחזור 25"
   },
-  "fetchedAt": "2026-04-27T01:56:48.086Z",
+  "fetchedAt": "2026-04-27T05:19:52.589Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -107,7 +107,7 @@
     {
       "number": 25,
       "name": "מחזור 25",
-      "gamesCount": 4
+      "gamesCount": 5
     },
     {
       "number": 26,
@@ -115,7 +115,7 @@
       "gamesCount": 6
     }
   ],
-  "gamesCount": 117,
+  "gamesCount": 118,
   "games": [
     {
       "id": "68e09eac1b7b720e58c00ffc",
@@ -5563,6 +5563,56 @@
             "difference": 26
           },
           "points": 32
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c010f3",
+      "provider_id": -1,
+      "date": "2026-05-01T21:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 25",
+        "number": 25,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 14,
+          "wins": 6,
+          "draws": 2,
+          "losses": 6,
+          "goals": {
+            "for": 35,
+            "against": 27,
+            "difference": 8
+          },
+          "points": 20
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 16,
+          "wins": 8,
+          "draws": 5,
+          "losses": 3,
+          "goals": {
+            "for": 45,
+            "against": 26,
+            "difference": 19
+          },
+          "points": 29
         },
         "goals": -1
       }
