@@ -7,7 +7,7 @@
     "currentRoundNumber": 26,
     "currentRoundName": "מחזור 25"
   },
-  "fetchedAt": "2026-04-28T02:03:21.997Z",
+  "fetchedAt": "2026-04-28T05:41:59.417Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -107,15 +107,15 @@
     {
       "number": 25,
       "name": "מחזור 25",
-      "gamesCount": 5
+      "gamesCount": 6
     },
     {
       "number": 26,
       "name": "מחזור 26",
-      "gamesCount": 6
+      "gamesCount": 7
     }
   ],
-  "gamesCount": 118,
+  "gamesCount": 120,
   "games": [
     {
       "id": "68e09eac1b7b720e58c00ffc",
@@ -5470,7 +5470,7 @@
     {
       "id": "68e09ead1b7b720e58c010ed",
       "provider_id": -1,
-      "date": "2026-05-01T21:00:00.000Z",
+      "date": "2026-05-01T11:00:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 25",
@@ -5563,6 +5563,56 @@
             "difference": 26
           },
           "points": 32
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c010f1",
+      "provider_id": -1,
+      "date": "2026-05-01T21:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 25",
+        "number": 25,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 14,
+          "wins": 4,
+          "draws": 4,
+          "losses": 6,
+          "goals": {
+            "for": 45,
+            "against": 34,
+            "difference": 11
+          },
+          "points": 16
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef64",
+        "provider_id": 2411,
+        "name": "מרכז קהילתי גולן קצרין",
+        "has_logo": true,
+        "stats": {
+          "games": 14,
+          "wins": 3,
+          "draws": 2,
+          "losses": 9,
+          "goals": {
+            "for": 48,
+            "against": 67,
+            "difference": -19
+          },
+          "points": 11
         },
         "goals": -1
       }
@@ -5670,7 +5720,7 @@
     {
       "id": "68e09ead1b7b720e58c010f5",
       "provider_id": -1,
-      "date": "2026-05-01T21:00:00.000Z",
+      "date": "2026-05-02T05:30:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 25",
@@ -5913,6 +5963,56 @@
             "difference": 8
           },
           "points": 20
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c010fc",
+      "provider_id": -1,
+      "date": "2026-05-08T21:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 26",
+        "number": 26,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 16,
+          "wins": 8,
+          "draws": 5,
+          "losses": 3,
+          "goals": {
+            "for": 45,
+            "against": 26,
+            "difference": 19
+          },
+          "points": 29
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 14,
+          "wins": 4,
+          "draws": 4,
+          "losses": 6,
+          "goals": {
+            "for": 45,
+            "against": 34,
+            "difference": 11
+          },
+          "points": 16
         },
         "goals": -1
       }

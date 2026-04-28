@@ -132,12 +132,12 @@
     {
       "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=24",
       "ok": true,
-      "games": 5
+      "games": 6
     },
     {
       "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=25",
       "ok": true,
-      "games": 6
+      "games": 7
     },
     {
       "url": "https://vole.one.co.il/api/leagues/rounds?league_id=1276&round=26",
