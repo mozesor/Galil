@@ -7,7 +7,7 @@
     "currentRoundNumber": 26,
     "currentRoundName": "מחזור 25"
   },
-  "fetchedAt": "2026-05-01T02:08:47.508Z",
+  "fetchedAt": "2026-05-01T05:51:28.159Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -5818,56 +5818,6 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c010f9",
-      "provider_id": -1,
-      "date": "2026-05-08T21:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 26",
-        "number": 26,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adeec5",
-        "provider_id": 2157,
-        "name": "הפועל חיפה 2",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 3,
-          "draws": 3,
-          "losses": 8,
-          "goals": {
-            "for": 32,
-            "against": 52,
-            "difference": -20
-          },
-          "points": 12
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee75",
-        "provider_id": 8295,
-        "name": "הפועל עכו 2",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 6,
-          "draws": 2,
-          "losses": 7,
-          "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
-          },
-          "points": 20
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c010fa",
       "provider_id": -1,
       "date": "2026-05-08T21:00:00.000Z",
@@ -6063,6 +6013,56 @@
             "difference": 30
           },
           "points": 30
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c010f9",
+      "provider_id": -1,
+      "date": "2026-05-09T10:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 26",
+        "number": 26,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeec5",
+        "provider_id": 2157,
+        "name": "הפועל חיפה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 14,
+          "wins": 3,
+          "draws": 3,
+          "losses": 8,
+          "goals": {
+            "for": 32,
+            "against": 52,
+            "difference": -20
+          },
+          "points": 12
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 15,
+          "wins": 6,
+          "draws": 2,
+          "losses": 7,
+          "goals": {
+            "for": 63,
+            "against": 25,
+            "difference": 38
+          },
+          "points": 20
         },
         "goals": -1
       }
