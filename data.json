@@ -7,7 +7,7 @@
     "currentRoundNumber": 26,
     "currentRoundName": "מחזור 25"
   },
-  "fetchedAt": "2026-05-01T15:30:30.112Z",
+  "fetchedAt": "2026-05-01T16:45:21.444Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -584,14 +584,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -703,16 +703,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 5
       }
@@ -734,16 +734,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 4
       },
@@ -784,14 +784,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -953,14 +953,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -1084,16 +1084,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 4
       },
@@ -1134,14 +1134,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -1303,16 +1303,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 2
       }
@@ -1484,16 +1484,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 4
       },
@@ -1853,14 +1853,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -2103,16 +2103,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 4
       }
@@ -2134,14 +2134,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -2203,16 +2203,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 4
       }
@@ -2403,14 +2403,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -2634,16 +2634,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 4
       },
@@ -2703,14 +2703,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -2934,14 +2934,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -3084,16 +3084,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 21
       },
@@ -3384,16 +3384,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 5
       },
@@ -3734,16 +3734,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 4
       },
@@ -3753,14 +3753,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -3834,14 +3834,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -3934,14 +3934,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -4153,16 +4153,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 3
       }
@@ -4534,16 +4534,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 4
       },
@@ -4584,14 +4584,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -4653,14 +4653,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -4703,16 +4703,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 4
       }
@@ -4803,14 +4803,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -5084,16 +5084,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 6
       },
@@ -5134,14 +5134,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -5303,16 +5303,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 1
       }
@@ -5403,16 +5403,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": 7
       }
@@ -5534,18 +5534,18 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
-        "goals": -1
+        "goals": 3
       },
       "away": {
         "id": "68d612211b7b720e58adef07",
@@ -5553,18 +5553,18 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
-        "goals": -1
+        "goals": 4
       }
     },
     {
@@ -5834,16 +5834,16 @@
         "name": "ה.מטה אשר 3",
         "has_logo": true,
         "stats": {
-          "games": 17,
-          "wins": 13,
+          "games": 18,
+          "wins": 14,
           "draws": 2,
           "losses": 2,
           "goals": {
-            "for": 86,
-            "against": 34,
-            "difference": 52
+            "for": 90,
+            "against": 37,
+            "difference": 53
           },
-          "points": 41
+          "points": 44
         },
         "goals": -1
       },
@@ -6053,14 +6053,14 @@
         "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 6,
           "draws": 2,
-          "losses": 7,
+          "losses": 8,
           "goals": {
-            "for": 63,
-            "against": 25,
-            "difference": 38
+            "for": 66,
+            "against": 29,
+            "difference": 37
           },
           "points": 20
         },
@@ -6073,14 +6073,14 @@
       "rank": 1,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
-      "games": 17,
-      "wins": 13,
+      "games": 18,
+      "wins": 14,
       "draws": 2,
       "losses": 2,
-      "gf": 86,
-      "ga": 34,
-      "gd": 52,
-      "points": 41
+      "gf": 90,
+      "ga": 37,
+      "gd": 53,
+      "points": 44
     },
     {
       "rank": 2,
@@ -6164,13 +6164,13 @@
       "rank": 8,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
-      "games": 15,
+      "games": 16,
       "wins": 6,
       "draws": 2,
-      "losses": 7,
-      "gf": 63,
-      "ga": 25,
-      "gd": 38,
+      "losses": 8,
+      "gf": 66,
+      "ga": 29,
+      "gd": 37,
       "points": 20
     },
     {
