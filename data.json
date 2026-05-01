@@ -7,7 +7,7 @@
     "currentRoundNumber": 26,
     "currentRoundName": "מחזור 25"
   },
-  "fetchedAt": "2026-05-01T12:57:42.537Z",
+  "fetchedAt": "2026-05-01T14:15:43.908Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -134,16 +134,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 1
       },
@@ -334,14 +334,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -434,16 +434,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 4
       },
@@ -553,14 +553,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -753,14 +753,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -884,16 +884,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 9
       },
@@ -1334,14 +1334,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -1553,14 +1553,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -1684,16 +1684,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 2
       },
@@ -1834,16 +1834,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 2
       },
@@ -1903,16 +1903,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 0
       }
@@ -2034,14 +2034,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -2184,16 +2184,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 5
       },
@@ -2303,14 +2303,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -2553,16 +2553,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 1
       }
@@ -2684,14 +2684,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -2984,16 +2984,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 4
       },
@@ -3053,14 +3053,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -3134,14 +3134,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -3203,16 +3203,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 2
       }
@@ -3434,16 +3434,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 0
       },
@@ -3784,14 +3784,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -3803,16 +3803,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 0
       }
@@ -3903,16 +3903,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 12
       }
@@ -4084,14 +4084,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -4203,16 +4203,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 3
       }
@@ -4284,14 +4284,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -4403,14 +4403,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -4503,16 +4503,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 2
       }
@@ -4684,14 +4684,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -4753,16 +4753,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 2
       }
@@ -5153,16 +5153,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 1
       }
@@ -5203,16 +5203,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": 1
       }
@@ -5484,18 +5484,18 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
-        "goals": -1
+        "goals": 3
       },
       "away": {
         "id": "68d612211b7b720e58adef2e",
@@ -5503,18 +5503,18 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
-        "goals": -1
+        "goals": 2
       }
     },
     {
@@ -5734,16 +5734,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 18,
-          "wins": 7,
+          "games": 19,
+          "wins": 8,
           "draws": 3,
           "losses": 8,
           "goals": {
-            "for": 51,
-            "against": 34,
-            "difference": 17
+            "for": 54,
+            "against": 36,
+            "difference": 18
           },
-          "points": 24
+          "points": 27
         },
         "goals": -1
       },
@@ -6003,14 +6003,14 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 9,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 56,
-            "against": 26,
-            "difference": 30
+            "for": 58,
+            "against": 29,
+            "difference": 29
           },
           "points": 30
         },
@@ -6112,13 +6112,13 @@
       "rank": 4,
       "provider_id": 3675,
       "name": "מ.כ. גליל גולן דרום",
-      "games": 15,
+      "games": 16,
       "wins": 9,
       "draws": 3,
-      "losses": 3,
-      "gf": 56,
-      "ga": 26,
-      "gd": 30,
+      "losses": 4,
+      "gf": 58,
+      "ga": 29,
+      "gd": 29,
       "points": 30
     },
     {
@@ -6138,14 +6138,14 @@
       "rank": 6,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
-      "games": 18,
-      "wins": 7,
+      "games": 19,
+      "wins": 8,
       "draws": 3,
       "losses": 8,
-      "gf": 51,
-      "ga": 34,
-      "gd": 17,
-      "points": 24
+      "gf": 54,
+      "ga": 36,
+      "gd": 18,
+      "points": 27
     },
     {
       "rank": 7,
