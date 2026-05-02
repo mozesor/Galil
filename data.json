@@ -7,7 +7,7 @@
     "currentRoundNumber": 26,
     "currentRoundName": "מחזור 25"
   },
-  "fetchedAt": "2026-05-02T08:03:27.430Z",
+  "fetchedAt": "2026-05-02T09:37:54.354Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -253,16 +253,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 10
       }
@@ -284,16 +284,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 6
       },
@@ -453,16 +453,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 0
       }
@@ -503,16 +503,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 2
       }
@@ -803,16 +803,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 3
       }
@@ -834,16 +834,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 2
       },
@@ -1353,16 +1353,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 1
       }
@@ -1453,16 +1453,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 3
       }
@@ -1584,16 +1584,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 3
       },
@@ -1634,16 +1634,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 5
       },
@@ -1953,16 +1953,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 2
       }
@@ -1984,16 +1984,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 2
       },
@@ -2284,16 +2284,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 5
       },
@@ -2334,16 +2334,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 1
       },
@@ -2584,16 +2584,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 1
       },
@@ -2653,16 +2653,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 3
       }
@@ -2734,16 +2734,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 4
       },
@@ -3003,16 +3003,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 1
       }
@@ -3303,16 +3303,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 0
       }
@@ -3334,16 +3334,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 3
       },
@@ -3403,16 +3403,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 0
       }
@@ -3953,16 +3953,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 1
       }
@@ -4003,16 +4003,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 1
       }
@@ -4234,16 +4234,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 9
       },
@@ -4434,16 +4434,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 5
       },
@@ -4484,16 +4484,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 3
       },
@@ -4784,16 +4784,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": 1
       },
@@ -4953,16 +4953,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": 1
       }
@@ -5584,18 +5584,18 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adeec5",
@@ -5603,18 +5603,18 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
-        "goals": -1
+        "goals": 0
       }
     },
     {
@@ -5803,16 +5803,16 @@
         "name": "מ.ע.קרית אתא 3",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 7,
-          "draws": 1,
+          "draws": 2,
           "losses": 6,
           "goals": {
             "for": 46,
             "against": 43,
             "difference": 3
           },
-          "points": 22
+          "points": 23
         },
         "goals": -1
       }
@@ -6034,16 +6034,16 @@
         "name": "הפועל חיפה 2",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 8,
           "goals": {
             "for": 32,
             "against": 52,
             "difference": -20
           },
-          "points": 12
+          "points": 13
         },
         "goals": -1
       },
@@ -6151,14 +6151,14 @@
       "rank": 7,
       "provider_id": 8303,
       "name": "מ.ע.קרית אתא 3",
-      "games": 14,
+      "games": 15,
       "wins": 7,
-      "draws": 1,
+      "draws": 2,
       "losses": 6,
       "gf": 46,
       "ga": 43,
       "gd": 3,
-      "points": 22
+      "points": 23
     },
     {
       "rank": 8,
@@ -6216,14 +6216,14 @@
       "rank": 12,
       "provider_id": 2157,
       "name": "הפועל חיפה 2",
-      "games": 14,
+      "games": 15,
       "wins": 3,
-      "draws": 3,
+      "draws": 4,
       "losses": 8,
       "gf": 32,
       "ga": 52,
       "gd": -20,
-      "points": 12
+      "points": 13
     },
     {
       "rank": 13,
