@@ -7,7 +7,7 @@
     "currentRoundNumber": 26,
     "currentRoundName": "מחזור 25"
   },
-  "fetchedAt": "2026-05-06T18:14:57.107Z",
+  "fetchedAt": "2026-05-06T20:07:02.044Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -184,16 +184,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 3
       },
@@ -303,14 +303,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -353,16 +353,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 1
       }
@@ -634,14 +634,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -1003,14 +1003,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -1153,14 +1153,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -1234,16 +1234,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 1
       },
@@ -1434,14 +1434,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -1703,16 +1703,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 3
       }
@@ -1734,16 +1734,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 3
       },
@@ -1884,14 +1884,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -2084,16 +2084,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       },
@@ -2353,16 +2353,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       }
@@ -2484,16 +2484,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 4
       },
@@ -2853,14 +2853,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -2903,16 +2903,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 12
       }
@@ -3034,14 +3034,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -3253,14 +3253,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -3284,16 +3284,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 3
       },
@@ -3584,16 +3584,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 2
       },
@@ -3603,14 +3603,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -3853,16 +3853,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 1
       }
@@ -3984,14 +3984,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -4353,16 +4353,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 1
       }
@@ -4384,16 +4384,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 1
       },
@@ -4834,14 +4834,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -5003,16 +5003,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 1
       }
@@ -5184,16 +5184,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": 1
       },
@@ -5253,14 +5253,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -5284,14 +5284,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -5634,18 +5634,18 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
-        "goals": -1
+        "goals": 2
       },
       "away": {
         "id": "68d612211b7b720e58adeed7",
@@ -5653,18 +5653,18 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
-        "goals": -1
+        "goals": 3
       }
     },
     {
@@ -5753,14 +5753,14 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 14,
+          "games": 15,
           "wins": 6,
           "draws": 2,
-          "losses": 6,
+          "losses": 7,
           "goals": {
-            "for": 35,
-            "against": 27,
-            "difference": 8
+            "for": 37,
+            "against": 30,
+            "difference": 7
           },
           "points": 20
         },
@@ -5884,16 +5884,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 8,
+          "games": 17,
+          "wins": 9,
           "draws": 5,
           "losses": 3,
           "goals": {
-            "for": 45,
-            "against": 26,
-            "difference": 19
+            "for": 48,
+            "against": 28,
+            "difference": 20
           },
-          "points": 29
+          "points": 32
         },
         "goals": -1
       },
@@ -6060,6 +6060,19 @@
     },
     {
       "rank": 4,
+      "provider_id": 2679,
+      "name": "הפ' גליל עליון",
+      "games": 17,
+      "wins": 9,
+      "draws": 5,
+      "losses": 3,
+      "gf": 48,
+      "ga": 28,
+      "gd": 20,
+      "points": 32
+    },
+    {
+      "rank": 5,
       "provider_id": 3675,
       "name": "מ.כ. גליל גולן דרום",
       "games": 16,
@@ -6070,19 +6083,6 @@
       "ga": 29,
       "gd": 29,
       "points": 30
-    },
-    {
-      "rank": 5,
-      "provider_id": 2679,
-      "name": "הפ' גליל עליון",
-      "games": 16,
-      "wins": 8,
-      "draws": 5,
-      "losses": 3,
-      "gf": 45,
-      "ga": 26,
-      "gd": 19,
-      "points": 29
     },
     {
       "rank": 6,
@@ -6127,13 +6127,13 @@
       "rank": 9,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-      "games": 14,
+      "games": 15,
       "wins": 6,
       "draws": 2,
-      "losses": 6,
-      "gf": 35,
-      "ga": 27,
-      "gd": 8,
+      "losses": 7,
+      "gf": 37,
+      "ga": 30,
+      "gd": 7,
       "points": 20
     },
     {
