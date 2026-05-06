@@ -7,7 +7,7 @@
     "currentRoundNumber": 26,
     "currentRoundName": "מחזור 25"
   },
-  "fetchedAt": "2026-05-06T01:59:25.447Z",
+  "fetchedAt": "2026-05-06T05:31:25.722Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -5768,56 +5768,6 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c01100",
-      "provider_id": -1,
-      "date": "2026-05-08T21:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 26",
-        "number": 26,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adeebc",
-        "provider_id": 6897,
-        "name": "מ.ס. חיפה רובי שפירא",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 10,
-          "draws": 2,
-          "losses": 3,
-          "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
-          },
-          "points": 32
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef2e",
-        "provider_id": 3675,
-        "name": "מ.כ. גליל גולן דרום",
-        "has_logo": true,
-        "stats": {
-          "games": 16,
-          "wins": 9,
-          "draws": 3,
-          "losses": 4,
-          "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
-          },
-          "points": 30
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c010f9",
       "provider_id": -1,
       "date": "2026-05-09T10:00:00.000Z",
@@ -5963,6 +5913,56 @@
             "difference": 11
           },
           "points": 16
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c01100",
+      "provider_id": -1,
+      "date": "2026-05-12T13:30:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 26",
+        "number": 26,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeebc",
+        "provider_id": 6897,
+        "name": "מ.ס. חיפה רובי שפירא",
+        "has_logo": true,
+        "stats": {
+          "games": 15,
+          "wins": 10,
+          "draws": 2,
+          "losses": 3,
+          "goals": {
+            "for": 55,
+            "against": 29,
+            "difference": 26
+          },
+          "points": 32
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef2e",
+        "provider_id": 3675,
+        "name": "מ.כ. גליל גולן דרום",
+        "has_logo": true,
+        "stats": {
+          "games": 16,
+          "wins": 9,
+          "draws": 3,
+          "losses": 4,
+          "goals": {
+            "for": 58,
+            "against": 29,
+            "difference": 29
+          },
+          "points": 30
         },
         "goals": -1
       }
