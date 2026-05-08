@@ -4,10 +4,10 @@
     "name": "ליגת ילדים ג מפרץ",
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 26,
-    "currentRoundName": "מחזור 25"
+    "currentRoundNumber": 27,
+    "currentRoundName": "מחזור 26"
   },
-  "fetchedAt": "2026-05-08T02:08:52.457Z",
+  "fetchedAt": "2026-05-08T05:14:47.298Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -5768,56 +5768,6 @@
       }
     },
     {
-      "id": "68e09ead1b7b720e58c010fa",
-      "provider_id": -1,
-      "date": "2026-05-10T14:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 26",
-        "number": 26,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef07",
-        "provider_id": 7709,
-        "name": "ה.מטה אשר 3",
-        "has_logo": true,
-        "stats": {
-          "games": 18,
-          "wins": 14,
-          "draws": 2,
-          "losses": 2,
-          "goals": {
-            "for": 90,
-            "against": 37,
-            "difference": 53
-          },
-          "points": 44
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee89",
-        "provider_id": 8484,
-        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 6,
-          "draws": 2,
-          "losses": 7,
-          "goals": {
-            "for": 37,
-            "against": 30,
-            "difference": 7
-          },
-          "points": 20
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "68e09ead1b7b720e58c010f7",
       "provider_id": -1,
       "date": "2026-05-11T15:00:00.000Z",
@@ -5963,6 +5913,56 @@
             "difference": 29
           },
           "points": 30
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "68e09ead1b7b720e58c010fa",
+      "provider_id": -1,
+      "date": "2026-05-15T10:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 26",
+        "number": 26,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 18,
+          "wins": 14,
+          "draws": 2,
+          "losses": 2,
+          "goals": {
+            "for": 90,
+            "against": 37,
+            "difference": 53
+          },
+          "points": 44
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 15,
+          "wins": 6,
+          "draws": 2,
+          "losses": 7,
+          "goals": {
+            "for": 37,
+            "against": 30,
+            "difference": 7
+          },
+          "points": 20
         },
         "goals": -1
       }
