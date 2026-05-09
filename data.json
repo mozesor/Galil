@@ -7,7 +7,7 @@
     "currentRoundNumber": 27,
     "currentRoundName": "מחזור 26"
   },
-  "fetchedAt": "2026-05-09T02:02:42.912Z",
+  "fetchedAt": "2026-05-09T05:31:56.195Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -112,10 +112,10 @@
     {
       "number": 26,
       "name": "מחזור 26",
-      "gamesCount": 6
+      "gamesCount": 5
     }
   ],
-  "gamesCount": 118,
+  "gamesCount": 117,
   "games": [
     {
       "id": "68e09eac1b7b720e58c00ffc",
@@ -5665,56 +5665,6 @@
           "points": 32
         },
         "goals": 3
-      }
-    },
-    {
-      "id": "68e09ead1b7b720e58c010f8",
-      "provider_id": -1,
-      "date": "2026-05-08T12:30:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 26",
-        "number": 26,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef9d",
-        "provider_id": 6331,
-        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 14,
-          "wins": 4,
-          "draws": 1,
-          "losses": 9,
-          "goals": {
-            "for": 22,
-            "against": 37,
-            "difference": -15
-          },
-          "points": 13
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adefaf",
-        "provider_id": 8303,
-        "name": "מ.ע.קרית אתא 3",
-        "has_logo": true,
-        "stats": {
-          "games": 15,
-          "wins": 7,
-          "draws": 2,
-          "losses": 6,
-          "goals": {
-            "for": 46,
-            "against": 43,
-            "difference": 3
-          },
-          "points": 23
-        },
-        "goals": -1
       }
     },
     {
