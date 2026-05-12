@@ -7,7 +7,7 @@
     "currentRoundNumber": 27,
     "currentRoundName": "מחזור 26"
   },
-  "fetchedAt": "2026-05-12T15:56:57.153Z",
+  "fetchedAt": "2026-05-12T17:55:53.190Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -153,14 +153,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -334,16 +334,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 3
       },
@@ -384,14 +384,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -553,16 +553,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 8
       }
@@ -753,16 +753,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 2
       }
@@ -1284,14 +1284,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -1334,16 +1334,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 5
       },
@@ -1553,16 +1553,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 4
       }
@@ -1603,14 +1603,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -1753,14 +1753,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -2034,16 +2034,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 11
       },
@@ -2253,14 +2253,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -2303,16 +2303,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 2
       }
@@ -2603,14 +2603,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -2684,16 +2684,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 4
       },
@@ -2784,14 +2784,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -2953,14 +2953,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -3053,16 +3053,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 0
       }
@@ -3134,16 +3134,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 1
       },
@@ -3234,14 +3234,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -3503,14 +3503,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -3684,14 +3684,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -3784,16 +3784,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 3
       },
@@ -4084,16 +4084,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 8
       },
@@ -4184,14 +4184,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -4284,16 +4284,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 2
       },
@@ -4303,14 +4303,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -4403,16 +4403,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 1
       }
@@ -4684,16 +4684,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 2
       },
@@ -5103,14 +5103,14 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
@@ -5503,16 +5503,16 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
         "goals": 2
       }
@@ -5834,18 +5834,18 @@
         "name": "מ.ס. חיפה רובי שפירא",
         "has_logo": true,
         "stats": {
-          "games": 15,
+          "games": 16,
           "wins": 10,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 55,
-            "against": 29,
-            "difference": 26
+            "for": 58,
+            "against": 34,
+            "difference": 24
           },
           "points": 32
         },
-        "goals": -1
+        "goals": 3
       },
       "away": {
         "id": "68d612211b7b720e58adef2e",
@@ -5853,18 +5853,18 @@
         "name": "מ.כ. גליל גולן דרום",
         "has_logo": true,
         "stats": {
-          "games": 16,
-          "wins": 9,
+          "games": 17,
+          "wins": 10,
           "draws": 3,
           "losses": 4,
           "goals": {
-            "for": 58,
-            "against": 29,
-            "difference": 29
+            "for": 63,
+            "against": 32,
+            "difference": 31
           },
-          "points": 30
+          "points": 33
         },
-        "goals": -1
+        "goals": 5
       }
     },
     {
@@ -5934,6 +5934,19 @@
     },
     {
       "rank": 2,
+      "provider_id": 3675,
+      "name": "מ.כ. גליל גולן דרום",
+      "games": 17,
+      "wins": 10,
+      "draws": 3,
+      "losses": 4,
+      "gf": 63,
+      "ga": 32,
+      "gd": 31,
+      "points": 33
+    },
+    {
+      "rank": 3,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
       "games": 18,
@@ -5946,7 +5959,7 @@
       "points": 33
     },
     {
-      "rank": 3,
+      "rank": 4,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2",
       "games": 15,
@@ -5959,20 +5972,20 @@
       "points": 32
     },
     {
-      "rank": 4,
+      "rank": 5,
       "provider_id": 6897,
       "name": "מ.ס. חיפה רובי שפירא",
-      "games": 15,
+      "games": 16,
       "wins": 10,
       "draws": 2,
-      "losses": 3,
-      "gf": 55,
-      "ga": 29,
-      "gd": 26,
+      "losses": 4,
+      "gf": 58,
+      "ga": 34,
+      "gd": 24,
       "points": 32
     },
     {
-      "rank": 5,
+      "rank": 6,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 20,
@@ -5981,19 +5994,6 @@
       "losses": 8,
       "gf": 65,
       "ga": 36,
-      "gd": 29,
-      "points": 30
-    },
-    {
-      "rank": 6,
-      "provider_id": 3675,
-      "name": "מ.כ. גליל גולן דרום",
-      "games": 16,
-      "wins": 9,
-      "draws": 3,
-      "losses": 4,
-      "gf": 58,
-      "ga": 29,
       "gd": 29,
       "points": 30
     },
