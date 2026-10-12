@@ -4,17 +4,5540 @@
     "name": "ליגת ילדים ג מפרץ",
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 26,
-    "currentRoundName": "מחזור 26"
+    "currentRoundNumber": 2,
+    "currentRoundName": "מחזור 1"
   },
-  "fetchedAt": "2026-10-12T00:06:40.357Z",
+  "fetchedAt": "2026-10-12T06:14:16.568Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
-    "roundParamDetected": null,
-    "roundNumberShiftApplied": 0
+    "roundParamDetected": "round",
+    "roundNumberShiftApplied": 1
   },
-  "rounds": [],
-  "gamesCount": 0,
-  "games": [],
-  "standings": []
+  "rounds": [
+    {
+      "number": 1,
+      "name": "מחזור 1",
+      "gamesCount": 7
+    },
+    {
+      "number": 2,
+      "name": "מחזור 2",
+      "gamesCount": 7
+    },
+    {
+      "number": 3,
+      "name": "מחזור 3",
+      "gamesCount": 7
+    },
+    {
+      "number": 4,
+      "name": "מחזור 4",
+      "gamesCount": 7
+    },
+    {
+      "number": 5,
+      "name": "מחזור 5",
+      "gamesCount": 7
+    },
+    {
+      "number": 6,
+      "name": "מחזור 6",
+      "gamesCount": 7
+    },
+    {
+      "number": 7,
+      "name": "מחזור 7",
+      "gamesCount": 7
+    },
+    {
+      "number": 8,
+      "name": "מחזור 8",
+      "gamesCount": 7
+    },
+    {
+      "number": 9,
+      "name": "מחזור 9",
+      "gamesCount": 7
+    },
+    {
+      "number": 10,
+      "name": "מחזור 10",
+      "gamesCount": 7
+    },
+    {
+      "number": 11,
+      "name": "מחזור 11",
+      "gamesCount": 7
+    },
+    {
+      "number": 12,
+      "name": "מחזור 12",
+      "gamesCount": 7
+    },
+    {
+      "number": 13,
+      "name": "מחזור 13",
+      "gamesCount": 7
+    },
+    {
+      "number": 14,
+      "name": "מחזור 14",
+      "gamesCount": 7
+    },
+    {
+      "number": 15,
+      "name": "מחזור 15",
+      "gamesCount": 7
+    }
+  ],
+  "gamesCount": 105,
+  "games": [
+    {
+      "id": "6acc33529878872a963a0779",
+      "provider_id": -1,
+      "date": "2026-10-16T21:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a077c",
+      "provider_id": -1,
+      "date": "2026-10-16T21:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a077e",
+      "provider_id": -1,
+      "date": "2026-10-16T21:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a077f",
+      "provider_id": -1,
+      "date": "2026-10-16T21:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0782",
+      "provider_id": -1,
+      "date": "2026-10-16T21:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0783",
+      "provider_id": -1,
+      "date": "2026-10-16T21:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0785",
+      "provider_id": -1,
+      "date": "2026-10-16T21:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0787",
+      "provider_id": -1,
+      "date": "2026-10-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a078a",
+      "provider_id": -1,
+      "date": "2026-10-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a078b",
+      "provider_id": -1,
+      "date": "2026-10-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a078d",
+      "provider_id": -1,
+      "date": "2026-10-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a078e",
+      "provider_id": -1,
+      "date": "2026-10-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0791",
+      "provider_id": -1,
+      "date": "2026-10-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0794",
+      "provider_id": -1,
+      "date": "2026-10-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0797",
+      "provider_id": -1,
+      "date": "2026-10-30T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 3",
+        "number": 3,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a079a",
+      "provider_id": -1,
+      "date": "2026-10-30T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 3",
+        "number": 3,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a079c",
+      "provider_id": -1,
+      "date": "2026-10-30T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 3",
+        "number": 3,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a079e",
+      "provider_id": -1,
+      "date": "2026-10-30T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 3",
+        "number": 3,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a079f",
+      "provider_id": -1,
+      "date": "2026-10-30T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 3",
+        "number": 3,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a07a1",
+      "provider_id": -1,
+      "date": "2026-10-30T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 3",
+        "number": 3,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a07a2",
+      "provider_id": -1,
+      "date": "2026-10-30T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 3",
+        "number": 3,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07a4",
+      "provider_id": -1,
+      "date": "2026-11-13T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 4",
+        "number": 4,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07a5",
+      "provider_id": -1,
+      "date": "2026-11-13T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 4",
+        "number": 4,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07a7",
+      "provider_id": -1,
+      "date": "2026-11-13T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 4",
+        "number": 4,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07a8",
+      "provider_id": -1,
+      "date": "2026-11-13T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 4",
+        "number": 4,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07ab",
+      "provider_id": -1,
+      "date": "2026-11-13T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 4",
+        "number": 4,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07ad",
+      "provider_id": -1,
+      "date": "2026-11-13T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 4",
+        "number": 4,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07b0",
+      "provider_id": -1,
+      "date": "2026-11-13T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 4",
+        "number": 4,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07b3",
+      "provider_id": -1,
+      "date": "2026-11-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 5",
+        "number": 5,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07b5",
+      "provider_id": -1,
+      "date": "2026-11-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 5",
+        "number": 5,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07b8",
+      "provider_id": -1,
+      "date": "2026-11-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 5",
+        "number": 5,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07ba",
+      "provider_id": -1,
+      "date": "2026-11-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 5",
+        "number": 5,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07bc",
+      "provider_id": -1,
+      "date": "2026-11-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 5",
+        "number": 5,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07be",
+      "provider_id": -1,
+      "date": "2026-11-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 5",
+        "number": 5,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07bf",
+      "provider_id": -1,
+      "date": "2026-11-27T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 5",
+        "number": 5,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07c1",
+      "provider_id": -1,
+      "date": "2026-12-04T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 6",
+        "number": 6,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07c2",
+      "provider_id": -1,
+      "date": "2026-12-04T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 6",
+        "number": 6,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07c3",
+      "provider_id": -1,
+      "date": "2026-12-04T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 6",
+        "number": 6,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07c5",
+      "provider_id": -1,
+      "date": "2026-12-04T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 6",
+        "number": 6,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07c7",
+      "provider_id": -1,
+      "date": "2026-12-04T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 6",
+        "number": 6,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07ca",
+      "provider_id": -1,
+      "date": "2026-12-04T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 6",
+        "number": 6,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07cc",
+      "provider_id": -1,
+      "date": "2026-12-04T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 6",
+        "number": 6,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07ce",
+      "provider_id": -1,
+      "date": "2026-12-18T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 7",
+        "number": 7,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07d1",
+      "provider_id": -1,
+      "date": "2026-12-18T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 7",
+        "number": 7,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07d3",
+      "provider_id": -1,
+      "date": "2026-12-18T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 7",
+        "number": 7,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07d6",
+      "provider_id": -1,
+      "date": "2026-12-18T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 7",
+        "number": 7,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07d7",
+      "provider_id": -1,
+      "date": "2026-12-18T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 7",
+        "number": 7,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07d8",
+      "provider_id": -1,
+      "date": "2026-12-18T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 7",
+        "number": 7,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07da",
+      "provider_id": -1,
+      "date": "2026-12-18T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 7",
+        "number": 7,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07dd",
+      "provider_id": -1,
+      "date": "2026-12-25T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 8",
+        "number": 8,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07de",
+      "provider_id": -1,
+      "date": "2026-12-25T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 8",
+        "number": 8,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07df",
+      "provider_id": -1,
+      "date": "2026-12-25T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 8",
+        "number": 8,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07e1",
+      "provider_id": -1,
+      "date": "2026-12-25T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 8",
+        "number": 8,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07e4",
+      "provider_id": -1,
+      "date": "2026-12-25T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 8",
+        "number": 8,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07e6",
+      "provider_id": -1,
+      "date": "2026-12-25T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 8",
+        "number": 8,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07e8",
+      "provider_id": -1,
+      "date": "2026-12-25T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 8",
+        "number": 8,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07eb",
+      "provider_id": -1,
+      "date": "2027-01-08T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 9",
+        "number": 9,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07ec",
+      "provider_id": -1,
+      "date": "2027-01-08T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 9",
+        "number": 9,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07ef",
+      "provider_id": -1,
+      "date": "2027-01-08T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 9",
+        "number": 9,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07f1",
+      "provider_id": -1,
+      "date": "2027-01-08T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 9",
+        "number": 9,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07f3",
+      "provider_id": -1,
+      "date": "2027-01-08T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 9",
+        "number": 9,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07f4",
+      "provider_id": -1,
+      "date": "2027-01-08T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 9",
+        "number": 9,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07f5",
+      "provider_id": -1,
+      "date": "2027-01-08T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 9",
+        "number": 9,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07f7",
+      "provider_id": -1,
+      "date": "2027-01-15T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 10",
+        "number": 10,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07f9",
+      "provider_id": -1,
+      "date": "2027-01-15T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 10",
+        "number": 10,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07fb",
+      "provider_id": -1,
+      "date": "2027-01-15T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 10",
+        "number": 10,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07fd",
+      "provider_id": -1,
+      "date": "2027-01-15T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 10",
+        "number": 10,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a07ff",
+      "provider_id": -1,
+      "date": "2027-01-15T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 10",
+        "number": 10,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0802",
+      "provider_id": -1,
+      "date": "2027-01-15T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 10",
+        "number": 10,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0804",
+      "provider_id": -1,
+      "date": "2027-01-15T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 10",
+        "number": 10,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0806",
+      "provider_id": -1,
+      "date": "2027-01-22T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 11",
+        "number": 11,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0808",
+      "provider_id": -1,
+      "date": "2027-01-22T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 11",
+        "number": 11,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a080a",
+      "provider_id": -1,
+      "date": "2027-01-22T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 11",
+        "number": 11,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a080c",
+      "provider_id": -1,
+      "date": "2027-01-22T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 11",
+        "number": 11,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a080e",
+      "provider_id": -1,
+      "date": "2027-01-22T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 11",
+        "number": 11,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0810",
+      "provider_id": -1,
+      "date": "2027-01-22T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 11",
+        "number": 11,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0811",
+      "provider_id": -1,
+      "date": "2027-01-22T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 11",
+        "number": 11,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0813",
+      "provider_id": -1,
+      "date": "2027-01-29T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 12",
+        "number": 12,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0815",
+      "provider_id": -1,
+      "date": "2027-01-29T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 12",
+        "number": 12,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0818",
+      "provider_id": -1,
+      "date": "2027-01-29T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 12",
+        "number": 12,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a081a",
+      "provider_id": -1,
+      "date": "2027-01-29T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 12",
+        "number": 12,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a081c",
+      "provider_id": -1,
+      "date": "2027-01-29T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 12",
+        "number": 12,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a081d",
+      "provider_id": -1,
+      "date": "2027-01-29T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 12",
+        "number": 12,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0820",
+      "provider_id": -1,
+      "date": "2027-01-29T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 12",
+        "number": 12,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0823",
+      "provider_id": -1,
+      "date": "2027-02-05T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0825",
+      "provider_id": -1,
+      "date": "2027-02-05T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0826",
+      "provider_id": -1,
+      "date": "2027-02-05T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0828",
+      "provider_id": -1,
+      "date": "2027-02-05T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a082a",
+      "provider_id": -1,
+      "date": "2027-02-05T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a082c",
+      "provider_id": -1,
+      "date": "2027-02-05T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a082e",
+      "provider_id": -1,
+      "date": "2027-02-05T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 13",
+        "number": 13,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0831",
+      "provider_id": -1,
+      "date": "2027-02-12T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0833",
+      "provider_id": -1,
+      "date": "2027-02-12T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0835",
+      "provider_id": -1,
+      "date": "2027-02-12T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0838",
+      "provider_id": -1,
+      "date": "2027-02-12T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0839",
+      "provider_id": -1,
+      "date": "2027-02-12T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a083b",
+      "provider_id": -1,
+      "date": "2027-02-12T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a083c",
+      "provider_id": -1,
+      "date": "2027-02-12T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 14",
+        "number": 14,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a083f",
+      "provider_id": -1,
+      "date": "2027-02-19T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef8b",
+        "provider_id": 7917,
+        "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0840",
+      "provider_id": -1,
+      "date": "2027-02-19T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6acc33529878872a963a0788",
+        "provider_id": 3696,
+        "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0842",
+      "provider_id": -1,
+      "date": "2027-02-19T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adeed7",
+        "provider_id": 2679,
+        "name": "הפ' גליל עליון",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים  \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0843",
+      "provider_id": -1,
+      "date": "2027-02-19T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי ",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09e9f1b7b720e58c00962",
+        "provider_id": 3129,
+        "name": "מ.כ. צעירי עילוט",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0845",
+      "provider_id": -1,
+      "date": "2027-02-19T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a0847",
+      "provider_id": -1,
+      "date": "2027-02-19T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33539878872a963a084a",
+      "provider_id": -1,
+      "date": "2027-02-19T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 15",
+        "number": 15,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    }
+  ],
+  "standings": [
+    {
+      "rank": 1,
+      "provider_id": 8484,
+      "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 2,
+      "provider_id": 5718,
+      "name": "בית\"ר נהריה 2",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 3,
+      "provider_id": 7299,
+      "name": "מכבי עוספיא 2",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 4,
+      "provider_id": 7709,
+      "name": "ה.מטה אשר 3",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 5,
+      "provider_id": 8295,
+      "name": "הפועל עכו 2",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 6,
+      "provider_id": 7700,
+      "name": "מ.ס.קרית ים  2",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 7,
+      "provider_id": 3129,
+      "name": "מ.כ. צעירי עילוט",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 8,
+      "provider_id": 6331,
+      "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 9,
+      "provider_id": 8368,
+      "name": "הפועל קרית חיים  \"צו פיוס\"",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 10,
+      "provider_id": 4389,
+      "name": "מ.כ. הפועל רמת ישי ",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 11,
+      "provider_id": 7471,
+      "name": "מכבי צור שלום ק. ביאליק 2",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 12,
+      "provider_id": 2679,
+      "name": "הפ' גליל עליון",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 13,
+      "provider_id": 7917,
+      "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 14,
+      "provider_id": 4829,
+      "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 15,
+      "provider_id": 3696,
+      "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    }
+  ]
 }
