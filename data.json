@@ -7,7 +7,7 @@
     "currentRoundNumber": 2,
     "currentRoundName": "מחזור 1"
   },
-  "fetchedAt": "2026-10-12T22:39:43.785Z",
+  "fetchedAt": "2026-10-13T03:16:39.360Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -92,56 +92,6 @@
   ],
   "gamesCount": 105,
   "games": [
-    {
-      "id": "6acc33529878872a963a0779",
-      "provider_id": -1,
-      "date": "2026-10-16T21:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 1",
-        "number": 1,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee89",
-        "provider_id": 8484,
-        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
-          },
-          "points": 0
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef3d",
-        "provider_id": 5718,
-        "name": "בית\"ר נהריה 2",
-        "has_logo": true,
-        "stats": {
-          "games": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
-          },
-          "points": 0
-        },
-        "goals": -1
-      }
-    },
     {
       "id": "6acc33529878872a963a077c",
       "provider_id": -1,
@@ -426,6 +376,56 @@
         "id": "68e09e961b7b720e58c00498",
         "provider_id": 4829,
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0779",
+      "provider_id": -1,
+      "date": "2026-10-19T14:15:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2",
         "has_logo": true,
         "stats": {
           "games": 0,
@@ -5346,32 +5346,6 @@
   "standings": [
     {
       "rank": 1,
-      "provider_id": 8484,
-      "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
-      "rank": 2,
-      "provider_id": 5718,
-      "name": "בית\"ר נהריה 2",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
-      "rank": 3,
       "provider_id": 7299,
       "name": "מכבי עוספיא 2",
       "games": 0,
@@ -5384,7 +5358,7 @@
       "points": 0
     },
     {
-      "rank": 4,
+      "rank": 2,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
       "games": 0,
@@ -5397,7 +5371,7 @@
       "points": 0
     },
     {
-      "rank": 5,
+      "rank": 3,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
       "games": 0,
@@ -5410,7 +5384,7 @@
       "points": 0
     },
     {
-      "rank": 6,
+      "rank": 4,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 0,
@@ -5423,7 +5397,7 @@
       "points": 0
     },
     {
-      "rank": 7,
+      "rank": 5,
       "provider_id": 3129,
       "name": "מ.כ. צעירי עילוט",
       "games": 0,
@@ -5436,7 +5410,7 @@
       "points": 0
     },
     {
-      "rank": 8,
+      "rank": 6,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
       "games": 0,
@@ -5449,7 +5423,7 @@
       "points": 0
     },
     {
-      "rank": 9,
+      "rank": 7,
       "provider_id": 8368,
       "name": "הפועל קרית חיים  \"צו פיוס\"",
       "games": 0,
@@ -5462,7 +5436,7 @@
       "points": 0
     },
     {
-      "rank": 10,
+      "rank": 8,
       "provider_id": 4389,
       "name": "מ.כ. הפועל רמת ישי ",
       "games": 0,
@@ -5475,7 +5449,7 @@
       "points": 0
     },
     {
-      "rank": 11,
+      "rank": 9,
       "provider_id": 7471,
       "name": "מכבי צור שלום ק. ביאליק 2",
       "games": 0,
@@ -5488,7 +5462,7 @@
       "points": 0
     },
     {
-      "rank": 12,
+      "rank": 10,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
       "games": 0,
@@ -5501,7 +5475,7 @@
       "points": 0
     },
     {
-      "rank": 13,
+      "rank": 11,
       "provider_id": 7917,
       "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
       "games": 0,
@@ -5514,9 +5488,35 @@
       "points": 0
     },
     {
-      "rank": 14,
+      "rank": 12,
       "provider_id": 4829,
       "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 13,
+      "provider_id": 8484,
+      "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 14,
+      "provider_id": 5718,
+      "name": "בית\"ר נהריה 2",
       "games": 0,
       "wins": 0,
       "draws": 0,
