@@ -7,7 +7,7 @@
     "currentRoundNumber": 2,
     "currentRoundName": "מחזור 1"
   },
-  "fetchedAt": "2026-10-16T12:00:10.309Z",
+  "fetchedAt": "2026-10-16T16:21:25.842Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -109,18 +109,18 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
@@ -128,18 +128,18 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
-        "goals": -1
+        "goals": 15
       }
     },
     {
@@ -509,16 +509,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -578,14 +578,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -909,14 +909,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -1209,16 +1209,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -1328,14 +1328,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -1559,14 +1559,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -1728,16 +1728,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -1859,16 +1859,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -2078,14 +2078,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -2259,14 +2259,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -2528,16 +2528,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -2578,16 +2578,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -2878,14 +2878,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -2909,14 +2909,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -3209,16 +3209,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -3328,16 +3328,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -3559,14 +3559,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -3859,16 +3859,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -4078,16 +4078,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -4259,14 +4259,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -4378,14 +4378,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -4509,16 +4509,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -4828,16 +4828,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -4909,14 +4909,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -5128,14 +5128,14 @@
         "name": "הפועל קרית חיים  \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
@@ -5159,16 +5159,16 @@
         "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 15,
             "against": 0,
-            "difference": 0
+            "difference": 15
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -5346,32 +5346,19 @@
   "standings": [
     {
       "rank": 1,
-      "provider_id": 8368,
-      "name": "הפועל קרית חיים  \"צו פיוס\"",
-      "games": 0,
-      "wins": 0,
+      "provider_id": 4389,
+      "name": "מ.כ. הפועל רמת ישי ",
+      "games": 1,
+      "wins": 1,
       "draws": 0,
       "losses": 0,
-      "gf": 0,
+      "gf": 15,
       "ga": 0,
-      "gd": 0,
-      "points": 0
+      "gd": 15,
+      "points": 3
     },
     {
       "rank": 2,
-      "provider_id": 4389,
-      "name": "מ.כ. הפועל רמת ישי ",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
-      "rank": 3,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
       "games": 0,
@@ -5384,7 +5371,7 @@
       "points": 0
     },
     {
-      "rank": 4,
+      "rank": 3,
       "provider_id": 7471,
       "name": "מכבי צור שלום ק. ביאליק 2",
       "games": 0,
@@ -5397,7 +5384,7 @@
       "points": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
       "games": 0,
@@ -5410,7 +5397,7 @@
       "points": 0
     },
     {
-      "rank": 6,
+      "rank": 5,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2",
       "games": 0,
@@ -5423,7 +5410,7 @@
       "points": 0
     },
     {
-      "rank": 7,
+      "rank": 6,
       "provider_id": 3129,
       "name": "מ.כ. צעירי עילוט",
       "games": 0,
@@ -5436,7 +5423,7 @@
       "points": 0
     },
     {
-      "rank": 8,
+      "rank": 7,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
       "games": 0,
@@ -5449,7 +5436,7 @@
       "points": 0
     },
     {
-      "rank": 9,
+      "rank": 8,
       "provider_id": 7917,
       "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
       "games": 0,
@@ -5462,7 +5449,7 @@
       "points": 0
     },
     {
-      "rank": 10,
+      "rank": 9,
       "provider_id": 4829,
       "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
       "games": 0,
@@ -5475,7 +5462,7 @@
       "points": 0
     },
     {
-      "rank": 11,
+      "rank": 10,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
       "games": 0,
@@ -5488,7 +5475,7 @@
       "points": 0
     },
     {
-      "rank": 12,
+      "rank": 11,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 0,
@@ -5501,7 +5488,7 @@
       "points": 0
     },
     {
-      "rank": 13,
+      "rank": 12,
       "provider_id": 3696,
       "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
       "games": 0,
@@ -5514,7 +5501,7 @@
       "points": 0
     },
     {
-      "rank": 14,
+      "rank": 13,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
       "games": 0,
@@ -5527,7 +5514,7 @@
       "points": 0
     },
     {
-      "rank": 15,
+      "rank": 14,
       "provider_id": 7299,
       "name": "מכבי עוספיא 2",
       "games": 0,
@@ -5537,6 +5524,19 @@
       "gf": 0,
       "ga": 0,
       "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 15,
+      "provider_id": 8368,
+      "name": "הפועל קרית חיים  \"צו פיוס\"",
+      "games": 1,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1,
+      "gf": 0,
+      "ga": 15,
+      "gd": -15,
       "points": 0
     }
   ]
