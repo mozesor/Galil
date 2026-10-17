@@ -7,7 +7,7 @@
     "currentRoundNumber": 2,
     "currentRoundName": "מחזור 1"
   },
-  "fetchedAt": "2026-10-17T13:21:34.429Z",
+  "fetchedAt": "2026-10-17T16:32:18.540Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -159,18 +159,18 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 3
       },
       "away": {
         "id": "68d612211b7b720e58adee74",
@@ -178,18 +178,18 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
-        "goals": -1
+        "goals": 5
       }
     },
     {
@@ -528,16 +528,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -959,16 +959,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -1028,14 +1028,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -1159,14 +1159,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -1278,16 +1278,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -1609,16 +1609,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -1778,14 +1778,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -1828,14 +1828,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -2028,16 +2028,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -2309,16 +2309,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -2509,14 +2509,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -2628,14 +2628,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -2828,16 +2828,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -2959,16 +2959,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -3159,14 +3159,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -3378,14 +3378,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -3578,16 +3578,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -3609,16 +3609,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -3809,14 +3809,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -4128,14 +4128,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -4328,16 +4328,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -4459,14 +4459,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -4878,14 +4878,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -4959,16 +4959,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -5078,16 +5078,16 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 5,
+            "against": 3,
+            "difference": 2
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -5109,14 +5109,14 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
+            "for": 3,
+            "against": 5,
+            "difference": -2
           },
           "points": 0
         },
@@ -5359,32 +5359,19 @@
     },
     {
       "rank": 2,
-      "provider_id": 2679,
-      "name": "הפ' גליל עליון",
-      "games": 0,
-      "wins": 0,
+      "provider_id": 7471,
+      "name": "מכבי צור שלום ק. ביאליק 2",
+      "games": 1,
+      "wins": 1,
       "draws": 0,
       "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
+      "gf": 5,
+      "ga": 3,
+      "gd": 2,
+      "points": 3
     },
     {
       "rank": 3,
-      "provider_id": 7471,
-      "name": "מכבי צור שלום ק. ביאליק 2",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
-      "rank": 4,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
       "games": 0,
@@ -5397,7 +5384,7 @@
       "points": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2",
       "games": 0,
@@ -5410,7 +5397,7 @@
       "points": 0
     },
     {
-      "rank": 6,
+      "rank": 5,
       "provider_id": 3129,
       "name": "מ.כ. צעירי עילוט",
       "games": 0,
@@ -5423,7 +5410,7 @@
       "points": 0
     },
     {
-      "rank": 7,
+      "rank": 6,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
       "games": 0,
@@ -5436,7 +5423,7 @@
       "points": 0
     },
     {
-      "rank": 8,
+      "rank": 7,
       "provider_id": 7917,
       "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
       "games": 0,
@@ -5449,7 +5436,7 @@
       "points": 0
     },
     {
-      "rank": 9,
+      "rank": 8,
       "provider_id": 4829,
       "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
       "games": 0,
@@ -5462,7 +5449,7 @@
       "points": 0
     },
     {
-      "rank": 10,
+      "rank": 9,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
       "games": 0,
@@ -5475,7 +5462,7 @@
       "points": 0
     },
     {
-      "rank": 11,
+      "rank": 10,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 0,
@@ -5488,7 +5475,7 @@
       "points": 0
     },
     {
-      "rank": 12,
+      "rank": 11,
       "provider_id": 3696,
       "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
       "games": 0,
@@ -5501,7 +5488,7 @@
       "points": 0
     },
     {
-      "rank": 13,
+      "rank": 12,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3",
       "games": 0,
@@ -5514,7 +5501,7 @@
       "points": 0
     },
     {
-      "rank": 14,
+      "rank": 13,
       "provider_id": 7299,
       "name": "מכבי עוספיא 2",
       "games": 0,
@@ -5524,6 +5511,19 @@
       "gf": 0,
       "ga": 0,
       "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 14,
+      "provider_id": 2679,
+      "name": "הפ' גליל עליון",
+      "games": 1,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1,
+      "gf": 3,
+      "ga": 5,
+      "gd": -2,
       "points": 0
     },
     {
