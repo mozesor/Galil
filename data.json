@@ -7,7 +7,7 @@
     "currentRoundNumber": 2,
     "currentRoundName": "מחזור 1"
   },
-  "fetchedAt": "2026-10-19T00:17:43.925Z",
+  "fetchedAt": "2026-10-19T04:59:19.021Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -243,6 +243,56 @@
       }
     },
     {
+      "id": "6acc33529878872a963a077e",
+      "provider_id": -1,
+      "date": "2026-10-21T15:45:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 1",
+        "number": 1,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
       "id": "6acc33529878872a963a077f",
       "provider_id": -1,
       "date": "2026-10-23T11:15:00.000Z",
@@ -326,56 +376,6 @@
         "id": "68e09e961b7b720e58c00498",
         "provider_id": 4829,
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
-          },
-          "points": 0
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "6acc33529878872a963a077e",
-      "provider_id": -1,
-      "date": "2026-10-25T17:45:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 1",
-        "number": 1,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee75",
-        "provider_id": 8295,
-        "name": "הפועל עכו 2",
-        "has_logo": true,
-        "stats": {
-          "games": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
-          },
-          "points": 0
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef7c",
-        "provider_id": 7700,
-        "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
           "games": 0,
@@ -5398,58 +5398,6 @@
     },
     {
       "rank": 5,
-      "provider_id": 3129,
-      "name": "מ.כ. צעירי עילוט",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
-      "rank": 6,
-      "provider_id": 6331,
-      "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
-      "rank": 7,
-      "provider_id": 7917,
-      "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
-      "rank": 8,
-      "provider_id": 4829,
-      "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
-      "rank": 9,
       "provider_id": 8295,
       "name": "הפועל עכו 2",
       "games": 0,
@@ -5462,9 +5410,61 @@
       "points": 0
     },
     {
-      "rank": 10,
+      "rank": 6,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 7,
+      "provider_id": 3129,
+      "name": "מ.כ. צעירי עילוט",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 8,
+      "provider_id": 6331,
+      "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 9,
+      "provider_id": 7917,
+      "name": "מכבי נווה שאנן 2 \"צו פיוס\"",
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "points": 0
+    },
+    {
+      "rank": 10,
+      "provider_id": 4829,
+      "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
       "games": 0,
       "wins": 0,
       "draws": 0,
