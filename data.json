@@ -7,7 +7,7 @@
     "currentRoundNumber": 2,
     "currentRoundName": "מחזור 1"
   },
-  "fetchedAt": "2026-10-21T01:08:35.546Z",
+  "fetchedAt": "2026-10-21T06:11:31.828Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -194,7 +194,7 @@
     },
     {
       "id": "6acc33529878872a963a0779",
-      "provider_id": -1,
+      "provider_id": 1158537,
       "date": "2026-10-20T14:15:00.000Z",
       "is_finished": false,
       "round": {
@@ -643,59 +643,9 @@
       }
     },
     {
-      "id": "6acc33529878872a963a0791",
-      "provider_id": -1,
-      "date": "2026-10-27T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 2",
-        "number": 2,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef07",
-        "provider_id": 7709,
-        "name": "ה.מטה אשר 3",
-        "has_logo": true,
-        "stats": {
-          "games": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
-          },
-          "points": 0
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee75",
-        "provider_id": 8295,
-        "name": "הפועל עכו 2",
-        "has_logo": true,
-        "stats": {
-          "games": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
-          },
-          "points": 0
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "6acc33529878872a963a0794",
       "provider_id": -1,
-      "date": "2026-10-27T22:00:00.000Z",
+      "date": "2026-10-28T15:00:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 2",
@@ -726,6 +676,56 @@
         "id": "68d612211b7b720e58adeed1",
         "provider_id": 7299,
         "name": "מכבי עוספיא 2",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0791",
+      "provider_id": -1,
+      "date": "2026-10-28T17:45:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef07",
+        "provider_id": 7709,
+        "name": "ה.מטה אשר 3",
+        "has_logo": true,
+        "stats": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 0,
+            "against": 0,
+            "difference": 0
+          },
+          "points": 0
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2",
         "has_logo": true,
         "stats": {
           "games": 0,
@@ -5515,8 +5515,8 @@
     },
     {
       "rank": 14,
-      "provider_id": 7709,
-      "name": "ה.מטה אשר 3",
+      "provider_id": 7299,
+      "name": "מכבי עוספיא 2",
       "games": 0,
       "wins": 0,
       "draws": 0,
@@ -5528,8 +5528,8 @@
     },
     {
       "rank": 15,
-      "provider_id": 7299,
-      "name": "מכבי עוספיא 2",
+      "provider_id": 7709,
+      "name": "ה.מטה אשר 3",
       "games": 0,
       "wins": 0,
       "draws": 0,
