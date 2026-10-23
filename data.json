@@ -7,7 +7,7 @@
     "currentRoundNumber": 2,
     "currentRoundName": "מחזור 1"
   },
-  "fetchedAt": "2026-10-23T10:17:19.694Z",
+  "fetchedAt": "2026-10-23T15:15:29.522Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -320,7 +320,7 @@
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adef9d",
@@ -339,7 +339,7 @@
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 2
       }
     },
     {
