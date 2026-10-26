@@ -7,7 +7,7 @@
     "currentRoundNumber": 2,
     "currentRoundName": "מחזור 1"
   },
-  "fetchedAt": "2026-10-26T00:52:09.144Z",
+  "fetchedAt": "2026-10-26T05:36:40.554Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -125,7 +125,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -344,9 +344,9 @@
     },
     {
       "id": "6acc33529878872a963a0785",
-      "provider_id": -1,
+      "provider_id": 1158544,
       "date": "2026-10-25T13:00:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 1",
         "number": 1,
@@ -359,14 +359,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -378,168 +378,18 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": 3
-      }
-    },
-    {
-      "id": "6acc33529878872a963a0787",
-      "provider_id": -1,
-      "date": "2026-10-27T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 2",
-        "number": 2,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68e09e961b7b720e58c00498",
-        "provider_id": 4829,
-        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 0,
-            "against": 0,
-            "difference": 0
-          },
-          "points": 0
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee89",
-        "provider_id": 8484,
-        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 4,
-            "against": 3,
-            "difference": 1
-          },
-          "points": 3
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "6acc33529878872a963a078b",
-      "provider_id": -1,
-      "date": "2026-10-27T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 2",
-        "number": 2,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "6ab9c8e2068ef07a1cafbc3d",
-        "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
-        "has_logo": true,
-        "stats": {
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
-          },
-          "points": 3
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adee74",
-        "provider_id": 7471,
-        "name": "מכבי צור שלום ק. ביאליק 2",
-        "has_logo": true,
-        "stats": {
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
-          },
-          "points": 3
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "6acc33529878872a963a078d",
-      "provider_id": -1,
-      "date": "2026-10-27T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 2",
-        "number": 2,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adef9d",
-        "provider_id": 6331,
-        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 2,
-            "against": 0,
-            "difference": 2
-          },
-          "points": 3
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68e09eac1b7b720e58c01005",
-        "provider_id": 8368,
-        "name": "הפועל קרית חיים \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "goals": {
-            "for": 0,
-            "against": 15,
-            "difference": -15
-          },
-          "points": 0
-        },
-        "goals": -1
       }
     },
     {
@@ -693,9 +543,59 @@
       }
     },
     {
-      "id": "6acc33529878872a963a0797",
+      "id": "6acc33529878872a963a078d",
       "provider_id": -1,
-      "date": "2026-10-30T22:00:00.000Z",
+      "date": "2026-10-28T18:20:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 2,
+            "against": 0,
+            "difference": 2
+          },
+          "points": 3
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "goals": {
+            "for": 0,
+            "against": 15,
+            "difference": -15
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a079e",
+      "provider_id": -1,
+      "date": "2026-10-30T11:00:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 3",
@@ -704,28 +604,28 @@
       },
       "venue": null,
       "home": {
-        "id": "68d612211b7b720e58adeed1",
-        "provider_id": 7299,
-        "name": "מכבי עספיא 2",
+        "id": "68e09eac1b7b720e58c01005",
+        "provider_id": 8368,
+        "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 15,
+            "difference": -15
           },
           "points": 0
         },
         "goals": -1
       },
       "away": {
-        "id": "68d612211b7b720e58adee89",
-        "provider_id": 8484,
-        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "id": "68d612211b7b720e58adef7c",
+        "provider_id": 7700,
+        "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -733,9 +633,9 @@
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 4,
-            "against": 3,
-            "difference": 1
+            "for": 2,
+            "against": 0,
+            "difference": 2
           },
           "points": 3
         },
@@ -843,56 +743,6 @@
       }
     },
     {
-      "id": "6acc33529878872a963a079e",
-      "provider_id": -1,
-      "date": "2026-10-30T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 3",
-        "number": 3,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68e09eac1b7b720e58c01005",
-        "provider_id": 8368,
-        "name": "הפועל קרית חיים \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "goals": {
-            "for": 0,
-            "against": 15,
-            "difference": -15
-          },
-          "points": 0
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef7c",
-        "provider_id": 7700,
-        "name": "מ.ס.קרית ים  2",
-        "has_logo": true,
-        "stats": {
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 2,
-            "against": 0,
-            "difference": 2
-          },
-          "points": 3
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "6acc33529878872a963a079f",
       "provider_id": -1,
       "date": "2026-10-30T22:00:00.000Z",
@@ -959,14 +809,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -1009,16 +859,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -1038,6 +888,56 @@
             "difference": 0
           },
           "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a078b",
+      "provider_id": -1,
+      "date": "2026-10-31T06:30:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "6ab9c8e2068ef07a1cafbc3d",
+        "provider_id": 4389,
+        "name": "מ.כ. הפועל רמת ישי",
+        "has_logo": true,
+        "stats": {
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 15,
+            "against": 0,
+            "difference": 15
+          },
+          "points": 3
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 5,
+            "against": 3,
+            "difference": 2
+          },
+          "points": 3
         },
         "goals": -1
       }
@@ -1128,16 +1028,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -1156,7 +1056,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -1178,14 +1078,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -1428,6 +1328,56 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "goals": {
+            "for": 0,
+            "against": 3,
+            "difference": -3
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0797",
+      "provider_id": -1,
+      "date": "2026-11-23T17:15:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 3",
+        "number": 3,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 4,
+            "against": 3,
+            "difference": 1
+          },
+          "points": 3
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adeed1",
+        "provider_id": 7299,
+        "name": "מכבי עספיא 2",
+        "has_logo": true,
+        "stats": {
           "games": 0,
           "wins": 0,
           "draws": 0,
@@ -1438,6 +1388,56 @@
             "difference": 0
           },
           "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a0787",
+      "provider_id": -1,
+      "date": "2026-11-27T11:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 2",
+        "number": 2,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68e09e961b7b720e58c00498",
+        "provider_id": 4829,
+        "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 3,
+            "against": 0,
+            "difference": 3
+          },
+          "points": 3
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee89",
+        "provider_id": 8484,
+        "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 4,
+            "against": 3,
+            "difference": 1
+          },
+          "points": 3
         },
         "goals": -1
       }
@@ -1659,14 +1659,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -1709,23 +1709,23 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -1856,7 +1856,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -1928,16 +1928,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -1978,14 +1978,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -2359,14 +2359,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -2409,16 +2409,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -2525,7 +2525,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -2575,7 +2575,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -2728,16 +2728,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -2778,14 +2778,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -3009,14 +3009,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -3059,16 +3059,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -3206,7 +3206,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -3325,7 +3325,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -3478,16 +3478,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -3528,14 +3528,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -3659,14 +3659,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -3709,16 +3709,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -3856,7 +3856,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -4075,7 +4075,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -4228,16 +4228,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -4278,14 +4278,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -4309,14 +4309,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -4359,16 +4359,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       },
@@ -4506,7 +4506,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -4825,7 +4825,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -4978,16 +4978,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 0,
+            "for": 3,
             "against": 0,
-            "difference": 0
+            "difference": 3
           },
-          "points": 0
+          "points": 3
         },
         "goals": -1
       }
@@ -5009,14 +5009,14 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 3,
+            "difference": -3
           },
           "points": 0
         },
@@ -5156,7 +5156,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -5347,7 +5347,7 @@
     {
       "rank": 1,
       "provider_id": 4389,
-      "name": "מ.כ. הפועל רמת ישי ",
+      "name": "מ.כ. הפועל רמת ישי",
       "games": 1,
       "wins": 1,
       "draws": 0,
@@ -5359,6 +5359,19 @@
     },
     {
       "rank": 2,
+      "provider_id": 4829,
+      "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+      "games": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "gf": 3,
+      "ga": 0,
+      "gd": 3,
+      "points": 3
+    },
+    {
+      "rank": 3,
       "provider_id": 7471,
       "name": "מכבי צור שלום ק. ביאליק 2",
       "games": 1,
@@ -5371,7 +5384,7 @@
       "points": 3
     },
     {
-      "rank": 3,
+      "rank": 4,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 1,
@@ -5384,7 +5397,7 @@
       "points": 3
     },
     {
-      "rank": 4,
+      "rank": 5,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
       "games": 1,
@@ -5397,7 +5410,7 @@
       "points": 3
     },
     {
-      "rank": 5,
+      "rank": 6,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
       "games": 1,
@@ -5410,33 +5423,7 @@
       "points": 3
     },
     {
-      "rank": 6,
-      "provider_id": 7917,
-      "name": "מכבי נווה שאנן 2",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
       "rank": 7,
-      "provider_id": 4829,
-      "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
-      "rank": 8,
       "provider_id": 7299,
       "name": "מכבי עספיא 2",
       "games": 0,
@@ -5449,7 +5436,7 @@
       "points": 0
     },
     {
-      "rank": 9,
+      "rank": 8,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3 \"צו פיוס\"",
       "games": 0,
@@ -5462,7 +5449,7 @@
       "points": 0
     },
     {
-      "rank": 10,
+      "rank": 9,
       "provider_id": 3696,
       "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
       "games": 0,
@@ -5475,7 +5462,7 @@
       "points": 0
     },
     {
-      "rank": 11,
+      "rank": 10,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2 \"צו פיוס\"",
       "games": 1,
@@ -5488,7 +5475,7 @@
       "points": 0
     },
     {
-      "rank": 12,
+      "rank": 11,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
       "games": 1,
@@ -5501,7 +5488,7 @@
       "points": 0
     },
     {
-      "rank": 13,
+      "rank": 12,
       "provider_id": 8295,
       "name": "הפועל עכו 2 \"צו פיוס\"",
       "games": 1,
@@ -5514,7 +5501,7 @@
       "points": 0
     },
     {
-      "rank": 14,
+      "rank": 13,
       "provider_id": 3129,
       "name": "מ.כ. צעירי עילוט",
       "games": 1,
@@ -5524,6 +5511,19 @@
       "gf": 0,
       "ga": 2,
       "gd": -2,
+      "points": 0
+    },
+    {
+      "rank": 14,
+      "provider_id": 7917,
+      "name": "מכבי נווה שאנן 2",
+      "games": 1,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1,
+      "gf": 0,
+      "ga": 3,
+      "gd": -3,
       "points": 0
     },
     {
