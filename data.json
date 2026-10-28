@@ -7,7 +7,7 @@
     "currentRoundNumber": 3,
     "currentRoundName": "מחזור 2"
   },
-  "fetchedAt": "2026-10-28T01:55:29.917Z",
+  "fetchedAt": "2026-10-28T07:44:39.523Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -125,7 +125,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -756,7 +756,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -1006,7 +1006,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -1725,7 +1725,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -1856,7 +1856,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -2525,7 +2525,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -2575,7 +2575,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -3206,7 +3206,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -3325,7 +3325,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -3856,7 +3856,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -4075,7 +4075,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -4506,7 +4506,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -4825,7 +4825,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -5156,7 +5156,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -5347,7 +5347,7 @@
     {
       "rank": 1,
       "provider_id": 4389,
-      "name": "מ.כ. הפועל רמת ישי ",
+      "name": "מ.כ. הפועל רמת ישי",
       "games": 1,
       "wins": 1,
       "draws": 0,
