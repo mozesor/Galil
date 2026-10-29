@@ -7,7 +7,7 @@
     "currentRoundNumber": 3,
     "currentRoundName": "מחזור 2"
   },
-  "fetchedAt": "2026-10-29T17:11:55.225Z",
+  "fetchedAt": "2026-10-29T21:53:55.706Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
