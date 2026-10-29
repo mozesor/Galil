@@ -7,7 +7,7 @@
     "currentRoundNumber": 3,
     "currentRoundName": "מחזור 2"
   },
-  "fetchedAt": "2026-10-28T23:54:12.217Z",
+  "fetchedAt": "2026-10-29T03:34:36.846Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -125,7 +125,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -394,7 +394,7 @@
     },
     {
       "id": "6acc33529878872a963a0794",
-      "provider_id": -1,
+      "provider_id": 1158552,
       "date": "2026-10-28T15:00:00.000Z",
       "is_finished": true,
       "round": {
@@ -444,7 +444,7 @@
     },
     {
       "id": "6acc33529878872a963a0791",
-      "provider_id": -1,
+      "provider_id": 1158551,
       "date": "2026-10-28T17:45:00.000Z",
       "is_finished": true,
       "round": {
@@ -494,7 +494,7 @@
     },
     {
       "id": "6acc33529878872a963a078d",
-      "provider_id": -1,
+      "provider_id": 1158549,
       "date": "2026-10-28T18:20:00.000Z",
       "is_finished": true,
       "round": {
@@ -593,109 +593,9 @@
       }
     },
     {
-      "id": "6acc33529878872a963a079a",
-      "provider_id": -1,
-      "date": "2026-10-30T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 3",
-        "number": 3,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee75",
-        "provider_id": 8295,
-        "name": "הפועל עכו 2 \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 2,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
-          },
-          "points": 0
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef3d",
-        "provider_id": 5718,
-        "name": "בית\"ר נהריה 2 \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 2,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
-          },
-          "points": 3
-        },
-        "goals": -1
-      }
-    },
-    {
-      "id": "6acc33529878872a963a079f",
-      "provider_id": -1,
-      "date": "2026-10-30T22:00:00.000Z",
-      "is_finished": false,
-      "round": {
-        "name": "מחזור 3",
-        "number": 3,
-        "type": "regular"
-      },
-      "venue": null,
-      "home": {
-        "id": "68d612211b7b720e58adee74",
-        "provider_id": 7471,
-        "name": "מכבי צור שלום ק. ביאליק 2",
-        "has_logo": true,
-        "stats": {
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
-          },
-          "points": 3
-        },
-        "goals": -1
-      },
-      "away": {
-        "id": "68d612211b7b720e58adef9d",
-        "provider_id": 6331,
-        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
-        "has_logo": true,
-        "stats": {
-          "games": 2,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "goals": {
-            "for": 8,
-            "against": 2,
-            "difference": 6
-          },
-          "points": 6
-        },
-        "goals": -1
-      }
-    },
-    {
       "id": "6acc33529878872a963a07a1",
       "provider_id": -1,
-      "date": "2026-10-30T22:00:00.000Z",
+      "date": "2026-10-30T11:30:00.000Z",
       "is_finished": false,
       "round": {
         "name": "מחזור 3",
@@ -756,7 +656,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -893,6 +793,56 @@
       }
     },
     {
+      "id": "6acc33529878872a963a079a",
+      "provider_id": -1,
+      "date": "2026-11-06T11:30:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 3",
+        "number": 3,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adef3d",
+        "provider_id": 5718,
+        "name": "בית\"ר נהריה 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "goals": {
+            "for": 11,
+            "against": 4,
+            "difference": 7
+          },
+          "points": 3
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adee75",
+        "provider_id": 8295,
+        "name": "הפועל עכו 2 \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "goals": {
+            "for": 2,
+            "against": 7,
+            "difference": -5
+          },
+          "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
       "id": "6acc33539878872a963a07a4",
       "provider_id": -1,
       "date": "2026-11-13T22:00:00.000Z",
@@ -1006,7 +956,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -1725,7 +1675,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -1856,7 +1806,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -2138,6 +2088,56 @@
             "difference": -2
           },
           "points": 0
+        },
+        "goals": -1
+      }
+    },
+    {
+      "id": "6acc33529878872a963a079f",
+      "provider_id": -1,
+      "date": "2026-12-07T22:00:00.000Z",
+      "is_finished": false,
+      "round": {
+        "name": "מחזור 3",
+        "number": 3,
+        "type": "regular"
+      },
+      "venue": null,
+      "home": {
+        "id": "68d612211b7b720e58adee74",
+        "provider_id": 7471,
+        "name": "מכבי צור שלום ק. ביאליק 2",
+        "has_logo": true,
+        "stats": {
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 5,
+            "against": 3,
+            "difference": 2
+          },
+          "points": 3
+        },
+        "goals": -1
+      },
+      "away": {
+        "id": "68d612211b7b720e58adef9d",
+        "provider_id": 6331,
+        "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
+        "has_logo": true,
+        "stats": {
+          "games": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "goals": {
+            "for": 8,
+            "against": 2,
+            "difference": 6
+          },
+          "points": 6
         },
         "goals": -1
       }
@@ -2525,7 +2525,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -2575,7 +2575,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -3206,7 +3206,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -3325,7 +3325,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -3856,7 +3856,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -4075,7 +4075,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -4506,7 +4506,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -4825,7 +4825,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -5156,7 +5156,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 1,
@@ -5360,7 +5360,7 @@
     {
       "rank": 2,
       "provider_id": 4389,
-      "name": "מ.כ. הפועל רמת ישי",
+      "name": "מ.כ. הפועל רמת ישי ",
       "games": 1,
       "wins": 1,
       "draws": 0,
