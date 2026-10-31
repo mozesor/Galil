@@ -4,10 +4,10 @@
     "name": "ליגת ילדים ג מפרץ",
     "league_id_param": 1276,
     "season_id": null,
-    "currentRoundNumber": 3,
-    "currentRoundName": "מחזור 2"
+    "currentRoundNumber": 4,
+    "currentRoundName": "מחזור 3"
   },
-  "fetchedAt": "2026-10-31T09:05:02.097Z",
+  "fetchedAt": "2026-10-31T15:25:27.984Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -125,19 +125,19 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": 15
       }
@@ -178,14 +178,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -646,7 +646,7 @@
       "id": "6acc33529878872a963a078b",
       "provider_id": 1158548,
       "date": "2026-10-31T06:30:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 2",
         "number": 2,
@@ -656,21 +656,21 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
-        "goals": -1
+        "goals": 8
       },
       "away": {
         "id": "68d612211b7b720e58adee74",
@@ -678,18 +678,18 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
-        "goals": -1
+        "goals": 2
       }
     },
     {
@@ -956,19 +956,19 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -1028,14 +1028,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -1559,14 +1559,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -1675,19 +1675,19 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -1806,19 +1806,19 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -1978,14 +1978,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -2109,14 +2109,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -2309,14 +2309,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -2525,19 +2525,19 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -2575,19 +2575,19 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -2828,14 +2828,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -2959,14 +2959,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -3206,19 +3206,19 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -3325,19 +3325,19 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -3578,14 +3578,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -3609,14 +3609,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -3856,19 +3856,19 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -4075,19 +4075,19 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -4328,14 +4328,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -4506,19 +4506,19 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -4825,19 +4825,19 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -4959,14 +4959,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -5078,14 +5078,14 @@
         "name": "מכבי צור שלום ק. ביאליק 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
-            "for": 5,
-            "against": 3,
-            "difference": 2
+            "for": 7,
+            "against": 11,
+            "difference": -4
           },
           "points": 3
         },
@@ -5156,19 +5156,19 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 15,
-            "against": 0,
-            "difference": 15
+            "for": 23,
+            "against": 2,
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -5346,6 +5346,19 @@
   "standings": [
     {
       "rank": 1,
+      "provider_id": 4389,
+      "name": "מ.כ. הפועל רמת ישי",
+      "games": 2,
+      "wins": 2,
+      "draws": 0,
+      "losses": 0,
+      "gf": 23,
+      "ga": 2,
+      "gd": 21,
+      "points": 6
+    },
+    {
+      "rank": 2,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
       "games": 2,
@@ -5358,7 +5371,7 @@
       "points": 6
     },
     {
-      "rank": 2,
+      "rank": 3,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 2,
@@ -5369,19 +5382,6 @@
       "ga": 1,
       "gd": 5,
       "points": 6
-    },
-    {
-      "rank": 3,
-      "provider_id": 4389,
-      "name": "מ.כ. הפועל רמת ישי ",
-      "games": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "gf": 15,
-      "ga": 0,
-      "gd": 15,
-      "points": 3
     },
     {
       "rank": 4,
@@ -5424,19 +5424,6 @@
     },
     {
       "rank": 7,
-      "provider_id": 7471,
-      "name": "מכבי צור שלום ק. ביאליק 2",
-      "games": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "gf": 5,
-      "ga": 3,
-      "gd": 2,
-      "points": 3
-    },
-    {
-      "rank": 8,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
       "games": 1,
@@ -5446,6 +5433,19 @@
       "gf": 4,
       "ga": 3,
       "gd": 1,
+      "points": 3
+    },
+    {
+      "rank": 8,
+      "provider_id": 7471,
+      "name": "מכבי צור שלום ק. ביאליק 2",
+      "games": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "gf": 7,
+      "ga": 11,
+      "gd": -4,
       "points": 3
     },
     {
