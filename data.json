@@ -7,7 +7,7 @@
     "currentRoundNumber": 4,
     "currentRoundName": "מחזור 3"
   },
-  "fetchedAt": "2026-11-01T15:21:55.340Z",
+  "fetchedAt": "2026-11-01T19:49:25.968Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -378,16 +378,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": 3
       }
@@ -696,7 +696,7 @@
       "id": "6acc33529878872a963a07a2",
       "provider_id": 1158560,
       "date": "2026-11-01T13:00:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 3",
         "number": 3,
@@ -709,18 +709,18 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
-        "goals": -1
+        "goals": 18
       },
       "away": {
         "id": "6acc33529878872a963a0788",
@@ -728,18 +728,18 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       }
     },
     {
@@ -878,14 +878,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -928,16 +928,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -1209,14 +1209,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -1359,16 +1359,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -1659,16 +1659,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -1709,14 +1709,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -1828,14 +1828,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -1878,16 +1878,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -2409,16 +2409,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -2459,14 +2459,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -2678,14 +2678,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -2728,16 +2728,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -3059,16 +3059,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -3109,14 +3109,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -3428,14 +3428,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -3478,16 +3478,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -3709,16 +3709,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -3759,14 +3759,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -4178,14 +4178,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -4228,16 +4228,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -4359,16 +4359,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -4409,14 +4409,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -4928,14 +4928,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -4978,16 +4978,16 @@
         "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 3,
+            "for": 21,
             "against": 0,
-            "difference": 3
+            "difference": 21
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -5059,14 +5059,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "goals": {
             "for": 0,
-            "against": 0,
-            "difference": 0
+            "against": 18,
+            "difference": -18
           },
           "points": 0
         },
@@ -5359,6 +5359,19 @@
     },
     {
       "rank": 2,
+      "provider_id": 4829,
+      "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
+      "games": 2,
+      "wins": 2,
+      "draws": 0,
+      "losses": 0,
+      "gf": 21,
+      "ga": 0,
+      "gd": 21,
+      "points": 6
+    },
+    {
+      "rank": 3,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
       "games": 2,
@@ -5371,7 +5384,7 @@
       "points": 6
     },
     {
-      "rank": 3,
+      "rank": 4,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 2,
@@ -5384,7 +5397,7 @@
       "points": 6
     },
     {
-      "rank": 4,
+      "rank": 5,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2 \"צו פיוס\"",
       "games": 2,
@@ -5397,7 +5410,7 @@
       "points": 3
     },
     {
-      "rank": 5,
+      "rank": 6,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3 \"צו פיוס\"",
       "games": 1,
@@ -5406,19 +5419,6 @@
       "losses": 0,
       "gf": 5,
       "ga": 2,
-      "gd": 3,
-      "points": 3
-    },
-    {
-      "rank": 6,
-      "provider_id": 4829,
-      "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
-      "games": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "gf": 3,
-      "ga": 0,
       "gd": 3,
       "points": 3
     },
@@ -5450,19 +5450,6 @@
     },
     {
       "rank": 9,
-      "provider_id": 3696,
-      "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
-      "games": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "points": 0
-    },
-    {
-      "rank": 10,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
       "games": 1,
@@ -5475,7 +5462,7 @@
       "points": 0
     },
     {
-      "rank": 11,
+      "rank": 10,
       "provider_id": 3129,
       "name": "מ.כ. צעירי עילוט",
       "games": 1,
@@ -5488,7 +5475,7 @@
       "points": 0
     },
     {
-      "rank": 12,
+      "rank": 11,
       "provider_id": 7917,
       "name": "מכבי נווה שאנן 2",
       "games": 1,
@@ -5501,7 +5488,7 @@
       "points": 0
     },
     {
-      "rank": 13,
+      "rank": 12,
       "provider_id": 8295,
       "name": "הפועל עכו 2 \"צו פיוס\"",
       "games": 2,
@@ -5514,7 +5501,7 @@
       "points": 0
     },
     {
-      "rank": 14,
+      "rank": 13,
       "provider_id": 7299,
       "name": "מכבי עספיא 2",
       "games": 1,
@@ -5524,6 +5511,19 @@
       "gf": 0,
       "ga": 8,
       "gd": -8,
+      "points": 0
+    },
+    {
+      "rank": 14,
+      "provider_id": 3696,
+      "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
+      "games": 1,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1,
+      "gf": 0,
+      "ga": 18,
+      "gd": -18,
       "points": 0
     },
     {
