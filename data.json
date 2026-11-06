@@ -7,7 +7,7 @@
     "currentRoundNumber": 4,
     "currentRoundName": "מחזור 3"
   },
-  "fetchedAt": "2026-11-06T04:18:10.290Z",
+  "fetchedAt": "2026-11-06T12:18:38.967Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -309,14 +309,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -459,16 +459,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": 5
       },
@@ -746,7 +746,7 @@
       "id": "6acc33529878872a963a079c",
       "provider_id": -1,
       "date": "2026-11-06T10:00:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 3",
         "number": 3,
@@ -759,18 +759,18 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adef07",
@@ -778,18 +778,18 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
-        "goals": -1
+        "goals": 2
       }
     },
     {
@@ -1059,16 +1059,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -1128,14 +1128,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -1278,14 +1278,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -1459,14 +1459,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -1578,16 +1578,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -2078,14 +2078,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -2178,16 +2178,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -2209,14 +2209,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -2378,16 +2378,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -2709,16 +2709,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -2859,14 +2859,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -2978,14 +2978,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -3128,16 +3128,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -3359,16 +3359,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -3678,14 +3678,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -3878,16 +3878,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -4009,16 +4009,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -4209,14 +4209,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -4428,14 +4428,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -4628,16 +4628,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -4678,16 +4678,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -4859,14 +4859,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -5178,14 +5178,14 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "goals": {
             "for": 0,
-            "against": 2,
-            "difference": -2
+            "against": 4,
+            "difference": -4
           },
           "points": 0
         },
@@ -5309,16 +5309,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 5,
+            "for": 7,
             "against": 2,
-            "difference": 3
+            "difference": 5
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -5385,6 +5385,19 @@
     },
     {
       "rank": 4,
+      "provider_id": 7709,
+      "name": "ה.מטה אשר 3 \"צו פיוס\"",
+      "games": 2,
+      "wins": 2,
+      "draws": 0,
+      "losses": 0,
+      "gf": 7,
+      "ga": 2,
+      "gd": 5,
+      "points": 6
+    },
+    {
+      "rank": 5,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 2,
@@ -5397,7 +5410,7 @@
       "points": 6
     },
     {
-      "rank": 5,
+      "rank": 6,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2 \"צו פיוס\"",
       "games": 2,
@@ -5407,19 +5420,6 @@
       "gf": 11,
       "ga": 4,
       "gd": 7,
-      "points": 3
-    },
-    {
-      "rank": 6,
-      "provider_id": 7709,
-      "name": "ה.מטה אשר 3 \"צו פיוס\"",
-      "games": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "gf": 5,
-      "ga": 2,
-      "gd": 3,
       "points": 3
     },
     {
@@ -5463,19 +5463,6 @@
     },
     {
       "rank": 10,
-      "provider_id": 3129,
-      "name": "מ.כ. צעירי עילוט",
-      "games": 1,
-      "wins": 0,
-      "draws": 0,
-      "losses": 1,
-      "gf": 0,
-      "ga": 2,
-      "gd": -2,
-      "points": 0
-    },
-    {
-      "rank": 11,
       "provider_id": 7917,
       "name": "מכבי נווה שאנן 2",
       "games": 1,
@@ -5485,6 +5472,19 @@
       "gf": 0,
       "ga": 3,
       "gd": -3,
+      "points": 0
+    },
+    {
+      "rank": 11,
+      "provider_id": 3129,
+      "name": "מ.כ. צעירי עילוט",
+      "games": 2,
+      "wins": 0,
+      "draws": 0,
+      "losses": 2,
+      "gf": 0,
+      "ga": 4,
+      "gd": -4,
       "points": 0
     },
     {
