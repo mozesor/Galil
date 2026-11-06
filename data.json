@@ -7,7 +7,7 @@
     "currentRoundNumber": 4,
     "currentRoundName": "מחזור 3"
   },
-  "fetchedAt": "2026-11-06T12:18:38.967Z",
+  "fetchedAt": "2026-11-06T19:35:31.909Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -125,7 +125,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -159,16 +159,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": 3
       },
@@ -228,16 +228,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": 3
       }
@@ -259,14 +259,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -359,16 +359,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": 0
       },
@@ -409,16 +409,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": 8
       },
@@ -478,14 +478,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -596,7 +596,7 @@
       "id": "6acc33529878872a963a07a1",
       "provider_id": 1158559,
       "date": "2026-10-30T11:30:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 3",
         "number": 3,
@@ -609,18 +609,18 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
-        "goals": -1
+        "goals": 0
       },
       "away": {
         "id": "68d612211b7b720e58adeed7",
@@ -628,18 +628,18 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
-        "goals": -1
+        "goals": 0
       }
     },
     {
@@ -656,7 +656,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -744,7 +744,7 @@
     },
     {
       "id": "6acc33529878872a963a079c",
-      "provider_id": -1,
+      "provider_id": 1158555,
       "date": "2026-11-06T10:00:00.000Z",
       "is_finished": true,
       "round": {
@@ -794,9 +794,9 @@
     },
     {
       "id": "6acc33529878872a963a079a",
-      "provider_id": -1,
+      "provider_id": 1158554,
       "date": "2026-11-06T11:30:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 3",
         "number": 3,
@@ -809,18 +809,18 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
-        "goals": -1
+        "goals": 6
       },
       "away": {
         "id": "68d612211b7b720e58adee75",
@@ -828,18 +828,18 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -909,16 +909,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -956,7 +956,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -978,16 +978,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -1109,16 +1109,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -1178,14 +1178,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -1228,16 +1228,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -1409,14 +1409,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -1528,16 +1528,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -1609,16 +1609,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -1675,7 +1675,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -1728,16 +1728,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -1778,16 +1778,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -1806,7 +1806,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -1928,16 +1928,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -1959,16 +1959,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -2059,14 +2059,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -2278,14 +2278,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -2359,16 +2359,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -2509,23 +2509,23 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -2575,7 +2575,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -2628,16 +2628,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -2759,16 +2759,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -2778,16 +2778,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -2809,14 +2809,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -3009,16 +3009,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -3078,16 +3078,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -3159,16 +3159,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -3206,7 +3206,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -3325,7 +3325,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -3378,16 +3378,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -3409,16 +3409,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -3509,14 +3509,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -3528,16 +3528,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -3659,16 +3659,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -3728,14 +3728,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -3809,16 +3809,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -3828,16 +3828,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -3856,7 +3856,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -4059,23 +4059,23 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -4128,16 +4128,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -4159,14 +4159,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -4278,16 +4278,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -4309,16 +4309,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -4459,16 +4459,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -4478,14 +4478,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -4506,7 +4506,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -4578,16 +4578,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -4709,16 +4709,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       },
@@ -4809,14 +4809,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -4825,7 +4825,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -4878,16 +4878,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -5009,16 +5009,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 0,
             "against": 3,
             "difference": -3
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -5109,16 +5109,16 @@
         "name": "הפ' גליל עליון",
         "has_logo": true,
         "stats": {
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
             "for": 3,
             "against": 5,
             "difference": -2
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -5156,7 +5156,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 2,
@@ -5228,14 +5228,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 2,
-            "against": 7,
-            "difference": -5
+            "for": 3,
+            "against": 13,
+            "difference": -10
           },
           "points": 0
         },
@@ -5328,16 +5328,16 @@
         "name": "בית\"ר נהריה 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "draws": 0,
           "losses": 1,
           "goals": {
-            "for": 11,
-            "against": 4,
-            "difference": 7
+            "for": 17,
+            "against": 5,
+            "difference": 12
           },
-          "points": 3
+          "points": 6
         },
         "goals": -1
       }
@@ -5347,7 +5347,7 @@
     {
       "rank": 1,
       "provider_id": 4389,
-      "name": "מ.כ. הפועל רמת ישי ",
+      "name": "מ.כ. הפועל רמת ישי",
       "games": 2,
       "wins": 2,
       "draws": 0,
@@ -5372,6 +5372,19 @@
     },
     {
       "rank": 3,
+      "provider_id": 5718,
+      "name": "בית\"ר נהריה 2 \"צו פיוס\"",
+      "games": 3,
+      "wins": 2,
+      "draws": 0,
+      "losses": 1,
+      "gf": 17,
+      "ga": 5,
+      "gd": 12,
+      "points": 6
+    },
+    {
+      "rank": 4,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
       "games": 2,
@@ -5384,7 +5397,7 @@
       "points": 6
     },
     {
-      "rank": 4,
+      "rank": 5,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3 \"צו פיוס\"",
       "games": 2,
@@ -5397,7 +5410,7 @@
       "points": 6
     },
     {
-      "rank": 5,
+      "rank": 6,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 2,
@@ -5408,19 +5421,6 @@
       "ga": 1,
       "gd": 5,
       "points": 6
-    },
-    {
-      "rank": 6,
-      "provider_id": 5718,
-      "name": "בית\"ר נהריה 2 \"צו פיוס\"",
-      "games": 2,
-      "wins": 1,
-      "draws": 0,
-      "losses": 1,
-      "gf": 11,
-      "ga": 4,
-      "gd": 7,
-      "points": 3
     },
     {
       "rank": 7,
@@ -5452,27 +5452,27 @@
       "rank": 9,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
-      "games": 1,
+      "games": 2,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 1,
       "gf": 3,
       "ga": 5,
       "gd": -2,
-      "points": 0
+      "points": 1
     },
     {
       "rank": 10,
       "provider_id": 7917,
       "name": "מכבי נווה שאנן 2",
-      "games": 1,
+      "games": 2,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 1,
       "gf": 0,
       "ga": 3,
       "gd": -3,
-      "points": 0
+      "points": 1
     },
     {
       "rank": 11,
@@ -5489,19 +5489,6 @@
     },
     {
       "rank": 12,
-      "provider_id": 8295,
-      "name": "הפועל עכו 2 \"צו פיוס\"",
-      "games": 2,
-      "wins": 0,
-      "draws": 0,
-      "losses": 2,
-      "gf": 2,
-      "ga": 7,
-      "gd": -5,
-      "points": 0
-    },
-    {
-      "rank": 13,
       "provider_id": 7299,
       "name": "מכבי עספיא 2",
       "games": 1,
@@ -5511,6 +5498,19 @@
       "gf": 0,
       "ga": 8,
       "gd": -8,
+      "points": 0
+    },
+    {
+      "rank": 13,
+      "provider_id": 8295,
+      "name": "הפועל עכו 2 \"צו פיוס\"",
+      "games": 3,
+      "wins": 0,
+      "draws": 0,
+      "losses": 3,
+      "gf": 3,
+      "ga": 13,
+      "gd": -10,
       "points": 0
     },
     {
