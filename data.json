@@ -7,7 +7,7 @@
     "currentRoundNumber": 5,
     "currentRoundName": "מחזור 4"
   },
-  "fetchedAt": "2026-11-14T18:54:01.816Z",
+  "fetchedAt": "2026-11-14T22:48:56.175Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -109,14 +109,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -459,16 +459,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": 5
       },
@@ -528,14 +528,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -559,14 +559,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -778,16 +778,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": 2
       }
@@ -1096,7 +1096,7 @@
       "id": "6acc33539878872a963a07ab",
       "provider_id": -1,
       "date": "2026-11-14T17:30:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 4",
         "number": 4,
@@ -1109,18 +1109,18 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
-        "goals": -1
+        "goals": 7
       },
       "away": {
         "id": "68e09eac1b7b720e58c01005",
@@ -1128,18 +1128,18 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 0
       }
     },
     {
@@ -1509,14 +1509,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -1578,16 +1578,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -2028,14 +2028,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -2178,16 +2178,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -2259,14 +2259,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -2378,16 +2378,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -2709,16 +2709,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       },
@@ -2878,14 +2878,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -2909,14 +2909,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -3128,16 +3128,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -3359,16 +3359,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       },
@@ -3559,14 +3559,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -3878,16 +3878,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -4009,16 +4009,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       },
@@ -4259,14 +4259,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -4378,14 +4378,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -4628,16 +4628,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -4678,16 +4678,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -4909,14 +4909,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -5128,14 +5128,14 @@
         "name": "הפועל קרית חיים \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
             "for": 3,
-            "against": 25,
-            "difference": -22
+            "against": 32,
+            "difference": -29
           },
           "points": 0
         },
@@ -5309,16 +5309,16 @@
         "name": "ה.מטה אשר 3 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 7,
+            "for": 14,
             "against": 2,
-            "difference": 5
+            "difference": 12
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       },
@@ -5372,6 +5372,19 @@
     },
     {
       "rank": 3,
+      "provider_id": 7709,
+      "name": "ה.מטה אשר 3 \"צו פיוס\"",
+      "games": 3,
+      "wins": 3,
+      "draws": 0,
+      "losses": 0,
+      "gf": 14,
+      "ga": 2,
+      "gd": 12,
+      "points": 9
+    },
+    {
+      "rank": 4,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
       "games": 2,
@@ -5384,7 +5397,7 @@
       "points": 6
     },
     {
-      "rank": 4,
+      "rank": 5,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2 \"צו פיוס\"",
       "games": 3,
@@ -5397,7 +5410,7 @@
       "points": 6
     },
     {
-      "rank": 5,
+      "rank": 6,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
       "games": 2,
@@ -5407,19 +5420,6 @@
       "gf": 8,
       "ga": 2,
       "gd": 6,
-      "points": 6
-    },
-    {
-      "rank": 6,
-      "provider_id": 7709,
-      "name": "ה.מטה אשר 3 \"צו פיוס\"",
-      "games": 2,
-      "wins": 2,
-      "draws": 0,
-      "losses": 0,
-      "gf": 7,
-      "ga": 2,
-      "gd": 5,
       "points": 6
     },
     {
@@ -5517,13 +5517,13 @@
       "rank": 14,
       "provider_id": 8368,
       "name": "הפועל קרית חיים \"צו פיוס\"",
-      "games": 3,
+      "games": 4,
       "wins": 0,
       "draws": 0,
-      "losses": 3,
+      "losses": 4,
       "gf": 3,
-      "ga": 25,
-      "gd": -22,
+      "ga": 32,
+      "gd": -29,
       "points": 0
     },
     {
