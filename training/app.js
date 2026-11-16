@@ -41,6 +41,9 @@
     play: '<path d="M8 5l11 7-11 7z"/>',
   };
   const icon = (id) => SVG(ICONS[id] || ICONS.technique);
+  // Seamless loop (first and last frame are the same photo); skipped when the viewer asks for reduced motion.
+  const HERO_VIDEO = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches ? ''
+    : '<video class="herovid" src="videos/hero.mp4" poster="img/hero-poster.jpg" autoplay loop muted playsinline preload="auto" aria-hidden="true" tabindex="-1"></video>';
   const TICKER = '<span>FIVE BALL<i></i>לומדים<i></i>יוצאים למגרש<i></i>מיישמים<i></i>BY ADAM<i></i>כל יום<i></i></span>';
 
   // ---------- state ----------
@@ -172,7 +175,7 @@
     const rec = recommended().filter((v) => v.id !== feat.id);
     return `<div class="brand"><img src="img/logo.jpg" alt="" width="46" height="46"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
       <div class="head"><h1>${name ? `היי ${esc(name)}` : 'מתאמנים עם אדם'}</h1><p>${s > 0 ? `רצף של ${daysHe(s)}. ממשיכים?` : 'מוצאים תרגיל, לומדים אותו, יוצאים למגרש.'}</p></div>
-      <div class="card hero photo"><span class="five" aria-hidden="true">5</span>
+      <div class="card hero photo">${HERO_VIDEO}<span class="five" aria-hidden="true">5</span>
         <div class="muted">${last ? 'המשך צפייה' : 'מומלץ להתחיל כאן'} · ${esc(feat.series ? seriesById[feat.series].name : catById[feat.cat].name)}</div>
         <h3>${esc(feat.title)}</h3>
         <a class="btn block" href="#/video/${esc(feat.id)}">${last ? 'המשך צפייה' : 'צפייה בסרטון'}</a>
