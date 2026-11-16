@@ -1,11 +1,11 @@
 {
   "categories": [
-    { "id": "mastery", "name": "שליטה בכדור", "icon": "⚽" },
-    { "id": "touch", "name": "נגיעה ראשונה", "icon": "🎯" },
-    { "id": "dribble", "name": "כדרור", "icon": "🌀" },
-    { "id": "pass", "name": "מסירה", "icon": "↗️" },
-    { "id": "shoot", "name": "בעיטה", "icon": "🥅" },
-    { "id": "fit", "name": "זריזות וכושר", "icon": "⚡" }
+    { "id": "mastery", "name": "שליטה בכדור", "icon": "⚽", "image": "img/juggle.jpg" },
+    { "id": "touch", "name": "נגיעה ראשונה", "icon": "🎯", "image": "img/juggle.jpg" },
+    { "id": "dribble", "name": "כדרור", "icon": "🌀", "image": "img/dribble.jpg" },
+    { "id": "pass", "name": "מסירה", "icon": "↗️", "image": "img/ready.jpg" },
+    { "id": "shoot", "name": "בעיטה", "icon": "🥅", "image": "img/kick.jpg" },
+    { "id": "fit", "name": "זריזות וכושר", "icon": "⚡", "image": "img/ready.jpg" }
   ],
   "levels": ["מתחיל", "מתקדם", "מקצוען"],
   "drills": [

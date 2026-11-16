@@ -1,8 +1,8 @@
-/* אימון אישי – אב-טיפוס. כל הנתונים נשמרים במכשיר בלבד (localStorage). */
+/* Five Ball by Adam – אב-טיפוס. כל הנתונים נשמרים במכשיר בלבד (localStorage). */
 (() => {
   'use strict';
 
-  const STORE_KEY = 'imun.v1';
+  const STORE_KEY = 'fiveball.v1';
   const REST_SECONDS = 15;
   const DAY_NAMES = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ש'];
 
@@ -100,7 +100,8 @@
     if (/^(https:\/\/|videos\/)[^\s"']+\.(mp4|webm|mov)$/i.test(v)) {
       return `<div class="video"><video src="${esc(v)}" controls loop muted playsinline preload="metadata"></video></div>`;
     }
-    return `<div class="video"><div class="ph"><b>${catById[d.cat].icon}</b>סרטון ההדגמה יתווסף בקרוב</div></div>`;
+    const img = catById[d.cat].image;
+    return `<div class="video"><div class="ph"${img ? ` style="background-image:url('${esc(img)}')"` : ''}><span>סרטון ההדגמה יתווסף בקרוב</span></div></div>`;
   }
 
   function weekHtml() {
@@ -123,20 +124,21 @@
     let hero;
     if (ns) {
       const drills = sessionDrills(ns.session);
-      hero = `<div class="card hero">
+      hero = `<div class="card hero photo">
         <div class="muted">${esc(ns.plan.title)} · אימון ${ns.idx + 1} מתוך ${ns.plan.sessions.length}${ns.round > 1 ? ` · סבב ${ns.round}` : ''}</div>
         <h3>${esc(ns.session.title)}</h3>
         <div class="muted">${drills.length} תרגילים · כ-${mins(sumSeconds(drills) + REST_SECONDS * (drills.length - 1))} דקות</div>
         <button class="btn block" data-start-plan>▶ התחל אימון</button>
       </div>`;
     } else {
-      hero = `<div class="card hero">
+      hero = `<div class="card hero photo">
         <h3>בוחרים תוכנית ומתחילים</h3>
         <p class="muted">תוכנית אימון נותנת לך אימון מוכן לכל יום, לפי הרמה שלך.</p>
         <a class="btn block" href="#/plans">בחירת תוכנית</a>
       </div>`;
     }
-    return `<div class="head"><h1>שלום! 👋</h1><p>${s > 0 ? `רצף של ${daysHe(s)}. ממשיכים?` : 'אימון קצר היום שווה יותר מאימון ארוך מחר.'}</p></div>
+    return `<div class="brand"><img src="img/logo.jpg" alt="" width="52" height="52"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
+      <div class="head"><h1>מתאמנים עם אדם</h1><p>${s > 0 ? `רצף של ${daysHe(s)}. ממשיכים?` : 'אימון קצר היום שווה יותר מאימון ארוך מחר.'}</p></div>
       ${hero}
       <div class="stats">
         <div class="stat"><b>${s}</b><span>ימי רצף</span></div>
@@ -456,7 +458,7 @@
           <a class="btn block" id="waReport" href="${esc(reportLink())}" target="_blank" rel="noopener">📣 דיווח למאמן בוואטסאפ</a></div>` : '';
     runEl.className = '';
     runEl.innerHTML = `<div class="wrap"><div class="done-box">
-      <div class="big">${doneDrills.length ? '🏆' : '👟'}</div>
+      ${doneDrills.length ? '<img src="img/thumbs.jpg" alt="">' : '<div class="big">👟</div>'}
       <h2>${doneDrills.length ? 'כל הכבוד, האימון הושלם!' : 'האימון הופסק'}</h2>
       <p class="muted">${doneDrills.length ? `${doneDrills.length} מתוך ${run.drills.length} תרגילים · ${minutes} דקות · רצף של ${daysHe(streak())}` : 'לא הושלם אף תרגיל, אז האימון לא נשמר.'}</p>
       ${run.planId && doneDrills.length && !full ? '<p class="muted">דילגת על חלק מהתרגילים, אז האימון הזה יחכה לך שוב בתוכנית.</p>' : ''}
