@@ -303,6 +303,21 @@
     window.scrollTo(0, keepScroll ? y : 0);
     if (!keepScroll) { view.classList.remove('enter'); void view.offsetWidth; view.classList.add('enter'); }
     if (name === 'video' && !onboarding && videoById[arg]) openedVideo(videoById[arg]);
+    startHeroVideo();
+  }
+
+  // iOS ignores the muted attribute on markup inserted with innerHTML, which blocks autoplay.
+  // Set it as a property and start playback ourselves; if the browser still refuses
+  // (for example in Low Power Mode), start on the first touch instead.
+  function startHeroVideo() {
+    const v = view.querySelector('.herovid');
+    if (!v) return;
+    v.muted = true;
+    v.defaultMuted = true;
+    v.playsInline = true;
+    const go = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+    const p = v.play();
+    if (p && p.catch) p.catch(() => document.addEventListener('pointerdown', go, { once: true }));
   }
 
   // Remember the last opened video, and resume / track real video files.
