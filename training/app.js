@@ -28,7 +28,7 @@
   const sumSeconds = (drills) => drills.reduce((a, d) => a + d.seconds, 0);
 
   // ---------- state ----------
-  const blank = () => ({ favorites: [], history: [], activePlan: null, planDone: {} });
+  const blank = () => ({ favorites: [], history: [], activePlan: null, planDone: {}, assigned: [], name: '', coach: '' });
   let state = blank();
   try {
     const raw = JSON.parse(localStorage.getItem(STORE_KEY));
@@ -57,6 +57,25 @@
     return { plan, idx, session: plan.sessions[idx], round: Math.floor(done / plan.sessions.length) + 1 };
   }
   const sessionDrills = (s) => s.drills.map((id) => drillById[id]).filter(Boolean);
+
+  // ---------- team workouts shared by link ----------
+  // A workout travels inside the link itself (no server): #/w/<base64url of JSON {t, c, d}>
+  function encodeWorkout(title, coach, ids) {
+    const json = JSON.stringify({ t: title, c: coach, d: ids });
+    return btoa(unescape(encodeURIComponent(json))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  }
+  function decodeWorkout(code) {
+    try {
+      const b64 = String(code).replace(/-/g, '+').replace(/_/g, '/');
+      const o = JSON.parse(decodeURIComponent(escape(atob(b64))));
+      const ids = (Array.isArray(o.d) ? o.d : []).filter((id) => drillById[id]).slice(0, 30);
+      if (!ids.length) return null;
+      return { code, title: String(o.t || 'אימון מהמאמן').slice(0, 60), coach: String(o.c || '').slice(0, 40), ids };
+    } catch (e) { return null; }
+  }
+  const workoutLink = (code) => `${location.origin}${location.pathname}#/w/${code}`;
+  const waLink = (text) => `https://wa.me/?text=${encodeURIComponent(text)}`;
+  let shareDraft = null;
 
   // ---------- small render pieces ----------
   function drillItem(d, n) {
@@ -125,12 +144,64 @@
         <div class="stat"><b>${totalMinutes()}</b><span>דקות</span></div>
       </div>
       ${weekHtml()}
+      ${assignedHtml()}
       <h2>האימון שלי</h2>
       ${favs.length ? `<div class="card">
           <div class="spread"><div><b>${favs.length} תרגילים שסימנת</b><div class="muted">כ-${mins(sumSeconds(favs))} דקות</div></div>
           <button class="btn small" data-start-favs>▶ התחל</button></div>
+          <a class="btn ghost block" href="#/share">📣 מאמן? שליחת האימון לקבוצה</a>
         </div>${favs.map((d) => drillItem(d)).join('')}`
       : `<div class="card muted">סמנו תרגילים בכוכב ☆ כדי לבנות אימון משלכם.</div>`}`;
+  }
+
+  function assignedHtml() {
+    const open = state.assigned.map((a) => ({ a, w: decodeWorkout(a.code) })).filter((x) => x.w && !x.a.done);
+    if (!open.length) return '';
+    return `<h2>מהמאמן</h2>${open.map(({ w }) => `<a class="item" href="#/w/${esc(w.code)}">
+      <div class="ico">📣</div><div class="grow"><div class="t">${esc(w.title)}</div>
+      <div class="muted">${w.coach ? esc(w.coach) + ' · ' : ''}${w.ids.length} תרגילים · מחכה לביצוע</div></div></a>`).join('')}`;
+  }
+
+  function viewShare() {
+    const favs = state.favorites.map((id) => drillById[id]).filter(Boolean);
+    if (!favs.length) {
+      return `<a class="back" href="#/home">→ חזרה</a><div class="head"><h1>שליחת אימון לקבוצה</h1></div>
+        <div class="card muted">קודם סמנו בכוכב ☆ את התרגילים שרוצים לשלוח, בעמוד התרגילים.</div>
+        <a class="btn block" href="#/drills">לבחירת תרגילים</a>`;
+    }
+    let result = '';
+    if (shareDraft) {
+      const url = workoutLink(encodeWorkout(shareDraft.title, shareDraft.coach, favs.map((d) => d.id)));
+      const text = `⚽ ${shareDraft.title}${shareDraft.coach ? ` (${shareDraft.coach})` : ''}\n${favs.length} תרגילים, כ-${mins(sumSeconds(favs))} דקות. לוחצים, מתאמנים ומדווחים כשמסיימים:\n${url}`;
+      result = `<div class="card hero"><h3>הקישור מוכן</h3>
+        <p class="muted">כל שחקן שיפתח אותו יקבל את האימון הזה. אין צורך בהרשמה.</p>
+        <a class="btn block" id="waShare" href="${esc(waLink(text))}" target="_blank" rel="noopener">שליחה בוואטסאפ</a>
+        <button class="btn ghost block" data-copy="${esc(url)}">העתקת הקישור</button></div>`;
+    }
+    return `<a class="back" href="#/home">→ חזרה</a>
+      <div class="head"><h1>שליחת אימון לקבוצה</h1><p>התרגילים שסימנת בכוכב יישלחו כאימון אחד</p></div>
+      <label class="muted" for="wTitle">שם האימון</label>
+      <input class="search" id="wTitle" maxlength="60" value="${esc(shareDraft ? shareDraft.title : 'שיעורי בית לשבוע')}">
+      <label class="muted" for="wCoach">שם המאמן או הקבוצה</label>
+      <input class="search" id="wCoach" maxlength="40" value="${esc(shareDraft ? shareDraft.coach : state.coach)}" placeholder="לדוגמה: המאמן דני · ילדים ב׳">
+      <button class="btn ${shareDraft ? 'ghost ' : ''}block" data-make-link>${shareDraft ? 'עדכון הקישור' : 'יצירת קישור'}</button>
+      ${result}
+      <h2>${favs.length} תרגילים · כ-${mins(sumSeconds(favs))} דקות</h2>
+      ${favs.map((d, n) => drillItem(d, n + 1)).join('')}`;
+  }
+
+  function viewAssigned(code) {
+    const w = decodeWorkout(code);
+    if (!w) return `<div class="empty">הקישור לאימון לא תקין או שהתרגילים שבו כבר לא קיימים.<br><a class="link" href="#/home">לדף הבית</a></div>`;
+    let rec = state.assigned.find((a) => a.code === code);
+    if (!rec) { rec = { code, done: false }; state.assigned.push(rec); save(); }
+    const drills = w.ids.map((id) => drillById[id]);
+    return `<a class="back" href="#/home">→ לדף הבית</a>
+      <div class="head"><h1>${esc(w.title)}</h1><p>${w.coach ? 'נשלח על ידי ' + esc(w.coach) + ' · ' : ''}${drills.length} תרגילים · כ-${mins(sumSeconds(drills) + REST_SECONDS * (drills.length - 1))} דקות</p></div>
+      ${rec.done ? '<div class="card" style="border-color:var(--accent)">✅ כבר ביצעת את האימון הזה. אפשר לבצע שוב.</div>' : ''}
+      <button class="btn block" data-start-w="${esc(code)}">▶ התחל אימון</button>
+      <h2>התרגילים</h2>
+      ${drills.map((d, n) => drillItem(d, n + 1)).join('')}`;
   }
 
   function viewDrills() {
@@ -229,9 +300,12 @@
       home: viewHome, drills: viewDrills, plans: viewPlans, progress: viewProgress,
       drill: () => viewDrill(decodeURIComponent(arg || '')),
       plan: () => viewPlan(decodeURIComponent(arg || '')),
+      share: viewShare,
+      w: () => viewAssigned(arg || ''),
     };
+    if (name !== 'share') shareDraft = null;
     view.innerHTML = (routes[name] || viewNotFound)();
-    const tab = { drill: 'drills', plan: 'plans' }[name] || name;
+    const tab = { drill: 'drills', plan: 'plans', share: 'home', w: 'home' }[name] || name;
     tabs.querySelectorAll('a').forEach((a) => {
       const on = a.dataset.tab === tab;
       a.classList.toggle('on', on);
@@ -263,6 +337,19 @@
     } else if (t.dataset.startDrill) {
       const d = drillById[t.dataset.startDrill];
       if (d) startRun(d.title, [d]);
+    } else if (t.dataset.startW) {
+      const w = decodeWorkout(t.dataset.startW);
+      if (w) startRun(w.title, w.ids.map((id) => drillById[id]), null, w);
+    } else if ('makeLink' in t.dataset) {
+      const title = document.getElementById('wTitle').value.trim() || 'אימון מהמאמן';
+      const coach = document.getElementById('wCoach').value.trim();
+      state.coach = coach; save();
+      shareDraft = { title, coach };
+      render(true);
+    } else if (t.dataset.copy) {
+      const done = () => { t.textContent = 'הקישור הועתק ✓'; };
+      if (navigator.clipboard) navigator.clipboard.writeText(t.dataset.copy).then(done, () => prompt('העתיקו את הקישור:', t.dataset.copy));
+      else prompt('העתיקו את הקישור:', t.dataset.copy);
     } else if ('reset' in t.dataset) {
       if (confirm('למחוק את כל ההיסטוריה, המועדפים והתוכנית הפעילה? אי אפשר לבטל את הפעולה.')) {
         state = blank(); save(); render();
@@ -270,7 +357,7 @@
     }
   });
   view.addEventListener('input', (e) => {
-    if (!e.target.classList.contains('search')) return;
+    if (e.target.type !== 'search') return;
     filter.q = e.target.value;
     const q = filter.q.trim();
     const list = DATA.drills.filter((d) =>
@@ -308,9 +395,9 @@
     } catch (e) { /* not supported or denied */ }
   }
 
-  function startRun(title, drills, planId) {
+  function startRun(title, drills, planId, assigned) {
     if (!drills.length) return;
-    run = { title, drills, planId: planId || null, i: 0, phase: 'work', left: drills[0].seconds * 1000, total: drills[0].seconds * 1000, last: Date.now(), paused: false, done: [], reps: 0 };
+    run = { title, drills, planId: planId || null, assigned: assigned || null, i: 0, phase: 'work', left: drills[0].seconds * 1000, total: drills[0].seconds * 1000, last: Date.now(), paused: false, done: [], reps: 0 };
     runEl.hidden = false;
     document.body.style.overflow = 'hidden';
     lockScreen(true);
@@ -356,17 +443,38 @@
     if (doneDrills.length) {
       state.history.push({ date: dayKey(), title: run.title, minutes, drills: run.done.slice() });
       if (run.planId && full) state.planDone[run.planId] = (state.planDone[run.planId] || 0) + 1;
+      if (run.assigned && full) {
+        const rec = state.assigned.find((a) => a.code === run.assigned.code);
+        if (rec) rec.done = true;
+      }
       save();
     }
+    run.minutes = minutes;
+    const report = run.assigned && doneDrills.length
+      ? `<div class="card" style="text-align:start;margin-top:16px"><label class="muted" for="pName">השם שלך (כדי שהמאמן ידע מי סיים)</label>
+          <input class="search" id="pName" maxlength="30" value="${esc(state.name)}" placeholder="שם ושם משפחה">
+          <a class="btn block" id="waReport" href="${esc(reportLink())}" target="_blank" rel="noopener">📣 דיווח למאמן בוואטסאפ</a></div>` : '';
     runEl.className = '';
     runEl.innerHTML = `<div class="wrap"><div class="done-box">
       <div class="big">${doneDrills.length ? '🏆' : '👟'}</div>
       <h2>${doneDrills.length ? 'כל הכבוד, האימון הושלם!' : 'האימון הופסק'}</h2>
       <p class="muted">${doneDrills.length ? `${doneDrills.length} מתוך ${run.drills.length} תרגילים · ${minutes} דקות · רצף של ${daysHe(streak())}` : 'לא הושלם אף תרגיל, אז האימון לא נשמר.'}</p>
       ${run.planId && doneDrills.length && !full ? '<p class="muted">דילגת על חלק מהתרגילים, אז האימון הזה יחכה לך שוב בתוכנית.</p>' : ''}
-      <button class="btn block" data-run="close">סיום</button>
+      ${report}
+      <button class="btn ${report ? 'ghost ' : ''}block" data-run="close">סיום</button>
     </div></div>`;
   }
+
+  function reportLink() {
+    const n = run.done.length;
+    const who = state.name.trim() || 'שחקן';
+    return waLink(`✅ ${who}: סיימתי את "${run.assigned.title}" – ${n} מתוך ${run.drills.length} תרגילים, ${run.minutes} דקות. רצף של ${daysHe(streak())}.`);
+  }
+  runEl.addEventListener('input', (e) => {
+    if (e.target.id !== 'pName' || !run) return;
+    state.name = e.target.value.slice(0, 30); save();
+    document.getElementById('waReport').href = reportLink();
+  });
 
   function closeRun() {
     clearInterval(ticker);
