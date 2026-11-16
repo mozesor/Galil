@@ -1,4 +1,5 @@
-/* Five Ball by Adam – אב-טיפוס. כל הנתונים נשמרים במכשיר בלבד (localStorage). */
+/* Five Ball by Adam – אב-טיפוס לפי מסמך האפיון: ספריית סרטונים בחמש קטגוריות, חיפוש, מועדפים, מעקב צפייה ואזור אישי.
+   אין שרת: הפרופיל וההתקדמות נשמרים במכשיר בלבד (localStorage). */
 (() => {
   'use strict';
 
@@ -6,18 +7,17 @@
   document.documentElement.lang = 'he';
   document.documentElement.dir = 'rtl';
 
-  const STORE_KEY = 'fiveball.v1';
-  const REST_SECONDS = 15;
-  const DAY_NAMES = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ש'];
-
+  const STORE_KEY = 'fiveball.v2';
   const view = document.getElementById('view');
   const runEl = document.getElementById('run');
   const tabs = document.getElementById('tabs');
 
   let DATA = null;
-  let drillById = {};
-  let catById = {};
-  let filter = { cat: 'all', level: 'all', q: '' };
+  const videoById = {};
+  const catById = {};
+  const seriesById = {};
+  let search = { q: '', cat: 'all' };
+  let levelFilter = 'all';
 
   // ---------- helpers ----------
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => (
@@ -26,13 +26,25 @@
     const p = (n) => String(n).padStart(2, '0');
     return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
   };
-  const mins = (sec) => Math.max(1, Math.round(sec / 60));
-  const clock = (sec) => `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, '0')}`;
+  const clock = (sec) => `${Math.floor(sec / 60)}:${String(Math.floor(sec % 60)).padStart(2, '0')}`;
   const daysHe = (n) => (n === 1 ? 'יום אחד' : `${n} ימים`);
-  const sumSeconds = (drills) => drills.reduce((a, d) => a + d.seconds, 0);
+  const videosHe = (n) => (n === 1 ? 'סרטון אחד' : `${n} סרטונים`);
+
+  const SVG = (inner) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
+  const ICONS = {
+    technique: '<circle cx="12" cy="12" r="9"/><path d="M12 8l3.8 2.8-1.5 4.4H9.7l-1.5-4.4z"/>',
+    mentality: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/>',
+    nutrition: '<path d="M12 21c-4 0-7-3-7-7 0-3 2-6 5-6 1 0 1.5.5 2 .5s1-.5 2-.5c3 0 5 3 5 6 0 4-3 7-7 7zM12 8c0-2 1-4 3-5"/>',
+    tips: '<path d="M4 5h16v11H9l-5 4z"/>',
+    prep: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/>',
+    check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+    play: '<path d="M8 5l11 7-11 7z"/>',
+  };
+  const icon = (id) => SVG(ICONS[id] || ICONS.technique);
+  const TICKER = '<span>FIVE BALL<i></i>לומדים<i></i>יוצאים למגרש<i></i>מיישמים<i></i>BY ADAM<i></i>כל יום<i></i></span>';
 
   // ---------- state ----------
-  const blank = () => ({ favorites: [], history: [], activePlan: null, planDone: {}, assigned: [], name: '', coach: '' });
+  const blank = () => ({ profile: null, skipped: false, favorites: [], watched: {}, positions: {}, last: null, practice: {} });
   let state = blank();
   try {
     const raw = JSON.parse(localStorage.getItem(STORE_KEY));
@@ -42,291 +54,244 @@
     try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
   };
 
-  const trainedDays = () => new Set(state.history.map((h) => h.date));
+  const isWatched = (id) => Boolean(state.watched[id]);
+  const inCat = (cat) => DATA.videos.filter((v) => v.cat === cat);
+  const inSeries = (sid) => DATA.videos.filter((v) => v.series === sid);
+  const watchedIn = (list) => list.filter((v) => isWatched(v.id)).length;
+  const pct = (list) => (list.length ? Math.round((watchedIn(list) / list.length) * 100) : 0);
+  function markWatched(id) {
+    if (!isWatched(id)) state.watched[id] = dayKey();
+    delete state.positions[id];
+    if (state.last === id) state.last = null;
+    save();
+  }
+  function activeDays() {
+    return new Set([...Object.values(state.watched), ...Object.keys(state.practice)]);
+  }
   function streak() {
-    const days = trainedDays();
+    const days = activeDays();
     const d = new Date();
-    if (!days.has(dayKey(d))) d.setDate(d.getDate() - 1); // today not done yet: streak still alive
+    if (!days.has(dayKey(d))) d.setDate(d.getDate() - 1);
     let n = 0;
     while (days.has(dayKey(d))) { n++; d.setDate(d.getDate() - 1); }
     return n;
   }
-  const totalMinutes = () => state.history.reduce((a, h) => a + h.minutes, 0);
-
-  function nextSession() {
-    const plan = DATA.plans.find((p) => p.id === state.activePlan);
-    if (!plan) return null;
-    const done = state.planDone[plan.id] || 0;
-    const idx = done % plan.sessions.length;
-    return { plan, idx, session: plan.sessions[idx], round: Math.floor(done / plan.sessions.length) + 1 };
+  function nextInSeries(v) {
+    const list = v.series ? inSeries(v.series) : inCat(v.cat);
+    return list[list.findIndex((x) => x.id === v.id) + 1] || null;
   }
-  const sessionDrills = (s) => s.drills.map((id) => drillById[id]).filter(Boolean);
-
-  // ---------- team workouts shared by link ----------
-  // A workout travels inside the link itself (no server): #/w/<base64url of JSON {t, c, d}>
-  function encodeWorkout(title, coach, ids) {
-    const json = JSON.stringify({ t: title, c: coach, d: ids });
-    return btoa(unescape(encodeURIComponent(json))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  function recommended() {
+    const lvl = state.profile ? state.profile.level : null;
+    const fresh = DATA.videos.filter((v) => !isWatched(v.id));
+    const score = (v) => (v.cat === 'technique' && lvl !== null && v.level === lvl ? 0 : 1);
+    const picks = [];
+    const seen = new Set();
+    // one per series / category first, so the row shows variety
+    fresh.slice().sort((a, b) => score(a) - score(b)).forEach((v) => {
+      const key = v.series || v.cat;
+      if (!seen.has(key) && picks.length < 8) { seen.add(key); picks.push(v); }
+    });
+    return picks;
   }
-  function decodeWorkout(code) {
-    try {
-      const b64 = String(code).replace(/-/g, '+').replace(/_/g, '/');
-      const o = JSON.parse(decodeURIComponent(escape(atob(b64))));
-      const ids = (Array.isArray(o.d) ? o.d : []).filter((id) => drillById[id]).slice(0, 30);
-      if (!ids.length) return null;
-      return { code, title: String(o.t || 'אימון מהמאמן').slice(0, 60), coach: String(o.c || '').slice(0, 40), ids };
-    } catch (e) { return null; }
-  }
-  const workoutLink = (code) => `${location.origin}${location.pathname}#/w/${code}`;
-  const waLink = (text) => `https://wa.me/?text=${encodeURIComponent(text)}`;
-  let shareDraft = null;
 
-  const SVG = (inner) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
-  const ICONS = {
-    mastery: '<circle cx="12" cy="12" r="9"/><path d="M12 8l3.8 2.8-1.5 4.4H9.7l-1.5-4.4z"/>',
-    touch: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/>',
-    dribble: '<path d="M4 19c5 0 3-7 8-7s3-7 8-7"/>',
-    pass: '<path d="M5 19L19 5M10 5h9v9"/>',
-    shoot: '<path d="M3 19V6h18v13M3 11h18M9 6v13M15 6v13"/>',
-    fit: '<path d="M13 3L5 14h6l-1 7 9-12h-6z"/>',
-    coach: '<rect x="4" y="4" width="16" height="16"/><path d="M12 4v16M7.5 8.5l2 2m0-2l-2 2"/><circle cx="16" cy="15" r="1.6"/>',
-    check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  // ---------- render pieces ----------
+  const metaTags = (v) => {
+    const t = [];
+    if (v.series) t.push(seriesById[v.series].name); else t.push(catById[v.cat].name);
+    if (v.level !== undefined) t.push(DATA.levels[v.level]);
+    t.push(clock(v.seconds));
+    return t.map((x) => `<span class="tag">${esc(x)}</span>`).join('');
   };
-  const icon = (id) => SVG(ICONS[id] || ICONS.mastery);
-  const TICKER = '<span>FIVE BALL<i></i>מתאמנים<i></i>משתפרים<i></i>מנצחים<i></i>BY ADAM<i></i>כל יום<i></i></span>';
-
-  // ---------- small render pieces ----------
-  function drillItem(d, n) {
-    const cat = catById[d.cat];
-    const fav = state.favorites.includes(d.id);
+  function videoRow(v, n) {
+    const fav = state.favorites.includes(v.id);
+    const done = isWatched(v.id);
+    const lead = n
+      ? `<div class="num ${done ? 'done' : ''}">${done ? '✓' : n}</div>`
+      : `<div class="ico ${done ? 'done' : ''}">${done ? icon('check') : icon(v.cat)}</div>`;
     return `<div class="item">
-      ${n ? `<div class="num">${n}</div>` : `<div class="ico">${icon(d.cat)}</div>`}
-      <a class="grow" href="#/drill/${esc(d.id)}">
-        <div class="t">${esc(d.title)}</div>
-        <div><span class="tag">${esc(cat.name)}</span><span class="tag">${esc(DATA.levels[d.level])}</span><span class="tag">${clock(d.seconds)}</span></div>
-      </a>
-      <button class="fav ${fav ? 'on' : ''}" data-fav="${esc(d.id)}" aria-pressed="${fav}" aria-label="${fav ? 'הסרה מהאימון שלי' : 'הוספה לאימון שלי'}">${fav ? '★' : '☆'}</button>
+      ${lead}
+      <a class="grow" href="#/video/${esc(v.id)}"><div class="t">${esc(v.title)}</div><div>${metaTags(v)}</div></a>
+      <button class="fav ${fav ? 'on' : ''}" data-fav="${esc(v.id)}" aria-pressed="${fav}" aria-label="${fav ? 'הסרה מהמועדפים' : 'הוספה למועדפים'}">${fav ? '★' : '☆'}</button>
     </div>`;
   }
-
-  function videoHtml(d) {
-    const v = (d.video || '').trim();
-    const yt = v.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/);
+  const thumb = (v) => (v.series && seriesById[v.series].image) || catById[v.cat].image;
+  function videoCard(v) {
+    return `<a class="vcard" href="#/video/${esc(v.id)}">
+      <div class="thumb" style="--img:url('${esc(thumb(v))}')"><span>${clock(v.seconds)}</span></div>
+      <div class="t">${esc(v.title)}</div><div class="muted">${esc(v.series ? seriesById[v.series].name : catById[v.cat].name)}</div></a>`;
+  }
+  function tile(c, wide) {
+    const list = inCat(c.id);
+    return `<a class="tile ${wide ? 'wide' : ''}" href="#/cat/${esc(c.id)}" style="--img:url('${esc(c.image)}');--p:${pct(list)}%">
+      <b>${esc(c.name)}</b><span>${esc(c.blurb)}</span><small>${watchedIn(list)} / ${list.length} נצפו</small></a>`;
+  }
+  function player(v) {
+    const src = (v.video || '').trim();
+    const yt = src.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/);
     if (yt) {
-      return `<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${yt[1]}?rel=0&playsinline=1" title="${esc(d.title)}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
+      return `<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${yt[1]}?rel=0&playsinline=1" title="${esc(v.title)}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
     }
-    if (/^(https:\/\/|videos\/)[^\s"']+\.(mp4|webm|mov)$/i.test(v)) {
-      return `<div class="video"><video src="${esc(v)}" controls loop muted playsinline preload="metadata"></video></div>`;
+    if (/^(https:\/\/|videos\/)[^\s"']+\.(mp4|webm|mov)$/i.test(src)) {
+      return `<div class="video"><video id="player" data-id="${esc(v.id)}" src="${esc(src)}" controls playsinline preload="metadata"></video></div>`;
     }
-    const img = catById[d.cat].image;
-    return `<div class="video"><div class="ph"${img ? ` style="background-image:url('${esc(img)}')"` : ''}><span>סרטון ההדגמה יתווסף בקרוב</span></div></div>`;
+    return `<div class="video"><div class="ph" style="background-image:url('${esc(thumb(v))}')"><span>הסרטון יעלה בקרוב</span></div></div>`;
   }
-
-  function weekHtml() {
-    const days = trainedDays();
-    const today = new Date();
-    let out = '';
-    for (let i = 6; i >= 0; i--) {
-      const d = new Date(today);
-      d.setDate(today.getDate() - i);
-      out += `<div class="day ${days.has(dayKey(d)) ? 'on' : ''} ${i === 0 ? 'today' : ''}"><i></i>${DAY_NAMES[d.getDay()]}</div>`;
-    }
-    return `<div class="week" aria-label="שבעת הימים האחרונים">${out}</div>`;
-  }
+  const head = (title, sub, back) => `${back ? `<a class="back" href="${back[0]}">→ ${esc(back[1])}</a>` : ''}
+    <div class="head"><h1>${esc(title)}</h1>${sub ? `<p>${sub}</p>` : ''}</div>`;
+  const progressBar = (label, list) => `<div class="bar"><div class="spread"><span>${esc(label)}</span><span class="muted">${watchedIn(list)} / ${list.length}</span></div>
+    <div class="track"><div class="fill" style="width:${pct(list)}%"></div></div></div>`;
 
   // ---------- views ----------
+  function viewWelcome() {
+    const p = state.profile || { name: '', age: '', level: 0, position: '' };
+    const opts = (group, values, cur) => values.map(([val, label]) =>
+      `<button type="button" class="chip ${String(cur) === String(val) ? 'on' : ''}" data-opt="${group}" data-val="${esc(val)}" aria-pressed="${String(cur) === String(val)}">${esc(label)}</button>`).join('');
+    return `<div class="brand"><img src="img/logo.jpg" alt="" width="46" height="46"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
+      ${head(state.profile ? 'הפרופיל שלי' : 'בוא נכיר', 'כמה פרטים כדי להתאים לך סרטונים. אפשר לשנות בכל רגע.')}
+      <form id="profileForm" autocomplete="off">
+        <label class="muted" for="pfName">שם</label>
+        <input class="search" id="pfName" maxlength="30" value="${esc(p.name)}" placeholder="איך קוראים לך?">
+        <label class="muted">גיל</label>
+        <div class="opts" data-group="age">${opts('age', [['8-10', '8–10'], ['11-13', '11–13'], ['14-16', '14–16'], ['17+', '17 ומעלה']], p.age)}</div>
+        <label class="muted">רמה</label>
+        <div class="opts" data-group="level">${opts('level', DATA.levels.map((l, i) => [i, l]), p.level)}</div>
+        <label class="muted">עמדה</label>
+        <div class="opts" data-group="position">${opts('position', [['שוער', 'שוער'], ['הגנה', 'הגנה'], ['קישור', 'קישור'], ['התקפה', 'התקפה']], p.position)}</div>
+        <button class="btn block" type="submit">${state.profile ? 'שמירה' : 'מתחילים'}</button>
+      </form>
+      ${state.profile ? '' : '<p style="text-align:center"><button class="link" data-skip>דילוג בינתיים</button></p>'}
+      <p class="muted" style="text-align:center;margin-top:14px">באב-טיפוס הפרופיל נשמר במכשיר הזה בלבד. הרשמה והתחברות מלאות יגיעו עם האפליקציה.</p>`;
+  }
+
   function viewHome() {
-    const ns = nextSession();
-    const favs = state.favorites.map((id) => drillById[id]).filter(Boolean);
+    const name = state.profile && state.profile.name;
+    const last = state.last && videoById[state.last] && !isWatched(state.last) ? videoById[state.last] : null;
+    const feat = last || recommended()[0] || DATA.videos[0];
     const s = streak();
-    let hero;
-    if (ns) {
-      const drills = sessionDrills(ns.session);
-      hero = `<div class="card hero photo"><span class="five" aria-hidden="true">5</span>
-        <div class="muted">${esc(ns.plan.title)} · אימון ${ns.idx + 1} מתוך ${ns.plan.sessions.length}${ns.round > 1 ? ` · סבב ${ns.round}` : ''}</div>
-        <h3>${esc(ns.session.title)}</h3>
-        <div class="muted">${drills.length} תרגילים · כ-${mins(sumSeconds(drills) + REST_SECONDS * (drills.length - 1))} דקות</div>
-        <button class="btn block" data-start-plan>התחל אימון</button>
-      </div>`;
-    } else {
-      hero = `<div class="card hero photo"><span class="five" aria-hidden="true">5</span>
-        <h3>בוחרים תוכנית ומתחילים</h3>
-        <p class="muted">תוכנית אימון נותנת לך אימון מוכן לכל יום, לפי הרמה שלך.</p>
-        <a class="btn block" href="#/plans">בחירת תוכנית</a>
-      </div>`;
-    }
-    return `<div class="brand"><img src="img/logo.jpg" alt="" width="52" height="52"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
-      <div class="head"><h1>מתאמנים עם אדם</h1><p>${s > 0 ? `רצף של ${daysHe(s)}. ממשיכים?` : 'אימון קצר היום שווה יותר מאימון ארוך מחר.'}</p></div>
-      ${hero}
+    const [tech, ...rest] = DATA.categories;
+    const rec = recommended().filter((v) => v.id !== feat.id);
+    return `<div class="brand"><img src="img/logo.jpg" alt="" width="46" height="46"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
+      <div class="head"><h1>${name ? `היי ${esc(name)}` : 'מתאמנים עם אדם'}</h1><p>${s > 0 ? `רצף של ${daysHe(s)}. ממשיכים?` : 'מוצאים תרגיל, לומדים אותו, יוצאים למגרש.'}</p></div>
+      <div class="card hero photo"><span class="five" aria-hidden="true">5</span>
+        <div class="muted">${last ? 'המשך צפייה' : 'מומלץ להתחיל כאן'} · ${esc(feat.series ? seriesById[feat.series].name : catById[feat.cat].name)}</div>
+        <h3>${esc(feat.title)}</h3>
+        <a class="btn block" href="#/video/${esc(feat.id)}">${last ? 'המשך צפייה' : 'צפייה בסרטון'}</a>
+      </div>
       <div class="ticker" aria-hidden="true"><div>${TICKER}${TICKER}</div></div>
-      <div class="stats">
-        <div class="stat"><b>${s}</b><span>ימי רצף</span></div>
-        <div class="stat"><b>${state.history.length}</b><span>אימונים</span></div>
-        <div class="stat"><b>${totalMinutes()}</b><span>דקות</span></div>
+      <h2>קטגוריות</h2>
+      <div class="tiles">${tile(tech, true)}${rest.map((c) => tile(c)).join('')}</div>
+      ${rec.length ? `<h2>מומלצים בשבילך</h2><div class="hscroll">${rec.map(videoCard).join('')}</div>` : ''}`;
+  }
+
+  function viewCat(id) {
+    const c = catById[id];
+    if (!c) return viewNotFound();
+    const list = inCat(id);
+    const note = c.note ? `<div class="card muted">${esc(c.note)}</div>` : '';
+    if (id !== 'technique') {
+      return `${head(c.name, `${esc(c.blurb)} · ${videosHe(list.length)}`, ['#/home', 'דף הבית'])}${note}
+        ${list.map((v, n) => videoRow(v, n + 1)).join('')}`;
+    }
+    const chip = (val, label) => `<button class="chip ${String(levelFilter) === String(val) ? 'on' : ''}" data-level="${val}" aria-pressed="${String(levelFilter) === String(val)}">${esc(label)}</button>`;
+    const series = DATA.series.filter((s) => s.cat === id).map((s) => {
+      const all = inSeries(s.id);
+      const shown = levelFilter === 'all' ? all : all.filter((v) => v.level === Number(levelFilter));
+      if (!shown.length) return '';
+      return `<a class="item series" href="#/series/${esc(s.id)}" style="--p:${pct(all)}%">
+        <div class="ico">${icon('technique')}</div>
+        <div class="grow"><div class="t">${esc(s.name)}</div><div><span class="tag">${videosHe(shown.length)}</span><span class="tag">${watchedIn(all)} נצפו</span></div></div>
+        <span class="chev" aria-hidden="true">‹</span></a>`;
+    }).join('');
+    return `${head(c.name, `${esc(c.blurb)} · ${videosHe(list.length)}`)}
+      <div class="chips">${chip('all', 'כל הרמות')}${DATA.levels.map((l, i) => chip(i, l)).join('')}</div>
+      ${series || '<div class="empty">אין עדיין סדרות ברמה הזאת.</div>'}`;
+  }
+
+  function viewSeries(id) {
+    const s = seriesById[id];
+    if (!s) return viewNotFound();
+    const list = inSeries(id);
+    return `${head(s.name, `${videosHe(list.length)} · ${watchedIn(list)} נצפו`, ['#/cat/technique', 'טכניקה אישית'])}
+      ${list.map((v, n) => videoRow(v, n + 1)).join('')}`;
+  }
+
+  function viewVideo(id) {
+    const v = videoById[id];
+    if (!v) return viewNotFound();
+    const fav = state.favorites.includes(v.id);
+    const done = isWatched(v.id);
+    const next = nextInSeries(v);
+    const back = v.series ? [`#/series/${v.series}`, seriesById[v.series].name] : [`#/cat/${v.cat}`, catById[v.cat].name];
+    const note = catById[v.cat].note ? `<p class="muted" style="margin-top:10px">${esc(catById[v.cat].note)}</p>` : '';
+    return `<a class="back" href="${back[0]}">→ ${esc(back[1])}</a>
+      <div class="head"><h1>${esc(v.title)}</h1><p>${metaTags(v)}</p></div>
+      ${player(v)}
+      ${v.desc ? `<div class="card"><p>${esc(v.desc)}</p>${note}</div>` : ''}
+      ${v.steps ? `<div class="card"><h3>איך מבצעים</h3><ol class="steps">${v.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol><div class="muted">ציוד: ${esc(v.equipment)}</div></div>` : ''}
+      ${v.steps ? `<button class="btn block" data-practice="${esc(v.id)}">יוצאים למגרש · טיימר ${clock(v.seconds)}</button>` : ''}
+      <div class="pair">
+        <button class="btn ghost" data-watched="${esc(v.id)}" aria-pressed="${done}">${done ? '✓ נצפה' : 'סימון כנצפה'}</button>
+        <button class="btn ghost" data-fav="${esc(v.id)}" aria-pressed="${fav}">${fav ? '★ במועדפים' : '☆ למועדפים'}</button>
       </div>
-      ${weekHtml()}
-      ${assignedHtml()}
-      <h2>האימון שלי</h2>
-      ${favs.length ? `<div class="card">
-          <div class="spread"><div><b>${favs.length} תרגילים שסימנת</b><div class="muted">כ-${mins(sumSeconds(favs))} דקות</div></div>
-          <button class="btn small" data-start-favs>התחל</button></div>
-          <a class="btn ghost block" href="#/share">מאמן? שליחת האימון לקבוצה</a>
-        </div>${favs.map((d) => drillItem(d)).join('')}`
-      : `<div class="card muted">סמנו תרגילים בכוכב ☆ כדי לבנות אימון משלכם.</div>`}`;
+      ${next ? `<h2>הבא בתור</h2>${videoRow(next)}` : ''}`;
   }
 
-  function assignedHtml() {
-    const open = state.assigned.map((a) => ({ a, w: decodeWorkout(a.code) })).filter((x) => x.w && !x.a.done);
-    if (!open.length) return '';
-    return `<h2>מהמאמן</h2>${open.map(({ w }) => `<a class="item" href="#/w/${esc(w.code)}">
-      <div class="ico">${icon('coach')}</div><div class="grow"><div class="t">${esc(w.title)}</div>
-      <div class="muted">${w.coach ? esc(w.coach) + ' · ' : ''}${w.ids.length} תרגילים · מחכה לביצוע</div></div></a>`).join('')}`;
+  const searchResults = () => {
+    const q = search.q.trim();
+    const list = DATA.videos.filter((v) => (search.cat === 'all' || v.cat === search.cat) &&
+      (!q || v.title.includes(q) || (v.desc || '').includes(q) || catById[v.cat].name.includes(q) || (v.series && seriesById[v.series].name.includes(q))));
+    if (!list.length) return '<div class="empty">לא נמצאו סרטונים. נסו מילה אחרת.</div>';
+    return list.map((v) => videoRow(v)).join('');
+  };
+  function viewSearch() {
+    const chip = (val, label) => `<button class="chip ${search.cat === val ? 'on' : ''}" data-scat="${esc(val)}" aria-pressed="${search.cat === val}">${esc(label)}</button>`;
+    return `${head('חיפוש', `${videosHe(DATA.videos.length)} בספרייה`)}
+      <input class="search" type="search" id="q" placeholder="כדרור, לחץ במשחק, חימום…" aria-label="חיפוש סרטון" value="${esc(search.q)}">
+      <div class="chips">${chip('all', 'הכול')}${DATA.categories.map((c) => chip(c.id, c.name)).join('')}</div>
+      <div id="list">${searchResults()}</div>`;
   }
 
-  function viewShare() {
-    const favs = state.favorites.map((id) => drillById[id]).filter(Boolean);
-    if (!favs.length) {
-      return `<a class="back" href="#/home">→ חזרה</a><div class="head"><h1>שליחת אימון לקבוצה</h1></div>
-        <div class="card muted">קודם סמנו בכוכב ☆ את התרגילים שרוצים לשלוח, בעמוד התרגילים.</div>
-        <a class="btn block" href="#/drills">לבחירת תרגילים</a>`;
-    }
-    let result = '';
-    if (shareDraft) {
-      const url = workoutLink(encodeWorkout(shareDraft.title, shareDraft.coach, favs.map((d) => d.id)));
-      const text = `⚽ ${shareDraft.title}${shareDraft.coach ? ` (${shareDraft.coach})` : ''}\n${favs.length} תרגילים, כ-${mins(sumSeconds(favs))} דקות. לוחצים, מתאמנים ומדווחים כשמסיימים:\n${url}`;
-      result = `<div class="card hero"><h3>הקישור מוכן</h3>
-        <p class="muted">כל שחקן שיפתח אותו יקבל את האימון הזה. אין צורך בהרשמה.</p>
-        <a class="btn block" id="waShare" href="${esc(waLink(text))}" target="_blank" rel="noopener">שליחה בוואטסאפ</a>
-        <button class="btn ghost block" data-copy="${esc(url)}">העתקת הקישור</button></div>`;
-    }
-    return `<a class="back" href="#/home">→ חזרה</a>
-      <div class="head"><h1>שליחת אימון לקבוצה</h1><p>התרגילים שסימנת בכוכב יישלחו כאימון אחד</p></div>
-      <label class="muted" for="wTitle">שם האימון</label>
-      <input class="search" id="wTitle" maxlength="60" value="${esc(shareDraft ? shareDraft.title : 'שיעורי בית לשבוע')}">
-      <label class="muted" for="wCoach">שם המאמן או הקבוצה</label>
-      <input class="search" id="wCoach" maxlength="40" value="${esc(shareDraft ? shareDraft.coach : state.coach)}" placeholder="לדוגמה: המאמן דני · ילדים ב׳">
-      <button class="btn ${shareDraft ? 'ghost ' : ''}block" data-make-link>${shareDraft ? 'עדכון הקישור' : 'יצירת קישור'}</button>
-      ${result}
-      <h2>${favs.length} תרגילים · כ-${mins(sumSeconds(favs))} דקות</h2>
-      ${favs.map((d, n) => drillItem(d, n + 1)).join('')}`;
-  }
-
-  function viewAssigned(code) {
-    const w = decodeWorkout(code);
-    if (!w) return `<div class="empty">הקישור לאימון לא תקין או שהתרגילים שבו כבר לא קיימים.<br><a class="link" href="#/home">לדף הבית</a></div>`;
-    let rec = state.assigned.find((a) => a.code === code);
-    if (!rec) { rec = { code, done: false }; state.assigned.push(rec); save(); }
-    const drills = w.ids.map((id) => drillById[id]);
-    return `<a class="back" href="#/home">→ לדף הבית</a>
-      <div class="head"><h1>${esc(w.title)}</h1><p>${w.coach ? 'נשלח על ידי ' + esc(w.coach) + ' · ' : ''}${drills.length} תרגילים · כ-${mins(sumSeconds(drills) + REST_SECONDS * (drills.length - 1))} דקות</p></div>
-      ${rec.done ? '<div class="card" style="border-color:var(--accent)">כבר ביצעת את האימון הזה. אפשר לבצע שוב.</div>' : ''}
-      <button class="btn block" data-start-w="${esc(code)}">התחל אימון</button>
-      <h2>התרגילים</h2>
-      ${drills.map((d, n) => drillItem(d, n + 1)).join('')}`;
-  }
-
-  function viewDrills() {
-    const q = filter.q.trim();
-    const list = DATA.drills.filter((d) =>
-      (filter.cat === 'all' || d.cat === filter.cat) &&
-      (filter.level === 'all' || d.level === Number(filter.level)) &&
-      (!q || d.title.includes(q) || catById[d.cat].name.includes(q)));
-    const chip = (group, val, label) =>
-      `<button class="chip ${String(filter[group]) === String(val) ? 'on' : ''}" data-filter="${group}" data-val="${esc(val)}" aria-pressed="${String(filter[group]) === String(val)}">${label}</button>`;
-    return `<div class="head"><h1>תרגילים</h1><p>${DATA.drills.length} תרגילים בספרייה</p></div>
-      <input class="search" type="search" placeholder="חיפוש תרגיל" aria-label="חיפוש תרגיל" value="${esc(filter.q)}">
-      <div class="chips">${chip('cat', 'all', 'הכול')}${DATA.categories.map((c) => chip('cat', c.id, esc(c.name))).join('')}</div>
-      <div class="chips">${chip('level', 'all', 'כל הרמות')}${DATA.levels.map((l, i) => chip('level', i, esc(l))).join('')}</div>
-      <div id="list">${list.length ? list.map((d) => drillItem(d)).join('') : '<div class="empty">לא נמצאו תרגילים מתאימים.</div>'}</div>`;
-  }
-
-  function viewDrill(id) {
-    const d = drillById[id];
-    if (!d) return viewNotFound();
-    const fav = state.favorites.includes(d.id);
-    return `<a class="back" href="#/drills">→ חזרה לתרגילים</a>
-      <div class="head"><h1>${esc(d.title)}</h1>
-        <p><span class="tag">${esc(catById[d.cat].name)}</span><span class="tag">${esc(DATA.levels[d.level])}</span><span class="tag">${clock(d.seconds)}</span></p></div>
-      ${videoHtml(d)}
-      <div class="card"><h3>איך מבצעים</h3><ol class="steps">${d.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol>
-        <div class="muted">ציוד: ${esc(d.equipment)}</div></div>
-      <button class="btn block" data-start-drill="${esc(d.id)}">התחל תרגיל</button>
-      <button class="btn ghost block" data-fav="${esc(d.id)}" aria-pressed="${fav}">${fav ? '★ באימון שלי' : '☆ הוספה לאימון שלי'}</button>`;
-  }
-
-  function viewPlans() {
-    return `<div class="head"><h1>תוכניות אימון</h1><p>בחרו תוכנית לפי הרמה שלכם</p></div>
-      ${DATA.plans.map((p) => {
-        const active = state.activePlan === p.id;
-        return `<a class="card" href="#/plan/${esc(p.id)}" style="display:block">
-          <div class="spread"><h3>${esc(p.title)}</h3>${active ? '<span class="tag" style="color:var(--accent)">פעילה</span>' : ''}</div>
-          <p class="muted">${esc(p.desc)}</p>
-          <div style="margin-top:8px"><span class="tag">${esc(DATA.levels[p.level])}</span><span class="tag">${p.sessions.length} אימונים</span></div>
-        </a>`;
-      }).join('')}`;
-  }
-
-  function viewPlan(id) {
-    const p = DATA.plans.find((x) => x.id === id);
-    if (!p) return viewNotFound();
-    const active = state.activePlan === p.id;
-    const done = (state.planDone[p.id] || 0) % p.sessions.length;
-    return `<a class="back" href="#/plans">→ חזרה לתוכניות</a>
-      <div class="head"><h1>${esc(p.title)}</h1><p>${esc(p.desc)}</p></div>
-      ${active ? '<a class="btn block" href="#/home">התוכנית פעילה · לאימון של היום</a>'
-        : `<button class="btn block" data-activate="${esc(p.id)}">בחירה בתוכנית הזאת</button>`}
-      ${p.sessions.map((s, i) => {
-        const drills = sessionDrills(s);
-        return `<h2><span class="num ${active && i < done ? 'done' : ''}" style="display:inline-grid;vertical-align:middle;margin-inline-end:6px">${active && i < done ? '✓' : i + 1}</span>${esc(s.title)}</h2>
-          <div class="muted" style="margin-bottom:8px">${drills.length} תרגילים · כ-${mins(sumSeconds(drills))} דקות</div>
-          ${drills.map((d, n) => drillItem(d, n + 1)).join('')}`;
-      }).join('')}`;
-  }
-
-  function viewProgress() {
-    const byCat = {};
-    state.history.forEach((h) => (h.drills || []).forEach((id) => {
-      const d = drillById[id];
-      if (d) byCat[d.cat] = (byCat[d.cat] || 0) + d.seconds;
-    }));
-    const max = Math.max(1, ...Object.values(byCat));
-    const recent = state.history.slice(-10).reverse();
-    return `<div class="head"><h1>התקדמות</h1><p>כל הנתונים נשמרים במכשיר הזה בלבד</p></div>
-      <div class="stats">
+  function viewMe() {
+    const p = state.profile;
+    const favs = state.favorites.map((id) => videoById[id]).filter(Boolean);
+    const watched = Object.keys(state.watched).map((id) => videoById[id]).filter(Boolean)
+      .sort((a, b) => (state.watched[b.id] > state.watched[a.id] ? 1 : -1));
+    const last = state.last && videoById[state.last] && !isWatched(state.last) ? videoById[state.last] : null;
+    const practices = Object.values(state.practice).reduce((a, n) => a + n, 0);
+    const any = watched.length || favs.length || p || practices;
+    return `${head('האזור האישי', p ? [p.name, p.age && `גיל ${p.age}`, DATA.levels[p.level], p.position].filter(Boolean).map(esc).join(' · ') : 'עוד לא מילאת פרופיל')}
+      <a class="btn ghost small" href="#/profile">${p ? 'עריכת פרופיל' : 'יצירת פרופיל'}</a>
+      <div class="stats" style="margin-top:22px">
+        <div class="stat"><b>${watched.length}</b><span>נצפו</span></div>
         <div class="stat"><b>${streak()}</b><span>ימי רצף</span></div>
-        <div class="stat"><b>${state.history.length}</b><span>אימונים</span></div>
-        <div class="stat"><b>${totalMinutes()}</b><span>דקות</span></div>
+        <div class="stat"><b>${practices}</b><span>תרגולים במגרש</span></div>
       </div>
-      ${weekHtml()}
-      <h2>זמן אימון לפי תחום</h2>
-      <div class="card">${DATA.categories.map((c) => {
-        const sec = byCat[c.id] || 0;
-        return `<div class="bar"><div class="spread"><span>${esc(c.name)}</span><span class="muted">${sec ? mins(sec) + ' דק׳' : '—'}</span></div>
-          <div class="track"><div class="fill" style="width:${Math.round((sec / max) * 100)}%"></div></div></div>`;
-      }).join('')}</div>
-      <h2>אימונים אחרונים</h2>
-      ${recent.length ? recent.map((h) => `<div class="item"><div class="ico">${icon('check')}</div><div class="grow"><div class="t">${esc(h.title)}</div>
-          <div class="muted">${esc(h.date.split('-').reverse().join('.'))} · ${h.minutes} דק׳ · ${(h.drills || []).length} תרגילים</div></div></div>`).join('')
-        : '<div class="empty">עוד לא סיימתם אימון. האימון הראשון מחכה!</div>'}
-      ${state.history.length || state.favorites.length || state.activePlan ? '<p style="text-align:center;margin-top:18px"><button class="link" data-reset>איפוס כל הנתונים</button></p>' : ''}`;
+      <h2>התקדמות</h2>
+      <div class="card">${DATA.categories.map((c) => progressBar(c.name, inCat(c.id))).join('')}</div>
+      ${last ? `<h2>המשך צפייה</h2>${videoRow(last)}` : ''}
+      <h2>מועדפים</h2>
+      ${favs.length ? favs.map((v) => videoRow(v)).join('') : '<div class="empty">סמנו סרטון בכוכב ☆ והוא יחכה לכם כאן.</div>'}
+      <h2>נצפו לאחרונה</h2>
+      ${watched.length ? watched.slice(0, 8).map((v) => videoRow(v)).join('') : '<div class="empty">עוד לא צפיתם בסרטון. הראשון מחכה בדף הבית.</div>'}
+      ${any ? '<p style="text-align:center;margin-top:18px"><button class="link" data-reset>איפוס כל הנתונים</button></p>' : ''}`;
   }
 
   const viewNotFound = () => `<div class="empty">העמוד לא נמצא. <a class="link" href="#/home">חזרה לדף הבית</a></div>`;
 
   // ---------- router ----------
   function render(keepScroll) {
-    const [, name = 'home', arg] = (location.hash || '#/home').split('/');
+    let [, name = 'home', arg] = (location.hash || '#/home').split('/');
+    arg = decodeURIComponent(arg || '');
+    const onboarding = !state.profile && !state.skipped && name !== 'profile';
     const y = window.scrollY;
     const routes = {
-      home: viewHome, drills: viewDrills, plans: viewPlans, progress: viewProgress,
-      drill: () => viewDrill(decodeURIComponent(arg || '')),
-      plan: () => viewPlan(decodeURIComponent(arg || '')),
-      share: viewShare,
-      w: () => viewAssigned(arg || ''),
+      home: viewHome, search: viewSearch, me: viewMe, profile: viewWelcome,
+      cat: () => viewCat(arg), series: () => viewSeries(arg), video: () => viewVideo(arg),
     };
-    if (name !== 'share') shareDraft = null;
-    view.innerHTML = (routes[name] || viewNotFound)();
-    const tab = { drill: 'drills', plan: 'plans', share: 'home', w: 'home' }[name] || name;
+    view.innerHTML = onboarding ? viewWelcome() : (routes[name] || viewNotFound)();
+    tabs.hidden = onboarding;
+    const tab = { cat: arg === 'technique' ? 'technique' : 'home', series: 'technique', profile: 'me',
+      video: videoById[arg] && videoById[arg].cat === 'technique' ? 'technique' : 'home' }[name] || name;
     tabs.querySelectorAll('a').forEach((a) => {
       const on = a.dataset.tab === tab;
       a.classList.toggle('on', on);
@@ -334,64 +299,77 @@
     });
     window.scrollTo(0, keepScroll ? y : 0);
     if (!keepScroll) { view.classList.remove('enter'); void view.offsetWidth; view.classList.add('enter'); }
+    if (name === 'video' && !onboarding && videoById[arg]) openedVideo(videoById[arg]);
+  }
+
+  // Remember the last opened video, and resume / track real video files.
+  function openedVideo(v) {
+    if (!isWatched(v.id)) { state.last = v.id; save(); }
+    const el = document.getElementById('player');
+    if (!el) return;
+    let lastSaved = 0;
+    el.addEventListener('loadedmetadata', () => {
+      const pos = state.positions[v.id];
+      if (pos && pos < el.duration - 5) el.currentTime = pos;
+    });
+    el.addEventListener('timeupdate', () => {
+      if (Math.abs(el.currentTime - lastSaved) < 5) return;
+      lastSaved = el.currentTime;
+      state.positions[v.id] = Math.floor(el.currentTime);
+      if (el.duration && el.currentTime / el.duration > 0.9) markWatched(v.id); else save();
+    });
+    el.addEventListener('ended', () => { markWatched(v.id); render(true); });
   }
 
   // ---------- events ----------
   view.addEventListener('click', (e) => {
     const t = e.target.closest('button');
     if (!t) return;
-    if (t.dataset.fav) {
-      const id = t.dataset.fav;
-      const i = state.favorites.indexOf(id);
-      if (i >= 0) state.favorites.splice(i, 1); else state.favorites.push(id);
+    const d = t.dataset;
+    if (d.fav) {
+      const i = state.favorites.indexOf(d.fav);
+      if (i >= 0) state.favorites.splice(i, 1); else state.favorites.push(d.fav);
       save(); render(true);
-    } else if (t.dataset.filter) {
-      filter[t.dataset.filter] = t.dataset.val;
+    } else if (d.watched) {
+      if (isWatched(d.watched)) { delete state.watched[d.watched]; save(); } else markWatched(d.watched);
       render(true);
-    } else if (t.dataset.activate) {
-      state.activePlan = t.dataset.activate;
-      save(); location.hash = '#/home';
-    } else if ('startPlan' in t.dataset) {
-      const ns = nextSession();
-      if (ns) startRun(`${ns.plan.title} · ${ns.session.title}`, sessionDrills(ns.session), ns.plan.id);
-    } else if ('startFavs' in t.dataset) {
-      startRun('האימון שלי', state.favorites.map((id) => drillById[id]).filter(Boolean));
-    } else if (t.dataset.startDrill) {
-      const d = drillById[t.dataset.startDrill];
-      if (d) startRun(d.title, [d]);
-    } else if (t.dataset.startW) {
-      const w = decodeWorkout(t.dataset.startW);
-      if (w) startRun(w.title, w.ids.map((id) => drillById[id]), null, w);
-    } else if ('makeLink' in t.dataset) {
-      const title = document.getElementById('wTitle').value.trim() || 'אימון מהמאמן';
-      const coach = document.getElementById('wCoach').value.trim();
-      state.coach = coach; save();
-      shareDraft = { title, coach };
-      render(true);
-    } else if (t.dataset.copy) {
-      const done = () => { t.textContent = 'הקישור הועתק ✓'; };
-      if (navigator.clipboard) navigator.clipboard.writeText(t.dataset.copy).then(done, () => prompt('העתיקו את הקישור:', t.dataset.copy));
-      else prompt('העתיקו את הקישור:', t.dataset.copy);
-    } else if ('reset' in t.dataset) {
-      if (confirm('למחוק את כל ההיסטוריה, המועדפים והתוכנית הפעילה? אי אפשר לבטל את הפעולה.')) {
-        state = blank(); save(); render();
+    } else if (d.level !== undefined) {
+      levelFilter = d.level; render(true);
+    } else if (d.scat) {
+      search.cat = d.scat; render(true);
+    } else if (d.opt) {
+      t.parentElement.querySelectorAll('.chip').forEach((c) => {
+        c.classList.toggle('on', c === t); c.setAttribute('aria-pressed', String(c === t));
+      });
+    } else if ('skip' in d) {
+      state.skipped = true; save(); location.hash = '#/home'; render();
+    } else if (d.practice) {
+      if (videoById[d.practice]) startRun(videoById[d.practice]);
+    } else if ('reset' in d) {
+      if (confirm('למחוק את הפרופיל, המועדפים וכל ההתקדמות? אי אפשר לבטל את הפעולה.')) {
+        state = blank(); save(); location.hash = '#/home'; render();
       }
     }
   });
+  view.addEventListener('submit', (e) => {
+    if (e.target.id !== 'profileForm') return;
+    e.preventDefault();
+    const pick = (g) => { const el = e.target.querySelector(`[data-group="${g}"] .chip.on`); return el ? el.dataset.val : ''; };
+    state.profile = {
+      name: document.getElementById('pfName').value.trim().slice(0, 30),
+      age: pick('age'), level: Number(pick('level') || 0), position: pick('position'),
+    };
+    save();
+    if (location.hash === '#/home' || !location.hash) render(); else location.hash = '#/home';
+  });
   view.addEventListener('input', (e) => {
-    if (e.target.type !== 'search') return;
-    filter.q = e.target.value;
-    const q = filter.q.trim();
-    const list = DATA.drills.filter((d) =>
-      (filter.cat === 'all' || d.cat === filter.cat) &&
-      (filter.level === 'all' || d.level === Number(filter.level)) &&
-      (!q || d.title.includes(q) || catById[d.cat].name.includes(q)));
-    document.getElementById('list').innerHTML = list.length
-      ? list.map((d) => drillItem(d)).join('') : '<div class="empty">לא נמצאו תרגילים מתאימים.</div>';
+    if (e.target.id !== 'q') return;
+    search.q = e.target.value;
+    document.getElementById('list').innerHTML = searchResults();
   });
   window.addEventListener('hashchange', () => render());
 
-  // ---------- workout runner ----------
+  // ---------- pitch timer ("יוצאים למגרש") ----------
   let run = null;
   let ticker = null;
   let wakeLock = null;
@@ -417,68 +395,56 @@
     } catch (e) { /* not supported or denied */ }
   }
 
-  function startRun(title, drills, planId, assigned) {
-    if (!drills.length) return;
-    run = { title, drills, planId: planId || null, assigned: assigned || null, i: 0, phase: 'work', left: drills[0].seconds * 1000, total: drills[0].seconds * 1000, last: Date.now(), paused: false, done: [], reps: 0 };
+  function startRun(v) {
+    run = { v, left: v.seconds * 1000, total: v.seconds * 1000, last: Date.now(), paused: false, reps: 0 };
     runEl.hidden = false;
+    runEl.className = '';
     document.body.style.overflow = 'hidden';
     lockScreen(true);
-    drawRun();
+    runEl.innerHTML = `<div class="wrap">
+      <div class="top"><button class="x" data-run="quit" aria-label="יציאה מהתרגול">✕</button>
+        <div class="dots"><i class="cur"></i></div><span class="muted">${clock(v.seconds)}</span></div>
+      <div class="phase">${esc(seriesById[v.series] ? seriesById[v.series].name : catById[v.cat].name)}</div>
+      <h2>${esc(v.title)}</h2>
+      <div class="dial"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56"/><circle id="ring" cx="60" cy="60" r="56" pathLength="100"/></svg>
+        <div class="clock" id="clock" role="timer"></div></div>
+      <div class="reps"><button data-run="rep-" aria-label="הורדת חזרה">−</button><div><b id="reps">0</b><div class="muted" style="text-align:center">חזרות</div></div><button data-run="rep+" aria-label="הוספת חזרה">+</button></div>
+      <div class="card"><ol class="steps">${v.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol></div>
+      <div class="ctrl two">
+        <button class="btn" data-run="pause" id="pauseBtn">השהה</button>
+        <button class="btn ghost" data-run="quit">סיים</button>
+      </div></div>`;
+    updateClock();
     clearInterval(ticker);
     ticker = setInterval(tick, 200);
   }
-
-  function setPhase(phase, ms) {
-    run.phase = phase; run.left = ms; run.total = ms; run.last = Date.now();
-  }
-
   function tick() {
     if (!run || run.finished) return;
     const now = Date.now();
     if (!run.paused) run.left -= now - run.last;
     run.last = now;
-    if (run.left <= 0) advance(true);
-    else updateClock();
+    if (run.left <= 0) finishRun(true); else updateClock();
   }
-
-  // completed=true when the timer ran out, false when the player skipped
-  function advance(completed) {
-    if (run.phase === 'work') {
-      if (completed) { run.done.push(run.drills[run.i].id); beep(880); }
-      if (run.i >= run.drills.length - 1) return finishRun();
-      setPhase('rest', REST_SECONDS * 1000);
-    } else {
-      run.i++; run.reps = 0;
-      setPhase('work', run.drills[run.i].seconds * 1000);
-      beep(1320);
-    }
-    drawRun();
+  function updateClock() {
+    const c = document.getElementById('clock');
+    if (!c) return;
+    c.textContent = clock(Math.max(0, Math.ceil(run.left / 1000)));
+    const frac = Math.min(1, Math.max(0, run.left / run.total));
+    document.getElementById('ring').style.strokeDashoffset = String(100 - frac * 100);
+    runEl.classList.toggle('hot', run.left <= 5000);
   }
-
-  function finishRun() {
+  function finishRun(completed) {
     clearInterval(ticker);
     lockScreen(false);
     run.finished = true;
-    const doneDrills = run.done.map((id) => drillById[id]);
-    const minutes = doneDrills.length ? mins(sumSeconds(doneDrills)) : 0;
-    const full = run.done.length === run.drills.length;
-    if (doneDrills.length) {
-      state.history.push({ date: dayKey(), title: run.title, minutes, drills: run.done.slice() });
-      if (run.planId && full) state.planDone[run.planId] = (state.planDone[run.planId] || 0) + 1;
-      if (run.assigned && full) {
-        const rec = state.assigned.find((a) => a.code === run.assigned.code);
-        if (rec) rec.done = true;
-      }
+    runEl.className = '';
+    if (completed) {
+      beep(1320, 300);
+      state.practice[dayKey()] = (state.practice[dayKey()] || 0) + 1;
       save();
     }
-    run.minutes = minutes;
-    const report = run.assigned && doneDrills.length
-      ? `<div class="card" style="text-align:start;margin-top:16px"><label class="muted" for="pName">השם שלך (כדי שהמאמן ידע מי סיים)</label>
-          <input class="search" id="pName" maxlength="30" value="${esc(state.name)}" placeholder="שם ושם משפחה">
-          <a class="btn block" id="waReport" href="${esc(reportLink())}" target="_blank" rel="noopener">דיווח למאמן בוואטסאפ</a></div>` : '';
-    runEl.className = '';
     let burst = '';
-    if (doneDrills.length) {
+    if (completed) {
       for (let k = 0; k < 28; k++) {
         const a = (k / 28) * Math.PI * 2 + Math.random() * 0.4;
         const r = 110 + Math.random() * 150;
@@ -487,26 +453,12 @@
     }
     runEl.innerHTML = `<div class="wrap"><div class="done-box">
       ${burst ? `<div class="burst" aria-hidden="true">${burst}</div>` : ''}
-      ${doneDrills.length ? '<div class="medal"><img src="img/thumbs.jpg" alt=""></div>' : '<div class="big">0</div>'}
-      <h2>${doneDrills.length ? 'כל הכבוד, האימון הושלם!' : 'האימון הופסק'}</h2>
-      <p class="muted">${doneDrills.length ? `${doneDrills.length} מתוך ${run.drills.length} תרגילים · ${minutes} דקות · רצף של ${daysHe(streak())}` : 'לא הושלם אף תרגיל, אז האימון לא נשמר.'}</p>
-      ${run.planId && doneDrills.length && !full ? '<p class="muted">דילגת על חלק מהתרגילים, אז האימון הזה יחכה לך שוב בתוכנית.</p>' : ''}
-      ${report}
-      <button class="btn ${report ? 'ghost ' : ''}block" data-run="close">סיום</button>
+      ${completed ? '<div class="medal"><img src="img/thumbs.jpg" alt=""></div>' : '<div class="big">0</div>'}
+      <h2>${completed ? 'כל הכבוד, התרגול הושלם!' : 'התרגול הופסק'}</h2>
+      <p class="muted">${completed ? `${esc(run.v.title)} · ${run.reps ? (run.reps === 1 ? 'חזרה אחת' : run.reps + ' חזרות') + ' · ' : ''}רצף של ${daysHe(streak())}` : 'התרגול לא נספר. אפשר לנסות שוב מתי שרוצים.'}</p>
+      <button class="btn block" data-run="close">סיום</button>
     </div></div>`;
   }
-
-  function reportLink() {
-    const n = run.done.length;
-    const who = state.name.trim() || 'שחקן';
-    return waLink(`✅ ${who}: סיימתי את "${run.assigned.title}" – ${n} מתוך ${run.drills.length} תרגילים, ${run.minutes} דקות. רצף של ${daysHe(streak())}.`);
-  }
-  runEl.addEventListener('input', (e) => {
-    if (e.target.id !== 'pName' || !run) return;
-    state.name = e.target.value.slice(0, 30); save();
-    document.getElementById('waReport').href = reportLink();
-  });
-
   function closeRun() {
     clearInterval(ticker);
     lockScreen(false);
@@ -514,55 +466,17 @@
     runEl.hidden = true;
     runEl.innerHTML = '';
     document.body.style.overflow = '';
-    render();
+    render(true);
   }
-
-  function drawRun() {
-    const d = run.drills[run.i];
-    const rest = run.phase === 'rest';
-    const next = run.drills[run.i + 1];
-    runEl.className = rest ? 'rest' : '';
-    const dots = run.drills.map((x, n) => `<i class="${run.done.includes(x.id) ? 'done' : n === run.i ? 'cur' : ''}"></i>`).join('');
-    runEl.innerHTML = `<div class="wrap">
-      <div class="top"><button class="x" data-run="quit" aria-label="יציאה מהאימון">✕</button>
-        <div class="dots">${dots}</div><span class="muted">${run.i + 1}/${run.drills.length}</span></div>
-      <div class="phase">${rest ? 'מנוחה · התרגיל הבא:' : esc(catById[d.cat].name)}</div>
-      <h2>${esc(rest ? next.title : d.title)}</h2>
-      ${videoHtml(rest ? next : d)}
-      <div class="dial"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56"/><circle id="ring" cx="60" cy="60" r="56" pathLength="100"/></svg>
-        <div class="clock" id="clock" role="timer"></div></div>
-      ${rest ? `<div class="card"><ol class="steps">${next.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol><div class="muted">ציוד: ${esc(next.equipment)}</div></div>`
-        : `<div class="reps"><button data-run="rep-" aria-label="הורדת חזרה">−</button><div><b id="reps">${run.reps}</b><div class="muted" style="text-align:center">חזרות</div></div><button data-run="rep+" aria-label="הוספת חזרה">+</button></div>
-           <div class="card"><ol class="steps">${d.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol></div>`}
-      <div class="ctrl">
-        <button class="btn ghost" data-run="skip">${rest ? 'דלג על מנוחה' : 'דלג'}</button>
-        <button class="btn" data-run="pause" id="pauseBtn">${run.paused ? 'המשך' : 'השהה'}</button>
-        <button class="btn ghost" data-run="finish">סיים</button>
-      </div></div>`;
-    updateClock();
-  }
-
-  function updateClock() {
-    const c = document.getElementById('clock');
-    if (!c) return;
-    c.textContent = clock(Math.max(0, Math.ceil(run.left / 1000)));
-    const frac = Math.min(1, Math.max(0, run.left / run.total));
-    document.getElementById('ring').style.strokeDashoffset = String(100 - frac * 100);
-    runEl.classList.toggle('hot', run.phase === 'work' && run.left <= 5000);
-  }
-
   runEl.addEventListener('click', (e) => {
     const t = e.target.closest('[data-run]');
     if (!t || !run) return;
     const a = t.dataset.run;
     if (a === 'close') closeRun();
-    else if (a === 'quit') {
-      if (!run.done.length || confirm('לצאת מהאימון? התרגילים שהושלמו יישמרו.')) finishRun();
-    } else if (a === 'finish') finishRun();
-    else if (a === 'skip') advance(false);
+    else if (a === 'quit') finishRun(false);
     else if (a === 'pause') {
       run.paused = !run.paused; run.last = Date.now();
-      document.getElementById('pauseBtn').textContent = run.paused ? 'המשך' : 'השהה';
+      t.textContent = run.paused ? 'המשך' : 'השהה';
     } else if (a === 'rep+' || a === 'rep-') {
       run.reps = Math.max(0, run.reps + (a === 'rep+' ? 1 : -1));
       document.getElementById('reps').textContent = run.reps;
@@ -577,13 +491,13 @@
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((data) => {
       DATA = data;
-      DATA.drills.forEach((d) => { drillById[d.id] = d; });
+      DATA.videos.forEach((v) => { videoById[v.id] = v; });
       DATA.categories.forEach((c) => { catById[c.id] = c; });
-      state.favorites = state.favorites.filter((id) => drillById[id]);
-      if (!DATA.plans.some((p) => p.id === state.activePlan)) state.activePlan = null;
+      DATA.series.forEach((s) => { seriesById[s.id] = s; });
+      state.favorites = state.favorites.filter((id) => videoById[id]);
       render();
     })
     .catch(() => {
-      view.innerHTML = '<div class="empty">לא הצלחנו לטעון את התרגילים. בדקו את החיבור ורעננו את העמוד.<br>(בפתיחה מקומית צריך שרת, לא לחיצה כפולה על הקובץ.)</div>';
+      view.innerHTML = '<div class="empty">לא הצלחנו לטעון את הספרייה. בדקו את החיבור ורעננו את העמוד.<br>(בפתיחה מקומית צריך שרת, לא לחיצה כפולה על הקובץ.)</div>';
     });
 })();
