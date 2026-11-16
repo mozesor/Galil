@@ -77,12 +77,26 @@
   const waLink = (text) => `https://wa.me/?text=${encodeURIComponent(text)}`;
   let shareDraft = null;
 
+  const SVG = (inner) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
+  const ICONS = {
+    mastery: '<circle cx="12" cy="12" r="9"/><path d="M12 8l3.8 2.8-1.5 4.4H9.7l-1.5-4.4z"/>',
+    touch: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/>',
+    dribble: '<path d="M4 19c5 0 3-7 8-7s3-7 8-7"/>',
+    pass: '<path d="M5 19L19 5M10 5h9v9"/>',
+    shoot: '<path d="M3 19V6h18v13M3 11h18M9 6v13M15 6v13"/>',
+    fit: '<path d="M13 3L5 14h6l-1 7 9-12h-6z"/>',
+    coach: '<rect x="4" y="4" width="16" height="16"/><path d="M12 4v16M7.5 8.5l2 2m0-2l-2 2"/><circle cx="16" cy="15" r="1.6"/>',
+    check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  };
+  const icon = (id) => SVG(ICONS[id] || ICONS.mastery);
+  const TICKER = '<span>FIVE BALL<i></i>מתאמנים<i></i>משתפרים<i></i>מנצחים<i></i>BY ADAM<i></i>כל יום<i></i></span>';
+
   // ---------- small render pieces ----------
   function drillItem(d, n) {
     const cat = catById[d.cat];
     const fav = state.favorites.includes(d.id);
     return `<div class="item">
-      ${n ? `<div class="num">${n}</div>` : `<div class="ico">${cat.icon}</div>`}
+      ${n ? `<div class="num">${n}</div>` : `<div class="ico">${icon(d.cat)}</div>`}
       <a class="grow" href="#/drill/${esc(d.id)}">
         <div class="t">${esc(d.title)}</div>
         <div><span class="tag">${esc(cat.name)}</span><span class="tag">${esc(DATA.levels[d.level])}</span><span class="tag">${clock(d.seconds)}</span></div>
@@ -124,14 +138,14 @@
     let hero;
     if (ns) {
       const drills = sessionDrills(ns.session);
-      hero = `<div class="card hero photo">
+      hero = `<div class="card hero photo"><span class="five" aria-hidden="true">5</span>
         <div class="muted">${esc(ns.plan.title)} · אימון ${ns.idx + 1} מתוך ${ns.plan.sessions.length}${ns.round > 1 ? ` · סבב ${ns.round}` : ''}</div>
         <h3>${esc(ns.session.title)}</h3>
         <div class="muted">${drills.length} תרגילים · כ-${mins(sumSeconds(drills) + REST_SECONDS * (drills.length - 1))} דקות</div>
-        <button class="btn block" data-start-plan>▶ התחל אימון</button>
+        <button class="btn block" data-start-plan>התחל אימון</button>
       </div>`;
     } else {
-      hero = `<div class="card hero photo">
+      hero = `<div class="card hero photo"><span class="five" aria-hidden="true">5</span>
         <h3>בוחרים תוכנית ומתחילים</h3>
         <p class="muted">תוכנית אימון נותנת לך אימון מוכן לכל יום, לפי הרמה שלך.</p>
         <a class="btn block" href="#/plans">בחירת תוכנית</a>
@@ -140,6 +154,7 @@
     return `<div class="brand"><img src="img/logo.jpg" alt="" width="52" height="52"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
       <div class="head"><h1>מתאמנים עם אדם</h1><p>${s > 0 ? `רצף של ${daysHe(s)}. ממשיכים?` : 'אימון קצר היום שווה יותר מאימון ארוך מחר.'}</p></div>
       ${hero}
+      <div class="ticker" aria-hidden="true"><div>${TICKER}${TICKER}</div></div>
       <div class="stats">
         <div class="stat"><b>${s}</b><span>ימי רצף</span></div>
         <div class="stat"><b>${state.history.length}</b><span>אימונים</span></div>
@@ -150,8 +165,8 @@
       <h2>האימון שלי</h2>
       ${favs.length ? `<div class="card">
           <div class="spread"><div><b>${favs.length} תרגילים שסימנת</b><div class="muted">כ-${mins(sumSeconds(favs))} דקות</div></div>
-          <button class="btn small" data-start-favs>▶ התחל</button></div>
-          <a class="btn ghost block" href="#/share">📣 מאמן? שליחת האימון לקבוצה</a>
+          <button class="btn small" data-start-favs>התחל</button></div>
+          <a class="btn ghost block" href="#/share">מאמן? שליחת האימון לקבוצה</a>
         </div>${favs.map((d) => drillItem(d)).join('')}`
       : `<div class="card muted">סמנו תרגילים בכוכב ☆ כדי לבנות אימון משלכם.</div>`}`;
   }
@@ -160,7 +175,7 @@
     const open = state.assigned.map((a) => ({ a, w: decodeWorkout(a.code) })).filter((x) => x.w && !x.a.done);
     if (!open.length) return '';
     return `<h2>מהמאמן</h2>${open.map(({ w }) => `<a class="item" href="#/w/${esc(w.code)}">
-      <div class="ico">📣</div><div class="grow"><div class="t">${esc(w.title)}</div>
+      <div class="ico">${icon('coach')}</div><div class="grow"><div class="t">${esc(w.title)}</div>
       <div class="muted">${w.coach ? esc(w.coach) + ' · ' : ''}${w.ids.length} תרגילים · מחכה לביצוע</div></div></a>`).join('')}`;
   }
 
@@ -200,8 +215,8 @@
     const drills = w.ids.map((id) => drillById[id]);
     return `<a class="back" href="#/home">→ לדף הבית</a>
       <div class="head"><h1>${esc(w.title)}</h1><p>${w.coach ? 'נשלח על ידי ' + esc(w.coach) + ' · ' : ''}${drills.length} תרגילים · כ-${mins(sumSeconds(drills) + REST_SECONDS * (drills.length - 1))} דקות</p></div>
-      ${rec.done ? '<div class="card" style="border-color:var(--accent)">✅ כבר ביצעת את האימון הזה. אפשר לבצע שוב.</div>' : ''}
-      <button class="btn block" data-start-w="${esc(code)}">▶ התחל אימון</button>
+      ${rec.done ? '<div class="card" style="border-color:var(--accent)">כבר ביצעת את האימון הזה. אפשר לבצע שוב.</div>' : ''}
+      <button class="btn block" data-start-w="${esc(code)}">התחל אימון</button>
       <h2>התרגילים</h2>
       ${drills.map((d, n) => drillItem(d, n + 1)).join('')}`;
   }
@@ -216,7 +231,7 @@
       `<button class="chip ${String(filter[group]) === String(val) ? 'on' : ''}" data-filter="${group}" data-val="${esc(val)}" aria-pressed="${String(filter[group]) === String(val)}">${label}</button>`;
     return `<div class="head"><h1>תרגילים</h1><p>${DATA.drills.length} תרגילים בספרייה</p></div>
       <input class="search" type="search" placeholder="חיפוש תרגיל" aria-label="חיפוש תרגיל" value="${esc(filter.q)}">
-      <div class="chips">${chip('cat', 'all', 'הכול')}${DATA.categories.map((c) => chip('cat', c.id, `${c.icon} ${esc(c.name)}`)).join('')}</div>
+      <div class="chips">${chip('cat', 'all', 'הכול')}${DATA.categories.map((c) => chip('cat', c.id, esc(c.name))).join('')}</div>
       <div class="chips">${chip('level', 'all', 'כל הרמות')}${DATA.levels.map((l, i) => chip('level', i, esc(l))).join('')}</div>
       <div id="list">${list.length ? list.map((d) => drillItem(d)).join('') : '<div class="empty">לא נמצאו תרגילים מתאימים.</div>'}</div>`;
   }
@@ -231,7 +246,7 @@
       ${videoHtml(d)}
       <div class="card"><h3>איך מבצעים</h3><ol class="steps">${d.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol>
         <div class="muted">ציוד: ${esc(d.equipment)}</div></div>
-      <button class="btn block" data-start-drill="${esc(d.id)}">▶ התחל תרגיל</button>
+      <button class="btn block" data-start-drill="${esc(d.id)}">התחל תרגיל</button>
       <button class="btn ghost block" data-fav="${esc(d.id)}" aria-pressed="${fav}">${fav ? '★ באימון שלי' : '☆ הוספה לאימון שלי'}</button>`;
   }
 
@@ -282,11 +297,11 @@
       <h2>זמן אימון לפי תחום</h2>
       <div class="card">${DATA.categories.map((c) => {
         const sec = byCat[c.id] || 0;
-        return `<div class="bar"><div class="spread"><span>${c.icon} ${esc(c.name)}</span><span class="muted">${sec ? mins(sec) + ' דק׳' : '—'}</span></div>
+        return `<div class="bar"><div class="spread"><span>${esc(c.name)}</span><span class="muted">${sec ? mins(sec) + ' דק׳' : '—'}</span></div>
           <div class="track"><div class="fill" style="width:${Math.round((sec / max) * 100)}%"></div></div></div>`;
       }).join('')}</div>
       <h2>אימונים אחרונים</h2>
-      ${recent.length ? recent.map((h) => `<div class="item"><div class="ico">✅</div><div class="grow"><div class="t">${esc(h.title)}</div>
+      ${recent.length ? recent.map((h) => `<div class="item"><div class="ico">${icon('check')}</div><div class="grow"><div class="t">${esc(h.title)}</div>
           <div class="muted">${esc(h.date.split('-').reverse().join('.'))} · ${h.minutes} דק׳ · ${(h.drills || []).length} תרגילים</div></div></div>`).join('')
         : '<div class="empty">עוד לא סיימתם אימון. האימון הראשון מחכה!</div>'}
       ${state.history.length || state.favorites.length || state.activePlan ? '<p style="text-align:center;margin-top:18px"><button class="link" data-reset>איפוס כל הנתונים</button></p>' : ''}`;
@@ -314,6 +329,7 @@
       if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
     window.scrollTo(0, keepScroll ? y : 0);
+    if (!keepScroll) { view.classList.remove('enter'); void view.offsetWidth; view.classList.add('enter'); }
   }
 
   // ---------- events ----------
@@ -455,10 +471,19 @@
     const report = run.assigned && doneDrills.length
       ? `<div class="card" style="text-align:start;margin-top:16px"><label class="muted" for="pName">השם שלך (כדי שהמאמן ידע מי סיים)</label>
           <input class="search" id="pName" maxlength="30" value="${esc(state.name)}" placeholder="שם ושם משפחה">
-          <a class="btn block" id="waReport" href="${esc(reportLink())}" target="_blank" rel="noopener">📣 דיווח למאמן בוואטסאפ</a></div>` : '';
+          <a class="btn block" id="waReport" href="${esc(reportLink())}" target="_blank" rel="noopener">דיווח למאמן בוואטסאפ</a></div>` : '';
     runEl.className = '';
+    let burst = '';
+    if (doneDrills.length) {
+      for (let k = 0; k < 28; k++) {
+        const a = (k / 28) * Math.PI * 2 + Math.random() * 0.4;
+        const r = 110 + Math.random() * 150;
+        burst += `<i style="--x:${Math.round(Math.cos(a) * r)}px;--y:${Math.round(Math.sin(a) * r)}px;--r:${Math.round(Math.random() * 540 - 270)}deg"></i>`;
+      }
+    }
     runEl.innerHTML = `<div class="wrap"><div class="done-box">
-      ${doneDrills.length ? '<img src="img/thumbs.jpg" alt="">' : '<div class="big">👟</div>'}
+      ${burst ? `<div class="burst" aria-hidden="true">${burst}</div>` : ''}
+      ${doneDrills.length ? '<img src="img/thumbs.jpg" alt="">' : '<div class="big">0</div>'}
       <h2>${doneDrills.length ? 'כל הכבוד, האימון הושלם!' : 'האימון הופסק'}</h2>
       <p class="muted">${doneDrills.length ? `${doneDrills.length} מתוך ${run.drills.length} תרגילים · ${minutes} דקות · רצף של ${daysHe(streak())}` : 'לא הושלם אף תרגיל, אז האימון לא נשמר.'}</p>
       ${run.planId && doneDrills.length && !full ? '<p class="muted">דילגת על חלק מהתרגילים, אז האימון הזה יחכה לך שוב בתוכנית.</p>' : ''}
@@ -500,14 +525,14 @@
       <div class="phase">${rest ? 'מנוחה · התרגיל הבא:' : esc(catById[d.cat].name)}</div>
       <h2>${esc(rest ? next.title : d.title)}</h2>
       ${videoHtml(rest ? next : d)}
-      <div class="clock" id="clock" role="timer"></div>
-      <div class="prog"><i id="prog"></i></div>
+      <div class="dial"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56"/><circle id="ring" cx="60" cy="60" r="56" pathLength="100"/></svg>
+        <div class="clock" id="clock" role="timer"></div></div>
       ${rest ? `<div class="card"><ol class="steps">${next.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol><div class="muted">ציוד: ${esc(next.equipment)}</div></div>`
         : `<div class="reps"><button data-run="rep-" aria-label="הורדת חזרה">−</button><div><b id="reps">${run.reps}</b><div class="muted" style="text-align:center">חזרות</div></div><button data-run="rep+" aria-label="הוספת חזרה">+</button></div>
            <div class="card"><ol class="steps">${d.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol></div>`}
       <div class="ctrl">
         <button class="btn ghost" data-run="skip">${rest ? 'דלג על מנוחה' : 'דלג'}</button>
-        <button class="btn" data-run="pause" id="pauseBtn">${run.paused ? '▶ המשך' : '⏸ השהה'}</button>
+        <button class="btn" data-run="pause" id="pauseBtn">${run.paused ? 'המשך' : 'השהה'}</button>
         <button class="btn ghost" data-run="finish">סיים</button>
       </div></div>`;
     updateClock();
@@ -517,7 +542,9 @@
     const c = document.getElementById('clock');
     if (!c) return;
     c.textContent = clock(Math.max(0, Math.ceil(run.left / 1000)));
-    document.getElementById('prog').style.width = `${Math.min(100, (1 - run.left / run.total) * 100)}%`;
+    const frac = Math.min(1, Math.max(0, run.left / run.total));
+    document.getElementById('ring').style.strokeDashoffset = String(100 - frac * 100);
+    runEl.classList.toggle('hot', run.phase === 'work' && run.left <= 5000);
   }
 
   runEl.addEventListener('click', (e) => {
@@ -531,7 +558,7 @@
     else if (a === 'skip') advance(false);
     else if (a === 'pause') {
       run.paused = !run.paused; run.last = Date.now();
-      document.getElementById('pauseBtn').textContent = run.paused ? '▶ המשך' : '⏸ השהה';
+      document.getElementById('pauseBtn').textContent = run.paused ? 'המשך' : 'השהה';
     } else if (a === 'rep+' || a === 'rep-') {
       run.reps = Math.max(0, run.reps + (a === 'rep+' ? 1 : -1));
       document.getElementById('reps').textContent = run.reps;
