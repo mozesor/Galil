@@ -41,6 +41,7 @@
     play: '<path d="M8 5l11 7-11 7z"/>',
   };
   const icon = (id) => SVG(ICONS[id] || ICONS.technique);
+  const CALM = Boolean(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
   const TICKER = '<span>FIVE BALL<i></i>לומדים<i></i>יוצאים למגרש<i></i>מיישמים<i></i>BY ADAM<i></i>כל יום<i></i></span>';
 
   // ---------- state ----------
@@ -123,6 +124,7 @@
   function tile(c, wide) {
     const list = inCat(c.id);
     return `<a class="tile ${wide ? 'wide' : ''}" href="#/cat/${esc(c.id)}" style="--img:url('${esc(c.image)}');--p:${pct(list)}%">
+      ${wide && !CALM ? '<video class="autovid" src="videos/tile-technique.mp4" poster="img/tile-technique.jpg" loop muted playsinline preload="auto" aria-hidden="true" tabindex="-1"></video>' : ''}
       <b>${esc(c.name)}</b><span>${esc(c.blurb)}</span><small>${watchedIn(list)} / ${list.length} נצפו</small></a>`;
   }
   function player(v) {
@@ -180,6 +182,8 @@
       <div class="ticker" aria-hidden="true"><div>${TICKER}${TICKER}</div></div>
       <h2>קטגוריות</h2>
       <div class="tiles">${tile(tech, true)}${rest.map((c) => tile(c)).join('')}</div>
+      <h2>הצצה לאפליקציה</h2>
+      <div class="video tall"><video src="videos/promo.mp4" poster="img/promo-poster.jpg" controls playsinline preload="none" aria-label="סרטון היכרות עם Five Ball, 20 שניות, ללא קול"></video></div>
       ${rec.length ? `<h2>מומלצים בשבילך</h2><div class="hscroll">${rec.map(videoCard).join('')}</div>` : ''}`;
   }
 
@@ -300,6 +304,21 @@
     window.scrollTo(0, keepScroll ? y : 0);
     if (!keepScroll) { view.classList.remove('enter'); void view.offsetWidth; view.classList.add('enter'); }
     if (name === 'video' && !onboarding && videoById[arg]) openedVideo(videoById[arg]);
+    startAutoVideos();
+  }
+
+  // Background loops. iOS ignores the muted attribute on markup inserted with innerHTML, which
+  // blocks autoplay, so set it as a property and start playback here. If the browser still
+  // refuses (Low Power Mode, for example) start on the first touch; the poster shows meanwhile.
+  function startAutoVideos() {
+    view.querySelectorAll('.autovid').forEach((v) => {
+      v.muted = true;
+      v.defaultMuted = true;
+      v.playsInline = true;
+      const quiet = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+      const p = v.play();
+      if (p && p.catch) p.catch(() => document.addEventListener('pointerdown', quiet, { once: true }));
+    });
   }
 
   // Remember the last opened video, and resume / track real video files.
