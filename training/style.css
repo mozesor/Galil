@@ -265,6 +265,38 @@ ol.steps li::before { content: counter(s); flex: none; width: 20px; font: 700 34
 @keyframes pulse { to { transform: scale(1.08); } }
 @keyframes burst { 0% { opacity: 1; transform: translate(0, 0) rotate(0) scale(.2); } 100% { opacity: 0; transform: translate(var(--x), var(--y)) rotate(var(--r)) scale(1); } }
 
+/* ---------- polish pass: stronger contrast, graded photos, grain ---------- */
+:root { --accent: #f6c21c; }
+html { direction: rtl; }
+body { position: relative; z-index: 0; min-height: 100vh; background: var(--bg); }
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: 40; pointer-events: none; opacity: .07; mix-blend-mode: overlay;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.brand { margin-bottom: 14px; }
+.brand + .head { margin-bottom: 16px; }
+.brand + .head h1 { font-size: 46px; }
+.brand + .head h1::after { width: 54px; height: 6px; margin-top: 10px; }
+.brand + .head p { margin-top: 8px; }
+
+/* photos: one black-and-white grade with a gold wash, so type and gold always read */
+.card.hero.photo { padding: 170px 20px 62px; min-height: 420px; }
+.card.hero.photo::before { filter: grayscale(1) contrast(1.2) brightness(.55); }
+.card.hero.photo::after { background: linear-gradient(rgba(11,11,12,.3), rgba(11,11,12,.1) 30%, rgba(11,11,12,.97) 82%), linear-gradient(115deg, rgba(246,194,28,.3), rgba(246,194,28,0) 55%); }
+.card.hero.photo .muted { color: #ece7da; font-weight: 600; }
+.five { -webkit-text-stroke: 3px var(--accent); opacity: 1; }
+.video .ph { filter: grayscale(1) contrast(1.15) brightness(.6); }
+.video:has(.ph)::after {
+  content: ""; position: absolute; inset: 0; margin: auto; width: 68px; height: 66px; pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23f6c21c' d='M50 0l50 38-19 62H19L0 38z'/%3E%3Cpath fill='%23120e00' d='M41 36l26 17-26 17z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.video .ph span { font-size: 14px; letter-spacing: .02em; }
+.medal { position: relative; width: 230px; height: 220px; margin: 0 auto; animation: pop .7s var(--ease) .25s both; }
+.medal::before { content: ""; position: absolute; inset: 0; background: var(--accent); clip-path: var(--pent); transform: translate(-10px, 10px); }
+#run .done-box .medal img { position: relative; display: block; animation: none; filter: grayscale(1) contrast(1.15) brightness(.85); }
+.item { padding: 14px 12px; }
+.card { padding: 20px 18px; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }

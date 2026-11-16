@@ -2,6 +2,10 @@
 (() => {
   'use strict';
 
+  // The app is Hebrew-only; force RTL even when the host page does not set it.
+  document.documentElement.lang = 'he';
+  document.documentElement.dir = 'rtl';
+
   const STORE_KEY = 'fiveball.v1';
   const REST_SECONDS = 15;
   const DAY_NAMES = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ש'];
@@ -483,7 +487,7 @@
     }
     runEl.innerHTML = `<div class="wrap"><div class="done-box">
       ${burst ? `<div class="burst" aria-hidden="true">${burst}</div>` : ''}
-      ${doneDrills.length ? '<img src="img/thumbs.jpg" alt="">' : '<div class="big">0</div>'}
+      ${doneDrills.length ? '<div class="medal"><img src="img/thumbs.jpg" alt=""></div>' : '<div class="big">0</div>'}
       <h2>${doneDrills.length ? 'כל הכבוד, האימון הושלם!' : 'האימון הופסק'}</h2>
       <p class="muted">${doneDrills.length ? `${doneDrills.length} מתוך ${run.drills.length} תרגילים · ${minutes} דקות · רצף של ${daysHe(streak())}` : 'לא הושלם אף תרגיל, אז האימון לא נשמר.'}</p>
       ${run.planId && doneDrills.length && !full ? '<p class="muted">דילגת על חלק מהתרגילים, אז האימון הזה יחכה לך שוב בתוכנית.</p>' : ''}
