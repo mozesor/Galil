@@ -1,0 +1,14 @@
+{
+  "name": "אימון אישי – כדורגל",
+  "short_name": "אימון אישי",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0e1512",
+  "theme_color": "#0e1512",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
