@@ -387,3 +387,64 @@ body::after { opacity: .045; }
 .btn::after { background: linear-gradient(100deg, transparent, rgba(255,255,255,.35), transparent); }
 #run { background: radial-gradient(120% 60% at 50% 0, #2a2413, var(--bg) 60%); }
 #run.rest { background: radial-gradient(120% 60% at 50% 0, #2a2c30, var(--bg) 60%); }
+
+/* ---------- polish pass 2: tighter header, calmer motion, clearer lists ---------- */
+html { scroll-behavior: smooth; }
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+/* header: less empty black above the hero */
+.brand { margin-bottom: 10px; }
+.brand img { width: 40px; height: 40px; }
+.brand .name { font-size: 30px; }
+.brand + .head { margin-bottom: 14px; }
+.brand + .head h1 { font-size: 40px; }
+.brand + .head h1::after { display: none; }
+.brand + .head p { margin-top: 4px; color: var(--accent); font-weight: 700; font-size: 15px; }
+
+/* hero: a vignette gives the photo depth, and only its button keeps the shine */
+.card.hero.photo { padding-top: 160px; min-height: 400px; }
+.card.hero.photo::after { background: radial-gradient(120% 80% at 70% 20%, rgba(18,19,21,0) 30%, rgba(18,19,21,.55) 100%), linear-gradient(rgba(18,19,21,.2), rgba(18,19,21,.1) 30%, rgba(18,19,21,.97) 84%), linear-gradient(115deg, rgba(224,176,68,.2), rgba(224,176,68,0) 55%); }
+.card.hero.photo h3 { font-size: 50px; text-wrap: balance; }
+.btn::after { display: none; }
+.card.hero.photo .btn::after { display: block; }
+.btn { background: linear-gradient(#e6b84c, #d6a53a); }
+.btn.ghost { background: var(--card2); box-shadow: inset 0 0 0 1px var(--line); }
+.btn:active { filter: brightness(.94); }
+
+/* section headings and surfaces */
+#view h2 { font-size: 30px; margin: 32px 0 12px; }
+#view h2::before { width: 7px; height: 22px; }
+.card, .item { box-shadow: inset 0 0 0 1px rgba(238, 234, 224, .05); }
+.item { margin-bottom: 8px; }
+.item .t { font-size: 17.5px; }
+.tag { font-size: 13.5px; }
+
+/* series list: a number per series instead of the same icon ten times */
+.item.series { padding: 16px 14px 18px; }
+.idx { flex: none; width: 46px; font: 700 40px/0.9 var(--display); color: var(--accent); text-align: center; }
+.item.series::after { height: 4px; background: linear-gradient(to left, var(--accent) var(--p), rgba(238,234,224,.08) var(--p)); }
+.chev { color: var(--accent); }
+
+/* category tiles */
+.tile { min-height: 158px; padding: 16px 16px 20px; }
+.tile.wide { min-height: 210px; }
+.tile::after { height: 4px; }
+.tile small { margin-top: 6px; letter-spacing: .06em; }
+
+/* scoreboard framed by rules */
+.stats { border-block: 1px solid var(--line); padding-block: 14px; }
+.stat b { font-size: 76px; }
+.day.today i { box-shadow: none; outline: 0; background: var(--card2); }
+.day.today.on i { background: var(--accent); }
+
+/* inputs and chips */
+.search[type="search"] { padding-inline-start: 36px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a3a097' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M16 16l5 5'/%3E%3C/svg%3E") right 4px center / 22px no-repeat; }
+.chip { min-height: 42px; }
+.empty { border: 1px dashed var(--line); margin-top: 6px; }
+
+/* video placeholder: a small label instead of a full-width bar */
+.video .ph span { width: auto; margin: 12px; padding: 5px 10px; background: rgba(18,19,21,.8); font-size: 13px; }
+
+/* tab bar */
+#tabs a { font-size: 11.5px; letter-spacing: .02em; }
+#tabs a::before { top: -6px; width: 12px; height: 12px; }
