@@ -367,3 +367,23 @@ body::after {
 .scorebox .n { flex: none; width: 88px; height: 84px; padding-top: 8px; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); font: 700 56px/1 var(--display); clip-path: var(--pent); }
 .scorebox b { font: 700 30px/1 var(--display); }
 .card.sample h3 { font-size: 24px; color: var(--accent); margin: 12px 0 4px; }
+
+/* ---------- softer palette: charcoal instead of pure black, a calmer gold, warmer off-white ---------- */
+:root { --bg: #121315; --card: #1a1c1f; --card2: #24272b; --line: rgba(238, 234, 224, .13); --text: #ebe7dc; --muted: #a3a097; --accent: #e0b044; --accent-ink: #18140a; }
+body::before { opacity: .05; }
+body::after { opacity: .045; }
+#tabs { background: rgba(18, 19, 21, .95); }
+.card.hero, .card.captain { background: linear-gradient(200deg, #2a2413, var(--card) 65%); }
+.card.hero.photo { background: none; }
+.card.hero.photo::before { filter: grayscale(1) contrast(1.1) brightness(.6); }
+.card.hero.photo::after { background: linear-gradient(rgba(18,19,21,.25), rgba(18,19,21,.1) 30%, rgba(18,19,21,.96) 82%), linear-gradient(115deg, rgba(224,176,68,.2), rgba(224,176,68,0) 55%); }
+.card.hero.photo .muted { color: #e2ded2; }
+.five { -webkit-text-stroke: 2px var(--accent); opacity: .9; }
+.tile::before, .tile > .autovid { filter: grayscale(1) contrast(1.1) brightness(.55); }
+.tile span { color: #e2ded2; }
+.video .ph { filter: grayscale(1) contrast(1.08) brightness(.66); }
+.vcard .thumb::before { filter: grayscale(1) contrast(1.1) brightness(.66); }
+.video:has(.ph)::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23e0b044' d='M50 0l50 38-19 62H19L0 38z'/%3E%3Cpath fill='%2318140a' d='M41 36l26 17-26 17z'/%3E%3C/svg%3E"); }
+.btn::after { background: linear-gradient(100deg, transparent, rgba(255,255,255,.35), transparent); }
+#run { background: radial-gradient(120% 60% at 50% 0, #2a2413, var(--bg) 60%); }
+#run.rest { background: radial-gradient(120% 60% at 50% 0, #2a2c30, var(--bg) 60%); }
