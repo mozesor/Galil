@@ -191,3 +191,15 @@ ol.steps li::before { content: counter(s); flex: none; width: 24px; height: 24px
 /* lesson thumbnails are already framed 16:9, so centre them */
 .video .ph, .vcard .thumb::before { background-position: center; }
 .today .ph img { object-position: center; }
+
+/* the Captain (AI) explainer */
+.card.captain { display: block; margin-top: 18px; box-shadow: inset 0 0 0 1.5px var(--line); }
+.card.captain .muted { color: var(--gold-ink); font-weight: 700; font-size: 12px; letter-spacing: .04em; }
+.card.captain h3 { font-size: 20px; margin: 4px 0; }
+.card.captain .more { display: inline-block; margin-top: 8px; font-weight: 700; }
+.card.sample { position: relative; }
+.eg { position: absolute; top: 12px; left: 12px; padding: 3px 10px; border-radius: 99px; background: var(--soft); color: var(--muted); font-size: 12px; font-weight: 700; }
+.scorebox { display: flex; align-items: center; gap: 14px; margin: 4px 0 12px; }
+.scorebox .n { flex: none; width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: #fff; font-size: 30px; font-weight: 700; }
+.scorebox b { font-size: 20px; }
+.card.sample h3 { font-size: 13px; letter-spacing: .06em; color: var(--muted); margin: 14px 0 2px; }
