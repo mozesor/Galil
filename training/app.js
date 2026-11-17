@@ -118,7 +118,7 @@
       <button class="fav ${fav ? 'on' : ''}" data-fav="${esc(v.id)}" aria-pressed="${fav}" aria-label="${fav ? 'הסרה מהמועדפים' : 'הוספה למועדפים'}">${fav ? '★' : '☆'}</button>
     </div>`;
   }
-  const thumb = (v) => (v.series && seriesById[v.series].image) || catById[v.cat].image;
+  const thumb = (v) => v.image || (v.series && seriesById[v.series].image) || catById[v.cat].image;
   function videoCard(v) {
     return `<a class="vcard" href="#/video/${esc(v.id)}">
       <div class="thumb" style="--img:url('${esc(thumb(v))}')"><span>${clock(v.seconds)}</span></div>
