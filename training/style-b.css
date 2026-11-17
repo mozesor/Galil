@@ -187,3 +187,7 @@ ol.steps li::before { content: counter(s); flex: none; width: 24px; height: 24px
 .burst { display: none; }
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+/* lesson thumbnails are already framed 16:9, so centre them */
+.video .ph, .vcard .thumb::before { background-position: center; }
+.today .ph img { object-position: center; }

@@ -346,3 +346,7 @@ body::after {
 .tile.wide::before { background-image: url(img/tile-technique.jpg); background-position: center; }
 .video.tall { aspect-ratio: 9 / 16; max-width: 300px; margin-inline: auto; }
 .video.tall video { object-fit: contain; background: #0b0b0c; }
+
+/* lesson thumbnails are already framed 16:9, so centre them */
+.video .ph, .vcard .thumb::before { background-position: center; }
+.today .ph img { object-position: center; }
