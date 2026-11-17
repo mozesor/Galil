@@ -11,10 +11,6 @@
   const view = document.getElementById('view');
   const runEl = document.getElementById('run');
   const tabs = document.getElementById('tabs');
-  // Second visual direction (b.html): lighter look where the coach speaks to the player in first person.
-  const SKIN_B = document.documentElement.dataset.skin === 'b';
-  const say = (html) => (SKIN_B ? `<div class="msg"><img src="img/avatar.jpg" alt="" width="48" height="48"><div class="bubble"><small>אדם</small><p>${html}</p></div></div>` : '');
-
   let DATA = null;
   const videoById = {};
   const catById = {};
@@ -48,7 +44,7 @@
   const TICKER = '<span>FIVE BALL<i></i>לומדים<i></i>יוצאים למגרש<i></i>מיישמים<i></i>BY ADAM<i></i>כל יום<i></i></span>';
 
   // ---------- state ----------
-  const blank = () => ({ profile: null, skipped: false, favorites: [], watched: {}, positions: {}, last: null, practice: {} });
+  const blank = () => ({ profile: null, skipped: false, favorites: [], watched: {}, positions: {}, last: null, practice: {}, overrides: {} });
   let state = blank();
   try {
     const raw = JSON.parse(localStorage.getItem(STORE_KEY));
@@ -165,43 +161,10 @@
         <button class="btn block" type="submit">${state.profile ? 'שמירה' : 'מתחילים'}</button>
       </form>
       ${state.profile ? '' : '<p style="text-align:center"><button class="link" data-skip>דילוג בינתיים</button></p>'}
-      <p class="muted" style="text-align:center;margin-top:14px">באב-טיפוס הפרופיל נשמר במכשיר הזה בלבד. הרשמה והתחברות מלאות יגיעו עם האפליקציה.</p>`;
-  }
-
-  function viewHomeB() {
-    const name = state.profile && state.profile.name;
-    const last = state.last && videoById[state.last] && !isWatched(state.last) ? videoById[state.last] : null;
-    const feat = last || recommended()[0] || DATA.videos[0];
-    const s = streak();
-    const hi = name ? `היי ${esc(name)}, ` : '';
-    const t = `<b>${esc(feat.title)}</b>`;
-    const msg = last ? `${hi}עצרת באמצע ${t}. בוא נסגור אותו היום, אני איתך.`
-      : s >= 2 ? `${hi}${daysHe(s)} ברצף. ככה בונים שחקן. היום ממשיכים עם ${t}.`
-        : Object.keys(state.watched).length ? `${hi}טוב לראות אותך שוב. היום עובדים על ${t}, ${clock(feat.seconds)} בלבד.`
-          : `${hi}טוב שבאת. מתחילים בקטן: ${t}, ${clock(feat.seconds)} בלבד, ואני איתך בכל שלב.`;
-    const fav = state.favorites.includes(feat.id);
-    const rec = recommended().filter((v) => v.id !== feat.id);
-    const rows = DATA.categories.map((c) => {
-      const list = inCat(c.id);
-      return `<a class="row" href="#/cat/${esc(c.id)}"><img src="${esc(c.image)}" alt="" width="46" height="46"><div class="grow"><b>${esc(c.name)}</b><small>${esc(c.blurb)}</small></div><span class="ring" style="--p:${pct(list)}%"><i>${watchedIn(list)}</i></span></a>`;
-    }).join('');
-    return `<div class="topbar"><div class="wordmark">FIVE <i>BALL</i></div><div class="streakline">${s > 0 ? `רצף <b>${daysHe(s)}</b>` : 'by Adam'}</div></div>
-      ${say(msg)}
-      <div class="today">
-        <a class="ph" href="#/video/${esc(feat.id)}"><img src="${esc(thumb(feat))}" alt=""><span>${esc(feat.series ? seriesById[feat.series].name : catById[feat.cat].name)}${feat.level !== undefined ? ' · ' + esc(DATA.levels[feat.level]) : ''}</span><em>${clock(feat.seconds)}</em></a>
-        <h2>${esc(feat.title)}</h2>
-        <p>${last ? 'ממשיכים מאיפה שעצרת' : 'הסרטון הבא שלך'}</p>
-        <div class="cta"><a class="btn" href="#/video/${esc(feat.id)}">${last ? 'המשך צפייה' : 'מתחילים'}</a>
-          <button class="btn sec" data-fav="${esc(feat.id)}" aria-pressed="${fav}" aria-label="${fav ? 'הסרה מהמועדפים' : 'הוספה למועדפים'}">${fav ? '★' : '☆'}</button></div>
-      </div>
-      <a class="card captain" href="#/captain"><div class="muted">בקרוב · בינה מלאכותית</div><h3>הקפטן נותן לך ציון</h3><p>מקבלים משימה, מצלמים את עצמכם מבצעים אותה, ומקבלים ציון ודגשים לשיפור.</p><span class="more">איך זה עובד ‹</span></a>
-      <h2>מה לומדים</h2>
-      <div class="rows">${rows}</div>
-      ${rec.length ? `<h2>מומלצים בשבילך</h2><div class="hscroll">${rec.map(videoCard).join('')}</div>` : ''}`;
+      <p class="muted" style="text-align:center;margin-top:14px">באתר ההדגמה הפרופיל נשמר במכשיר הזה בלבד. <a class="link" href="#/signup">כך תיראה ההרשמה באפליקציה</a></p>`;
   }
 
   function viewHome() {
-    if (SKIN_B) return viewHomeB();
     const name = state.profile && state.profile.name;
     const last = state.last && videoById[state.last] && !isWatched(state.last) ? videoById[state.last] : null;
     const feat = last || recommended()[0] || DATA.videos[0];
@@ -239,12 +202,11 @@
       const shown = levelFilter === 'all' ? all : all.filter((v) => v.level === Number(levelFilter));
       if (!shown.length) return '';
       return `<a class="item series" href="#/series/${esc(s.id)}" style="--p:${pct(all)}%">
-        <div class="idx${SKIN_B ? ' ico' : ''}">${SKIN_B ? icon('technique') : String(si + 1).padStart(2, '0')}</div>
+        <div class="idx">${String(si + 1).padStart(2, '0')}</div>
         <div class="grow"><div class="t">${esc(s.name)}</div><div><span class="tag">${videosHe(shown.length)}</span><span class="tag">${watchedIn(all)} נצפו</span></div></div>
         <span class="chev" aria-hidden="true">‹</span></a>`;
     }).join('');
     return `${head(c.name, `${esc(c.blurb)} · ${videosHe(list.length)}`)}
-      ${say('תתחיל משליטה בכדור. כל השאר נבנה עליה.')}
       <div class="chips">${chip('all', 'כל הרמות')}${DATA.levels.map((l, i) => chip(i, l)).join('')}</div>
       ${series || '<div class="empty">אין עדיין סדרות ברמה הזאת.</div>'}`;
   }
@@ -268,7 +230,6 @@
     return `<a class="back" href="${back[0]}">→ ${esc(back[1])}</a>
       <div class="head"><h1>${esc(v.title)}</h1><p>${metaTags(v)}</p></div>
       ${player(v)}
-      ${v.steps ? say('הדבר הכי חשוב כאן: ' + esc(v.steps[v.steps.length - 1])) : ''}
       ${v.desc ? `<div class="card"><p>${esc(v.desc)}</p>${note}</div>` : ''}
       ${v.steps ? `<div class="card"><h3>איך מבצעים</h3><ol class="steps">${v.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol><div class="muted">ציוד: ${esc(v.equipment)}</div></div>` : ''}
       ${v.steps ? `<button class="btn block" data-practice="${esc(v.id)}">יוצאים למגרש · טיימר ${clock(v.seconds)}</button>` : ''}
@@ -309,7 +270,6 @@
         <div class="stat"><b>${streak()}</b><span>ימי רצף</span></div>
         <div class="stat"><b>${practices}</b><span>תרגולים במגרש</span></div>
       </div>
-      ${say(streak() >= 2 ? `${daysHe(streak())} ברצף. ככה בונים שחקן, יום אחרי יום.` : watched.length ? 'התחלה טובה. עכשיו העיקר זה לחזור גם מחר.' : 'כל שחקן התחיל מהסרטון הראשון. אני מחכה לך שם.')}
       <h2>התקדמות</h2>
       <div class="card">${DATA.categories.map((c) => progressBar(c.name, inCat(c.id))).join('')}</div>
       ${last ? `<h2>המשך צפייה</h2>${videoRow(last)}` : ''}
@@ -317,6 +277,9 @@
       ${favs.length ? favs.map((v) => videoRow(v)).join('') : '<div class="empty">סמנו סרטון בכוכב ☆ והוא יחכה לכם כאן.</div>'}
       <h2>נצפו לאחרונה</h2>
       ${watched.length ? watched.slice(0, 8).map((v) => videoRow(v)).join('') : '<div class="empty">עוד לא צפיתם בסרטון. הראשון מחכה בדף הבית.</div>'}
+      <h2>מסכי האפליקציה</h2>
+      <p class="muted" style="margin-bottom:8px">מסכים שיהיו באפליקציה המלאה. כאן הם להדגמה בלבד.</p>
+      ${DEMOS.map(([href, t, d]) => `<a class="item" href="${href}"><div class="grow"><div class="t">${t}</div><div class="muted">${d}</div></div><span class="chev" aria-hidden="true">‹</span></a>`).join('')}
       ${any ? '<p style="text-align:center;margin-top:18px"><button class="link" data-reset>איפוס כל הנתונים</button></p>' : ''}`;
   }
 
@@ -349,21 +312,168 @@
       <p class="muted" style="text-align:center;margin-top:14px">הקפטן עדיין לא פעיל באתר ההדגמה הזה. הדוגמאות למעלה ממחישות איך הוא יעבוד.</p>`;
   }
 
+  // ---------- demo screens (sign-up, parental consent, subscription, content management) ----------
+  // These show how the full app will look. Nothing typed here is stored or sent anywhere,
+  // except the content edits in the management screen, which stay on this device.
+  const DEMOS = [
+    ['#/signup', 'הרשמה והתחברות', 'כך נכנסים לאפליקציה'],
+    ['#/consent', 'אישור הורים', 'לשחקנים צעירים, לפני שמתחילים'],
+    ['#/plans', 'מנויים', 'חינם, חודשי ושנתי'],
+    ['#/admin', 'ניהול תוכן', 'המסך של אדם: עריכת סרטונים'],
+  ];
+  const demoFlag = (text) => `<div class="demoflag"><b>מסך הדגמה</b><span>${text}</span></div>`;
+  const YOUNG = ['8-10', '11-13'];
+  let demo = { mode: 'new', sent: false, plan: 'year', edit: null, q: '' };
+
+  function viewSignup() {
+    const isNew = demo.mode === 'new';
+    const tab = (m, label) => `<button class="chip ${demo.mode === m ? 'on' : ''}" data-mode="${m}" aria-pressed="${demo.mode === m}">${label}</button>`;
+    return `${head(isNew ? 'הרשמה' : 'התחברות', isNew ? 'חשבון אחד שומר את ההתקדמות בכל מכשיר.' : 'טוב לראות אותך שוב.', ['#/me', 'האזור האישי'])}
+      ${demoFlag('שום פרט שמקלידים כאן לא נשמר ולא נשלח.')}
+      <div class="chips">${tab('new', 'הרשמה')}${tab('login', 'התחברות')}</div>
+      <form id="demoSignup" autocomplete="off">
+        <button type="button" class="btn ghost block" data-demo-next>המשך עם Apple</button>
+        <button type="button" class="btn ghost block" data-demo-next>המשך עם Google</button>
+        <div class="or"><span>או</span></div>
+        <label class="muted" for="suMail">אימייל</label>
+        <input class="search" id="suMail" type="email" inputmode="email" dir="ltr" placeholder="name@example.com">
+        <label class="muted" for="suPass">סיסמה</label>
+        <input class="search" id="suPass" type="password" dir="ltr" placeholder="לפחות 8 תווים">
+        ${isNew ? '<p class="muted" style="margin-top:14px">בהרשמה מאשרים את תנאי השימוש ואת מדיניות הפרטיות. לשחקנים עד גיל 13 נדרש גם אישור הורה.</p>' : '<p style="margin-top:10px"><span class="link">שכחתי סיסמה</span></p>'}
+        <button class="btn block" type="submit">${isNew ? 'יצירת חשבון' : 'כניסה'}</button>
+      </form>
+      <p class="muted" style="text-align:center;margin-top:14px">${isNew ? 'אחרי ההרשמה: פרטי השחקן, אישור הורה לצעירים, ובחירת מנוי.' : 'אחרי הכניסה חוזרים בדיוק למקום שבו עצרת.'}</p>`;
+  }
+
+  function viewConsent() {
+    const p = state.profile;
+    const who = p && p.name ? esc(p.name) : 'השחקן';
+    const young = p && YOUNG.includes(p.age);
+    const checks = [
+      'אני ההורה או האפוטרופוס של השחקן ומאשר/ת לו להשתמש באפליקציה.',
+      'קראתי את תנאי השימוש ואת מדיניות הפרטיות.',
+      'אני מאשר/ת העלאת סרטוני אימון לבדיקת הקפטן. הסרטון נבדק ונמחק, ולא מפורסם.',
+    ];
+    if (demo.sent) {
+      return `${head('אישור הורים', 'הבקשה נשלחה', ['#/me', 'האזור האישי'])}
+        ${demoFlag('לא נשלחה הודעה אמיתית.')}
+        <div class="card sample"><span class="eg">דוגמה</span><h3>ממתינים לאישור</h3>
+          <p>שלחנו להורה קישור לאישור. עד שהוא מאשר, ${who} יכול לצפות בסרטונים החינמיים בלבד, בלי להעלות סרטונים ובלי לרכוש מנוי.</p></div>
+        <div class="card sample"><span class="eg">דוגמה</span><h3>מה ההורה רואה</h3>
+          <p>"${who} ביקש להצטרף ל-Five Ball by Adam. באפליקציה: סרטוני אימון, מעקב התקדמות ומשימות. אין צ'אט בין משתמשים ואין פרסומות."</p>
+          <div class="pair"><span class="btn ghost">לא מאשר/ת</span><span class="btn">מאשר/ת</span></div></div>
+        <a class="btn block" href="#/plans">המשך למנויים</a>
+        <p style="text-align:center"><button class="link" data-consent-back>חזרה לטופס</button></p>`;
+    }
+    return `${head('אישור הורים', young ? `${who} בגיל ${esc(p.age)}, ולכן צריך אישור של הורה.` : 'לשחקנים עד גיל 13, לפני שמתחילים.', ['#/me', 'האזור האישי'])}
+      ${demoFlag('שום פרט שמקלידים כאן לא נשמר ולא נשלח.')}
+      <div class="card"><p>אנחנו רוצים שההורים יידעו במה הילד משתמש. לכן שחקנים צעירים מתחילים רק אחרי שהורה אישר.</p></div>
+      <form id="demoConsent" autocomplete="off">
+        <label class="muted" for="pcName">שם ההורה</label>
+        <input class="search" id="pcName" maxlength="30" placeholder="שם מלא">
+        <label class="muted" for="pcPhone">טלפון או אימייל של ההורה</label>
+        <input class="search" id="pcPhone" dir="ltr" placeholder="050-0000000">
+        <div class="checks">${checks.map((c, i) => `<label><input type="checkbox" ${i < 2 ? 'required' : ''}><span>${c}${i === 2 ? ' <em>(לא חובה)</em>' : ''}</span></label>`).join('')}</div>
+        <button class="btn block" type="submit">שליחת בקשה להורה</button>
+      </form>
+      <p class="muted" style="text-align:center;margin-top:14px">הגיל המדויק שמתחתיו נדרש אישור, ונוסח האישור, ייקבעו עם עורך דין.</p>`;
+  }
+
+  function viewPlans() {
+    const plans = [
+      ['free', 'חינם', 'בלי תשלום', ['סדרה אחת מלאה בטכניקה אישית', 'סרטון לדוגמה מכל קטגוריה', 'מעקב צפייה ומועדפים']],
+      ['month', 'חודשי', 'המחיר ייקבע', ['כל הספרייה: טכניקה, מנטליות, תזונה, טיפים והכנה', 'סרטונים חדשים כל שבוע', 'משימות וציונים מהקפטן']],
+      ['year', 'שנתי', 'המחיר ייקבע', ['כל מה שבמנוי החודשי', 'מחיר נמוך יותר לחודש', 'תשלום אחד לשנה']],
+    ];
+    return `${head('מנויים', 'מתחילים בחינם. משדרגים כשרוצים את כל הספרייה.', ['#/me', 'האזור האישי'])}
+      ${demoFlag('המחירים עוד לא נקבעו ושום תשלום לא מתבצע.')}
+      ${plans.map(([id, name, price, list]) => `<button class="plan ${demo.plan === id ? 'on' : ''}" data-plan="${id}" aria-pressed="${demo.plan === id}">
+        <div class="spread"><b>${name}</b><span class="price">${price}</span></div>
+        ${id === 'year' ? '<span class="badge">הכי משתלם</span>' : ''}
+        <ul>${list.map((x) => `<li>${x}</li>`).join('')}</ul></button>`).join('')}
+      <button class="btn block" data-buy>${demo.plan === 'free' ? 'ממשיכים בחינם' : 'שבוע ניסיון בחינם'}</button>
+      <p class="muted" style="text-align:center;margin-top:14px">${demo.plan === 'free' ? 'אפשר לשדרג בכל רגע.' : 'אפשר לבטל בכל רגע בהגדרות החנות. התשלום נעשה דרך חשבון ההורה ב-App Store או ב-Google Play.'}</p>`;
+  }
+
+  function viewAdmin() {
+    const changed = Object.keys(state.overrides).filter((id) => videoById[id]);
+    if (demo.edit && videoById[demo.edit]) {
+      const v = videoById[demo.edit];
+      const lv = v.level !== undefined ? `<label class="muted">רמה</label>
+        <div class="opts" data-group="alevel">${DATA.levels.map((l, i) => `<button type="button" class="chip ${v.level === i ? 'on' : ''}" data-opt="alevel" data-val="${i}" aria-pressed="${v.level === i}">${esc(l)}</button>`).join('')}</div>` : '';
+      return `<button class="back" data-admin-close>→ ניהול תוכן</button>
+        <div class="head"><h1>עריכת סרטון</h1><p>${metaTags(v)}</p></div>
+        <form id="adminForm" autocomplete="off" data-id="${esc(v.id)}">
+          <label class="muted" for="adTitle">שם הסרטון</label>
+          <input class="search" id="adTitle" maxlength="60" value="${esc(v.title)}">
+          ${lv}
+          <label class="muted" for="adVideo">קישור לסרטון (YouTube או קובץ mp4)</label>
+          <input class="search" id="adVideo" dir="ltr" inputmode="url" value="${esc(v.video || '')}" placeholder="https://youtu.be/...">
+          <button class="btn block" type="submit">שמירה</button>
+        </form>
+        ${state.overrides[v.id] ? `<p style="text-align:center"><button class="link" data-admin-undo="${esc(v.id)}">ביטול השינויים בסרטון הזה</button></p>` : ''}
+        <p class="muted" style="text-align:center;margin-top:14px">אחרי השמירה אפשר לפתוח את הסרטון באתר ולראות איך הוא נראה לשחקן.</p>`;
+    }
+    const q = demo.q.trim();
+    const list = DATA.videos.filter((v) => !q || v.title.includes(q) || (v.series && seriesById[v.series].name.includes(q)) || catById[v.cat].name.includes(q));
+    return `${head('ניהול תוכן', 'המסך של אדם', ['#/me', 'האזור האישי'])}
+      ${demoFlag('השינויים נשמרים במכשיר הזה בלבד. כדי לעדכן את האתר לכולם, שולחים אותם בוואטסאפ.')}
+      <div class="card">${DATA.categories.map((c) => `<div class="bar"><div class="spread"><span>${esc(c.name)}</span><span class="muted">${inCat(c.id).length} מתוך ${c.planned || inCat(c.id).length} מתוכננים</span></div>
+        <div class="track"><div class="fill" style="width:${Math.round((inCat(c.id).length / (c.planned || inCat(c.id).length)) * 100)}%"></div></div></div>`).join('')}</div>
+      ${changed.length ? `<a class="btn block" target="_blank" rel="noopener" href="${esc(adminShareLink(changed))}">שליחת ${changed.length === 1 ? 'שינוי אחד' : changed.length + ' שינויים'} בוואטסאפ</a>
+        <p style="text-align:center"><button class="link" data-admin-reset>ביטול כל השינויים</button></p>` : ''}
+      <a class="item" href="shoot.html"><div class="grow"><div class="t">דף צילום</div><div class="muted">אילו סרטונים לצלם קודם ואיך לצלם בטלפון</div></div><span class="chev" aria-hidden="true">‹</span></a>
+      <h2>סרטונים</h2>
+      <input class="search" type="search" id="aq" placeholder="חיפוש סרטון לעריכה" aria-label="חיפוש סרטון לעריכה" value="${esc(demo.q)}">
+      <div id="alist">${adminRows(list)}</div>
+      <p class="muted" style="text-align:center;margin-top:14px">באפליקציה המלאה יהיו כאן גם העלאת סרטונים, פרסום והסתרה, ניהול קטגוריות וניהול מנויים.</p>`;
+  }
+  const adminRows = (list) => (list.length ? list.map((v) => `<button class="item arow" data-admin-edit="${esc(v.id)}">
+      <div class="ico ${v.video ? 'done' : ''}">${v.video ? icon('check') : icon('play')}</div>
+      <div class="grow"><div class="t">${esc(v.title)}</div><div>${metaTags(v)}${state.overrides[v.id] ? '<span class="tag chg">שונה</span>' : ''}</div></div>
+      <span class="chev" aria-hidden="true">‹</span></button>`).join('') : '<div class="empty">לא נמצאו סרטונים.</div>');
+  function adminShareLink(ids) {
+    const lines = ids.map((id) => {
+      const o = state.overrides[id];
+      const parts = [];
+      if (o.title !== undefined) parts.push(`שם: ${o.title}`);
+      if (o.level !== undefined) parts.push(`רמה: ${DATA.levels[o.level]}`);
+      if (o.video !== undefined) parts.push(`קישור: ${o.video || 'להסיר'}`);
+      return `${id} (${BASE[id].title})\n${parts.join('\n')}`;
+    });
+    return 'https://wa.me/?text=' + encodeURIComponent(`עדכונים לספריית Five Ball:\n\n${lines.join('\n\n')}`);
+  }
+  // Original values, so an override can be compared and undone.
+  const BASE = {};
+  function applyOverrides() {
+    DATA.videos.forEach((v) => {
+      const b = BASE[v.id];
+      Object.assign(v, { title: b.title, video: b.video });
+      if (b.level !== undefined) v.level = b.level;
+      const o = state.overrides[v.id];
+      if (!o) return;
+      if (typeof o.title === 'string' && o.title) v.title = o.title;
+      if (typeof o.video === 'string') v.video = o.video;
+      if (b.level !== undefined && DATA.levels[o.level]) v.level = o.level;
+    });
+  }
+
   const viewNotFound = () => `<div class="empty">העמוד לא נמצא. <a class="link" href="#/home">חזרה לדף הבית</a></div>`;
 
   // ---------- router ----------
   function render(keepScroll) {
     let [, name = 'home', arg] = (location.hash || '#/home').split('/');
     arg = decodeURIComponent(arg || '');
-    const onboarding = !state.profile && !state.skipped && name !== 'profile';
+    const onboarding = !state.profile && !state.skipped && !['profile', 'signup', 'consent', 'plans', 'admin'].includes(name);
     const y = window.scrollY;
     const routes = {
       home: viewHome, search: viewSearch, me: viewMe, profile: viewWelcome, captain: viewCaptain,
+      signup: viewSignup, consent: viewConsent, plans: viewPlans, admin: viewAdmin,
       cat: () => viewCat(arg), series: () => viewSeries(arg), video: () => viewVideo(arg),
     };
     view.innerHTML = onboarding ? viewWelcome() : (routes[name] || viewNotFound)();
     tabs.hidden = onboarding;
-    const tab = { cat: arg === 'technique' ? 'technique' : 'home', series: 'technique', profile: 'me', captain: 'home',
+    const tab = { cat: arg === 'technique' ? 'technique' : 'home', series: 'technique', profile: 'me', captain: 'home', signup: 'me', consent: 'me', plans: 'me', admin: 'me',
       video: videoById[arg] && videoById[arg].cat === 'technique' ? 'technique' : 'home' }[name] || name;
     tabs.querySelectorAll('a').forEach((a) => {
       const on = a.dataset.tab === tab;
@@ -414,7 +524,25 @@
     const t = e.target.closest('button');
     if (!t) return;
     const d = t.dataset;
-    if (d.fav) {
+    if (d.mode) {
+      demo.mode = d.mode; render(true);
+    } else if ('demoNext' in d) {
+      afterSignup();
+    } else if ('consentBack' in d) {
+      demo.sent = false; render();
+    } else if (d.plan) {
+      demo.plan = d.plan; render(true);
+    } else if ('buy' in d) {
+      alert(demo.plan === 'free' ? 'הדגמה: באפליקציה ממשיכים מכאן לספרייה החינמית.' : 'הדגמה בלבד: לא בוצע חיוב. באפליקציה ייפתח כאן חלון התשלום של החנות.');
+    } else if (d.adminEdit) {
+      demo.edit = d.adminEdit; render();
+    } else if ('adminClose' in d) {
+      demo.edit = null; render();
+    } else if (d.adminUndo) {
+      delete state.overrides[d.adminUndo]; save(); applyOverrides(); demo.edit = null; render();
+    } else if ('adminReset' in d) {
+      if (confirm('לבטל את כל השינויים שנעשו במכשיר הזה?')) { state.overrides = {}; save(); applyOverrides(); render(true); }
+    } else if (d.fav) {
       const i = state.favorites.indexOf(d.fav);
       if (i >= 0) state.favorites.splice(i, 1); else state.favorites.push(d.fav);
       save(); render(true);
@@ -439,8 +567,31 @@
       }
     }
   });
+  function afterSignup() {
+    const p = state.profile;
+    demo.sent = false;
+    location.hash = demo.mode === 'login' ? '#/home' : (!p || YOUNG.includes(p.age)) ? '#/consent' : '#/plans';
+  }
   view.addEventListener('submit', (e) => {
-    if (e.target.id !== 'profileForm') return;
+    const id = e.target.id;
+    if (id === 'demoSignup') { e.preventDefault(); afterSignup(); return; }
+    if (id === 'demoConsent') { e.preventDefault(); demo.sent = true; render(); return; }
+    if (id === 'adminForm') {
+      e.preventDefault();
+      const vid = e.target.dataset.id;
+      const b = BASE[vid];
+      const o = {};
+      const title = document.getElementById('adTitle').value.trim().slice(0, 60);
+      const video = document.getElementById('adVideo').value.trim();
+      const lvEl = e.target.querySelector('[data-group="alevel"] .chip.on');
+      if (title && title !== b.title) o.title = title;
+      if (video !== (b.video || '')) o.video = video;
+      if (lvEl && Number(lvEl.dataset.val) !== b.level) o.level = Number(lvEl.dataset.val);
+      if (Object.keys(o).length) state.overrides[vid] = o; else delete state.overrides[vid];
+      save(); applyOverrides(); demo.edit = null; render();
+      return;
+    }
+    if (id !== 'profileForm') return;
     e.preventDefault();
     const pick = (g) => { const el = e.target.querySelector(`[data-group="${g}"] .chip.on`); return el ? el.dataset.val : ''; };
     state.profile = {
@@ -451,6 +602,12 @@
     if (location.hash === '#/home' || !location.hash) render(); else location.hash = '#/home';
   });
   view.addEventListener('input', (e) => {
+    if (e.target.id === 'aq') {
+      demo.q = e.target.value;
+      const q = demo.q.trim();
+      document.getElementById('alist').innerHTML = adminRows(DATA.videos.filter((v) => !q || v.title.includes(q) || (v.series && seriesById[v.series].name.includes(q)) || catById[v.cat].name.includes(q)));
+      return;
+    }
     if (e.target.id !== 'q') return;
     search.q = e.target.value;
     document.getElementById('list').innerHTML = searchResults();
@@ -579,10 +736,12 @@
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((data) => {
       DATA = data;
-      DATA.videos.forEach((v) => { videoById[v.id] = v; });
+      DATA.videos.forEach((v) => { videoById[v.id] = v; BASE[v.id] = { title: v.title, video: v.video || '', level: v.level }; });
       DATA.categories.forEach((c) => { catById[c.id] = c; });
       DATA.series.forEach((s) => { seriesById[s.id] = s; });
       state.favorites = state.favorites.filter((id) => videoById[id]);
+      if (!state.overrides || typeof state.overrides !== 'object') state.overrides = {};
+      applyOverrides();
       render();
     })
     .catch(() => {
