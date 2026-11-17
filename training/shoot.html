@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#121315">
+  <title>Five Ball – דף צילום</title>
+  <link rel="icon" href="img/icon-192.png" type="image/png">
+  <link rel="preload" href="fonts/karantina-hebrew-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #view { padding-bottom: 60px; }
+    .shot { display: flex; gap: 12px; align-items: flex-start; padding: 14px 12px; margin-bottom: 8px; background: var(--card); box-shadow: inset 0 0 0 1px rgba(238, 234, 224, .05); }
+    .shot input { flex: none; width: 24px; height: 24px; margin-top: 2px; accent-color: var(--accent); }
+    .shot .t { font-weight: 700; font-size: 17.5px; line-height: 1.25; }
+    .shot .n { color: var(--accent); font-weight: 800; margin-inline-end: 6px; }
+    .shot small { display: block; color: var(--muted); font-size: 14.5px; line-height: 1.45; margin-top: 3px; }
+    .shot:has(input:checked) .t { color: var(--muted); text-decoration: line-through; }
+    .count { color: var(--muted); font-size: 15px; margin: -4px 0 12px; }
+    .count b { color: var(--accent); }
+    .frame { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+    .frame div { padding: 12px 10px 10px; background: var(--card2); text-align: center; font-size: 14px; color: var(--muted); }
+    .frame svg { display: block; margin: 0 auto 8px; height: 62px; }
+    .frame b { display: block; color: var(--text); font-size: 15.5px; }
+  </style>
+</head>
+<body>
+  <main id="view">
+    <div class="brand"><img src="img/logo.jpg" alt="" width="46" height="46"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
+    <div class="head"><h1>דף צילום</h1><p>אדם, זה כל מה שצריך כדי לצלם את הסרטונים הראשונים בטלפון. בלי צוות ובלי ציוד מיוחד.</p></div>
+
+    <div class="card">
+      <h3>מה מצלמים עכשיו</h3>
+      <ol class="steps">
+        <li><span>10 תרגילים ראשונים לספרייה, אחד מכל סדרה.</span></li>
+        <li><span>4 סרטונים קצרים לבדיקת הקפטן.</span></li>
+      </ol>
+      <p class="muted" style="margin-top:8px">הכול ביחד: בערך שעה וחצי במגרש.</p>
+    </div>
+
+    <h2>איך מצלמים</h2>
+    <div class="card">
+      <ol class="steps">
+        <li><span><b>טלפון לרוחב</b>, במצלמה האחורית, על חצובה או נשען על משהו יציב. לא ביד.</span></li>
+        <li><span><b>גובה המותניים</b>, 5 עד 7 מטרים ממך. כל הגוף והכדור בתוך התמונה כל הזמן, עם מעט מקום מעל הראש ומתחת לרגליים.</span></li>
+        <li><span><b>השמש מאחורי הטלפון</b>, לא מאחוריך. הכי טוב בבוקר או לקראת ערב.</span></li>
+        <li><span><b>שקט</b>: בלי מוזיקה ברקע (זכויות יוצרים), ורחוק מכביש או ממגרש רועש. אם יש רוח, מדברים קרוב יותר לטלפון בפתיחה.</span></li>
+        <li><span><b>בגדים בלי לוגו של ספונסר</b> ובלי ילדים אחרים בתמונה, אלא אם ההורים שלהם אישרו בכתב.</span></li>
+        <li><span>לפני שמתחילים: מנקים את העדשה, מצב טיסה, ובודקים שיש מקום פנוי בטלפון.</span></li>
+      </ol>
+      <div class="frame">
+        <div><svg viewBox="0 0 96 62" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="8" width="92" height="46" rx="5" stroke="#e0b044"/><circle cx="48" cy="20" r="4"/><path d="M48 24v14M48 28l-8 6M48 28l8 6M48 38l-6 10M48 38l6 10"/><circle cx="60" cy="48" r="3"/></svg><b>כך</b>רוחב, כל הגוף והכדור</div>
+        <div><svg viewBox="0 0 96 62" fill="none" stroke="currentColor" stroke-width="2"><rect x="30" y="2" width="36" height="58" rx="5"/><circle cx="48" cy="24" r="7"/><path d="M48 31v27M48 40l-14 8M48 40l14 8"/><path d="M8 8l16 16M24 8L8 24" stroke="#ff8a7a"/></svg><b>לא כך</b>אורך, קרוב מדי, רגליים חתוכות</div>
+      </div>
+    </div>
+
+    <h2>המבנה של כל סרטון</h2>
+    <div class="card">
+      <ol class="steps">
+        <li><span><b>פתיחה, 5 שניות.</b> מול המצלמה: שם התרגיל ומה הוא משפר.</span></li>
+        <li><span><b>לאט, עם הסבר.</b> מבצעים בהילוך איטי ואומרים את 2 או 3 הדגשים החשובים.</span></li>
+        <li><span><b>בקצב משחק.</b> אותו תרגיל במהירות מלאה, 10 עד 15 שניות, בלי לדבר.</span></li>
+        <li><span><b>הטעות הנפוצה.</b> מראים איך זה נראה כשעושים לא נכון, ואיך מתקנים.</span></li>
+        <li><span><b>סיום.</b> "עכשיו תורך", וכמה זמן או כמה חזרות לתרגל.</span></li>
+      </ol>
+      <p class="muted" style="margin-top:8px">אורך: 45 עד 90 שניות. עדיף שני טייקים קצרים מאחד ארוך. אין צורך לערוך, שולחים את הקובץ כמו שהוא.</p>
+    </div>
+
+    <h2>10 התרגילים הראשונים</h2>
+    <p class="count">צולמו <b id="doneLib">0</b> מתוך 10. הסימון נשמר בטלפון הזה.</p>
+    <div id="lib"><div class="empty">טוען את הרשימה…</div></div>
+
+    <h2>4 סרטוני בדיקה לקפטן</h2>
+    <div class="card">
+      <p>הקפטן הוא הבינה המלאכותית שתיתן לילדים ציון על סרטון שהם מעלים. לפני שמבטיחים את זה להורים, צריך לבדוק שהציונים שלו הגיוניים. בשביל זה צריך ממך ארבעה סרטונים של <b>אותו תרגיל</b>: <b id="capDrill">נגיעות סוליה במקום</b>.</p>
+      <p style="margin-top:10px"><b>כאן מצלמים אחרת:</b> כמו שילד היה מצלם. טלפון לאורך, מישהו מחזיק ביד, מהצד, 3 עד 4 מטרים, 20 שניות, בלי לדבר.</p>
+    </div>
+    <p class="count">צולמו <b id="doneCap">0</b> מתוך 4.</p>
+    <div id="cap">
+      <label class="shot"><input type="checkbox" data-k="c1"><span><span class="t"><span class="n">א</span>ביצוע טוב</span><small>כמו שאתה רוצה שילד יבצע: ראש מורם, ברכיים כפופות, כדור קרוב.</small></span></label>
+      <label class="shot"><input type="checkbox" data-k="c2"><span><span class="t"><span class="n">ב</span>ביצוע חלש בכוונה</span><small>מבט על הכדור כל הזמן, רגליים ישרות, הכדור בורח כמה פעמים.</small></span></label>
+      <label class="shot"><input type="checkbox" data-k="c3"><span><span class="t"><span class="n">ג</span>ביצוע בינוני</span><small>טעות אחת בלבד, למשל קצב לא אחיד, וכל השאר בסדר.</small></span></label>
+      <label class="shot"><input type="checkbox" data-k="c4"><span><span class="t"><span class="n">ד</span>תרגיל אחר לגמרי</span><small>למשל הקפצות. בודקים שהקפטן שם לב שזה לא התרגיל שביקשו.</small></span></label>
+    </div>
+    <div class="card">
+      <h3>ועוד דבר אחד</h3>
+      <p>לפני שרואים מה הקפטן אמר, תכתוב איזה ציון מ-1 עד 10 אתה היית נותן לכל אחד מהארבעה. ככה נדע אם הוא שופט כמוך.</p>
+    </div>
+
+    <h2>איך שולחים</h2>
+    <div class="card">
+      <ol class="steps">
+        <li><span>בוואטסאפ שולחים כ<b>מסמך</b> ולא כסרטון רגיל, כדי שהאיכות לא תרד. אפשר גם קישור מ-Google Drive או iCloud.</span></li>
+        <li><span>בשם הקובץ או בהודעה כותבים את המספר שמופיע ליד התרגיל ברשימה, או את האות של סרטון הבדיקה.</span></li>
+        <li><span>לא צריך לחכות שהכול מוכן. אפשר לשלוח סרטון אחד ולקבל הערות לפני שמצלמים את השאר.</span></li>
+      </ol>
+    </div>
+
+    <p style="text-align:center;margin-top:18px"><a class="link" href="./">לאתר ההדגמה</a></p>
+  </main>
+
+  <script>
+    (() => {
+      'use strict';
+      const FIRST = ['m1', 'm2', 'd1', 'p1', 't1', 't2', 's1', 'weak1', 'd2', 'offball2'];
+      const KEY = 'fiveball.shoot.v1';
+      let done = {};
+      try { done = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { /* start clean */ }
+      const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      const clock = (sec) => `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, '0')}`;
+      function sync() {
+        document.querySelectorAll('.shot input').forEach((el) => { el.checked = Boolean(done[el.dataset.k]); });
+        document.getElementById('doneLib').textContent = document.querySelectorAll('#lib input:checked').length;
+        document.getElementById('doneCap').textContent = document.querySelectorAll('#cap input:checked').length;
+      }
+      document.addEventListener('change', (e) => {
+        if (!e.target.dataset.k) return;
+        done[e.target.dataset.k] = e.target.checked;
+        try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (err) { /* ignore */ }
+        sync();
+      });
+      fetch('data.json', { cache: 'no-cache' }).then((r) => r.json()).then((data) => {
+        const byId = {}; data.videos.forEach((v) => { byId[v.id] = v; });
+        const series = {}; data.series.forEach((s) => { series[s.id] = s.name; });
+        document.getElementById('lib').innerHTML = FIRST.filter((id) => byId[id]).map((id, i) => {
+          const v = byId[id];
+          return `<label class="shot"><input type="checkbox" data-k="${esc(id)}"><span><span class="t"><span class="n">${i + 1}</span>${esc(v.title)}</span>
+            <small>${esc(series[v.series])} · ${esc(data.levels[v.level])} · תרגול של ${clock(v.seconds)} · ציוד: ${esc(v.equipment)}</small></span></label>`;
+        }).join('');
+        if (byId.m1) document.getElementById('capDrill').textContent = byId.m1.title;
+        sync();
+      }).catch(() => {
+        document.getElementById('lib').innerHTML = '<div class="empty">לא הצלחנו לטעון את הרשימה. רעננו את העמוד.</div>';
+      });
+      sync();
+    })();
+  </script>
+</body>
+</html>
