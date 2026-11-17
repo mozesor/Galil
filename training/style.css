@@ -350,3 +350,9 @@ body::after {
 /* lesson thumbnails are already framed 16:9, so centre them */
 .video .ph, .vcard .thumb::before { background-position: center; }
 .today .ph img { object-position: center; }
+
+/* Hebrew reads right to left, so the strip travels rightward: new words enter from the left, as on Hebrew news tickers. */
+.ticker { direction: rtl; }
+.ticker > div { animation-name: tickerRtl; }
+.ticker span { padding-inline-end: 16px; }
+@keyframes tickerRtl { from { transform: translateX(0); } to { transform: translateX(50%); } }
