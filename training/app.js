@@ -11,6 +11,9 @@
   const view = document.getElementById('view');
   const runEl = document.getElementById('run');
   const tabs = document.getElementById('tabs');
+  // Second visual direction (b.html): lighter look where the coach speaks to the player in first person.
+  const SKIN_B = document.documentElement.dataset.skin === 'b';
+  const say = (html) => (SKIN_B ? `<div class="msg"><img src="img/avatar.jpg" alt="" width="48" height="48"><div class="bubble"><small>אדם</small><p>${html}</p></div></div>` : '');
 
   let DATA = null;
   const videoById = {};
@@ -165,7 +168,39 @@
       <p class="muted" style="text-align:center;margin-top:14px">באב-טיפוס הפרופיל נשמר במכשיר הזה בלבד. הרשמה והתחברות מלאות יגיעו עם האפליקציה.</p>`;
   }
 
+  function viewHomeB() {
+    const name = state.profile && state.profile.name;
+    const last = state.last && videoById[state.last] && !isWatched(state.last) ? videoById[state.last] : null;
+    const feat = last || recommended()[0] || DATA.videos[0];
+    const s = streak();
+    const hi = name ? `היי ${esc(name)}, ` : '';
+    const t = `<b>${esc(feat.title)}</b>`;
+    const msg = last ? `${hi}עצרת באמצע ${t}. בוא נסגור אותו היום, אני איתך.`
+      : s >= 2 ? `${hi}${daysHe(s)} ברצף. ככה בונים שחקן. היום ממשיכים עם ${t}.`
+        : Object.keys(state.watched).length ? `${hi}טוב לראות אותך שוב. היום עובדים על ${t}, ${clock(feat.seconds)} בלבד.`
+          : `${hi}טוב שבאת. מתחילים בקטן: ${t}, ${clock(feat.seconds)} בלבד, ואני איתך בכל שלב.`;
+    const fav = state.favorites.includes(feat.id);
+    const rec = recommended().filter((v) => v.id !== feat.id);
+    const rows = DATA.categories.map((c) => {
+      const list = inCat(c.id);
+      return `<a class="row" href="#/cat/${esc(c.id)}"><img src="${esc(c.image)}" alt="" width="46" height="46"><div class="grow"><b>${esc(c.name)}</b><small>${esc(c.blurb)}</small></div><span class="ring" style="--p:${pct(list)}%"><i>${watchedIn(list)}</i></span></a>`;
+    }).join('');
+    return `<div class="topbar"><div class="wordmark">FIVE <i>BALL</i></div><div class="streakline">${s > 0 ? `רצף <b>${daysHe(s)}</b>` : 'by Adam'}</div></div>
+      ${say(msg)}
+      <div class="today">
+        <a class="ph" href="#/video/${esc(feat.id)}"><img src="${esc(thumb(feat))}" alt=""><span>${esc(feat.series ? seriesById[feat.series].name : catById[feat.cat].name)}${feat.level !== undefined ? ' · ' + esc(DATA.levels[feat.level]) : ''}</span><em>${clock(feat.seconds)}</em></a>
+        <h2>${esc(feat.title)}</h2>
+        <p>${last ? 'ממשיכים מאיפה שעצרת' : 'הסרטון הבא שלך'}</p>
+        <div class="cta"><a class="btn" href="#/video/${esc(feat.id)}">${last ? 'המשך צפייה' : 'מתחילים'}</a>
+          <button class="btn sec" data-fav="${esc(feat.id)}" aria-pressed="${fav}" aria-label="${fav ? 'הסרה מהמועדפים' : 'הוספה למועדפים'}">${fav ? '★' : '☆'}</button></div>
+      </div>
+      <h2>ללמוד עם אדם</h2>
+      <div class="rows">${rows}</div>
+      ${rec.length ? `<h2>מומלצים בשבילך</h2><div class="hscroll">${rec.map(videoCard).join('')}</div>` : ''}`;
+  }
+
   function viewHome() {
+    if (SKIN_B) return viewHomeB();
     const name = state.profile && state.profile.name;
     const last = state.last && videoById[state.last] && !isWatched(state.last) ? videoById[state.last] : null;
     const feat = last || recommended()[0] || DATA.videos[0];
@@ -207,6 +242,7 @@
         <span class="chev" aria-hidden="true">‹</span></a>`;
     }).join('');
     return `${head(c.name, `${esc(c.blurb)} · ${videosHe(list.length)}`)}
+      ${say('תתחיל משליטה בכדור. כל השאר נבנה עליה.')}
       <div class="chips">${chip('all', 'כל הרמות')}${DATA.levels.map((l, i) => chip(i, l)).join('')}</div>
       ${series || '<div class="empty">אין עדיין סדרות ברמה הזאת.</div>'}`;
   }
@@ -230,6 +266,7 @@
     return `<a class="back" href="${back[0]}">→ ${esc(back[1])}</a>
       <div class="head"><h1>${esc(v.title)}</h1><p>${metaTags(v)}</p></div>
       ${player(v)}
+      ${v.steps ? say('הדבר הכי חשוב כאן: ' + esc(v.steps[v.steps.length - 1])) : ''}
       ${v.desc ? `<div class="card"><p>${esc(v.desc)}</p>${note}</div>` : ''}
       ${v.steps ? `<div class="card"><h3>איך מבצעים</h3><ol class="steps">${v.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol><div class="muted">ציוד: ${esc(v.equipment)}</div></div>` : ''}
       ${v.steps ? `<button class="btn block" data-practice="${esc(v.id)}">יוצאים למגרש · טיימר ${clock(v.seconds)}</button>` : ''}
@@ -270,6 +307,7 @@
         <div class="stat"><b>${streak()}</b><span>ימי רצף</span></div>
         <div class="stat"><b>${practices}</b><span>תרגולים במגרש</span></div>
       </div>
+      ${say(streak() >= 2 ? `${daysHe(streak())} ברצף. ככה בונים שחקן, יום אחרי יום.` : watched.length ? 'התחלה טובה. עכשיו העיקר זה לחזור גם מחר.' : 'כל שחקן התחיל מהסרטון הראשון. אני מחכה לך שם.')}
       <h2>התקדמות</h2>
       <div class="card">${DATA.categories.map((c) => progressBar(c.name, inCat(c.id))).join('')}</div>
       ${last ? `<h2>המשך צפייה</h2>${videoRow(last)}` : ''}
