@@ -234,12 +234,12 @@
         ${list.map((v, n) => videoRow(v, n + 1)).join('')}`;
     }
     const chip = (val, label) => `<button class="chip ${String(levelFilter) === String(val) ? 'on' : ''}" data-level="${val}" aria-pressed="${String(levelFilter) === String(val)}">${esc(label)}</button>`;
-    const series = DATA.series.filter((s) => s.cat === id).map((s) => {
+    const series = DATA.series.filter((s) => s.cat === id).map((s, si) => {
       const all = inSeries(s.id);
       const shown = levelFilter === 'all' ? all : all.filter((v) => v.level === Number(levelFilter));
       if (!shown.length) return '';
       return `<a class="item series" href="#/series/${esc(s.id)}" style="--p:${pct(all)}%">
-        <div class="ico">${icon('technique')}</div>
+        <div class="idx${SKIN_B ? ' ico' : ''}">${SKIN_B ? icon('technique') : String(si + 1).padStart(2, '0')}</div>
         <div class="grow"><div class="t">${esc(s.name)}</div><div><span class="tag">${videosHe(shown.length)}</span><span class="tag">${watchedIn(all)} נצפו</span></div></div>
         <span class="chev" aria-hidden="true">‹</span></a>`;
     }).join('');
