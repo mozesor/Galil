@@ -194,7 +194,7 @@
         <div class="cta"><a class="btn" href="#/video/${esc(feat.id)}">${last ? 'המשך צפייה' : 'מתחילים'}</a>
           <button class="btn sec" data-fav="${esc(feat.id)}" aria-pressed="${fav}" aria-label="${fav ? 'הסרה מהמועדפים' : 'הוספה למועדפים'}">${fav ? '★' : '☆'}</button></div>
       </div>
-      <h2>ללמוד עם אדם</h2>
+      <h2>מה לומדים</h2>
       <div class="rows">${rows}</div>
       ${rec.length ? `<h2>מומלצים בשבילך</h2><div class="hscroll">${rec.map(videoCard).join('')}</div>` : ''}`;
   }
@@ -208,7 +208,7 @@
     const [tech, ...rest] = DATA.categories;
     const rec = recommended().filter((v) => v.id !== feat.id);
     return `<div class="brand"><img src="img/logo.jpg" alt="" width="46" height="46"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
-      <div class="head"><h1>${name ? `היי ${esc(name)}` : 'מתאמנים עם אדם'}</h1><p>${s > 0 ? `רצף של ${daysHe(s)}. ממשיכים?` : 'מוצאים תרגיל, לומדים אותו, יוצאים למגרש.'}</p></div>
+      <div class="head"><h1>${name ? `היי ${esc(name)}` : 'האימון שלך מתחיל כאן'}</h1><p>${s > 0 ? `רצף של ${daysHe(s)}. ממשיכים?` : 'מוצאים תרגיל, לומדים אותו, יוצאים למגרש.'}</p></div>
       <div class="card hero photo"><span class="five" aria-hidden="true">5</span>
         <div class="muted">${last ? 'המשך צפייה' : 'מומלץ להתחיל כאן'} · ${esc(feat.series ? seriesById[feat.series].name : catById[feat.cat].name)}</div>
         <h3>${esc(feat.title)}</h3>
