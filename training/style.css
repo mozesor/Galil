@@ -356,3 +356,14 @@ body::after {
 .ticker > div { animation-name: tickerRtl; }
 .ticker span { padding-inline-end: 16px; }
 @keyframes tickerRtl { from { transform: translateX(0); } to { transform: translateX(50%); } }
+
+/* the Captain (AI) explainer */
+.card.captain { display: block; margin-top: 6px; background: linear-gradient(200deg, #2a220b, var(--card) 65%); border-inline-start-color: var(--accent); }
+.card.captain .muted { color: var(--accent); font-weight: 800; letter-spacing: .04em; }
+.card.captain .more { display: inline-block; margin-top: 10px; font-weight: 800; color: var(--accent); }
+.card.sample { position: relative; }
+.eg { position: absolute; top: 0; left: 0; padding: 3px 12px; background: var(--card2); color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .08em; }
+.scorebox { display: flex; align-items: center; gap: 14px; margin: 8px 0 14px; }
+.scorebox .n { flex: none; width: 88px; height: 84px; padding-top: 8px; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); font: 700 56px/1 var(--display); clip-path: var(--pent); }
+.scorebox b { font: 700 30px/1 var(--display); }
+.card.sample h3 { font-size: 24px; color: var(--accent); margin: 12px 0 4px; }

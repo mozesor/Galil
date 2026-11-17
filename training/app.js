@@ -194,6 +194,7 @@
         <div class="cta"><a class="btn" href="#/video/${esc(feat.id)}">${last ? 'המשך צפייה' : 'מתחילים'}</a>
           <button class="btn sec" data-fav="${esc(feat.id)}" aria-pressed="${fav}" aria-label="${fav ? 'הסרה מהמועדפים' : 'הוספה למועדפים'}">${fav ? '★' : '☆'}</button></div>
       </div>
+      <a class="card captain" href="#/captain"><div class="muted">בקרוב · בינה מלאכותית</div><h3>הקפטן נותן לך ציון</h3><p>מקבלים משימה, מצלמים את עצמכם מבצעים אותה, ומקבלים ציון ודגשים לשיפור.</p><span class="more">איך זה עובד ‹</span></a>
       <h2>מה לומדים</h2>
       <div class="rows">${rows}</div>
       ${rec.length ? `<h2>מומלצים בשבילך</h2><div class="hscroll">${rec.map(videoCard).join('')}</div>` : ''}`;
@@ -215,6 +216,7 @@
         <a class="btn block" href="#/video/${esc(feat.id)}">${last ? 'המשך צפייה' : 'צפייה בסרטון'}</a>
       </div>
       <div class="ticker" aria-hidden="true"><div>${TICKER}${TICKER}</div></div>
+      <a class="card captain" href="#/captain"><div class="muted">בקרוב · בינה מלאכותית</div><h3>הקפטן נותן לך ציון</h3><p>מקבלים משימה, מצלמים את עצמכם מבצעים אותה, ומקבלים ציון ודגשים לשיפור.</p><span class="more">איך זה עובד ‹</span></a>
       <h2>קטגוריות</h2>
       <div class="tiles">${tile(tech, true)}${rest.map((c) => tile(c)).join('')}</div>
       <h2>הצצה לאפליקציה</h2>
@@ -318,6 +320,35 @@
       ${any ? '<p style="text-align:center;margin-top:18px"><button class="link" data-reset>איפוס כל הנתונים</button></p>' : ''}`;
   }
 
+  function viewCaptain() {
+    const step = (n, t, d) => `<div class="item"><div class="num">${n}</div><div class="grow"><div class="t">${t}</div><div class="muted">${d}</div></div></div>`;
+    return `${head('הקפטן', 'המאמן החכם של Five Ball · בקרוב באפליקציה', ['#/home', 'דף הבית'])}
+      <div class="card"><p>הקפטן הוא בינה מלאכותית שמלווה את השחקן בין האימונים. הוא נותן משימות, בודק סרטונים שהשחקן מעלה, ועונה על שאלות. הוא לא מחליף את אדם או את המאמן בקבוצה, אלא עוזר להתמיד ולדעת על מה לעבוד.</p></div>
+      <h2>איך זה עובד</h2>
+      ${step(1, 'מקבלים משימה', 'הקפטן בוחר תרגיל אחד לפי הרמה, עם סרטון ושלבי ביצוע.')}
+      ${step(2, 'מצלמים ומעלים', 'מתרגלים, מבקשים ממישהו לצלם כ-20 שניות מהצד, ומעלים את הסרטון.')}
+      ${step(3, 'מקבלים ציון ודגשים', 'ציון מ-1 עד 10, מה נעשה טוב ומה לשפר. ציון 6 ומעלה פותח את המשימה הבאה.')}
+      <h2>כך נראית תשובה</h2>
+      <div class="card sample"><span class="eg">דוגמה</span>
+        <div class="scorebox"><div class="n">8</div><div><b>ביצוע יפה!</b><div class="muted">נגיעות סוליה במקום · ניסיון שני</div></div></div>
+        <h3>מה עשית טוב</h3><ol class="steps"><li>הכדור נשאר קרוב לגוף לאורך כל התרגיל.</li><li>עמדת על קצות האצבעות והקצב היה קבוע.</li></ol>
+        <h3>מה לשפר</h3><ol class="steps"><li>הרם את הראש כל כמה נגיעות במקום להסתכל על הכדור.</li><li>כופף קצת יותר את הברכיים.</li></ol>
+        <h3>הצעד הבא</h3><p>אותו תרגיל, דקה אחת, כשאתה סופר בקול כמה פעמים הרמת את הראש.</p>
+      </div>
+      <h2>שאל את הקפטן</h2>
+      <div class="card sample"><span class="eg">דוגמה</span>
+        <p><b>שחקן:</b> אני מתרגש מאוד לפני משחקים. מה עושים?</p>
+        <p style="margin-top:10px"><b>הקפטן:</b> זה קורה גם לשחקנים מקצוענים, וזה סימן שאכפת לך. נסה שלוש נשימות איטיות לפני העלייה למגרש, ותתרכז רק בפעולה הראשונה שלך במשחק. כדאי לצפות בסרטון "לחץ במשחק" בקטגוריית המנטליות.</p>
+      </div>
+      <h2>חשוב לדעת</h2>
+      <div class="card"><ol class="steps">
+        <li>הציון הוא הערכה של בינה מלאכותית לפי הסרטון, ולא שיפוט של מאמן.</li>
+        <li>העלאת סרטון של ילד תדרוש אישור הורים, והסרטונים לא יפורסמו.</li>
+        <li>הקפטן לא נותן ייעוץ רפואי או תזונה אישית. בכאב או פציעה פונים להורה, למאמן או לרופא.</li>
+      </ol></div>
+      <p class="muted" style="text-align:center;margin-top:14px">הקפטן עדיין לא פעיל באתר ההדגמה הזה. הדוגמאות למעלה ממחישות איך הוא יעבוד.</p>`;
+  }
+
   const viewNotFound = () => `<div class="empty">העמוד לא נמצא. <a class="link" href="#/home">חזרה לדף הבית</a></div>`;
 
   // ---------- router ----------
@@ -327,12 +358,12 @@
     const onboarding = !state.profile && !state.skipped && name !== 'profile';
     const y = window.scrollY;
     const routes = {
-      home: viewHome, search: viewSearch, me: viewMe, profile: viewWelcome,
+      home: viewHome, search: viewSearch, me: viewMe, profile: viewWelcome, captain: viewCaptain,
       cat: () => viewCat(arg), series: () => viewSeries(arg), video: () => viewVideo(arg),
     };
     view.innerHTML = onboarding ? viewWelcome() : (routes[name] || viewNotFound)();
     tabs.hidden = onboarding;
-    const tab = { cat: arg === 'technique' ? 'technique' : 'home', series: 'technique', profile: 'me',
+    const tab = { cat: arg === 'technique' ? 'technique' : 'home', series: 'technique', profile: 'me', captain: 'home',
       video: videoById[arg] && videoById[arg].cat === 'technique' ? 'technique' : 'home' }[name] || name;
     tabs.querySelectorAll('a').forEach((a) => {
       const on = a.dataset.tab === tab;
