@@ -7,7 +7,7 @@
     "currentRoundNumber": 3,
     "currentRoundName": "מחזור 2"
   },
-  "fetchedAt": "2026-11-18T18:18:07.242Z",
+  "fetchedAt": "2026-11-19T00:36:16.793Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -359,16 +359,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": 0
       },
@@ -609,16 +609,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": 0
       },
@@ -728,14 +728,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -878,14 +878,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -1028,16 +1028,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": 0
       }
@@ -1196,7 +1196,7 @@
       "id": "6acc33529878872a963a078a",
       "provider_id": -1,
       "date": "2026-11-18T15:45:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 2",
         "number": 2,
@@ -1209,18 +1209,18 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 1
       },
       "away": {
         "id": "68d612211b7b720e58adef8b",
@@ -1228,18 +1228,18 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
-        "goals": -1
+        "goals": 12
       }
     },
     {
@@ -1609,16 +1609,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": -1
       },
@@ -1709,14 +1709,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -1828,14 +1828,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -1928,16 +1928,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": -1
       }
@@ -2359,16 +2359,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": -1
       },
@@ -2459,14 +2459,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -2678,14 +2678,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -2778,16 +2778,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": -1
       }
@@ -3009,16 +3009,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": -1
       },
@@ -3109,14 +3109,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -3428,14 +3428,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -3528,16 +3528,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": -1
       }
@@ -3659,16 +3659,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": -1
       },
@@ -3759,14 +3759,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -4178,14 +4178,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -4278,16 +4278,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": -1
       }
@@ -4309,16 +4309,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": -1
       },
@@ -4409,14 +4409,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -4928,14 +4928,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -5009,16 +5009,16 @@
         "name": "מכבי נווה שאנן 2",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 0,
+          "games": 4,
+          "wins": 1,
           "draws": 1,
           "losses": 2,
           "goals": {
-            "for": 0,
-            "against": 13,
-            "difference": -13
+            "for": 12,
+            "against": 14,
+            "difference": -2
           },
-          "points": 1
+          "points": 4
         },
         "goals": -1
       },
@@ -5059,14 +5059,14 @@
         "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 36,
-            "difference": -35
+            "for": 2,
+            "against": 48,
+            "difference": -46
           },
           "points": 0
         },
@@ -5450,6 +5450,19 @@
     },
     {
       "rank": 9,
+      "provider_id": 7917,
+      "name": "מכבי נווה שאנן 2",
+      "games": 4,
+      "wins": 1,
+      "draws": 1,
+      "losses": 2,
+      "gf": 12,
+      "ga": 14,
+      "gd": -2,
+      "points": 4
+    },
+    {
+      "rank": 10,
       "provider_id": 8295,
       "name": "הפועל עכו 2 \"צו פיוס\"",
       "games": 4,
@@ -5462,7 +5475,7 @@
       "points": 3
     },
     {
-      "rank": 10,
+      "rank": 11,
       "provider_id": 2679,
       "name": "הפ' גליל עליון",
       "games": 3,
@@ -5472,19 +5485,6 @@
       "gf": 4,
       "ga": 9,
       "gd": -5,
-      "points": 1
-    },
-    {
-      "rank": 11,
-      "provider_id": 7917,
-      "name": "מכבי נווה שאנן 2",
-      "games": 3,
-      "wins": 0,
-      "draws": 1,
-      "losses": 2,
-      "gf": 0,
-      "ga": 13,
-      "gd": -13,
       "points": 1
     },
     {
@@ -5530,13 +5530,13 @@
       "rank": 15,
       "provider_id": 3696,
       "name": "מ.ס. טירת כרמל גל קובי \"צו פיוס\"",
-      "games": 2,
+      "games": 3,
       "wins": 0,
       "draws": 0,
-      "losses": 2,
-      "gf": 1,
-      "ga": 36,
-      "gd": -35,
+      "losses": 3,
+      "gf": 2,
+      "ga": 48,
+      "gd": -46,
       "points": 0
     }
   ]
