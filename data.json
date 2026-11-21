@@ -7,7 +7,7 @@
     "currentRoundNumber": 3,
     "currentRoundName": "מחזור 2"
   },
-  "fetchedAt": "2026-11-21T10:28:04.715Z",
+  "fetchedAt": "2026-11-21T17:42:51.185Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -1246,7 +1246,7 @@
       "id": "6acc33529878872a963a078e",
       "provider_id": -1,
       "date": "2026-11-21T12:00:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 2",
         "number": 2,
@@ -1270,7 +1270,7 @@
           },
           "points": 6
         },
-        "goals": -1
+        "goals": 2
       },
       "away": {
         "id": "68e09e9f1b7b720e58c00962",
@@ -1289,7 +1289,7 @@
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 2
       }
     },
     {
