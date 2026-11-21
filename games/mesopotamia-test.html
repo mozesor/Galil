@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}[hidden]{display:none!important}</style>
+<title>מבחן מסופוטמיה</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Secular+One&display=swap">
+<style>
+/* Layout: an exam paper. One reading column, four numbered parts, a result panel at the end. */
+:root{
+  --bg:#f2f5fb; --surface:#ffffff; --ink:#15203f; --muted:#56618a; --line:#d5dcee;
+  --lapis:#1f3a8a; --gold:#9a6710; --good:#17794a; --bad:#b3362b; --good-bg:#e2f4ea; --bad-bg:#fbe6e3; --pick:#e3e9fb;
+  --display:"Secular One","Assistant","Arial Hebrew",Arial,sans-serif;
+  --body:"Assistant","Arial Hebrew","Noto Sans Hebrew",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0a1024; --surface:#121a36; --ink:#e8ecf8; --muted:#9aa6cc; --line:#27325a;
+  --lapis:#9db3ff; --gold:#ecbd52; --good:#5fd39a; --bad:#ff8f84; --good-bg:#123425; --bad-bg:#3d1a17; --pick:#1d2a5c;
+  color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#0a1024; --surface:#121a36; --ink:#e8ecf8; --muted:#9aa6cc; --line:#27325a;
+  --lapis:#9db3ff; --gold:#ecbd52; --good:#5fd39a; --bad:#ff8f84; --good-bg:#123425; --bad-bg:#3d1a17; --pick:#1d2a5c;
+  color-scheme:dark }
+
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55}
+.page{max-width:800px;margin:0 auto;padding-block:28px 72px;display:flex;flex-direction:column;gap:36px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2{font-family:var(--display);font-weight:400;line-height:1.2;margin:0;color:var(--lapis);text-wrap:balance}
+h1{font-size:clamp(30px,6vw,44px)} h2{font-size:clamp(22px,4.2vw,28px)}
+p{margin:0} .muted{color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:10px;color:var(--muted);font-weight:600}
+section{display:flex;flex-direction:column;gap:14px}
+.pts{color:var(--gold);font-family:var(--body);font-weight:700;font-size:17px;white-space:nowrap}
+.parthead{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--line);padding-bottom:6px}
+
+.q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:10px;margin:0;min-width:0}
+fieldset.q{border:1px solid var(--line)}
+.q legend,.q .qt{font-weight:700;padding:0;float:right;width:100%}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px;clear:both}
+.opts.tf{grid-template-columns:repeat(2,minmax(0,140px))}
+.opt{display:flex;gap:10px;align-items:flex-start;background:var(--bg);border:1.5px solid var(--line);border-radius:9px;padding:8px 12px;cursor:pointer;min-width:0}
+.opt input{margin-top:6px;accent-color:var(--lapis);flex:none}
+.opt:has(input:checked){background:var(--pick);border-color:var(--lapis)}
+.opt:has(input:focus-visible),select:focus-visible,textarea:focus-visible,button:focus-visible,.tick:has(input:focus-visible){outline:3px solid var(--gold);outline-offset:2px}
+.q .opt.right{background:var(--good-bg);border-color:var(--good);font-weight:700}
+.q .opt.wrong{background:var(--bad-bg);border-color:var(--bad)}
+.note{font-size:16px;color:var(--muted)}
+.note.bad{color:var(--bad);font-weight:700}
+
+.match{display:grid;grid-template-columns:minmax(120px,auto) 1fr;gap:10px 14px;align-items:center}
+@media (max-width:520px){.match{grid-template-columns:1fr}}
+.match label{font-weight:700}
+select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:9px;padding:8px 10px;width:100%;box-sizing:border-box;min-width:0}
+select.right{border-color:var(--good);background:var(--good-bg)} select.wrong{border-color:var(--bad);background:var(--bad-bg)}
+textarea{min-height:110px;resize:vertical}
+.model{border-inline-start:4px solid var(--gold);padding-inline-start:14px;display:flex;flex-direction:column;gap:8px}
+.tick{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.tick input{margin-top:6px;accent-color:var(--good);flex:none}
+
+button{font:inherit;cursor:pointer}
+.big{background:var(--lapis);color:var(--bg);border:0;border-radius:12px;padding:12px 28px;font-weight:700;font-size:20px;align-self:flex-start}
+.ghost{background:var(--surface);color:var(--ink);border:1.5px solid var(--line);border-radius:12px;padding:10px 22px;font-weight:600}
+.result{background:var(--surface);border:2px solid var(--lapis);border-radius:14px;padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.score{font-family:var(--display);font-size:54px;line-height:1;color:var(--lapis);font-variant-numeric:tabular-nums}
+.rows{display:grid;grid-template-columns:1fr auto;gap:4px 18px;font-variant-numeric:tabular-nums;max-width:380px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+</style>
+
+<div class="page" dir="rtl" lang="he">
+<header>
+  <h1>מבחן מסופוטמיה</h1>
+  <p class="muted">מבחן תרגול על תרבויות מסופוטמיה והזיקה למקרא. עונים על הכול בלי להציץ בחומר, ורק בסוף לוחצים על ״בדיקת המבחן״.</p>
+  <p class="meta"><span>47 שאלות</span><span>100 נקודות</span><span>זמן מומלץ: 45 דקות</span></p>
+</header>
+
+<section id="partA"><div class="parthead"><h2>חלק א׳: שאלות רב־ברירה</h2><span class="pts">25 שאלות · 2 נקודות לשאלה</span></div><div id="qa" style="display:flex;flex-direction:column;gap:12px"></div></section>
+<section id="partB"><div class="parthead"><h2>חלק ב׳: נכון או לא נכון</h2><span class="pts">10 שאלות · 2 נקודות לשאלה</span></div><div id="qb" style="display:flex;flex-direction:column;gap:12px"></div></section>
+<section id="partC"><div class="parthead"><h2>חלק ג׳: התאימו מושג להסבר</h2><span class="pts">9 מושגים · 2 נקודות למושג</span></div><div class="q"><div class="match" id="qc"></div></div></section>
+<section id="partD"><div class="parthead"><h2>חלק ד׳: שאלות פתוחות</h2><span class="pts">3 שאלות · 4 נקודות לשאלה</span></div>
+  <p class="muted">כתבו תשובה מלאה. אחרי הבדיקה תופיע תשובה לדוגמה, ותסמנו בעצמכם אילו נקודות הופיעו בתשובה שלכם.</p>
+  <div id="qd" style="display:flex;flex-direction:column;gap:12px"></div></section>
+
+<div class="actions"><button class="big" type="button" id="check">בדיקת המבחן</button><span class="note bad" id="warn"></span></div>
+<div class="result" id="result" hidden>
+  <p class="muted">הציון</p><p class="score" id="score"></p><p id="verdict" style="font-weight:700"></p>
+  <div class="rows" id="rows"></div>
+  <p class="note" id="dnote">הציון מתעדכן כשמסמנים את הנקודות בשאלות הפתוחות.</p>
+  <div class="actions"><button class="ghost" type="button" id="reset">מבחן חדש (סדר תשובות אחר)</button></div>
+</div>
+</div>
+
+<script>
+document.documentElement.lang='he';document.documentElement.dir='rtl';
+/* the first answer in each list is the correct one; the order is shuffled on screen */
+const A=[
+ ['באילו מדינות של ימינו נמצא האזור של מסופוטמיה?',['עיראק, סוריה ודרום טורקיה','מצרים וסודן','יוון ואיטליה','איראן והודו']],
+ ['מה ההבדל המרכזי בין החקלאות בארץ ישראל לחקלאות במסופוטמיה?',['בארץ ישראל תלויים בגשם, ובמסופוטמיה בנהרות ובתעלות השקיה','בארץ ישראל גידלו רק עצים, ובמסופוטמיה רק דגנים','במסופוטמיה ירד הרבה יותר גשם','בארץ ישראל לא הייתה חקלאות']],
+ ['מהו הסדר הנכון של התרבויות, מהקדומה למאוחרת?',['שומר, אכד, בבל, אשור','אכד, שומר, אשור, בבל','בבל, אשור, שומר, אכד','אשור, בבל, אכד, שומר']],
+ ['מי הנהיג את האימפריה המאוחדת הראשונה בהיסטוריה?',['סרגון מאכד','חמורבי','אשורבניפל','גילגמש']],
+ ['איזו עיר נחשבת לעיר הראשונה בעולם?',['אורוק','בבל','נינווה','ניפור']],
+ ['מדוע בנו במסופוטמיה מלבני טין שרופות?',['כי בדרום מסופוטמיה אין אבני בנייה ואין עצים גדולים','כי לבנים היו יפות יותר מאבן','כי המלך אסר לבנות מאבן','כי לבנים קלות יותר לנשיאה בסירות']],
+ ['מהו זיגוראת?',['מקדש בצורת מגדל מדרגות','ארמון של המלך','חומה שמקיפה את העיר','סירה עגולה אטומה בזפת']],
+ ['מה ייבאו תושבי מסופוטמיה מלבנון?',['עצי ארז','לפיס לזולי','דגנים','כלי חרס']],
+ ['מדוע התפתחה הגיאומטריה במסופוטמיה?',['כדי למדוד ולחלק מחדש שדות אחרי הצפות הנהר','כדי לבנות ספינות מלחמה','כדי לצייר את האלים','כדי לחשב את גיל המלך']],
+ ['לשם מה הומצא כתב היתדות?',['לרישום סחורות, מיסים ומנות מזון','לכתיבת שירים וסיפורים','לכתיבת תפילות לאלים','לשליחת מכתבים בין מלכים']],
+ ['מה היה ה״אדובה״?',['בית הספר לסופרים, ״בית הלוחות״','המקדש המרכזי של אורוק','שוק הסחורות של בבל','שם של חותמת גליל']],
+ ['היכן נמצאה ספריית לוחות הטין של המלך אשורבניפל?',['בנינווה','בבבל','באורוק','באכד']],
+ ['כמה חוקים יש בקודקס חמורבי?',['282','10','613','100']],
+ ['מהו ההבדל המהותי בין חוקי חמורבי לחוקי התורה?',['אצל חמורבי העונש תלוי במעמד החברתי, ובתורה החוק שווה לכולם','בתורה אין חוקים על נזקים','חוקי חמורבי לא נכתבו אלא נמסרו בעל פה','אצל חמורבי אין עונשים כלל']],
+ ['איזו מילה אכדית פירושה ״בית״?',['ביתו','מאי','קשטו','קקרו']],
+ ['מה היה תפקידו של האשיפו?',['מומחה לטקסים, ללחשים ולמאגיה','מפקד הצבא','אחראי על תעלות ההשקיה','שופט בבית המשפט']],
+ ['לפי ׳אנומה אליש׳, מי הרג את תיאמת ויצר מגופה את השמיים ואת הארץ?',['מרדוך','קינגו','אפסו','אנליל']],
+ ['כיצד נברא העולם לפי ספר בראשית?',['בדיבור של אל אחד, בסדר ובלי מלחמה','במלחמה בין אלים','מגופה של מפלצת ים','מדם של אל מורד']],
+ ['מי היה אנכידו?',['איש פרא שהאלים בראו, והפך לחברו הטוב של גילגמש','מלך העיר בבל','שריד המבול הבבלי','האל שהזהיר מפני המבול']],
+ ['מהו אות הברית בסוף סיפור המבול המקראי?',['הקשת בענן','ענף עץ זית','חומות העיר','לוח טין']],
+ ['מהו ״סיפור אטיולוגי״?',['סיפור שמסביר למה העולם והסדר בחברה הם כפי שהם, ונותן להם תוקף אלוהי','סיפור על קרב בין שתי אימפריות','רשימת חוקים שנחרטה על מצבה','שיר שנכתב לכבוד המלך']],
+ ['לאיזה ספר בתנ״ך דומה המשפט מעלילות גילגמש ״שניים כמו שלישייה, והחוט המשולש האם ייקרע?״',['קהלת','ויקרא','דברים','שיר השירים']],
+ ['למה שימשו חותמות הגליל?',['לאישור חוזים, לחתימה אישית ולסימון בעלות','לקישוט בגדים','לספירת ימים בלוח השנה','לטחינת דגנים']],
+ ['מה נתנה תיאמת לקינגו כשמינתה אותו למפקד הצבא שלה?',['את לוח הגורלות','את צמח הנעורים','את מצבת החוקים','את חומות אורוק']],
+ ['היכן מוצגת היום מצבת חמורבי?',['במוזיאון הלובר בפריז','במוזיאון הבריטי בלונדון','במוזיאון המטרופוליטן בניו יורק','בעיר בבל שבעיראק']]
+];
+const B=[
+ ['פירוש השם ״מסופוטמיה״ הוא ״ארץ בין הנהרות״.',true,''],
+ ['הגלגל הומצא תחילה בשביל מרכבות קרב.',false,'הוא הומצא קודם כאובניים לקדרים, ורק אחר כך שימש לעגלות ולמרכבות.'],
+ ['חלוקת השעה ל-60 דקות מקורה בשיטת הספירה של מסופוטמיה.',true,''],
+ ['הבבלים למדו את משפט פיתגורס מפיתגורס היווני.',false,'הם השתמשו בו כ-1,300 שנה לפני שפיתגורס נולד.'],
+ ['השומרית היא שפה שמית, קרובה לעברית.',false,'השומרית היא שפה מבודדת. האכדית היא השפה השמית שקרובה לעברית.'],
+ ['לפי ׳אנומה אליש׳, האדם נברא כדי לעבוד במקום האלים.',true,''],
+ ['במסופוטמיה כל אדם נחשב ״צלם האל״.',false,'רק המלך נחשב כך. התנ״ך הוא שקבע שכל אדם נברא בצלם אלוהים.'],
+ ['בסוף המסע גילגמש משיג חיי נצח.',false,'הוא נכשל במבחן השינה, והנחש גנב את צמח הנעורים.'],
+ ['סיפור הבריאה ׳אנומה אליש׳ נכתב על שבעה לוחות טין.',true,''],
+ ['אותנפישתים שלח מהתיבה רק עורב ויונה.',false,'אותנפישתים שלח יונה, סנונית ועורב. נח הוא ששלח עורב ויונה.']
+];
+const C=[
+ ['כתב היתדות','שיטת כתב קדומה שנחרטה בחרט קנה על לוחות טין'],
+ ['אותנפישתים','שריד המבול הבבלי, שזכה בחיי נצח'],
+ ['קודקס חמורבי','קובץ חוקים של מלך בבל, חרוט על מצבת בזלת'],
+ ['אתמננכי','הזיגוראת של העיר בבל'],
+ ['תיאמת','אלת מי הים המלוחים בסיפור הבריאה הבבלי'],
+ ['הסהר הפורה','רצועת אדמה פורייה מהמפרץ הפרסי עד הים התיכון'],
+ ['אסגילה','המקדש של האל מרדוך בבבל'],
+ ['אאה','האל החכם שהזהיר את אותנפישתים בסתר מפני המבול'],
+ ['טבור העולם','מקום שנחשב למרכז העולם, שבו השמיים והארץ נפגשים']
+];
+const Dq=[
+ ['הסבירו שתי נקודות דמיון ושני הבדלים בין סיפור המבול הבבלי (אותנפישתים) לסיפור המבול המקראי (נח).',
+  'דמיון: בשני הסיפורים אל מזהיר את הגיבור והוא בונה תיבה אטומה בזפת, מעלה את משפחתו ובעלי חיים, התיבה נחה על הר, הוא שולח ציפורים ומקריב קורבן. הבדלים: בבבל המבול בא כי בני האדם הרעישו, ובתנ״ך בגלל חמס (סיבה מוסרית). אותנפישתים ניצל בזכות תחבולה של האל אאה, ונח ניצל כי היה צדיק. האלים הבבליים מפחדים ורעבים, וה׳ שולט בטבע וכורת ברית (הקשת בענן).',
+  ['כתבתי נקודת דמיון אחת (למשל: אזהרה ובניית תיבה)','כתבתי נקודת דמיון שנייה (למשל: ציפורים, הר או קורבן)','כתבתי את ההבדל בסיבה למבול: רעש מול חמס','כתבתי הבדל נוסף (תחבולה מול צדיק, התנהגות האלים או הקשת בענן)']],
+ ['הסבירו מהו סיפור אטיולוגי ותנו שתי דוגמאות מ׳אנומה אליש׳. מה קורה לחברה כשהסדר החברתי נראה כרצון האלים?',
+  'סיפור אטיולוגי (מיוונית: aitia, סיבה) הוא סיפור שמסביר איך נוצרו הטבע והסדר החברתי ולמה הם כפי שהם. הוא גם נותן להם תוקף אלוהי: ״כך רצו האלים, ולכן כך צריך להיות״. דוגמאות: הפרת והחידקל נוצרו מעיניה של תיאמת; מרדוך הוא מלך האלים כי ניצח את תיאמת; האדם נברא כדי לעבוד במקום האלים; בבל נבנתה כמקדשו של מרדוך. כשסדר חברתי נראה כרצון האלים קשה להתנגד לו: השליטים והכוהנים נהנים ממנו, והעבדים ובני המעמדות הנמוכים עלולים להיפגע.',
+  ['כתבתי שזה סיפור שמסביר למה העולם והחברה הם כפי שהם','כתבתי שהוא נותן לדברים תוקף אלוהי','כתבתי שתי דוגמאות מ׳אנומה אליש׳','כתבתי שקשה להתנגד לסדר כזה, ומי נהנה או נפגע ממנו']],
+ ['מדוע הרעיון ״צלם אלוהים״ שבספר בראשית נחשב למהפכה לעומת התפיסה במסופוטמיה?',
+  'במסופוטמיה (וגם במצרים) רק המלך נחשב ״צלם האל״, והאדם הרגיל נתפס כעבד שנברא כדי לעבוד במקום האלים ולהאכיל אותם. בספר בראשית כל אדם נברא בצלם אלוהים: גבר ואישה, עשיר ועני. מכאן שלכל אדם יש ערך וכבוד שלא תלויים במעמד שלו, וזה הבסיס לרעיון של שוויון ושל זכויות האדם.',
+  ['כתבתי שבמסופוטמיה רק המלך נחשב צלם האל','כתבתי שהאדם שם נתפס כעבד של האלים','כתבתי שבמקרא כל אדם נברא בצלם אלוהים','כתבתי שמכאן נובעים ערך האדם, שוויון או זכויות האדם']]
+];
+const $=id=>document.getElementById(id);
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const L='אבגד';let checked=false;
+
+function build(){
+  checked=false;$('result').hidden=true;$('warn').textContent='';$('check').hidden=false;
+  $('qa').innerHTML=A.map((q,n)=>`<fieldset class="q" id="a${n}"><legend>${n+1}. ${q[0]}</legend><div class="opts">${shuffle(q[1].map((t,k)=>[t,k])).map((o,j)=>`<label class="opt"><input type="radio" name="a${n}" id="a${n}_${j}" value="${o[1]}"><span>${L[j]}. ${o[0]}</span></label>`).join('')}</div><p class="note" id="a${n}n"></p></fieldset>`).join('');
+  $('qb').innerHTML=B.map((q,n)=>`<fieldset class="q" id="b${n}"><legend>${n+A.length+1}. ${q[0]}</legend><div class="opts tf"><label class="opt"><input type="radio" name="b${n}" id="b${n}_t" value="1"><span>נכון</span></label><label class="opt"><input type="radio" name="b${n}" id="b${n}_f" value="0"><span>לא נכון</span></label></div><p class="note" id="b${n}n"></p></fieldset>`).join('');
+  const defs=shuffle(C.map((c,k)=>[c[1],k]));
+  $('qc').innerHTML=C.map((c,n)=>`<label for="c${n}">${n+A.length+B.length+1}. ${c[0]}</label><div><select id="c${n}"><option value="">בחרו הסבר…</option>${defs.map(d=>`<option value="${d[1]}">${d[0]}</option>`).join('')}</select><p class="note" id="c${n}n"></p></div>`).join('');
+  $('qd').innerHTML=Dq.map((q,n)=>`<div class="q" id="d${n}"><label class="qt" for="d${n}t">${n+A.length+B.length+C.length+1}. ${q[0]}</label><textarea id="d${n}t" placeholder="כתבו כאן את התשובה"></textarea><div class="model" id="d${n}m" hidden><p><b>תשובה לדוגמה:</b> ${q[1]}</p><p class="muted">סמנו מה הופיע בתשובה שלכם (נקודה לכל סעיף):</p>${q[2].map((t,k)=>`<label class="tick"><input type="checkbox" id="d${n}k${k}" data-d="1"><span>${t}</span></label>`).join('')}</div></div>`).join('');
+}
+function val(name){const r=document.querySelector(`input[name="${name}"]:checked`);return r?r.value:null}
+function grade(){
+  let a=0,b=0,c=0;
+  A.forEach((q,n)=>{const v=val('a'+n);document.querySelectorAll(`input[name="a${n}"]`).forEach(i=>{i.disabled=true;const l=i.parentNode;if(i.value==='0')l.classList.add('right');else if(i.checked)l.classList.add('wrong')});
+    if(v==='0')a++;else if(v===null){$('a'+n+'n').textContent='לא נענתה';$('a'+n+'n').className='note bad'}});
+  B.forEach((q,n)=>{const v=val('b'+n),ok=q[1]?'1':'0';document.querySelectorAll(`input[name="b${n}"]`).forEach(i=>{i.disabled=true;const l=i.parentNode;if(i.value===ok)l.classList.add('right');else if(i.checked)l.classList.add('wrong')});
+    if(v===ok)b++;$('b'+n+'n').textContent=(v===null?'לא נענתה. ':'')+(q[2]||'');if(v===null)$('b'+n+'n').className='note bad'});
+  C.forEach((q,n)=>{const s=$('c'+n);s.disabled=true;if(s.value===String(n)){c++;s.classList.add('right')}else{s.classList.add('wrong');$('c'+n+'n').textContent='התשובה הנכונה: '+q[1]}});
+  Dq.forEach((q,n)=>{$('d'+n+'m').hidden=false});
+  return {a,b,c};
+}
+let g=null;
+function showScore(){
+  const d=document.querySelectorAll('input[data-d]:checked').length;
+  const total=g.a*2+g.b*2+g.c*2+d;
+  $('score').textContent=total+' / 100';
+  $('verdict').textContent=total>=90?'מצוין! החומר יושב חזק.':total>=75?'טוב מאוד. שווה לחזור רק על מה שסומן באדום.':total>=55?'בסיס טוב. כדאי לעבור שוב על הסיכום ולנסות מבחן חדש.':'כדאי לחזור על הסיכום או על המצגת, ואז לנסות שוב.';
+  $('rows').innerHTML=`<span>חלק א׳: רב־ברירה</span><b>${g.a*2} / 50</b><span>חלק ב׳: נכון או לא נכון</span><b>${g.b*2} / 20</b><span>חלק ג׳: התאמה</span><b>${g.c*2} / 18</b><span>חלק ד׳: שאלות פתוחות</span><b>${d} / 12</b>`;
+}
+$('check').onclick=()=>{
+  if(checked)return;
+  const missing=A.filter((q,n)=>val('a'+n)===null).length+B.filter((q,n)=>val('b'+n)===null).length+C.filter((q,n)=>!$('c'+n).value).length;
+  if(missing&&$('warn').dataset.asked!=='1'){$('warn').textContent=(missing===1?'נשארה שאלה אחת בלי תשובה.':`נשארו ${missing} שאלות בלי תשובה.`)+' לחיצה נוספת תבדוק את המבחן בכל זאת.';$('warn').dataset.asked='1';return}
+  checked=true;$('warn').textContent='';$('warn').dataset.asked='';g=grade();$('check').hidden=true;$('result').hidden=false;showScore();
+  $('result').scrollIntoView({behavior:'smooth',block:'center'});
+};
+document.addEventListener('change',e=>{if(checked&&e.target.dataset&&e.target.dataset.d)showScore()});
+$('reset').onclick=()=>{build();window.scrollTo({top:0})};
+build();
+</script>
+
+</body>
+</html>
