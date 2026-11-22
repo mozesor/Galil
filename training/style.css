@@ -551,6 +551,10 @@ button.item { width: 100%; text-align: start; color: var(--text); font: inherit;
 .lp-adam-photo img { display: block; width: 100%; height: auto; }
 .lp-adam-txt { padding: 0 20px; } .lp-adam-txt p { color: var(--muted); margin-bottom: 12px; max-width: 32em; }
 
+.lp-gallery { display: flex; gap: 10px; padding: 0 20px 72px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.lp-gallery::-webkit-scrollbar { display: none; }
+.lp-gallery img { flex: none; height: 380px; width: auto; border-radius: 14px; scroll-snap-align: center; }
+.lp-adam-photo img { aspect-ratio: 4 / 5; object-fit: cover; }
 .lp-cap { padding-top: 0; }
 .lp-cap .lp-in { padding: 32px 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--card); }
 .lp-cap p { color: var(--muted); max-width: 36em; margin-bottom: 14px; }
@@ -588,7 +592,9 @@ button.item { width: 100%; text-align: start; color: var(--text); font: inherit;
   .lp-phone { width: 280px; } .lp h3 { font-size: 30px; }
   .lp-adam { grid-template-columns: 1.15fr 1fr; gap: 0; align-items: center; padding: 0; }
   .lp-adam-txt { padding: 60px 56px; }
-  .lp-cap { padding: 110px 40px 0; } .lp-cap .lp-in { padding: 48px 52px; }
+  .lp-gallery { justify-content: center; gap: 16px; padding: 110px 40px; overflow: visible; } .lp-gallery img { height: 360px; }
+  .lp-adam { grid-template-columns: 1fr 1.25fr; } .lp-adam-photo img { max-height: 640px; }
+  .lp-cap { padding: 0 40px; } .lp-cap .lp-in { padding: 48px 52px; }
   .lp-list { grid-template-columns: 1fr 1fr; gap: 30px 56px; }
   .lp-close { padding: 96px 40px; }
   .lp-foot { padding: 48px 40px; } .lp-foot .lp-in { grid-template-columns: auto 1fr auto; align-items: center; gap: 40px; }

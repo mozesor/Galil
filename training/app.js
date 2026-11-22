@@ -189,7 +189,7 @@
           <div class="lp-actions">${cta()}${jump('lp-what', 'מה יש באפליקציה')}</div>
           <div class="lp-stores"><span>App Store</span><span>Google Play</span><em>בקרוב</em></div>
         </div>
-        <div class="lp-hero-img"><img src="img/kick.jpg" alt="אדם בועט בכדור באימון" width="1200" height="1500"></div>
+        <div class="lp-hero-img"><img src="img/lp/kick.jpg" alt="אדם בועט בכדור באימון" width="1400" height="788"></div>
       </section>
 
       <div class="lp-facts"><div><b>5</b><span>תחומי אימון</span></div><div><b>10</b><span>סדרות טכניקה</span></div><div><b>3</b><span>רמות קושי</span></div><div><b>עברית</b><span>כל התוכן</span></div></div>
@@ -206,13 +206,19 @@
       </section>
 
       <section class="lp-sec lp-adam" id="lp-adam">
-        <div class="lp-adam-photo"><img src="img/ready.jpg" alt="אדם באימון על המגרש" width="1200" height="675" loading="lazy"></div>
+        <div class="lp-adam-photo"><img src="img/lp/thumbs.jpg" alt="אדם על המגרש, מחזיק כדור ומרים אגודל" width="900" height="1125" loading="lazy"></div>
         <div class="lp-adam-txt">
           <div class="lp-kicker">המאמן</div>
           <h2>אדם מלמד כל תרגיל בעצמו</h2>
           <p>אדם הוא מאמן כדורגל ושחקן פעיל, שמאמן קבוצות ושחקנים באופן אישי. ב-Five Ball הוא מראה, מסביר, ומכוון לטעויות הנפוצות.</p>
           <p>הגישה שלו: מקצועי, אבל גם אח גדול שמלווה. בלי קיצורי דרך, ובגובה העיניים.</p>
         </div>
+      </section>
+
+      <section class="lp-gallery" aria-label="תמונות מהאימונים">
+        <img src="img/lp/dribble.jpg" alt="אדם מכדרר עם הכדור" width="788" height="1400" loading="lazy">
+        <img src="img/lp/ready.jpg" alt="אדם מתקרב לכדור על המגרש" width="1400" height="788" loading="lazy">
+        <img src="img/lp/juggle.jpg" alt="אדם מקפיץ כדור על הרגל" width="889" height="1400" loading="lazy">
       </section>
 
       <section class="lp-sec lp-cap"><div class="lp-in">
