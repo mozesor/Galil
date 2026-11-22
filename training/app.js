@@ -44,7 +44,7 @@
   const TICKER = '<span>FIVE BALL<i></i>לומדים<i></i>יוצאים למגרש<i></i>מיישמים<i></i>BY ADAM<i></i>כל יום<i></i></span>';
 
   // ---------- state ----------
-  const blank = () => ({ profile: null, skipped: false, favorites: [], watched: {}, positions: {}, last: null, practice: {}, overrides: {} });
+  const blank = () => ({ profile: null, skipped: false, favorites: [], watched: {}, positions: {}, last: null, practice: {}, overrides: {}, bannerOff: false });
   let state = blank();
   try {
     const raw = JSON.parse(localStorage.getItem(STORE_KEY));
@@ -164,6 +164,82 @@
       <p class="muted" style="text-align:center;margin-top:14px">באתר ההדגמה הפרופיל נשמר במכשיר הזה בלבד. <a class="link" href="#/signup">כך תיראה ההרשמה באפליקציה</a></p>`;
   }
 
+  // ---------- landing page: what the app is, who Adam is, and the way into the demo ----------
+  function viewLanding() {
+    const inApp = Boolean(state.profile || state.skipped);
+    const go = inApp ? ['#/home', 'חזרה להדגמה'] : ['#/profile', 'לנסות את ההדגמה'];
+    const cta = (cls = '') => `<a class="btn ${cls}" href="${go[0]}">${go[1]}</a>`;
+    const feat = (img, alt, kicker, title, text, flip) => `<div class="lp-row ${flip ? 'flip' : ''}">
+        <div class="lp-shot"><img src="img/shots/${img}.jpg" alt="${alt}" width="750" height="1334" loading="lazy"></div>
+        <div class="lp-txt"><div class="lp-kicker">${kicker}</div><h3>${title}</h3><p>${text}</p></div></div>`;
+    const q = (t, a) => `<details class="lp-q"><summary>${t}</summary><p>${a}</p></details>`;
+    return `<div class="lp">
+      <header class="lp-hero">
+        <div class="lp-top"><div class="brand"><img src="img/logo.jpg" alt="" width="46" height="46"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
+          <span class="lp-soon">בקרוב ב-App Store וב-Google Play</span></div>
+        <div class="lp-hero-in">
+          <h1>אימון כדורגל אישי עם המאמן אדם</h1>
+          <p class="lp-lead">סרטוני טכניקה קצרים בעברית, לילדים ולנוער. מוצאים תרגיל, לומדים אותו, ויוצאים למגרש.</p>
+          <div class="lp-actions">${cta()}<a class="lp-more" href="#/about" data-scroll="lp-what">מה יש באפליקציה ↓</a></div>
+          <p class="lp-note">האפליקציה בפיתוח. האתר הזה הוא הדגמה שאפשר לנסות כבר עכשיו, בלי הרשמה.</p>
+        </div>
+      </header>
+
+      <section class="lp-sec" id="lp-what">
+        <h2>מה יש באפליקציה</h2>
+        ${feat('library', 'מסך הספרייה: עשר סדרות של טכניקה אישית, עם סינון לפי רמה', 'הספרייה', 'כל הטכניקה, מסודרת לפי נושא ורמה', 'שליטה בכדור, כדרור, מסירות, נגיעה ראשונה, בעיטות, רגל חלשה ועוד. בכל נושא מתחילים מהבסיס ומתקדמים: מתחיל, מתקדם, מקצוען.')}
+        ${feat('drill', 'מסך תרגיל: סרטון, שלבי ביצוע וכפתור טיימר למגרש', 'התרגיל', 'סרטון קצר, שלבים ברורים, וטיימר למגרש', 'בכל תרגיל אדם מראה ומסביר. מתחת לסרטון יש שלבי ביצוע וציוד, וכפתור אחד שמפעיל טיימר כדי לתרגל בפועל.', true)}
+        ${feat('progress', 'מסך האזור האישי: סרטונים שנצפו, ימי רצף ותרגולים במגרש', 'ההתקדמות', 'רואים כמה התאמנו, וממשיכים מאיפה שעצרו', 'סרטונים שנצפו, ימי רצף, תרגולים במגרש ומועדפים. הכול במקום אחד, כדי שיהיה קל להתמיד.')}
+        <p class="lp-also">חוץ מטכניקה אישית יהיו באפליקציה גם מנטליות, תזונה (תוכן חינוכי כללי), טיפים משחקנים והכנה לשחקן.</p>
+      </section>
+
+      <section class="lp-sec lp-adam">
+        <div class="lp-adam-photo"><img src="img/ready.jpg" alt="אדם באימון על המגרש" width="1200" height="675" loading="lazy"></div>
+        <div class="lp-adam-txt">
+          <div class="lp-kicker">מי מאמן</div>
+          <h2 class="plain">אדם</h2>
+          <p>אדם הוא מאמן כדורגל ושחקן פעיל, שמאמן קבוצות ושחקנים באופן אישי. ב-Five Ball הוא מלמד בעצמו כל תרגיל: מראה, מסביר, ומכוון לטעויות הנפוצות.</p>
+          <p>הגישה שלו: מקצועי, אבל גם אח גדול שמלווה. בלי קיצורי דרך, ובגובה העיניים.</p>
+        </div>
+      </section>
+
+      <section class="lp-sec lp-cap">
+        <div class="lp-kicker">בקרוב · בינה מלאכותית</div>
+        <h2 class="plain">הקפטן נותן ציון על הביצוע</h2>
+        <p>מקבלים משימה, מצלמים את עצמכם מבצעים אותה, ומקבלים ציון ודגשים לשיפור. הקפטן לא מחליף מאמן. הוא עוזר להתמיד בין האימונים.</p>
+        <a class="lp-more" href="#/captain">איך זה יעבוד ‹</a>
+      </section>
+
+      <section class="lp-sec lp-parents">
+        <div class="lp-kicker">להורים</div>
+        <h2 class="plain">כך האפליקציה מתוכננת</h2>
+        <ul class="lp-list">
+          <li><b>הורה מאשר.</b> שחקנים צעירים מתחילים רק אחרי אישור של הורה.</li>
+          <li><b>מעט מידע.</b> שם פרטי, קבוצת גיל, רמה ועמדה. בלי כתובת ובלי תאריך לידה מלא.</li>
+          <li><b>בלי צ'אט בין משתמשים ובלי פרסומות.</b></li>
+          <li><b>סרטון שהילד מעלה לקפטן</b> נבדק ונמחק, ולא מתפרסם.</li>
+          <li><b>תזונה היא תוכן חינוכי כללי,</b> לא ייעוץ אישי.</li>
+        </ul>
+      </section>
+
+      <section class="lp-sec">
+        <h2>שאלות נפוצות</h2>
+        ${q('מתי האפליקציה עולה לחנויות?', 'האפליקציה בפיתוח ועדיין אין תאריך השקה. בינתיים אפשר לנסות את ההדגמה כאן באתר.')}
+        ${q('כמה זה יעלה?', 'המחיר עוד לא נקבע. התוכנית היא שחלק מהתוכן יהיה פתוח בחינם, ושאר הספרייה במנוי חודשי או שנתי.')}
+        ${q('לאילו גילאים זה מתאים?', 'לילדים ולנוער מגיל 8 בערך, ולכל מי שרוצה לשפר טכניקה אישית. בכל נושא יש שלוש רמות.')}
+        ${q('צריך ציוד מיוחד?', 'לרוב התרגילים מספיקים כדור ומעט מקום. לחלק צריך קיר או כמה קונוסים, וזה כתוב בכל תרגיל.')}
+        ${q('הסרטונים באתר אמיתיים?', 'עדיין לא. זה אתר הדגמה: מבנה הספרייה והמסכים אמיתיים, והסרטונים של אדם נמצאים בצילום.')}
+      </section>
+
+      <section class="lp-sec lp-close">
+        <h2 class="plain">רוצים לראות איך זה מרגיש?</h2>
+        <p>ההדגמה פתוחה, בלי הרשמה ובלי תשלום.</p>
+        ${cta('block')}
+      </section>
+      <footer class="lp-foot">Five Ball by Adam · אתר הדגמה</footer>
+    </div>`;
+  }
+
   function viewHome() {
     const name = state.profile && state.profile.name;
     const last = state.last && videoById[state.last] && !isWatched(state.last) ? videoById[state.last] : null;
@@ -172,16 +248,17 @@
     const [tech, ...rest] = DATA.categories;
     const rec = recommended().filter((v) => v.id !== feat.id);
     return `<div class="brand"><img src="img/logo.jpg" alt="" width="46" height="46"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
+      ${state.bannerOff ? '' : '<div class="demobar"><span><b>אתר הדגמה</b> · הסרטונים עדיין בצילום, והאפליקציה בדרך לחנויות. <a class="link" href="#/about">מה זה Five Ball?</a></span><button data-banner-off aria-label="סגירת ההודעה">✕</button></div>'}
       <div class="head"><h1>${name ? `היי ${esc(name)}` : 'האימון שלך מתחיל כאן'}</h1><p>${s > 0 ? `רצף של ${daysHe(s)}. ממשיכים?` : 'מוצאים תרגיל, לומדים אותו, יוצאים למגרש.'}</p></div>
       <div class="card hero photo"><span class="five" aria-hidden="true">5</span>
         <div class="muted">${last ? 'המשך צפייה' : 'מומלץ להתחיל כאן'} · ${esc(feat.series ? seriesById[feat.series].name : catById[feat.cat].name)}</div>
-        <h3>${esc(feat.title)}</h3>
+        <div class="h3" role="heading" aria-level="2">${esc(feat.title)}</div>
         <a class="btn block" href="#/video/${esc(feat.id)}">${last ? 'המשך צפייה' : 'צפייה בסרטון'}</a>
       </div>
       <div class="ticker" aria-hidden="true"><div>${TICKER}${TICKER}</div></div>
-      <a class="card captain" href="#/captain"><div class="muted">בקרוב · בינה מלאכותית</div><h3>הקפטן נותן לך ציון</h3><p>מקבלים משימה, מצלמים את עצמכם מבצעים אותה, ומקבלים ציון ודגשים לשיפור.</p><span class="more">איך זה עובד ‹</span></a>
       <h2>קטגוריות</h2>
       <div class="tiles">${tile(tech, true)}${rest.map((c) => tile(c)).join('')}</div>
+      <a class="card captain" href="#/captain"><div class="muted">בקרוב · בינה מלאכותית</div><div class="h3" role="heading" aria-level="3">הקפטן נותן לך ציון</div><p>מקבלים משימה, מצלמים את עצמכם מבצעים אותה, ומקבלים ציון ודגשים לשיפור.</p><span class="more">איך זה עובד ‹</span></a>
       <h2>הצצה לאפליקציה</h2>
       <div class="video tall"><video src="videos/promo.mp4" poster="img/promo-poster.jpg" controls playsinline preload="none" aria-label="סרטון היכרות עם Five Ball, 20 שניות, ללא קול"></video></div>
       ${rec.length ? `<h2>מומלצים בשבילך</h2><div class="hscroll">${rec.map(videoCard).join('')}</div>` : ''}`;
@@ -231,7 +308,7 @@
       <div class="head"><h1>${esc(v.title)}</h1><p>${metaTags(v)}</p></div>
       ${player(v)}
       ${v.desc ? `<div class="card"><p>${esc(v.desc)}</p>${note}</div>` : ''}
-      ${v.steps ? `<div class="card"><h3>איך מבצעים</h3><ol class="steps">${v.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol><div class="muted">ציוד: ${esc(v.equipment)}</div></div>` : ''}
+      ${v.steps ? `<div class="card"><h2 class="h3 plain">איך מבצעים</h2><ol class="steps">${v.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol><div class="muted">ציוד: ${esc(v.equipment)}</div></div>` : ''}
       ${v.steps ? `<button class="btn block" data-practice="${esc(v.id)}">יוצאים למגרש · טיימר ${clock(v.seconds)}</button>` : ''}
       <div class="pair">
         <button class="btn ghost" data-watched="${esc(v.id)}" aria-pressed="${done}">${done ? '✓ נצפה' : 'סימון כנצפה'}</button>
@@ -277,6 +354,7 @@
       ${favs.length ? favs.map((v) => videoRow(v)).join('') : '<div class="empty">סמנו סרטון בכוכב ☆ והוא יחכה לכם כאן.</div>'}
       <h2>נצפו לאחרונה</h2>
       ${watched.length ? watched.slice(0, 8).map((v) => videoRow(v)).join('') : '<div class="empty">עוד לא צפיתם בסרטון. הראשון מחכה בדף הבית.</div>'}
+      <a class="item" href="#/about"><div class="grow"><div class="t">מה זה Five Ball</div><div class="muted">על האפליקציה ועל אדם</div></div><span class="chev" aria-hidden="true">‹</span></a>
       <h2>מסכי האפליקציה</h2>
       <p class="muted" style="margin-bottom:8px">מסכים שיהיו באפליקציה המלאה. כאן הם להדגמה בלבד.</p>
       ${DEMOS.map(([href, t, d]) => `<a class="item" href="${href}"><div class="grow"><div class="t">${t}</div><div class="muted">${d}</div></div><span class="chev" aria-hidden="true">‹</span></a>`).join('')}
@@ -464,15 +542,18 @@
   function render(keepScroll) {
     let [, name = 'home', arg] = (location.hash || '#/home').split('/');
     arg = decodeURIComponent(arg || '');
-    const onboarding = !state.profile && !state.skipped && !['profile', 'signup', 'consent', 'plans', 'admin'].includes(name);
+    const fresh = !state.profile && !state.skipped;
+    const landing = name === 'about' || (fresh && name === 'home');
+    const onboarding = fresh && !landing && !['profile', 'signup', 'consent', 'plans', 'admin', 'captain'].includes(name);
     const y = window.scrollY;
     const routes = {
-      home: viewHome, search: viewSearch, me: viewMe, profile: viewWelcome, captain: viewCaptain,
+      home: viewHome, search: viewSearch, me: viewMe, profile: viewWelcome, captain: viewCaptain, about: viewLanding,
       signup: viewSignup, consent: viewConsent, plans: viewPlans, admin: viewAdmin,
       cat: () => viewCat(arg), series: () => viewSeries(arg), video: () => viewVideo(arg),
     };
-    view.innerHTML = onboarding ? viewWelcome() : (routes[name] || viewNotFound)();
-    tabs.hidden = onboarding;
+    view.innerHTML = landing ? viewLanding() : onboarding ? viewWelcome() : (routes[name] || viewNotFound)();
+    tabs.hidden = onboarding || landing || (fresh && name !== 'home');
+    view.classList.toggle('wide', landing);
     const tab = { cat: arg === 'technique' ? 'technique' : 'home', series: 'technique', profile: 'me', captain: 'home', signup: 'me', consent: 'me', plans: 'me', admin: 'me',
       video: videoById[arg] && videoById[arg].cat === 'technique' ? 'technique' : 'home' }[name] || name;
     tabs.querySelectorAll('a').forEach((a) => {
@@ -482,7 +563,7 @@
     });
     window.scrollTo(0, keepScroll ? y : 0);
     if (!keepScroll) { view.classList.remove('enter'); void view.offsetWidth; view.classList.add('enter'); }
-    if (name === 'video' && !onboarding && videoById[arg]) openedVideo(videoById[arg]);
+    if (name === 'video' && !onboarding && !landing && videoById[arg]) openedVideo(videoById[arg]);
     startAutoVideos();
   }
 
@@ -519,12 +600,30 @@
     el.addEventListener('ended', () => { markWatched(v.id); render(true); });
   }
 
+  // A short message at the bottom of the screen, instead of a browser dialog.
+  let toastTimer = null;
+  function toast(text) {
+    let el = document.getElementById('toast');
+    if (!el) { el = document.createElement('div'); el.id = 'toast'; el.setAttribute('role', 'status'); document.body.appendChild(el); }
+    el.textContent = text; el.classList.add('on');
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('on'), 4200);
+  }
+  // Destructive buttons ask for a second press instead of opening a confirm dialog.
+  function armed(btn, text) {
+    if (btn.dataset.armed) return true;
+    btn.dataset.armed = '1'; btn.dataset.label = btn.textContent; btn.textContent = text; btn.classList.add('armed');
+    setTimeout(() => { if (btn.isConnected) { delete btn.dataset.armed; btn.textContent = btn.dataset.label; btn.classList.remove('armed'); } }, 5000);
+    return false;
+  }
+
   // ---------- events ----------
   view.addEventListener('click', (e) => {
     const t = e.target.closest('button');
     if (!t) return;
     const d = t.dataset;
-    if (d.mode) {
+    if ('bannerOff' in d) {
+      state.bannerOff = true; save(); render(true);
+    } else if (d.mode) {
       demo.mode = d.mode; render(true);
     } else if ('demoNext' in d) {
       afterSignup();
@@ -533,7 +632,7 @@
     } else if (d.plan) {
       demo.plan = d.plan; render(true);
     } else if ('buy' in d) {
-      alert(demo.plan === 'free' ? 'הדגמה: באפליקציה ממשיכים מכאן לספרייה החינמית.' : 'הדגמה בלבד: לא בוצע חיוב. באפליקציה ייפתח כאן חלון התשלום של החנות.');
+      toast(demo.plan === 'free' ? 'הדגמה: באפליקציה ממשיכים מכאן לספרייה החינמית.' : 'הדגמה בלבד: לא בוצע חיוב. באפליקציה ייפתח כאן חלון התשלום של החנות.');
     } else if (d.adminEdit) {
       demo.edit = d.adminEdit; render();
     } else if ('adminClose' in d) {
@@ -541,7 +640,7 @@
     } else if (d.adminUndo) {
       delete state.overrides[d.adminUndo]; save(); applyOverrides(); demo.edit = null; render();
     } else if ('adminReset' in d) {
-      if (confirm('לבטל את כל השינויים שנעשו במכשיר הזה?')) { state.overrides = {}; save(); applyOverrides(); render(true); }
+      if (armed(t, 'לחצו שוב כדי לבטל את כל השינויים')) { state.overrides = {}; save(); applyOverrides(); render(true); toast('השינויים בוטלו.'); }
     } else if (d.fav) {
       const i = state.favorites.indexOf(d.fav);
       if (i >= 0) state.favorites.splice(i, 1); else state.favorites.push(d.fav);
@@ -562,7 +661,7 @@
     } else if (d.practice) {
       if (videoById[d.practice]) startRun(videoById[d.practice]);
     } else if ('reset' in d) {
-      if (confirm('למחוק את הפרופיל, המועדפים וכל ההתקדמות? אי אפשר לבטל את הפעולה.')) {
+      if (armed(t, 'לחצו שוב כדי למחוק את הפרופיל וכל ההתקדמות')) {
         state = blank(); save(); location.hash = '#/home'; render();
       }
     }
@@ -611,6 +710,12 @@
     if (e.target.id !== 'q') return;
     search.q = e.target.value;
     document.getElementById('list').innerHTML = searchResults();
+  });
+  view.addEventListener('click', (e) => {
+    const a = e.target.closest('[data-scroll]');
+    if (!a) return;
+    const target = document.getElementById(a.dataset.scroll);
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: CALM ? 'auto' : 'smooth', block: 'start' }); }
   });
   window.addEventListener('hashchange', () => render());
 
