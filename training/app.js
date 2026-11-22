@@ -168,75 +168,91 @@
   function viewLanding() {
     const inApp = Boolean(state.profile || state.skipped);
     const go = inApp ? ['#/home', 'חזרה להדגמה'] : ['#/profile', 'לנסות את ההדגמה'];
-    const cta = (cls = '') => `<a class="btn ${cls}" href="${go[0]}">${go[1]}</a>`;
-    const feat = (img, alt, kicker, title, text, flip) => `<div class="lp-row ${flip ? 'flip' : ''}">
-        <div class="lp-shot"><img src="img/shots/${img}.jpg" alt="${alt}" width="750" height="1334" loading="lazy"></div>
+    const cta = (cls = '') => `<a class="lp-btn ${cls}" href="${go[0]}">${go[1]}</a>`;
+    const jump = (id, label) => `<a href="#/about" data-scroll="${id}">${label}</a>`;
+    const feat = (img, alt, kicker, title, text) => `<div class="lp-row">
+        <div class="lp-phone"><img src="img/shots/${img}.jpg" alt="${alt}" width="750" height="1334" loading="lazy"></div>
         <div class="lp-txt"><div class="lp-kicker">${kicker}</div><h3>${title}</h3><p>${text}</p></div></div>`;
     const q = (t, a) => `<details class="lp-q"><summary>${t}</summary><p>${a}</p></details>`;
+    const check = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11"/><path d="M7 12.5l3.2 3.2L17 9"/></svg>';
+    const brand = '<div class="brand"><img src="img/logo.jpg" alt="" width="46" height="46"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>';
     return `<div class="lp">
-      <header class="lp-hero">
-        <div class="lp-top"><div class="brand"><img src="img/logo.jpg" alt="" width="46" height="46"><div class="name">FIVE <span>BALL</span><small>BY ADAM</small></div></div>
-          <span class="lp-soon">בקרוב ב-App Store וב-Google Play</span></div>
-        <div class="lp-hero-in">
+      <header class="lp-nav">${brand}
+        <nav aria-label="בדף הזה">${jump('lp-what', 'מה באפליקציה')}${jump('lp-adam', 'המאמן')}${jump('lp-parents', 'להורים')}${jump('lp-faq', 'שאלות')}</nav>
+        ${cta('small')}</header>
+
+      <section class="lp-hero">
+        <div class="lp-hero-txt">
+          <div class="lp-soon"><i></i>האפליקציה בפיתוח · בקרוב בחנויות</div>
           <h1>אימון כדורגל אישי עם המאמן אדם</h1>
           <p class="lp-lead">סרטוני טכניקה קצרים בעברית, לילדים ולנוער. מוצאים תרגיל, לומדים אותו, ויוצאים למגרש.</p>
-          <div class="lp-actions">${cta()}<a class="lp-more" href="#/about" data-scroll="lp-what">מה יש באפליקציה ↓</a></div>
-          <p class="lp-note">האפליקציה בפיתוח. האתר הזה הוא הדגמה שאפשר לנסות כבר עכשיו, בלי הרשמה.</p>
+          <div class="lp-actions">${cta()}${jump('lp-what', 'מה יש באפליקציה')}</div>
+          <div class="lp-stores"><span>App Store</span><span>Google Play</span><em>בקרוב</em></div>
         </div>
-      </header>
-
-      <section class="lp-sec" id="lp-what">
-        <h2>מה יש באפליקציה</h2>
-        ${feat('library', 'מסך הספרייה: עשר סדרות של טכניקה אישית, עם סינון לפי רמה', 'הספרייה', 'כל הטכניקה, מסודרת לפי נושא ורמה', 'שליטה בכדור, כדרור, מסירות, נגיעה ראשונה, בעיטות, רגל חלשה ועוד. בכל נושא מתחילים מהבסיס ומתקדמים: מתחיל, מתקדם, מקצוען.')}
-        ${feat('drill', 'מסך תרגיל: סרטון, שלבי ביצוע וכפתור טיימר למגרש', 'התרגיל', 'סרטון קצר, שלבים ברורים, וטיימר למגרש', 'בכל תרגיל אדם מראה ומסביר. מתחת לסרטון יש שלבי ביצוע וציוד, וכפתור אחד שמפעיל טיימר כדי לתרגל בפועל.', true)}
-        ${feat('progress', 'מסך האזור האישי: סרטונים שנצפו, ימי רצף ותרגולים במגרש', 'ההתקדמות', 'רואים כמה התאמנו, וממשיכים מאיפה שעצרו', 'סרטונים שנצפו, ימי רצף, תרגולים במגרש ומועדפים. הכול במקום אחד, כדי שיהיה קל להתמיד.')}
-        <p class="lp-also">חוץ מטכניקה אישית יהיו באפליקציה גם מנטליות, תזונה (תוכן חינוכי כללי), טיפים משחקנים והכנה לשחקן.</p>
+        <div class="lp-hero-img"><img src="img/kick.jpg" alt="אדם בועט בכדור באימון" width="1200" height="1500"></div>
       </section>
 
-      <section class="lp-sec lp-adam">
+      <div class="lp-facts"><div><b>5</b><span>תחומי אימון</span></div><div><b>10</b><span>סדרות טכניקה</span></div><div><b>3</b><span>רמות קושי</span></div><div><b>עברית</b><span>כל התוכן</span></div></div>
+
+      <section class="lp-sec lp-light" id="lp-what">
+        <div class="lp-in">
+          <div class="lp-kicker">מה יש באפליקציה</div>
+          <h2>לומדים תרגיל, ויוצאים לתרגל אותו</h2>
+          ${feat('library', 'מסך הספרייה: עשר סדרות של טכניקה אישית, עם סינון לפי רמה', 'הספרייה', 'כל הטכניקה, לפי נושא ורמה', 'שליטה בכדור, כדרור, מסירות, נגיעה ראשונה, בעיטות, רגל חלשה ועוד. בכל נושא מתחילים מהבסיס ומתקדמים: מתחיל, מתקדם, מקצוען.')}
+          ${feat('drill', 'מסך תרגיל: סרטון, שלבי ביצוע וכפתור טיימר למגרש', 'התרגיל', 'סרטון קצר, שלבים ברורים וטיימר', 'בכל תרגיל אדם מראה ומסביר. מתחת לסרטון יש שלבי ביצוע וציוד, וכפתור אחד שמפעיל טיימר כדי לתרגל בפועל.')}
+          ${feat('progress', 'מסך האזור האישי: סרטונים שנצפו, ימי רצף ותרגולים במגרש', 'ההתקדמות', 'רואים כמה התאמנו, וממשיכים מאיפה שעצרו', 'סרטונים שנצפו, ימי רצף, תרגולים במגרש ומועדפים. הכול במקום אחד, כדי שיהיה קל להתמיד.')}
+          <p class="lp-also">חוץ מטכניקה אישית יהיו באפליקציה גם מנטליות, תזונה (תוכן חינוכי כללי), טיפים משחקנים והכנה לשחקן.</p>
+        </div>
+      </section>
+
+      <section class="lp-sec lp-adam" id="lp-adam">
         <div class="lp-adam-photo"><img src="img/ready.jpg" alt="אדם באימון על המגרש" width="1200" height="675" loading="lazy"></div>
         <div class="lp-adam-txt">
-          <div class="lp-kicker">מי מאמן</div>
-          <h2 class="plain">אדם</h2>
-          <p>אדם הוא מאמן כדורגל ושחקן פעיל, שמאמן קבוצות ושחקנים באופן אישי. ב-Five Ball הוא מלמד בעצמו כל תרגיל: מראה, מסביר, ומכוון לטעויות הנפוצות.</p>
+          <div class="lp-kicker">המאמן</div>
+          <h2>אדם מלמד כל תרגיל בעצמו</h2>
+          <p>אדם הוא מאמן כדורגל ושחקן פעיל, שמאמן קבוצות ושחקנים באופן אישי. ב-Five Ball הוא מראה, מסביר, ומכוון לטעויות הנפוצות.</p>
           <p>הגישה שלו: מקצועי, אבל גם אח גדול שמלווה. בלי קיצורי דרך, ובגובה העיניים.</p>
         </div>
       </section>
 
-      <section class="lp-sec lp-cap">
-        <div class="lp-kicker">בקרוב · בינה מלאכותית</div>
-        <h2 class="plain">הקפטן נותן ציון על הביצוע</h2>
-        <p>מקבלים משימה, מצלמים את עצמכם מבצעים אותה, ומקבלים ציון ודגשים לשיפור. הקפטן לא מחליף מאמן. הוא עוזר להתמיד בין האימונים.</p>
-        <a class="lp-more" href="#/captain">איך זה יעבוד ‹</a>
-      </section>
+      <section class="lp-sec lp-cap"><div class="lp-in">
+        <span class="lp-tag">בקרוב</span>
+        <h2>הקפטן נותן ציון על הביצוע</h2>
+        <p>מקבלים משימה, מצלמים את עצמכם מבצעים אותה, ומקבלים ציון ודגשים לשיפור. הקפטן הוא בינה מלאכותית שעוזרת להתמיד בין האימונים, ולא מחליפה מאמן.</p>
+        <a class="lp-link" href="#/captain">איך זה יעבוד</a>
+      </div></section>
 
-      <section class="lp-sec lp-parents">
+      <section class="lp-sec lp-light" id="lp-parents"><div class="lp-in">
         <div class="lp-kicker">להורים</div>
-        <h2 class="plain">כך האפליקציה מתוכננת</h2>
+        <h2>כך האפליקציה מתוכננת</h2>
         <ul class="lp-list">
-          <li><b>הורה מאשר.</b> שחקנים צעירים מתחילים רק אחרי אישור של הורה.</li>
-          <li><b>מעט מידע.</b> שם פרטי, קבוצת גיל, רמה ועמדה. בלי כתובת ובלי תאריך לידה מלא.</li>
-          <li><b>בלי צ'אט בין משתמשים ובלי פרסומות.</b></li>
-          <li><b>סרטון שהילד מעלה לקפטן</b> נבדק ונמחק, ולא מתפרסם.</li>
-          <li><b>תזונה היא תוכן חינוכי כללי,</b> לא ייעוץ אישי.</li>
+          <li>${check}<div><b>הורה מאשר</b>שחקנים צעירים מתחילים רק אחרי אישור של הורה.</div></li>
+          <li>${check}<div><b>מעט מידע</b>שם פרטי, קבוצת גיל, רמה ועמדה. בלי כתובת ובלי תאריך לידה מלא.</div></li>
+          <li>${check}<div><b>בלי צ'אט ובלי פרסומות</b>אין שיחות בין משתמשים ואין מודעות.</div></li>
+          <li>${check}<div><b>סרטונים לא מתפרסמים</b>סרטון שהילד מעלה לקפטן נבדק ונמחק.</div></li>
+          <li>${check}<div><b>תזונה כתוכן חינוכי</b>מידע כללי, לא ייעוץ אישי.</div></li>
         </ul>
-      </section>
+      </div></section>
 
-      <section class="lp-sec">
-        <h2>שאלות נפוצות</h2>
+      <section class="lp-sec" id="lp-faq"><div class="lp-in lp-narrow">
+        <div class="lp-kicker">שאלות נפוצות</div>
+        <h2>מה כדאי לדעת</h2>
         ${q('מתי האפליקציה עולה לחנויות?', 'האפליקציה בפיתוח ועדיין אין תאריך השקה. בינתיים אפשר לנסות את ההדגמה כאן באתר.')}
         ${q('כמה זה יעלה?', 'המחיר עוד לא נקבע. התוכנית היא שחלק מהתוכן יהיה פתוח בחינם, ושאר הספרייה במנוי חודשי או שנתי.')}
         ${q('לאילו גילאים זה מתאים?', 'לילדים ולנוער מגיל 8 בערך, ולכל מי שרוצה לשפר טכניקה אישית. בכל נושא יש שלוש רמות.')}
         ${q('צריך ציוד מיוחד?', 'לרוב התרגילים מספיקים כדור ומעט מקום. לחלק צריך קיר או כמה קונוסים, וזה כתוב בכל תרגיל.')}
         ${q('הסרטונים באתר אמיתיים?', 'עדיין לא. זה אתר הדגמה: מבנה הספרייה והמסכים אמיתיים, והסרטונים של אדם נמצאים בצילום.')}
-      </section>
+      </div></section>
 
-      <section class="lp-sec lp-close">
-        <h2 class="plain">רוצים לראות איך זה מרגיש?</h2>
+      <section class="lp-close"><div class="lp-in">
+        <h2>רוצים לראות איך זה מרגיש?</h2>
         <p>ההדגמה פתוחה, בלי הרשמה ובלי תשלום.</p>
-        ${cta('block')}
-      </section>
-      <footer class="lp-foot">Five Ball by Adam · אתר הדגמה</footer>
+        ${cta('dark')}
+      </div></section>
+
+      <footer class="lp-foot"><div class="lp-in">${brand}
+        <nav aria-label="קישורים">${jump('lp-what', 'מה באפליקציה')}${jump('lp-adam', 'המאמן')}${jump('lp-parents', 'להורים')}${jump('lp-faq', 'שאלות נפוצות')}<a href="#/captain">הקפטן</a></nav>
+        <p>אתר הדגמה. האפליקציה בפיתוח.</p></div></footer>
     </div>`;
   }
 
