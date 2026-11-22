@@ -7,7 +7,7 @@
     "currentRoundNumber": 3,
     "currentRoundName": "מחזור 2"
   },
-  "fetchedAt": "2026-11-21T22:36:37.502Z",
+  "fetchedAt": "2026-11-22T02:44:39.124Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -125,7 +125,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -278,16 +278,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": 2
       }
@@ -309,16 +309,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": 0
       },
@@ -578,16 +578,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": 4
       }
@@ -656,7 +656,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -759,16 +759,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": 0
       },
@@ -1006,7 +1006,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -1059,16 +1059,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": 2
       },
@@ -1178,16 +1178,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": 1
       }
@@ -1244,7 +1244,7 @@
     },
     {
       "id": "6acc33529878872a963a078e",
-      "provider_id": -1,
+      "provider_id": 1158550,
       "date": "2026-11-21T12:00:00.000Z",
       "is_finished": true,
       "round": {
@@ -1259,16 +1259,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": 2
       },
@@ -1278,16 +1278,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": 2
       }
@@ -1459,16 +1459,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -1675,7 +1675,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -1806,7 +1806,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -1909,16 +1909,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": -1
       },
@@ -2078,16 +2078,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -2209,16 +2209,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -2428,16 +2428,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": -1
       }
@@ -2525,7 +2525,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2575,7 +2575,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2659,16 +2659,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": -1
       },
@@ -2859,16 +2859,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -2978,16 +2978,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -3178,16 +3178,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": -1
       }
@@ -3206,7 +3206,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3309,23 +3309,23 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": -1
       },
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3678,16 +3678,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -3856,7 +3856,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3928,16 +3928,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": -1
       }
@@ -3978,16 +3978,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": -1
       }
@@ -4075,7 +4075,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -4209,16 +4209,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -4428,16 +4428,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -4506,7 +4506,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -4609,16 +4609,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": -1
       },
@@ -4728,16 +4728,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": -1
       }
@@ -4825,7 +4825,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -4859,16 +4859,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       },
@@ -5156,7 +5156,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -5178,16 +5178,16 @@
         "name": "מ.כ. צעירי עילוט",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 7,
+            "for": 3,
+            "against": 9,
             "difference": -6
           },
-          "points": 0
+          "points": 1
         },
         "goals": -1
       }
@@ -5259,16 +5259,16 @@
         "name": "מ.ס.קרית ים  2",
         "has_logo": true,
         "stats": {
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "goals": {
-            "for": 8,
-            "against": 4,
+            "for": 10,
+            "against": 6,
             "difference": 4
           },
-          "points": 6
+          "points": 7
         },
         "goals": -1
       },
@@ -5347,7 +5347,7 @@
     {
       "rank": 1,
       "provider_id": 4389,
-      "name": "מ.כ. הפועל רמת ישי",
+      "name": "מ.כ. הפועל רמת ישי ",
       "games": 3,
       "wins": 3,
       "draws": 0,
@@ -5398,6 +5398,19 @@
     },
     {
       "rank": 5,
+      "provider_id": 7700,
+      "name": "מ.ס.קרית ים  2",
+      "games": 4,
+      "wins": 2,
+      "draws": 1,
+      "losses": 1,
+      "gf": 10,
+      "ga": 6,
+      "gd": 4,
+      "points": 7
+    },
+    {
+      "rank": 6,
       "provider_id": 8484,
       "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
       "games": 2,
@@ -5410,7 +5423,7 @@
       "points": 6
     },
     {
-      "rank": 6,
+      "rank": 7,
       "provider_id": 6331,
       "name": "מ.כ. מכבי נהריה \"צו פיוס\"",
       "games": 2,
@@ -5420,19 +5433,6 @@
       "gf": 8,
       "ga": 2,
       "gd": 6,
-      "points": 6
-    },
-    {
-      "rank": 7,
-      "provider_id": 7700,
-      "name": "מ.ס.קרית ים  2",
-      "games": 3,
-      "wins": 2,
-      "draws": 0,
-      "losses": 1,
-      "gf": 8,
-      "ga": 4,
-      "gd": 4,
       "points": 6
     },
     {
@@ -5491,14 +5491,14 @@
       "rank": 12,
       "provider_id": 3129,
       "name": "מ.כ. צעירי עילוט",
-      "games": 3,
+      "games": 4,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 3,
-      "gf": 1,
-      "ga": 7,
+      "gf": 3,
+      "ga": 9,
       "gd": -6,
-      "points": 0
+      "points": 1
     },
     {
       "rank": 13,
