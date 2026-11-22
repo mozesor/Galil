@@ -859,7 +859,7 @@
   });
 
   // ---------- boot ----------
-  fetch('data.json', { cache: 'no-cache' })
+  fetch('data.json?v=1122b', { cache: 'no-cache' })
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((data) => {
       DATA = data;
