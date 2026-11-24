@@ -7,7 +7,7 @@
     "currentRoundNumber": 4,
     "currentRoundName": "מחזור 3"
   },
-  "fetchedAt": "2026-11-23T15:31:25.412Z",
+  "fetchedAt": "2026-11-24T02:40:50.766Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -125,7 +125,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -209,16 +209,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": 4
       },
@@ -428,14 +428,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -656,7 +656,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -859,16 +859,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": 18
       },
@@ -909,14 +909,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -1006,7 +1006,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -1294,9 +1294,9 @@
     },
     {
       "id": "6acc33529878872a963a0797",
-      "provider_id": -1,
+      "provider_id": 1158553,
       "date": "2026-11-23T17:15:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 3",
         "number": 3,
@@ -1309,18 +1309,18 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
-        "goals": -1
+        "goals": 10
       },
       "away": {
         "id": "68d612211b7b720e58adeed1",
@@ -1328,18 +1328,18 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
-        "goals": -1
+        "goals": 1
       }
     },
     {
@@ -1428,16 +1428,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -1478,16 +1478,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -1528,14 +1528,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -1675,7 +1675,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -1759,16 +1759,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       },
@@ -1806,7 +1806,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2009,14 +2009,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -2159,14 +2159,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -2228,16 +2228,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -2328,14 +2328,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -2525,7 +2525,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2559,23 +2559,23 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       },
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2928,16 +2928,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -3028,14 +3028,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -3206,7 +3206,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3259,16 +3259,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       },
@@ -3325,7 +3325,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3459,14 +3459,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -3628,16 +3628,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -3778,14 +3778,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -3856,7 +3856,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3959,16 +3959,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       },
@@ -4075,7 +4075,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -4109,14 +4109,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -4506,7 +4506,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -4528,14 +4528,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -4659,16 +4659,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       },
@@ -4759,14 +4759,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -4825,7 +4825,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -5028,16 +5028,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 22,
-            "against": 4,
-            "difference": 18
+            "for": 32,
+            "against": 5,
+            "difference": 27
           },
-          "points": 6
+          "points": 9
         },
         "goals": -1
       }
@@ -5156,7 +5156,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -5278,14 +5278,14 @@
         "name": "מכבי עספיא 2",
         "has_logo": true,
         "stats": {
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "goals": {
-            "for": 1,
-            "against": 11,
-            "difference": -10
+            "for": 2,
+            "against": 21,
+            "difference": -19
           },
           "points": 0
         },
@@ -5347,7 +5347,7 @@
     {
       "rank": 1,
       "provider_id": 4389,
-      "name": "מ.כ. הפועל רמת ישי",
+      "name": "מ.כ. הפועל רמת ישי ",
       "games": 3,
       "wins": 3,
       "draws": 0,
@@ -5359,6 +5359,19 @@
     },
     {
       "rank": 2,
+      "provider_id": 8484,
+      "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+      "games": 3,
+      "wins": 3,
+      "draws": 0,
+      "losses": 0,
+      "gf": 32,
+      "ga": 5,
+      "gd": 27,
+      "points": 9
+    },
+    {
+      "rank": 3,
       "provider_id": 4829,
       "name": "מ.כ. קרית חיים \"שמשון \"צו פיוס\"",
       "games": 3,
@@ -5371,7 +5384,7 @@
       "points": 9
     },
     {
-      "rank": 3,
+      "rank": 4,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2 \"צו פיוס\"",
       "games": 4,
@@ -5384,7 +5397,7 @@
       "points": 9
     },
     {
-      "rank": 4,
+      "rank": 5,
       "provider_id": 7709,
       "name": "ה.מטה אשר 3 \"צו פיוס\"",
       "games": 3,
@@ -5397,7 +5410,7 @@
       "points": 9
     },
     {
-      "rank": 5,
+      "rank": 6,
       "provider_id": 7700,
       "name": "מ.ס.קרית ים  2",
       "games": 4,
@@ -5408,19 +5421,6 @@
       "ga": 6,
       "gd": 4,
       "points": 7
-    },
-    {
-      "rank": 6,
-      "provider_id": 8484,
-      "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-      "games": 2,
-      "wins": 2,
-      "draws": 0,
-      "losses": 0,
-      "gf": 22,
-      "ga": 4,
-      "gd": 18,
-      "points": 6
     },
     {
       "rank": 7,
@@ -5504,13 +5504,13 @@
       "rank": 13,
       "provider_id": 7299,
       "name": "מכבי עספיא 2",
-      "games": 2,
+      "games": 3,
       "wins": 0,
       "draws": 0,
-      "losses": 2,
-      "gf": 1,
-      "ga": 11,
-      "gd": -10,
+      "losses": 3,
+      "gf": 2,
+      "ga": 21,
+      "gd": -19,
       "points": 0
     },
     {
