@@ -7,7 +7,7 @@
     "currentRoundNumber": 6,
     "currentRoundName": "מחזור 5"
   },
-  "fetchedAt": "2026-11-27T11:04:44.434Z",
+  "fetchedAt": "2026-11-27T20:05:13.340Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -125,7 +125,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -209,16 +209,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": 4
       },
@@ -259,14 +259,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -478,14 +478,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -656,7 +656,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -828,14 +828,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -859,16 +859,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": 18
       },
@@ -928,14 +928,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -1006,7 +1006,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -1309,16 +1309,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": 10
       },
@@ -1394,9 +1394,9 @@
     },
     {
       "id": "6acc33539878872a963a07b3",
-      "provider_id": -1,
+      "provider_id": 1158569,
       "date": "2026-11-27T10:00:00.000Z",
-      "is_finished": false,
+      "is_finished": true,
       "round": {
         "name": "מחזור 5",
         "number": 5,
@@ -1409,18 +1409,18 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
-        "goals": -1
+        "goals": 2
       },
       "away": {
         "id": "68d612211b7b720e58adee89",
@@ -1428,18 +1428,18 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
-        "goals": -1
+        "goals": 4
       }
     },
     {
@@ -1509,16 +1509,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": -1
       },
@@ -1556,7 +1556,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -1809,14 +1809,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -2028,16 +2028,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": -1
       }
@@ -2128,16 +2128,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": -1
       }
@@ -2178,14 +2178,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -2425,7 +2425,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2475,7 +2475,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2509,23 +2509,23 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": -1
       },
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2759,14 +2759,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -2928,16 +2928,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": -1
       }
@@ -3206,7 +3206,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3259,16 +3259,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": -1
       },
@@ -3325,7 +3325,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3509,14 +3509,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -3628,16 +3628,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": -1
       }
@@ -3728,14 +3728,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -3856,7 +3856,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3959,16 +3959,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": -1
       },
@@ -4075,7 +4075,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -4159,14 +4159,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -4478,14 +4478,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -4506,7 +4506,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -4659,16 +4659,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": -1
       },
@@ -4809,14 +4809,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -4825,7 +4825,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -5028,16 +5028,16 @@
         "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "goals": {
-            "for": 32,
-            "against": 5,
-            "difference": 27
+            "for": 36,
+            "against": 7,
+            "difference": 29
           },
-          "points": 9
+          "points": 12
         },
         "goals": -1
       }
@@ -5156,7 +5156,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי ",
+        "name": "מ.כ. הפועל רמת ישי",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -5228,14 +5228,14 @@
         "name": "הפועל עכו 2 \"צו פיוס\"",
         "has_logo": true,
         "stats": {
-          "games": 4,
+          "games": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "goals": {
-            "for": 6,
-            "against": 14,
-            "difference": -8
+            "for": 8,
+            "against": 18,
+            "difference": -10
           },
           "points": 3
         },
@@ -5346,6 +5346,19 @@
   "standings": [
     {
       "rank": 1,
+      "provider_id": 8484,
+      "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
+      "games": 4,
+      "wins": 4,
+      "draws": 0,
+      "losses": 0,
+      "gf": 36,
+      "ga": 7,
+      "gd": 29,
+      "points": 12
+    },
+    {
+      "rank": 2,
       "provider_id": 5718,
       "name": "בית\"ר נהריה 2 \"צו פיוס\"",
       "games": 5,
@@ -5358,9 +5371,9 @@
       "points": 12
     },
     {
-      "rank": 2,
+      "rank": 3,
       "provider_id": 4389,
-      "name": "מ.כ. הפועל רמת ישי ",
+      "name": "מ.כ. הפועל רמת ישי",
       "games": 3,
       "wins": 3,
       "draws": 0,
@@ -5368,19 +5381,6 @@
       "gf": 33,
       "ga": 2,
       "gd": 31,
-      "points": 9
-    },
-    {
-      "rank": 3,
-      "provider_id": 8484,
-      "name": "מועדון הכדורגל מרום הגליל \"צו פיוס\"",
-      "games": 3,
-      "wins": 3,
-      "draws": 0,
-      "losses": 0,
-      "gf": 32,
-      "ga": 5,
-      "gd": 27,
       "points": 9
     },
     {
@@ -5465,13 +5465,13 @@
       "rank": 10,
       "provider_id": 8295,
       "name": "הפועל עכו 2 \"צו פיוס\"",
-      "games": 4,
+      "games": 5,
       "wins": 1,
       "draws": 0,
-      "losses": 3,
-      "gf": 6,
-      "ga": 14,
-      "gd": -8,
+      "losses": 4,
+      "gf": 8,
+      "ga": 18,
+      "gd": -10,
       "points": 3
     },
     {
