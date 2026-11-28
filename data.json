@@ -7,7 +7,7 @@
     "currentRoundNumber": 6,
     "currentRoundName": "מחזור 5"
   },
-  "fetchedAt": "2026-11-27T20:05:13.340Z",
+  "fetchedAt": "2026-11-28T02:50:28.454Z",
   "api": {
     "rounds": "https://vole.one.co.il/api/leagues/rounds?league_id=1276",
     "roundParamDetected": "round",
@@ -125,7 +125,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -656,7 +656,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -1006,7 +1006,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -1395,7 +1395,7 @@
     {
       "id": "6acc33539878872a963a07b3",
       "provider_id": 1158569,
-      "date": "2026-11-27T10:00:00.000Z",
+      "date": "2026-11-27T10:02:00.000Z",
       "is_finished": true,
       "round": {
         "name": "מחזור 5",
@@ -1556,7 +1556,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2425,7 +2425,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2475,7 +2475,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -2525,7 +2525,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3206,7 +3206,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3325,7 +3325,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -3856,7 +3856,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -4075,7 +4075,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -4506,7 +4506,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -4825,7 +4825,7 @@
       "away": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -5156,7 +5156,7 @@
       "home": {
         "id": "6ab9c8e2068ef07a1cafbc3d",
         "provider_id": 4389,
-        "name": "מ.כ. הפועל רמת ישי",
+        "name": "מ.כ. הפועל רמת ישי ",
         "has_logo": true,
         "stats": {
           "games": 3,
@@ -5373,7 +5373,7 @@
     {
       "rank": 3,
       "provider_id": 4389,
-      "name": "מ.כ. הפועל רמת ישי",
+      "name": "מ.כ. הפועל רמת ישי ",
       "games": 3,
       "wins": 3,
       "draws": 0,
